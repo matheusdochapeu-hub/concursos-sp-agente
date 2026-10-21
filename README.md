@@ -32,7 +32,7 @@ Listagem PCI (Sudeste) ─► filtra UF = SP ─► abre cada notícia
 1. Crie um repositório novo em <https://github.com/new> (ex.: `concursos-sp-agente`, pode ser público).
 2. Nesta pasta, rode:
    ```powershell
-   git remote add origin https://github.com/SEU_USUARIO/concursos-sp-agente.git
+   git remote add origin https://github.com/matheusdochapeu-hub/concursos-sp-agente.git
    git push -u origin main
    ```
 3. **(Opcional, recomendado) chave do Gemini** — gere grátis em <https://aistudio.google.com/apikey> e cadastre em
@@ -40,7 +40,7 @@ Listagem PCI (Sudeste) ─► filtra UF = SP ─► abre cada notícia
 4. **GitHub Pages**: *Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / pasta `/docs`*.
 5. Teste já: aba *Actions → "Buscar concursos (diário)" → Run workflow*.
 
-A página ficará em `https://SEU_USUARIO.github.io/concursos-sp-agente/` e é atualizada todo dia às **07:00 (Brasília)**.
+A página ficará em `https://matheusdochapeu-hub.github.io/concursos-sp-agente/` e é atualizada todo dia às **07:00 (Brasília)**.
 
 ## Rodar no computador
 
