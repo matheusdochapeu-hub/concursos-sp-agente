@@ -80,7 +80,18 @@
    "data_prova": "06/12/2026",
    "regime": "Estatutário",
    "beneficios": "Vale-alimentação e de auxílio-saúde · Vale-alimentação mensal de R$ 900,00 e reembolso de despesas com plano de saúde",
-   "jornada": "20 a 40 horas semanais"
+   "jornada": "20 a 40 horas semanais",
+   "cargos_li": [
+    "Auxiliar de Serviços Gerais (1 vaga)",
+    "Assistente Administrativo (1 vaga + CR)",
+    "Assistente Legislativo (1 vaga + CR)",
+    "Técnico de Audiovisual (1 vaga)",
+    "Agente Administrativo (CR)",
+    "Agente de Contabilidade e Finanças (CR)",
+    "Agente Legislativo (1 vaga + CR)",
+    "Agente de Comunicação (1 vaga)",
+    "Procurador Legislativo (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433": {
@@ -315,7 +326,43 @@
    "data_prova": "06/12/2026",
    "regime": "CLT (Celetista)",
    "beneficios": "Auxílio-alimentação (cartão) no valor de R$ 1.000,00 (valor vigente em setembro/2026)",
-   "jornada": "10 a 40 horas semanais"
+   "jornada": "10 a 40 horas semanais",
+   "cargos_li": [
+    "Agente de Gestão Pública - Assistente Administrativo (10 vagas)",
+    "Agente de Políticas Sociais - Auxiliar de Saúde Bucal (1 vaga)",
+    "Cirurgião Dentista Generalista (3 vagas)",
+    "Farmacêutico (1 vaga)",
+    "Fisioterapeuta (1 vaga)",
+    "Fonoaudiólogo (1 vaga)",
+    "Terapeuta Ocupacional (1 vaga)",
+    "Médico - Saúde Ocupacional (1 vaga)",
+    "Médico Alergologista (1 vaga)",
+    "Médico Cardiologista (1 vaga)",
+    "Médico Clínico Geral (1 vaga)",
+    "Médico Dermatologista (1 vaga)",
+    "Médico Endocrinologista (1 vaga)",
+    "Médico Gastroenterologista (1 vaga)",
+    "Médico Geriatra (1 vaga)",
+    "Médico Ginecologista e Obstetra (1 vaga)",
+    "Médico Hematologista (1 vaga)",
+    "Médico Infectologista (1 vaga)",
+    "Médico Nefrologista (1 vaga)",
+    "Médico Neurologista (1 vaga)",
+    "Médico Neuropediatria (1 vaga)",
+    "Médico Oftalmologista (1 vaga)",
+    "Médico Oncologista (1 vaga)",
+    "Médico Ortopedista (1 vaga)",
+    "Médico Otorrinolaringologista (1 vaga)",
+    "Médico Pediatra (1 vaga)",
+    "Médico Pneumologista (1 vaga)",
+    "Médico Pneumopediatria (1 vaga)",
+    "Médico Psiquiatra (1 vaga)",
+    "Médico Reumatologista (1 vaga)",
+    "Médico Saúde da Família (1 vaga)",
+    "Médico Urologista (1 vaga)",
+    "Médico Veterinário (cadastro de reserva)",
+    "Médico Veterinário Sanitarista (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717": {
@@ -482,7 +529,32 @@
    "data_prova": "24/01/2027",
    "regime": "CLT (Celetista)",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "40 horas semanais"
+   "jornada": "40 horas semanais",
+   "cargos_li": [
+    "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos (CR)",
+    "Agente de Fiscalização Pública - Fiscal de Meio Ambiente (CR)",
+    "Agente de Fiscalização Pública - Fiscal de Obras (1 vaga)",
+    "Agente de Fiscalização Pública - Fiscal de Saúde Pública (1 vaga)",
+    "Agente de Infraestrutura - Agente de Apoio ao Canil (CR)",
+    "Agente de Infraestrutura - Desenhista Projetista (1 vaga)",
+    "Agente de Infraestrutura - Topógrafo (1 vaga)",
+    "Agente de Infraestrutura - Auxiliar de Serviços Gerais (1 vaga)",
+    "Agente de Infraestrutura - Coveiro (1 vaga)",
+    "Agente de Infraestrutura - Pedreiro (2 vagas)",
+    "Agente de Infraestrutura - Pintor (1 vaga)",
+    "Agente de Infraestrutura - Operador de Trator Agrícola (2 vagas)",
+    "Agente de Infraestrutura - Operador de Máquina Pesada (2 vagas)",
+    "Agente de Mobilidade Urbana - Fiscal de Trânsito de 3ª Classe (3 vagas)",
+    "Agente de Políticas Sociais - Salva-vidas (1 vaga)",
+    "Agente de Políticas Sociais - Técnico em Enfermagem do Trabalho (1 vaga)",
+    "Analista de Compras e Licitações (2 vagas)",
+    "Analista Técnico Jurídico (3 vagas)",
+    "Arquivista (1 vaga)",
+    "Bibliotecário (1 vaga)",
+    "Educador Social (1 vaga)",
+    "Gestor de Contratos (1 vaga)",
+    "Procurador Jurídico (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piracicaba-sp-abre-selecao-para-professores-substitutos": {
@@ -492,7 +564,24 @@
   "salario_max_texto": 4090.34,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto de Educação Infantil - Temporário (70 vagas + cadastro de reserva)",
+    "Professor Substituto de Ensino Fundamental - Temporário (50 vagas + cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/piracicaba-sp",
+   "link_banca": "https://piracicaba.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Piracicaba",
+   "data_prova": "29/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "30 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-carlos-sp-abre-concurso-com-salarios-de-ate-9833": {
   "first_seen": "2026-10-21",
@@ -682,7 +771,36 @@
    "data_prova": "22/11/2026",
    "regime": "CLT (Celetista)",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 a 40 horas semanais"
+   "jornada": "20 a 40 horas semanais",
+   "cargos_li": [
+    "Auxiliar em Saúde Bucal (1 vaga)",
+    "Telefonista (1 vaga)",
+    "Técnico de Enfermagem (6 vagas)",
+    "Técnico em Radiologia (1 vaga)",
+    "Cirurgião Dentista (1 vaga)",
+    "Enfermeiro (6 vagas)",
+    "Farmacêutico (1 vaga)",
+    "Fonoaudiólogo (1 vaga)",
+    "Médico Alergologista (1 vaga)",
+    "Médico Cardiologista (1 vaga)",
+    "Médico Clínico Geral (3 vagas)",
+    "Médico Dermatologista (1 vaga)",
+    "Médico Endocrinologista (1 vaga)",
+    "Médico Gastroclínico (1 vaga)",
+    "Médico Hepatologista (1 vaga)",
+    "Médico Infectologista (2 vagas)",
+    "Médico Nefrologista (1 vaga)",
+    "Médico Neurologista (2 vagas)",
+    "Médico Neuropediatra (2 vagas)",
+    "Médico Oftalmologista (1 vaga)",
+    "Médico Ortopedista (1 vaga)",
+    "Médico Otorrinolaringologista (1 vaga)",
+    "Médico Pneumologista (1 vaga)",
+    "Médico Proctologista (1 vaga)",
+    "Médico Psiquiatra (3 vagas)",
+    "Médico Reumatologista (1 vaga)",
+    "Médico Urologista (2 vagas)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428": {
@@ -795,7 +913,23 @@
    "data_prova": "17/01/2027",
    "regime": "Estatutário",
    "beneficios": "Vale-alimentação/refeição no valor de R$ 2.150,12. Para o cargo de Agente de Fiscalização pode haver prêmio de · Prêmio de produtividade de até 85%",
-   "jornada": "30 horas semanais"
+   "jornada": "30 horas semanais",
+   "cargos_li": [
+    "Agente de Apoio Operacional (6 vagas + CR)",
+    "Agente de Suporte Funerário (3 vagas + CR)",
+    "Agente Funerário (4 vagas + CR)",
+    "Condutor de Veículos e Máquinas (1 vaga + CR)",
+    "Motorista Especializado (3 vagas + CR)",
+    "Oficial de Serviços (1 vaga + CR)",
+    "Agente Administrativo (8 vagas + CR)",
+    "Agente de Fiscalização (5 vagas + CR)",
+    "Agente de Suporte Técnico (4 vagas + CR)",
+    "Assistente de S.V.O. (2 vagas + CR)",
+    "Técnico em Segurança do Trabalho (1 vaga + CR)",
+    "Analista Técnico (Informática) (1 vaga + CR)",
+    "Assistente Social (CR)",
+    "Engenheiro Civil (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario": {
@@ -839,7 +973,11 @@
    "data_prova": "14/03/2027",
    "regime": "Consultar edital",
    "beneficios": "Auxílios para alimentação, saúde e transporte",
-   "jornada": "40 horas semanais"
+   "jornada": "40 horas semanais",
+   "cargos_li": [
+    "Oficial de Justiça (132 vagas e cadastro de reserva)",
+    "Escrevente Técnico Judiciário (cadastro de reserva)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-ibiuna-sp-abre-concurso-publico-para-assistente-administrativo-e-controlador-interno": {
@@ -849,7 +987,24 @@
   "salario_max_texto": 5570.09,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Assistente Administrativo (1 vaga + CR)",
+    "Controlador Interno (1 vaga + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/ibiuna-sp",
+   "link_banca": "https://www.ibiuna.sp.leg.br/",
+   "nome_banca": "Câmara Municipal da Estância Turística de Ibiúna",
+   "data_prova": "29/11/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação de R$ 696,00, abono cesta básica de R$ 632,00, abono assiduidade de R$ 153,69 e auxílio-transp · Cesta básica de R$ 632,00, abono assiduidade de R$ 153,69 e auxílio-transporte em",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065": {
   "first_seen": "2026-10-21",
@@ -901,35 +1056,91 @@
    "data_prova": "13/12/2026",
    "regime": "Estatutário",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 a 40 horas semanais"
+   "jornada": "20 a 40 horas semanais",
+   "cargos_li": [
+    "Agente Operacional",
+    "Agente Administrativo",
+    "Diretor Administrativo e Financeiro",
+    "Procurador Jurídico"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-barao-de-antonina-sp-abre-concurso-publico-para-o-cargo-de-advogado": {
   "first_seen": "2026-10-21",
-  "hash": "125f02e804f1",
+  "hash": "6d9e8088352c",
   "fisio_linhas": [],
   "salario_max_texto": 6603.39,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Advogado (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA Nº 01.01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/barao-de-antonina-sp",
+   "link_banca": "https://www.camarabaraodeantonina.sp.gov.br/",
+   "nome_banca": "Câmara Municipal de Barão de Antonina",
+   "data_prova": "22/11/2026",
+   "regime": "Estatutário",
+   "beneficios": "Consultar edital",
+   "jornada": "20 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-cesario-lange-sp-abre-concurso-publico-com-salarios-de-ate-3774": {
   "first_seen": "2026-10-21",
-  "hash": "3301e74f6351",
+  "hash": "8ba9398a818b",
   "fisio_linhas": [],
   "salario_max_texto": 3774.0,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Apoio Administrativo (1 vaga)",
+    "Apoio Operacional (1 vaga)",
+    "Auxiliar de Serviços Gerais (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL 01"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/cesario-lange-sp",
+   "link_banca": "https://www.camaracesariolange.sp.gov.br/",
+   "nome_banca": "Câmara Municipal de Cesário Lange",
+   "data_prova": "22/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Auxílio-alimentação de R$ 998,92 por mês",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-clementina-sp-abre-concurso-para-o-cargo-de-controlador-interno": {
   "first_seen": "2026-10-21",
-  "hash": "c72370196bb7",
+  "hash": "2cd907aefb19",
   "fisio_linhas": [],
   "salario_max_texto": 2500.0,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Controlador Interno (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/clementina-sp",
+   "link_banca": "https://www.camaraclementina.sp.gov.br/",
+   "nome_banca": "Câmara Municipal de Clementina",
+   "data_prova": "22/11/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "20 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114": {
   "first_seen": "2026-10-21",
@@ -1005,7 +1216,17 @@
    "data_prova": "15/11/2026",
    "regime": "CLT (Celetista)",
    "beneficios": "Vale-alimentação de R$ 1.150,00 e gratificações · Vale-alimentação de R$ 1.150,00.",
-   "jornada": "20 horas semanais"
+   "jornada": "20 horas semanais",
+   "cargos_li": [
+    "Analista Administrativo (1 vaga)",
+    "Analista de Comunicação Institucional (1 vaga)",
+    "Analista Legislativo (1 vaga)",
+    "Diretor Administrativo Legislativo (1 vaga)",
+    "Diretor Contábil Legislativo (1 vaga)",
+    "Diretor Jurídico Legislativo (Cadastro Reserva)",
+    "Oficial de Finanças (Cadastro Reserva)",
+    "Oficial Legislativo (Cadastro Reserva)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-jarinu-sp-abre-concurso-publico-com-salarios-de-ate-10744": {
@@ -1015,7 +1236,29 @@
   "salario_max_texto": 10744.0,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Analista de Comunicação (1 vaga)",
+    "Analista de Finanças e Orçamento (1 vaga)",
+    "Analista de Gestão Administrativa (1 vaga)",
+    "Analista de Processo Legislativo (1 vaga)",
+    "Analista de Recursos Humanos (1 vaga)",
+    "Controlador Interno (1 vaga)",
+    "Procurador (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/jarinu-sp",
+   "link_banca": "https://camarajarinu.sp.gov.br/",
+   "nome_banca": "Câmara Municipal de Jarinu",
+   "data_prova": "22/11/2026",
+   "regime": "Estatutário",
+   "beneficios": "Consultar edital",
+   "jornada": "20 a 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-torre-de-pedra-sp-abre-concurso-publico-para-procurador-legislativo": {
   "first_seen": "2026-10-21",
@@ -1024,7 +1267,23 @@
   "salario_max_texto": 5015.07,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Procurador Legislativo (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/torre-de-pedra-sp",
+   "link_banca": "https://camaratorredepedra.sp.gov.br/",
+   "nome_banca": "Câmara Municipal de Torre de Pedra",
+   "data_prova": "06/12/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "20 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba": {
   "first_seen": "2026-10-21",
@@ -1094,17 +1353,47 @@
    "data_prova": "06/12/2026",
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Auxílio-transporte e vale-alimentação · Vale-alimentação de R$ 522,30, auxílio-transporte de R$ 273,69, adicional de insalubridade para Coveiro/Sepulta",
-   "jornada": "40 a 44 horas semanais"
+   "jornada": "40 a 44 horas semanais",
+   "cargos_li": [
+    "Auxiliar Administrativo (Carapicuíba) (5 vagas)",
+    "Coveiro/Sepultador (Carapicuíba) (1 vaga)",
+    "Engenheiro Civil (Carapicuíba) (2 vagas)",
+    "Jardineiro (Carapicuíba) (2 vagas)",
+    "Motorista (Carapicuíba) (5 vagas)",
+    "Operador de Máquinas (Carapicuíba) (3 vagas)",
+    "Serviços Gerais (Carapicuíba) (10 vagas)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-vagas-para-nivel-fundamental-em-pirassununga": {
   "first_seen": "2026-10-21",
-  "hash": "39d337063b9b",
+  "hash": "243aa036f8b8",
   "fisio_linhas": [],
   "salario_max_texto": 2298.12,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Borracheiro (Pirassununga) (1 vaga)",
+    "Carpinteiro (Pirassununga) (1 vaga)",
+    "Jardineiro (Pirassununga) (1 vaga)",
+    "Pedreiro (Pirassununga) (1 vaga)",
+    "Pintor (Pirassununga) (CR)",
+    "Serviços Gerais (Pirassununga) (5 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA PARA PROCESSO SELETIVO Nº 013/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/pirassununga-sp",
+   "link_banca": "https://www.cemmil.com.br/",
+   "nome_banca": "Cemmil",
+   "data_prova": "29/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Vale-alimentação e auxílio-transporte para atuação imediata e cadastro de reserva · Vale-alimentação de R$ 522,30, auxílio-transporte de R$ 273,69, adicional de insalubridade para Pedreiro, Pinto",
+   "jornada": "44 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/comderp-sp-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-21",
@@ -1113,16 +1402,55 @@
   "salario_max_texto": 2405.2,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar Geral (Cadastro de reserva)",
+    "Operador de Roçadeira Manual (1 vaga + Cadastro de reserva)",
+    "Pedreiro (Cadastro de reserva)",
+    "Pintor (Cadastro de reserva)",
+    "Sepultador/Pedreiro (1 vaga + Cadastro de reserva)",
+    "Servente de Pedreiro (1 vaga + Cadastro de reserva)",
+    "Serviços Gerais de Limpeza (Cadastro de reserva)",
+    "Auxiliar Administrativo (Cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-jose-do-rio-pardo-sp",
+   "link_banca": "https://www.comderp.sp.gov.br/",
+   "nome_banca": "Companhia Municipal de Desenvolvimento de São José do Rio Pardo (COMDERP)",
+   "data_prova": "22/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Vale-alimentação diário de R$ 31,92. A seleção ocorrerá por prova objetiva e prova prática · Vale-alimentação de R$ 31,92 por dia trabalhado",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/defensoria-publica-de-sp-abre-concurso-para-defensor-publico": {
   "first_seen": "2026-10-21",
-  "hash": "bdc6b072fd53",
+  "hash": "d827054d5256",
   "fisio_linhas": [],
-  "salario_max_texto": 250.0,
+  "salario_max_texto": null,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Defensor Público do Estado de São Paulo (70 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL - DPE SP X CONCURSO PÚBLICO"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www.defensoria.sp.def.br/",
+   "nome_banca": "Defensoria Pública do Estado de São Paulo",
+   "data_prova": "10/01/2027",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/detran-sp-prorroga-inscricoes-do-concurso-com-145-vagas-para-agentes-estaduais-de-transito": {
   "first_seen": "2026-10-21",
@@ -1131,7 +1459,24 @@
   "salario_max_texto": 5702.18,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Estadual de Trânsito (145 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO DETRAN-SP Nº 1",
+    "PRORROGAÇÃO DE INSCRIÇÃO"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/agente-estadual-de-transito",
+   "link_banca": "https://www.detran.sp.gov.br/concurso",
+   "nome_banca": "DETRAN-SP",
+   "data_prova": "01/11/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/famesp-sp-abre-processos-seletivos-em-diferentes-cidades": {
   "first_seen": "2026-10-21",
@@ -1235,44 +1580,128 @@
    "data_prova": "Consultar edital",
    "regime": "CLT (Celetista)",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "12 a 40 horas semanais"
+   "jornada": "12 a 40 horas semanais",
+   "cargos_li": [
+    "Fonoaudiólogo - Itapetininga/SP (1 vaga)",
+    "Técnico de Informática Júnior - Área de Suporte - Tupã/SP (1 vaga)",
+    "Enfermeiro - Tupã/SP (1 vaga)",
+    "Técnico de Farmácia - Tupã/SP (1 vaga)",
+    "Médico Neurologista Infantil - Tupã/SP (1 vaga)",
+    "Cirurgião Dentista - Botucatu/SP (1 vaga)",
+    "Técnico de Farmácia Prazo Determinado - Botucatu/SP (1 vaga)",
+    "Fonoaudiólogo - Botucatu/SP (1 vaga)",
+    "Médico - Cirurgia Geral - Bariátrica - Botucatu/SP (1 vaga)",
+    "Médico Oftalmologista - Plástica - Botucatu/SP (1 vaga)",
+    "Médico Oftalmologista - Câmara Anterior - Botucatu/SP (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/fundacao-jose-pedro-de-oliveira-sp-abre-concurso-publico-com-salarios-de-ate-8991": {
   "first_seen": "2026-10-21",
-  "hash": "e9b80aa7973c",
+  "hash": "29005a83244b",
   "fisio_linhas": [],
   "salario_max_texto": 8991.96,
-  "tem_medio": false,
+  "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Agente de Apoio Operacional (1 vaga + CR)",
+    "Técnico Ambiental (1 vaga + CR)",
+    "Analista Administrativo (1 vaga + CR)",
+    "Contador (1 vaga + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/campinas-sp",
+   "link_banca": "https://www.fjposantagenebra.sp.gov.br/",
+   "nome_banca": "Fundação José Pedro de Oliveira (FJPO)",
+   "data_prova": "13/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Auxílio-refeição/alimentação no valor de R$ 2.150,12 e subsídio parcial de vale-transporte, conforme critérios",
+   "jornada": "36 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-assistente-contabil-exclusivo-para-pcd": {
   "first_seen": "2026-10-21",
   "hash": "c44576d464d0",
   "fisio_linhas": [],
   "salario_max_texto": 3254.51,
-  "tem_medio": false,
+  "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Assistente Contábil (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 116/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/campinas-sp",
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "FUNCAMP",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-o-cargo-de-ajudante-de-cozinha": {
   "first_seen": "2026-10-21",
-  "hash": "7e052b309553",
+  "hash": "5df831cc6e29",
   "fisio_linhas": [],
   "salario_max_texto": 1999.99,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Ajudante de Cozinha (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 117/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/campinas-sp",
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "FUNCAMP",
+   "data_prova": "Consultar edital",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-selecoes-para-auxiliar-de-cozinha-auxiliar-de-lavanderia-e-recepcionista": {
   "first_seen": "2026-10-21",
-  "hash": "0b0cc4479cba",
+  "hash": "58f83744da2c",
   "fisio_linhas": [],
   "salario_max_texto": 2197.08,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar de Cozinha (1 vaga)",
+    "Auxiliar de Lavanderia (1 vaga)",
+    "Recepcionista - Exclusivo para Pessoa com Deficiência (PCD) (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 118/2026",
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 119/2026",
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 120/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/funcamp",
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "FUNCAMP",
+   "data_prova": "Consultar edital",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "150 a 200 horas mensais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-garcom": {
   "first_seen": "2026-10-21",
@@ -1281,7 +1710,23 @@
   "salario_max_texto": 2100.0,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Garçom (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 121/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/campinas-sp",
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "FUNCAMP",
+   "data_prova": "Consultar edital",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-vaga-para-tecnico-de-administracao-hospitalar-pcd": {
   "first_seen": "2026-10-21",
@@ -1290,25 +1735,75 @@
   "salario_max_texto": 3254.51,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Técnico de Administração Hospitalar (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 122/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/campinas-sp",
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "FUNCAMP",
+   "data_prova": "Consultar edital",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-telefonista-pcd-no-ame-santa-barbara-doeste": {
   "first_seen": "2026-10-21",
-  "hash": "004f7892e0bc",
+  "hash": "2c62e7927a17",
   "fisio_linhas": [],
   "salario_max_texto": 2260.93,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Telefonista (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 123/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/santa-barbara-doeste-sp",
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "FUNCAMP",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-selecoes-para-o-hospital-de-clinicas-e-hospital-estadual-sumare": {
   "first_seen": "2026-10-21",
-  "hash": "231ab6ab1516",
+  "hash": "da507b9adf5b",
   "fisio_linhas": [],
   "salario_max_texto": 4830.0,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Assistente Social (1 vaga)",
+    "Jardineiro (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 124/2026",
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 125/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/funcamp",
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "Fundação de Desenvolvimento da Unicamp (FUNCAMP)",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-analista-de-pesquisa-clinica-junior-no-hemocentro": {
   "first_seen": "2026-10-21",
@@ -1317,7 +1812,23 @@
   "salario_max_texto": 4526.93,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Analista de Pesquisa Clínica Júnior (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 126/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/campinas-sp",
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "Fundação de Desenvolvimento da Unicamp (FUNCAMP)",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-para-medicos-em-duas-especialidades-cirurgicas": {
   "first_seen": "2026-10-21",
@@ -1326,7 +1837,25 @@
   "salario_max_texto": 5979.93,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Médico I - Cirurgia do Ombro e Cotovelo (1 vaga)",
+    "Médico I - Cirurgião Cardíaco Pediátrico (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 29/2026",
+    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 30/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/ribeirao-preto-sp",
+   "link_banca": "https://www.hcribeirao.sp.gov.br/",
+   "nome_banca": "HCFMRP-USP",
+   "data_prova": "05/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Auxílio-alimentação e benefícios adicionais · Auxílio-alimentação de R$ 360,00 mensais, vale-transporte e, após admissão e laudo técnico, adicional de insalubri · Prêmio de produtividade médica",
+   "jornada": "20 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-com-vagas-para-medicos-em-diversas-especialidades": {
   "first_seen": "2026-10-21",
@@ -1335,16 +1864,102 @@
   "salario_max_texto": 5979.93,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Médico I - Cirurgia Avançada em Tumores da Pelve Feminina (1 vaga)",
+    "Médico I para atuar na Unidade de Terapia Intensiva do Campus (1 vaga)",
+    "Médico I - Cardiologia para atuar na Unidade Coronariana da Unidade de Emergência (1 vaga)",
+    "Médico do Trabalho para atuar no Serviço Especializado em Segurança e Medicina do Trabalho (1 vaga)",
+    "Médico I - Coloproctologia (1 vaga)",
+    "Médico I - Radiologia e Diagnóstico por Imagem (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 31/2026",
+    "EDITAL Nº 32/2026",
+    "EDITAL Nº 33/2026",
+    "EDITAL Nº 34/2026",
+    "EDITAL Nº 35/2026",
+    "EDITAL Nº 36/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/ribeirao-preto-sp",
+   "link_banca": "https://www.hcribeirao.sp.gov.br/",
+   "nome_banca": "HCFMRP-USP",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação de R$ 360,00 mensais, vale-transporte e, após admissão e mediante apresentação de laudo técnic · Prêmio de produtividade médica",
+   "jornada": "20 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/iamspe-sp-abre-selecao-para-residencia-medica-em-diversas-especialidades": {
   "first_seen": "2026-10-21",
-  "hash": "c13a4777e1d4",
+  "hash": "d27c47350fbe",
   "fisio_linhas": [],
   "salario_max_texto": 550.0,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Anestesiologia (10 vagas)",
+    "Cirurgia Geral (16 vagas)",
+    "Clínica Médica (36 vagas)",
+    "Dermatologia (3 vagas)",
+    "Ginecologia e Obstetrícia (10 vagas)",
+    "Infectologia (4 vagas)",
+    "Medicina Esportiva (4 vagas)",
+    "Medicina Física e Reabilitação (2 vagas)",
+    "Medicina Intensiva (6 vagas)",
+    "Neurocirurgia (2 vagas)",
+    "Neurologia (12 vagas)",
+    "Oftalmologia (8 vagas)",
+    "Ortopedia e Traumatologia (6 vagas)",
+    "Otorrinolaringologia (6 vagas)",
+    "Patologia (2 vagas)",
+    "Pediatria (10 vagas)",
+    "Psiquiatria (12 vagas)",
+    "Radiologia e Diagnóstico por Imagem (10 vagas)",
+    "Radioterapia (1 vaga)",
+    "Alergia e Imunologia (2 vagas)",
+    "Cardiologia (4 vagas)",
+    "Endocrinologia e Metabologia (5 vagas)",
+    "Gastroenterologia (5 vagas)",
+    "Geriatria (10 vagas)",
+    "Hematologia e Hemoterapia (3 vagas)",
+    "Nefrologia (8 vagas)",
+    "Oncologia Clínica (4 vagas)",
+    "Pneumologia (5 vagas)",
+    "Reumatologia (4 vagas)",
+    "Cirurgia do Aparelho Digestivo (4 vagas)",
+    "Cirurgia Pediátrica (1 vaga)",
+    "Cirurgia Plástica (4 vagas)",
+    "Cirurgia Torácica (1 vaga)",
+    "Cirurgia Vascular (4 vagas)",
+    "Urologia (4 vagas)",
+    "Cirurgia de Cabeça e Pescoço (1 vaga)",
+    "Endoscopia (3 vagas)",
+    "Mastologia (2 vagas)",
+    "Cirurgia Geral Programa Avançado (3 vagas)",
+    "Angiorradiologia e Cirurgia Endovascular (4 vagas)",
+    "Infectologia Hospitalar (1 vaga)",
+    "Medicina Paliativa (4 vagas)",
+    "Alergia e Imunologia Pediátrica (4 vagas)",
+    "Ecocardiografia (2 vagas)",
+    "Hemodinâmica e Cardiologia Intervencionista (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DE INSCRIÇÕES CEDEP Nº 02/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/residente-medico",
+   "link_banca": "https://www.avancasp.org.br/",
+   "nome_banca": "Instituto Avança São Paulo",
+   "data_prova": "28/11/2026",
+   "regime": "Residência (Bolsa)",
+   "beneficios": "Consultar edital",
+   "jornada": "60 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/ifsp-retifica-edital-de-concurso-publico-para-o-cargo-de-professor-do-ensino-basico-tecnico-e-tecnologico": {
   "first_seen": "2026-10-21",
@@ -1353,7 +1968,59 @@
   "salario_max_texto": 7356.77,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Artes Cênicas - São José do Rio Preto (1 vaga)",
+    "Professor de Design Gráfico - Jardim Ângela (2 vagas)",
+    "Professor de Design Gráfico - São Miguel Paulista (2 vagas)",
+    "Professor de Educação Especial - Bauru (2 vagas)",
+    "Professor de Eletrônica - Avaré (1 vaga)",
+    "Professor de Eletrônica - Campinas (1 vaga)",
+    "Professor de Eletrônica - Catanduva (1 vaga)",
+    "Professor de Eletrônica - Franco da Rocha (1 vaga)",
+    "Professor de Eletrônica - São Paulo (2 vagas)",
+    "Professor de Energias - Matão (1 vaga)",
+    "Professor de Engenharia de Produção - Pirituba (1 vaga)",
+    "Professor de Informática - Barretos (1 vaga)",
+    "Professor de Informática - Boituva (1 vaga)",
+    "Professor de Informática - Capivari (1 vaga)",
+    "Professor de Informática - Cidade Tiradentes (2 vagas)",
+    "Professor de Informática - Cubatão (2 vagas)",
+    "Professor de Informática - Itaquaquecetuba (1 vaga)",
+    "Professor de Informática - Jaçanã (1 vaga)",
+    "Professor de Informática - Miracatu (2 vagas)",
+    "Professor de Informática - Pirituba (2 vagas)",
+    "Professor de Informática - Santos (2 vagas)",
+    "Professor de Informática - São Miguel Paulista (2 vagas)",
+    "Professor de Informática - São Paulo (1 vaga)",
+    "Professor de Informática - São Vicente (1 vaga)",
+    "Professor de Pedagogia - Avaré (1 vaga)",
+    "Professor de Pedagogia - Caraguatatuba (1 vaga)",
+    "Professor de Pedagogia - Itaquaquecetuba (1 vaga)",
+    "Professor de Pedagogia - Pirituba (1 vaga)",
+    "Professor de Pedagogia - Presidente Epitácio (1 vaga)",
+    "Professor de Pedagogia - Registro (1 vaga)",
+    "Professor de Pedagogia - Suzano (1 vaga)",
+    "Professor de Produção Audiovisual - São José do Rio Preto (2 vagas)",
+    "Professor de Produção Audiovisual - São Miguel Paulista (1 vaga)",
+    "Professor de Segurança do Trabalho - Matão (1 vaga)",
+    "Professor de Segurança do Trabalho - São José dos Campos (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 183",
+    "EDITAL COMPLETO Nº 183",
+    "RETIFICAÇÃO - QUADRO DE VAGAS"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/ifsp",
+   "link_banca": "https://concursopublico.ifsp.edu.br/",
+   "nome_banca": "IFSP",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/ifsp-abre-processo-seletivo-com-vagas-para-professores-substitutos": {
   "first_seen": "2026-10-21",
@@ -1362,7 +2029,55 @@
   "salario_max_texto": 8340.33,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor substituto de História (1 vaga)",
+    "Professor substituto de Alimentos (1 vaga)",
+    "Professor substituto de Educação Física (1 vaga)",
+    "Professor substituto de Física (1 vaga)",
+    "Professor substituto de Química (1 vaga)",
+    "Professor substituto de Letras: Português e Inglês (1 vaga)",
+    "Professor substituto de Eletroeletrônica / Mecatrônica (1 vaga)",
+    "Professor substituto de Informática (1 vaga)",
+    "Professor substituto de Letras: Português e Libras (1 vaga)",
+    "Professor substituto de Matemática (1 vaga)",
+    "Professor substituto de Eletrotécnica (1 vaga)",
+    "Professor substituto de Informática - Arquitetura de Redes de Computadores (1 vaga)",
+    "Professor substituto de Eletrônica (1 vaga)",
+    "Professor substituto de Pedagogia (1 vaga)",
+    "Professor substituto de Filosofia (1 vaga)",
+    "Professor substituto de Sociologia (1 vaga)",
+    "Professor substituto de Letras: Português (1 vaga)",
+    "Professor substituto de Controle e Automação (1 vaga)",
+    "Professor substituto de Educação - Psicologia (1 vaga)",
+    "Professor substituto de Letras: Português e Espanhol (1 vaga)",
+    "Professor substituto de Mecânica (1 vaga)",
+    "Professor substituto de Construção Civil (1 vaga)",
+    "Professor substituto de Elétrica (1 vaga)",
+    "Professor substituto de Indústria (1 vaga)",
+    "Professor substituto de Agronomia (1 vaga)",
+    "Professor substituto de Biologia (1 vaga)",
+    "Professor substituto de Matemática (2 vagas)",
+    "Professor substituto de Engenharia de Produção (1 vaga)",
+    "Professor substituto de Engenharia de Aeronaves (2 vagas)",
+    "Professor substituto de Geografia (1 vaga)",
+    "Professor substituto de Direito (1 vaga)",
+    "Professor substituto de Gestão (1 vaga)",
+    "Professor substituto de Artes (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 123/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/professor-substituto",
+   "link_banca": "https://concursopublico.ifsp.edu.br/",
+   "nome_banca": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/ipa-sp-abre-concurso-publico-para-pesquisadores-cientificos": {
   "first_seen": "2026-10-21",
@@ -1371,16 +2086,98 @@
   "salario_max_texto": 9052.47,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Pesquisador Científico I A, área de Agroecologia e manejo sustentável: I, Agroecologia (5 vagas)",
+    "Pesquisador Científico I A, área de Agroecologia e manejo sustentável: II, Sistemas Agroflorestais (1 vaga)",
+    "Pesquisador Científico I A, área de Algas e cianobactérias de águas continentais (1 vaga)",
+    "Pesquisador Científico I A, área de Algas marinhas (1 vaga)",
+    "Pesquisador Científico I A, área de Anatomia e identificação de madeira (2 vagas)",
+    "Pesquisador Científico I A, área de Anatomia ecológica vegetal (2 vagas)",
+    "Pesquisador Científico I A, área de Biodiversidade animal (2 vagas)",
+    "Pesquisador Científico I A, área de Bioeconomia (2 vagas)",
+    "Pesquisador Científico I A, área de Bioinformática aplicada à biodiversidade (2 vagas)",
+    "Pesquisador Científico I A, área de Bioprospecção e fitoquímica (2 vagas)",
+    "Pesquisador Científico I A, área de Biorremediação (3 vagas)",
+    "Pesquisador Científico I A, área de Biotecnologia vegetal (1 vaga)",
+    "Pesquisador Científico I A, área de Botânica funcional e mudanças climáticas (2 vagas)",
+    "Pesquisador Científico I A, área de Climatologia (2 vagas)",
+    "Pesquisador Científico I A, área de Conservação de sementes nativas brasileiras (2 vagas)",
+    "Pesquisador Científico I A, área de Conservação e melhoramento genético florestal (2 vagas)",
+    "Pesquisador Científico I A, área de Ecofisiologia de sementes nativas brasileiras (1 vaga)",
+    "Pesquisador Científico I A, área de Ecologia aquática (1 vaga)",
+    "Pesquisador Científico I A, área de Ecologia reprodutiva e produção de sementes de espécies brasileiras (1 vaga)",
+    "Pesquisador Científico I A, área de Ecologia terrestre (1 vaga)",
+    "Pesquisador Científico I A, área de Educação ambiental (1 vaga)",
+    "Pesquisador Científico I A, área de Etnobotânica e sociobiodiversidade (1 vaga)",
+    "Pesquisador Científico I A, área de Finanças verdes e bioprospecção (2 vagas)",
+    "Pesquisador Científico I A, área de Fitossociologia e fitogeografia (3 vagas)",
+    "Pesquisador Científico I A, área de Fungos em ecossistemas aquáticos (1 vaga)",
+    "Pesquisador Científico I A, área de Fungos terrestres (1 vaga)",
+    "Pesquisador Científico I A, área de Geologia geral (2 vagas)",
+    "Pesquisador Científico I A, área de Geomorfologia (1 vaga)",
+    "Pesquisador Científico I A, área de Geomorfologia e hidrologia de sistemas cársticos (1 vaga)",
+    "Pesquisador Científico I A, área de Geoprocessamento e geotecnologias (2 vagas)",
+    "Pesquisador Científico I A, área de Hidrogeologia (3 vagas)",
+    "Pesquisador Científico I A, área de Hidrologia florestal (1 vaga)",
+    "Pesquisador Científico I A, área de Paleontologia (1 vaga)",
+    "Pesquisador Científico I A, área de Palinologia (2 vagas)",
+    "Pesquisador Científico I A, área de Pedologia (2 vagas)",
+    "Pesquisador Científico I A, área de Processos geodinâmicos e gestão de risco e desastres (6 vagas)",
+    "Pesquisador Científico I A, área de Recursos minerais (2 vagas)",
+    "Pesquisador Científico I A, área de Resiliência e adaptação de ecossistemas às mudanças climáticas e poluentes (2 vagas)",
+    "Pesquisador Científico I A, área de Restauração de ecossistemas (10 vagas)",
+    "Pesquisador Científico I A, área de Sustentabilidade energética baseada em biodiversidade (2 vagas)",
+    "Pesquisador Científico I A, área de Taxonomia de plantas avasculares (2 vagas)",
+    "Pesquisador Científico I A, área de Taxonomia de plantas vasculares: I, angiospermas (9 vagas)",
+    "Pesquisador Científico I A, área de Taxonomia de plantas vasculares: II, samambaias e licófitas (1 vaga)",
+    "Pesquisador Científico I A, área de Tecnologia e propriedades físicas da madeira (1 vaga)",
+    "Pesquisador Científico I A, área de Uso e ocupação do solo e processos antrópicos aplicados à gestão de riscos e desastres (3 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº : 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www.vunesp.com.br/",
+   "nome_banca": "Fundação VUNESP",
+   "data_prova": "14/02/2027",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/ipsm-de-sao-jose-dos-campos-sp-abre-concurso-para-diversos-cargos-de-nivel-superior": {
   "first_seen": "2026-10-21",
-  "hash": "c3824284fecb",
+  "hash": "c92f3caecc49",
   "fisio_linhas": [],
   "salario_max_texto": 5185.46,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Analista em Gestão Previdenciária (7 vagas + 1 vaga para PCD)",
+    "Analista Previdenciário - Direito (2 vagas + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Administrador (4 vagas + 1 vaga para PCD)",
+    "Analista Previdenciário - TI (1 vaga + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Psicólogo (1 vaga + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Assistente Social (cadastro de reserva para ampla concorrência e para PCD)",
+    "Médico (cadastro de reserva para ampla concorrência e para PCD)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-jose-dos-campos-sp",
+   "link_banca": "https://ipsmsjc.sp.gov.br/",
+   "nome_banca": "IPSM",
+   "data_prova": "13/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Vale-transporte, vale-alimentação e gratificação previdenciária, conforme previsto na legislação municipal",
+   "jornada": "12 a 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp": {
   "first_seen": "2026-10-21",
@@ -1404,7 +2201,33 @@
    "data_prova": "Consultar edital",
    "regime": "Militar Temporário (RM2)",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "Consultar edital"
+   "jornada": "Consultar edital",
+   "cargos_li": [
+    "Medicina - Auditoria Médica, São Paulo - SP (1 vaga)",
+    "Medicina - Endocrinologia, São Paulo - SP (1 vaga)",
+    "STA - Segurança do Tráfego Aquaviário, Santos - SP (2 vagas)",
+    "Inglês (Letras), São Paulo - SP (1 vaga)",
+    "Fisioterapia, São Paulo - SP (1 vaga)",
+    "Administração, São Paulo - SP (2 vagas)",
+    "Administração, Iperó - SP (1 vaga)",
+    "Ciências Contábeis, São Paulo - SP (3 vagas)",
+    "Comunicação Social, São Paulo - SP (1 vaga)",
+    "Informática, São Paulo - SP (1 vaga)",
+    "Engenharia Civil, São Paulo - SP (2 vagas)",
+    "Engenharia Civil, Iperó - SP (1 vaga)",
+    "Engenharia de Materiais, São Paulo - SP (1 vaga)",
+    "Engenharia de Produção, Iperó - SP (1 vaga)",
+    "Engenharia de Produção, São Paulo - SP (2 vagas)",
+    "Engenharia de Sistemas de Computação, Iperó - SP (1 vaga)",
+    "Engenharia de Sistemas de Computação, São Paulo - SP (1 vaga)",
+    "Engenharia de Telecomunicações, São Paulo - SP (1 vaga)",
+    "Engenharia Elétrica, São Paulo - SP (4 vagas)",
+    "Engenharia Eletrônica, Iperó - SP (1 vaga)",
+    "Engenharia Eletrônica, São Paulo - SP (4 vagas)",
+    "Engenharia Mecânica, São Paulo - SP (1 vaga)",
+    "Engenharia Naval, São Paulo - SP (1 vaga)",
+    "Engenharia Química, São Paulo - SP (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional": {
@@ -1429,26 +2252,80 @@
    "data_prova": "06/12/2026",
    "regime": "Residência (Bolsa)",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "60 horas semanais"
+   "jornada": "60 horas semanais",
+   "cargos_li": [
+    "Enfermagem (10 vagas, sendo 9 de ampla concorrência e 1 reservada para pessoas com deficiência)",
+    "Fisioterapia (4 vagas)",
+    "Odontologia (12 vagas, sendo 11 de ampla concorrência e 1 reservada para pessoas com deficiência)",
+    "Psicologia (2 vagas)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piraju-sp-abre-processo-seletivo-para-a-area-da-educacao": {
   "first_seen": "2026-10-21",
-  "hash": "ffbc51b259e2",
+  "hash": "da4fc44f3ff7",
   "fisio_linhas": [],
   "salario_max_texto": 4193.9,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor I",
+    "Professor II Artes",
+    "Professor II Educação Física",
+    "Professor II Inglês",
+    "Monitor Escolar"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/piraju-sp",
+   "link_banca": "https://www.estanciadepiraju.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal da Estância Turística de Piraju",
+   "data_prova": "13/12/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "30 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-sp-abre-processo-seletivo-para-profissionais-da-educacao": {
   "first_seen": "2026-10-21",
-  "hash": "412cc4d97b65",
+  "hash": "63834a4bef3a",
   "fisio_linhas": [],
   "salario_max_texto": 2805.09,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar de Educação Básica",
+    "Professor Adjunto de Educação Infantil",
+    "Professor Adjunto de Ensino Fundamental I",
+    "Professor Adjunto de Ensino Fundamental II - Língua Portuguesa",
+    "Professor Adjunto de Ensino Fundamental II - História",
+    "Professor Adjunto de Ensino Fundamental II - Geografia",
+    "Professor Adjunto de Ensino Fundamental II - Ciências",
+    "Professor Adjunto de Ensino Fundamental II - Matemática",
+    "Professor Adjunto de Ensino Fundamental II - Educação Física",
+    "Professor Adjunto de Ensino Fundamental II - Arte",
+    "Professor Adjunto de Ensino Fundamental II - Inglês",
+    "Professor Adjunto de Ensino Fundamental II - Informática",
+    "Professor de Atendimento Educacional Especializado - AEE"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 009/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-roque-sp",
+   "link_banca": "https://www.saoroque.sp.gov.br/",
+   "nome_banca": "Departamento de Educação",
+   "data_prova": "22/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-sp-abre-selecao-para-o-cargo-de-medico-do-trabalho": {
   "first_seen": "2026-10-21",
@@ -1457,7 +2334,23 @@
   "salario_max_texto": 5901.75,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Médico do Trabalho"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 010/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-roque-sp",
+   "link_banca": "https://www.saoroque.sp.gov.br/",
+   "nome_banca": "Prefeitura da Estância Turística de São Roque",
+   "data_prova": "22/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Cesta básica, adicional de insalubridade e gratificação de produtividade para jorn · Cesta básica (alimentos e produtos de limpeza), condicionado à frequência",
+   "jornada": "15 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-sp-abre-concurso-publico-para-guarda-civil-municipal": {
   "first_seen": "2026-10-21",
@@ -1466,16 +2359,50 @@
   "salario_max_texto": 2220.94,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Guarda Civil Municipal de 3ª Classe, masculino (24 vagas + CR)",
+    "Guarda Civil Municipal de 3ª Classe, feminino (6 vagas + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 011/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-roque-sp",
+   "link_banca": "https://www.saoroque.sp.gov.br/",
+   "nome_banca": "Prefeitura da Estância Turística de São Roque",
+   "data_prova": "06/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Auxílio-alimentação de R$ 450,00 e gratificação de assiduidade de R$ 400,00, conforme apuração de frequência · Cesta básica, auxílio-alimentação de R$ 450,00 e gratificação de assiduidade de R$",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-amparo-sp-abre-processo-seletivo-para-professores": {
   "first_seen": "2026-10-21",
-  "hash": "dd45ca850c2d",
+  "hash": "b847e6246db7",
   "fisio_linhas": [],
   "salario_max_texto": 4389.71,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Educação Básica I - PEB I (cadastro de reserva)",
+    "Professor de Educação Básica II - Educação Física - PEB II (cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/amparo-sp",
+   "link_banca": "https://www.amparo.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Amparo",
+   "data_prova": "22/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "24 a 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-aparecida-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-21",
@@ -1629,26 +2556,110 @@
    "data_prova": "20/12/2026",
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação de R$ 880,00 mais vale-transporte",
-   "jornada": "20 a 40 horas semanais"
+   "jornada": "20 a 40 horas semanais",
+   "cargos_li": [
+    "Auxiliar de Cozinha (1 vaga + CR)",
+    "Encanador (1 vaga + CR)",
+    "Faxineiro (1 vaga + CR)",
+    "Mecânico de Autos (1 vaga + CR)",
+    "Motorista (1 vaga + CR)",
+    "Pedreiro (1 vaga + CR)",
+    "Cuidador de Aluno PcD (1 vaga + CR)",
+    "Desenhista Técnico (1 vaga + CR)",
+    "Bibliotecário (1 vaga + CR)",
+    "Coordenador Pedagógico (1 vaga + CR)",
+    "Diretor de Escola (1 vaga + CR)",
+    "Engenheiro Civil (1 vaga + CR)",
+    "Engenheiro de Tráfego (1 vaga + CR)",
+    "Engenheiro Elétrico (1 vaga + CR)",
+    "Fiscal Tributário (1 vaga + CR)",
+    "Fonoaudiólogo (1 vaga + CR)",
+    "Geólogo (1 vaga + CR)",
+    "Médico do Trabalho (1 vaga + CR)",
+    "Professor II - Ensino Fundamental - Anos Iniciais - Oficinas de Escolas Integrais (1 vaga + CR)",
+    "Psicólogo (1 vaga + CR)",
+    "Tesoureiro (1 vaga + CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-aracoiaba-da-serra-sp-abre-selecao-para-cadastro-de-reserva-na-area-da-educacao": {
   "first_seen": "2026-10-21",
-  "hash": "357f39579989",
+  "hash": "8f3d42f14820",
   "fisio_linhas": [],
   "salario_max_texto": 3940.7,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Educação Básica I, II ou III - Projetos (ESTUDANTE)",
+    "Professor de Educação Básica III - Artes (ESTUDANTE)",
+    "Professor de Educação Básica III - Ciências (ESTUDANTE)",
+    "Professor de Educação Básica III - Geografia (ESTUDANTE)",
+    "Professor de Educação Básica III - História (ESTUDANTE)",
+    "Professor de Educação Básica III - Língua Inglesa (ESTUDANTE)",
+    "Professor de Educação Básica III - Língua Portuguesa (ESTUDANTE)",
+    "Professor de Educação Básica III - Matemática (ESTUDANTE)",
+    "Intérprete de LIBRAS",
+    "Ledor/Transcritor de Braille",
+    "Professor de Educação Básica III - Artes (NÃO HABILITADO)",
+    "Professor de Educação Básica III - Ciências (NÃO HABILITADO)",
+    "Professor de Educação Básica III - Geografia (NÃO HABILITADO)",
+    "Professor de Educação Básica III - História (NÃO HABILITADO)",
+    "Professor de Educação Básica III - Língua Inglesa (NÃO HABILITADO)",
+    "Professor de Educação Básica III - Língua Portuguesa (NÃO HABILITADO)",
+    "Professor de Educação Básica III - Matemática (NÃO HABILITADO)",
+    "Professor Educação Básica I, II ou III - Projetos (HABILITADO)",
+    "Professor de Educação Básica I",
+    "Professor de Educação Básica II",
+    "Professor de Educação Básica II - Educação Especial",
+    "Professor de Educação Básica III - Artes (HABILITADO)",
+    "Professor de Educação Básica III - Ciências (HABILITADO)",
+    "Professor de Educação Básica III - Educação Física (HABILITADO)",
+    "Professor de Educação Básica III - Geografia (HABILITADO)",
+    "Professor de Educação Básica III - História (HABILITADO)",
+    "Professor de Educação Básica III - Língua Inglesa (HABILITADO)",
+    "Professor de Educação Básica III - Língua Portuguesa (HABILITADO)",
+    "Professor de Educação Básica III - Matemática (HABILITADO)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO 009/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/aracoiaba-da-serra-sp",
+   "link_banca": "https://aracoiaba.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Araçoiaba da Serra",
+   "data_prova": "22/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Vale-refeição de R$ 980,00 para contratos com carga horária igual ou superior a 15 horas semanais",
+   "jornada": "15 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-prorroga-inscricoes-de-concurso-publico-para-professores-auxiliares": {
   "first_seen": "2026-10-21",
-  "hash": "e7010e310e05",
+  "hash": "c20afd0bdd36",
   "fisio_linhas": [],
   "salario_max_texto": 1250.0,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Auxiliar (10 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 179/2026",
+    "RETIFICAÇÃO I AO EDITAL Nº 179/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/birigui-sp",
+   "link_banca": "https://www.birigui.sp.gov.br/birigui/home.php",
+   "nome_banca": "Secretaria Municipal de Educação",
+   "data_prova": "29/11/2026",
+   "regime": "Estatutário",
+   "beneficios": "Vale-alimentação e prêmio por assiduidade · Vale-alimentação e prêmio por assiduidade, no total de até R$ 1.250,00.",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-buritizal-sp-abre-processo-seletivo-para-a-area-da-educacao": {
   "first_seen": "2026-10-21",
@@ -1742,7 +2753,20 @@
    "data_prova": "15/11/2026",
    "regime": "CLT (Celetista)",
    "beneficios": "Auxílio-alimentação de R$ 535,00 para funções de diretor, auxiliar infantil e professores de diversas áreas · Auxílio-alimentação de R$ 535,00 mensais · Auxílio-alimentação",
-   "jornada": "Consultar edital"
+   "jornada": "Consultar edital",
+   "cargos_li": [
+    "Diretor",
+    "PEB I - Professor de Educação Básica I",
+    "PEB II - Ensino Fundamental II - Matemática",
+    "PEB II - Ensino Fundamental II - História",
+    "PEB II - Ensino Fundamental II - Geografia",
+    "PEB II - Ensino Fundamental II - Língua Portuguesa",
+    "PEB II - Ensino Fundamental II - Inglês",
+    "PEB II - Ensino Fundamental II - Ciências",
+    "PEB II - Ensino Fundamental II - Artes",
+    "PEB II - Ensino Fundamental II - Educação Física",
+    "Auxiliar de Desenvolvimento Infantil"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cabreuva-sp-abre-concurso-publico-para-guarda-municipal": {
@@ -1752,7 +2776,23 @@
   "salario_max_texto": 3846.34,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Guarda Municipal (2 vagas + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO 02/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/cabreuva-sp",
+   "link_banca": "https://cabreuva.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Cabreúva",
+   "data_prova": "17/01/2027",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação de R$ 900,00. A seleção ocorrerá por meio de prova objetiva e teste físico · Vale-alimentação no valor de R$ 900,00.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cerquilho-sp-abre-selecao-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-21",
@@ -1761,16 +2801,54 @@
   "salario_max_texto": 2613.11,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Cuidador em Serviço Residencial Terapêutico (12 vagas + CR)",
+    "Educador Social I (4 vagas + CR)",
+    "Monitor de Transporte Escolar (4 vagas + CR)",
+    "Oficineiro Terapêutico (2 vagas + CR)",
+    "Mediador Pedagógico (1 vaga + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/cerquilho-sp",
+   "link_banca": "https://www.cerquilho.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Cerquilho",
+   "data_prova": "20/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "16 a 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-conchal-sp-abre-processo-seletivo-para-agentes-de-saude-e-de-endemias": {
   "first_seen": "2026-10-21",
-  "hash": "8518c5d2253a",
+  "hash": "218899e9ef37",
   "fisio_linhas": [],
   "salario_max_texto": 2277.89,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Comunitário de Saúde, PSF Centro (1 vaga + CR)",
+    "Agente Comunitário de Saúde, PSF Caic (1 vaga + CR)",
+    "Agente de Combate às Endemias (1 vaga + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 002/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/conchal-sp",
+   "link_banca": "https://conchal.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Conchal",
+   "data_prova": "29/11/2026",
+   "regime": "Estatutário",
+   "beneficios": "Vale-alimentação · Vale-alimentação no valor de R$ 904,48.",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cosmopolis-sp-abre-selecao-para-professores-na-area-de-educacao-especial": {
   "first_seen": "2026-10-21",
@@ -1779,16 +2857,52 @@
   "salario_max_texto": 900.0,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "PEB II - Educação Especial - DI/TEA (Deficiência Intelectual/Transtorno do Espectro Autista) (CR)",
+    "PEB II - Educação Especial - DA (Deficiência Auditiva/Surdez) (CR)",
+    "PEB II - Educação Especial - DV (Deficiência Visual) (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA PROCESSO SELETIVO N.º 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/cosmopolis-sp",
+   "link_banca": "https://cosmopolis.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Cosmópolis",
+   "data_prova": "06/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Vale-alimentação no valor de R$ 900,00.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cosmorama-sp-abre-concurso-com-salarios-de-ate-4980": {
   "first_seen": "2026-10-21",
-  "hash": "99cdd438a934",
+  "hash": "187e38d07d45",
   "fisio_linhas": [],
   "salario_max_texto": 4980.82,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Comunitário de Saúde (1 vaga + cadastro de reserva)",
+    "Agente de Combate às Endemias (1 vaga + cadastro de reserva)",
+    "Agente de Controle Interno (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/cosmorama-sp",
+   "link_banca": "https://www.cosmorama.sp.gov.br/index",
+   "nome_banca": "Município de Cosmorama",
+   "data_prova": "22/11/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "30 a 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concursos-publicos-com-salarios-de-ate-5565": {
   "first_seen": "2026-10-21",
@@ -1931,7 +3045,28 @@
    "data_prova": "20/12/2026",
    "regime": "Estatutário",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "30 a 40 horas semanais"
+   "jornada": "30 a 40 horas semanais",
+   "cargos_li": [
+    "Técnico de Nível Médio - Fiscal de Obras Particulares (1 vaga)",
+    "Técnico de Nível Médio - Fiscal de Obras Públicas (1 vaga)",
+    "Técnico de Nível Médio - Fiscal de Serviços Públicos (1 vaga)",
+    "TNM - Almoxarife (1 vaga)",
+    "Técnico de Nível Médio - Técnico Artístico (cadastro de reserva)",
+    "TNM - Técnico em Contabilidade (1 vaga)",
+    "Técnico de Nível Médio - Técnico Desportivo (cadastro de reserva)",
+    "Técnico de Nível Médio - Técnico em Farmácia (cadastro de reserva)",
+    "Técnico de Nível Médio - Técnico em Nutrição Dietética (cadastro de reserva)",
+    "TNM - Técnico em Promoção Social (21 vagas)",
+    "Técnico de Nível Médio - Técnico em Recursos Humanos (cadastro de reserva)",
+    "TNM - Técnico de Segurança do Trabalho (1 vaga)",
+    "TNM - Técnico de Serviços Administrativos (1 vaga)",
+    "Técnico de Nível Médio - Técnico de Serviços Odontológicos (cadastro de reserva)",
+    "TNM - Técnico de Tributação (cadastro de reserva)",
+    "TNM - Topógrafo (1 vaga)",
+    "Especialista em Saúde - Enfermeiro do Trabalho (2 vagas)",
+    "Especialista em Saúde - Psicólogo (12 vagas)",
+    "Guarda Civil Municipal (13 vagas)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600": {
@@ -2146,7 +3281,40 @@
    "data_prova": "13/12/2026",
    "regime": "Estatutário",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 a 40 horas semanais"
+   "jornada": "20 a 40 horas semanais",
+   "cargos_li": [
+    "Merendeira (3 vagas)",
+    "Servente (3 vagas)",
+    "Atendente de Saúde (1 vaga)",
+    "Coletor de Lixo (2 vagas)",
+    "Pedreiro (1 vaga)",
+    "Braçal (3 vagas)",
+    "Motorista (5 vagas)",
+    "Telefonista (1 vaga)",
+    "Tratorista (1 vaga)",
+    "Agente de Fiscalização Sanitária e Epidemiológica (1 vaga)",
+    "Psicólogo (3 vagas)",
+    "Operador de Máquina (1 vaga)",
+    "Técnico em Enfermagem (2 vagas)",
+    "Secretário Executivo (1 vaga)",
+    "Almoxarife (1 vaga)",
+    "Enfermeiro (3 vagas)",
+    "Pajem (2 vagas)",
+    "Controlador Interno (1 vaga)",
+    "Escriturário (1 vaga)",
+    "Encarregado de Manutenção de Frota (1 vaga)",
+    "Agente Administrativo (1 vaga)",
+    "Monitor de Educação Infantil (1 vaga)",
+    "Monitor de Transporte Escolar (2 vagas)",
+    "Psicopedagogo (1 vaga)",
+    "Professor PEB I (3 vagas)",
+    "Professor de Educação Especial (1 vaga)",
+    "Professor de Arte (1 vaga)",
+    "Encarregado de Departamento Pessoal (1 vaga)",
+    "Lançador (1 vaga)",
+    "Assistente Social (1 vaga)",
+    "Assistente Social do CRAS (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500": {
@@ -2345,7 +3513,37 @@
    "data_prova": "22/11/2026",
    "regime": "Estatutário",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "10 a 40 horas semanais"
+   "jornada": "10 a 40 horas semanais",
+   "cargos_li": [
+    "Agente de Limpeza Urbana (Roçador) (1 vaga)",
+    "Motorista (CR)",
+    "Operador de Máquinas (CR)",
+    "Operador de Piscinas (1 vaga)",
+    "Pedreiro (CR)",
+    "Serralheiro (1 vaga)",
+    "Zelador de Centro de Lazer (1 vaga)",
+    "Zelador de Praça Pública (1 vaga)",
+    "Agente da Defesa Civil (CR)",
+    "Agente de Meio Ambiente (CR)",
+    "Agente Visitador da Sucen (CR)",
+    "Atendente (CR)",
+    "Eletricista (1 vaga)",
+    "Facilitador Social (1 vaga)",
+    "Inspetor de Alunos (CR)",
+    "Merendeira (CR)",
+    "Monitor de Transporte Escolar (2 vagas)",
+    "Técnico de Enfermagem (CR)",
+    "Assistente Administrativo (CR)",
+    "Arquiteto e Urbanista (CR)",
+    "Diretor da Divisão Municipal de Assistência Social (CR)",
+    "Fisioterapeuta (CR)",
+    "Médico Clínico Geral (1 vaga)",
+    "Médico Ginecologista (1 vaga)",
+    "Médico Psiquiatra (1 vaga)",
+    "Nutricionista (CR)",
+    "Professor PEB I (CR)",
+    "Psicólogo - Especialização em TEA (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-general-salgado-sp-abre-concurso-para-cargos-na-educacao": {
@@ -2355,7 +3553,27 @@
   "salario_max_texto": 6319.48,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Diretor de Escola (1 vaga + CR)",
+    "Professor Coordenador (1 vaga + CR)",
+    "Professor Auxiliar I (1 vaga + CR)",
+    "Professor Auxiliar II - Língua Portuguesa (1 vaga + CR)",
+    "Professor Auxiliar II - Língua Matemática (1 vaga + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DE INSCRIÇÕES DO CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/general-salgado-sp",
+   "link_banca": "https://www.generalsalgado.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de General Salgado",
+   "data_prova": "22/11/2026",
+   "regime": "Estatutário",
+   "beneficios": "Consultar edital",
+   "jornada": "30 a 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude": {
   "first_seen": "2026-10-21",
@@ -2378,7 +3596,20 @@
    "data_prova": "13/12/2026",
    "regime": "Residência (Bolsa)",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "60 horas semanais"
+   "jornada": "60 horas semanais",
+   "cargos_li": [
+    "Enfermagem (4 vagas)",
+    "Educação Física (2 vagas)",
+    "Fisioterapia (3 vagas)",
+    "Nutrição (3 vagas)",
+    "Odontologia (2 vagas)",
+    "Psicologia (2 vagas)",
+    "Serviço Social (2 vagas)",
+    "Enfermagem (1 vaga)",
+    "Farmácia (1 vaga)",
+    "Psicologia (1 vaga)",
+    "Serviço Social (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guatapara-sp-abre-selecao-para-cadastro-de-reserva-em-diversas-areas": {
@@ -2388,7 +3619,28 @@
   "salario_max_texto": 3242.0,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Comunitário de Saúde (CR)",
+    "Técnico Agrícola (CR)",
+    "PEB II - Língua Portuguesa (CR)",
+    "PEB II - Inglês (CR)",
+    "PEB II - Informática (CR)",
+    "PEB II - Educação Inclusiva (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL NORMATIVO DE ABERTURA - PROCESSO SELETIVO Nº 002/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/guatapara-sp",
+   "link_banca": "https://guatapara.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Guatapará",
+   "data_prova": "15/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Vale-alimentação de R$ 950,00.",
+   "jornada": "44 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352": {
   "first_seen": "2026-10-21",
@@ -2464,7 +3716,17 @@
    "data_prova": "01/11/2026",
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "30 a 40 horas semanais"
+   "jornada": "30 a 40 horas semanais",
+   "cargos_li": [
+    "Auxiliar de Desenvolvimento Infantil - ADI (CR)",
+    "Monitor de Transporte Escolar (1 vaga)",
+    "Nutricionista (1 vaga)",
+    "Professor de Educação Básica - PEB I (1 vaga)",
+    "Professor de Educação Básica - PEB II - Arte (CR)",
+    "Professor de Educação Básica - PEB II - Educação Especial - AEE (CR)",
+    "Professor de Educação Básica - PEB II - Educação Física (CR)",
+    "Professor de Educação Básica - PEB II - Inglês (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431": {
@@ -2945,7 +4207,84 @@
    "data_prova": "29/11/2026",
    "regime": "Consultar edital",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 a 44 horas semanais"
+   "jornada": "20 a 44 horas semanais",
+   "cargos_li": [
+    "Ajudante de Pedreiro (1 vaga)",
+    "Auxiliar de Serviços de Limpeza Pública (CR)",
+    "Coveiro (CR)",
+    "Cozinheira (CR)",
+    "Eletricista (CR)",
+    "Faxineira (2 vagas)",
+    "Jardineiro (CR)",
+    "Merendeira (CR)",
+    "Monitor (1 vaga)",
+    "Motorista (1 vaga)",
+    "Pedreiro (1 vaga)",
+    "Serviços Gerais (2 vagas)",
+    "Vigia (CR)",
+    "Zelador (1 vaga)",
+    "Agente Escolar (CR)",
+    "Auxiliar Administrativo (CR)",
+    "Inspetor de Alunos (CR)",
+    "Mecânico (CR)",
+    "Motorista de Ambulância (1 vaga)",
+    "Motorista de Ônibus (1 vaga)",
+    "Operador de Máquinas (CR)",
+    "Telefonista (CR)",
+    "Tratorista (1 vaga)",
+    "Agente Comunitário (CR)",
+    "Agente de Segurança Escolar Feminino (1 vaga)",
+    "Agente de Segurança Escolar Masculino (CR)",
+    "Agente de Trânsito (1 vaga)",
+    "Almoxarife (CR)",
+    "Assessor de Depto de Patrimônio (CR)",
+    "Assessor de Depto de Saúde (CR)",
+    "Assessor de Depto de Turismo (CR)",
+    "Assessor de Divisão de Licitação (CR)",
+    "Auxiliar de Depto de Contadoria (CR)",
+    "Auxiliar de Enfermagem (CR)",
+    "Auxiliar do Depto de Compras (CR)",
+    "Encarregado de Cadastramento de Imóveis (CR)",
+    "Encarregado de Departamento Administrativo (CR)",
+    "Fiscal de Obras (1 vaga)",
+    "Fiscal de Posturas (1 vaga)",
+    "Fiscal Sanitário (CR)",
+    "Fiscal Tributário (CR)",
+    "Ouvidor (1 vaga)",
+    "Secretaria (1 vaga)",
+    "Técnico de Imobilização Ortopédica (CR)",
+    "Técnico RX (CR)",
+    "Arquiteto (CR)",
+    "Assistente Social (CR)",
+    "Contador (CR)",
+    "Diretor de Escola (CR)",
+    "Enfermeiro (CR)",
+    "Engenheiro Agrônomo (CR)",
+    "Engenheiro Civil (CR)",
+    "Farmacêutico (CR)",
+    "Fisioterapeuta (CR)",
+    "Fonoaudiólogo (CR)",
+    "Médico Especialista - Ginecologista/Obstetra (CR)",
+    "Médico Especialista - Neurologista Infantil (CR)",
+    "Médico Especialista - Pediatra (CR)",
+    "Médico Especialista - Psiquiatra Infantil (CR)",
+    "Médico Veterinário (CR)",
+    "Nutricionista (CR)",
+    "Orientador Educacional (CR)",
+    "Professor de Educação Física (CR)",
+    "Psicólogo (CR)",
+    "PTEB I (CR)",
+    "PTEB II - Artes (CR)",
+    "PTEB II - Ciências (CR)",
+    "PTEB II - Educação Especial (CR)",
+    "PTEB II - Educação Física (CR)",
+    "PTEB II - Geografia (CR)",
+    "PTEB II - História (CR)",
+    "PTEB II - Língua Portuguesa (CR)",
+    "PTEB II - Matemática (CR)",
+    "PTEB II - Turismo (CR)",
+    "Terapeuta Ocupacional (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-icem-sp-abre-novo-concurso-publico-para-diversos-cargos": {
@@ -2955,7 +4294,34 @@
   "salario_max_texto": 3611.12,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Coveiro (Cadastro de reserva)",
+    "Motorista (Cadastro de reserva)",
+    "Operador de Máquinas (Cadastro de reserva)",
+    "Tratorista (Cadastro de reserva)",
+    "Vigia (Cadastro de reserva)",
+    "Fiscal de Postura (Cadastro de reserva)",
+    "Monitor (Cadastro de reserva)",
+    "Oficial Administrativo (Cadastro de reserva)",
+    "Assistente Social (Cadastro de reserva)",
+    "Controlador Interno (1 vaga)",
+    "Fonoaudiólogo (Cadastro de reserva)",
+    "Médico Veterinário (Cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/icem-sp",
+   "link_banca": "https://www.icem.sp.gov.br/",
+   "nome_banca": "Município de Icém",
+   "data_prova": "22/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "20 a 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapecerica-da-serra-sp-abre-concurso-para-motorista-de-caminhao": {
   "first_seen": "2026-10-21",
@@ -2964,7 +4330,23 @@
   "salario_max_texto": 2755.86,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Motorista de Caminhão (1 vaga + cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 153/2026 - CONCURSO PÚBLICO 03/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/itapecerica-da-serra-sp",
+   "link_banca": "https://www.itapecerica.sp.gov.br/",
+   "nome_banca": "Prefeitura de Itapecerica da Serra",
+   "data_prova": "10/01/2027",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação · Vale-transporte (com desconto legal), assistência médica e odontológica, e vale-alimentação no valor de R$ 264",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapeva-sp-abre-processo-seletivo-para-professores": {
   "first_seen": "2026-10-21",
@@ -2973,7 +4355,32 @@
   "salario_max_texto": 500.0,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Educação Básica I - PEB I - Educação Infantil e Ensino Fundamental - Anos Iniciais (500 vagas CR)",
+    "Professor de Educação Básica I - PEB I - Educação Especial (500 vagas CR)",
+    "Professor de Educação Básica II - PEB II - Arte (500 vagas CR)",
+    "Professor de Educação Básica II - PEB II - Ciências (500 vagas CR)",
+    "Professor de Educação Básica II - PEB II - Educação Física - Anos Iniciais e Finais (500 vagas CR)",
+    "Professor de Educação Básica II - PEB II - História (500 vagas CR)",
+    "Professor de Educação Básica II - PEB II - Geografia (500 vagas CR)",
+    "Professor de Educação Básica II - PEB II - Língua Inglesa (500 vagas CR)",
+    "Professor de Educação Básica II - PEB II - Língua Portuguesa (500 vagas CR)",
+    "Professor de Educação Básica II - PEB II - Matemática (500 vagas CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/itapeva-sp",
+   "link_banca": "https://www.itapeva.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Itapeva",
+   "data_prova": "29/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Vale-alimentação de R$ 500,00. A seleção dos profissionais ocorrerá por meio de prova objetiva · Vale-alimentação de R$ 500,00.",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-selecao-para-professores": {
   "first_seen": "2026-10-21",
@@ -2982,16 +4389,60 @@
   "salario_max_texto": 5356.52,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Desenvolvimento Infantil (CR)",
+    "Professor de Educação Infantil (CR)",
+    "Professor de Educação Básica - PEB I: 1º ao 5º ano (CR)",
+    "Professor de Educação Básica - PEB I: Educação Especial (CR)",
+    "Professor de Educação Básica - PEB II: Artes (CR)",
+    "Professor de Educação Básica - PEB II: Ciências (CR)",
+    "Professor de Educação Básica - PEB II: Educação Física (CR)",
+    "Professor de Educação Básica - PEB II: Geografia (CR)",
+    "Professor de Educação Básica - PEB II: História (CR)",
+    "Professor de Educação Básica - PEB II: Inglês (CR)",
+    "Professor de Educação Básica - PEB II: Matemática (CR)",
+    "Professor de Educação Básica - PEB II: Língua Portuguesa (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 03/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/itatiba-sp",
+   "link_banca": "https://www.itatiba.sp.gov.br/",
+   "nome_banca": "Secretaria Municipal de Educação",
+   "data_prova": "22/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-processo-seletivo-para-profissionais-de-apoio-na-educacao": {
   "first_seen": "2026-10-21",
-  "hash": "f0cdb9202c8c",
+  "hash": "66ec7c266781",
   "fisio_linhas": [],
   "salario_max_texto": 2786.98,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Profissional de Apoio I",
+    "Profissional de Apoio II"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 04/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/itatiba-sp",
+   "link_banca": "https://www.itatiba.sp.gov.br/",
+   "nome_banca": "Secretaria Municipal de Educação",
+   "data_prova": "06/12/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatinga-sp-abre-processo-seletivo-para-a-area-da-educacao": {
   "first_seen": "2026-10-21",
@@ -3000,7 +4451,35 @@
   "salario_max_texto": 2558.75,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar de Desenvolvimento Infantil (5 vagas)",
+    "Professor de Educação Básica - Pré-Escola (1 vaga)",
+    "Professor de Educação Básica - PEB I (1 vaga)",
+    "Professor PEB II - Língua Portuguesa (1 vaga)",
+    "Professor PEB II - Matemática (1 vaga)",
+    "Professor PEB II - História (CR)",
+    "Professor PEB II - Geografia (1 vaga)",
+    "Professor PEB II - Ciências (CR)",
+    "Professor PEB II - Inglês (1 vaga)",
+    "Professor PEB II - Arte (1 vaga)",
+    "Professor PEB II - Música (CR)",
+    "Professor PEB II - Educação Física (1 vaga)",
+    "Professor de Educação Especial (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO Nº 002/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/itatinga-sp",
+   "link_banca": "https://www.itatinga.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Itatinga",
+   "data_prova": "29/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "44 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325": {
   "first_seen": "2026-10-21",
@@ -3186,7 +4665,35 @@
    "data_prova": "22/11/2026",
    "regime": "CLT (Celetista)",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 a 48 horas semanais"
+   "jornada": "20 a 48 horas semanais",
+   "cargos_li": [
+    "Motorista (11 vagas CR)",
+    "Agente Comunitário de Saúde (1 vaga + CR)",
+    "Agente de Desenvolvimento Infanto-Juvenil (10 vagas + CR)",
+    "Analista de Gestão e Políticas Públicas (APPGG) (1 vaga + CR)",
+    "Técnico de Enfermagem (1 vaga + CR)",
+    "Técnico de Nutrição e Dietética (CR)",
+    "Técnico em Radiologia (CR)",
+    "Assistente Social (CR)",
+    "Biomédico (CR)",
+    "Enfermeiro (CR)",
+    "Especialista de Gestão e Políticas Públicas (EPPGG) (1 vaga + CR)",
+    "Fisioterapeuta (CR)",
+    "Professor de Educação Básica (PEB II) - Arte (CR)",
+    "Professor de Educação Básica (PEB II) - Ciências (CR)",
+    "Professor de Educação Básica (PEB II) - Educação Especial (CR)",
+    "Professor de Educação Básica (PEB II) - Educação Física (1 vaga + CR)",
+    "Professor de Educação Básica (PEB II) - Geografia (1 vaga + CR)",
+    "Professor de Educação Básica (PEB II) - História (CR)",
+    "Professor de Educação Básica (PEB II) - Informática (1 vaga + CR)",
+    "Professor de Educação Básica (PEB II) - Inglês (CR)",
+    "Professor de Educação Básica (PEB II) - Matemática (CR)",
+    "Professor de Educação Básica (PEB II) - Português (CR)",
+    "Professor de Educação Básica I (PEB I) (3 vagas + CR)",
+    "Professor de Educação Infantil (PEI) (CR)",
+    "Psicólogo (CR)",
+    "Coordenador de Projetos Especiais (48a) (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lagoinha-sp-abre-vagas-para-assistente-social-e-psicologo": {
@@ -3196,7 +4703,24 @@
   "salario_max_texto": 4362.76,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Assistente Social (1 vaga)",
+    "Psicólogo (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DO PROCESSO SELETIVO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/lagoinha-sp",
+   "link_banca": "https://www.lagoinha.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Lagoinha",
+   "data_prova": "29/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "30 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-para-cargos-de-nivel-superior-na-educacao": {
   "first_seen": "2026-10-21",
@@ -3205,7 +4729,27 @@
   "salario_max_texto": 8644.0,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Diretor de Escola (1 vaga)",
+    "Professor de Educação Infantil I (1 vaga)",
+    "Professor de Educação Infantil II (1 vaga)",
+    "Professor de Ensino Fundamental I (1 vaga)",
+    "Professor de Ensino Fundamental II - Matemática (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 03/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/lencois-paulista-sp",
+   "link_banca": "https://www.lencoispaulista.sp.gov.br/",
+   "nome_banca": "Município de Lençóis Paulista",
+   "data_prova": "22/11/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação, conforme legislação municipal vigente",
+   "jornada": "28 e 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044": {
   "first_seen": "2026-10-21",
@@ -3317,17 +4861,58 @@
    "data_prova": "06/12/2026",
    "regime": "Consultar edital",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "10 a 44 horas semanais"
+   "jornada": "10 a 44 horas semanais",
+   "cargos_li": [
+    "Agente de Cemitério (1 vaga)",
+    "Agente de Serviços Gerais (1 vaga)",
+    "Agente de Serviços Urbanos (1 vaga)",
+    "Motorista (1 vaga)",
+    "Operador de Máquinas (1 vaga)",
+    "Agente Comunitário de Saúde - área 24 (1 vaga)",
+    "Agente de Vigilância Eletrônica (1 vaga)",
+    "Fiscal Ambiental (1 vaga)",
+    "Monitor de Creche (1 vaga)",
+    "Enfermeiro (1 vaga)",
+    "Médico Ortopedista (1 vaga)",
+    "Médico Pediatra (1 vaga)",
+    "Médico Psiquiatra (1 vaga)",
+    "Médico Reumatologista (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-processo-seletivo-para-professores": {
   "first_seen": "2026-10-21",
-  "hash": "1c39ccb0085b",
+  "hash": "4b99ada723e1",
   "fisio_linhas": [],
-  "salario_max_texto": 45.0,
+  "salario_max_texto": null,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Educação Especial (CR)",
+    "Professor de Ensino Fundamental II - Arte (CR)",
+    "Professor de Ensino Fundamental II - Ciências (CR)",
+    "Professor de Ensino Fundamental II - Educação Física (CR)",
+    "Professor de Ensino Fundamental II - Geografia (CR)",
+    "Professor de Ensino Fundamental II - História (CR)",
+    "Professor de Ensino Fundamental II - Inglês (CR)",
+    "Professor de Ensino Fundamental II - Português (CR)",
+    "Professor Substituto de Educação Infantil (CR)",
+    "Professor Substituto de Ensino Fundamental I (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/lencois-paulista-sp",
+   "link_banca": "https://www.lencoispaulista.sp.gov.br/",
+   "nome_banca": "Prefeitura de Lençóis Paulista",
+   "data_prova": "29/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Vale-alimentação, conforme legislação municipal",
+   "jornada": "12 a 35 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890": {
   "first_seen": "2026-10-21",
@@ -3373,7 +4958,12 @@
    "data_prova": "10/01/2027",
    "regime": "Estatutário",
    "beneficios": "Vale-transporte",
-   "jornada": "15 a 40 horas semanais"
+   "jornada": "15 a 40 horas semanais",
+   "cargos_li": [
+    "Agente de Atendimento Especial (1 vaga + CR)",
+    "Médico Psiquiatra (1 vaga + CR)",
+    "Tesoureiro (1 vaga + CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva": {
@@ -3451,7 +5041,17 @@
    "data_prova": "17/01/2027",
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação e auxílio-transporte · Vale-alimentação de R$ 1.000,00 e auxílio-transporte de R$ 9,00 por dia útil trabalhado",
-   "jornada": "40 horas semanais"
+   "jornada": "40 horas semanais",
+   "cargos_li": [
+    "Escriturário (5 vagas + CR)",
+    "Fiscal Municipal (1 vaga + CR)",
+    "Assistente Jurídico (1 vaga + CR)",
+    "Contador (1 vaga + CR)",
+    "Professor de Artes (2 vagas + CR)",
+    "Professor de Educação Física (2 vagas + CR)",
+    "Professor de Ensino Básico (5 vagas + CR)",
+    "Professor de Inglês (2 vagas + CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lucelia-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos": {
@@ -3461,7 +5061,39 @@
   "salario_max_texto": 4048.35,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Sepultador (CR)",
+    "Auxiliar de Farmácia (1 vaga)",
+    "Farmacêutico (1 vaga)",
+    "Contador (1 vaga)",
+    "Psicólogo (1 vaga)",
+    "Professor de Educação Infantil I (CR)",
+    "Professor de Educação Infantil II (CR)",
+    "Professor de Educação Básica I (CR)",
+    "Professor de Educação Básica II - Inglês (CR)",
+    "Professor de Educação Básica II - História (CR)",
+    "Professor de Educação Básica II - Geografia (CR)",
+    "Professor de Educação Básica II - Língua Portuguesa (CR)",
+    "Professor de Educação Básica II - Matemática (CR)",
+    "Professor de Educação Básica II - Ciências Físicas e Biológicas (CR)",
+    "Professor de Educação Básica II - Educação Física (CR)",
+    "Professor de Educação Básica II - Arte (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 002/2026",
+    "EDITAL DE PROCESSO SELETIVO Nº 003/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/lucelia-sp",
+   "link_banca": "https://www.lucelia.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Lucélia",
+   "data_prova": "08/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "18 a 33 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189": {
   "first_seen": "2026-10-21",
@@ -3837,35 +5469,174 @@
    "data_prova": "22/11/2026",
    "regime": "Estatutário",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 a 40 horas semanais"
+   "jornada": "20 a 40 horas semanais",
+   "cargos_li": [
+    "Analista de Sistemas",
+    "Arquiteto e Urbanista",
+    "Assistente Social",
+    "Assistente Social Educacional",
+    "Cirurgião Dentista",
+    "Controlador Interno",
+    "Coordenador de CRAS",
+    "Educador Físico",
+    "Enfermeiro PSF",
+    "Engenheiro Ambiental",
+    "Engenheiro Civil",
+    "Engenheiro Elétrico",
+    "Fonoaudiólogo",
+    "Médico Clínico Geral",
+    "Médico Veterinário",
+    "Nutricionista",
+    "Técnico Esportivo",
+    "Terapeuta Ocupacional",
+    "Agente de Informação, Educação e Comunicação (IEC) no Controle de Vetores",
+    "Assistente de Administração",
+    "Auxiliar de Administração I",
+    "Auxiliar de Lançadoria",
+    "Auxiliar de Saúde Bucal",
+    "Auxiliar de Tesouraria",
+    "Auxiliar Técnico em Contabilidade",
+    "Entrevistador do Cadastro Único",
+    "Escriturário I",
+    "Lançador Fiscal",
+    "Monitor de Ônibus Escolar",
+    "Orientador Social",
+    "Ouvidor",
+    "Profissional de Apoio Escolar (1 vaga)",
+    "Recepcionista",
+    "Secretário da Junta de Serviço Militar",
+    "Técnico de Enfermagem",
+    "Técnico em Informática",
+    "Técnico em Segurança do Trabalho",
+    "Almoxarife",
+    "Auxiliar de Almoxarife",
+    "Inspetor de Alunos",
+    "Mecânico",
+    "Operador de Máquinas e Equipamentos Rodoviários",
+    "Soldador/Serralheiro",
+    "Cozinheiro",
+    "Cuidador de Alunos do Berçário",
+    "Telefonista",
+    "Agente de Combate à Endemias",
+    "Auxiliar de Serviços Gerais",
+    "Borracheiro",
+    "Carpinteiro/Marceneiro",
+    "Eletricista",
+    "Jardineiro",
+    "Lavador de Veículos e Máquinas",
+    "Merendeira Escolar",
+    "Pedreiro",
+    "Pintor",
+    "Vigilante",
+    "Zelador de Cemitério"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-maraba-paulista-sp-abre-concurso-publico-para-psicologo": {
   "first_seen": "2026-10-21",
-  "hash": "845e811528f6",
+  "hash": "4c44a5bc6f48",
   "fisio_linhas": [],
   "salario_max_texto": 3857.19,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Psicólogo (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/maraba-paulista-sp",
+   "link_banca": "https://www.marabapaulista.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Marabá Paulista",
+   "data_prova": "15/11/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação mensal de R$ 300,00. · Auxílio-alimentação de R$ 300,00 por mês",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-processo-seletivo-para-professores-temporarios": {
   "first_seen": "2026-10-21",
   "hash": "408beaf2f29d",
   "fisio_linhas": [],
-  "salario_max_texto": 97.0,
+  "salario_max_texto": null,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor I Temporário - Educação Infantil (0 a 6 anos) (0 a 3 anos - Creche; 4 a 5 anos - EMEI) (CR)",
+    "Professor I Temporário - Ensino Fundamental (Séries Iniciais) 1º, 2º, 3º, 4º e 5º anos (CR)",
+    "Professor de Educação Especial Temporário - Deficiência Auditiva (CR)",
+    "Professor de Educação Especial Temporário - Deficiência Intelectual (CR)",
+    "Professor de Educação Especial Temporário - Deficiência Visual (CR)",
+    "Professor III Temporário - Português (CR)",
+    "Professor III Temporário - Matemática (CR)",
+    "Professor III Temporário - Geografia (CR)",
+    "Professor III Temporário - Ciências (CR)",
+    "Professor III Temporário - Inglês (CR)",
+    "Professor III Temporário - Filosofia (CR)",
+    "Professor III Temporário - Arte/Educação Artística (CR)",
+    "Professor III Temporário - História (CR)",
+    "Professor III Temporário - Química (CR)",
+    "Professor III Temporário - Biologia (CR)",
+    "Professor III Temporário - Física (CR)",
+    "Professor III Temporário - Sociologia (CR)",
+    "Professor III Temporário - Arte/Educação Artística - Arte Musical (CR)",
+    "Professor III Temporário - Arte/Educação Artística Artes Cênicas (CR)",
+    "Professor III Temporário - Educação Física (CR)",
+    "Professor III Temporário - Educação Física - Dança (CR)",
+    "Professor III Temporário - Educação Física - Ginástica Geral (CR)",
+    "Professor III Temporário - Educação Física - Natação (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/matao-sp",
+   "link_banca": "https://www.matao.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Matão",
+   "data_prova": "06/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "15 e 28 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-maua-sp-abre-processo-seletivo-para-medicos-de-diversas-especialidades": {
   "first_seen": "2026-10-21",
   "hash": "f6d3e8f09a72",
   "fisio_linhas": [],
-  "salario_max_texto": 130.0,
+  "salario_max_texto": null,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Médico Cardiologista (1 vaga + CR)",
+    "Médico Ginecologista (CR)",
+    "Médico Hematologista (CR)",
+    "Médico Infectologista (CR)",
+    "Médico Neurologista (1 vaga + CR)",
+    "Médico Neurologista Pediátrico (CR)",
+    "Médico Pneumologista na área de tisiologia (CR)",
+    "Médico Psiquiatra (CR)",
+    "Médico Psiquiatra Pediátrico (CR)",
+    "Médico Reumatologista (1 vaga + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 66/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/maua-sp",
+   "link_banca": "https://www.maua.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Mauá",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "20 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-mirassol-sp-abre-processo-seletivo-para-agente-de-suporte-ao-atendimento-da-crianca": {
   "first_seen": "2026-10-21",
@@ -3874,7 +5645,23 @@
   "salario_max_texto": 2073.62,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Agente de Suporte ao Atendimento da Criança (30 vagas + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 005/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/mirassol-sp",
+   "link_banca": "https://www.mirassol.sp.gov.br/portal/editais/3",
+   "nome_banca": "Prefeitura do Município de Mirassol",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Vale-alimentação · Vale-alimentação de R$ 300,00, proporcionais aos dias trabalhados",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-mongagua-sp-abre-processo-seletivo-para-profissional-de-apoio-escolar-e-atendente-de-educacao-i": {
   "first_seen": "2026-10-21",
@@ -3883,7 +5670,24 @@
   "salario_max_texto": 1968.83,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Profissional de Apoio Escolar (44 vagas)",
+    "Atendente de Educação I (46 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 003/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/mongagua-sp",
+   "link_banca": "https://www.mongagua.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal da Estância Balneária de Mongaguá",
+   "data_prova": "12/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815": {
   "first_seen": "2026-10-21",
@@ -3983,7 +5787,21 @@
    "data_prova": "29/11/2026",
    "regime": "Consultar edital",
    "beneficios": "Auxílio-alimentação de R$ 1.100,00, plano de saúde e complemento salarial quando necessário, conforme a legislação",
-   "jornada": "30 a 40 horas semanais"
+   "jornada": "30 a 40 horas semanais",
+   "cargos_li": [
+    "Auxiliar de Cozinha (1 vaga + CR)",
+    "Borracheiro (CR)",
+    "Coveiro (1 vaga + CR)",
+    "Escriturário I (1 vaga + CR)",
+    "Inspetor de Alunos (CR)",
+    "Agente Comunitário de Saúde (1 vaga + CR)",
+    "Motorista de Ambulância (1 vaga + CR)",
+    "Motorista I (1 vaga + CR)",
+    "Orientador Social (CR)",
+    "Assistente Social (CR)",
+    "Enfermeiro (1 vaga + CR)",
+    "Psicólogo (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas": {
@@ -4084,17 +5902,48 @@
    "data_prova": "06/12/2026",
    "regime": "Estatutário",
    "beneficios": "Vale-alimentação de R$ 1.090,10. Para alguns cargos haverá abono salarial",
-   "jornada": "30 a 40 horas semanais"
+   "jornada": "30 a 40 horas semanais",
+   "cargos_li": [
+    "Merendeira (1 vaga)",
+    "Auxiliar de Contabilidade (1 vaga)",
+    "Auxiliar de Desenvolvimento Escolar - ADE (1 vaga)",
+    "Auxiliar de Enfermagem (1 vaga)",
+    "Auxiliar de Enfermagem do PSF (1 vaga)",
+    "Escriturário (1 vaga)",
+    "Assistente Social (1 vaga)",
+    "Assistente Técnico Educacional (1 vaga)",
+    "Auxiliar de Apoio Especializado (1 vaga)",
+    "Enfermeiro (1 vaga)",
+    "Professor de Centro de Educação Infantil - Creche (maternal e berçário I e II) (4 vagas)",
+    "Psicólogo (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-campina-sp-abre-concurso-para-auxiliar-de-enfermagem-e-tecnico-em-enfermagem": {
   "first_seen": "2026-10-21",
-  "hash": "aae0d9dc82c3",
+  "hash": "ba5f01eb299c",
   "fisio_linhas": [],
   "salario_max_texto": 2154.21,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar de Enfermagem (5 vagas)",
+    "Técnico em Enfermagem (5 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DO CONCURSO PÚBLICO DE PROVAS Nº 001"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/nova-campina-sp",
+   "link_banca": "https://www.novacampina.sp.gov.br/",
+   "nome_banca": "Nova Campina",
+   "data_prova": "08/11/2026",
+   "regime": "Estatutário",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-orlandia-sp-abre-processo-seletivo-para-a-area-da-educacao": {
   "first_seen": "2026-10-21",
@@ -4103,7 +5952,35 @@
   "salario_max_texto": 4221.0,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Acompanhante Educacional Especializado",
+    "Professor de Artes - PEB II",
+    "Professor de Ciências - PEB II",
+    "Professor de Educação Especial - PEB II",
+    "Professor de Educação Física - PEB II",
+    "Professor de Ensino Fundamental - PEB I",
+    "Professor de Ensino Infantil - PEB I",
+    "Professor de Geografia - PEB II",
+    "Professor de História - PEB II",
+    "Professor de Inglês - PEB II",
+    "Professor de Matemática - PEB II",
+    "Professor de Música - PEB II",
+    "Professor de Português - PEB II"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA Nº 01.01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/orlandia-sp",
+   "link_banca": "https://www.orlandia.sp.gov.br/novo",
+   "nome_banca": "Prefeitura do Município de Orlândia",
+   "data_prova": "29/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "25 a 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632": {
   "first_seen": "2026-10-21",
@@ -4391,7 +6268,52 @@
    "data_prova": "22/11/2026",
    "regime": "Estatutário",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 a 44 horas semanais"
+   "jornada": "20 a 44 horas semanais",
+   "cargos_li": [
+    "Agente Comunitário de Saúde (2 vagas + CR)",
+    "Agente de Controle de Endemias (CR)",
+    "Agente Fiscal de Obras e Posturas (CR)",
+    "Analista de Gestão Pública ( CR)",
+    "Assistente Social (CR)",
+    "Auxiliar de Contabilidade ( CR)",
+    "Auxiliar Odontológico (1 vaga + CR)",
+    "Biomédico (CR)",
+    "Chefe de Recursos Humanos (1 vaga)",
+    "Contador (CR)",
+    "Controlador Interno e Ouvidoria (CR)",
+    "Coordenador de Licitações (1 vaga)",
+    "Coveiro (1 vaga + CR)",
+    "Cozinheira (2 vagas + CR)",
+    "Dentista ESF (1 vaga + CR)",
+    "Eletricista (1 vaga + CR)",
+    "Enfermeiro (CR)",
+    "Engenheiro Agrônomo (CR)",
+    "Engenheiro Civil (CR)",
+    "Escriturário (2 vagas + CR)",
+    "Inspetor de Alunos (CR)",
+    "Farmacêutico (CR)",
+    "Fisioterapeuta (1 vaga + CR)",
+    "Fonoaudiólogo (1 vaga + CR)",
+    "Médico Clínico Geral (CR)",
+    "Médico Cardiologista (1 vaga + CR)",
+    "Médico Ginecologista/Obstetra (1 vaga + CR)",
+    "Monitor de Creche (2 vagas + CR)",
+    "Monitor de Transporte Escolar (CR)",
+    "Motorista (2 vagas + CR)",
+    "Nutricionista (1 vaga + CR)",
+    "Operador de Máquinas de Motoniveladora (1 vaga + CR)",
+    "Operador de Máquinas Pesadas (1 vaga + CR)",
+    "Orientador de Esportes (1 vaga + CR)",
+    "Pedreiro (2 vagas + CR)",
+    "Procurador (CR)",
+    "Psicólogo (1 vaga + CR)",
+    "Técnico em Enfermagem (1 vaga + CR)",
+    "Técnico em Informática (CR)",
+    "Terapeuta Ocupacional (2 vagas + CR)",
+    "Tesoureiro (1 vaga + CR)",
+    "Trabalhador Braçal (2 vagas + CR)",
+    "Vigilante (1 vaga + CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397": {
@@ -4540,7 +6462,29 @@
    "data_prova": "29/11/2026",
    "regime": "Consultar edital",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "110 a 220 horas mensais"
+   "jornada": "110 a 220 horas mensais",
+   "cargos_li": [
+    "Motorista de Veículos Pesados (1 vaga)",
+    "Operador de Máquinas Pesadas (1 vaga)",
+    "Pedreiro (1 vaga)",
+    "Eletricista Civil (1 vaga)",
+    "Lavador de Veículos (1 vaga)",
+    "Servente de Limpeza (1 vaga)",
+    "Tratador de Animais (1 vaga)",
+    "Auxiliar de Enfermagem (1 vaga)",
+    "Monitor de Transporte Escolar (1 vaga)",
+    "Assistente Social na Educação Básica (1 vaga)",
+    "Enfermeiro de Saúde da Família (1 vaga)",
+    "Engenheiro Agrônomo (1 vaga)",
+    "Fonoaudiólogo (1 vaga)",
+    "Professor de Educação Básica I (PEB I) - 32 Horas (1 vaga)",
+    "Médico Cardiologista (1 vaga)",
+    "Médico ESF (1 vaga)",
+    "Médico Neurologista Infantil (1 vaga)",
+    "Médico Ortopedista (1 vaga)",
+    "Médico Psiquiatra Infantil (1 vaga)",
+    "Médico Urologista (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-processo-seletivo-para-a-area-da-educacao": {
@@ -4550,7 +6494,28 @@
   "salario_max_texto": 6640.0,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Coordenador Pedagógico de Escola da Educação Básica (1 vaga)",
+    "Diretor de Escola da Educação Básica (1 vaga)",
+    "Professor de Educação Básica I (1 vaga)",
+    "Professor de Educação Básica II - Arte (1 vaga)",
+    "Professor de Educação Básica II - Educação Física (1 vaga)",
+    "Professor de Educação Básica II - Inglês (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/pilar-do-sul-sp",
+   "link_banca": "https://www.pilardosul.sp.gov.br/",
+   "nome_banca": "Município de Pilar do Sul",
+   "data_prova": "29/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "30 a 40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas": {
   "first_seen": "2026-10-21",
@@ -4899,17 +6864,99 @@
    "data_prova": "13/12/2026",
    "regime": "Estatutário / CLT (conforme edital)",
    "beneficios": "Vale-alimentação de R$ 863,00 a R$ 863,50 mensais",
-   "jornada": "15 a 40 horas semanais"
+   "jornada": "15 a 40 horas semanais",
+   "cargos_li": [
+    "Auxiliar de Consultório Dentário/SUS",
+    "Fiscal de Higiene e Saneamento/SUS",
+    "Fisioterapeuta/SUS",
+    "Médico (Especialidade: Cardiologista)",
+    "Médico (Especialidade: Ginecologista)",
+    "Médico (Especialidade: Neurologista)",
+    "Médico (Especialidade: Ortopedista)",
+    "Médico (Especialidade: Pediatra)",
+    "Médico (Especialidade: Pneumologista)",
+    "Médico (Especialidade: Psiquiatra)",
+    "Médico (Especialidade: Psiquiatra Infantil)",
+    "Odontólogo/SUS",
+    "Terapeuta Ocupacional/SUS",
+    "Auxiliar Operacional",
+    "Auxiliar Operacional de Construção Civil",
+    "Auxiliar Operacional de Oficina",
+    "Borracheiro",
+    "Eletricista de Auto",
+    "Encanador",
+    "Lavador/Lubrificador",
+    "Mecânico de Auto",
+    "Motorista",
+    "Motorista Coleta",
+    "Motorista Comboio",
+    "Operador de Máquinas Agrícolas",
+    "Pintor",
+    "Porteiro",
+    "Soldador",
+    "Arquivista / Historiador",
+    "Assistente Administrativo",
+    "Cuidador/Educador",
+    "Fiscal de Saneamento Ambiental",
+    "Monitor de Turismo",
+    "Orientador Social",
+    "Pintor de Sistema Viário",
+    "Recepcionista",
+    "Técnico Agrícola",
+    "Técnico de Enfermagem",
+    "Analista de Tráfego",
+    "Arquiteto e Urbanista",
+    "Assistente Social",
+    "Bibliotecário",
+    "Biólogo",
+    "Contador",
+    "Fonoaudiólogo",
+    "Médico Veterinário",
+    "Pedagogo",
+    "Professor de Educação Física (Secretaria de Assistência Social)",
+    "Professor de Educação Física (Secretaria de Esportes)",
+    "Professor de Música (Modalidade Musicalização Infantil e Teoria Musical)",
+    "Professor de Música (Modalidade Piano Erudito)",
+    "Professor de Música (Modalidade Violino)",
+    "Psicólogo"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-das-pedras-sp-abre-selecao-para-cadastro-reserva-de-professores": {
   "first_seen": "2026-10-21",
-  "hash": "016103f56399",
+  "hash": "b54bccf6a014",
   "fisio_linhas": [],
   "salario_max_texto": 5130.63,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Educação Básica I",
+    "Professor de Educação Básica II - Arte",
+    "Professor de Educação Básica II - Ciências",
+    "Professor de Educação Básica II - Educação Especial",
+    "Professor de Educação Básica II - Educação Física",
+    "Professor de Educação Básica II - Ensino Profissionalizante - Contabilidade",
+    "Professor de Educação Básica II - Geografia",
+    "Professor de Educação Básica II - História",
+    "Professor de Educação Básica II - Inglês",
+    "Professor de Educação Básica II - Libras",
+    "Professor de Educação Básica II - Língua Portuguesa",
+    "Professor de Educação Básica II - Matemática"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/rio-das-pedras-sp",
+   "link_banca": "https://www.riodaspedras.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Rio das Pedras",
+   "data_prova": "13/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-sebastiao-sp-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva-de-professores": {
   "first_seen": "2026-10-21",
@@ -4918,7 +6965,32 @@
   "salario_max_texto": 6106.94,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Educação Básica I",
+    "Professor de Educação Básica I - Intérprete de Libras",
+    "Professor de Educação Básica II - Artes",
+    "Professor de Educação Básica II - Ciências",
+    "Professor de Educação Básica II - Geografia",
+    "Professor de Educação Básica II - História",
+    "Professor de Educação Básica II - Inglês",
+    "Professor de Educação Básica II - Língua Portuguesa",
+    "Professor de Educação Básica II - Matemática",
+    "Professor de Educação Física"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-sebastiao-sp",
+   "link_banca": "https://portal.imperioconcursos.com.br/",
+   "nome_banca": "portal.imperioconcursos.com.br",
+   "data_prova": "08/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "18 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sarapui-sp-abre-concurso-publico-para-o-cargo-de-procurador-juridico": {
   "first_seen": "2026-10-21",
@@ -4927,7 +6999,23 @@
   "salario_max_texto": 5663.04,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Procurador Jurídico (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 06/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sarapui-sp",
+   "link_banca": "https://www.sarapui.sp.gov.br/",
+   "nome_banca": "Sarapuí",
+   "data_prova": "22/11/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Cartão-alimentação no valor de R$ 444,14.",
+   "jornada": "20 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos": {
   "first_seen": "2026-10-21",
@@ -5485,7 +7573,97 @@
    "data_prova": "22/11/2026",
    "regime": "Consultar edital",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "10 a 40 horas semanais"
+   "jornada": "10 a 40 horas semanais",
+   "cargos_li": [
+    "Artífice de Obras e Serviços Públicos (CR)",
+    "Auxiliar de Cozinha (CR)",
+    "Auxiliar de Obras e Serviços Públicos (CR)",
+    "Coletor de Lixo (CR)",
+    "Coveiro (CR)",
+    "Cozinheiro (CR)",
+    "Eletricista (CR)",
+    "Padeiro (CR)",
+    "Porteiro (CR)",
+    "Recepcionista (CR)",
+    "Vigia (CR)",
+    "Agente de Apoio Escolar (CR)",
+    "Agente de Combate às Endemias (CR)",
+    "Almoxarife (CR)",
+    "Bombeiro Municipal (CR)",
+    "Cuidador de Crianças (Escolas) (CR)",
+    "Desenhista Projetista (CR)",
+    "Escriturário (CR)",
+    "Fiscal de Obras e Serviços Públicos (CR)",
+    "Fiscal Sanitário (CR)",
+    "Fiscal Tributário (CR)",
+    "Motorista (CR)",
+    "Motorista Operador de Máquinas e Equipamentos (CR)",
+    "Motorista Socorrista (CR)",
+    "Técnico Agrícola (CR)",
+    "Técnico de Imobilização Ortopédica (CR)",
+    "Técnico de Informática (CR)",
+    "Técnico em Enfermagem (CR)",
+    "Técnico em Enfermagem Socorrista (CR)",
+    "Técnico em Radiologia (CR)",
+    "Técnico em Segurança do Trabalho (CR)",
+    "Telefonista (CR)",
+    "Analista de Sistemas (CR)",
+    "Arquiteto e Urbanista (CR)",
+    "Assistente Social (CR)",
+    "Auditor Fiscal de Tributos Municipais (CR)",
+    "Bibliotecário (CR)",
+    "Biólogo (CR)",
+    "Contador (1 vaga)",
+    "Controlador Interno (1 vaga)",
+    "Dentista (Cirurgião Geral) (CR)",
+    "Dentista (Clínico Geral) (CR)",
+    "Diretor de Escola (CR)",
+    "Educador Ambiental (CR)",
+    "Educador Físico (CR)",
+    "Enfermeiro (CR)",
+    "Enfermeiro Socorrista (CR)",
+    "Farmacêutico (CR)",
+    "Fisioterapeuta (CR)",
+    "Fonoaudiólogo (CR)",
+    "Médico (Clínico Geral) (CR)",
+    "Médico Cardiologista (CR)",
+    "Médico da Saúde da Família (CR)",
+    "Médico Dermatologista (CR)",
+    "Médico Endocrinologista (CR)",
+    "Médico Ginecologista (CR)",
+    "Médico Infectologista (CR)",
+    "Médico Neurologista (CR)",
+    "Médico Neuropediatra (CR)",
+    "Médico - Obstetrícia (CR)",
+    "Médico Ortopedista (CR)",
+    "Médico Pediatra (CR)",
+    "Médico Plantonista (CR)",
+    "Médico Pneumologista (CR)",
+    "Médico Psiquiatra (CR)",
+    "Médico Reumatologista (CR)",
+    "Médico Urologista (CR)",
+    "Médico Veterinário (CR)",
+    "Nutricionista (CR)",
+    "Pedagogo (CR)",
+    "Pedagogo para a Secretaria de Saúde (CR)",
+    "Procurador Municipal (CR)",
+    "Professor de Artes - PEB II (CR)",
+    "Professor de Ciências - PEB II (CR)",
+    "Professor de Dança (CR)",
+    "Professor de Educação Básica (Ed. inf. e anos iniciais) (CR)",
+    "Professor de Educação Especial - PEB II (CR)",
+    "Professor de Educação Física - PEB II (CR)",
+    "Professor de Geografia - PEB II (CR)",
+    "Professor de História - PEB II (CR)",
+    "Professor de Inglês - PEB II (CR)",
+    "Professor de Matemática - PEB II (CR)",
+    "Professor de Música (CR)",
+    "Professor de Português - PEB II (CR)",
+    "Psicólogo (CR)",
+    "Psicopedagogo (CR)",
+    "Supervisor de Ensino (CR)",
+    "Terapeuta Ocupacional (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537": {
@@ -5704,7 +7882,40 @@
    "data_prova": "15/11/2026",
    "regime": "Estatutário",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "10 a 40 horas semanais"
+   "jornada": "10 a 40 horas semanais",
+   "cargos_li": [
+    "Serviços Gerais (1 vaga)",
+    "Coletor de Lixo (1 vaga)",
+    "Jardineiro (1 vaga)",
+    "Servente (1 vaga)",
+    "Inspetor de Alunos (1 vaga)",
+    "Auxiliar Administrativo (1 vaga)",
+    "Agente de Fiscalização de Atividades Urbanas (CR)",
+    "Agente Comunitário de Saúde - ESF Gino Chamorro/Bairro Parque São Roque Área 01 (1 vaga)",
+    "Agente Comunitário de Saúde - ESF Juca Pena/Bairro Pedro Barros Área 06 (1 vaga)",
+    "Agente Comunitário de Saúde - UBS Vila Santa Rita de Cássia Área 07 (1 vaga)",
+    "Motorista (1 vaga)",
+    "Técnico em Enfermagem (1 vaga)",
+    "Auxiliar de Educador/Cuidador (1 vaga)",
+    "Carpinteiro (1 vaga)",
+    "Pedreiro (1 vaga)",
+    "Operador de Máquinas Rodoviárias (1 vaga)",
+    "Encanador Hidráulico (CR)",
+    "Monitor de Artes (CR)",
+    "Fiscal de Higiene (CR)",
+    "Professor II - Educação Física (1 vaga)",
+    "Professor II - Arte (1 vaga)",
+    "Professor III (1 vaga)",
+    "Professor de Língua Estrangeira Inglês (CR)",
+    "Assistente Social (1 vaga)",
+    "Enfermeiro (1 vaga)",
+    "Médico Neurologista (1 vaga)",
+    "Médico do Programa de Saúde da Família (CR)",
+    "Médico Psiquiatra (CR)",
+    "Médico Oftalmologista (1 vaga)",
+    "Cirurgião Dentista do Programa de Saúde da Família - PSF (CR)",
+    "Fisioterapeuta (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539": {
@@ -5958,7 +8169,46 @@
    "data_prova": "22/11/2026",
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 e 40 horas semanais"
+   "jornada": "20 e 40 horas semanais",
+   "cargos_li": [
+    "Agente Administrativo (CR)",
+    "Agente Comunitário de Saúde (CR)",
+    "Agente de Combate às Endemias (CR)",
+    "Agente de Saneamento (CR)",
+    "Ajudante de Serviços (CR)",
+    "Ajudante Geral (CR)",
+    "Analista Contábil (CR)",
+    "Analista Programador (CR)",
+    "Assistente de Esportes (CR)",
+    "Assistente Social (CR)",
+    "Atendente de Consultório Dentário (CR)",
+    "Auditor Fiscal (CR)",
+    "Auxiliar de Enfermagem (CR)",
+    "Bibliotecário (CR)",
+    "Coordenador Pedagógico (CR)",
+    "Cozinheiro (CR)",
+    "Cuidador (CR)",
+    "Dentista - 20h (CR)",
+    "Dentista - 40h (CR)",
+    "Enfermeiro (CR)",
+    "Educador Social (CR)",
+    "Farmacêutico (CR)",
+    "Fisioterapeuta (CR)",
+    "Fonoaudiólogo (CR)",
+    "Inspetor de Alunos (CR)",
+    "Médico de Saúde da Família (CR)",
+    "Motorista (CR)",
+    "Nutricionista (CR)",
+    "Operador de Máquinas (CR)",
+    "Psicólogo (CR)",
+    "Psicopedagogo (CR)",
+    "Procurador Municipal (CR)",
+    "Técnico em Enfermagem (CR)",
+    "Técnico Agropecuário (CR)",
+    "Terapeuta Ocupacional (CR)",
+    "Tratorista (CR)",
+    "Oficial de Conservação (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-tatui-sp-abre-concurso-publico-para-cargos-de-nivel-fundamental-e-medio": {
@@ -5968,7 +8218,29 @@
   "salario_max_texto": 2193.73,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar de Serviços Gerais - Feminino (35 vagas)",
+    "Auxiliar de Serviços Gerais - Masculino (35 vagas)",
+    "Auxiliar de Serviços Educacionais (5 vagas)",
+    "Borracheiro (1 vaga)",
+    "Motorista (20 vagas)",
+    "Operador de Máquinas (5 vagas)",
+    "Prático de Poda e Corte (6 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/tatui-sp",
+   "link_banca": "https://tatui.sp.gov.br/",
+   "nome_banca": "Tatuí",
+   "data_prova": "29/11/2026",
+   "regime": "Estatutário",
+   "beneficios": "Consultar edital",
+   "jornada": "44 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-21",
@@ -6242,7 +8514,50 @@
    "data_prova": "20/12/2026",
    "regime": "Consultar edital",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 a 40 horas semanais"
+   "jornada": "20 a 40 horas semanais",
+   "cargos_li": [
+    "Ajudante Geral (1 vaga)",
+    "Jardineiro (1 vaga)",
+    "Mantenedor de Máquinas e Veículos (CR)",
+    "Motorista Sênior (CR)",
+    "Operador de Máquinas Junior (CR)",
+    "Operador de Máquinas Sênior (1 vaga)",
+    "Pedreiro (CR)",
+    "Pintor (CR)",
+    "Vigia (CR)",
+    "Agente Comunitário de Saúde, Centro (CR)",
+    "Agente Comunitário de Saúde, Godoy/Arraial (CR)",
+    "Agente Comunitário de Saúde, Lima Rico/Pantano (CR)",
+    "Agente Comunitário de Saúde, Passa Três/Machados/Caetanos/Rio Abaixo (CR)",
+    "Agente de Controle de Endemia (CR)",
+    "Almoxarife (CR)",
+    "Assistente Administrativo (CR)",
+    "Auxiliar Administrativo (CR)",
+    "Merendeira (1 vaga)",
+    "Recepcionista (CR)",
+    "Servente (1 vaga)",
+    "Servidor Braçal (1 vaga)",
+    "Técnico de Segurança do Trabalho (1 vaga)",
+    "Técnico de Enfermagem (CR)",
+    "Assistente Social (1 vaga)",
+    "Assistente Social Escolar (1 vaga)",
+    "Coordenador Pedagógico (CR)",
+    "Diretor de Escola (CR)",
+    "Enfermeiro (CR)",
+    "Professor de Educação Básica I, Classe (CR)",
+    "Professor de Educação Básica I, Educação Infantil (CR)",
+    "Professor de Educação Básica II, Educação Especial Intérprete de Libras (CR)",
+    "Professor de Educação Básica II, Educação Especial (CR)",
+    "Professor de Educação Básica II, Educação Física (CR)",
+    "Professor de Educação Básica II, Geografia (CR)",
+    "Professor de Educação Básica II, História (CR)",
+    "Professor de Educação Básica II, Inglês (CR)",
+    "Professor de Educação Básica II, Matemática (CR)",
+    "Professor de Educação Básica II, Português (CR)",
+    "Psicólogo (CR)",
+    "Psicólogo Escolar (1 vaga)",
+    "Psicopedagogo 40h (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377": {
@@ -6314,7 +8629,16 @@
    "data_prova": "13/12/2026",
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação de R$ 1.100,00.",
-   "jornada": "27 a 40 horas semanais"
+   "jornada": "27 a 40 horas semanais",
+   "cargos_li": [
+    "Inspetor de Alunos (5 vagas + CR)",
+    "Auxiliar de Serviços Infantis (10 vagas + CR)",
+    "PEB I - Professor de Educação Básica I (10 vagas + CR)",
+    "PEB II - Professor de Educação Básica II - Educação Especial em Classes Multifuncionais (2 vagas + CR)",
+    "PEB II - Professor de Educação Básica II - Educação Física (5 vagas + CR)",
+    "Coordenador Pedagógico (4 vagas + CR)",
+    "Diretor de Escola (1 vaga + CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-carapicuiba-sp-abre-novos-concursos-para-cadastro-de-reserva-em-diversas-areas": {
@@ -6434,7 +8758,24 @@
    "data_prova": "29/11/2026",
    "regime": "Estatutário",
    "beneficios": "Vale-transporte · Cesta básica no valor de R$ 390,30, sacola básica (40 kg para servidores com remun",
-   "jornada": "20 a 40 horas semanais"
+   "jornada": "20 a 40 horas semanais",
+   "cargos_li": [
+    "Auxiliar de Saúde Bucal (CR)",
+    "Técnico de Enfermagem PSF (CR)",
+    "Enfermeiro PSF (CR)",
+    "Fonoaudiólogo (CR)",
+    "Médico Endocrinologista (CR)",
+    "Médico Neurologista (CR)",
+    "Médico Pediatra (CR)",
+    "Médico Ultrassonografista (CR)",
+    "Terapeuta Ocupacional (CR)",
+    "Assistente de TI (CR)",
+    "Técnico de Edificações (CR)",
+    "Técnico em Segurança do Trabalho (CR)",
+    "Técnico em TI (CR)",
+    "Topógrafo (CR)",
+    "Instrutor de Prática Desportiva (CR)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cordeiropolis-sp-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva": {
@@ -6444,7 +8785,34 @@
   "salario_max_texto": 4972.9,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Educação Básica (PEB I)",
+    "Professor de Educação Básica (PEB I) com especialização em Educação Especial",
+    "Professor de Educação Básica (PEB I) de Apoio Especializado para Alunos Autistas",
+    "Professor de Educação Básica II de Arte",
+    "Professor de Educação Básica II de Ciências",
+    "Professor de Educação Básica II de Educação Física",
+    "Professor de Educação Básica II de Geografia",
+    "Professor de Educação Básica II de História",
+    "Professor de Educação Básica II de Inglês",
+    "Professor de Educação Básica II de Língua Portuguesa",
+    "Professor de Educação Básica II de Matemática",
+    "Psicólogo"
+   ],
+   "arquivos_edital": [
+    "CORDEIRÓPOLIS - SP"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/cordeiropolis-sp",
+   "link_banca": "https://www.cordeiropolis.sp.gov.br/",
+   "nome_banca": "Prefeitura do Município de Cordeirópolis",
+   "data_prova": "22/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "30 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-maua-sp-abre-concurso-com-100-vagas-para-guardas-civis-municipais": {
   "first_seen": "2026-10-21",
@@ -6453,7 +8821,23 @@
   "salario_max_texto": 3823.39,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Guarda Civil Municipal - 3ª classe (100 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 02/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/maua-sp",
+   "link_banca": "https://www.maua.sp.gov.br/",
+   "nome_banca": "Prefeitura do Município de Mauá",
+   "data_prova": "01/11/2026",
+   "regime": "Estatutário",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prudenco-sp-abre-concurso-publico-para-coletor-e-motorista": {
   "first_seen": "2026-10-21",
@@ -6462,7 +8846,25 @@
   "salario_max_texto": 2636.72,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Coletor (1 vaga)",
+    "Motorista (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 001/2026",
+    "RETIFICAÇÃO 1"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/presidente-prudente-sp",
+   "link_banca": "https://www.prudenco.com.br/",
+   "nome_banca": "Companhia Prudentina de Desenvolvimento (PRUDENCO)",
+   "data_prova": "15/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "44 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102": {
   "first_seen": "2026-10-21",
@@ -6532,7 +8934,16 @@
    "data_prova": "17/01/2027",
    "regime": "Estatutário",
    "beneficios": "Cartão-alimentação no valor mensal de R$ 1.309,59.",
-   "jornada": "20 a 40 horas semanais"
+   "jornada": "20 a 40 horas semanais",
+   "cargos_li": [
+    "Motorista (Cadastro de reserva)",
+    "Serviços Gerais (1 vaga)",
+    "Escriturário (5 vagas AC + 1 vaga NI)",
+    "Técnico em Informática (1 vaga)",
+    "Contador (1 vaga)",
+    "Controlador Interno (1 vaga)",
+    "Médico Perito (Cadastro de reserva)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas": {
@@ -6542,7 +8953,25 @@
   "salario_max_texto": 11359.5,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Analista em Planejamento, Orçamento e Finanças Públicas - Orçamento e Finanças Públicas (20 vagas)",
+    "Analista em Planejamento, Orçamento e Finanças Públicas - Contabilidade Pública (20 vagas)",
+    "Analista em Planejamento, Orçamento e Finanças Públicas - Ciências de Dados e Tecnologia da Informação (20 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/fcc",
+   "link_banca": "https://portal.fazenda.sp.gov.br/",
+   "nome_banca": "Secretaria da Fazenda e Planejamento (SEFAZ-SP)",
+   "data_prova": "13/12/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-para-o-cargo-de-procurador": {
   "first_seen": "2026-10-21",
@@ -6551,7 +8980,23 @@
   "salario_max_texto": 11427.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Procurador (1 vaga + cadastro reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 02/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/campinas-sp",
+   "link_banca": "https://redeinterna.setec.sp.gov.br/site/",
+   "nome_banca": "SETEC - Serviços Técnicos Gerais",
+   "data_prova": "17/01/2027",
+   "regime": "Estatutário",
+   "beneficios": "Auxílio-alimentação · Vale-alimentação/refeição no valor de R$ 2.150,12.",
+   "jornada": "36 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-pesquisador-iv-na-area-de-producao-sustentavel-em-aquicultura": {
   "first_seen": "2026-10-21",
@@ -6560,7 +9005,23 @@
   "salario_max_texto": 15294.61,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Pesquisador IV na área de Produção Sustentável em Aquicultura (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 129/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/pesquisador-iv",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação de R$ 2.000,02 e benefícios · Vale-alimentação no valor de R$ 2.000,02, plano de saúde e plano odontológico por adesão",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii": {
   "first_seen": "2026-10-21",
@@ -6594,17 +9055,36 @@
    "data_prova": "Consultar edital",
    "regime": "CLT (Celetista)",
    "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "40 horas semanais"
+   "jornada": "40 horas semanais",
+   "cargos_li": [
+    "Assistente de Suporte Acadêmico II - Área de atuação: Mecatrônica (1 vaga)"
+   ]
   }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-odontologia-de-araraquara-sp": {
   "first_seen": "2026-10-21",
-  "hash": "5358f457caee",
+  "hash": "d75e53bbf409",
   "fisio_linhas": [],
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular no Departamento de Morfologia e Clínica Infantil, nas disciplinas de Ortodontia Preventiva I, Ortodontia Preventiva II e Ortopedia Funcional dos Maxilares (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 111/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/araraquara-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-prorroga-inscricoes-de-concurso-para-professor-assistente-na-area-de-sistemas-de-computacao": {
   "first_seen": "2026-10-21",
@@ -6613,7 +9093,25 @@
   "salario_max_texto": 16994.01,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Assistente na área de Sistemas de Computação (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 112/2026",
+    "EDITAL Nº 112/2026 - COMPLETO",
+    "EDITAL Nº 118/2026 - PRORROGAÇÃO"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sorocaba-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-araraquara-sp": {
   "first_seen": "2026-10-21",
@@ -6622,7 +9120,23 @@
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular no Departamento de Administração Pública, no conjunto de disciplinas: Direito Constitucional e Tópicos de Direito Constitucional Econômico (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 290/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/araraquara-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-na-area-de-educacao-em-presidente-prudente-sp": {
   "first_seen": "2026-10-21",
@@ -6631,25 +9145,73 @@
   "salario_max_texto": 16994.01,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Assistente na área de Educação (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 463/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/presidente-prudente-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-sp-abre-concurso-para-professor-substituto-de-fisica-geral-em-araraquara": {
   "first_seen": "2026-10-21",
-  "hash": "197872555abd",
+  "hash": "55c61dfb161f",
   "fisio_linhas": [],
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Física Geral (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 158"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/araraquara-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-na-faculdade-de-ciencias-e-letras-de-assis-sp": {
   "first_seen": "2026-10-21",
-  "hash": "5d08167e2f27",
+  "hash": "4023f8ec7cf7",
   "fisio_linhas": [],
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Probabilidade e Estatística (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 392/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/assis-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vagas-para-professores-substitutos-de-fisica-geral-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-21",
@@ -6658,7 +9220,23 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Física Geral (3 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 346/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-jose-do-rio-preto-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-engenharia-quimica-em-botucatu-sp": {
   "first_seen": "2026-10-21",
@@ -6667,7 +9245,23 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Engenharia Química, subárea de Operações Industriais e Equipamentos para Engenharia Química (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 781/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/botucatu-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-na-area-de-enfermagem-em-botucatu-sp": {
   "first_seen": "2026-10-21",
@@ -6676,7 +9270,25 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Enfermagem de Saúde Pública (1 vaga)",
+    "Professor Substituto na área de Enfermagem Médico-Cirúrgica (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 786/2026",
+    "EDITAL Nº 787/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/botucatu-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-de-bauru-sp-abre-concurso-publico-para-professor-titular-na-faculdade-de-ciencias": {
   "first_seen": "2026-10-21",
@@ -6685,7 +9297,23 @@
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na disciplina de Química Analítica Quantitativa (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 472/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/bauru-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-titular-na-faculdade-de-filosofia-e-ciencias-de-marilia-sp": {
   "first_seen": "2026-10-21",
@@ -6694,7 +9322,23 @@
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular nas disciplinas de Filosofia da Educação, Filosofia da Educação I e Filosofia da Educação II (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 224/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/marilia-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-de-engenharia-sanitaria-em-rio-claro-sp": {
   "first_seen": "2026-10-21",
@@ -6703,34 +9347,98 @@
   "salario_max_texto": 16994.01,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Assistente na área de Engenharia Sanitária, junto ao Departamento de Engenharia Ambiental (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 223/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/rio-claro-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-zoologia-em-jaboticabal-sp": {
   "first_seen": "2026-10-21",
-  "hash": "fe647e6bc69b",
+  "hash": "b099853744f5",
   "fisio_linhas": [],
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Zoologia, subárea de Paleozoologia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL 391/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/jaboticabal-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-botucatu-sp": {
   "first_seen": "2026-10-21",
   "hash": "74c11a53af30",
   "fisio_linhas": [],
-  "salario_max_texto": 286.0,
+  "salario_max_texto": null,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na disciplina de Oftalmologia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 85"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/botucatu-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-de-franca-sp-abre-concurso-publico-para-professor-substituto-na-area-de-historia-da-america": {
   "first_seen": "2026-10-21",
-  "hash": "ef0d0de7d358",
+  "hash": "5ff3591ff017",
   "fisio_linhas": [],
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de História da América, subárea de História da América e História dos Estados Unidos (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 240/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/franca-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-na-area-de-educacao-em-rio-claro-sp": {
   "first_seen": "2026-10-21",
@@ -6739,7 +9447,25 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Educação, subárea de Fundamentos da Educação, nas disciplinas de \"Filosofia da Ciência\", \"Fundamentos da Bioética\" e \"Filosofia da Educação\" (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 102/2026",
+    "EDITAL Nº 104/2026",
+    "EDITAL Nº 105/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/rio-claro-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 a 24 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-21",
@@ -6748,7 +9474,23 @@
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na disciplina de Química Medicinal (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 347/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-jose-do-rio-preto-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-de-geografia-em-bauru-sp": {
   "first_seen": "2026-10-21",
@@ -6757,7 +9499,23 @@
   "salario_max_texto": 2000.02,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio - componente curricular: Geografia"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 266/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/bauru-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação e vale-transporte · Vale-alimentação de R$ 2.000,02 e vale-transporte",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professores-substitutos-em-sao-jose-dos-campos-sp": {
   "first_seen": "2026-10-21",
@@ -6766,7 +9524,21 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [],
+   "arquivos_edital": [
+    "EDITAL Nº 185/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-jose-dos-campos-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-jaboticabal-sp": {
   "first_seen": "2026-10-21",
@@ -6775,7 +9547,23 @@
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na disciplina de Aplicação e Relevância Clínica da Pesquisa, realizada na Ortopedia e Neurocirurgia de Cães e Gatos (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 394/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/jaboticabal-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-ciencias-exatas-e-da-terra-em-assis-sp": {
   "first_seen": "2026-10-21",
@@ -6784,7 +9572,23 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 395/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/assis-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-medicina-veterinaria-em-aracatuba-sp": {
   "first_seen": "2026-10-21",
@@ -6793,7 +9597,23 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Medicina Veterinária, subárea de Inspeção de Produtos de Origem Animal (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 46/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/aracatuba-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-publicos-para-professores-substitutos-em-araraquara-sp": {
   "first_seen": "2026-10-21",
@@ -6802,7 +9622,29 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Francesa\" e \"Língua Francesa IV\" (1 vaga)",
+    "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Italiana: conversação\" e \"Língua Italiana: gramática através de textos literários\" (1 vaga)",
+    "Professor Substituto na área de Educação, subárea de Ensino-Aprendizagem (1 vaga)",
+    "Professor Substituto na área de Educação, subárea de Fundamentos da Educação (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 294/2026",
+    "EDITAL Nº 295/2026",
+    "EDITAL Nº 303/2026",
+    "EDITAL Nº 304/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/araraquara-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-letras-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-21",
@@ -6811,16 +9653,48 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Letras, subárea de Literatura Brasileira (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 351/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-jose-do-rio-preto-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-com-vaga-para-professor-substituto-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-21",
-  "hash": "e2cfe8f97777",
+  "hash": "6c7df53d0cf6",
   "fisio_linhas": [],
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Ciência e Tecnologia de Alimentos, subárea de Engenharia de Alimentos (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 352/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-jose-do-rio-preto-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-engenharia-civil-no-campus-de-ilha-solteira": {
   "first_seen": "2026-10-21",
@@ -6829,7 +9703,23 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Engenharia Civil, subárea de Infraestrutura de Transportes (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 258/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/ilha-solteira-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-medicina-veterinaria-em-jaboticabal-sp": {
   "first_seen": "2026-10-21",
@@ -6838,7 +9728,23 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Medicina Veterinária, subárea de Clínica e Cirurgia Animal (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 398/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/jaboticabal-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-medicina-veterinaria-em-botucatu-sp": {
   "first_seen": "2026-10-21",
@@ -6847,7 +9753,23 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Medicina Veterinária, subárea de Patologia Animal (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 793/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/botucatu-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-medicina-veterinaria-em-aracatuba-sp": {
   "first_seen": "2026-10-21",
@@ -6856,7 +9778,23 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Medicina Veterinária, subárea de Clínica e Cirurgia Animal (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 47/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/aracatuba-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-docente-de-nivel-medio-em-bauru-sp": {
   "first_seen": "2026-10-21",
@@ -6865,7 +9803,23 @@
   "salario_max_texto": 2000.02,
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Docente na área de Mecânica"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 270/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/bauru-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação de R$ 2.000,02 e vale-transporte",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-de-ciencias-agrarias-em-dracena-sp": {
   "first_seen": "2026-10-21",
@@ -6874,7 +9828,23 @@
   "salario_max_texto": 16994.01,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Assistente na área de Ciências Agrárias, junto ao Departamento de Produção Animal (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 107/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/dracena-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-na-area-de-ciencias-politicas-em-marilia-sp": {
   "first_seen": "2026-10-21",
@@ -6883,16 +9853,48 @@
   "salario_max_texto": 16920.47,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Assistente na área de Ciências Políticas, no Departamento de Ciências Políticas e Econômicas (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 217/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/marilia-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-o-cargo-de-professor-titular-na-faculdade-de-medicina-de-botucatu-sp": {
   "first_seen": "2026-10-21",
   "hash": "0339c71a1560",
   "fisio_linhas": [],
-  "salario_max_texto": 286.0,
+  "salario_max_texto": null,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular no Departamento de Pediatria, no conjunto de disciplinas: Pediatria I e Pediatria II (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 80/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/botucatu-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-ciencias-e-tecnologia-de-presidente-prudente-sp": {
   "first_seen": "2026-10-21",
@@ -6901,7 +9903,23 @@
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na disciplina de Teoria da Medida (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 468/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/presidente-prudente-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-ciencias-agrarias-em-jaboticabal-sp": {
   "first_seen": "2026-10-21",
@@ -6910,7 +9928,23 @@
   "salario_max_texto": 3511.9,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Ciências Agrárias, subárea de Agronomia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 392/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/jaboticabal-sp",
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unicamp-sp-abre-concurso-publico-para-professor-doutor-na-area-de-ortodontia": {
   "first_seen": "2026-10-21",
@@ -6919,7 +9953,23 @@
   "salario_max_texto": 16994.31,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Doutor na área de Ortodontia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 06 P 19605 D"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/piracicaba-sp",
+   "link_banca": "https://www.unicamp.br/",
+   "nome_banca": "Universidade Estadual de Campinas (UNICAMP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação no valor de R$ 2.000,00, vale-refeição de R$ 50,00 por dia, auxílio-saúde de até R$ 900,00, en",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unicamp-sp-prorroga-inscricoes-de-concurso-publico-para-professor-doutor-na-faculdade-de-engenharia-mecanica": {
   "first_seen": "2026-10-21",
@@ -6928,16 +9978,49 @@
   "salario_max_texto": 16994.31,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Doutor na área de Energia, Térmica e Fluidos e Petróleo (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL - UNICAMP 3 P 28706 D",
+    "PRORROGAÇÃO DE INSCRIÇÃO - UNICAMP 3 P 28706"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/professor-doutor",
+   "link_banca": "https://www.unicamp.br/",
+   "nome_banca": "Universidade Estadual de Campinas (UNICAMP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação e vale-refeição diário para docentes na área de Energia · Auxílio-alimentação no valor de R$ 2.000,00, vale-refeição de R$ 50,00 por dia, auxílio-saúde de até R$ 900,00, en",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unicamp-sp-abre-concurso-para-professor-doutor-na-area-de-fisica-geral": {
   "first_seen": "2026-10-21",
-  "hash": "6f75a797937f",
+  "hash": "f3f1b96937a2",
   "fisio_linhas": [],
   "salario_max_texto": 16994.31,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Doutor na área de Física Geral (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 08 P 29836 D"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/professor-doutor",
+   "link_banca": "https://www.unicamp.br/",
+   "nome_banca": "Universidade Estadual de Campinas (UNICAMP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação de R$ 2.000,00 e vale-refeição diário · Auxílio-alimentação no valor de R$ 2.000,00, vale-refeição de R$ 50,00 por dia, auxílio-saúde de até R$ 900,00, en",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unifesp-abre-processo-seletivo-para-professor-substituto-na-area-de-fisiologia-engenharia-biomedica": {
   "first_seen": "2026-10-21",
@@ -6946,7 +10029,23 @@
   "salario_max_texto": 5037.78,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor(a) Assistente Substituto(a) - Fisiologia/Engenharia Biomédica (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 719"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www.unifesp.br/",
+   "nome_banca": "UNIFESP",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Auxílio-alimentação · Auxílio-alimentação de R$ 1.192,00.",
+   "jornada": "20 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/unifesp-abre-selecao-para-professor-substituto-de-quimica-analitica-em-diadema-sp": {
   "first_seen": "2026-10-21",
@@ -6955,70 +10054,217 @@
   "salario_max_texto": 8340.33,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Assistente A Substituto, na área de Química/Química Analítica (2 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 732"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/diadema-sp",
+   "link_banca": "https://concursos.unifesp.br/",
+   "nome_banca": "Universidade Federal de São Paulo (UNIFESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Auxílio-alimentação · Auxílio-alimentação de R$ 1.192,00.",
+   "jornada": "40 horas semanais"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/fauscs-sp-abre-selecao-para-residencia-medica-em-diversas-areas": {
   "first_seen": "2026-10-21",
   "hash": "5e74fa99f344",
   "fisio_linhas": [],
-  "salario_max_texto": 490.0,
+  "salario_max_texto": null,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Pediatria (4 vagas)",
+    "Clínica Médica (3 vagas)",
+    "Psiquiatria (4 vagas)",
+    "Cirurgia Geral (2 vagas)",
+    "Ginecologia e Obstetrícia (3 vagas)",
+    "Medicina de Família e Comunidade (8 vagas)",
+    "Dermatologia (2 vagas)",
+    "Clínica Médica (2 vagas)",
+    "Medicina de Família (4 vagas)",
+    "Psiquiatria (2 vagas)",
+    "Pediatria (6 vagas)",
+    "Clínica Médica (6 vagas)",
+    "Cirurgia Geral (6 vagas)",
+    "Ginecologia e Obstetrícia (6 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE SELEÇÃO PÚBLICA PARA RESIDÊNCIA MÉDICA 2027"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/medico-residente",
+   "link_banca": "https://www.fauscs.org.br/",
+   "nome_banca": "Fundação de Apoio à Universidade Municipal de São Caetano do Sul (FAUSCS)",
+   "data_prova": "10/01/2027",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concursos-publicos-para-professores-titulares-em-diversas-areas-de-atuacao": {
   "first_seen": "2026-10-21",
-  "hash": "d81299b386db",
+  "hash": "4bca1d7364da",
   "fisio_linhas": [],
   "salario_max_texto": 24309.11,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na área de Ciências Sociais (1 vaga)",
+    "Professor Titular na área de Educação e Humanidades (1 vaga)",
+    "Professor Titular na área de Tecnologia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 026/2026",
+    "EDITAL Nº 027/2026",
+    "EDITAL Nº 028/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-o-cargo-de-professor-titular-no-instituto-de-relacoes-internacionais": {
   "first_seen": "2026-10-21",
-  "hash": "3dfecd4cbeb8",
+  "hash": "666e4282748e",
   "fisio_linhas": [],
   "salario_max_texto": 24309.11,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na área de História das Relações Internacionais (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 5"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-sp-abre-concurso-publico-para-o-cargo-de-professor-titular-na-area-de-sistemas-de-computacao": {
   "first_seen": "2026-10-21",
-  "hash": "11f21af2009c",
+  "hash": "a0d18e9758b6",
   "fisio_linhas": [],
   "salario_max_texto": 24309.11,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular no Departamento de Sistemas de Computação, na área de Sistemas de Computação (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 011/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-professor-titular-nas-areas-de-lepidoptera-e-diptera": {
   "first_seen": "2026-10-21",
-  "hash": "fdbd913baa9a",
+  "hash": "3e14fb0cc5a9",
   "fisio_linhas": [],
   "salario_max_texto": 24309.11,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular das áreas de Lepidoptera e Diptera (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL - USP MZ 1 CP D"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concursos-para-professores-titulares-nas-areas-de-psicologia-clinica-e-experimental": {
   "first_seen": "2026-10-21",
-  "hash": "8233fb2fe5dc",
+  "hash": "014d454e1c0d",
   "fisio_linhas": [],
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na área de Psicologia Clínica (1 vaga)",
+    "Professor Titular na área de Psicologia Experimental (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº IP 11/2026",
+    "EDITAL Nº IP 12/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-o-cargo-de-professor-titular-na-fau": {
   "first_seen": "2026-10-21",
-  "hash": "28cd72aa99ca",
+  "hash": "caf3aa566193",
   "fisio_linhas": [],
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na área de Planejamento Urbano e Regional (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL 043/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-professor-doutor-na-faculdade-de-medicina": {
   "first_seen": "2026-10-21",
@@ -7027,7 +10273,23 @@
   "salario_max_texto": 7477.48,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Doutor na Disciplina de Transplante de Órgãos do Aparelho Digestivo (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 199/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-vaga-para-professor-titular-no-instituto-de-quimica-de-sao-carlos": {
   "first_seen": "2026-10-21",
@@ -7036,16 +10298,48 @@
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na área de Química Geral (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 019/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-carlos-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-o-cargo-de-professor-doutor-no-instituto-de-arquitetura-e-urbanismo": {
   "first_seen": "2026-10-21",
-  "hash": "adca0eb67467",
+  "hash": "43ba6d315e8e",
   "fisio_linhas": [],
   "salario_max_texto": 16994.01,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Doutor na área de Representação e Linguagem (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "USP DVACAD 3 CP D"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/professor-doutor",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-para-professor-doutor-na-faculdade-de-ciencias-farmaceuticas": {
   "first_seen": "2026-10-21",
@@ -7054,7 +10348,23 @@
   "salario_max_texto": 16994.01,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Doutor na área de Epidemiologia e Farmacoepidemiologia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 050/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concursos-para-professores-na-faculdade-de-economia-administracao-e-contabilidade-de-ribeirao-preto-sp": {
   "first_seen": "2026-10-21",
@@ -7063,7 +10373,25 @@
   "salario_max_texto": 25261.98,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular junto ao Departamento de Administração (1 vaga)",
+    "Professor Titular junto ao Departamento de Contabilidade (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL 057/2026",
+    "EDITAL 058/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/ribeirao-preto-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-professor-doutor-na-escola-de-engenharia-de-sao-carlos-sp": {
   "first_seen": "2026-10-21",
@@ -7072,6 +10400,47 @@
   "salario_max_texto": 16994.01,
   "tem_medio": false,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true
+  "is_baseline": true,
+  "schema_version": 4,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Doutor na área de empreendedorismo tecnológico com análise de investimento e estratégia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 32"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-carlos-sp",
+   "link_banca": "https://www5.usp.br/",
+   "nome_banca": "Universidade de São Paulo (USP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-instalador-hidraulico-no-hospital-estadual-sumare": {
+  "first_seen": "2026-10-21",
+  "first_seen_ts": "2026-10-21T15:48:13.430725-03:00",
+  "is_baseline": false,
+  "schema_version": 4,
+  "hash": "91ede5e8f4b5",
+  "fisio_linhas": [],
+  "salario_max_texto": 2543.79,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Instalador hidráulico (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 127/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sumare-sp",
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "Fundação de Desenvolvimento da Unicamp (FUNCAMP)",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital"
+  }
  }
 }

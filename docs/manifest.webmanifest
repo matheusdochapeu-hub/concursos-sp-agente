@@ -1,14 +1,14 @@
 {
-  "name": "Concursos SP — Fisioterapia & Nível Médio",
-  "short_name": "Concursos SP",
-  "description": "Monitoramento diário de concursos públicos no Estado de São Paulo para Fisioterapia e Nível Médio acima de R$ 5.000,00.",
+  "name": "Concursos SP & Brasil — Fisioterapia & Nível Médio",
+  "short_name": "Concursos BR",
+  "description": "Monitoramento diário de concursos públicos em São Paulo e no Brasil para Fisioterapia, Nível Médio/Técnico e busca por cargo.",
   "lang": "pt-BR",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#0f172a",
-  "theme_color": "#0f172a",
+  "background_color": "#f3f7f4",
+  "theme_color": "#006b2d",
   "categories": ["education", "productivity", "news"],
   "icons": [
     {

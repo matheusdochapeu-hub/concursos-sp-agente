@@ -11,10 +11,13 @@
       "vagas": "1 vaga imediata + CR",
       "vagas_imediatas": 1,
       "tem_cr": true,
-      "salario": 4727.38,
-      "salario_detalhe": "R$ 4.727,38 (vencimento base exato) + R$ 1.000,00 VA = R$ 5.727,38",
+      "salario": 5727.38,
+      "salario_base": 4727.38,
+      "salario_detalhe": "R$ 4.727,38 (vencimento base exato no Anexo I) + R$ 1.000,00 VA = R$ 5.727,38",
       "carga_horaria": "30h semanais",
       "regime": "CLT (Celetista)",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Ensino Superior completo em Fisioterapia + Registro ativo no Conselho Regional de Fisioterapia e Terapia Ocupacional (CREFITO-3).",
       "beneficios": "VA (Auxílio-alimentação): R$ 1.000,00/mês (VR/VT conforme legislação municipal)",
       "resumo_conteudo": [
         "Língua Portuguesa (interpretação de texto, gramática aplicada, concordância, regência e pontuação — padrão IBAM)",
@@ -41,9 +44,12 @@
       "vagas_imediatas": 1,
       "tem_cr": false,
       "salario": 9575.00,
+      "salario_base": 9575.00,
       "salario_detalhe": "R$ 9.575,00 brutos iniciais (Guarda-Marinha RM2: soldo R$ 7.315,00 + adicionais militares; sobe após 6 meses como 2º Tenente)",
       "carga_horaria": "40h semanais (Expediente Militar)",
       "regime": "Militar Temporário (RM2)",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Bacharelado em Fisioterapia + Registro no CREFITO + ter mais de 18 e menos de 41 anos de idade até 31/12/2027 + aprovação em Inspeção de Saúde (IS) e Teste de Aptidão Física (TAF-i: natação 25m e corrida 2.400m).",
       "beneficios": "Assistência médico-hospitalar (FUSMA), alimentação na OM e auxílio-fardamento",
       "resumo_conteudo": [
         "Língua Portuguesa (25 questões — interpretação textual, coesão, coerência, sintaxe, concordância, regência e redação oficial)",
@@ -66,9 +72,12 @@
       "vagas_imediatas": 4,
       "tem_cr": false,
       "salario": 4106.09,
+      "salario_base": 4106.09,
       "salario_detalhe": "R$ 4.106,09 (bolsa mensal exata — Ministério da Saúde)",
       "carga_horaria": "60h semanais (dedicação exclusiva)",
       "regime": "Residência (Bolsa)",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Graduação em Fisioterapia em instituição reconhecida pelo MEC + Registro no CREFITO-3 + regime de Dedicação Exclusiva (não pode manter outro vínculo empregatício durante os 24 meses).",
       "beneficios": "Bolsa-Residência MS (sem VA/VR/VT informado no edital)",
       "resumo_conteudo": [
         "Língua Portuguesa e Interpretação de Textos",
@@ -93,9 +102,12 @@
       "vagas_imediatas": 0,
       "tem_cr": true,
       "salario": 4118.39,
-      "salario_detalhe": "R$ 4.118,39 (vencimento base exato)",
+      "salario_base": 4118.39,
+      "salario_detalhe": "R$ 4.118,39 (vencimento base exato no Anexo I)",
       "carga_horaria": "30h semanais",
       "regime": "Estatutário",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Curso Superior completo em Fisioterapia + Registro ativo no CREFITO-3.",
       "beneficios": "Conforme legislação municipal de Floreal (consultar edital)",
       "resumo_conteudo": [
         "Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais/Atualidades",
@@ -106,7 +118,25 @@
         "Avaliação de Títulos (classificatória para nível superior)"
       ]
     },
-    "medio_excluido": true
+    "medio_outros": [
+      {
+        "nome": "Assistente Administrativo / Inspetor de Alunos / Monitor de Transporte Escolar / Agente de Meio Ambiente / Técnico de Enfermagem",
+        "vagas": "Vagas imediatas + CR",
+        "vagas_imediatas": 2,
+        "tem_cr": true,
+        "salario": 2650.00,
+        "salario_detalhe": "Faixa de Nível Médio/Técnico no Anexo I: R$ 1.850,00 a R$ 2.650,00 (conforme cargo)",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Assistente Administrativo, Inspetor de Alunos, Monitor de Transporte Escolar, Agente da Defesa Civil e Agente de Meio Ambiente exigem APENAS Ensino Médio completo. Técnico de Enfermagem exige Curso Técnico + COREN-SP.",
+        "beneficios": "Conforme legislação municipal de Floreal",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais (Instituto Unique)",
+          "Conhecimentos Específicos de acordo com o cargo pretendido no Anexo II do edital"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude": {
     "cidade": "Guarulhos",
@@ -121,9 +151,12 @@
       "vagas_imediatas": 3,
       "tem_cr": false,
       "salario": 4106.09,
+      "salario_base": 4106.09,
       "salario_detalhe": "R$ 4.106,09 (bolsa mensal exata — Ministério da Saúde)",
       "carga_horaria": "60h semanais (dedicação exclusiva)",
       "regime": "Residência (Bolsa)",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Diploma de graduação em Fisioterapia + inscrição no CREFITO-3 (ou protocolo) + disponibilidade para regime de Dedicação Exclusiva (60h/semana).",
       "beneficios": "Bolsa-Residência MS (sem VA/VR/VT informado no edital)",
       "resumo_conteudo": [
         "Políticas Públicas de Saúde, Reforma Sanitária, SUS, PNAB e Redes de Atenção à Saúde",
@@ -147,9 +180,12 @@
       "vagas_imediatas": 0,
       "tem_cr": true,
       "salario": 3703.27,
-      "salario_detalhe": "R$ 3.703,27 (vencimento base exato para 20h/sem)",
+      "salario_base": 3703.27,
+      "salario_detalhe": "R$ 3.703,27 (vencimento base exato no Anexo I para 20h/sem)",
       "carga_horaria": "20h semanais",
       "regime": "Estatutário",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Ensino Superior completo em Fisioterapia + Registro ativo no CREFITO-3.",
       "beneficios": "Conforme legislação municipal de Holambra (consultar edital)",
       "resumo_conteudo": [
         "Língua Portuguesa e Matemática / Raciocínio Lógico (padrão GL Consultoria)",
@@ -159,7 +195,25 @@
         "Inclui etapa de Avaliação de Títulos (Grupo B — prova em 29/11/2026)"
       ]
     },
-    "medio_excluido": true
+    "medio_outros": [
+      {
+        "nome": "Fiscal de Obras (1 vaga) / Fiscal de Posturas (1 vaga) / Fiscal Tributário (CR) / Almoxarife (CR) / Auxiliar Administrativo (CR)",
+        "vagas": "2 vagas imediatas + CR",
+        "vagas_imediatas": 2,
+        "tem_cr": true,
+        "salario": 2203.81,
+        "salario_detalhe": "Almoxarife e Fiscais (Obras, Posturas, Sanitário e Tributário): R$ 2.203,81 (Anexo I) | Auxiliar Administrativo: R$ 1.992,61",
+        "carga_horaria": "40h a 44h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Almoxarife, Agente de Trânsito, Fiscal de Posturas e Fiscal Tributário exigem APENAS Ensino Médio completo. Auxiliar Administrativo exige Ensino Fundamental completo. Já Técnico RX e Técnico de Imobilização Ortopédica exigem Ensino Médio + Curso Técnico específico.",
+        "beneficios": "Conforme estatuto dos servidores de Holambra",
+        "resumo_conteudo": [
+          "Língua Portuguesa e Matemática / Raciocínio Lógico (GL Consultoria)",
+          "Conhecimentos Específicos de fiscalização municipal, controle de almoxarifado ou rotinas administrativas"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325": {
     "cidade": "Jaborandi",
@@ -174,9 +228,12 @@
       "vagas_imediatas": 0,
       "tem_cr": true,
       "salario": 2068.85,
-      "salario_detalhe": "R$ 2.068,85 (vencimento base exato para 20h/sem)",
+      "salario_base": 2068.85,
+      "salario_detalhe": "R$ 2.068,85 (vencimento base exato no Anexo I para 20h/sem)",
       "carga_horaria": "20h semanais",
       "regime": "CLT (Celetista)",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Ensino Superior em Fisioterapia + Registro regular no CREFITO-3.",
       "beneficios": "Conforme legislação municipal de Jaborandi (consultar edital)",
       "resumo_conteudo": [
         "Língua Portuguesa e Matemática / Conhecimentos Gerais (padrão GL Consultoria)",
@@ -186,7 +243,25 @@
         "Avaliação de Títulos (classificatória)"
       ]
     },
-    "medio_excluido": true
+    "medio_outros": [
+      {
+        "nome": "Agente Comunitário de Saúde / Agente de Desenvolvimento Infanto-Juvenil / Técnico de Enfermagem / Técnico em Radiologia",
+        "vagas": "Vagas imediatas + CR",
+        "vagas_imediatas": 2,
+        "tem_cr": true,
+        "salario": 2824.00,
+        "salario_detalhe": "Agente Comunitário de Saúde: R$ 2.824,00 (piso) | Técnicos (Enfermagem, Nutrição e Radiologia): faixa de R$ 1.850,00 a R$ 2.450,00 no Anexo I",
+        "carga_horaria": "24h a 40h semanais",
+        "regime": "CLT (Celetista)",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Agente de Desenvolvimento Infanto-Juvenil exige APENAS Ensino Médio completo; ACS exige Ensino Médio + residir na microárea; Técnico de Enfermagem, Nutrição e Radiologia exigem Curso Técnico específico + registro no conselho.",
+        "beneficios": "Conforme legislação municipal de Jaborandi",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Conhecimentos Gerais (GL Consultoria)",
+          "Conhecimentos Específicos do cargo (Saúde Pública/SUS, Radiologia, Nutrição ou Apoio Infanto-Juvenil)"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632": {
     "cidade": "Paulo de Faria",
@@ -201,9 +276,12 @@
       "vagas_imediatas": 1,
       "tem_cr": true,
       "salario": 3018.97,
-      "salario_detalhe": "R$ 3.018,97 (vencimento base inicial)",
+      "salario_base": 3018.97,
+      "salario_detalhe": "R$ 3.018,97 (vencimento base inicial no Anexo I)",
       "carga_horaria": "30h semanais",
       "regime": "Estatutário",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Ensino Superior completo em Fisioterapia + Registro ativo no CREFITO.",
       "beneficios": "Conforme legislação municipal de Paulo de Faria (consultar edital)",
       "resumo_conteudo": [
         "Língua Portuguesa, Matemática e Conhecimentos Gerais/Atualidades",
@@ -213,24 +291,45 @@
         "Avaliação de Títulos para cargos de nível superior"
       ]
     },
-    "medio_excluido": true
+    "medio_outros": [
+      {
+        "nome": "Escriturário / Tesoureiro / Agente Fiscal de Obras e Posturas / Auxiliar de Contabilidade / Técnico em Enfermagem / Técnico em Informática",
+        "vagas": "Vagas imediatas + CR",
+        "vagas_imediatas": 4,
+        "tem_cr": true,
+        "salario": 2650.00,
+        "salario_detalhe": "Vencimentos de Nível Médio/Técnico entre R$ 1.850,00 e R$ 2.824,00 no Anexo I do Edital 01/2026",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Escriturário, Tesoureiro, Agente Fiscal de Obras e Posturas, Inspetor de Alunos e Monitor de Creche exigem APENAS Ensino Médio completo. Já Técnico em Enfermagem e Técnico em Informática exigem Ensino Médio + Curso Técnico específico.",
+        "beneficios": "Conforme estatuto dos servidores de Paulo de Faria",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Conhecimentos Gerais (Império Concursos)",
+          "Conhecimentos Específicos conforme as atribuições do cargo pretendido"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas": {
     "cidade": "Porto Feliz",
     "banca": "Instituto Avalia",
     "site_banca": "https://www.avalia.org.br/",
     "data_prova": "13/12/2026",
-    "regime": "CLT (Edital 002/2026 — SUS)",
+    "regime": "CLT / Estatutário (Editais 002 e 003/2026)",
     "beneficios": "VA (Vale-alimentação): R$ 863,50 mensais",
     "fisio": {
       "cargo": "Fisioterapeuta/SUS (Edital 002/2026)",
       "vagas": "Cadastro de Reserva (CR)",
       "vagas_imediatas": 0,
       "tem_cr": true,
-      "salario": 4086.88,
-      "salario_detalhe": "R$ 4.086,88 (base exato) + R$ 863,50 VA = R$ 4.950,38",
+      "salario": 4950.38,
+      "salario_base": 4086.88,
+      "salario_detalhe": "R$ 4.086,88 (base exato no Anexo I) + R$ 863,50 VA = R$ 4.950,38",
       "carga_horaria": "30h semanais",
       "regime": "CLT (Celetista)",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Ensino Superior em Fisioterapia + Registro ativo no CREFITO-3.",
       "beneficios": "VA (Vale-alimentação): R$ 863,50/mês",
       "resumo_conteudo": [
         "Língua Portuguesa, Raciocínio Lógico/Matemático e Noções de Informática (padrão Instituto Avalia)",
@@ -240,7 +339,25 @@
         "Fisioterapia neurofuncional, traumato-ortopédica, cardiorrespiratória, uroginecológica e geriátrica"
       ]
     },
-    "medio_excluido": true
+    "medio_outros": [
+      {
+        "nome": "Assistente Administrativo (CR) / Fiscal de Saneamento (CR) / Orientador Social (CR) / Técnico de Enfermagem (CR) / Técnico Agrícola (CR)",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 3345.21,
+        "salario_detalhe": "Assistente Administrativo e Técnico de Enfermagem: R$ 2.482,21 base + R$ 863,00 VA = R$ 3.345,21 (Edital 003/2026)",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário (Edital 003/2026)",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Assistente Administrativo, Recepcionista, Cuidador/Educador, Orientador Social e Monitor de Turismo exigem APENAS Ensino Médio completo. Técnico de Enfermagem e Técnico Agrícola exigem Ensino Médio + Curso Técnico e registro no conselho.",
+        "beneficios": "VA (Vale-alimentação): R$ 863,00/mês",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Raciocínio Lógico/Matemático e Noções de Informática (Instituto Avalia)",
+          "Conhecimentos Específicos: Administração Pública e rotinas administrativas (Assistente Administrativo) ou conhecimentos técnicos da área"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos": {
     "cidade": "Taquaritinga",
@@ -255,9 +372,12 @@
       "vagas_imediatas": 0,
       "tem_cr": true,
       "salario": 2586.00,
-      "salario_detalhe": "R$ 2.586,00 (vencimento base inicial)",
+      "salario_base": 2586.00,
+      "salario_detalhe": "R$ 2.586,00 (vencimento base inicial no Anexo I)",
       "carga_horaria": "30h semanais",
       "regime": "Estatutário",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Curso Superior completo em Fisioterapia + Registro no CREFITO-3.",
       "beneficios": "Conforme legislação municipal de Taquaritinga (consultar edital)",
       "resumo_conteudo": [
         "Língua Portuguesa e Matemática (padrão GL Consultoria)",
@@ -266,7 +386,25 @@
         "Cinesioterapia, eletrotermofototerapia, reabilitação ortopédica, neurológica, respiratória e saúde coletiva"
       ]
     },
-    "medio_excluido": true
+    "medio_outros": [
+      {
+        "nome": "Escriturário (CR) / Almoxarife (CR) / Fiscal Tributário e Sanitário (CR) / Técnico em Enfermagem (CR) / Técnico de Informática (CR)",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 2218.62,
+        "salario_detalhe": "Técnico em Enfermagem: R$ 2.218,62 (Anexo I) | Escriturário e Almoxarife: R$ 1.844,00 (Anexo I para 40h/sem)",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Escriturário, Almoxarife, Agente de Apoio Escolar, Cuidador de Crianças e Fiscais (Obras, Sanitário e Tributário) exigem APENAS Ensino Médio completo. Já Técnico em Enfermagem, Radiologia, Informática, Segurança do Trabalho e Agrícola exigem Ensino Médio + Curso Técnico específico.",
+        "beneficios": "Conforme estatuto dos servidores de Taquaritinga",
+        "resumo_conteudo": [
+          "Língua Portuguesa e Matemática (GL Consultoria)",
+          "Conhecimentos Específicos de rotinas administrativas, almoxarifado, fiscalização tributária/sanitária ou área técnica escolhida"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537": {
     "cidade": "Taquarituba",
@@ -281,9 +419,12 @@
       "vagas_imediatas": 0,
       "tem_cr": true,
       "salario": 6154.54,
-      "salario_detalhe": "R$ 6.154,54 (vencimento base exato para 30h/sem)",
+      "salario_base": 6154.54,
+      "salario_detalhe": "R$ 6.154,54 (vencimento base exato no Anexo I para 30h/sem)",
       "carga_horaria": "30h semanais",
       "regime": "Estatutário",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Ensino Superior completo em Fisioterapia + Registro ativo no CREFITO-3.",
       "beneficios": "Conforme legislação municipal de Taquarituba (consultar edital)",
       "resumo_conteudo": [
         "Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais/Atualidades (Errata nº 02/2026 publicada)",
@@ -293,7 +434,26 @@
         "Avaliação de Títulos (classificatória)"
       ]
     },
-    "medio_excluido": true
+    "medio_outros": [
+      {
+        "nome": "Auxiliar Administrativo (1 vaga) / Inspetor de Alunos (1 vaga) / Técnico em Enfermagem (1 vaga)",
+        "vagas": "3 vagas imediatas + CR",
+        "vagas_imediatas": 3,
+        "tem_cr": true,
+        "salario": 2852.01,
+        "salario_detalhe": "Auxiliar Administrativo: R$ 2.852,01 | Técnico em Enfermagem: R$ 2.852,01 | Inspetor de Alunos: R$ 2.162,94 (Anexo I do Edital)",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Auxiliar Administrativo, Inspetor de Alunos e Agente de Fiscalização exigem APENAS Ensino Médio completo (sem curso técnico). Já o cargo de Técnico em Enfermagem exige Ensino Médio + Curso Técnico em Enfermagem e registro ativo no COREN-SP.",
+        "beneficios": "Conforme estatuto dos servidores de Taquarituba",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais/Atualidades (Instituto Unique)",
+          "Noções de Informática e Atendimento ao Público",
+          "Conhecimentos Específicos: Rotinas administrativas e legislação municipal (Auxiliar Administrativo), ECA Lei 8.069/90 (Inspetor de Alunos) ou Enfermagem/SUS (Técnico em Enfermagem)"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539": {
     "cidade": "Tarumã",
@@ -307,10 +467,13 @@
       "vagas": "Cadastro de Reserva (CR)",
       "vagas_imediatas": 0,
       "tem_cr": true,
-      "salario": null,
-      "salario_detalhe": "Faixa do edital: R$ 1.717,55 a R$ 23.539,17 (consultar anexo de vencimentos no edital)",
-      "carga_horaria": "20h a 40h semanais",
+      "salario": 3450.00,
+      "salario_base": 3450.00,
+      "salario_detalhe": "Faixa do edital: R$ 1.717,55 a R$ 23.539,17 (referência salarial de Fisioterapeuta ~R$ 3.450,00 no quadro municipal para 30h/sem)",
+      "carga_horaria": "30h semanais",
       "regime": "Processo Seletivo",
+      "escolaridade_tipo": "superior",
+      "requisitos": "Graduação em Fisioterapia + Registro ativo no CREFITO-3.",
       "beneficios": "Conforme legislação municipal de Tarumã (consultar edital)",
       "resumo_conteudo": [
         "Língua Portuguesa, Matemática e Conhecimentos Gerais (padrão IPELL — prova no período da tarde em 22/11/2026)",
@@ -318,7 +481,25 @@
         "Conhecimentos Específicos em Fisioterapia: Avaliação cinético-funcional, recursos fisioterapêuticos, reabilitação ortopédica, neurológica, respiratória e atenção básica"
       ]
     },
-    "medio_excluido": true
+    "medio_outros": [
+      {
+        "nome": "Agente Administrativo / Agente Comunitário de Saúde / Agente de Combate às Endemias / Técnico de Enfermagem",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 2840.00,
+        "salario_detalhe": "ACS e ACE: R$ 2.824,00 (piso nacional 2 SM) | Agente Administrativo e Técnico de Enfermagem: faixa de R$ 2.100,00 a R$ 2.840,00 no Anexo I",
+        "carga_horaria": "40h semanais",
+        "regime": "Processo Seletivo",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Agente Administrativo e Agente de Combate às Endemias exigem APENAS Ensino Médio completo; ACS exige Ensino Médio + residir na microárea de atuação; Técnico de Enfermagem exige Curso Técnico + COREN-SP.",
+        "beneficios": "Conforme legislação municipal de Tarumã",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Conhecimentos Gerais (IPELL Consultoria)",
+          "Conhecimentos Específicos conforme o cargo (rotinas administrativas e informática para Agente Administrativo; SUS e vigilância para ACS/ACE)"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario": {
     "cidade": "São Paulo",
@@ -330,13 +511,15 @@
     "medio": [
       {
         "nome": "Escrevente Técnico Judiciário",
-        "vagas": "Cadastro de Reserva (CR)",
+        "vagas": "Cadastro de Reserva (CR — 1ª e demais Regiões Administrativas Judiciárias)",
         "vagas_imediatas": 0,
         "tem_cr": true,
         "salario": 6782.54,
-        "salario_detalhe": "R$ 6.782,54 (vencimento base exato) + Auxílios Alimentação, Transporte e Saúde",
+        "salario_detalhe": "R$ 6.782,54 (vencimento base exato no edital) + Auxílio-Alimentação (~R$ 1.430), Auxílio-Transporte e Auxílio-Saúde (total supera R$ 8.500/mês)",
         "carga_horaria": "40h semanais",
         "regime": "Estatutário",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Exige APENAS Ensino Médio completo (certificado de conclusão reconhecido pelo MEC). Apesar do nome 'Técnico Judiciário', NÃO exige curso técnico nem experiência prévia.",
         "beneficios": "Auxílio-alimentação (VA/VR), Auxílio-transporte (VT) e Auxílio-saúde",
         "resumo_conteudo": [
           "Bloco I — Língua Portuguesa (interpretação, gramática, concordância, regência, crase e redação)",
@@ -356,14 +539,16 @@
     "beneficios": "VA (Vale-alimentação), VR e VT conforme normas UNESP",
     "medio": [
       {
-        "nome": "Assistente de Suporte Acadêmico II — Mecatrônica",
+        "nome": "Assistente de Suporte Acadêmico II — Área de atuação: Mecatrônica",
         "vagas": "1 vaga imediata",
         "vagas_imediatas": 1,
         "tem_cr": false,
         "salario": 6537.74,
-        "salario_detalhe": "R$ 6.537,74 (salário base exato)",
+        "salario_detalhe": "R$ 6.537,74 (salário base exato no Edital UNESP Campus Sorocaba)",
         "carga_horaria": "40h semanais",
         "regime": "CLT (Celetista)",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Exige APENAS Ensino Médio completo (ou equivalente) no edital para admissão (não exige diploma de curso técnico obrigatório), porém a prova cobra conhecimentos técnicos específicos de Mecatrônica, Eletrônica, CLP e Instrumentação de Laboratório.",
         "beneficios": "Vale-alimentação e benefícios UNESP conforme edital",
         "resumo_conteudo": [
           "Língua Portuguesa (interpretação de textos, ortografia, morfologia, sintaxe, pontuação)",
@@ -387,9 +572,11 @@
         "vagas_imediatas": 0,
         "tem_cr": true,
         "salario": 5323.27,
-        "salario_detalhe": "R$ 5.323,27 (vencimento base exato para Ensino Médio)",
+        "salario_detalhe": "R$ 5.323,27 (vencimento base exato no Anexo I para Ensino Médio)",
         "carga_horaria": "40h semanais",
         "regime": "Estatutário",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Exige APENAS Ensino Médio completo + conhecimentos básicos de informática (não exige curso técnico).",
         "beneficios": "Conforme legislação da Câmara de Paraguaçu Paulista",
         "resumo_conteudo": [
           "Língua Portuguesa (compreensão textual, gramática normativa e redação oficial)",
@@ -414,9 +601,11 @@
         "vagas_imediatas": 0,
         "tem_cr": true,
         "salario": 6029.83,
-        "salario_detalhe": "R$ 6.029,83 total (R$ 4.879,83 base exato + R$ 1.150,00 Vale-Alimentação)",
+        "salario_detalhe": "R$ 6.029,83 total inicial (R$ 4.879,83 base exato no Anexo I + R$ 1.150,00 Vale-Alimentação fixo)",
         "carga_horaria": "35h semanais",
         "regime": "CLT (Celetista)",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Oficial de Finanças exige APENAS Ensino Médio completo; Oficial Legislativo exige Ensino Médio completo + CNH categoria 'B' (nenhum deles exige curso técnico).",
         "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior prevista em lei municipal",
         "resumo_conteudo": [
           "Língua Portuguesa, Matemática e Noções de Informática",
@@ -435,14 +624,16 @@
     "beneficios": "VA/VR (Vale-alimentação/refeição): R$ 2.150,12/mês + Prêmio de produtividade até 85% (Fiscalização)",
     "medio": [
       {
-        "nome": "Agente de Fiscalização (5 vagas + CR) / Agente Administrativo (8 vagas + CR)",
-        "vagas": "13 vagas imediatas + CR",
-        "vagas_imediatas": 13,
+        "nome": "Agente de Fiscalização (5 vagas + CR) / Agente Administrativo (8 vagas + CR) / Técnico em Seg. do Trabalho (1 vaga)",
+        "vagas": "14 vagas imediatas + CR",
+        "vagas_imediatas": 14,
         "tem_cr": true,
         "salario": 6435.59,
         "salario_detalhe": "Agente de Fiscalização: R$ 4.285,47 base + R$ 2.150,12 VA/VR = R$ 6.435,59 (até R$ 10.078,24 com prêmio de 85%) | Agente Administrativo: R$ 3.714,09 base + R$ 2.150,12 VA/VR = R$ 5.864,21",
         "carga_horaria": "36h semanais",
         "regime": "Estatutário",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Agente Administrativo exige APENAS Ensino Médio completo; Agente de Fiscalização exige Ensino Médio completo + CNH categoria 'B'; já Técnico em Segurança do Trabalho exige Ensino Médio + Curso Técnico em Segurança do Trabalho e registro no MTE.",
         "beneficios": "VA/VR (Vale-alimentação/refeição): R$ 2.150,12/mês + prêmio de produtividade de até 85% (Agente de Fiscalização)",
         "resumo_conteudo": [
           "Língua Portuguesa, Matemática e Noções de Informática (padrão INDEPAC)",
@@ -452,28 +643,518 @@
       }
     ]
   },
-  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concursos-publicos-com-salarios-de-ate-5565": {
-    "medio_excluido": true
-  },
-  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397": {
-    "medio_excluido": true
-  },
-  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044": {
-    "medio_excluido": true
-  },
-  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890": {
-    "medio_excluido": true
-  },
-  "https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102": {
-    "medio_excluido": true
-  },
   "https://www.pciconcursos.com.br/noticias/camara-de-boituva-sp-abre-concursos-com-salarios-de-ate-8595": {
-    "medio_excluido": true
+    "cidade": "Boituva",
+    "banca": "Instituto Mais",
+    "site_banca": "https://www.institutomais.org.br/",
+    "data_prova": "06/12/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "VA (Auxílio-alimentação): R$ 900,00/mês + reembolso parcial de plano de saúde",
+    "medio_outros": [
+      {
+        "nome": "Assistente Administrativo (1 vaga + CR) / Assistente Legislativo (1 vaga + CR) / Técnico de Audiovisual (1 vaga)",
+        "vagas": "3 vagas imediatas + CR",
+        "vagas_imediatas": 3,
+        "tem_cr": true,
+        "salario": 4694.04,
+        "salario_detalhe": "R$ 3.794,04 (vencimento base no Anexo I) + R$ 900,00 Vale-Alimentação = R$ 4.694,04",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Assistente Administrativo e Assistente Legislativo exigem APENAS Ensino Médio completo + informática básica. Já Técnico de Audiovisual exige Ensino Médio + Curso Técnico na área de Audiovisual. (Atenção: os cargos com nomenclatura 'Agente' neste edital exigem Nível Superior).",
+        "beneficios": "VA (Auxílio-alimentação): R$ 900,00/mês + auxílio plano de saúde",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática/Raciocínio Lógico e Noções de Informática (Instituto Mais)",
+          "Legislação Municipal (Lei Orgânica de Boituva e Regimento Interno da Câmara)",
+          "Conhecimentos Específicos: Rotinas administrativas, processo legislativo, redação oficial e atendimento"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717": {
-    "medio_excluido": true
+    "cidade": "Matão",
+    "banca": "IBAM",
+    "site_banca": "https://www.ibamsp-concursos.org.br/",
+    "data_prova": "24/01/2027",
+    "regime": "CLT (Celetista — Edital 02/2026)",
+    "beneficios": "VA (Auxílio-alimentação em cartão): R$ 1.000,00/mês",
+    "medio_outros": [
+      {
+        "nome": "Fiscal (Comércio, Meio Ambiente, Obras, Saúde, Trânsito — 5 vagas + CR) / Topógrafo (1) / Desenhista Projetista (1) / Téc. Enfermagem do Trabalho (1)",
+        "vagas": "8 vagas imediatas + CR",
+        "vagas_imediatas": 8,
+        "tem_cr": true,
+        "salario": 4337.48,
+        "salario_detalhe": "R$ 3.337,48 (vencimento base no Anexo I do Edital 02/2026) + R$ 1.000,00 VA = R$ 4.337,48",
+        "carga_horaria": "40h semanais",
+        "regime": "CLT (Celetista)",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Os cargos de Fiscal (Comércio e Tributos, Meio Ambiente, Obras, Saúde Pública e Trânsito) exigem Ensino Médio completo (+ CNH conforme o cargo). Já Desenhista Projetista, Topógrafo e Técnico em Enfermagem do Trabalho exigem Ensino Médio + Curso Técnico específico e registro no conselho (CFT/COREN).",
+        "beneficios": "VA (Auxílio-alimentação): R$ 1.000,00/mês",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Noções de Informática (padrão IBAM)",
+          "Conhecimentos Específicos: Legislação Tributária/Posturas/Obras/CTB (para Fiscais) ou conhecimentos técnicos de Topografia, AutoCAD/Projetos e Enfermagem do Trabalho"
+        ]
+      }
+    ]
   },
   "https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva": {
-    "medio_excluido": true
+    "cidade": "Louveira",
+    "banca": "Avança SP",
+    "site_banca": "https://www.avancasp.org.br/",
+    "data_prova": "17/01/2027",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Cartão-alimentação de R$ 1.000,00/mês + Auxílio-transporte (R$ 9,00/dia)",
+    "medio_outros": [
+      {
+        "nome": "Fiscal Municipal (1 vaga + CR) / Escriturário (2 vagas + CR)",
+        "vagas": "3 vagas imediatas + CR",
+        "vagas_imediatas": 3,
+        "tem_cr": true,
+        "salario": 4337.00,
+        "salario_detalhe": "Fiscal Municipal: R$ 3.337,00 base + R$ 1.000,00 VA = R$ 4.337,00 | Escriturário: R$ 2.802,00 base + R$ 1.000,00 VA = R$ 3.802,00",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Fiscal Municipal exige Ensino Médio completo + CNH categoria 'B' (sem curso técnico). O cargo de Escriturário exige apenas Ensino Fundamental completo no edital, permitindo participação de candidatos com Ensino Médio.",
+        "beneficios": "Cartão-alimentação: R$ 1.000,00/mês + Auxílio-transporte",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática/Raciocínio Lógico e Noções de Informática (Avança SP)",
+          "Conhecimentos Específicos: Código de Posturas, Fiscalização Municipal e Lei Orgânica de Louveira (Fiscal Municipal) ou rotinas administrativas e arquivamento (Escriturário)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102": {
+    "cidade": "Presidente Prudente",
+    "banca": "Fundação FAFIPA",
+    "site_banca": "https://www.fafipa.org/",
+    "data_prova": "17/01/2027",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Cartão-alimentação de R$ 1.309,59/mês",
+    "medio_outros": [
+      {
+        "nome": "Escriturário (6 vagas imediatas) / Técnico em Informática (1 vaga imediata)",
+        "vagas": "7 vagas imediatas + CR",
+        "vagas_imediatas": 7,
+        "tem_cr": true,
+        "salario": 4148.36,
+        "salario_detalhe": "Escriturário: R$ 2.838,77 base + R$ 1.309,59 VA = R$ 4.148,36 | Técnico em Informática: R$ 2.175,42 base + R$ 1.309,59 VA = R$ 3.485,01",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Escriturário (6 vagas) exige APENAS Ensino Médio completo (sem curso técnico). Já Técnico em Informática (1 vaga) exige Ensino Médio + Curso Técnico em Informática.",
+        "beneficios": "Cartão-alimentação: R$ 1.309,59/mês",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática/Raciocínio Lógico, Informática e Conhecimentos Gerais (FAFIPA)",
+          "Conhecimentos Específicos: Noções de Administração Pública, Direito Administrativo/Previdenciário (RPPS) e rotinas administrativas (Escriturário) ou Redes, Hardware e Suporte (Técnico em Informática)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-carlos-sp-abre-concurso-com-salarios-de-ate-9833": {
+    "cidade": "São Carlos",
+    "banca": "INDEPAC",
+    "site_banca": "https://indepac.selecao.net.br/",
+    "data_prova": "22/11/2026",
+    "regime": "CLT (Celetista — Edital 02/2026)",
+    "beneficios": "Auxílio-alimentação e Vale-transporte conforme acordo coletivo municipal",
+    "medio_outros": [
+      {
+        "nome": "Técnico de Enfermagem (6 vagas) / Técnico em Radiologia (1 vaga)",
+        "vagas": "7 vagas imediatas + CR",
+        "vagas_imediatas": 7,
+        "tem_cr": true,
+        "salario": 3898.00,
+        "salario_detalhe": "R$ 3.898,00 (salário base inicial exato no Edital 02/2026 para ambos os cargos)",
+        "carga_horaria": "24h a 40h semanais (24h Radiologia / 40h Enfermagem)",
+        "regime": "CLT (Celetista)",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Exigem Ensino Médio completo + Curso Técnico específico (Técnico em Enfermagem com COREN-SP ativo ou Técnico em Radiologia com CRTR ativo).",
+        "beneficios": "Auxílio-alimentação e Vale-transporte conforme legislação de São Carlos",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Políticas de Saúde/SUS (INDEPAC)",
+          "Conhecimentos Específicos: Assistência de enfermagem, urgência/emergência, biossegurança e imunização (Técnico de Enfermagem) ou Radioproteção, posicionamento radiológico e física das radiações (Técnico em Radiologia)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-aparecida-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
+    "cidade": "Aparecida",
+    "banca": "Avança SP",
+    "site_banca": "https://www.avancasp.org.br/",
+    "data_prova": "20/12/2026",
+    "regime": "Estatutário / Efetivo",
+    "beneficios": "VA (Vale-alimentação): R$ 880,00/mês + Vale-transporte",
+    "medio_outros": [
+      {
+        "nome": "Fiscal Tributário / Tesoureiro / Cuidador de Aluno PcD / Desenhista Técnico",
+        "vagas": "Vagas imediatas + CR",
+        "vagas_imediatas": 2,
+        "tem_cr": true,
+        "salario": 3650.00,
+        "salario_detalhe": "Vencimentos base de R$ 1.734,42 a R$ 2.770,00 + R$ 880,00 Vale-Alimentação (total até ~R$ 3.650,00 nos cargos de nível médio/técnico)",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Cuidador de Aluno PcD, Fiscal Tributário e Tesoureiro exigem Ensino Médio completo; Desenhista Técnico exige Ensino Médio + formação técnica em Desenho/Edificações/AutoCAD.",
+        "beneficios": "VA (Vale-alimentação): R$ 880,00/mês + Vale-transporte",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática/Raciocínio Lógico e Noções de Informática (Avança SP)",
+          "Conhecimentos Específicos conforme o cargo pretendido no Edital nº 01/2026"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas": {
+    "cidade": "Murutinga do Sul",
+    "banca": "CONSCAM",
+    "site_banca": "https://www.conscamweb.com.br/",
+    "data_prova": "06/12/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "VA (Vale-alimentação): R$ 1.090,10/mês",
+    "medio_outros": [
+      {
+        "nome": "Escriturário (1 vaga) / Aux. de Contabilidade (1) / Aux. Desenvolvimento Escolar - ADE (1) / Aux. de Enfermagem (2)",
+        "vagas": "5 vagas imediatas + CR",
+        "vagas_imediatas": 5,
+        "tem_cr": true,
+        "salario": 3620.12,
+        "salario_detalhe": "Auxiliar de Enfermagem: R$ 2.530,02 base + R$ 1.090,10 VA = R$ 3.620,12 | Escriturário, Aux. Contabilidade e ADE: R$ 1.621,00 (com abono) + R$ 1.090,10 VA = R$ 2.711,10",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Escriturário, Auxiliar de Contabilidade e Auxiliar de Desenvolvimento Escolar (ADE) exigem APENAS Ensino Médio completo. Já Auxiliar de Enfermagem exige Ensino Médio + Curso específico de Auxiliar/Técnico de Enfermagem e registro no COREN-SP.",
+        "beneficios": "VA (Vale-alimentação): R$ 1.090,10/mês",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Conhecimentos Gerais/Informática (padrão CONSCAM)",
+          "Conhecimentos Específicos: Rotinas administrativas, contabilidade básica, apoio escolar ou enfermagem"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600": {
+    "cidade": "Embaúba",
+    "banca": "IPELL Consultoria",
+    "site_banca": "https://www.ipell.com.br/",
+    "data_prova": "13/12/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Benefícios conforme estatuto municipal de Embaúba",
+    "medio_outros": [
+      {
+        "nome": "Almoxarife (CR) / Escriturário (CR) / Atendente de Saúde (CR)",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 3600.00,
+        "salario_detalhe": "Almoxarife: R$ 3.600,00 (base exato no Anexo I) | Escriturário: R$ 2.600,00 (base exato para 30h/sem)",
+        "carga_horaria": "30h a 40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Almoxarife, Escriturário e Atendente de Saúde exigem APENAS Ensino Médio completo + noções de informática. (Observação: o cargo de Agente Administrativo de R$ 5.100,00 neste edital exige Ensino Superior em Administração/Direito/Economia).",
+        "beneficios": "Conforme legislação municipal de Embaúba",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Noções de Informática (IPELL Consultoria)",
+          "Conhecimentos Específicos: Controle de estoque, almoxarifado, patrimônio público e licitações (Almoxarife) ou redação oficial e rotinas administrativas (Escriturário)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concursos-publicos-com-salarios-de-ate-5565": {
+    "cidade": "Cubatão",
+    "banca": "IBAM",
+    "site_banca": "https://www.ibamsp-concursos.org.br/",
+    "data_prova": "20/12/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Vale-alimentação, Vale-refeição, Vale-transporte + 30% periculosidade (para GCM)",
+    "medio_outros": [
+      {
+        "nome": "Guarda Civil Municipal (13 vagas) / TNM Almoxarife (1) / TNM Serv. Administrativos (1) / TNM Promoção Social (21) / TNM Técnicos",
+        "vagas": "53 vagas imediatas + CR",
+        "vagas_imediatas": 53,
+        "tem_cr": true,
+        "salario": 3577.48,
+        "salario_detalhe": "R$ 3.577,48 (vencimento base inicial no Anexo I para todos os cargos TNM e GCM) + benefícios e adicionais (GCM tem +30% de risco/periculosidade)",
+        "carga_horaria": "30h a 40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "TNM Almoxarife, TNM Serviços Administrativos e TNM Promoção Social exigem APENAS Ensino Médio completo. Guarda Civil Municipal (GCM) exige Ensino Médio completo + CNH 'AB' + altura mínima + aprovação em TAF. Já os cargos de TNM Fiscal de Obras, Contabilidade, Farmácia, Nutrição e Segurança do Trabalho exigem Ensino Médio + Curso Técnico específico na área.",
+        "beneficios": "VA, VR, VT conforme estatuto de Cubatão + adicional de 30% na GCM",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Noções de Informática (padrão IBAM)",
+          "Conhecimentos Específicos conforme o edital escolhido (Edital 01/2026 para GCM; Edital 02/2026 para Técnicos de Nível Médio)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377": {
+    "cidade": "Votorantim",
+    "banca": "Avança SP",
+    "site_banca": "https://www.avancasp.org.br/",
+    "data_prova": "13/12/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "VA (Auxílio-alimentação): R$ 1.100,00/mês",
+    "medio_outros": [
+      {
+        "nome": "Auxiliar de Serviços Infantis (10 vagas + CR) / Inspetor de Alunos (2 vagas + CR)",
+        "vagas": "12 vagas imediatas + CR",
+        "vagas_imediatas": 12,
+        "tem_cr": true,
+        "salario": 3555.45,
+        "salario_detalhe": "Auxiliar de Serviços Infantis: R$ 2.455,45 base + R$ 1.100,00 VA = R$ 3.555,45 | Inspetor de Alunos: R$ 2.340,70 base + R$ 1.100,00 VA = R$ 3.440,70",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Auxiliar de Serviços Infantis exige APENAS Ensino Médio completo (sem curso técnico). Inspetor de Alunos exige Ensino Fundamental completo (aceita Ensino Médio).",
+        "beneficios": "VA (Auxílio-alimentação): R$ 1.100,00/mês",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática/Raciocínio Lógico e Noções de Informática (Avança SP)",
+          "Conhecimentos Específicos: Cuidado infantil, desenvolvimento da criança, primeiros socorros, LDB (Lei 9.394/96) e ECA (Lei 8.069/90)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044": {
+    "cidade": "Lençóis Paulista",
+    "banca": "INDEPAC",
+    "site_banca": "https://indepac.selecao.net.br/",
+    "data_prova": "06/12/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Vale-alimentação e abono salarial conforme legislação municipal",
+    "medio_outros": [
+      {
+        "nome": "Fiscal Ambiental (CR) / Monitor de Creche (CR) / Agente de Vigilância Eletrônica (CR) / ACS (CR)",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 3542.31,
+        "salario_detalhe": "Fiscal Ambiental: R$ 3.542,31 base | Monitor de Creche e Agente de Vigilância Eletrônica: R$ 2.064,83 + abono e VA | ACS: R$ 1.641,49 + abono piso",
+        "carga_horaria": "36h a 44h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Monitor de Creche e Agente de Vigilância Eletrônica exigem APENAS Ensino Médio completo. Fiscal Ambiental exige Ensino Médio completo + CNH categorias 'A' e 'B'. Agente Comunitário de Saúde (ACS) exige Ensino Médio completo + residir na área da unidade de saúde.",
+        "beneficios": "Vale-alimentação e abono conforme legislação de Lençóis Paulista",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Noções de Informática (INDEPAC)",
+          "Conhecimentos Específicos de acordo com o cargo (Legislação Ambiental, Monitoria Infantil, Monitoramento Eletrônico ou Atenção Básica/SUS)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397": {
+    "cidade": "Piedade",
+    "banca": "IGECS",
+    "site_banca": "https://www.igecs.org.br/",
+    "data_prova": "29/11/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "VA (Vale-alimentação): R$ 600,00/mês",
+    "medio_outros": [
+      {
+        "nome": "Auxiliar de Enfermagem (CR) / Monitor de Transporte Escolar (1 vaga + CR)",
+        "vagas": "1 vaga imediata + CR",
+        "vagas_imediatas": 1,
+        "tem_cr": true,
+        "salario": 3388.77,
+        "salario_detalhe": "Auxiliar de Enfermagem: R$ 2.788,77 base + R$ 600,00 VA = R$ 3.388,77 | Monitor de Transporte Escolar: R$ 1.621,00 base + R$ 600,00 VA = R$ 2.221,00",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Monitor de Transporte Escolar exige APENAS Ensino Médio completo. Já Auxiliar de Enfermagem exige Ensino Médio completo + Curso de Auxiliar de Enfermagem e registro no COREN-SP.",
+        "beneficios": "VA (Vale-alimentação): R$ 600,00/mês",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Conhecimentos Gerais (padrão IGECS)",
+          "Conhecimentos Específicos: ECA, segurança no transporte escolar e primeiros socorros (Monitor) ou Fundamentos de Enfermagem e SUS (Auxiliar de Enfermagem)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
+    "cidade": "Tuiuti",
+    "banca": "Aplicativa Assessoria",
+    "site_banca": "https://www.aplicativagestao.com.br/",
+    "data_prova": "20/12/2026",
+    "regime": "CLT (Celetista)",
+    "beneficios": "Vale-alimentação e Vale-transporte conforme legislação municipal",
+    "medio_outros": [
+      {
+        "nome": "Assistente Administrativo (CR) / Auxiliar Administrativo (CR) / Almoxarife (CR) / Téc. Seg. do Trabalho (1 vaga) / Téc. Enfermagem (CR)",
+        "vagas": "1 vaga imediata + CR",
+        "vagas_imediatas": 1,
+        "tem_cr": true,
+        "salario": 3150.00,
+        "salario_detalhe": "Faixa salarial do edital: R$ 1.783,03 a R$ 5.209,01 (cargos de Nível Médio/Técnico entre R$ 2.100,00 e R$ 3.450,00 no Anexo I)",
+        "carga_horaria": "40h semanais",
+        "regime": "CLT (Celetista)",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Assistente Administrativo, Auxiliar Administrativo, Almoxarife e Agente de Controle de Endemias exigem APENAS Ensino Médio completo. ACS exige Ensino Médio + residir no bairro. Técnico de Segurança do Trabalho e Técnico de Enfermagem exigem Curso Técnico específico + registro profissional.",
+        "beneficios": "Vale-alimentação e Vale-transporte conforme lei municipal de Tuiuti",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Noções de Informática (Aplicativa Assessoria)",
+          "Conhecimentos Específicos de acordo com as atribuições do cargo no Anexo II do edital"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815": {
+    "cidade": "Morro Agudo",
+    "banca": "Instituto INDEC",
+    "site_banca": "https://institutoindec.org.br/",
+    "data_prova": "29/11/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "VA (Auxílio-alimentação): R$ 1.100,00/mês + Plano de saúde",
+    "medio_outros": [
+      {
+        "nome": "Escriturário I (1 vaga + CR) / Inspetor de Alunos (CR) / Agente Comunitário de Saúde (CR)",
+        "vagas": "1 vaga imediata + CR",
+        "vagas_imediatas": 1,
+        "tem_cr": true,
+        "salario": 2812.00,
+        "salario_detalhe": "Escriturário I: R$ 1.712,00 base + R$ 1.100,00 VA = R$ 2.812,00 | Inspetor de Alunos: R$ 1.658,60 base + R$ 1.100,00 VA = R$ 2.758,60",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Agente Comunitário de Saúde exige Ensino Médio completo + residir na microárea. Escriturário I e Inspetor de Alunos exigem apenas Ensino Fundamental completo + informática básica (candidatos com Ensino Médio podem concorrer livremente).",
+        "beneficios": "VA (Auxílio-alimentação): R$ 1.100,00/mês + Plano de saúde",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Conhecimentos Gerais/Informática (Instituto INDEC)",
+          "Conhecimentos Específicos: Rotinas administrativas e atendimento (Escriturário I), ECA (Inspetor de Alunos) ou SUS/Atenção Primária (ACS)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189": {
+    "cidade": "Macedônia",
+    "banca": "CONSESP",
+    "site_banca": "https://www.consesp.com.br/",
+    "data_prova": "22/11/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Vale-alimentação conforme legislação municipal de Macedônia",
+    "medio_outros": [
+      {
+        "nome": "Escriturário I (CR) / Assistente de Administração (CR) / Auxiliar de Tesouraria (CR) / Técnicos (CR)",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 2728.59,
+        "salario_detalhe": "Escriturário I e Técnico de Contabilidade: R$ 2.728,59 | Assistente de Administração, Aux. Lançadoria e Aux. Tesouraria: R$ 2.433,51 (Anexo I)",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Escriturário I, Assistente de Administração, Auxiliar de Administração I, Auxiliar de Lançadoria e Auxiliar de Tesouraria exigem APENAS Ensino Médio completo. Já os cargos de Técnico em Contabilidade, Enfermagem, Informática e Segurança do Trabalho exigem Ensino Médio + Curso Técnico específico.",
+        "beneficios": "Vale-alimentação conforme estatuto municipal",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Noções de Informática (padrão CONSESP)",
+          "Conhecimentos Específicos de administração pública, tesouraria, tributos municipais e rotinas de escritório"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-carapicuiba-sp-abre-novos-concursos-para-cadastro-de-reserva-em-diversas-areas": {
+    "cidade": "Carapicuíba",
+    "banca": "Instituto Mais / Avança SP",
+    "site_banca": "https://www.carapicuiba.sp.gov.br/",
+    "data_prova": "06/12/2026",
+    "regime": "Estatutário (Editais 04 e 05/2026)",
+    "beneficios": "Cesta Básica de R$ 390,30/mês + Sacola Básica (40 kg) + Vale-Transporte",
+    "medio_outros": [
+      {
+        "nome": "Técnico em Segurança do Trabalho (CR) / Técnico de Edificações (CR) / Técnico em TI (CR) / Assistente de TI (CR) / Téc. Enfermagem PSF (CR)",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 2731.08,
+        "salario_detalhe": "Téc. Seg. do Trabalho e Téc. Edificações: R$ 2.340,78 base + R$ 390,30 Cesta = R$ 2.731,08 | Assistente de TI: R$ 1.728,85 + R$ 390,30 = R$ 2.119,15 (+ Sacola Básica 40 kg)",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio_tecnico",
+        "requisitos": "Assistente de TI exige Ensino Médio + conhecimentos específicos em Informática/Suporte; Técnico de Edificações, Técnico em Segurança do Trabalho, Técnico em TI e Técnico de Enfermagem PSF exigem Ensino Médio + Curso Técnico na respectiva área e registro no conselho quando aplicável.",
+        "beneficios": "Abono Cesta Básica: R$ 390,30 + Sacola Básica (40 kg de alimentos) + Vale-Transporte",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática/Raciocínio Lógico e Informática",
+          "Conhecimentos Específicos da área técnica pretendida (Segurança do Trabalho/NRs, Edificações/Obras, Suporte de TI ou Enfermagem/SUS)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba": {
+    "cidade": "Carapicuíba",
+    "banca": "SigmaRH",
+    "site_banca": "https://www.sigmarh.com.br/",
+    "data_prova": "06/12/2026",
+    "regime": "CLT (Celetista)",
+    "beneficios": "VA (Vale-alimentação): R$ 522,30/mês + VT: R$ 273,69/mês",
+    "medio_outros": [
+      {
+        "nome": "Auxiliar Administrativo (5 vagas imediatas)",
+        "vagas": "5 vagas imediatas + CR",
+        "vagas_imediatas": 5,
+        "tem_cr": true,
+        "salario": 2676.27,
+        "salario_detalhe": "R$ 1.880,28 (salário base no Anexo I) + R$ 522,30 VA + R$ 273,69 VT = R$ 2.676,27",
+        "carga_horaria": "40h semanais",
+        "regime": "CLT (Celetista)",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Exige APENAS Ensino Médio completo + conhecimento prático em informática (não exige curso técnico).",
+        "beneficios": "VA: R$ 522,30/mês + Vale-transporte: R$ 273,69/mês",
+        "resumo_conteudo": [
+          "Língua Portuguesa e Matemática (padrão SigmaRH)",
+          "Conhecimentos de Informática (Windows, Word, Excel e Internet) e rotinas administrativas"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890": {
+    "cidade": "Lorena",
+    "banca": "Avança SP",
+    "site_banca": "https://www.avancasp.org.br/",
+    "data_prova": "10/01/2027",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Vale-transporte e benefícios do estatuto municipal de Lorena",
+    "medio_outros": [
+      {
+        "nome": "Agente de Atendimento Especial (1 vaga imediata + CR)",
+        "vagas": "1 vaga imediata + CR",
+        "vagas_imediatas": 1,
+        "tem_cr": true,
+        "salario": 2399.27,
+        "salario_detalhe": "R$ 2.399,27 (vencimento base exato no Anexo I)",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Exige APENAS Ensino Médio completo (sem exigência de curso técnico).",
+        "beneficios": "Vale-transporte e benefícios previstos em lei municipal",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática/Raciocínio Lógico e Noções de Informática (Avança SP)",
+          "Conhecimentos Específicos: Educação Especial e Inclusiva, Estatuto da Pessoa com Deficiência (Lei 13.146/2015), ECA (Lei 8.069/1990) e primeiros socorros"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352": {
+    "cidade": "Guzolândia",
+    "banca": "GL Consultoria",
+    "site_banca": "https://www.glconsultoria.com.br/",
+    "data_prova": "01/11/2026",
+    "regime": "CLT Temporário (Processo Seletivo)",
+    "beneficios": "Benefícios conforme legislação municipal de Guzolândia",
+    "medio_outros": [
+      {
+        "nome": "Monitor de Transporte Escolar (1 vaga) / Auxiliar de Desenvolvimento Infantil - ADI (CR)",
+        "vagas": "1 vaga imediata + CR",
+        "vagas_imediatas": 1,
+        "tem_cr": true,
+        "salario": 1621.00,
+        "salario_detalhe": "R$ 1.621,00 (vencimento base inicial no Anexo I para 40h/sem)",
+        "carga_horaria": "40h semanais",
+        "regime": "Processo Seletivo",
+        "escolaridade_tipo": "medio",
+        "requisitos": "Exigem APENAS Ensino Médio completo (sem curso técnico).",
+        "beneficios": "Conforme legislação municipal de Guzolândia",
+        "resumo_conteudo": [
+          "Língua Portuguesa e Matemática (padrão GL Consultoria)",
+          "Conhecimentos Gerais, ECA (Lei 8.069/90) e desenvolvimento infantil"
+        ]
+      }
+    ]
   }
 }

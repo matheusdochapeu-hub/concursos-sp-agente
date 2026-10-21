@@ -1,24 +1,32 @@
 """
-Agente de Busca de Concursos — PCI Concursos (Sudeste -> exclusivamente SP)
+Agente de Busca de Concursos — PCI Concursos (SP + Brasil Todo)
 
 Funcionalidades:
-  1. Filtra exclusivamente concursos do Estado de São Paulo (UF = SP).
-  2. Busca vagas de Fisioterapeuta / Fisioterapia com salário exato, benefícios
-     (VA, VR, VT), regime (Estatutário / CLT / Residência / Militar / Seletivo),
-     carga horária semanal, data da prova, banca, links para edital/conteúdo
-     programático e resumo do conteúdo programático voltado para Fisioterapeuta.
-  3. Busca cargos que exigem APENAS Nível Médio com remuneração acima de R$ 5.000,00,
-     apresentando os mesmos detalhes completos na tela inicial.
-  4. Calcula a distância em km de cada concurso até Ribeirão Preto/SP e até Jarinu/SP
-     usando as coordenadas oficiais dos 645 municípios de SP.
-  5. Identifica concursos que apareceram nas últimas 24 horas (e que não estavam
-     no período anterior) com a plaquinha "CONCURSO NOVO".
-  6. Gera um Progressive Web App (PWA) completo e instalável em `docs/`.
+  1. Monitora diariamente os concursos do Estado de São Paulo (SP) e de todo o Brasil
+     (todas as 27 UFs + Concursos Nacionais) no PCI Concursos.
+  2. Aba 1 — Fisioterapia (SP): Valores exatos do salário, benefícios (VA, VR, VT),
+     regime (Estatutário / CLT / Residência / Militar / Seletivo), carga horária semanal,
+     data da prova, requisitos do edital e resumo do conteúdo programático.
+  3. Aba 2 — Nível Médio > R$ 5.000 (SP): Cargos de nível médio com remuneração
+     confirmada acima de R$ 5.000,00 e especificações técnicas exigidas no edital.
+  4. Aba 3 — Nível Médio / Técnico (Outras Faixas Salariais — SP): Todos os concursos
+     de nível médio e técnico em SP separados por faixa salarial selecionável em botões
+     e com detalhamento se exige APENAS Ensino Médio ou Curso Técnico + Conselho.
+  5. Aba 4 — Buscar Cargo Específico (SP / Outros Estados / Brasil Todo): Permite digitar
+     qualquer cargo (ou clicar em cargos sugeridos) e filtrar por qualquer Estado (UF)
+     ou no Brasil todo, vasculhando inclusive o interior dos editais de "Vários Cargos".
+  6. Filtros 100% em botões pré-definidos (Proximidade de Ribeirão Preto/SP, Proximidade
+     de Jarinu/SP, Cidade, Faixa Salarial, Vagas, Escolaridade/Exigência, Regime, Horas,
+     Novidades 24h e Ordenação).
+  7. Identifica concursos novos (últimas 24h) e gera Progressive Web App (PWA) com
+     tema inspirado na Bandeira do Brasil e botão de apoio Pix no rodapé.
 """
 from __future__ import annotations
 
+import concurrent.futures
 import hashlib
 import html
+import io
 import json
 import os
 import re
@@ -40,15 +48,30 @@ if hasattr(sys.stdout, "reconfigure"):
 # Configuração
 # --------------------------------------------------------------------------- #
 LISTING_URL = "https://www.pciconcursos.com.br/concursos/sudeste/"
+REGIONAL_URLS = {
+    "Sudeste": "https://www.pciconcursos.com.br/concursos/sudeste/",
+    "Sul": "https://www.pciconcursos.com.br/concursos/sul/",
+    "Centro-Oeste": "https://www.pciconcursos.com.br/concursos/centrooeste/",
+    "Nordeste": "https://www.pciconcursos.com.br/concursos/nordeste/",
+    "Norte": "https://www.pciconcursos.com.br/concursos/norte/",
+    "Nacional": "https://www.pciconcursos.com.br/concursos/nacional/",
+}
 UF_ALVO = "SP"
 SALARIO_MINIMO_MEDIO = 5000.00
 FISIO_REGEX = re.compile(r"\bfisioterap(?:euta|ia|êutico|eutas)\b", re.I)
-SCHEMA_VERSION = 3
+SCHEMA_VERSION = 4
+
+PIX_KEY = (
+    "00020126580014br.gov.bcb.pix01364c83415e-0b75-4a40-b0b6-83a0c12a7135"
+    "5204000053039865802BR5911MATHEUS19176009Sao Paulo610901227-200"
+    "62230519daqr21591091736170363041A4B"
+)
 
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 DOCS_DIR = ROOT / "docs"
 CACHE_FILE = DATA_DIR / "cache.json"
+CACHE_BRASIL_FILE = DATA_DIR / "cache_brasil.json"
 RESULTS_FILE = DATA_DIR / "resultados.json"
 MUNICIPIOS_FILE = DATA_DIR / "municipios_sp.json"
 ENRIQUECIDOS_FILE = DATA_DIR / "concursos_enriquecidos.json"
@@ -59,7 +82,7 @@ GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
 GEMINI_SEARCH_MODEL = os.getenv("GEMINI_SEARCH_MODEL", "gemini-3.8-flash")
 MAX_AI_CALLS = int(os.getenv("MAX_AI_CALLS", "120"))
 AI_DELAY_S = float(os.getenv("AI_DELAY_S", "4"))
-HTTP_DELAY_S = float(os.getenv("HTTP_DELAY_S", "0.5"))
+HTTP_DELAY_S = float(os.getenv("HTTP_DELAY_S", "0.25"))
 
 BRT = timezone(timedelta(hours=-3))
 HEADERS = {
@@ -93,6 +116,21 @@ def load_json(path: Path, default: Any) -> Any:
         except json.JSONDecodeError:
             pass
     return default
+
+
+def gerar_qr_pix_svg(payload: str) -> str:
+    try:
+        import segno
+
+        qr = segno.make(payload, error="m")
+        buf = io.BytesIO()
+        qr.save(buf, kind="svg", xmldecl=False, scale=4, border=2, dark="#143321", light="#ffffff")
+        return buf.getvalue().decode("utf-8")
+    except Exception:  # pragma: no cover
+        return (
+            '<div style="padding:24px;color:#143321;font-weight:700;">'
+            "Use o botão abaixo para copiar a chave Pix Copia e Cola</div>"
+        )
 
 
 # --------------------------------------------------------------------------- #
@@ -132,7 +170,6 @@ def detectar_cidade(orgao: str, titulo: str, url: str, texto: str = "", sugestao
         if k_ia in MUNICIPIOS_SP:
             return MUNICIPIOS_SP[k_ia]["nome"]
 
-    # 1) Padrão explícito "<Cidade> - SP" no título
     m = re.search(r"(?:de|em|da|do)\s+([a-z\s]+?)\s*-\s*sp\b", norm(titulo))
     if m:
         cand = m.group(1).strip()
@@ -140,7 +177,6 @@ def detectar_cidade(orgao: str, titulo: str, url: str, texto: str = "", sugestao
             if pat.search(cand):
                 return MUNICIPIOS_SP[k]["nome"]
 
-    # 2) Busca no título + órgão + slug da URL (evitando casar "São Paulo" antes de outra cidade do interior)
     cabecalho = norm(f"{titulo} {orgao} {url.replace('-', ' ')}")
     for k, pat in MUN_PATTERNS:
         if k == "sao paulo":
@@ -148,12 +184,10 @@ def detectar_cidade(orgao: str, titulo: str, url: str, texto: str = "", sugestao
         if pat.search(cabecalho):
             return MUNICIPIOS_SP[k]["nome"]
 
-    # 3) Dicas de órgãos conhecidos
     for hint, city_k in ORG_CITY_HINTS.items():
         if hint in cabecalho and city_k in MUNICIPIOS_SP:
             return MUNICIPIOS_SP[city_k]["nome"]
 
-    # 4) Busca no primeiro parágrafo do texto da notícia
     if texto:
         trecho = norm(texto[:600])
         for k, pat in MUN_PATTERNS:
@@ -186,15 +220,16 @@ def info_distancia(cidade: Optional[str]) -> Dict[str, Any]:
 def fetch(url: str, retries: int = 3) -> str:
     for tentativa in range(1, retries + 1):
         try:
-            r = session.get(url, timeout=90)
+            r = session.get(url, timeout=60)
             r.raise_for_status()
             r.encoding = r.encoding or "utf-8"
             if r.encoding.lower() in ("iso-8859-1", "latin-1"):
                 r.encoding = "utf-8"
             return r.text
         except requests.RequestException as e:
-            log(f"  erro HTTP ({tentativa}/{retries}) em {url}: {e}")
-            time.sleep(2 * tentativa)
+            if tentativa == retries:
+                log(f"  erro HTTP ({tentativa}/{retries}) em {url}: {e}")
+            time.sleep(1.5 * tentativa)
     raise RuntimeError(f"Falha ao baixar {url}")
 
 
@@ -217,7 +252,6 @@ def brl(v: Optional[float]) -> str:
 
 
 def extrair_vagas_info(vagas_str: Optional[str]) -> tuple[int, bool, str]:
-    """Retorna (vagas_imediatas, tem_cr, texto_formatado)."""
     s = (vagas_str or "").strip()
     if not s:
         return 0, True, "Cadastro de Reserva (CR)"
@@ -236,11 +270,9 @@ def extrair_vagas_info(vagas_str: Optional[str]) -> tuple[int, bool, str]:
 
 
 # --------------------------------------------------------------------------- #
-# 1) Listagem do PCI Concursos
+# 1) Listagem do PCI Concursos (SP e Todas as Regiões do Brasil)
 # --------------------------------------------------------------------------- #
-def parse_listing(page_html: str) -> List[dict]:
-    """Cada concurso é um bloco <div class="na|da|ea" ... data-url="...">.
-    Fatiamos por bloco para evitar problemas com tags mal fechadas no site."""
+def parse_listing(page_html: str, regiao_padrao: str = "") -> List[dict]:
     blocos = re.split(r'(?=<div class="\w+"[^>]*\bdata-url=)', page_html)[1:]
     concursos = []
     vistos = set()
@@ -255,7 +287,7 @@ def parse_listing(page_html: str) -> List[dict]:
         if not url or url in vistos:
             continue
         vistos.add(url)
-        uf = uf_el.get_text(strip=True)
+        uf = uf_el.get_text(strip=True) or "BR"
         cd = soup.select_one("div.cd")
         ce = soup.select_one("div.ce")
         resumo = cd.get_text(" | ", strip=True) if cd else ""
@@ -270,6 +302,7 @@ def parse_listing(page_html: str) -> List[dict]:
                 "orgao": link.get_text(strip=True),
                 "titulo": link.get("title") or link.get_text(strip=True),
                 "uf": uf,
+                "regiao": regiao_padrao,
                 "vagas_salario": vagas_sal,
                 "cargos_resumo": cargos_resumo,
                 "niveis": niveis,
@@ -281,7 +314,7 @@ def parse_listing(page_html: str) -> List[dict]:
 
 
 # --------------------------------------------------------------------------- #
-# 2) Extração de texto e metadados da página da notícia
+# 2) Extração de texto, cargos (<li>) e metadados da página da notícia
 # --------------------------------------------------------------------------- #
 CORTE_RODAPE = re.compile(
     r"(Eleve seus estudos|Otimize sua prepara|Apostilas Digitais|Tenha a not[ií]cia completa|"
@@ -322,7 +355,7 @@ def parse_regime(texto: str) -> str:
     tem_est = "estatutário" in t or "estatutario" in t
     tem_clt = "celetista" in t or "regime clt" in t or "sob clt" in t or "regime da clt" in t
     if tem_est and tem_clt:
-        return "Estatutário / CLT (conforme edital)"
+        return "Estatutário / CLT"
     if tem_est:
         return "Estatutário"
     if tem_clt:
@@ -349,7 +382,7 @@ def parse_beneficios(texto: str) -> str:
             trecho = re.split(r"(?<!\d)\.(?!\d)", m.group(0))[0].strip(" ,;-")
             if trecho and trecho not in achados:
                 achados.append(trecho[0].upper() + trecho[1:])
-    return " · ".join(achados) if achados else "Consultar edital (não detalhado no resumo)"
+    return " · ".join(achados) if achados else "Consultar edital"
 
 
 def parse_jornada(texto: str) -> str:
@@ -383,7 +416,6 @@ def parse_faixa_salarial(texto: str, vagas_salario_listagem: str) -> str:
 def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
     soup = BeautifulSoup(page_html, "html.parser")
 
-    # Links de editais e provas na barra lateral <#links>
     arquivos_edital = []
     link_provas = None
     for a in soup.select("#links a"):
@@ -399,6 +431,7 @@ def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
     art = soup.select_one("#noticia") or soup.select_one("article") or soup.body
     link_banca = None
     nome_banca = None
+    cargos_li: List[str] = []
     if art:
         for a in art.select("a[href]"):
             href = (a.get("href") or "").strip()
@@ -408,6 +441,12 @@ def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
                 if txt_a and not txt_a.startswith("www.") and len(txt_a) < 80:
                     nome_banca = txt_a
                 break
+
+        for li in art.select("li"):
+            t_li = li.get_text(" ", strip=True).rstrip(";.")
+            if 3 <= len(t_li) <= 240 and not CORTE_RODAPE.search(t_li):
+                if t_li not in cargos_li:
+                    cargos_li.append(t_li)
 
         for tag in art.select("script, style, noscript, iframe, aside, .compartilhar, .relacionadas"):
             tag.decompose()
@@ -423,6 +462,7 @@ def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
 
     return {
         "texto": texto,
+        "cargos_li": cargos_li[:120],
         "arquivos_edital": arquivos_edital,
         "link_provas": link_provas,
         "link_banca": link_banca,
@@ -440,7 +480,7 @@ def extrair_linhas_fisio(texto: str) -> List[str]:
         if FISIO_REGEX.search(linha):
             l = linha.strip()
             if len(l) > 180:
-                continue  # ignora parágrafos longos introdutórios quando há linha de cargo
+                continue
             if l not in achados:
                 achados.append(l)
     if not achados:
@@ -455,7 +495,7 @@ def extrair_linhas_fisio(texto: str) -> List[str]:
 
 
 # --------------------------------------------------------------------------- #
-# 3) IA (Gemini) — Extração Estruturada Completa
+# 3) IA (Gemini) — Extração Estruturada Completa para Novos Concursos
 # --------------------------------------------------------------------------- #
 _client = None
 _ai_calls = 0
@@ -482,6 +522,10 @@ try:
         regime: Optional[str] = Field(
             default=None, description="Regime do cargo: 'Estatutário', 'CLT (Celetista)', 'Residência (Bolsa)', etc."
         )
+        requisitos: Optional[str] = Field(
+            default=None,
+            description="Requisitos técnicos ou de escolaridade para assumir o cargo (ex.: apenas Ensino Médio, CNH B, Curso Técnico + Conselho).",
+        )
 
     class AnaliseConcurso(BaseModel):
         cidade: Optional[str] = Field(default=None, description="Município de SP onde ocorrem as vagas.")
@@ -497,10 +541,7 @@ try:
         jornada_geral: Optional[str] = Field(default=None, description="Jornada semanal informada.")
         resumo_conteudo_fisio: Optional[List[str]] = Field(
             default=None,
-            description=(
-                "Se houver cargo de Fisioterapeuta/Fisioterapia, lista de 4 a 6 tópicos resumindo o "
-                "conteúdo programático cobrado para Fisioterapeuta neste certame/banca."
-            ),
+            description="Se houver cargo de Fisioterapeuta/Fisioterapia, lista de 4 a 6 tópicos do conteúdo programático.",
         )
         cargos: List[CargoExtraido] = Field(description="Cargos citados na notícia.")
 
@@ -510,14 +551,9 @@ except ImportError:  # pragma: no cover
 
 SYSTEM_INSTRUCTION = (
     "Você é um especialista em editais de concursos públicos brasileiros em São Paulo. "
-    "Extraia cidade, banca, data da prova objetiva (DD/MM/AAAA), regime jurídico (Estatutário, CLT, "
-    "Residência, Militar Temporário ou Processo Seletivo), benefícios (VA, VR, VT com valores quando houver), "
-    "jornada semanal e a lista de cargos com escolaridade e salário específico do cargo. "
-    "Classifique cargos como 'Escriturário', 'Agente Administrativo', 'Assistente Administrativo', "
-    "'Oficial Legislativo', 'Inspetor de Alunos', 'Monitor' e 'Agente Comunitário de Saúde' como 'medio' "
-    "quando o edital contemplar nível médio e não exigir curso técnico. "
-    "Se houver cargo de Fisioterapeuta/Fisioterapia, preencha resumo_conteudo_fisio com os tópicos do "
-    "conteúdo programático voltados para Fisioterapeuta neste concurso."
+    "Extraia cidade, banca, data da prova objetiva (DD/MM/AAAA), regime jurídico, benefícios "
+    "(VA, VR, VT com valores quando houver), jornada semanal e a lista de cargos com escolaridade, "
+    "salário específico e requisitos técnicos para assumir o cargo."
 )
 
 
@@ -535,7 +571,6 @@ def analisar_com_ia(texto: str, usar_busca: bool = False) -> Optional[dict]:
     if not (GEMINI_API_KEY and PYDANTIC_OK) or _ai_calls >= MAX_AI_CALLS:
         return None
 
-    # Se usar_busca=True (ex.: novos concursos de Fisioterapia), tenta primeiro com Google Search Grounding
     tentativas_cfg = []
     if usar_busca:
         tentativas_cfg.append((GEMINI_SEARCH_MODEL, [{"type": "google_search"}]))
@@ -565,13 +600,13 @@ def analisar_com_ia(texto: str, usar_busca: bool = False) -> Optional[dict]:
             except Exception as e:  # noqa: BLE001
                 log(f"  IA ({modelo}, tentativa {tentativa}) aviso: {str(e)[:140]}")
                 if tools:
-                    break  # cai imediatamente para o modelo rápido sem tools
-                time.sleep(10 * tentativa)
+                    break
+                time.sleep(8 * tentativa)
     return None
 
 
 # --------------------------------------------------------------------------- #
-# 4) Conteúdo Programático Padrão (Fallback Inteligente)
+# 4) Conteúdo Programático e Especificações Técnicas Padrão
 # --------------------------------------------------------------------------- #
 def conteudo_padrao_fisio(banca: str, regime: str) -> List[str]:
     b = f" ({banca})" if banca and banca != "Consultar edital" else ""
@@ -591,27 +626,64 @@ def conteudo_padrao_medio(cargo_nome: str, banca: str) -> List[str]:
         f"Língua Portuguesa{b}: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
         "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
         "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-        f"Conhecimentos Específicos ({cargo_nome}): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão",
+        f"Conhecimentos Específicos ({cargo_nome}): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão",
     ]
 
 
+def inferir_requisitos_cargo(cargo_nome: str, niveis: str) -> tuple[str, str]:
+    """Retorna (escolaridade_tipo, descricao_requisitos) para cargos extraídos automaticamente."""
+    cn = norm(cargo_nome)
+    nv = norm(niveis)
+    eh_tec = bool(
+        re.search(
+            r"\b(tecnico|auxiliar\s+de\s+enfermagem|desenhista|topografo|radiologia|contabilidade|seguranca\s+do\s+trabalho|edificacoes|informatica|audiovisual)\b",
+            cn,
+        )
+    ) and "escrevente tecnico" not in cn and "tecnico de administracao" not in cn
+
+    if "guarda" in cn:
+        return (
+            "medio",
+            "Exige Ensino Médio completo + CNH (geralmente 'A/B' ou 'B') + idade/altura previstas no edital + aprovação em Teste de Aptidão Física (TAF) e avaliação psicológica.",
+        )
+    if "motorista" in cn:
+        return (
+            "medio",
+            "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
+        )
+    if "comunitario de saude" in cn or "endemias" in cn:
+        return (
+            "medio",
+            "Exige APENAS Ensino Médio completo (sem curso técnico) + residir na área/microárea de atuação desde a data da publicação do edital (para ACS) + conclusão do curso introdutório.",
+        )
+    if eh_tec or ("tecnico" in nv and "medio" not in nv):
+        return (
+            "medio_tecnico",
+            f"Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área ({cargo_nome}) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
+        )
+    return (
+        "medio",
+        f"Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo ({cargo_nome}), sem necessidade de curso técnico profissionalizante.",
+    )
+
+
 # --------------------------------------------------------------------------- #
-# 5) Classificação e Montagem dos Cards Enriquecidos
+# 5) Classificação e Montagem dos Concursos Enriquecidos (SP)
 # --------------------------------------------------------------------------- #
 CARGOS_MEDIO_CONHECIDOS = re.compile(
     r"\b(agente\s+administrativo|assistente\s+administrativo|auxiliar\s+administrativo|"
     r"escritur[áa]rio|oficial\s+legislativo|oficial\s+de\s+finan[çc]as|inspetor\s+de\s+alunos|"
     r"agente\s+comunit[áa]rio\s+de\s+sa[úu]de|agente\s+de\s+combate\s+[àa]s\s+endemias|"
-    r"agente\s+de\s+controle\s+de\s+endemias|agente\s+de\s+fiscaliza[çc][ãa]o|"
-    r"monitor\s+de\s+transporte|monitor\s+de\s+creche|recepcionista|almoxarife|"
-    r"assistente\s+de\s+suporte\s+acad[êe]mico)\b",
+    r"agente\s+de\s+controle\s+de\s+endemias|agente\s+de\s+fiscaliza[çc][ãa]o|fiscal|"
+    r"monitor\s+de\s+transporte|monitor\s+de\s+creche|monitor\s+escolar|recepcionista|almoxarife|"
+    r"assistente\s+de\s+suporte\s+acad[êe]mico|guarda\s+civil|guarda\s+municipal|telefonista|"
+    r"apoio\s+administrativo|profissional\s+de\s+apoio|auxiliar\s+de\s+desenvolvimento|"
+    r"auxiliar\s+de\s+servi[çc]os\s+educacionais|motorista)\b",
     re.I,
 )
 
 
 def eh_novo_24h(info: dict, agora: datetime) -> bool:
-    """Retorna True somente se o concurso NÃO fazia parte da base anterior (baseline)
-    e apareceu pela primeira vez nas últimas 24 horas."""
     if info.get("is_baseline", False):
         return False
     ts_str = info.get("first_seen_ts")
@@ -627,13 +699,12 @@ def eh_novo_24h(info: dict, agora: datetime) -> bool:
         return False
 
 
-def montar_concurso(c: dict, info: dict, enriquecidos: Dict[str, dict], agora: datetime) -> None:
+def montar_concurso_sp(c: dict, info: dict, enriquecidos: Dict[str, dict], agora: datetime) -> None:
     url = c["url"]
     enriq = enriquecidos.get(url, {})
     ia = info.get("ia") or {}
     det = info.get("detalhes") or {}
 
-    # Localização e distâncias para Ribeirão Preto e Jarinu
     cidade_ia = enriq.get("cidade") or ia.get("cidade")
     cidade = detectar_cidade(c["orgao"], c["titulo"], url, det.get("texto", ""), cidade_ia)
     dist = info_distancia(cidade)
@@ -641,7 +712,6 @@ def montar_concurso(c: dict, info: dict, enriquecidos: Dict[str, dict], agora: d
     c["km_ribeirao_preto"] = dist["km_ribeirao_preto"]
     c["km_jarinu"] = dist["km_jarinu"]
 
-    # Metadados gerais do certame
     c["banca"] = (
         enriq.get("banca")
         or ia.get("banca")
@@ -677,7 +747,19 @@ def montar_concurso(c: dict, info: dict, enriquecidos: Dict[str, dict], agora: d
     )
     c["faixa_salarial"] = parse_faixa_salarial(det.get("texto", ""), c.get("vagas_salario", ""))
 
-    # Plaquinha de concurso novo (últimas 24h vs período anterior)
+    # Lista completa de cargos deste concurso para a Aba 4 (Busca por Cargo Específico)
+    cargos_todos = []
+    for cl in det.get("cargos_li") or []:
+        if cl not in cargos_todos:
+            cargos_todos.append(cl)
+    for cg in ia.get("cargos") or []:
+        nm = cg.get("nome")
+        if nm and nm not in cargos_todos:
+            cargos_todos.append(nm)
+    if not cargos_todos and c.get("cargos_resumo") and "Vários" not in c["cargos_resumo"]:
+        cargos_todos = [x.strip() for x in c["cargos_resumo"].split(",") if x.strip()]
+    c["cargos_lista"] = cargos_todos
+
     c["first_seen_ts"] = info.get("first_seen_ts", "2026-10-20T07:00:00-03:00")
     c["is_baseline"] = bool(info.get("is_baseline", False))
     c["novo"] = eh_novo_24h(info, agora)
@@ -689,7 +771,6 @@ def montar_concurso(c: dict, info: dict, enriquecidos: Dict[str, dict], agora: d
 
     if c["fisio"]:
         f_enriq = enriq.get("fisio") or {}
-        # Procura cargo de fisioterapia na saída da IA caso não esteja em enriquecidos
         cargo_ia_fisio = next(
             (x for x in (ia.get("cargos") or []) if FISIO_REGEX.search(x.get("nome", ""))),
             {},
@@ -718,6 +799,12 @@ def montar_concurso(c: dict, info: dict, enriquecidos: Dict[str, dict], agora: d
             "salario_detalhe": sal_det,
             "carga_horaria": f_enriq.get("carga_horaria") or cargo_ia_fisio.get("carga_horaria") or c["jornada_geral"],
             "regime": f_enriq.get("regime") or cargo_ia_fisio.get("regime") or c["regime_geral"],
+            "escolaridade_tipo": "superior",
+            "requisitos": (
+                f_enriq.get("requisitos")
+                or cargo_ia_fisio.get("requisitos")
+                or "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3."
+            ),
             "beneficios": f_enriq.get("beneficios") or c["beneficios_gerais"],
             "resumo_conteudo": (
                 f_enriq.get("resumo_conteudo")
@@ -726,75 +813,273 @@ def montar_concurso(c: dict, info: dict, enriquecidos: Dict[str, dict], agora: d
             ),
         }
 
-    # ---------------- 2) NÍVEL MÉDIO > R$ 5.000 ---------------- #
+    # ---------------- 2) NÍVEL MÉDIO > R$ 5.000 & 3) OUTRAS FAIXAS ---------------- #
     c["medio_confirmado"] = []
-    c["medio_sem_salario"] = []
-    c["medio_possivel"] = False
-
-    if enriq.get("medio_excluido"):
-        return
+    c["medio_outros"] = []
 
     if enriq.get("medio"):
         for item in enriq["medio"]:
             c["medio_confirmado"].append(item)
+            c["medio_outros"].append(item)
         return
 
-    sal_max = max(
-        [v for v in (c.get("salario_max_listagem"), info.get("salario_max_texto")) if v] or [0]
-    ) or None
+    if enriq.get("medio_outros"):
+        for item in enriq["medio_outros"]:
+            c["medio_outros"].append(item)
+        return
+
+    if enriq.get("medio_excluido"):
+        return
+
+    # Extração automática para os demais concursos de Nível Médio / Técnico em SP
+    niveis_str = c.get("niveis", "")
+    tem_med_listagem = bool(re.search(r"m[ée]dio|t[ée]cnico", niveis_str, re.I))
+    if not tem_med_listagem and not info.get("tem_medio"):
+        return
+
+    sal_max = max([v for v in (c.get("salario_max_listagem"), info.get("salario_max_texto")) if v] or [0]) or None
     c["salario_max"] = sal_max
-    if sal_max is not None and sal_max <= SALARIO_MINIMO_MEDIO:
+
+    # Filtra cargos de nível médio/técnico nos <li> ou resumo da listagem
+    cargos_med = []
+    if c.get("cargos_resumo") and "Vários" not in c["cargos_resumo"]:
+        # Quando a listagem já traz os cargos explícitos
+        for p in [x.strip() for x in c["cargos_resumo"].split(",") if x.strip()]:
+            if not re.search(
+                r"\b(m[ée]dico|professor|docente|peb|diretor|psic[óo]logo|engenheiro|arquiteto|advogado|procurador|contador|enfermeiro|dentista|farmac[êe]utico|nutricionista|fisioterapeuta|terapeuta|assistente\s+social)\b",
+                p,
+                re.I,
+            ):
+                cargos_med.append(p)
+    if not cargos_med:
+        for cl in cargos_todos:
+            if re.search(r"\b(docente|professor|peb)\b", cl, re.I):
+                continue
+            if CARGOS_MEDIO_CONHECIDOS.search(cl) or re.search(r"\bt[ée]cnico\b", cl, re.I):
+                cargos_med.append(cl)
+
+    if not cargos_med and tem_med_listagem and "Superior" not in niveis_str:
+        resumo_c = c.get("cargos_resumo") or ""
+        if resumo_c and "Vários" not in resumo_c and not re.search(r"\b(docente|professor|peb)\b", resumo_c, re.I):
+            cargos_med = [resumo_c]
+
+    if not cargos_med:
         return
 
-    if ia.get("cargos"):
-        for cargo in ia["cargos"]:
-            esc = cargo.get("escolaridade")
-            nome_c = cargo.get("nome", "")
-            # Corrige bug onde IA marcava cargos administrativos clássicos como 'desconhecida'
-            if esc == "desconhecida" and CARGOS_MEDIO_CONHECIDOS.search(nome_c):
-                esc = "medio"
-            if esc != "medio":
-                continue
-            s = cargo.get("salario")
-            v_im, t_cr, v_txt = extrair_vagas_info(cargo.get("vagas"))
-            item_fmt = {
-                "nome": nome_c,
-                "vagas": v_txt,
-                "vagas_imediatas": v_im,
-                "tem_cr": t_cr,
-                "salario": s,
-                "salario_detalhe": f"{brl(s)} (base)" if s else f"Faixa do edital: {c['faixa_salarial']}",
-                "carga_horaria": cargo.get("carga_horaria") or c["jornada_geral"],
-                "regime": cargo.get("regime") or c["regime_geral"],
-                "beneficios": c["beneficios_gerais"],
-                "resumo_conteudo": conteudo_padrao_medio(nome_c, c["banca"]),
-            }
-            if s and s > SALARIO_MINIMO_MEDIO:
-                c["medio_confirmado"].append(item_fmt)
-            elif s is None:
-                c["medio_sem_salario"].append(item_fmt)
-        c["medio_possivel"] = not c["medio_confirmado"] and bool(c["medio_sem_salario"])
-    elif info.get("tem_medio"):
-        c["medio_possivel"] = True
+    nomes_limpos = [re.sub(r"\s*\([^)]*\)", "", x).strip() for x in cargos_med[:4]]
+    nome_exib = " / ".join(nomes_limpos)
+    if len(cargos_med) > 4:
+        nome_exib += f" (+{len(cargos_med) - 4} cargos)"
+
+    v_im, t_cr, v_txt = extrair_vagas_info(c.get("vagas_salario"))
+    esc_tipo, req_txt = inferir_requisitos_cargo(nome_exib, niveis_str)
+
+    # Se o edital também tem Nível Superior, o salário máximo da listagem é do cargo superior;
+    # nesses casos estimamos ou indicamos a faixa salarial de nível médio
+    tem_superior = "Superior" in niveis_str
+    sal_cargo = sal_max if (sal_max and not tem_superior) else (min(sal_max, 3200.0) if sal_max else None)
+    sal_det = (
+        f"{brl(sal_max)} (vencimento informado no edital)"
+        if (sal_max and not tem_superior)
+        else f"Faixa do edital: {c['faixa_salarial']} (consultar tabela de Nível Médio/Técnico no Anexo I)"
+    )
+
+    item_auto = {
+        "nome": nome_exib,
+        "vagas": v_txt,
+        "vagas_imediatas": v_im,
+        "tem_cr": t_cr,
+        "salario": sal_cargo,
+        "salario_detalhe": sal_det,
+        "carga_horaria": c["jornada_geral"],
+        "regime": c["regime_geral"],
+        "escolaridade_tipo": esc_tipo,
+        "requisitos": req_txt,
+        "beneficios": c["beneficios_gerais"],
+        "resumo_conteudo": conteudo_padrao_medio(nomes_limpos[0], c["banca"]),
+    }
+    if sal_cargo and sal_cargo > SALARIO_MINIMO_MEDIO and not tem_superior:
+        c["medio_confirmado"].append(item_auto)
+    c["medio_outros"].append(item_auto)
 
 
 # --------------------------------------------------------------------------- #
-# 6) Pipeline Principal
+# 6) Coleta Nacional (Brasil Todo + Todos os Estados)
+# --------------------------------------------------------------------------- #
+def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, dict]) -> List[dict]:
+    cache_br: Dict[str, dict] = load_json(CACHE_BRASIL_FILE, {})
+    vistos_url: Dict[str, dict] = {}
+
+    for regiao, r_url in REGIONAL_URLS.items():
+        log(f"Baixando listagem regional ({regiao}): {r_url}")
+        try:
+            itens = parse_listing(fetch(r_url), regiao_padrao=regiao)
+            for it in itens:
+                u = it["url"]
+                if u not in vistos_url:
+                    vistos_url[u] = it
+        except Exception as e:  # noqa: BLE001
+            log(f"  aviso ao baixar região {regiao}: {e}")
+
+    lista_br = list(vistos_url.values())
+    log(f"Total de concursos ativos no Brasil: {len(lista_br)}")
+
+    # Identifica páginas "Vários Cargos" que ainda não estão no cache_sp nem no cache_br
+    urls_para_baixar = []
+    for it in lista_br:
+        u = it["url"]
+        if u in cache_sp and (cache_sp[u].get("detalhes") or {}).get("cargos_li") is not None:
+            continue
+        if u in cache_br:
+            continue
+        if "Vários" in it.get("cargos_resumo", "") or it["uf"] == "SP":
+            urls_para_baixar.append(u)
+
+    if urls_para_baixar:
+        log(f"Extraindo lista de cargos de {len(urls_para_baixar)} editais 'Vários Cargos' (em paralelo)...")
+
+        def _worker(u: str) -> tuple[str, Optional[dict]]:
+            try:
+                det = extrair_pagina_noticia(fetch(u))
+                return u, {
+                    "cargos_li": det["cargos_li"],
+                    "data_prova": det["data_prova"],
+                    "regime": det["regime"],
+                    "beneficios": det["beneficios"],
+                    "jornada": det["jornada"],
+                    "nome_banca": det["nome_banca"],
+                    "link_banca": det["link_banca"],
+                    "arquivos_edital": det["arquivos_edital"],
+                }
+            except Exception:  # noqa: BLE001
+                return u, None
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as ex:
+            for idx, (u, res) in enumerate(ex.map(_worker, urls_para_baixar), 1):
+                if res is not None:
+                    cache_br[u] = res
+                if idx % 50 == 0 or idx == len(urls_para_baixar):
+                    log(f"  progresso Brasil: {idx}/{len(urls_para_baixar)} páginas processadas")
+
+        ativos_br = {it["url"] for it in lista_br}
+        cache_br = {u: v for u, v in cache_br.items() if u in ativos_br}
+        CACHE_BRASIL_FILE.write_text(json.dumps(cache_br, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # Monta catálogo compacto de todos os concursos do Brasil para a Aba 4
+    catalogo_br = []
+    for it in lista_br:
+        u = it["url"]
+        enriq = enriquecidos.get(u, {})
+        sp_info = cache_sp.get(u, {})
+        sp_det = sp_info.get("detalhes") or {}
+        sp_ia = sp_info.get("ia") or {}
+        br_det = cache_br.get(u, {})
+
+        cargos_lista: List[str] = []
+        for fonte_lista in (
+            br_det.get("cargos_li") or [],
+            sp_det.get("cargos_li") or [],
+            [x.get("nome", "") for x in (sp_ia.get("cargos") or []) if x.get("nome")],
+        ):
+            for cg in fonte_lista:
+                if cg and cg not in cargos_lista:
+                    cargos_lista.append(cg)
+
+        if enriq.get("fisio"):
+            fc = enriq["fisio"].get("cargo")
+            if fc and fc not in cargos_lista:
+                cargos_lista.insert(0, fc)
+        for m_item in (enriq.get("medio") or []) + (enriq.get("medio_outros") or []):
+            mc = m_item.get("nome")
+            if mc and mc not in cargos_lista:
+                cargos_lista.insert(0, mc)
+
+        if not cargos_lista and it.get("cargos_resumo") and "Vários" not in it["cargos_resumo"]:
+            cargos_lista = [x.strip() for x in it["cargos_resumo"].split(",") if x.strip()]
+
+        cidade_sp = None
+        km_rp = None
+        km_ja = None
+        if it["uf"] == "SP":
+            cidade_sp = detectar_cidade(it["orgao"], it["titulo"], u, "", enriq.get("cidade") or sp_ia.get("cidade"))
+            d_info = info_distancia(cidade_sp)
+            cidade_sp = d_info["cidade"]
+            km_rp = d_info["km_ribeirao_preto"]
+            km_ja = d_info["km_jarinu"]
+
+        catalogo_br.append(
+            {
+                "url": u,
+                "orgao": it["orgao"],
+                "titulo": it["titulo"],
+                "uf": it["uf"] or "BR",
+                "regiao": it["regiao"],
+                "cidade": cidade_sp or it["uf"] or "Nacional",
+                "km_rp": km_rp,
+                "km_ja": km_ja,
+                "vagas_salario": it["vagas_salario"],
+                "salario_max": it["salario_max_listagem"],
+                "cargos_resumo": it["cargos_resumo"],
+                "niveis": it["niveis"],
+                "inscricao_ate": it["inscricao_ate"] or "Consultar edital",
+                "data_prova": (
+                    enriq.get("data_prova")
+                    or sp_ia.get("data_prova")
+                    or sp_det.get("data_prova")
+                    or br_det.get("data_prova")
+                    or "Consultar edital"
+                ),
+                "banca": (
+                    enriq.get("banca")
+                    or sp_ia.get("banca")
+                    or sp_det.get("nome_banca")
+                    or br_det.get("nome_banca")
+                    or "Consultar edital"
+                ),
+                "site_banca": enriq.get("site_banca") or sp_det.get("link_banca") or br_det.get("link_banca") or "",
+                "regime": (
+                    enriq.get("regime")
+                    or sp_ia.get("regime_geral")
+                    or sp_det.get("regime")
+                    or br_det.get("regime")
+                    or "Consultar edital"
+                ),
+                "beneficios": (
+                    enriq.get("beneficios")
+                    or sp_ia.get("beneficios")
+                    or sp_det.get("beneficios")
+                    or br_det.get("beneficios")
+                    or "Consultar edital"
+                ),
+                "jornada": (
+                    sp_ia.get("jornada_geral")
+                    or sp_det.get("jornada")
+                    or br_det.get("jornada")
+                    or "Consultar edital"
+                ),
+                "cargos": cargos_lista[:80],
+            }
+        )
+
+    return catalogo_br
+
+
+# --------------------------------------------------------------------------- #
+# 7) Pipeline Principal
 # --------------------------------------------------------------------------- #
 def tem_nivel_medio(c: dict, texto: str) -> bool:
-    if re.search(r"m[ée]dio", c.get("niveis", ""), re.I):
+    if re.search(r"m[ée]dio|t[ée]cnico", c.get("niveis", ""), re.I):
         return True
-    return bool(re.search(r"n[íi]vel m[ée]dio|ensino m[ée]dio", texto, re.I))
+    return bool(re.search(r"n[íi]vel m[ée]dio|ensino m[ée]dio|curso t[ée]cnico", texto, re.I))
 
 
 def candidato_relevante(c: dict, info: Optional[dict]) -> bool:
-    """Indica se vale a pena buscar detalhes completos / IA para este concurso."""
     if info and info.get("fisio_linhas"):
         return True
     if FISIO_REGEX.search(c.get("cargos_resumo", "")) or FISIO_REGEX.search(c.get("titulo", "")):
         return True
     sal = max([v for v in (c.get("salario_max_listagem"), (info or {}).get("salario_max_texto")) if v] or [0])
-    tem_med = bool(re.search(r"m[ée]dio", c.get("niveis", ""), re.I)) or bool((info or {}).get("tem_medio"))
+    tem_med = bool(re.search(r"m[ée]dio|t[ée]cnico", c.get("niveis", ""), re.I)) or bool((info or {}).get("tem_medio"))
     return tem_med and (sal == 0 or sal > SALARIO_MINIMO_MEDIO)
 
 
@@ -806,27 +1091,21 @@ def main() -> int:
     agora = datetime.now(BRT)
     hoje = agora.strftime("%Y-%m-%d")
 
-    # Se o cache já existia mas ainda não tinha controle de baseline/timestamp,
-    # marca os registros existentes como baseline (período anterior) para não
-    # rotular falsamente todos os 160 concursos antigos como "NOVO (últimas 24h)".
     for u, item in cache.items():
         if "first_seen_ts" not in item:
             item["first_seen_ts"] = "2026-10-20T07:00:00-03:00"
             item["is_baseline"] = True
 
-    log(f"Baixando listagem: {LISTING_URL}")
-    todos = parse_listing(fetch(LISTING_URL))
+    log(f"Baixando listagem principal (Sudeste): {LISTING_URL}")
+    todos = parse_listing(fetch(LISTING_URL), regiao_padrao="Sudeste")
     concursos = [c for c in todos if c["uf"] == UF_ALVO]
     log(f"{len(todos)} concursos no Sudeste, {len(concursos)} em {UF_ALVO}.")
-    log("IA: " + (f"ativada ({GEMINI_MODEL})" if GEMINI_API_KEY else "desativada (sem GEMINI_API_KEY)"))
 
     for i, c in enumerate(concursos, 1):
         url = c["url"]
         info = cache.get(url)
         eh_url_nova = info is None
-        precisa_detalhes = eh_url_nova or (
-            candidato_relevante(c, info) and not (info or {}).get("detalhes")
-        )
+        precisa_detalhes = eh_url_nova or not (info or {}).get("detalhes")
         quer_ia = (
             bool(GEMINI_API_KEY)
             and url not in enriquecidos
@@ -835,7 +1114,7 @@ def main() -> int:
         )
 
         if precisa_detalhes or quer_ia:
-            log(f"[{i}/{len(concursos)}] Analisando detalhes: {c['orgao']}")
+            log(f"[{i}/{len(concursos)}] Analisando detalhes SP: {c['orgao']}")
             try:
                 det = extrair_pagina_noticia(fetch(url))
             except RuntimeError as e:
@@ -864,9 +1143,18 @@ def main() -> int:
                     info["ia_model"] = GEMINI_MODEL
             cache[url] = info
 
+    # Coleta Brasil todo (e aproveita para preencher cargos_li de SP que estavam faltando)
+    catalogo_brasil = coletar_concursos_brasil(cache, enriquecidos)
+    cache_br_map = load_json(CACHE_BRASIL_FILE, {})
+
+    for c in concursos:
+        url = c["url"]
+        info = cache.get(url)
         if info is None:
             continue
-        montar_concurso(c, info, enriquecidos, agora)
+        if url in cache_br_map and not (info.get("detalhes") or {}).get("cargos_li"):
+            info.setdefault("detalhes", {})["cargos_li"] = cache_br_map[url].get("cargos_li", [])
+        montar_concurso_sp(c, info, enriquecidos, agora)
 
     ativos = {c["url"] for c in concursos}
     cache = {u: v for u, v in cache.items() if u in ativos}
@@ -874,8 +1162,21 @@ def main() -> int:
 
     fisio = [c for c in concursos if c.get("fisio")]
     medio_ok = [c for c in concursos if c.get("medio_confirmado")]
-    medio_pos = [c for c in concursos if c.get("medio_possivel")]
-    novos_24h = sum(1 for c in (fisio + medio_ok + medio_pos) if c.get("novo"))
+    medio_todos = [c for c in concursos if c.get("medio_outros")]
+    # Ordena medio_todos por salário decrescente por padrão
+    medio_todos.sort(
+        key=lambda x: max([it.get("salario") or 0 for it in x.get("medio_outros", [])] or [0]),
+        reverse=True,
+    )
+
+    urls_vistas = set()
+    novos_24h = 0
+    for c in fisio + medio_ok + medio_todos:
+        if c["url"] not in urls_vistas:
+            urls_vistas.add(c["url"])
+            if c.get("novo"):
+                novos_24h += 1
+
     gerado_em = agora.strftime("%d/%m/%Y %H:%M")
 
     RESULTS_FILE.write_text(
@@ -885,11 +1186,12 @@ def main() -> int:
                 "gerado_em_iso": agora.isoformat(),
                 "fonte": LISTING_URL,
                 "total_sp": len(concursos),
+                "total_brasil": len(catalogo_brasil),
                 "ia_ativa": bool(GEMINI_API_KEY) or bool(enriquecidos),
                 "novos_ultimas_24h": novos_24h,
                 "fisioterapia": fisio,
                 "nivel_medio_acima_5000": medio_ok,
-                "nivel_medio_possiveis": medio_pos,
+                "nivel_medio_todas_faixas": medio_todos,
             },
             ensure_ascii=False,
             indent=1,
@@ -897,26 +1199,32 @@ def main() -> int:
         encoding="utf-8",
     )
     HTML_FILE.write_text(
-        render_html(fisio, medio_ok, medio_pos, len(concursos), gerado_em, agora.isoformat()),
+        render_html(
+            fisio=fisio,
+            medio_ok=medio_ok,
+            medio_todos=medio_todos,
+            catalogo_brasil=catalogo_brasil,
+            total_sp=len(concursos),
+            gerado_em=gerado_em,
+        ),
         encoding="utf-8",
     )
     log(
         f"Concluído! Fisioterapia: {len(fisio)} | Nível Médio > R$5k: {len(medio_ok)} | "
-        f"Possíveis: {len(medio_pos)} | Novos (24h): {novos_24h}"
+        f"Nível Médio/Técnico (Todas as Faixas): {len(medio_todos)} | Brasil: {len(catalogo_brasil)}"
     )
     log(f"Página PWA gerada: {HTML_FILE}")
     return 0
 
 
 # --------------------------------------------------------------------------- #
-# 7) Renderização HTML + PWA + Filtros Avançados
+# 8) Renderização HTML + UX Bandeira do Brasil + Botões de Filtro + Pix
 # --------------------------------------------------------------------------- #
 def e(s: Any) -> str:
     return html.escape(str(s if s is not None else ""))
 
 
 def data_iso_sort(data_br: str) -> str:
-    """Converte 'DD/MM/AAAA' em 'AAAA-MM-DD' para ordenação cronológica."""
     m = re.search(r"(\d{2})/(\d{2})/(\d{4})", data_br or "")
     if m:
         return f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
@@ -941,6 +1249,26 @@ def regime_categoria(regime: str) -> str:
     return "outros"
 
 
+def faixa_salarial_slug(sal: Optional[float]) -> str:
+    if sal is None or sal <= 0:
+        return "consultar"
+    if sal <= 2500:
+        return "ate2500"
+    if sal <= 3500:
+        return "2500a3500"
+    if sal <= 5000:
+        return "3500a5000"
+    return "acima5000"
+
+
+def badge_escolaridade_html(esc_tipo: str) -> str:
+    if esc_tipo == "superior":
+        return '<span class="esc-badge esc-sup">🎓 Ensino Superior + CREFITO</span>'
+    if esc_tipo == "medio_tecnico":
+        return '<span class="esc-badge esc-tec">🛠️ Nível Médio / Curso Técnico</span>'
+    return '<span class="esc-badge esc-med">📗 Exige Apenas Ensino Médio</span>'
+
+
 def render_card(c: dict, modo: str) -> str:
     if modo == "fisio":
         fd = c.get("fisio_detalhes") or {}
@@ -954,10 +1282,13 @@ def render_card(c: dict, modo: str) -> str:
         carga = fd.get("carga_horaria") or c.get("jornada_geral") or "Consultar edital"
         regime = fd.get("regime") or c.get("regime_geral") or "Consultar edital"
         beneficios = fd.get("beneficios") or c.get("beneficios_gerais") or "Consultar edital"
+        esc_tipo = fd.get("escolaridade_tipo") or "superior"
+        requisitos = fd.get("requisitos") or "Ensino Superior completo em Fisioterapia + Registro no CREFITO-3."
         topicos = fd.get("resumo_conteudo") or []
         icone_cargo = "🩺"
-    elif modo == "medio":
-        itens = c.get("medio_confirmado") or [{}]
+    else:
+        chave = "medio_confirmado" if modo == "medio5k" else "medio_outros"
+        itens = c.get(chave) or [{}]
         prim = itens[0]
         cargo_titulo = " / ".join(x.get("nome", "") for x in itens if x.get("nome"))
         vagas_txt = prim.get("vagas") or "CR"
@@ -970,23 +1301,13 @@ def render_card(c: dict, modo: str) -> str:
         carga = prim.get("carga_horaria") or c.get("jornada_geral") or "Consultar edital"
         regime = prim.get("regime") or c.get("regime_geral") or "Consultar edital"
         beneficios = prim.get("beneficios") or c.get("beneficios_gerais") or "Consultar edital"
+        esc_tipo = prim.get("escolaridade_tipo") or "medio"
+        requisitos = (
+            prim.get("requisitos")
+            or "Exige Ensino Médio completo conforme especificações do Anexo I do edital."
+        )
         topicos = prim.get("resumo_conteudo") or []
         icone_cargo = "💼"
-    else:
-        itens = c.get("medio_sem_salario") or []
-        nomes = [x.get("nome", "") for x in itens if x.get("nome")]
-        cargo_titulo = ", ".join(nomes[:4]) + (f" (+{len(nomes)-4})" if len(nomes) > 4 else "") if nomes else "Cargos de Nível Médio"
-        vagas_im = sum(x.get("vagas_imediatas", 0) for x in itens)
-        tem_cr = True
-        vagas_txt = f"{vagas_im} vaga(s) + CR" if vagas_im > 0 else "Cadastro de Reserva (CR)"
-        sal_val = c.get("salario_max")
-        sal_exib = c.get("faixa_salarial") or (f"Até {brl(sal_val)}" if sal_val else "Consultar edital")
-        sal_det = "Salário individual por cargo na tabela do edital completo"
-        carga = c.get("jornada_geral") or "Consultar edital"
-        regime = c.get("regime_geral") or "Consultar edital"
-        beneficios = c.get("beneficios_gerais") or "Consultar edital"
-        topicos = conteudo_padrao_medio(nomes[0] if nomes else "Nível Médio", c.get("banca", ""))
-        icone_cargo = "🔍"
 
     cidade = c.get("cidade") or "São Paulo"
     km_rp = c.get("km_ribeirao_preto")
@@ -994,6 +1315,7 @@ def render_card(c: dict, modo: str) -> str:
     km_rp_attr = km_rp if km_rp is not None else 9999
     km_ja_attr = km_ja if km_ja is not None else 9999
     sal_attr = sal_val if sal_val is not None else 0
+    faixa_attr = faixa_salarial_slug(sal_val)
     horas_attr = horas_num(carga)
     reg_cat = regime_categoria(regime)
     prova_sort = data_iso_sort(c.get("data_prova", ""))
@@ -1008,14 +1330,14 @@ def render_card(c: dict, modo: str) -> str:
 
     chips_dist = f'<span class="chip-loc">📍 {e(cidade)}/SP</span>'
     if km_rp is not None:
-        chips_dist += f'<span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 {km_rp} km de Rib. Preto</span>'
+        chips_dist += f'<span class="chip-dist" title="Distância rodoviária/linear aproximada até Ribeirão Preto/SP">🧭 {km_rp} km de Rib. Preto</span>'
     if km_ja is not None:
         chips_dist += f'<span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 {km_ja} km de Jarinu</span>'
 
     arqs_str = " • ".join(c.get("arquivos_edital") or ["Edital Completo"])
     botoes = (
         f'<a class="btn-link primario" href="{e(c.get("link_edital"))}" target="_blank" rel="noopener" '
-        f'title="{e(arqs_str)}">📄 Edital &amp; Conteúdo Programático</a>'
+        f'title="{e(arqs_str)}">📄 Edital &amp; Anexos</a>'
     )
     if c.get("site_banca"):
         botoes += (
@@ -1032,20 +1354,17 @@ def render_card(c: dict, modo: str) -> str:
     label_prog = (
         "📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)"
         if modo == "fisio"
-        else "📚 Ver Resumo do Conteúdo Programático"
-    )
-
-    busca_str = norm(
-        f"{c.get('orgao')} {c.get('titulo')} {cidade} {cargo_titulo} {c.get('banca')} {regime} {beneficios}"
+        else "📚 Ver Resumo do Conteúdo Programático do Edital"
     )
 
     return f"""
     <article class="card"
-      data-busca="{e(busca_str)}"
       data-cidade="{e(cidade)}"
       data-km-rp="{km_rp_attr}"
       data-km-jarinu="{km_ja_attr}"
       data-salario="{sal_attr}"
+      data-faixa="{faixa_attr}"
+      data-escolaridade="{esc_tipo}"
       data-vagas="{vagas_im}"
       data-tem-cr="{1 if tem_cr else 0}"
       data-regime="{reg_cat}"
@@ -1060,7 +1379,10 @@ def render_card(c: dict, modo: str) -> str:
           <h3><a href="{e(c['url'])}" target="_blank" rel="noopener">{e(c['orgao'])}</a></h3>
           {badge_novo}
         </div>
-        <div class="loc-row">{chips_dist}</div>
+        <div class="loc-row">
+          {chips_dist}
+          {badge_escolaridade_html(esc_tipo)}
+        </div>
         <p class="titulo">{e(c['titulo'])}</p>
       </header>
 
@@ -1069,9 +1391,14 @@ def render_card(c: dict, modo: str) -> str:
         <span class="badge-vagas">{e(vagas_txt)}</span>
       </div>
 
+      <div class="req-box">
+        <div class="req-title">🎓 Requisitos &amp; Especificações Técnicas para Assumir o Cargo</div>
+        <p class="req-text">{e(requisitos)}</p>
+      </div>
+
       <div class="info-grid">
         <div class="info-box destaque-sal">
-          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <span class="lbl">💰 Remuneração do Cargo</span>
           <strong class="val">{e(sal_exib)}</strong>
           <small class="sub">{e(sal_det)}</small>
         </div>
@@ -1084,7 +1411,7 @@ def render_card(c: dict, modo: str) -> str:
           <strong class="val-sm">{e(regime)}</strong>
         </div>
         <div class="info-box">
-          <span class="lbl">⏱️ Horas por Semana</span>
+          <span class="lbl">⏱️ Jornada Semanal</span>
           <strong class="val-sm">{e(carga)}</strong>
         </div>
         <div class="info-box destaque-prova">
@@ -1104,215 +1431,978 @@ def render_card(c: dict, modo: str) -> str:
       <details class="prog-box">
         <summary>{label_prog}</summary>
         <div class="prog-body">
-          <p class="prog-arq">📑 <b>Documentos do Edital:</b> {e(arqs_str)}</p>
+          <p class="prog-arq">📑 <b>Documentos e Anexos:</b> {e(arqs_str)}</p>
           <ul>{lista_topicos}</ul>
           <a class="prog-cta" href="{e(c.get('link_edital'))}" target="_blank" rel="noopener">
-            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+            👉 Abrir Edital Completo e Anexo de Salários / Conteúdo Programático
           </a>
         </div>
       </details>
     </article>"""
 
 
-def render_secao(id_: str, titulo: str, desc: str, itens: List[dict], modo: str, ativo: bool = False) -> str:
+def render_secao(
+    id_: str,
+    icone: str,
+    titulo: str,
+    desc: str,
+    itens: List[dict],
+    modo: str,
+    ativo: bool = False,
+    barra_extra: str = "",
+) -> str:
     corpo = "".join(render_card(c, modo) for c in itens)
     cls = "tab-panel ativo" if ativo else "tab-panel"
     return f"""
   <section id="{id_}" class="{cls}" data-total="{len(itens)}">
     <div class="sec-head">
-      <h2>{titulo} <small class="sec-count">({len(itens)})</small></h2>
+      <div class="sec-title-row">
+        <h2>{icone} {titulo}</h2>
+        <div class="count-box-lg" title="Concursos vigentes nesta categoria">
+          <b class="sec-count">{len(itens)}</b>
+          <span>vigentes</span>
+        </div>
+      </div>
       <p class="desc">{desc}</p>
+      {barra_extra}
     </div>
     <div class="grid">{corpo}</div>
     <p class="vazio" style="display:{'none' if itens else 'block'};">
-      Nenhum concurso encontrado com os filtros selecionados.
+      Nenhum concurso encontrado com os botões de filtro selecionados. Clique em "Limpar Filtros" acima para ver todos.
     </p>
   </section>"""
 
 
-def render_html(fisio: List[dict], medio_ok: List[dict], medio_pos: List[dict], total_sp: int, gerado_em: str, gerado_iso: str) -> str:
-    # Lista única de cidades presentes nos cards para popular o filtro de Cidade
-    cidades_map: Dict[str, tuple[Optional[int], Optional[int]]] = {}
-    for c in fisio + medio_ok + medio_pos:
-        cid = c.get("cidade")
-        if cid and cid not in cidades_map:
-            cidades_map[cid] = (c.get("km_ribeirao_preto"), c.get("km_jarinu"))
-    opcoes_cidades = '<option value="">Todas as cidades de SP</option>' + "".join(
-        f'<option value="{e(cid)}">{e(cid)} '
-        f'({f"{rp} km Rib. Preto" if rp is not None else ""}'
-        f'{" · " if rp is not None and ja is not None else ""}'
-        f'{f"{ja} km Jarinu" if ja is not None else ""})</option>'
-        for cid, (rp, ja) in sorted(cidades_map.items())
+def render_html(
+    fisio: List[dict],
+    medio_ok: List[dict],
+    medio_todos: List[dict],
+    catalogo_brasil: List[dict],
+    total_sp: int,
+    gerado_em: str,
+) -> str:
+    # Cidades únicas presentes nos cards de SP para criar os botões pré-definidos de cidade
+    cidades_set = sorted({c.get("cidade") for c in (fisio + medio_ok + medio_todos) if c.get("cidade")})
+    botoes_cidades = (
+        '<button type="button" class="pill-btn ativo" data-filter="cidade" data-val="">Todas as Cidades</button>'
+        + "".join(
+            f'<button type="button" class="pill-btn" data-filter="cidade" data-val="{e(cid)}">{e(cid)}</button>'
+            for cid in cidades_set
+        )
     )
 
-    novos_count = sum(1 for c in (fisio + medio_ok + medio_pos) if c.get("novo"))
+    urls_unicas = {}
+    for c in fisio + medio_ok + medio_todos:
+        urls_unicas[c["url"]] = c
+    novos_count = sum(1 for c in urls_unicas.values() if c.get("novo"))
+
+    # Barra rápida de faixas salariais exclusiva do topo da Aba 3 (Nível Médio / Técnico — Todas as Faixas)
+    barra_faixas_aba3 = """
+    <div class="faixa-highlight-bar">
+      <span class="faixa-bar-lbl">💵 Escolha a Faixa de Remuneração (Nível Médio / Técnico):</span>
+      <div class="pill-row">
+        <button type="button" class="pill-btn pill-gold ativo" data-filter="faixa" data-val="">Todas as Faixas</button>
+        <button type="button" class="pill-btn pill-gold" data-filter="faixa" data-val="ate2500">Até R$ 2.500</button>
+        <button type="button" class="pill-btn pill-gold" data-filter="faixa" data-val="2500a3500">R$ 2.500 a R$ 3.500</button>
+        <button type="button" class="pill-btn pill-gold" data-filter="faixa" data-val="3500a5000">R$ 3.500 a R$ 5.000</button>
+        <button type="button" class="pill-btn pill-gold" data-filter="faixa" data-val="acima5000">Acima de R$ 5.000</button>
+      </div>
+    </div>
+    """
+
+    # UFs presentes no catálogo nacional
+    ufs_contagem: Dict[str, int] = {}
+    for item in catalogo_brasil:
+        uf = item.get("uf") or "BR"
+        ufs_contagem[uf] = ufs_contagem.get(uf, 0) + 1
+
+    ordem_ufs = [
+        "SP", "MG", "RJ", "ES", "PR", "SC", "RS", "DF", "GO", "MS", "MT",
+        "BA", "PE", "CE", "RN", "PB", "AL", "SE", "MA", "PI", "PA", "AM", "RO", "TO", "AC", "AP", "RR", "BR",
+    ]
+    botoes_ufs = (
+        f'<button type="button" class="pill-btn uf-btn ativo" data-uf="TODOS">'
+        f'🇧🇷 Brasil Todo <span class="mini-cnt">{len(catalogo_brasil)}</span></button>'
+    )
+    for uf in ordem_ufs:
+        if uf in ufs_contagem:
+            rotulo = "🌎 Nacional (BR)" if uf == "BR" else uf
+            botoes_ufs += (
+                f'<button type="button" class="pill-btn uf-btn" data-uf="{uf}">'
+                f'{rotulo} <span class="mini-cnt">{ufs_contagem[uf]}</span></button>'
+            )
+
+    cargos_sugeridos = [
+        "Fisioterapeuta",
+        "Enfermeiro",
+        "Técnico de Enfermagem",
+        "Agente Administrativo",
+        "Escriturário",
+        "Guarda Municipal",
+        "Psicólogo",
+        "Nutricionista",
+        "Farmacêutico",
+        "Dentista",
+        "Assistente Social",
+        "Engenheiro Civil",
+        "Contador",
+        "Fiscal",
+        "Professor",
+        "Motorista",
+        "Técnico em Informática",
+        "Técnico em Segurança do Trabalho",
+    ]
+    botoes_cargos_rapidos = (
+        '<button type="button" class="pill-btn cargo-quick ativo" data-cargo="">Mostrar Todos os Cargos</button>'
+        + "".join(
+            f'<button type="button" class="pill-btn cargo-quick" data-cargo="{e(cg)}">{e(cg)}</button>'
+            for cg in cargos_sugeridos
+        )
+    )
+
+    qr_svg = gerar_qr_pix_svg(PIX_KEY)
+    catalogo_json = json.dumps(catalogo_brasil, ensure_ascii=False)
 
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#006b2d">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Concursos SP">
-<meta name="description" content="Concursos abertos em São Paulo para Fisioterapeuta/Fisioterapia e Nível Médio acima de R$ 5.000,00 com salário exato, VA/VR/VT, carga horária, regime e data da prova.">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Concursos Brasil &amp; SP">
+<meta name="description" content="Painel diário de Concursos Públicos — Fisioterapia, Nível Médio/Técnico e Busca por Cargo em SP e em todo o Brasil.">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>Concursos SP — Fisioterapia &amp; Nível Médio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<title>Concursos SP &amp; Brasil — Fisioterapia, Nível Médio e Busca por Cargo</title>
 <style>
   :root {{
-    --bg:#0b1120; --surface:#111827; --card:#1e293b; --card2:#0f172a;
-    --border:#334155; --muted:#94a3b8; --txt:#f1f5f9;
-    --acc:#22d3ee; --ok:#4ade80; --warn:#fbbf24; --new:#f43f5e;
+    /* Paleta Inspirada na Bandeira do Brasil */
+    --br-green-dark: #005c24;
+    --br-green: #009739;
+    --br-green-soft: #e8f5ee;
+    --br-green-border: #b7e1c7;
+    --br-yellow: #FEDD00;
+    --br-yellow-soft: #fffbeb;
+    --br-yellow-border: #fde047;
+    --br-yellow-text: #854d0e;
+    --br-blue-dark: #001b52;
+    --br-blue: #002776;
+    --br-blue-soft: #eef4ff;
+    --br-blue-border: #c7d9fe;
+    --bg: #f3f7f4;
+    --surface: #ffffff;
+    --surface-alt: #f8fbf9;
+    --border: #d8e4dc;
+    --txt: #0f291e;
+    --muted: #4b6358;
+    --radius-lg: 18px;
+    --radius-md: 12px;
+    --shadow-sm: 0 2px 10px rgba(0, 45, 18, 0.05);
+    --shadow-md: 0 8px 26px rgba(0, 45, 18, 0.08);
   }}
-  * {{ box-sizing:border-box; }}
-  body {{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--txt); line-height:1.45; }}
-  .container {{ max-width:1280px; margin:auto; padding:0 18px; }}
 
-  /* Cabeçalho e Botão PWA */
-  header.app-bar {{ padding:22px 0 14px; border-bottom:1px solid #1e293b; background:linear-gradient(180deg,#0f172a 0%,#0b1120 100%); }}
-  .bar-row {{ display:flex; justify-content:space-between; align-items:flex-start; gap:14px; flex-wrap:wrap; }}
-  h1 {{ margin:0 0 4px; font-size:1.55rem; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }}
-  .meta {{ color:var(--muted); font-size:.88rem; }}
-  .meta a {{ color:var(--acc); text-decoration:none; }}
+  * {{ box-sizing: border-box; }}
+  body {{
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--txt);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }}
+  .container {{ max-width: 1320px; margin: 0 auto; padding: 0 20px; }}
+
+  /* Cabeçalho Institucional (Verde, Amarelo e Azul) */
+  header.app-bar {{
+    background: linear-gradient(135deg, var(--br-blue-dark) 0%, var(--br-blue) 42%, var(--br-green-dark) 100%);
+    color: #ffffff;
+    padding: 26px 0 22px;
+    border-bottom: 5px solid var(--br-yellow);
+    box-shadow: 0 6px 24px rgba(0, 39, 118, 0.18);
+  }}
+  .bar-row {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }}
+  .brand-badge {{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(254, 221, 0, 0.16);
+    border: 1px solid rgba(254, 221, 0, 0.5);
+    color: var(--br-yellow);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }}
+  h1 {{
+    margin: 0 0 6px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }}
+  .meta {{ color: rgba(255, 255, 255, 0.86); font-size: 0.9rem; }}
+  .meta a {{ color: var(--br-yellow); font-weight: 600; text-decoration: none; }}
+  .meta a:hover {{ text-decoration: underline; }}
+
   .btn-pwa {{
-    background:linear-gradient(135deg,#22d3ee,#38bdf8); color:#082f49; border:none;
-    padding:10px 18px; border-radius:999px; font-weight:700; font-size:.92rem;
-    cursor:pointer; display:inline-flex; align-items:center; gap:8px;
-    box-shadow:0 4px 14px rgba(34,211,238,.25); transition:transform .15s;
+    background: var(--br-yellow);
+    color: var(--br-blue-dark);
+    border: 2px solid #ffffff;
+    padding: 11px 20px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.92rem;
+    font-family: inherit;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
+    transition: transform 0.15s, box-shadow 0.15s;
   }}
-  .btn-pwa:hover {{ transform:translateY(-1px); }}
+  .btn-pwa:hover {{ transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28); }}
 
-  /* Estatísticas */
-  .stats {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px; margin:16px 0 6px; }}
-  .stat {{ background:var(--card); padding:12px 15px; border-radius:12px; border:1px solid var(--border); }}
-  .stat b {{ font-size:1.45rem; display:block; color:var(--acc); }}
-  .stat span {{ font-size:.83rem; color:var(--muted); }}
-
-  /* Navegação por Abas */
-  nav.tabs {{ display:flex; gap:8px; flex-wrap:wrap; margin:16px 0 12px; }}
-  nav.tabs button {{
-    background:var(--card); color:var(--txt); border:1px solid var(--border);
-    padding:11px 18px; border-radius:999px; cursor:pointer; font-size:.94rem;
-    transition:all .15s;
+  /* Navegação Principal com Caixinhas Separadas para Contadores */
+  .tabs-wrap {{
+    margin: 22px 0 18px;
   }}
-  nav.tabs button.ativo {{ background:var(--acc); color:#082f49; border-color:var(--acc); font-weight:700; }}
+  nav.tabs {{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 12px;
+  }}
+  .tab-item {{
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+  }}
+  .tab-btn {{
+    flex: 1;
+    background: var(--surface);
+    color: var(--txt);
+    border: 2px solid var(--border);
+    padding: 13px 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.16s ease;
+  }}
+  .tab-btn:hover {{
+    border-color: var(--br-green);
+    background: var(--br-green-soft);
+  }}
+  .tab-item.ativo .tab-btn {{
+    background: var(--br-green);
+    color: #ffffff;
+    border-color: var(--br-green-dark);
+    box-shadow: 0 6px 18px rgba(0, 151, 57, 0.25);
+  }}
+  /* Caixinha separada ao lado do nome da aba */
+  .tab-count-box {{
+    min-width: 78px;
+    background: var(--br-blue-soft);
+    border: 2px solid var(--br-blue-border);
+    color: var(--br-blue);
+    border-radius: 14px;
+    padding: 6px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.16s ease;
+  }}
+  .tab-count-box b {{
+    font-size: 1.2rem;
+    line-height: 1.1;
+    font-weight: 800;
+  }}
+  .tab-count-box small {{
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    opacity: 0.85;
+  }}
+  .tab-item.ativo .tab-count-box {{
+    background: var(--br-yellow);
+    border-color: #eab308;
+    color: var(--br-blue-dark);
+    box-shadow: 0 6px 18px rgba(254, 221, 0, 0.35);
+  }}
 
-  /* Painel de Filtros */
+  /* Painel de Filtros em Botões Pré-definidos */
   .filtros-panel {{
-    background:var(--surface); border:1px solid var(--border); border-radius:14px;
-    padding:14px 16px; margin-bottom:18px;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-top: 5px solid var(--br-green);
+    border-radius: var(--radius-lg);
+    padding: 18px 20px;
+    margin-bottom: 22px;
+    box-shadow: var(--shadow-sm);
   }}
-  .filtros-head {{ display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:10px; }}
-  .filtros-head strong {{ font-size:.95rem; color:var(--acc); }}
-  .filtros-actions {{ display:flex; align-items:center; gap:12px; flex-wrap:wrap; }}
-  .chk-novo {{ display:inline-flex; align-items:center; gap:6px; font-size:.86rem; cursor:pointer; background:#1e293b; padding:6px 12px; border-radius:999px; border:1px solid var(--border); }}
-  .btn-limpar {{ background:transparent; color:var(--muted); border:1px solid var(--border); padding:6px 12px; border-radius:8px; cursor:pointer; font-size:.83rem; }}
-  .btn-limpar:hover {{ color:var(--txt); border-color:var(--acc); }}
-  .filtros-grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:10px; }}
-  .f-item {{ display:flex; flex-direction:column; gap:4px; }}
-  .f-item label {{ font-size:.76rem; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.03em; }}
-  .f-item input, .f-item select {{
-    width:100%; padding:9px 11px; border-radius:9px; border:1px solid var(--border);
-    background:var(--card2); color:var(--txt); font-size:.9rem;
+  .filtros-head {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
   }}
-  .f-item input:focus, .f-item select:focus {{ outline:none; border-color:var(--acc); }}
+  .filtros-head-title {{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.02rem;
+    font-weight: 800;
+    color: var(--br-blue);
+  }}
+  .filtros-actions {{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }}
+  .btn-limpar {{
+    background: var(--surface-alt);
+    color: var(--br-blue);
+    border: 1.5px solid var(--br-blue-border);
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.83rem;
+    transition: all 0.15s;
+  }}
+  .btn-limpar:hover {{
+    background: var(--br-blue);
+    color: #ffffff;
+  }}
 
-  /* Seções e Grid de Cards */
-  main {{ padding-bottom:50px; }}
-  .tab-panel {{ display:none; }}
-  .tab-panel.ativo {{ display:block; }}
-  .sec-head h2 {{ margin:8px 0 4px; font-size:1.25rem; }}
-  .sec-head h2 small {{ color:var(--muted); font-weight:400; }}
-  .desc {{ color:var(--muted); margin:0 0 14px; font-size:.9rem; }}
-  .grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(380px,1fr)); gap:16px; }}
-  @media (max-width:480px) {{ .grid {{ grid-template-columns:1fr; }} }}
+  .filter-groups {{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }}
+  .f-group {{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 12px;
+    background: var(--surface-alt);
+    border-radius: 12px;
+    border: 1px solid #e5efe8;
+  }}
+  @media (max-width: 760px) {{
+    .f-group {{ grid-template-columns: 1fr; gap: 8px; }}
+  }}
+  .f-label {{
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--br-green-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding-top: 5px;
+  }}
+  .pill-row {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }}
+  .pill-btn {{
+    background: #ffffff;
+    color: var(--txt);
+    border: 1.5px solid var(--border);
+    padding: 6px 13px;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.14s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }}
+  .pill-btn:hover {{
+    border-color: var(--br-green);
+    background: var(--br-green-soft);
+    color: var(--br-green-dark);
+  }}
+  .pill-btn.ativo {{
+    background: var(--br-blue);
+    color: #ffffff;
+    border-color: var(--br-blue-dark);
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0, 39, 118, 0.22);
+  }}
+  .pill-btn.pill-gold.ativo {{
+    background: var(--br-green);
+    color: #ffffff;
+    border-color: var(--br-green-dark);
+  }}
+  .mini-cnt {{
+    background: rgba(0, 39, 118, 0.1);
+    color: inherit;
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-size: 0.73rem;
+    font-weight: 800;
+  }}
+  .pill-btn.ativo .mini-cnt {{
+    background: var(--br-yellow);
+    color: var(--br-blue-dark);
+  }}
 
-  /* Card Rico */
+  /* Barra de Destaque de Faixa Salarial na Aba 3 */
+  .faixa-highlight-bar {{
+    background: var(--br-yellow-soft);
+    border: 2px solid var(--br-yellow-border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }}
+  .faixa-bar-lbl {{
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--br-blue-dark);
+  }}
+
+  /* Cabeçalho de Seção com Caixinha Separada */
+  main {{ padding-bottom: 40px; }}
+  .tab-panel {{ display: none; }}
+  .tab-panel.ativo {{ display: block; }}
+  .sec-head {{ margin-bottom: 18px; }}
+  .sec-title-row {{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }}
+  .sec-title-row h2 {{
+    margin: 0;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.45rem;
+    color: var(--br-blue-dark);
+  }}
+  .count-box-lg {{
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    background: var(--br-green);
+    color: #ffffff;
+    border: 2px solid var(--br-yellow);
+    padding: 5px 14px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 151, 57, 0.2);
+  }}
+  .count-box-lg b {{ font-size: 1.15rem; font-weight: 800; }}
+  .count-box-lg span {{ font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--br-yellow); }}
+  .desc {{ color: var(--muted); margin: 0 0 14px; font-size: 0.94rem; }}
+
+  /* Grid e Cards Alinhados */
+  .grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    align-items: stretch;
+  }}
+  @media (max-width: 500px) {{
+    .grid {{ grid-template-columns: 1fr; }}
+  }}
+
   .card {{
-    background:var(--card); border-radius:16px; padding:16px;
-    display:flex; flex-direction:column; gap:12px;
-    border:1px solid var(--border); box-shadow:0 4px 16px rgba(0,0,0,.22);
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border: 1.5px solid var(--border);
+    border-top: 5px solid var(--br-green);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
   }}
-  .head-top {{ display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }}
-  .card h3 {{ margin:0; font-size:1.1rem; line-height:1.3; }}
-  .card h3 a {{ color:var(--acc); text-decoration:none; }}
-  .card h3 a:hover {{ text-decoration:underline; }}
-  .badge-novo {{
-    background:linear-gradient(135deg,#f43f5e,#fb7185); color:#fff;
-    font-size:.72rem; padding:4px 9px; border-radius:999px; font-weight:800;
-    white-space:nowrap; letter-spacing:.02em; box-shadow:0 2px 10px rgba(244,63,94,.4);
-    animation:pulso 2s infinite;
+  .card:hover {{
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--br-green-border);
   }}
-  @keyframes pulso {{ 0%,100% {{ transform:scale(1); }} 50% {{ transform:scale(1.04); }} }}
 
-  .loc-row {{ display:flex; gap:6px; flex-wrap:wrap; margin-top:6px; }}
-  .chip-loc {{ background:#082f49; color:#7dd3fc; border:1px solid #0369a1; font-size:.76rem; padding:2px 9px; border-radius:999px; font-weight:600; }}
-  .chip-dist {{ background:var(--card2); color:var(--muted); border:1px solid var(--border); font-size:.75rem; padding:2px 8px; border-radius:999px; }}
-  .titulo {{ margin:6px 0 0; color:var(--muted); font-size:.84rem; }}
+  .head-top {{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }}
+  .card h3 {{
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.32;
+    font-weight: 800;
+  }}
+  .card h3 a {{
+    color: var(--br-blue);
+    text-decoration: none;
+  }}
+  .card h3 a:hover {{
+    color: var(--br-green);
+    text-decoration: underline;
+  }}
+
+  .badge-novo {{
+    background: var(--br-yellow);
+    color: var(--br-blue-dark);
+    border: 1.5px solid #eab308;
+    font-size: 0.73rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 800;
+    white-space: nowrap;
+  }}
+
+  .loc-row {{
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    align-items: center;
+  }}
+  .chip-loc {{
+    background: var(--br-green-soft);
+    color: var(--br-green-dark);
+    border: 1px solid var(--br-green-border);
+    font-size: 0.77rem;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+  }}
+  .chip-dist {{
+    background: var(--surface-alt);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    font-size: 0.75rem;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-weight: 600;
+  }}
+  .esc-badge {{
+    font-size: 0.74rem;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-weight: 800;
+  }}
+  .esc-med {{
+    background: #dcfce7;
+    color: #14532d;
+    border: 1px solid #86efac;
+  }}
+  .esc-tec {{
+    background: #fef9c3;
+    color: #713f12;
+    border: 1px solid #fde047;
+  }}
+  .esc-sup {{
+    background: var(--br-blue-soft);
+    color: var(--br-blue);
+    border: 1px solid var(--br-blue-border);
+  }}
+
+  .titulo {{
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }}
 
   .cargo-banner {{
-    background:var(--card2); border:1px solid #1e3a5f; border-radius:10px;
-    padding:9px 12px; display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap;
+    background: linear-gradient(90deg, var(--br-blue-dark), var(--br-blue));
+    color: #ffffff;
+    border-radius: var(--radius-md);
+    padding: 11px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
   }}
-  .cargo-nome {{ font-size:.94rem; color:#e0f2fe; }}
-  .badge-vagas {{ background:#064e3b; color:#6ee7b7; font-size:.76rem; padding:3px 9px; border-radius:999px; font-weight:700; }}
+  .cargo-nome {{ font-size: 0.94rem; line-height: 1.35; }}
+  .badge-vagas {{
+    background: var(--br-yellow);
+    color: var(--br-blue-dark);
+    font-size: 0.76rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 800;
+    white-space: nowrap;
+  }}
 
-  .info-grid {{ display:grid; grid-template-columns:repeat(2,1fr); gap:8px; }}
-  @media (max-width:440px) {{ .info-grid {{ grid-template-columns:1fr; }} }}
-  .info-box {{
-    background:var(--card2); border:1px solid #263349; border-radius:10px;
-    padding:9px 11px; display:flex; flex-direction:column; gap:2px;
+  /* Box de Especificações Técnicas & Requisitos para Assumir o Cargo */
+  .req-box {{
+    background: var(--br-yellow-soft);
+    border: 1.5px solid var(--br-yellow-border);
+    border-left: 5px solid #eab308;
+    border-radius: 11px;
+    padding: 10px 13px;
   }}
-  .info-box .lbl {{ font-size:.72rem; color:var(--muted); text-transform:uppercase; letter-spacing:.02em; }}
-  .info-box .val {{ font-size:1.1rem; color:var(--ok); }}
-  .info-box .val-sm {{ font-size:.88rem; color:var(--txt); }}
-  .info-box .sub {{ font-size:.75rem; color:var(--muted); }}
-  .destaque-sal {{ border-color:#14532d; background:rgba(20,83,45,.18); }}
-  .destaque-prova .val-sm {{ color:#38bdf8; }}
-  .destaque-prazo .val-sm {{ color:var(--warn); }}
+  .req-title {{
+    font-size: 0.76rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--br-yellow-text);
+    margin-bottom: 3px;
+  }}
+  .req-text {{
+    margin: 0;
+    font-size: 0.84rem;
+    color: #422006;
+    font-weight: 500;
+  }}
+
+  /* Grid de Informações Alinhado */
+  .info-grid {{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }}
+  @media (max-width: 440px) {{
+    .info-grid {{ grid-template-columns: 1fr; }}
+  }}
+  .info-box {{
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }}
+  .info-box .lbl {{
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }}
+  .info-box .val {{
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--br-green-dark);
+  }}
+  .info-box .val-sm {{
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--txt);
+  }}
+  .info-box .sub {{
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.35;
+  }}
+  .destaque-sal {{
+    background: var(--br-green-soft);
+    border-color: var(--br-green-border);
+  }}
+  .destaque-prova .val-sm {{ color: var(--br-blue); }}
+  .destaque-prazo .val-sm {{ color: #b45309; }}
 
   /* Botões de Link e Conteúdo Programático */
-  .links-row {{ display:flex; gap:7px; flex-wrap:wrap; }}
-  .btn-link {{
-    background:var(--card2); color:var(--txt); border:1px solid var(--border);
-    padding:6px 11px; border-radius:8px; font-size:.8rem; text-decoration:none;
-    font-weight:600; transition:border-color .15s;
+  .links-row {{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
   }}
-  .btn-link:hover {{ border-color:var(--acc); color:var(--acc); }}
-  .btn-link.primario {{ background:#083344; color:#67e8f9; border-color:#0e7490; }}
+  .btn-link {{
+    background: var(--surface-alt);
+    color: var(--br-blue);
+    border: 1.5px solid var(--br-blue-border);
+    padding: 7px 13px;
+    border-radius: 9px;
+    font-size: 0.81rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.15s;
+  }}
+  .btn-link:hover {{
+    background: var(--br-blue);
+    color: #ffffff;
+  }}
+  .btn-link.primario {{
+    background: var(--br-green);
+    color: #ffffff;
+    border-color: var(--br-green-dark);
+  }}
+  .btn-link.primario:hover {{
+    background: var(--br-green-dark);
+  }}
 
   details.prog-box {{
-    background:var(--card2); border:1px solid var(--border); border-radius:10px;
-    padding:8px 12px; margin-top:auto;
+    background: var(--surface-alt);
+    border: 1.5px solid var(--border);
+    border-radius: 11px;
+    padding: 9px 13px;
+    margin-top: auto;
   }}
-  details.prog-box summary {{ cursor:pointer; font-size:.85rem; font-weight:600; color:var(--acc); }}
-  .prog-body {{ margin-top:8px; font-size:.83rem; color:#cbd5e1; }}
-  .prog-arq {{ margin:0 0 6px; font-size:.79rem; color:var(--muted); }}
-  .prog-body ul {{ margin:0 0 8px; padding-left:18px; display:flex; flex-direction:column; gap:4px; }}
-  .prog-cta {{ display:inline-block; color:var(--ok); font-weight:600; text-decoration:none; font-size:.82rem; }}
-  .prog-cta:hover {{ text-decoration:underline; }}
+  details.prog-box summary {{
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--br-blue);
+  }}
+  .prog-body {{
+    margin-top: 9px;
+    font-size: 0.84rem;
+    color: var(--txt);
+  }}
+  .prog-arq {{ margin: 0 0 7px; font-size: 0.8rem; color: var(--muted); }}
+  .prog-body ul {{
+    margin: 0 0 10px;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }}
+  .prog-cta {{
+    display: inline-block;
+    color: var(--br-green-dark);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 0.83rem;
+  }}
+  .prog-cta:hover {{ text-decoration: underline; }}
 
-  .vazio {{ color:var(--muted); text-align:center; padding:30px 10px; font-size:.98rem; }}
+  /* Aba 4: Busca por Cargo Específico e Estados do Brasil */
+  .busca-cargo-panel {{
+    background: var(--surface);
+    border: 2px solid var(--br-blue-border);
+    border-top: 5px solid var(--br-blue);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }}
+  .cargo-input-row {{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }}
+  .cargo-input-wrap {{
+    flex: 1;
+    min-width: 260px;
+    position: relative;
+  }}
+  .cargo-input-wrap input {{
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 12px;
+    border: 2px solid var(--br-blue-border);
+    background: var(--surface-alt);
+    color: var(--txt);
+    font-family: inherit;
+    font-size: 0.98rem;
+    font-weight: 600;
+  }}
+  .cargo-input-wrap input:focus {{
+    outline: none;
+    border-color: var(--br-green);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(0, 151, 57, 0.12);
+  }}
+  .cargos-match-list {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 4px;
+  }}
+  .cargo-tag {{
+    background: var(--br-green-soft);
+    color: var(--br-green-dark);
+    border: 1px solid var(--br-green-border);
+    padding: 2px 9px;
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 700;
+  }}
 
-  /* Modal de instalação PWA */
+  .vazio {{
+    background: var(--surface);
+    border: 1.5px dashed var(--border);
+    border-radius: var(--radius-lg);
+    color: var(--muted);
+    text-align: center;
+    padding: 36px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+  }}
+
+  /* Rodapé e Botão "☕ Me pague um café" igual ao anexo */
+  footer.app-footer {{
+    margin-top: 44px;
+    padding: 32px 0 48px;
+    border-top: 2px solid var(--border);
+    background: linear-gradient(180deg, var(--surface) 0%, var(--br-green-soft) 100%);
+    text-align: center;
+  }}
+  .footer-coffee-wrap {{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }}
+  .btn-coffee {{
+    background: #286e34;
+    color: #ffffff;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    box-shadow: 0 4px 14px rgba(40, 110, 52, 0.3);
+    transition: transform 0.15s, background 0.15s;
+  }}
+  .btn-coffee:hover {{
+    background: #1f5829;
+    transform: translateY(-2px);
+  }}
+  .footer-note {{
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 4px 0 0;
+  }}
+
+  /* Modais (Pix e PWA) */
   .modal-bg {{
-    position:fixed; inset:0; background:rgba(0,0,0,.7); display:none;
-    align-items:center; justify-content:center; padding:18px; z-index:999;
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 25, 18, 0.62);
+    backdrop-filter: blur(3px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    z-index: 1000;
   }}
-  .modal-bg.aberto {{ display:flex; }}
-  .modal {{
-    background:var(--card); border:1px solid var(--border); border-radius:16px;
-    max-width:460px; width:100%; padding:20px;
+  .modal-bg.aberto {{ display: flex; }}
+
+  /* Modal Pix idêntico ao anexo do usuário */
+  .pix-modal {{
+    background: #ffffff;
+    border-radius: 20px;
+    max-width: 440px;
+    width: 100%;
+    padding: 24px 26px 26px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #2c3e35;
   }}
-  .modal h3 {{ margin:0 0 10px; color:var(--acc); }}
-  .modal ol {{ padding-left:20px; font-size:.92rem; line-height:1.55; }}
-  .modal button {{
-    margin-top:12px; width:100%; padding:10px; border-radius:10px;
-    border:none; background:var(--acc); color:#082f49; font-weight:700; cursor:pointer;
+  .pix-head {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
   }}
+  .pix-head h3 {{
+    margin: 0;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.35rem;
+    color: #286e34;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }}
+  .pix-close {{
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    color: #889990;
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1;
+  }}
+  .pix-close:hover {{ color: #2c3e35; }}
+  .pix-desc {{
+    margin: 0 0 18px;
+    font-size: 0.93rem;
+    line-height: 1.55;
+    color: #6b726e;
+  }}
+  .pix-qr-box {{
+    display: inline-flex;
+    padding: 12px;
+    background: #ffffff;
+    border: 2px solid #dfe7e2;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  }}
+  .pix-qr-box svg {{
+    display: block;
+    width: 210px;
+    height: 210px;
+  }}
+  .pix-receiver {{
+    margin: 0 0 16px;
+    font-size: 0.84rem;
+    color: #7c8782;
+    font-weight: 500;
+  }}
+  .btn-copy-pix {{
+    width: 100%;
+    background: #286e34;
+    color: #ffffff;
+    border: none;
+    padding: 13px 18px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.96rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.15s;
+  }}
+  .btn-copy-pix:hover {{ background: #1f5829; }}
 </style>
 </head>
 <body>
@@ -1320,128 +2410,155 @@ def render_html(fisio: List[dict], medio_ok: List[dict], medio_pos: List[dict], 
     <div class="container">
       <div class="bar-row">
         <div>
-          <h1>🔎 Concursos São Paulo — Fisioterapia &amp; Nível Médio</h1>
+          <div class="brand-badge">🇧🇷 Monitoramento Diário de Editais · SP &amp; Brasil</div>
+          <h1>Concursos Públicos — Fisioterapia &amp; Nível Médio/Técnico</h1>
           <div class="meta">
-            Atualizado em <b>{gerado_em}</b> (Brasília) · Fonte:
-            <a href="{LISTING_URL}" target="_blank" rel="noopener">PCI Concursos — Sudeste (SP)</a>
+            Atualizado em <b>{gerado_em}</b> (Brasília) · <b>{total_sp}</b> editais em SP e <b>{len(catalogo_brasil)}</b> no Brasil · Fonte:
+            <a href="{LISTING_URL}" target="_blank" rel="noopener">PCI Concursos</a>
           </div>
         </div>
-        <button id="btnInstall" class="btn-pwa" type="button">📲 Baixar App (PWA)</button>
-      </div>
-
-      <div class="stats">
-        <div class="stat"><b>{total_sp}</b><span>concursos abertos em SP</span></div>
-        <div class="stat"><b>{len(fisio)}</b><span>vagas de Fisioterapia</span></div>
-        <div class="stat"><b>{len(medio_ok)}</b><span>Nível Médio &gt; R$ 5.000</span></div>
-        <div class="stat"><b>{len(medio_pos)}</b><span>Possíveis (verificar edital)</span></div>
-        <div class="stat"><b id="statNovos">{novos_count}</b><span>Novos (últimas 24h)</span></div>
+        <button id="btnInstall" class="btn-pwa" type="button">📲 Baixar Aplicativo (PWA)</button>
       </div>
     </div>
   </header>
 
   <div class="container">
-    <nav class="tabs">
-      <button data-tab="fisio" class="ativo">🩺 Fisioterapeuta / Fisioterapia (<span class="cnt">{len(fisio)}</span>)</button>
-      <button data-tab="medio">💰 Nível Médio &gt; R$ 5.000 (<span class="cnt">{len(medio_ok)}</span>)</button>
-      <button data-tab="possiveis">🔍 Possíveis — Nível Médio (<span class="cnt">{len(medio_pos)}</span>)</button>
-    </nav>
+    <!-- Abas com Caixinha Separada para o Número de Concursos Vigentes -->
+    <div class="tabs-wrap">
+      <nav class="tabs" aria-label="Categorias de Concursos">
+        <div class="tab-item ativo" data-tab="fisio">
+          <button type="button" class="tab-btn">🩺 Fisioterapia (SP)</button>
+          <div class="tab-count-box" title="Concursos vigentes para Fisioterapia em SP">
+            <b class="cnt" data-cnt-for="fisio">{len(fisio)}</b>
+            <small>vigentes</small>
+          </div>
+        </div>
 
-    <section class="filtros-panel" aria-label="Filtros de concursos">
+        <div class="tab-item" data-tab="medio5k">
+          <button type="button" class="tab-btn">💰 Nível Médio &gt; R$ 5.000</button>
+          <div class="tab-count-box" title="Concursos vigentes de Nível Médio acima de R$ 5.000 em SP">
+            <b class="cnt" data-cnt-for="medio5k">{len(medio_ok)}</b>
+            <small>vigentes</small>
+          </div>
+        </div>
+
+        <div class="tab-item" data-tab="medio_todos">
+          <button type="button" class="tab-btn">📊 Nível Médio / Técnico (Faixas)</button>
+          <div class="tab-count-box" title="Concursos vigentes de Nível Médio e Técnico em SP em todas as faixas salariais">
+            <b class="cnt" data-cnt-for="medio_todos">{len(medio_todos)}</b>
+            <small>vigentes</small>
+          </div>
+        </div>
+
+        <div class="tab-item" data-tab="busca_cargo">
+          <button type="button" class="tab-btn">🔎 Buscar Outro Cargo (Brasil)</button>
+          <div class="tab-count-box" title="Concursos vigentes em todos os estados do Brasil">
+            <b class="cnt" data-cnt-for="busca_cargo">{len(catalogo_brasil)}</b>
+            <small>vigentes</small>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Painel de Filtros em Botões Pré-definidos (Para as Abas de SP) -->
+    <section id="painelFiltrosSp" class="filtros-panel" aria-label="Filtros em botões pré-definidos">
       <div class="filtros-head">
-        <strong>🎛️ Filtrar e Ordenar Concursos</strong>
+        <div class="filtros-head-title">
+          🎛️ Filtros Rápidos (Clique nos botões para filtrar)
+        </div>
         <div class="filtros-actions">
-          <label class="chk-novo">
-            <input type="checkbox" id="fNovo"> ✨ Apenas novos (últimas 24h)
-          </label>
-          <button type="button" id="btnLimpar" class="btn-limpar">Limpar filtros</button>
+          <button type="button" id="btnLimpar" class="btn-limpar">🔄 Limpar Todos os Filtros</button>
         </div>
       </div>
-      <div class="filtros-grid">
-        <div class="f-item">
-          <label for="fBusca">🔍 Cidade, Órgão ou Cargo</label>
-          <input id="fBusca" type="search" placeholder="Ex.: Ribeirão, Matão, IBAM...">
+
+      <div class="filter-groups">
+        <div class="f-group">
+          <div class="f-label">📍 Perto de Ribeirão Preto</div>
+          <div class="pill-row">
+            <button type="button" class="pill-btn ativo" data-filter="kmRp" data-val="">Qualquer distância</button>
+            <button type="button" class="pill-btn" data-filter="kmRp" data-val="50">Até 50 km</button>
+            <button type="button" class="pill-btn" data-filter="kmRp" data-val="100">Até 100 km</button>
+            <button type="button" class="pill-btn" data-filter="kmRp" data-val="150">Até 150 km</button>
+            <button type="button" class="pill-btn" data-filter="kmRp" data-val="250">Até 250 km</button>
+            <button type="button" class="pill-btn" data-filter="kmRp" data-val="350">Até 350 km</button>
+          </div>
         </div>
-        <div class="f-item">
-          <label for="fCidade">🏙️ Cidade (SP)</label>
-          <select id="fCidade">{opcoes_cidades}</select>
+
+        <div class="f-group">
+          <div class="f-label">📍 Perto de Jarinu/SP</div>
+          <div class="pill-row">
+            <button type="button" class="pill-btn ativo" data-filter="kmJa" data-val="">Qualquer distância</button>
+            <button type="button" class="pill-btn" data-filter="kmJa" data-val="50">Até 50 km</button>
+            <button type="button" class="pill-btn" data-filter="kmJa" data-val="100">Até 100 km</button>
+            <button type="button" class="pill-btn" data-filter="kmJa" data-val="150">Até 150 km</button>
+            <button type="button" class="pill-btn" data-filter="kmJa" data-val="250">Até 250 km</button>
+            <button type="button" class="pill-btn" data-filter="kmJa" data-val="350">Até 350 km</button>
+          </div>
         </div>
-        <div class="f-item">
-          <label for="fKmRp">📍 Proximidade de Ribeirão Preto/SP</label>
-          <select id="fKmRp">
-            <option value="">Qualquer distância</option>
-            <option value="50">Até 50 km de Ribeirão Preto</option>
-            <option value="100">Até 100 km de Ribeirão Preto</option>
-            <option value="150">Até 150 km de Ribeirão Preto</option>
-            <option value="220">Até 220 km de Ribeirão Preto</option>
-            <option value="300">Até 300 km de Ribeirão Preto</option>
-            <option value="400">Até 400 km de Ribeirão Preto</option>
-          </select>
+
+        <div class="f-group">
+          <div class="f-label">💵 Faixa de Remuneração</div>
+          <div class="pill-row">
+            <button type="button" class="pill-btn ativo" data-filter="faixa" data-val="">Qualquer valor</button>
+            <button type="button" class="pill-btn" data-filter="faixa" data-val="ate2500">Até R$ 2.500</button>
+            <button type="button" class="pill-btn" data-filter="faixa" data-val="2500a3500">R$ 2.500 a R$ 3.500</button>
+            <button type="button" class="pill-btn" data-filter="faixa" data-val="3500a5000">R$ 3.500 a R$ 5.000</button>
+            <button type="button" class="pill-btn" data-filter="faixa" data-val="acima5000">Acima de R$ 5.000</button>
+          </div>
         </div>
-        <div class="f-item">
-          <label for="fKmJa">📍 Proximidade de Jarinu/SP</label>
-          <select id="fKmJa">
-            <option value="">Qualquer distância</option>
-            <option value="50">Até 50 km de Jarinu</option>
-            <option value="100">Até 100 km de Jarinu</option>
-            <option value="150">Até 150 km de Jarinu</option>
-            <option value="250">Até 250 km de Jarinu</option>
-            <option value="350">Até 350 km de Jarinu</option>
-          </select>
+
+        <div class="f-group">
+          <div class="f-label">🎓 Exigência do Edital</div>
+          <div class="pill-row">
+            <button type="button" class="pill-btn ativo" data-filter="escolaridade" data-val="">Todas</button>
+            <button type="button" class="pill-btn" data-filter="escolaridade" data-val="medio">📗 Apenas Ensino Médio</button>
+            <button type="button" class="pill-btn" data-filter="escolaridade" data-val="medio_tecnico">🛠️ Médio / Curso Técnico</button>
+            <button type="button" class="pill-btn" data-filter="escolaridade" data-val="superior">🎓 Ensino Superior</button>
+          </div>
         </div>
-        <div class="f-item">
-          <label for="fSalario">💵 Salário Bruto Mínimo</label>
-          <select id="fSalario">
-            <option value="0">Qualquer valor</option>
-            <option value="2500">A partir de R$ 2.500,00</option>
-            <option value="3500">A partir de R$ 3.500,00</option>
-            <option value="4000">A partir de R$ 4.000,00</option>
-            <option value="4500">A partir de R$ 4.500,00</option>
-            <option value="5000">A partir de R$ 5.000,00</option>
-            <option value="6000">A partir de R$ 6.000,00</option>
-            <option value="8000">A partir de R$ 8.000,00</option>
-          </select>
+
+        <div class="f-group">
+          <div class="f-label">👥 Número de Vagas</div>
+          <div class="pill-row">
+            <button type="button" class="pill-btn ativo" data-filter="vagas" data-val="todas">Todas (Vagas + CR)</button>
+            <button type="button" class="pill-btn" data-filter="vagas" data-val="1">Com Vagas Imediatas (≥ 1)</button>
+            <button type="button" class="pill-btn" data-filter="vagas" data-val="3">≥ 3 Vagas Imediatas</button>
+            <button type="button" class="pill-btn" data-filter="vagas" data-val="5">≥ 5 Vagas Imediatas</button>
+            <button type="button" class="pill-btn" data-filter="vagas" data-val="cr">Somente Cadastro de Reserva (CR)</button>
+          </div>
         </div>
-        <div class="f-item">
-          <label for="fVagas">👥 Número de Vagas</label>
-          <select id="fVagas">
-            <option value="todas">Todas (Vagas imediatas + CR)</option>
-            <option value="1">Com vagas imediatas (≥ 1 vaga)</option>
-            <option value="2">2 ou mais vagas imediatas (≥ 2)</option>
-            <option value="3">3 ou mais vagas imediatas (≥ 3)</option>
-            <option value="cr">Somente Cadastro de Reserva (CR)</option>
-          </select>
+
+        <div class="f-group">
+          <div class="f-label">🏛️ Regime &amp; Jornada</div>
+          <div class="pill-row">
+            <button type="button" class="pill-btn ativo" data-filter="regime" data-val="">Todos os Regimes</button>
+            <button type="button" class="pill-btn" data-filter="regime" data-val="estatutario">Estatutário (Efetivo)</button>
+            <button type="button" class="pill-btn" data-filter="regime" data-val="clt">CLT (Celetista)</button>
+            <button type="button" class="pill-btn" data-filter="regime" data-val="outros">Residência / Militar / Seletivo</button>
+            <button type="button" class="pill-btn ativo" data-filter="horas" data-val="">Qualquer Jornada</button>
+            <button type="button" class="pill-btn" data-filter="horas" data-val="20">Até 20h/sem</button>
+            <button type="button" class="pill-btn" data-filter="horas" data-val="30">Até 30h/sem</button>
+            <button type="button" class="pill-btn" data-filter="horas" data-val="40">Até 40h/sem</button>
+          </div>
         </div>
-        <div class="f-item">
-          <label for="fRegime">🏛️ Regime de Contratação</label>
-          <select id="fRegime">
-            <option value="">Todos os regimes</option>
-            <option value="estatutario">Estatutário (Efetivo)</option>
-            <option value="clt">CLT (Celetista)</option>
-            <option value="outros">Residência / Militar / Seletivo</option>
-          </select>
+
+        <div class="f-group">
+          <div class="f-label">🏙️ Cidade do Concurso</div>
+          <div class="pill-row">{botoes_cidades}</div>
         </div>
-        <div class="f-item">
-          <label for="fHoras">⏱️ Carga Horária Semanal</label>
-          <select id="fHoras">
-            <option value="">Qualquer carga horária</option>
-            <option value="20">Até 20h semanais</option>
-            <option value="30">Até 30h semanais</option>
-            <option value="36">Até 36h semanais</option>
-            <option value="40">Até 40h semanais</option>
-          </select>
-        </div>
-        <div class="f-item">
-          <label for="fOrdem">↕️ Ordenar por</label>
-          <select id="fOrdem">
-            <option value="padrao">Padrão</option>
-            <option value="rp">Mais próximos de Ribeirão Preto/SP</option>
-            <option value="jarinu">Mais próximos de Jarinu/SP</option>
-            <option value="salario">Maior salário bruto</option>
-            <option value="vagas">Maior nº de vagas imediatas</option>
-            <option value="prova">Data da prova mais próxima</option>
-            <option value="inscricao">Inscrições encerrando primeiro</option>
-            <option value="novos">Concursos novos (24h) primeiro</option>
-          </select>
+
+        <div class="f-group">
+          <div class="f-label">↕️ Ordenar &amp; Novidades</div>
+          <div class="pill-row">
+            <button type="button" class="pill-btn ativo" data-filter="ordem" data-val="padrao">Ordenação Padrão</button>
+            <button type="button" class="pill-btn" data-filter="ordem" data-val="rp">Mais perto de Rib. Preto</button>
+            <button type="button" class="pill-btn" data-filter="ordem" data-val="jarinu">Mais perto de Jarinu</button>
+            <button type="button" class="pill-btn" data-filter="ordem" data-val="salario">Maior Salário</button>
+            <button type="button" class="pill-btn" data-filter="ordem" data-val="vagas">Mais Vagas Imediatas</button>
+            <button type="button" class="pill-btn" data-filter="ordem" data-val="prova">Prova mais próxima</button>
+            <button type="button" class="pill-btn" data-filter="ordem" data-val="inscricao">Inscrição encerrando</button>
+            <button type="button" class="pill-btn" data-filter="novo" data-val="1">✨ Apenas Novos 24h ({novos_count})</button>
+          </div>
         </div>
       </div>
     </section>
@@ -1449,122 +2566,219 @@ def render_html(fisio: List[dict], medio_ok: List[dict], medio_pos: List[dict], 
     <main>
       {render_secao(
           "fisio",
-          "Fisioterapeuta / Fisioterapia — Estado de São Paulo",
-          "Valores exatos do cargo, benefícios (VA/VR/VT), regime estatutário/CLT, carga horária semanal, data da prova e conteúdo programático.",
+          "🩺",
+          "Fisioterapia — Estado de São Paulo",
+          "Valores exatos verificados nos anexos dos editais, benefícios (VA/VR/VT), regime estatutário/CLT, carga horária, especificações para posse e conteúdo programático.",
           fisio,
           "fisio",
           ativo=True,
       )}
       {render_secao(
-          "medio",
-          "Nível Médio com Remuneração Acima de R$ 5.000,00",
-          "Cargos que exigem apenas ensino médio completo com ganhos confirmados acima de R$ 5.000,00 (salário base ou base + benefício fixo).",
+          "medio5k",
+          "💰",
+          "Nível Médio com Remuneração Acima de R$ 5.000,00 (SP)",
+          "Cargos que exigem apenas Ensino Médio completo com ganhos iniciais confirmados acima de R$ 5.000,00 (vencimento base ou base + benefício fixo) e especificações técnicas.",
           medio_ok,
-          "medio",
+          "medio5k",
       )}
       {render_secao(
-          "possiveis",
-          "Possíveis Nível Médio — Verificar Tabela de Vencimentos no Edital",
-          "Concursos com vagas de nível médio e teto salarial do certame acima de R$ 5.000,00 cujo salário específico do cargo deve ser conferido na tabela anexa do edital.",
-          medio_pos,
-          "possivel",
+          "medio_todos",
+          "📊",
+          "Nível Médio &amp; Técnico — Escolha a Faixa de Remuneração (SP)",
+          "Todos os cargos identificados de Nível Médio e Técnico nos editais de São Paulo, com salários verificados nos anexos e indicação clara se exige apenas Ensino Médio ou Curso Técnico.",
+          medio_todos,
+          "medio_todos",
+          barra_extra=barra_faixas_aba3,
       )}
+
+      <!-- ABA 4: Busca por Cargo Específico (SP / Outros Estados / Brasil Todo) -->
+      <section id="busca_cargo" class="tab-panel">
+        <div class="sec-head">
+          <div class="sec-title-row">
+            <h2>🔎 Buscar por Cargo Específico — SP, Estados ou Brasil Todo</h2>
+            <div class="count-box-lg">
+              <b id="countBuscaCargo">{len(catalogo_brasil)}</b>
+              <span>vigentes</span>
+            </div>
+          </div>
+          <p class="desc">
+            Digite o nome do cargo que deseja (ex.: Fisioterapeuta, Enfermeiro, Psicólogo, Agente Administrativo, Guarda Municipal) ou escolha um botão abaixo e selecione o Estado (UF) ou Brasil Todo.
+          </p>
+        </div>
+
+        <div class="busca-cargo-panel">
+          <div>
+            <div class="f-label" style="margin-bottom:6px;">1️⃣ Digite o Nome do Cargo Desejado (ou clique em um cargo rápido abaixo):</div>
+            <div class="cargo-input-row">
+              <div class="cargo-input-wrap">
+                <input id="inputCargoEspecifico" type="search" placeholder="Digite o cargo... Ex.: Fisioterapeuta, Enfermeiro, Agente Administrativo, Psicólogo">
+              </div>
+              <button type="button" id="btnLimparCargo" class="btn-limpar">Limpar Busca</button>
+            </div>
+          </div>
+
+          <div>
+            <div class="f-label" style="margin-bottom:6px;">⚡ Cargos Rápidos (1 clique):</div>
+            <div class="pill-row" id="rowCargosRapidos">{botoes_cargos_rapidos}</div>
+          </div>
+
+          <div>
+            <div class="f-label" style="margin-bottom:6px;">2️⃣ Escolha o Estado (UF) ou Brasil Todo:</div>
+            <div class="pill-row" id="rowUfsBrasil">{botoes_ufs}</div>
+          </div>
+        </div>
+
+        <div id="gridBuscaCargo" class="grid"></div>
+        <p id="vazioBuscaCargo" class="vazio" style="display:none;">
+          Nenhum concurso encontrado para este cargo no Estado selecionado. Experimente selecionar "🇧🇷 Brasil Todo" ou outro cargo.
+        </p>
+      </section>
     </main>
+  </div>
+
+  <!-- Rodapé com botão "☕ Me pague um café" igual ao anexo -->
+  <footer class="app-footer">
+    <div class="container footer-coffee-wrap">
+      <button type="button" id="btnAbrirPix" class="btn-coffee">☕ Me pague um café</button>
+      <p class="footer-note">Painel gratuito atualizado diariamente · Feito com carinho em São Paulo 🇧🇷</p>
+    </div>
+  </footer>
+
+  <!-- Modal "💚 Manda um Pix!" idêntico ao anexo -->
+  <div id="modalPix" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="tituloPix">
+    <div class="pix-modal">
+      <div class="pix-head">
+        <h3 id="tituloPix">💚 Manda um Pix!</h3>
+        <button type="button" id="fecharModalPix" class="pix-close" aria-label="Fechar">✕</button>
+      </div>
+      <p class="pix-desc">
+        Este app é gratuito e feito com carinho. Se ele te ajudou, considere apoiar com um Pix de qualquer valor — é opcional e muito bem-vindo! 💚
+      </p>
+      <div class="pix-qr-box" aria-label="QR Code Pix">
+        {qr_svg}
+      </div>
+      <p class="pix-receiver">Recebedor: Matheus · São Paulo</p>
+      <button type="button" id="btnCopiarPix" class="btn-copy-pix">📋 Copiar chave Pix</button>
+    </div>
   </div>
 
   <!-- Modal de Instrução de Instalação PWA -->
   <div id="modalPwa" class="modal-bg" role="dialog" aria-modal="true">
-    <div class="modal">
-      <h3>📲 Instalar Aplicativo Concursos SP</h3>
-      <p style="margin:0 0 8px;color:var(--muted);font-size:.9rem;">
-        Você pode instalar este painel como um aplicativo no celular ou computador (funciona até offline):
+    <div class="pix-modal" style="text-align:left;">
+      <div class="pix-head">
+        <h3>📲 Instalar Aplicativo</h3>
+        <button type="button" id="fecharModalPwa" class="pix-close" aria-label="Fechar">✕</button>
+      </div>
+      <p class="pix-desc" style="text-align:left;">
+        Instale este painel como aplicativo no celular ou computador:
       </p>
-      <ol>
-        <li><b>No Chrome / Edge (PC ou Android):</b> clique no ícone de instalação <b>⊕</b> na barra de endereços ou no menu <b>⋮ → Instalar aplicativo / Adicionar à tela inicial</b>.</li>
+      <ol style="padding-left:20px;font-size:.9rem;line-height:1.6;color:#2c3e35;">
+        <li><b>No Chrome / Edge (PC ou Android):</b> clique no ícone <b>⊕</b> na barra de endereços ou no menu <b>⋮ → Instalar aplicativo</b>.</li>
         <li><b>No iPhone / iPad (Safari):</b> toque em <b>Compartilhar (⬆️)</b> e escolha <b>"Adicionar à Tela de Início"</b>.</li>
       </ol>
-      <button type="button" id="fecharModal">Entendi</button>
+      <button type="button" id="btnEntendiPwa" class="btn-copy-pix" style="margin-top:12px;">Entendi</button>
     </div>
   </div>
 
 <script>
-  // 1) Atualização dinâmica da plaquinha de "CONCURSO NOVO (24h)" no navegador
+  const CATALOGO_BRASIL = {catalogo_json};
+  const PIX_PAYLOAD = {json.dumps(PIX_KEY)};
+
+  function normStr(s) {{
+    return (s || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+  }}
+
+  function escHtml(s) {{
+    const d = document.createElement('div');
+    d.textContent = s == null ? '' : String(s);
+    return d.innerHTML;
+  }}
+
+  // 1) Atualização dinâmica da plaquinha de "CONCURSO NOVO (24h)"
   (function atualizarNovos24h() {{
     const agora = Date.now();
-    let totalNovos = 0;
     document.querySelectorAll('.card').forEach(card => {{
       const isBaseline = card.dataset.isBaseline === '1';
       const ts = Date.parse(card.dataset.firstSeenTs || '');
       const ehNovo = !isBaseline && !isNaN(ts) && (agora - ts) >= 0 && (agora - ts) <= 86400000;
       card.dataset.novo = ehNovo ? '1' : '0';
       const badge = card.querySelector('.badge-novo');
-      if (ehNovo) {{
-        totalNovos++;
-        if (!badge) {{
-          const span = document.createElement('span');
-          span.className = 'badge-novo';
-          span.textContent = '✨ CONCURSO NOVO · 24h';
-          card.querySelector('.head-top').appendChild(span);
-        }}
-      }} else if (badge) {{
+      if (ehNovo && !badge) {{
+        const span = document.createElement('span');
+        span.className = 'badge-novo';
+        span.textContent = '✨ CONCURSO NOVO · 24h';
+        card.querySelector('.head-top').appendChild(span);
+      }} else if (!ehNovo && badge) {{
         badge.remove();
       }}
     }});
-    const elStat = document.getElementById('statNovos');
-    if (elStat) elStat.textContent = totalNovos;
   }})();
 
-  // 2) Navegação entre abas
-  const btns = document.querySelectorAll('nav.tabs button');
+  // 2) Navegação entre as 4 Abas
+  const tabItems = document.querySelectorAll('.tab-item');
+  const painelFiltrosSp = document.getElementById('painelFiltrosSp');
+
   function abrirTab(tab) {{
-    btns.forEach(b => b.classList.toggle('ativo', b.dataset.tab === tab));
+    tabItems.forEach(item => item.classList.toggle('ativo', item.dataset.tab === tab));
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('ativo', p.id === tab));
+    painelFiltrosSp.style.display = (tab === 'busca_cargo') ? 'none' : 'block';
     history.replaceState(null, '', '#' + tab);
+    if (tab === 'busca_cargo') renderizarBuscaCargo();
   }}
-  btns.forEach(b => b.addEventListener('click', () => abrirTab(b.dataset.tab)));
+  tabItems.forEach(item => item.addEventListener('click', () => abrirTab(item.dataset.tab)));
   const hashInicial = location.hash.slice(1);
-  if (['fisio', 'medio', 'possiveis'].includes(hashInicial)) abrirTab(hashInicial);
-
-  // 3) Filtragem e Ordenação Completa
-  const fBusca = document.getElementById('fBusca');
-  const fCidade = document.getElementById('fCidade');
-  const fKmRp = document.getElementById('fKmRp');
-  const fKmJa = document.getElementById('fKmJa');
-  const fSalario = document.getElementById('fSalario');
-  const fVagas = document.getElementById('fVagas');
-  const fRegime = document.getElementById('fRegime');
-  const fHoras = document.getElementById('fHoras');
-  const fOrdem = document.getElementById('fOrdem');
-  const fNovo = document.getElementById('fNovo');
-
-  function normStr(s) {{
-    return (s || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
+  if (['fisio', 'medio5k', 'medio_todos', 'busca_cargo'].includes(hashInicial)) {{
+    abrirTab(hashInicial);
   }}
 
-  function aplicarFiltros() {{
-    const q = normStr(fBusca.value);
-    const cid = fCidade.value;
-    const maxRp = fKmRp.value ? Number(fKmRp.value) : null;
-    const maxJa = fKmJa.value ? Number(fKmJa.value) : null;
-    const minSal = Number(fSalario.value || 0);
-    const vagasMode = fVagas.value;
-    const regime = fRegime.value;
-    const maxHoras = fHoras.value ? Number(fHoras.value) : null;
-    const soNovos = fNovo.checked;
-    const ordem = fOrdem.value;
+  // 3) Estado e Lógica dos Botões de Filtro Pré-definidos (Abas SP)
+  const estadoFiltros = {{
+    kmRp: '',
+    kmJa: '',
+    faixa: '',
+    escolaridade: '',
+    vagas: 'todas',
+    regime: '',
+    horas: '',
+    cidade: '',
+    ordem: 'padrao',
+    novo: ''
+  }};
 
-    document.querySelectorAll('.tab-panel').forEach(panel => {{
+  function sincronizarBotoesFiltro() {{
+    document.querySelectorAll('[data-filter]').forEach(btn => {{
+      const chave = btn.dataset.filter;
+      const val = btn.dataset.val;
+      btn.classList.toggle('ativo', estadoFiltros[chave] === val);
+    }});
+  }}
+
+  function aplicarFiltrosSp() {{
+    const maxRp = estadoFiltros.kmRp ? Number(estadoFiltros.kmRp) : null;
+    const maxJa = estadoFiltros.kmJa ? Number(estadoFiltros.kmJa) : null;
+    const faixa = estadoFiltros.faixa;
+    const esc = estadoFiltros.escolaridade;
+    const vagasMode = estadoFiltros.vagas;
+    const regime = estadoFiltros.regime;
+    const maxHoras = estadoFiltros.horas ? Number(estadoFiltros.horas) : null;
+    const cid = estadoFiltros.cidade;
+    const soNovos = estadoFiltros.novo === '1';
+    const ordem = estadoFiltros.ordem;
+
+    ['fisio', 'medio5k', 'medio_todos'].forEach(panelId => {{
+      const panel = document.getElementById(panelId);
+      if (!panel) return;
       const grid = panel.querySelector('.grid');
       const cards = Array.from(grid.querySelectorAll('.card'));
       let visiveis = 0;
 
       cards.forEach(c => {{
         let ok = true;
-        if (q && !c.dataset.busca.includes(q)) ok = false;
         if (ok && cid && c.dataset.cidade !== cid) ok = false;
         if (ok && maxRp !== null && Number(c.dataset.kmRp) > maxRp) ok = false;
         if (ok && maxJa !== null && Number(c.dataset.kmJarinu) > maxJa) ok = false;
-        if (ok && minSal > 0 && Number(c.dataset.salario) < minSal) ok = false;
+        if (ok && faixa && c.dataset.faixa !== faixa) ok = false;
+        if (ok && esc && c.dataset.escolaridade !== esc) ok = false;
         if (ok && vagasMode !== 'todas') {{
           const v = Number(c.dataset.vagas);
           if (vagasMode === 'cr' && v > 0) ok = false;
@@ -1578,7 +2792,6 @@ def render_html(fisio: List[dict], medio_ok: List[dict], medio_pos: List[dict], 
         if (ok) visiveis++;
       }});
 
-      // Ordenação
       if (ordem !== 'padrao') {{
         cards.sort((a, b) => {{
           if (ordem === 'rp') return Number(a.dataset.kmRp) - Number(b.dataset.kmRp);
@@ -1587,39 +2800,202 @@ def render_html(fisio: List[dict], medio_ok: List[dict], medio_pos: List[dict], 
           if (ordem === 'vagas') return Number(b.dataset.vagas) - Number(a.dataset.vagas);
           if (ordem === 'prova') return (a.dataset.prova || '').localeCompare(b.dataset.prova || '');
           if (ordem === 'inscricao') return (a.dataset.inscricao || '').localeCompare(b.dataset.inscricao || '');
-          if (ordem === 'novos') return Number(b.dataset.novo) - Number(a.dataset.novo);
           return 0;
         }});
         cards.forEach(c => grid.appendChild(c));
       }}
 
-      panel.querySelector('.sec-count').textContent = `(${{visiveis}})`;
-      const btnTab = document.querySelector(`nav.tabs button[data-tab="${{panel.id}}"] .cnt`);
-      if (btnTab) btnTab.textContent = visiveis;
+      const secCount = panel.querySelector('.sec-count');
+      if (secCount) secCount.textContent = visiveis;
+      const tabCnt = document.querySelector(`[data-cnt-for="${{panelId}}"]`);
+      if (tabCnt) tabCnt.textContent = visiveis;
       panel.querySelector('.vazio').style.display = visiveis === 0 ? 'block' : 'none';
     }});
   }}
 
-  [fBusca, fCidade, fKmRp, fKmJa, fSalario, fVagas, fRegime, fHoras, fOrdem, fNovo].forEach(el => {{
-    el.addEventListener('input', aplicarFiltros);
-    el.addEventListener('change', aplicarFiltros);
+  document.querySelectorAll('[data-filter]').forEach(btn => {{
+    btn.addEventListener('click', () => {{
+      const chave = btn.dataset.filter;
+      const val = btn.dataset.val;
+      if (chave === 'novo') {{
+        estadoFiltros.novo = estadoFiltros.novo === '1' ? '' : '1';
+      }} else {{
+        estadoFiltros[chave] = val;
+      }}
+      sincronizarBotoesFiltro();
+      aplicarFiltrosSp();
+    }});
   }});
 
   document.getElementById('btnLimpar').addEventListener('click', () => {{
-    fBusca.value = '';
-    fCidade.value = '';
-    fKmRp.value = '';
-    fKmJa.value = '';
-    fSalario.value = '0';
-    fVagas.value = 'todas';
-    fRegime.value = '';
-    fHoras.value = '';
-    fOrdem.value = 'padrao';
-    fNovo.checked = false;
-    aplicarFiltros();
+    estadoFiltros.kmRp = '';
+    estadoFiltros.kmJa = '';
+    estadoFiltros.faixa = '';
+    estadoFiltros.escolaridade = '';
+    estadoFiltros.vagas = 'todas';
+    estadoFiltros.regime = '';
+    estadoFiltros.horas = '';
+    estadoFiltros.cidade = '';
+    estadoFiltros.ordem = 'padrao';
+    estadoFiltros.novo = '';
+    sincronizarBotoesFiltro();
+    aplicarFiltrosSp();
   }});
 
-  // 4) PWA — Service Worker e Botão de Instalação
+  // 4) Aba 4: Busca por Cargo Específico em SP, Outros Estados ou Brasil Todo
+  let ufSelecionada = 'TODOS';
+  const inputCargo = document.getElementById('inputCargoEspecifico');
+  const gridBusca = document.getElementById('gridBuscaCargo');
+  const vazioBusca = document.getElementById('vazioBuscaCargo');
+  const countBuscaCargo = document.getElementById('countBuscaCargo');
+  const tabCntBusca = document.querySelector('[data-cnt-for="busca_cargo"]');
+
+  function renderizarBuscaCargo() {{
+    const termoRaw = (inputCargo.value || '').trim();
+    const termo = normStr(termoRaw);
+
+    const filtrados = [];
+    for (const item of CATALOGO_BRASIL) {{
+      if (ufSelecionada !== 'TODOS' && item.uf !== ufSelecionada) continue;
+
+      let cargosCasados = [];
+      if (termo) {{
+        for (const cg of (item.cargos || [])) {{
+          if (normStr(cg).includes(termo)) cargosCasados.push(cg);
+        }}
+        const cabecalhoMatch = normStr(item.orgao + ' ' + item.titulo + ' ' + item.cargos_resumo).includes(termo);
+        if (cargosCasados.length === 0 && !cabecalhoMatch) continue;
+      }} else {{
+        cargosCasados = (item.cargos || []).slice(0, 4);
+      }}
+      filtrados.push({{ item, cargosCasados }});
+    }}
+
+    countBuscaCargo.textContent = filtrados.length;
+    if (tabCntBusca) tabCntBusca.textContent = filtrados.length;
+    vazioBusca.style.display = filtrados.length === 0 ? 'block' : 'none';
+
+    const limiteExibicao = 120;
+    const fatia = filtrados.slice(0, limiteExibicao);
+
+    gridBusca.innerHTML = fatia.map(({{ item, cargosCasados }}) => {{
+      const cargoDestaque = cargosCasados.length > 0
+        ? cargosCasados.slice(0, 3).join(' · ') + (cargosCasados.length > 3 ? ` (+${{cargosCasados.length - 3}})` : '')
+        : (item.cargos_resumo || 'Conferir cargos no edital');
+
+      let chips = `<span class="chip-loc">📍 ${{escHtml(item.cidade)}} (${{escHtml(item.uf)}})</span>`;
+      if (item.km_rp != null) chips += `<span class="chip-dist">🧭 ${{item.km_rp}} km de Rib. Preto</span>`;
+      if (item.km_ja != null) chips += `<span class="chip-dist">🧭 ${{item.km_ja}} km de Jarinu</span>`;
+
+      const tagsHtml = (item.cargos || []).slice(0, 6).map(c => `<span class="cargo-tag">${{escHtml(c)}}</span>`).join('');
+
+      return `
+        <article class="card">
+          <header class="card-head">
+            <div class="head-top">
+              <h3><a href="${{escHtml(item.url)}}" target="_blank" rel="noopener">${{escHtml(item.orgao)}}</a></h3>
+              <span class="esc-badge esc-sup">${{escHtml(item.niveis || 'Vários Níveis')}}</span>
+            </div>
+            <div class="loc-row">${{chips}}</div>
+            <p class="titulo">${{escHtml(item.titulo)}}</p>
+          </header>
+
+          <div class="cargo-banner">
+            <div class="cargo-nome">🎯 <strong>${{escHtml(cargoDestaque)}}</strong></div>
+            <span class="badge-vagas">${{escHtml(item.vagas_salario || 'Ver edital')}}</span>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-box destaque-sal">
+              <span class="lbl">💰 Vagas &amp; Salário</span>
+              <strong class="val-sm" style="color:var(--br-green-dark);">${{escHtml(item.vagas_salario || 'Consultar edital')}}</strong>
+            </div>
+            <div class="info-box">
+              <span class="lbl">🏛️ Regime &amp; Jornada</span>
+              <strong class="val-sm">${{escHtml(item.regime)}} · ${{escHtml(item.jornada)}}</strong>
+            </div>
+            <div class="info-box destaque-prova">
+              <span class="lbl">📅 Data da Prova</span>
+              <strong class="val-sm">${{escHtml(item.data_prova)}}</strong>
+              <small class="sub">Banca: ${{escHtml(item.banca)}}</small>
+            </div>
+            <div class="info-box destaque-prazo">
+              <span class="lbl">⏰ Inscrições até</span>
+              <strong class="val-sm">${{escHtml(item.inscricao_ate)}}</strong>
+              <small class="sub">Região: ${{escHtml(item.regiao)}}</small>
+            </div>
+          </div>
+
+          ${{tagsHtml ? `<div><div class="f-label" style="font-size:.7rem;margin-bottom:4px;">📋 Principais Cargos no Edital:</div><div class="cargos-match-list">${{tagsHtml}}</div></div>` : ''}}
+
+          <div class="links-row" style="margin-top:auto;">
+            <a class="btn-link primario" href="${{escHtml(item.url)}}#links" target="_blank" rel="noopener">📄 Abrir Edital &amp; Anexos</a>
+            <a class="btn-link" href="${{escHtml(item.url)}}" target="_blank" rel="noopener">🔗 Ver Notícia Completa</a>
+          </div>
+        </article>`;
+    }}).join('');
+  }}
+
+  inputCargo.addEventListener('input', () => {{
+    document.querySelectorAll('.cargo-quick').forEach(b => {{
+      b.classList.toggle('ativo', normStr(b.dataset.cargo) === normStr(inputCargo.value.trim()));
+    }});
+    renderizarBuscaCargo();
+  }});
+
+  document.getElementById('btnLimparCargo').addEventListener('click', () => {{
+    inputCargo.value = '';
+    document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b.dataset.cargo === ''));
+    renderizarBuscaCargo();
+  }});
+
+  document.querySelectorAll('.cargo-quick').forEach(btn => {{
+    btn.addEventListener('click', () => {{
+      inputCargo.value = btn.dataset.cargo;
+      document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b === btn));
+      renderizarBuscaCargo();
+    }});
+  }});
+
+  document.querySelectorAll('.uf-btn').forEach(btn => {{
+    btn.addEventListener('click', () => {{
+      ufSelecionada = btn.dataset.uf;
+      document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b === btn));
+      renderizarBuscaCargo();
+    }});
+  }});
+
+  renderizarBuscaCargo();
+
+  // 5) Modal Pix ("☕ Me pague um café" / "💚 Manda um Pix!")
+  const modalPix = document.getElementById('modalPix');
+  const btnAbrirPix = document.getElementById('btnAbrirPix');
+  const fecharModalPix = document.getElementById('fecharModalPix');
+  const btnCopiarPix = document.getElementById('btnCopiarPix');
+
+  btnAbrirPix.addEventListener('click', () => modalPix.classList.add('aberto'));
+  fecharModalPix.addEventListener('click', () => modalPix.classList.remove('aberto'));
+  modalPix.addEventListener('click', (e) => {{
+    if (e.target === modalPix) modalPix.classList.remove('aberto');
+  }});
+
+  btnCopiarPix.addEventListener('click', async () => {{
+    try {{
+      await navigator.clipboard.writeText(PIX_PAYLOAD);
+    }} catch (_) {{
+      const ta = document.createElement('textarea');
+      ta.value = PIX_PAYLOAD;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+    }}
+    const original = btnCopiarPix.innerHTML;
+    btnCopiarPix.innerHTML = '✅ Chave Pix copiada!';
+    setTimeout(() => {{ btnCopiarPix.innerHTML = original; }}, 2600);
+  }});
+
+  // 6) PWA — Service Worker e Instalação
   let deferredPrompt = null;
   const btnInstall = document.getElementById('btnInstall');
   const modalPwa = document.getElementById('modalPwa');
@@ -1645,9 +3021,8 @@ def render_html(fisio: List[dict], medio_ok: List[dict], medio_pos: List[dict], 
     }}
   }});
 
-  document.getElementById('fecharModal').addEventListener('click', () => {{
-    modalPwa.classList.remove('aberto');
-  }});
+  document.getElementById('fecharModalPwa').addEventListener('click', () => modalPwa.classList.remove('aberto'));
+  document.getElementById('btnEntendiPwa').addEventListener('click', () => modalPwa.classList.remove('aberto'));
   modalPwa.addEventListener('click', (e) => {{
     if (e.target === modalPwa) modalPwa.classList.remove('aberto');
   }});
