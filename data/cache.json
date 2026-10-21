@@ -4,7 +4,68 @@
   "hash": "eb3b13b02ada",
   "fisio_linhas": [],
   "salario_max_texto": 8595.15,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Auxiliar de Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Administrativo",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Legislativo",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Audiovisual",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Administrativo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Contabilidade e Finanças",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Legislativo",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Comunicação",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Procurador Legislativo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
+   "salario_min": 2312.25,
+   "salario_max": 8595.15
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433": {
   "first_seen": "2026-10-21",
@@ -13,14 +74,370 @@
    "Fisioterapeuta (1 vaga)"
   ],
   "salario_max_texto": 17433.24,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Agente de Gestão Pública - Assistente Administrativo",
+     "escolaridade": "desconhecida",
+     "vagas": "10 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Políticas Sociais - Auxiliar de Saúde Bucal",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Cirurgião Dentista Generalista",
+     "escolaridade": "superior",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico - Saúde Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Alergologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Cardiologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Clínico Geral",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Dermatologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Endocrinologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Gastroenterologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Geriatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ginecologista e Obstetra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Hematologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Infectologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Nefrologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neurologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neuropediatria",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Oftalmologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Oncologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ortopedista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Otorrinolaringologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Pediatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Pneumologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Pneumopediatria",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Psiquiatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Reumatologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Saúde da Família",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Urologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Veterinário",
+     "escolaridade": "superior",
+     "vagas": "cadastro de reserva",
+     "salario": null
+    },
+    {
+     "nome": "Médico Veterinário Sanitarista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
+   "salario_min": 2377.65,
+   "salario_max": 17433.24
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717": {
   "first_seen": "2026-10-21",
   "hash": "63473cd09be9",
   "fisio_linhas": [],
   "salario_max_texto": 9717.96,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Fiscalização Pública - Fiscal de Meio Ambiente",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Fiscalização Pública - Fiscal de Obras",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Fiscalização Pública - Fiscal de Saúde Pública",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Infraestrutura - Agente de Apoio ao Canil",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Infraestrutura - Desenhista Projetista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Infraestrutura - Topógrafo",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Infraestrutura - Auxiliar de Serviços Gerais",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Infraestrutura - Coveiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Infraestrutura - Pedreiro",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Infraestrutura - Pintor",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Infraestrutura - Operador de Trator Agrícola",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Infraestrutura - Operador de Máquina Pesada",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Mobilidade Urbana - Fiscal de Trânsito de 3ª Classe",
+     "escolaridade": "desconhecida",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Políticas Sociais - Salva-vidas",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Políticas Sociais - Técnico em Enfermagem do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Analista de Compras e Licitações",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Analista Técnico Jurídico",
+     "escolaridade": "desconhecida",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Arquivista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Bibliotecário",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Educador Social",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Gestor de Contratos",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Procurador Jurídico",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
+   "salario_min": 1767.2,
+   "salario_max": 9717.96
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piracicaba-sp-abre-selecao-para-professores-substitutos": {
   "first_seen": "2026-10-21",
@@ -34,21 +451,300 @@
   "hash": "78f713486a68",
   "fisio_linhas": [],
   "salario_max_texto": 9833.0,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Auxiliar em Saúde Bucal",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Telefonista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "6 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Radiologia",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Cirurgião Dentista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "6 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Alergologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Cardiologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Clínico Geral",
+     "escolaridade": "superior",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Médico Dermatologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Endocrinologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Gastroclínico",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Hepatologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Infectologista",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Médico Nefrologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neurologista",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neuropediatra",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Médico Oftalmologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ortopedista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Otorrinolaringologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Pneumologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Proctologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Psiquiatra",
+     "escolaridade": "superior",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Médico Reumatologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Urologista",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null
+    }
+   ],
+   "salario_min": 2818.0,
+   "salario_max": 9833.0
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428": {
   "first_seen": "2026-10-21",
   "hash": "0dbb87d1fc3c",
   "fisio_linhas": [],
   "salario_max_texto": 10428.05,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Agente de Apoio Operacional",
+     "escolaridade": "fundamental",
+     "vagas": "6 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Suporte Funerário",
+     "escolaridade": "fundamental",
+     "vagas": "3 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Funerário",
+     "escolaridade": "fundamental",
+     "vagas": "4 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Condutor de Veículos e Máquinas",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista Especializado",
+     "escolaridade": "fundamental",
+     "vagas": "3 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Oficial de Serviços",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Administrativo",
+     "escolaridade": "medio",
+     "vagas": "8 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Fiscalização",
+     "escolaridade": "medio",
+     "vagas": "5 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Suporte Técnico",
+     "escolaridade": "medio",
+     "vagas": "4 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente de S.V.O.",
+     "escolaridade": "medio",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Segurança do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Analista Técnico (Informática)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Civil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 2571.28,
+   "salario_max": 10428.05
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario": {
   "first_seen": "2026-10-21",
   "hash": "c999da8091f2",
   "fisio_linhas": [],
   "salario_max_texto": 9856.95,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Oficial de Justiça",
+     "escolaridade": "superior",
+     "vagas": "132 vagas + CR",
+     "salario": 9856.95
+    },
+    {
+     "nome": "Escrevente Técnico Judiciário",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": 6782.54
+    }
+   ],
+   "salario_min": 6782.54,
+   "salario_max": 9856.95
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-ibiuna-sp-abre-concurso-publico-para-assistente-administrativo-e-controlador-interno": {
   "first_seen": "2026-10-21",
@@ -62,7 +758,38 @@
   "hash": "43df5c3b829e",
   "fisio_linhas": [],
   "salario_max_texto": 11065.27,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Agente Operacional",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Administrativo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Diretor Administrativo e Financeiro",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Procurador Jurídico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 2920.42,
+   "salario_max": 11065.27
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-barao-de-antonina-sp-abre-concurso-publico-para-o-cargo-de-advogado": {
   "first_seen": "2026-10-21",
@@ -90,7 +817,62 @@
   "hash": "39bc9f6423c4",
   "fisio_linhas": [],
   "salario_max_texto": 7114.33,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Analista Administrativo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Analista de Comunicação Institucional",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Analista Legislativo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Diretor Administrativo Legislativo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Diretor Contábil Legislativo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Diretor Jurídico Legislativo",
+     "escolaridade": "superior",
+     "vagas": "Cadastro Reserva",
+     "salario": null
+    },
+    {
+     "nome": "Oficial de Finanças",
+     "escolaridade": "medio",
+     "vagas": "Cadastro Reserva",
+     "salario": null
+    },
+    {
+     "nome": "Oficial Legislativo",
+     "escolaridade": "medio",
+     "vagas": "Cadastro Reserva",
+     "salario": null
+    }
+   ],
+   "salario_min": 4879.83,
+   "salario_max": 7114.33
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-jarinu-sp-abre-concurso-publico-com-salarios-de-ate-10744": {
   "first_seen": "2026-10-21",
@@ -111,7 +893,56 @@
   "hash": "b90c1f0e9a1e",
   "fisio_linhas": [],
   "salario_max_texto": 6889.64,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Auxiliar Administrativo (Carapicuíba)",
+     "escolaridade": "desconhecida",
+     "vagas": "5 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Coveiro/Sepultador (Carapicuíba)",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Civil (Carapicuíba)",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Jardineiro (Carapicuíba)",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Motorista (Carapicuíba)",
+     "escolaridade": "desconhecida",
+     "vagas": "5 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas (Carapicuíba)",
+     "escolaridade": "desconhecida",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Serviços Gerais (Carapicuíba)",
+     "escolaridade": "desconhecida",
+     "vagas": "10 vagas",
+     "salario": null
+    }
+   ],
+   "salario_min": 1880.28,
+   "salario_max": 6889.64
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-vagas-para-nivel-fundamental-em-pirassununga": {
   "first_seen": "2026-10-21",
@@ -146,7 +977,80 @@
   "hash": "9c3cc68d6d67",
   "fisio_linhas": [],
   "salario_max_texto": 12154.19,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Fonoaudiólogo - Itapetininga/SP",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Informática Júnior - Área de Suporte - Tupã/SP",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro - Tupã/SP",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Farmácia - Tupã/SP",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neurologista Infantil - Tupã/SP",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Cirurgião Dentista - Botucatu/SP",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Farmácia Prazo Determinado - Botucatu/SP",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo - Botucatu/SP",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico - Cirurgia Geral - Bariátrica - Botucatu/SP",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Oftalmologista - Plástica - Botucatu/SP",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Oftalmologista - Câmara Anterior - Botucatu/SP",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
+   "salario_min": 2187.26,
+   "salario_max": 12154.19
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/fundacao-jose-pedro-de-oliveira-sp-abre-concurso-publico-com-salarios-de-ate-8991": {
   "first_seen": "2026-10-21",
@@ -320,7 +1224,140 @@
   "hash": "7277bb59acd2",
   "fisio_linhas": [],
   "salario_max_texto": 6946.91,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Auxiliar de Cozinha",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Encanador",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Faxineiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Mecânico de Autos",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Cuidador de Aluno PcD",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Desenhista Técnico",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Bibliotecário",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Coordenador Pedagógico",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Diretor de Escola",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Civil",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro de Tráfego",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Elétrico",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal Tributário",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Geólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico do Trabalho",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor II - Ensino Fundamental - Anos Iniciais - Oficinas de Escolas Integrais",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Tesoureiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1734.42,
+   "salario_max": 6946.91
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-aracoiaba-da-serra-sp-abre-selecao-para-cadastro-de-reserva-na-area-da-educacao": {
   "first_seen": "2026-10-21",
@@ -341,7 +1378,80 @@
   "hash": "44daa82c1065",
   "fisio_linhas": [],
   "salario_max_texto": 5923.15,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Diretor",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": 5923.15
+    },
+    {
+     "nome": "PEB I - Professor de Educação Básica I",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Ensino Fundamental II - Matemática",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Ensino Fundamental II - História",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Ensino Fundamental II - Geografia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Ensino Fundamental II - Língua Portuguesa",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Ensino Fundamental II - Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Ensino Fundamental II - Ciências",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Ensino Fundamental II - Artes",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Ensino Fundamental II - Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Desenvolvimento Infantil",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": 1712.91
+    }
+   ],
+   "salario_min": 1712.91,
+   "salario_max": 5923.15
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cabreuva-sp-abre-concurso-publico-para-guarda-municipal": {
   "first_seen": "2026-10-21",
@@ -383,14 +1493,328 @@
   "hash": "aec3634a7c9e",
   "fisio_linhas": [],
   "salario_max_texto": 5565.0,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Técnico de Nível Médio - Fiscal de Obras Particulares",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Nível Médio - Fiscal de Obras Públicas",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Nível Médio - Fiscal de Serviços Públicos",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "TNM - Almoxarife",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Nível Médio - Técnico Artístico",
+     "escolaridade": "tecnico",
+     "vagas": "cadastro de reserva",
+     "salario": null
+    },
+    {
+     "nome": "TNM - Técnico em Contabilidade",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Nível Médio - Técnico Desportivo",
+     "escolaridade": "tecnico",
+     "vagas": "cadastro de reserva",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Nível Médio - Técnico em Farmácia",
+     "escolaridade": "tecnico",
+     "vagas": "cadastro de reserva",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Nível Médio - Técnico em Nutrição Dietética",
+     "escolaridade": "tecnico",
+     "vagas": "cadastro de reserva",
+     "salario": null
+    },
+    {
+     "nome": "TNM - Técnico em Promoção Social",
+     "escolaridade": "tecnico",
+     "vagas": "21 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Nível Médio - Técnico em Recursos Humanos",
+     "escolaridade": "tecnico",
+     "vagas": "cadastro de reserva",
+     "salario": null
+    },
+    {
+     "nome": "TNM - Técnico de Segurança do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "TNM - Técnico de Serviços Administrativos",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Nível Médio - Técnico de Serviços Odontológicos",
+     "escolaridade": "tecnico",
+     "vagas": "cadastro de reserva",
+     "salario": null
+    },
+    {
+     "nome": "TNM - Técnico de Tributação",
+     "escolaridade": "tecnico",
+     "vagas": "cadastro de reserva",
+     "salario": null
+    },
+    {
+     "nome": "TNM - Topógrafo",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Especialista em Saúde - Enfermeiro do Trabalho",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Especialista em Saúde - Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "12 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Guarda Civil Municipal",
+     "escolaridade": "medio",
+     "vagas": "13 vagas",
+     "salario": null
+    }
+   ],
+   "salario_min": 3577.48,
+   "salario_max": 5565.0
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600": {
   "first_seen": "2026-10-21",
   "hash": "ec6c8ee631f2",
   "fisio_linhas": [],
   "salario_max_texto": 5600.0,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Merendeira",
+     "escolaridade": "desconhecida",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Servente",
+     "escolaridade": "desconhecida",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Atendente de Saúde",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Coletor de Lixo",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Braçal",
+     "escolaridade": "desconhecida",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "desconhecida",
+     "vagas": "5 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Telefonista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Tratorista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Fiscalização Sanitária e Epidemiológica",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "desconhecida",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquina",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Secretário Executivo",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Almoxarife",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "desconhecida",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Pajem",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Controlador Interno",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Escriturário",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Encarregado de Manutenção de Frota",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Administrativo",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Educação Infantil",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Psicopedagogo",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Professor PEB I",
+     "escolaridade": "desconhecida",
+     "vagas": "3 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Especial",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Arte",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Encarregado de Departamento Pessoal",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Lançador",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social do CRAS",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
+   "salario_min": 1700.0,
+   "salario_max": 5600.0
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500": {
   "first_seen": "2026-10-21",
@@ -399,7 +1823,182 @@
    "Fisioterapeuta (CR)"
   ],
   "salario_max_texto": 10500.0,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Agente de Limpeza Urbana (Roçador)",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Piscinas",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Serralheiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Zelador de Centro de Lazer",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Zelador de Praça Pública",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente da Defesa Civil",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Meio Ambiente",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Visitador da Sucen",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Atendente",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Eletricista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Facilitador Social",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Merendeira",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Administrativo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Arquiteto e Urbanista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Diretor da Divisão Municipal de Assistência Social",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Clínico Geral",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ginecologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Psiquiatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor PEB I",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo - Especialização em TEA",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1933.17,
+   "salario_max": 10500.0
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-general-salgado-sp-abre-concurso-para-cargos-na-educacao": {
   "first_seen": "2026-10-21",
@@ -429,7 +2028,62 @@
   "hash": "e55763363516",
   "fisio_linhas": [],
   "salario_max_texto": 5352.38,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Auxiliar de Desenvolvimento Infantil - ADI",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica - PEB I",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica - PEB II - Arte",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica - PEB II - Educação Especial - AEE",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica - PEB II - Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica - PEB II - Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1621.0,
+   "salario_max": 5352.38
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431": {
   "first_seen": "2026-10-21",
@@ -438,7 +2092,464 @@
    "Fisioterapeuta (CR)"
   ],
   "salario_max_texto": 8431.01,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Ajudante de Pedreiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Serviços de Limpeza Pública",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Coveiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Cozinheira",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Eletricista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Faxineira",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Jardineiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Merendeira",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Monitor",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Serviços Gerais",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Vigia",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Zelador",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Escolar",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Administrativo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Mecânico",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista de Ambulância",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Motorista de Ônibus",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Telefonista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Tratorista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Segurança Escolar Feminino",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Segurança Escolar Masculino",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Trânsito",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Almoxarife",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assessor de Depto de Patrimônio",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assessor de Depto de Saúde",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assessor de Depto de Turismo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assessor de Divisão de Licitação",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Depto de Contadoria",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar do Depto de Compras",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Encarregado de Cadastramento de Imóveis",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Encarregado de Departamento Administrativo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal de Obras",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal de Posturas",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal Sanitário",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal Tributário",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Ouvidor",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Secretaria",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Imobilização Ortopédica",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico RX",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Arquiteto",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Diretor de Escola",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Agrônomo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Civil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Especialista - Ginecologista/Obstetra",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Especialista - Neurologista Infantil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Especialista - Pediatra",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Especialista - Psiquiatra Infantil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Veterinário",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Orientador Educacional",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB I",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB II - Artes",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB II - Ciências",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB II - Educação Especial",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB II - Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB II - Geografia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB II - História",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB II - Língua Portuguesa",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB II - Matemática",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "PTEB II - Turismo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1915.95,
+   "salario_max": 8431.01
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-icem-sp-abre-novo-concurso-publico-para-diversos-cargos": {
   "first_seen": "2026-10-21",
@@ -489,7 +2600,170 @@
    "Fisioterapeuta (CR)"
   ],
   "salario_max_texto": 5325.6,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Motorista",
+     "escolaridade": "fundamental",
+     "vagas": "11 vagas CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Desenvolvimento Infanto-Juvenil",
+     "escolaridade": "desconhecida",
+     "vagas": "10 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Analista de Gestão e Políticas Públicas (APPGG)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Nutrição e Dietética",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Radiologia",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Biomédico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Especialista de Gestão e Políticas Públicas (EPPGG)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - Arte",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - Ciências",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - Educação Especial",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - Educação Física",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - Geografia",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - História",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - Informática",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - Matemática",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (PEB II) - Português",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica I (PEB I)",
+     "escolaridade": "superior",
+     "vagas": "3 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Infantil (PEI)",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Coordenador de Projetos Especiais (48a)",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1621.0,
+   "salario_max": 5325.6
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lagoinha-sp-abre-vagas-para-assistente-social-e-psicologo": {
   "first_seen": "2026-10-21",
@@ -510,7 +2784,98 @@
   "hash": "371f33fcfc32",
   "fisio_linhas": [],
   "salario_max_texto": 5044.35,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Agente de Cemitério",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Serviços Urbanos",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - área 24",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Vigilância Eletrônica",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal Ambiental",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Creche",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ortopedista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Pediatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Psiquiatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Reumatologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
+   "salario_min": 1641.49,
+   "salario_max": 5044.35
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-processo-seletivo-para-professores": {
   "first_seen": "2026-10-21",
@@ -524,14 +2889,94 @@
   "hash": "238fccc3dddf",
   "fisio_linhas": [],
   "salario_max_texto": 8890.46,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Agente de Atendimento Especial",
+     "escolaridade": "medio",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Psiquiatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Tesoureiro",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 2399.27,
+   "salario_max": 8890.46
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-21",
   "hash": "12a1b19108b8",
   "fisio_linhas": [],
   "salario_max_texto": 8738.0,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Escriturário",
+     "escolaridade": "desconhecida",
+     "vagas": "5 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal Municipal",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Jurídico",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Artes",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Física",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Ensino Básico",
+     "escolaridade": "desconhecida",
+     "vagas": "5 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Inglês",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 2802.0,
+   "salario_max": 8738.0
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lucelia-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos": {
   "first_seen": "2026-10-21",
@@ -545,7 +2990,362 @@
   "hash": "2f0248b7223e",
   "fisio_linhas": [],
   "salario_max_texto": 8189.58,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Analista de Sistemas",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Arquiteto e Urbanista",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social Educacional",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Cirurgião Dentista",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Controlador Interno",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Coordenador de CRAS",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Educador Físico",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro PSF",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Ambiental",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Civil",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Elétrico",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico Clínico Geral",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico Veterinário",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Técnico Esportivo",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Agente de Informação, Educação e Comunicação (IEC) no Controle de Vetores",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Assistente de Administração",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Administração I",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Lançadoria",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Saúde Bucal",
+     "escolaridade": "tecnico",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Tesouraria",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Técnico em Contabilidade",
+     "escolaridade": "tecnico",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Entrevistador do Cadastro Único",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Escriturário I",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Lançador Fiscal",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Ônibus Escolar",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Orientador Social",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Ouvidor",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Profissional de Apoio Escolar",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Recepcionista",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Secretário da Junta de Serviço Militar",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Informática",
+     "escolaridade": "tecnico",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Segurança do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Almoxarife",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Almoxarife",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Mecânico",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas e Equipamentos Rodoviários",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Soldador/Serralheiro",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Cozinheiro",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Cuidador de Alunos do Berçário",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Telefonista",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Agente de Combate à Endemias",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Borracheiro",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Carpinteiro/Marceneiro",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Eletricista",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Jardineiro",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Lavador de Veículos e Máquinas",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Merendeira Escolar",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Pintor",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Vigilante",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Zelador de Cemitério",
+     "escolaridade": "fundamental",
+     "vagas": null,
+     "salario": null
+    }
+   ],
+   "salario_min": 1684.22,
+   "salario_max": 8189.58
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-maraba-paulista-sp-abre-concurso-publico-para-psicologo": {
   "first_seen": "2026-10-21",
@@ -587,14 +3387,172 @@
   "hash": "4dcf36791564",
   "fisio_linhas": [],
   "salario_max_texto": 5815.68,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Auxiliar de Cozinha",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Borracheiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Coveiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Escriturário I",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista de Ambulância",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista I",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Orientador Social",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1537.46,
+   "salario_max": 5815.68
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas": {
   "first_seen": "2026-10-21",
   "hash": "2f73d2c6be65",
   "fisio_linhas": [],
   "salario_max_texto": 5118.2,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Merendeira",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Contabilidade",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Desenvolvimento Escolar - ADE",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Enfermagem do PSF",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Escriturário",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Técnico Educacional",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Apoio Especializado",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Centro de Educação Infantil - Creche (maternal e berçário I e II)",
+     "escolaridade": "superior",
+     "vagas": "4 vagas",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
+   "salario_min": 1248.89,
+   "salario_max": 5118.2
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-campina-sp-abre-concurso-para-auxiliar-de-enfermagem-e-tecnico-em-enfermagem": {
   "first_seen": "2026-10-21",
@@ -617,14 +3575,406 @@
    "Fisioterapeuta (1 vaga + CR)"
   ],
   "salario_max_texto": 8632.29,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Agente Comunitário de Saúde",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Controle de Endemias",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Fiscal de Obras e Posturas",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Analista de Gestão Pública",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Contabilidade",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Odontológico",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Biomédico",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Chefe de Recursos Humanos",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Controlador Interno e Ouvidoria",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Coordenador de Licitações",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Coveiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Cozinheira",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Dentista ESF",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Eletricista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Agrônomo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Civil",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Escriturário",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Clínico Geral",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Cardiologista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ginecologista/Obstetra",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Creche",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas de Motoniveladora",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas Pesadas",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Orientador de Esportes",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Procurador",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Informática",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Tesoureiro",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    },
+    {
+     "nome": "Trabalhador Braçal",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Vigilante",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1657.09,
+   "salario_max": 8632.29
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397": {
   "first_seen": "2026-10-21",
   "hash": "b432e0c54115",
   "fisio_linhas": [],
   "salario_max_texto": 17397.46,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Motorista de Veículos Pesados",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas Pesadas",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Eletricista Civil",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Lavador de Veículos",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Servente de Limpeza",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Tratador de Animais",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social na Educação Básica",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro de Saúde da Família",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Engenheiro Agrônomo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica I (PEB I) - 32 Horas",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Cardiologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico ESF",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neurologista Infantil",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ortopedista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Psiquiatra Infantil",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Urologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
+   "salario_min": 1621.0,
+   "salario_max": 17397.46
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-processo-seletivo-para-a-area-da-educacao": {
   "first_seen": "2026-10-21",
@@ -640,7 +3990,332 @@
    "Fisioterapeuta/SUS"
   ],
   "salario_max_texto": 5882.37,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Auxiliar de Consultório Dentário/SUS",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Fiscal de Higiene e Saneamento/SUS",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Fisioterapeuta/SUS",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico (Especialidade: Cardiologista)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico (Especialidade: Ginecologista)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico (Especialidade: Neurologista)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico (Especialidade: Ortopedista)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico (Especialidade: Pediatra)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico (Especialidade: Pneumologista)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico (Especialidade: Psiquiatra)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico (Especialidade: Psiquiatra Infantil)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Odontólogo/SUS",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Terapeuta Ocupacional/SUS",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Operacional",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Operacional de Construção Civil",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Operacional de Oficina",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Borracheiro",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Eletricista de Auto",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Encanador",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Lavador/Lubrificador",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Mecânico de Auto",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Motorista Coleta",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Motorista Comboio",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas Agrícolas",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Pintor",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Porteiro",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Soldador",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Arquivista / Historiador",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Assistente Administrativo",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Cuidador/Educador",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Fiscal de Saneamento Ambiental",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Turismo",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Orientador Social",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Pintor de Sistema Viário",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Recepcionista",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Técnico Agrícola",
+     "escolaridade": "tecnico",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Analista de Tráfego",
+     "escolaridade": "desconhecida",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Arquiteto e Urbanista",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Bibliotecário",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Biólogo",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Médico Veterinário",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Pedagogo",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Física (Secretaria de Assistência Social)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Física (Secretaria de Esportes)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Professor de Música (Modalidade Musicalização Infantil e Teoria Musical)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Professor de Música (Modalidade Piano Erudito)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Professor de Música (Modalidade Violino)",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": null,
+     "salario": null
+    }
+   ],
+   "salario_min": 1621.13,
+   "salario_max": 5882.37
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-das-pedras-sp-abre-selecao-para-cadastro-reserva-de-professores": {
   "first_seen": "2026-10-21",
@@ -670,7 +4345,542 @@
    "Fisioterapeuta (CR)"
   ],
   "salario_max_texto": 6055.67,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Artífice de Obras e Serviços Públicos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Cozinha",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Obras e Serviços Públicos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Coletor de Lixo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Coveiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Cozinheiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Eletricista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Padeiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Porteiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Recepcionista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Vigia",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Apoio Escolar",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Combate às Endemias",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Almoxarife",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Bombeiro Municipal",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Cuidador de Crianças (Escolas)",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Desenhista Projetista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Escriturário",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal de Obras e Serviços Públicos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal Sanitário",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal Tributário",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista Operador de Máquinas e Equipamentos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista Socorrista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico Agrícola",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Imobilização Ortopédica",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Informática",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Enfermagem Socorrista",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Radiologia",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Segurança do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Telefonista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Analista de Sistemas",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Arquiteto e Urbanista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auditor Fiscal de Tributos Municipais",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Bibliotecário",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Biólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Controlador Interno",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Dentista (Cirurgião Geral)",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Dentista (Clínico Geral)",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Diretor de Escola",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Educador Ambiental",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Educador Físico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro Socorrista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico (Clínico Geral)",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Cardiologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico da Saúde da Família",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Dermatologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Endocrinologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ginecologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Infectologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neurologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neuropediatra",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico - Obstetrícia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ortopedista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Pediatra",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Plantonista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Pneumologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Psiquiatra",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Reumatologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Urologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Veterinário",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Pedagogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Pedagogo para a Secretaria de Saúde",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Procurador Municipal",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Artes - PEB II",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Ciências - PEB II",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Dança",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica (Ed. inf. e anos iniciais)",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Especial - PEB II",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Física - PEB II",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Geografia - PEB II",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de História - PEB II",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Inglês - PEB II",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Matemática - PEB II",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Música",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Português - PEB II",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicopedagogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Supervisor de Ensino",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1738.96,
+   "salario_max": 6055.67
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537": {
   "first_seen": "2026-10-21",
@@ -679,7 +4889,200 @@
    "Fisioterapeuta (CR)"
   ],
   "salario_max_texto": 22537.36,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Coletor de Lixo",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Jardineiro",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Servente",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Administrativo",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Fiscalização de Atividades Urbanas",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - ESF Gino Chamorro/Bairro Parque São Roque Área 01",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - ESF Juca Pena/Bairro Pedro Barros Área 06",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - UBS Vila Santa Rita de Cássia Área 07",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Educador/Cuidador",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Carpinteiro",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas Rodoviárias",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Encanador Hidráulico",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Artes",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal de Higiene",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor II - Educação Física",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Professor II - Arte",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Professor III",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Língua Estrangeira Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neurologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico do Programa de Saúde da Família",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Psiquiatra",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Oftalmologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Cirurgião Dentista do Programa de Saúde da Família - PSF",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1936.54,
+   "salario_max": 22537.36
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539": {
   "first_seen": "2026-10-21",
@@ -688,7 +5091,236 @@
    "Fisioterapeuta (CR)"
   ],
   "salario_max_texto": 23539.17,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Agente Administrativo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Combate às Endemias",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Saneamento",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Ajudante de Serviços",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Ajudante Geral",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Analista Contábil",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Analista Programador",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente de Esportes",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Atendente de Consultório Dentário",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auditor Fiscal",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Enfermagem",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Bibliotecário",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Coordenador Pedagógico",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Cozinheiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Cuidador",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Dentista - 20h",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Dentista - 40h",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Educador Social",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico de Saúde da Família",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicopedagogo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Procurador Municipal",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico Agropecuário",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Tratorista",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Oficial de Conservação",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1717.55,
+   "salario_max": 23539.17
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-tatui-sp-abre-concurso-publico-para-cargos-de-nivel-fundamental-e-medio": {
   "first_seen": "2026-10-21",
@@ -702,21 +5334,420 @@
   "hash": "be0295d43a46",
   "fisio_linhas": [],
   "salario_max_texto": 5209.01,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Ajudante Geral",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Jardineiro",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Mantenedor de Máquinas e Veículos",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Motorista Sênior",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas Junior",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas Sênior",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Pintor",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Vigia",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde, Centro",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde, Godoy/Arraial",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde, Lima Rico/Pantano",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde, Passa Três/Machados/Caetanos/Rio Abaixo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Controle de Endemia",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Almoxarife",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Administrativo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Administrativo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Merendeira",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Recepcionista",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Servente",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Servidor Braçal",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Segurança do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Social Escolar",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Coordenador Pedagógico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Diretor de Escola",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica I, Classe",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica I, Educação Infantil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica II, Educação Especial Intérprete de Libras",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica II, Educação Especial",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica II, Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica II, Geografia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica II, História",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica II, Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica II, Matemática",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Professor de Educação Básica II, Português",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Psicólogo Escolar",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Psicopedagogo 40h",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
+   "salario_min": 1783.03,
+   "salario_max": 5209.01
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377": {
   "first_seen": "2026-10-21",
   "hash": "826b6a8efe19",
   "fisio_linhas": [],
   "salario_max_texto": 8377.33,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "desconhecida",
+     "vagas": "5 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Serviços Infantis",
+     "escolaridade": "desconhecida",
+     "vagas": "10 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB I - Professor de Educação Básica I",
+     "escolaridade": "desconhecida",
+     "vagas": "10 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Professor de Educação Básica II - Educação Especial em Classes Multifuncionais",
+     "escolaridade": "desconhecida",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "PEB II - Professor de Educação Básica II - Educação Física",
+     "escolaridade": "desconhecida",
+     "vagas": "5 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Coordenador Pedagógico",
+     "escolaridade": "desconhecida",
+     "vagas": "4 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Diretor de Escola",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1899.72,
+   "salario_max": 8377.33
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-carapicuiba-sp-abre-novos-concursos-para-cadastro-de-reserva-em-diversas-areas": {
   "first_seen": "2026-10-21",
   "hash": "6b9de5eb9f1e",
   "fisio_linhas": [],
   "salario_max_texto": 12118.5,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Auxiliar de Saúde Bucal",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Enfermagem PSF",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Enfermeiro PSF",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Endocrinologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Neurologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Pediatra",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Médico Ultrassonografista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente de TI",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico de Edificações",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Segurança do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em TI",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Topógrafo",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Instrutor de Prática Desportiva",
+     "escolaridade": "desconhecida",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
+   "salario_min": 1621.0,
+   "salario_max": 12118.5
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cordeiropolis-sp-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva": {
   "first_seen": "2026-10-21",
@@ -744,7 +5775,56 @@
   "hash": "a86cb85fe43d",
   "fisio_linhas": [],
   "salario_max_texto": 11102.06,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Motorista",
+     "escolaridade": "fundamental",
+     "vagas": "Cadastro de reserva",
+     "salario": null
+    },
+    {
+     "nome": "Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Escriturário",
+     "escolaridade": "medio",
+     "vagas": "5 vagas AC + 1 vaga NI",
+     "salario": null
+    },
+    {
+     "nome": "Técnico em Informática",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Controlador Interno",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Médico Perito",
+     "escolaridade": "superior",
+     "vagas": "Cadastro de reserva",
+     "salario": null
+    }
+   ],
+   "salario_min": 1984.14,
+   "salario_max": 11102.06
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas": {
   "first_seen": "2026-10-21",
@@ -772,7 +5852,20 @@
   "hash": "2d020ff1f99b",
   "fisio_linhas": [],
   "salario_max_texto": 6537.74,
-  "tem_medio": true
+  "tem_medio": true,
+  "ia": {
+   "cargos": [
+    {
+     "nome": "Assistente de Suporte Acadêmico II - Área de atuação: Mecatrônica",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": 6537.74
+    }
+   ],
+   "salario_min": 6537.74,
+   "salario_max": 6537.74
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-odontologia-de-araraquara-sp": {
   "first_seen": "2026-10-21",

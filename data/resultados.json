@@ -1,8 +1,8 @@
 {
- "gerado_em": "21/10/2026 14:29",
+ "gerado_em": "21/10/2026 14:53",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
  "total_sp": 160,
- "ia_ativa": false,
+ "ia_ativa": true,
  "fisioterapia": [
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433",
@@ -23,8 +23,8 @@
    "salario_max": 17433.24,
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "medio_possivel": false,
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp",
@@ -91,8 +91,8 @@
    "salario_max": 10500.0,
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "medio_possivel": false,
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude",
@@ -135,8 +135,8 @@
    "salario_max": 8431.01,
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "medio_possivel": false,
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325",
@@ -157,8 +157,8 @@
    "salario_max": 5325.6,
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "medio_possivel": false,
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632",
@@ -179,8 +179,8 @@
    "salario_max": 8632.29,
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "medio_possivel": false,
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas",
@@ -201,8 +201,8 @@
    "salario_max": 5882.37,
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "medio_possivel": false,
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos",
@@ -223,8 +223,8 @@
    "salario_max": 6055.67,
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "medio_possivel": false,
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537",
@@ -244,9 +244,94 @@
    "fisio": true,
    "salario_max": 22537.36,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Administrativo",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Fiscalização de Atividades Urbanas",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - ESF Gino Chamorro/Bairro Parque São Roque Área 01",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - ESF Juca Pena/Bairro Pedro Barros Área 06",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - UBS Vila Santa Rita de Cássia Área 07",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Educador/Cuidador",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Carpinteiro",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas Rodoviárias",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Encanador Hidráulico",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Artes",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal de Higiene",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
    "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539",
@@ -267,94 +352,67 @@
    "salario_max": 23539.17,
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "medio_possivel": false,
+   "analise_ia": true
   }
  ],
- "nivel_medio_acima_5000": [],
- "nivel_medio_possiveis": [
+ "nivel_medio_acima_5000": [
   {
-   "url": "https://www.pciconcursos.com.br/noticias/camara-de-boituva-sp-abre-concursos-com-salarios-de-ate-8595",
-   "orgao": "Câmara de Boituva",
-   "titulo": "Câmara de Boituva - SP abre concursos com salários de até R$ 8.595,15",
+   "url": "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario",
+   "orgao": "TJSP - Tribunal de Justiça do Estado de São Paulo",
+   "titulo": "TJSP abre concursos para Oficial de Justiça e Escrevente Técnico Judiciário",
    "uf": "SP",
-   "vagas_salario": "7 vagas até R$ 8.595,15",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 8595.15,
-   "inscricao_ate": "09/11/2026",
+   "vagas_salario": "132 vagas até R$ 9.856,95",
+   "cargos_resumo": "Oficial de Justiça, Escrevente Técnico Judiciário",
+   "niveis": "Médio / Superior",
+   "salario_max_listagem": 9856.95,
+   "inscricao_ate": "28/10 a 10/12/2026",
    "first_seen": "2026-10-21",
    "novo": true,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 8595.15,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433",
-   "orgao": "Prefeitura de Matão",
-   "titulo": "Prefeitura de Matão - SP abre concurso público com salários de até R$ 17.433,24",
-   "uf": "SP",
-   "vagas_salario": "44 vagas até R$ 17.433,24",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Superior",
-   "salario_max_listagem": 17433.24,
-   "inscricao_ate": "29/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [
-    "Fisioterapeuta (1 vaga)"
+   "salario_max": 9856.95,
+   "medio_confirmado": [
+    {
+     "nome": "Escrevente Técnico Judiciário",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": 6782.54
+    }
    ],
-   "fisio": true,
-   "salario_max": 17433.24,
-   "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "medio_possivel": false,
+   "analise_ia": true
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717",
-   "orgao": "Prefeitura de Matão",
-   "titulo": "Prefeitura de Matão - SP abre concurso público com salários de até R$ 9.717,96",
+   "url": "https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii",
+   "orgao": "UNESP - Universidade Estadual Paulista",
+   "titulo": "UNESP de Sorocaba - SP abre concurso para Assistente de Suporte Acadêmico II",
    "uf": "SP",
-   "vagas_salario": "28 vagas até R$ 9.717,96",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 9717.96,
-   "inscricao_ate": "18/11/2026",
+   "vagas_salario": "1 vaga até R$ 6.537,74",
+   "cargos_resumo": "Assistente de Suporte Acadêmico II",
+   "niveis": "Ensino Médio",
+   "salario_max_listagem": 6537.74,
+   "inscricao_ate": "30/10/2026",
    "first_seen": "2026-10-21",
    "novo": true,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 9717.96,
-   "medio_confirmado": [],
+   "salario_max": 6537.74,
+   "medio_confirmado": [
+    {
+     "nome": "Assistente de Suporte Acadêmico II - Área de atuação: Mecatrônica",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": 6537.74
+    }
+   ],
    "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-carlos-sp-abre-concurso-com-salarios-de-ate-9833",
-   "orgao": "Prefeitura de São Carlos",
-   "titulo": "Prefeitura de São Carlos - SP abre concurso com salários de até R$ 9.833,00",
-   "uf": "SP",
-   "vagas_salario": "45 vagas até R$ 9.833,00",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 9833.0,
-   "inscricao_ate": "29/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 9833.0,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
+   "medio_possivel": false,
+   "analise_ia": true
+  }
+ ],
+ "nivel_medio_possiveis": [
   {
    "url": "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428",
    "orgao": "SETEC - Serviços Técnicos Gerais de Campinas",
@@ -371,29 +429,34 @@
    "fisio": false,
    "salario_max": 10428.05,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Agente Administrativo",
+     "escolaridade": "medio",
+     "vagas": "8 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Fiscalização",
+     "escolaridade": "medio",
+     "vagas": "5 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Suporte Técnico",
+     "escolaridade": "medio",
+     "vagas": "4 vagas + CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente de S.V.O.",
+     "escolaridade": "medio",
+     "vagas": "2 vagas + CR",
+     "salario": null
+    }
+   ],
    "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario",
-   "orgao": "TJSP - Tribunal de Justiça do Estado de São Paulo",
-   "titulo": "TJSP abre concursos para Oficial de Justiça e Escrevente Técnico Judiciário",
-   "uf": "SP",
-   "vagas_salario": "132 vagas até R$ 9.856,95",
-   "cargos_resumo": "Oficial de Justiça, Escrevente Técnico Judiciário",
-   "niveis": "Médio / Superior",
-   "salario_max_listagem": 9856.95,
-   "inscricao_ate": "28/10 a 10/12/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 9856.95,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065",
@@ -411,9 +474,16 @@
    "fisio": false,
    "salario_max": 11065.27,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Agente Administrativo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    }
+   ],
    "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114",
@@ -431,89 +501,22 @@
    "fisio": false,
    "salario_max": 7114.33,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Oficial de Finanças",
+     "escolaridade": "medio",
+     "vagas": "Cadastro Reserva",
+     "salario": null
+    },
+    {
+     "nome": "Oficial Legislativo",
+     "escolaridade": "medio",
+     "vagas": "Cadastro Reserva",
+     "salario": null
+    }
+   ],
    "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba",
-   "orgao": "Cemmil - Consórcio Intermunicipal Cemmil para o Desenvolvimento Sustentável",
-   "titulo": "Consórcio Cemmil - SP abre processo seletivo com vagas em Carapicuíba",
-   "uf": "SP",
-   "vagas_salario": "28 vagas até R$ 6.889,64",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Superior",
-   "salario_max_listagem": 6889.64,
-   "inscricao_ate": "12/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 6889.64,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/famesp-sp-abre-processos-seletivos-em-diferentes-cidades",
-   "orgao": "FAMESP - Fundação para o Desenvolvimento Médico e Hospitalar",
-   "titulo": "FAMESP - SP abre processos seletivos em diferentes cidades",
-   "uf": "SP",
-   "vagas_salario": "11 vagas até R$ 12.154,19",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Médio / Técnico / Superior",
-   "salario_max_listagem": 12154.19,
-   "inscricao_ate": "25/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 12154.19,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-aparecida-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
-   "orgao": "Prefeitura de Aparecida",
-   "titulo": "Prefeitura de Aparecida - SP abre concurso público com vagas imediatas e cadastro de reserva",
-   "uf": "SP",
-   "vagas_salario": "21 vagas até R$ 6.946,91",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 6946.91,
-   "inscricao_ate": "26/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 6946.91,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-buritizal-sp-abre-processo-seletivo-para-a-area-da-educacao",
-   "orgao": "Prefeitura de Buritizal",
-   "titulo": "Prefeitura de Buritizal - SP abre processo seletivo para a área da educação",
-   "uf": "SP",
-   "vagas_salario": "Cadastro de reserva até R$ 5.923,15",
-   "cargos_resumo": "Diretor, Professor de Educação Básica, Auxiliar de Desenvolvimento Infantil",
-   "niveis": "Médio / Superior",
-   "salario_max_listagem": 5923.15,
-   "inscricao_ate": "25/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 5923.15,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concursos-publicos-com-salarios-de-ate-5565",
@@ -531,51 +534,28 @@
    "fisio": false,
    "salario_max": 5565.0,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600",
-   "orgao": "Prefeitura de Embaúba",
-   "titulo": "Prefeitura de Embaúba - SP abre concurso público com salários de até R$ 5.600,00",
-   "uf": "SP",
-   "vagas_salario": "51 vagas até R$ 5.600,00",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 5600.0,
-   "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 5600.0,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500",
-   "orgao": "Prefeitura de Floreal",
-   "titulo": "Prefeitura de Floreal - SP abre concurso público com salários de até R$ 10.500,00",
-   "uf": "SP",
-   "vagas_salario": "12 vagas até R$ 10.500,00",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 10500.0,
-   "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [
-    "Fisioterapeuta (CR)"
+   "medio_sem_salario": [
+    {
+     "nome": "TNM - Almoxarife",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "TNM - Técnico de Serviços Administrativos",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Guarda Civil Municipal",
+     "escolaridade": "medio",
+     "vagas": "13 vagas",
+     "salario": null
+    }
    ],
-   "fisio": true,
-   "salario_max": 10500.0,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
    "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352",
@@ -593,53 +573,22 @@
    "fisio": false,
    "salario_max": 5352.38,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431",
-   "orgao": "Prefeitura de Holambra",
-   "titulo": "Prefeitura de Holambra - SP abre concurso com salários de até R$ 8.431,01",
-   "uf": "SP",
-   "vagas_salario": "18 vagas até R$ 8.431,01",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 8431.01,
-   "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [
-    "Fisioterapeuta (CR)"
+   "medio_sem_salario": [
+    {
+     "nome": "Auxiliar de Desenvolvimento Infantil - ADI",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    }
    ],
-   "fisio": true,
-   "salario_max": 8431.01,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
    "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325",
-   "orgao": "Prefeitura de Jaborandi",
-   "titulo": "Prefeitura de Jaborandi - SP abre concurso público com salários de até R$ 5.325,60",
-   "uf": "SP",
-   "vagas_salario": "31 vagas até R$ 5.325,60",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 5325.6,
-   "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [
-    "Fisioterapeuta (CR)"
-   ],
-   "fisio": true,
-   "salario_max": 5325.6,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044",
@@ -657,9 +606,28 @@
    "fisio": false,
    "salario_max": 5044.35,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Agente Comunitário de Saúde - área 24",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Vigilância Eletrônica",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Creche",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
    "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890",
@@ -677,29 +645,16 @@
    "fisio": false,
    "salario_max": 8890.46,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Agente de Atendimento Especial",
+     "escolaridade": "medio",
+     "vagas": "1 vaga + CR",
+     "salario": null
+    }
+   ],
    "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva",
-   "orgao": "Prefeitura de Louveira",
-   "titulo": "Prefeitura de Louveira - SP abre concursos com vagas imediatas e cadastro de reserva",
-   "uf": "SP",
-   "vagas_salario": "19 vagas até R$ 8.738,00",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Superior",
-   "salario_max_listagem": 8738.0,
-   "inscricao_ate": "16/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 8738.0,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189",
@@ -717,71 +672,94 @@
    "fisio": false,
    "salario_max": 8189.58,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815",
-   "orgao": "Prefeitura de Morro Agudo",
-   "titulo": "Prefeitura de Morro Agudo - SP abre concurso com salários de até R$ 5.815,68",
-   "uf": "SP",
-   "vagas_salario": "7 vagas até R$ 5.815,68",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Superior",
-   "salario_max_listagem": 5815.68,
-   "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 5815.68,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas",
-   "orgao": "Prefeitura de Murutinga do Sul",
-   "titulo": "Prefeitura de Murutinga do Sul - SP publica edital de concurso com 15 vagas imediatas",
-   "uf": "SP",
-   "vagas_salario": "15 vagas até R$ 5.118,20",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Superior",
-   "salario_max_listagem": 5118.2,
-   "inscricao_ate": "30/10 a 16/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 5118.2,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632",
-   "orgao": "Prefeitura de Paulo de Faria",
-   "titulo": "Prefeitura de Paulo de Faria - SP abre concurso público com salários de até R$ 8.632,29",
-   "uf": "SP",
-   "vagas_salario": "34 vagas até R$ 8.632,29",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 8632.29,
-   "inscricao_ate": "22/10 a 05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [
-    "Fisioterapeuta (1 vaga + CR)"
+   "medio_sem_salario": [
+    {
+     "nome": "Agente de Informação, Educação e Comunicação (IEC) no Controle de Vetores",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Assistente de Administração",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Administração I",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Lançadoria",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Tesouraria",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Entrevistador do Cadastro Único",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Escriturário I",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Lançador Fiscal",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Ônibus Escolar",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Orientador Social",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Ouvidor",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Profissional de Apoio Escolar",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Recepcionista",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    },
+    {
+     "nome": "Secretário da Junta de Serviço Militar",
+     "escolaridade": "medio",
+     "vagas": null,
+     "salario": null
+    }
    ],
-   "fisio": true,
-   "salario_max": 8632.29,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
    "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397",
@@ -799,53 +777,16 @@
    "fisio": false,
    "salario_max": 17397.46,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas",
-   "orgao": "Prefeitura de Porto Feliz",
-   "titulo": "Prefeitura de Porto Feliz - SP publica editais de concursos para cadastro de reserva em diversas áreas",
-   "uf": "SP",
-   "vagas_salario": "Cadastro de reserva até R$ 5.882,37",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 5882.37,
-   "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [
-    "Fisioterapeuta/SUS"
+   "medio_sem_salario": [
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    }
    ],
-   "fisio": true,
-   "salario_max": 5882.37,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
    "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos",
-   "orgao": "Prefeitura de Taquaritinga",
-   "titulo": "Prefeitura de Taquaritinga - SP abre concurso público para diversos cargos",
-   "uf": "SP",
-   "vagas_salario": "2 vagas até R$ 6.055,67",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 6055.67,
-   "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [
-    "Fisioterapeuta (CR)"
-   ],
-   "fisio": true,
-   "salario_max": 6055.67,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537",
@@ -865,31 +806,94 @@
    "fisio": true,
    "salario_max": 22537.36,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539",
-   "orgao": "Prefeitura de Tarumã",
-   "titulo": "Prefeitura de Tarumã - SP prorroga inscrições para processo seletivo com salários de até R$ 23.539,17",
-   "uf": "SP",
-   "vagas_salario": "CR até R$ 23.539,17",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 23539.17,
-   "inscricao_ate": "Prorrogado até 22/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [
-    "Fisioterapeuta (CR)"
+   "medio_sem_salario": [
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Administrativo",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Fiscalização de Atividades Urbanas",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - ESF Gino Chamorro/Bairro Parque São Roque Área 01",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - ESF Juca Pena/Bairro Pedro Barros Área 06",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde - UBS Vila Santa Rita de Cássia Área 07",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar de Educador/Cuidador",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Carpinteiro",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Operador de Máquinas Rodoviárias",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Encanador Hidráulico",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Monitor de Artes",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Fiscal de Higiene",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    }
    ],
-   "fisio": true,
-   "salario_max": 23539.17,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
    "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
@@ -907,49 +911,82 @@
    "fisio": false,
    "salario_max": 5209.01,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Agente Comunitário de Saúde, Centro",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde, Godoy/Arraial",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde, Lima Rico/Pantano",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente Comunitário de Saúde, Passa Três/Machados/Caetanos/Rio Abaixo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Agente de Controle de Endemia",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Almoxarife",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Assistente Administrativo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Auxiliar Administrativo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Merendeira",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Recepcionista",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null
+    },
+    {
+     "nome": "Servente",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    },
+    {
+     "nome": "Servidor Braçal",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null
+    }
+   ],
    "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377",
-   "orgao": "Prefeitura de Votorantim",
-   "titulo": "Prefeitura de Votorantim - SP abre concursos públicos com salários de até R$ 8.377,33",
-   "uf": "SP",
-   "vagas_salario": "37 vagas até R$ 8.377,33",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Superior",
-   "salario_max_listagem": 8377.33,
-   "inscricao_ate": "16/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 8377.33,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-carapicuiba-sp-abre-novos-concursos-para-cadastro-de-reserva-em-diversas-areas",
-   "orgao": "Prefeitura do Município de Carapicuíba",
-   "titulo": "Prefeitura de Carapicuíba - SP abre novos concursos para cadastro de reserva em diversas áreas",
-   "uf": "SP",
-   "vagas_salario": "Cadastro de Reserva até R$ 12.118,50",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Médio / Técnico / Superior",
-   "salario_max_listagem": 12118.5,
-   "inscricao_ate": "30/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 12118.5,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102",
@@ -967,29 +1004,16 @@
    "fisio": false,
    "salario_max": 11102.06,
    "medio_confirmado": [],
-   "medio_sem_salario": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Escriturário",
+     "escolaridade": "medio",
+     "vagas": "5 vagas AC + 1 vaga NI",
+     "salario": null
+    }
+   ],
    "medio_possivel": true,
-   "analise_ia": false
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii",
-   "orgao": "UNESP - Universidade Estadual Paulista",
-   "titulo": "UNESP de Sorocaba - SP abre concurso para Assistente de Suporte Acadêmico II",
-   "uf": "SP",
-   "vagas_salario": "1 vaga até R$ 6.537,74",
-   "cargos_resumo": "Assistente de Suporte Acadêmico II",
-   "niveis": "Ensino Médio",
-   "salario_max_listagem": 6537.74,
-   "inscricao_ate": "30/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 6537.74,
-   "medio_confirmado": [],
-   "medio_sem_salario": [],
-   "medio_possivel": true,
-   "analise_ia": false
+   "analise_ia": true
   }
  ]
 }
