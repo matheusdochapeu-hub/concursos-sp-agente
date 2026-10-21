@@ -1,0 +1,41 @@
+name: Buscar concursos (diário)
+
+on:
+  schedule:
+    - cron: "0 10 * * *"   # todo dia às 10:00 UTC = 07:00 em Brasília
+  workflow_dispatch:        # permite rodar manualmente pela aba Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buscar-concursos
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Rodar agente
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python agente.py
+
+      - name: Publicar resultados (commit)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs data
+          git diff --staged --quiet || git commit -m "Atualização diária $(TZ=America/Sao_Paulo date +'%d/%m/%Y')"
+          git push

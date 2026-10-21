@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concursos SP — Fisioterapia &amp; Nível Médio</title>
+<style>
+  :root { --bg:#0f172a; --card:#1e293b; --muted:#94a3b8; --txt:#e2e8f0; --acc:#22d3ee; --ok:#4ade80; --warn:#fbbf24; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--txt); }
+  .top { padding:28px 20px 12px; max-width:1200px; margin:auto; }
+  h1 { margin:0 0 6px; font-size:1.6rem; }
+  .meta { color:var(--muted); font-size:.9rem; }
+  .stats { display:flex; gap:12px; flex-wrap:wrap; margin:16px 0; }
+  .stat { background:var(--card); padding:10px 16px; border-radius:10px; }
+  .stat b { font-size:1.4rem; display:block; }
+  nav { display:flex; gap:8px; flex-wrap:wrap; max-width:1200px; margin:auto; padding:0 20px; }
+  nav button { background:var(--card); color:var(--txt); border:1px solid #334155; padding:10px 16px; border-radius:999px; cursor:pointer; font-size:.95rem; }
+  nav button.ativo { background:var(--acc); color:#0f172a; border-color:var(--acc); font-weight:600; }
+  .filtro { max-width:1200px; margin:14px auto 0; padding:0 20px; }
+  .filtro input { width:100%; padding:10px 14px; border-radius:10px; border:1px solid #334155; background:#0b1222; color:var(--txt); font-size:1rem; }
+  main { max-width:1200px; margin:auto; padding:10px 20px 40px; }
+  .tab-panel { display:none; } .tab-panel.ativo { display:block; }
+  h2 small { color:var(--muted); font-weight:400; }
+  .desc { color:var(--muted); margin-top:-6px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:14px; }
+  .card { background:var(--card); border-radius:14px; padding:16px; display:flex; flex-direction:column; gap:10px; border:1px solid #334155; }
+  .card h3 { margin:0; font-size:1.08rem; } .card h3 a { color:var(--acc); text-decoration:none; }
+  .card h3 a:hover { text-decoration:underline; }
+  .titulo { margin:4px 0 0; color:var(--muted); font-size:.88rem; }
+  .cargos { margin:0; padding-left:18px; font-size:.92rem; line-height:1.45; }
+  .card footer { display:flex; flex-direction:column; gap:3px; font-size:.85rem; color:var(--muted); margin-top:auto; }
+  .prazo b { color:var(--warn); }
+  .badge.novo { background:var(--ok); color:#052e16; font-size:.7rem; padding:2px 7px; border-radius:6px; vertical-align:middle; font-weight:700; }
+  .alerta { background:#422006; border:1px solid var(--warn); color:#fde68a; padding:10px 14px; border-radius:10px; margin:10px 0; font-size:.9rem; }
+  .vazio { color:var(--muted); }
+  a.fonte { color:var(--acc); }
+</style>
+</head>
+<body>
+  <div class="top">
+    <h1>🔎 Concursos em São Paulo</h1>
+    <div class="meta">Atualizado em <b>21/10/2026 14:29</b> (horário de Brasília) · Fonte:
+      <a class="fonte" href="https://www.pciconcursos.com.br/concursos/sudeste/" target="_blank" rel="noopener">PCI Concursos — Sudeste</a></div>
+    <div class="stats">
+      <div class="stat"><b>160</b>concursos abertos em SP</div>
+      <div class="stat"><b>12</b>com Fisioterapia</div>
+      <div class="stat"><b>0</b>nível médio &gt; R$ 5 mil</div>
+      <div class="stat"><b>35</b>possíveis (verificar)</div>
+    </div>
+    <div class="alerta">⚠️ IA desativada: a aba "Nível médio &gt; R$ 5.000" depende da extração por IA (Gemini). Sem ela, os concursos de nível médio aparecem em "Possíveis (verificar edital)".</div>
+  </div>
+  <nav>
+    <button data-tab="fisio" class="ativo">🩺 Fisioterapia (12)</button>
+    <button data-tab="medio">💰 Nível médio &gt; R$ 5.000 (0)</button>
+    <button data-tab="possiveis">🔍 Possíveis — verificar edital (35)</button>
+  </nav>
+  <div class="filtro"><input id="q" type="search" placeholder="Filtrar por cidade, órgão ou cargo..."></div>
+  <main>
+    
+  <section id="fisio" class="tab-panel">
+    <h2>Fisioterapeuta / Fisioterapia <small>(12)</small></h2>
+    <p class="desc">Concursos de SP cuja notícia cita cargos de fisioterapia.</p>
+    <div class="grid">
+    <article class="card" data-busca="prefeitura de matão prefeitura de matão - sp abre concurso público com salários de até r$ 17.433,24 fisioterapeuta (1 vaga)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433" target="_blank" rel="noopener">Prefeitura de Matão</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Matão - SP abre concurso público com salários de até R$ 17.433,24</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapeuta (1 vaga)</li></ul>
+      <footer>
+        <span>📋 44 vagas até R$ 17.433,24</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>29/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="marinha do brasil - comando do 8º distrito naval marinha do brasil - 8º distrito naval abre vagas para oficiais rm2 em sp oportunidades contemplam diversas áreas como engenharia, medicina, administração, fisioterapia e informática. a seleção inclui prova objetiva, teste físico, avaliação de títulos e inspeção de saúde. fisioterapia, são paulo - sp (1 vaga)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp" target="_blank" rel="noopener">Marinha do Brasil - Comando do 8º Distrito Naval</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Marinha do Brasil - 8º Distrito Naval abre vagas para Oficiais RM2 em SP</p>
+      </header>
+      <ul class="cargos"><li>Oportunidades contemplam diversas áreas como Engenharia, Medicina, Administração, Fisioterapia e Informática. A seleção inclui prova objetiva, teste físico, avaliação de títulos e inspeção de saúde.</li><li>Fisioterapia, São Paulo - SP (1 vaga)</li></ul>
+      <footer>
+        <span>📋 36 vagas</span>
+        <span>🎓 Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>10/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="município da estância balneária de praia grande prefeitura de praia grande - sp abre processo seletivo para residência multiprofissional oportunidade para profissionais de nível superior nas áreas de enfermagem, fisioterapia, odontologia e psicologia com bolsa mensal de r$ 4.106,09 e jornada de 60 horas semanais. fisioterapia (4 vagas)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional" target="_blank" rel="noopener">Município da Estância Balneária de Praia Grande</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Praia Grande - SP abre processo seletivo para residência multiprofissional</p>
+      </header>
+      <ul class="cargos"><li>Oportunidade para profissionais de nível superior nas áreas de enfermagem, fisioterapia, odontologia e psicologia com bolsa mensal de R$ 4.106,09 e jornada de 60 horas semanais.</li><li>Fisioterapia (4 vagas)</li></ul>
+      <footer>
+        <span>📋 28 vagas até R$ 4.106,09</span>
+        <span>🎓 Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de floreal prefeitura de floreal - sp abre concurso público com salários de até r$ 10.500,00 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500" target="_blank" rel="noopener">Prefeitura de Floreal</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Floreal - SP abre concurso público com salários de até R$ 10.500,00</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
+      <footer>
+        <span>📋 12 vagas até R$ 10.500,00</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de guarulhos prefeitura de guarulhos - sp abre vagas para programas de residência multiprofissional em saúde fisioterapia (3 vagas)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude" target="_blank" rel="noopener">Prefeitura de Guarulhos</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Guarulhos - SP abre vagas para Programas de Residência Multiprofissional em Saúde</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapia (3 vagas)</li></ul>
+      <footer>
+        <span>📋 22 vagas até R$ 4.106,09</span>
+        <span>🎓 Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>29/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de holambra prefeitura de holambra - sp abre concurso com salários de até r$ 8.431,01 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431" target="_blank" rel="noopener">Prefeitura de Holambra</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Holambra - SP abre concurso com salários de até R$ 8.431,01</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
+      <footer>
+        <span>📋 18 vagas até R$ 8.431,01</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de jaborandi prefeitura de jaborandi - sp abre concurso público com salários de até r$ 5.325,60 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325" target="_blank" rel="noopener">Prefeitura de Jaborandi</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Jaborandi - SP abre concurso público com salários de até R$ 5.325,60</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
+      <footer>
+        <span>📋 31 vagas até R$ 5.325,60</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de paulo de faria prefeitura de paulo de faria - sp abre concurso público com salários de até r$ 8.632,29 fisioterapeuta (1 vaga + cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632" target="_blank" rel="noopener">Prefeitura de Paulo de Faria</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Paulo de Faria - SP abre concurso público com salários de até R$ 8.632,29</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapeuta (1 vaga + CR)</li></ul>
+      <footer>
+        <span>📋 34 vagas até R$ 8.632,29</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>22/10 a 05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de porto feliz prefeitura de porto feliz - sp publica editais de concursos para cadastro de reserva em diversas áreas fisioterapeuta/sus">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas" target="_blank" rel="noopener">Prefeitura de Porto Feliz</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Porto Feliz - SP publica editais de concursos para cadastro de reserva em diversas áreas</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapeuta/SUS</li></ul>
+      <footer>
+        <span>📋 Cadastro de reserva até R$ 5.882,37</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de taquaritinga prefeitura de taquaritinga - sp abre concurso público para diversos cargos fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos" target="_blank" rel="noopener">Prefeitura de Taquaritinga</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Taquaritinga - SP abre concurso público para diversos cargos</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
+      <footer>
+        <span>📋 2 vagas até R$ 6.055,67</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de taquarituba prefeitura de taquarituba - sp divulga retificação do concurso público com salários de até r$ 22.537,36 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537" target="_blank" rel="noopener">Prefeitura de Taquarituba</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Taquarituba - SP divulga retificação do concurso público com salários de até R$ 22.537,36</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
+      <footer>
+        <span>📋 22 vagas até R$ 22.537,36</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>23/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de tarumã prefeitura de tarumã - sp prorroga inscrições para processo seletivo com salários de até r$ 23.539,17 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539" target="_blank" rel="noopener">Prefeitura de Tarumã</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Tarumã - SP prorroga inscrições para processo seletivo com salários de até R$ 23.539,17</p>
+      </header>
+      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
+      <footer>
+        <span>📋 CR até R$ 23.539,17</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>Prorrogado até 22/10/2026</b></span>
+      </footer>
+    </article></div>
+  </section>
+    
+  <section id="medio" class="tab-panel">
+    <h2>Nível médio com salário acima de R$ 5.000 <small>(0)</small></h2>
+    <p class="desc">Cargos que exigem apenas ensino médio e cujo salário informado é maior que R$ 5.000,00 (extraído por IA — confirme no edital).</p>
+    <div class="grid"><p class="vazio">Nenhum concurso encontrado hoje.</p></div>
+  </section>
+    
+  <section id="possiveis" class="tab-panel">
+    <h2>Possíveis — nível médio, salário por cargo não informado <small>(35)</small></h2>
+    <p class="desc">Concursos com cargos de nível médio e teto salarial acima de R$ 5.000, mas a notícia não detalha o salário de cada cargo. Confira o edital.</p>
+    <div class="grid">
+    <article class="card" data-busca="câmara de boituva câmara de boituva - sp abre concursos com salários de até r$ 8.595,15 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/camara-de-boituva-sp-abre-concursos-com-salarios-de-ate-8595" target="_blank" rel="noopener">Câmara de Boituva</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Câmara de Boituva - SP abre concursos com salários de até R$ 8.595,15</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 7 vagas até R$ 8.595,15</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>09/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de matão prefeitura de matão - sp abre concurso público com salários de até r$ 17.433,24 fisioterapeuta (1 vaga)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433" target="_blank" rel="noopener">Prefeitura de Matão</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Matão - SP abre concurso público com salários de até R$ 17.433,24</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Superior</li></ul>
+      <footer>
+        <span>📋 44 vagas até R$ 17.433,24</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>29/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de matão prefeitura de matão - sp abre concurso público com salários de até r$ 9.717,96 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717" target="_blank" rel="noopener">Prefeitura de Matão</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Matão - SP abre concurso público com salários de até R$ 9.717,96</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 28 vagas até R$ 9.717,96</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>18/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de são carlos prefeitura de são carlos - sp abre concurso com salários de até r$ 9.833,00 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-carlos-sp-abre-concurso-com-salarios-de-ate-9833" target="_blank" rel="noopener">Prefeitura de São Carlos</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de São Carlos - SP abre concurso com salários de até R$ 9.833,00</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 45 vagas até R$ 9.833,00</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>29/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="setec - serviços técnicos gerais de campinas setec campinas - sp abre concurso público com salários de até r$ 10.428,05 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428" target="_blank" rel="noopener">SETEC - Serviços Técnicos Gerais de Campinas</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">SETEC Campinas - SP abre concurso público com salários de até R$ 10.428,05</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 39 vagas até R$ 10.428,05</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>04/12/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="tjsp - tribunal de justiça do estado de são paulo tjsp abre concursos para oficial de justiça e escrevente técnico judiciário ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario" target="_blank" rel="noopener">TJSP - Tribunal de Justiça do Estado de São Paulo</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">TJSP abre concursos para Oficial de Justiça e Escrevente Técnico Judiciário</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Médio / Superior</li></ul>
+      <footer>
+        <span>📋 132 vagas até R$ 9.856,95</span>
+        <span>🎓 Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>28/10 a 10/12/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="câmara da estância turística de paraguaçu paulista câmara de paraguaçu paulista - sp abre concurso público com salários de até r$ 11.065,27 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065" target="_blank" rel="noopener">Câmara da Estância Turística de Paraguaçu Paulista</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Câmara de Paraguaçu Paulista - SP abre concurso público com salários de até R$ 11.065,27</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Superior</li></ul>
+      <footer>
+        <span>📋 Cadastro de reserva até R$ 11.065,27</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>15/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="câmara de dois córregos câmara de dois córregos - sp abre concurso público com salários de até r$ 7.114,33 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114" target="_blank" rel="noopener">Câmara de Dois Córregos</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Câmara de Dois Córregos - SP abre concurso público com salários de até R$ 7.114,33</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Médio / Superior</li></ul>
+      <footer>
+        <span>📋 4 vagas e CR até R$ 7.114,33</span>
+        <span>🎓 Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>22/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="cemmil - consórcio intermunicipal cemmil para o desenvolvimento sustentável consórcio cemmil - sp abre processo seletivo com vagas em carapicuíba ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba" target="_blank" rel="noopener">Cemmil - Consórcio Intermunicipal Cemmil para o Desenvolvimento Sustentável</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Consórcio Cemmil - SP abre processo seletivo com vagas em Carapicuíba</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Superior</li></ul>
+      <footer>
+        <span>📋 28 vagas até R$ 6.889,64</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>12/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="famesp - fundação para o desenvolvimento médico e hospitalar famesp - sp abre processos seletivos em diferentes cidades ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/famesp-sp-abre-processos-seletivos-em-diferentes-cidades" target="_blank" rel="noopener">FAMESP - Fundação para o Desenvolvimento Médico e Hospitalar</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">FAMESP - SP abre processos seletivos em diferentes cidades</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 11 vagas até R$ 12.154,19</span>
+        <span>🎓 Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>25/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de aparecida prefeitura de aparecida - sp abre concurso público com vagas imediatas e cadastro de reserva ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-aparecida-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva" target="_blank" rel="noopener">Prefeitura de Aparecida</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Aparecida - SP abre concurso público com vagas imediatas e cadastro de reserva</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 21 vagas até R$ 6.946,91</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>26/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de buritizal prefeitura de buritizal - sp abre processo seletivo para a área da educação ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-buritizal-sp-abre-processo-seletivo-para-a-area-da-educacao" target="_blank" rel="noopener">Prefeitura de Buritizal</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Buritizal - SP abre processo seletivo para a área da educação</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Médio / Superior</li></ul>
+      <footer>
+        <span>📋 Cadastro de reserva até R$ 5.923,15</span>
+        <span>🎓 Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>25/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de cubatão prefeitura de cubatão - sp abre concursos públicos com salários de até r$ 5.565,00 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concursos-publicos-com-salarios-de-ate-5565" target="_blank" rel="noopener">Prefeitura de Cubatão</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Cubatão - SP abre concursos públicos com salários de até R$ 5.565,00</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 56 vagas até R$ 5.565,00</span>
+        <span>🎓 Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>15/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de embaúba prefeitura de embaúba - sp abre concurso público com salários de até r$ 5.600,00 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600" target="_blank" rel="noopener">Prefeitura de Embaúba</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Embaúba - SP abre concurso público com salários de até R$ 5.600,00</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 51 vagas até R$ 5.600,00</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de floreal prefeitura de floreal - sp abre concurso público com salários de até r$ 10.500,00 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500" target="_blank" rel="noopener">Prefeitura de Floreal</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Floreal - SP abre concurso público com salários de até R$ 10.500,00</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 12 vagas até R$ 10.500,00</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de guzolândia prefeitura de guzolândia - sp abre processo seletivo com salários de até r$ 5.352,38 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352" target="_blank" rel="noopener">Prefeitura de Guzolândia</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Guzolândia - SP abre processo seletivo com salários de até R$ 5.352,38</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Médio / Superior</li></ul>
+      <footer>
+        <span>📋 3 vagas até R$ 5.352,38</span>
+        <span>🎓 Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>23/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de holambra prefeitura de holambra - sp abre concurso com salários de até r$ 8.431,01 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431" target="_blank" rel="noopener">Prefeitura de Holambra</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Holambra - SP abre concurso com salários de até R$ 8.431,01</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 18 vagas até R$ 8.431,01</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de jaborandi prefeitura de jaborandi - sp abre concurso público com salários de até r$ 5.325,60 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325" target="_blank" rel="noopener">Prefeitura de Jaborandi</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Jaborandi - SP abre concurso público com salários de até R$ 5.325,60</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 31 vagas até R$ 5.325,60</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de lençóis paulista prefeitura de lençóis paulista - sp abre concurso público com salários de até r$ 5.044,35 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044" target="_blank" rel="noopener">Prefeitura de Lençóis Paulista</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Lençóis Paulista - SP abre concurso público com salários de até R$ 5.044,35</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Superior</li></ul>
+      <footer>
+        <span>📋 14 vagas até R$ 5.044,35</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>15/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de lorena prefeitura de lorena - sp abre concurso com salários de até r$ 8.890,46 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890" target="_blank" rel="noopener">Prefeitura de Lorena</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Lorena - SP abre concurso com salários de até R$ 8.890,46</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Médio / Superior</li></ul>
+      <footer>
+        <span>📋 3 vagas até R$ 8.890,46</span>
+        <span>🎓 Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>03/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de louveira prefeitura de louveira - sp abre concursos com vagas imediatas e cadastro de reserva ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva" target="_blank" rel="noopener">Prefeitura de Louveira</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Louveira - SP abre concursos com vagas imediatas e cadastro de reserva</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Superior</li></ul>
+      <footer>
+        <span>📋 19 vagas até R$ 8.738,00</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>16/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de macedônia prefeitura de macedônia - sp abre concurso público com salários de até r$ 8.189,58 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189" target="_blank" rel="noopener">Prefeitura de Macedônia</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Macedônia - SP abre concurso público com salários de até R$ 8.189,58</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 1 vaga até R$ 8.189,58</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>08/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de morro agudo prefeitura de morro agudo - sp abre concurso com salários de até r$ 5.815,68 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815" target="_blank" rel="noopener">Prefeitura de Morro Agudo</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Morro Agudo - SP abre concurso com salários de até R$ 5.815,68</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Superior</li></ul>
+      <footer>
+        <span>📋 7 vagas até R$ 5.815,68</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de murutinga do sul prefeitura de murutinga do sul - sp publica edital de concurso com 15 vagas imediatas ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas" target="_blank" rel="noopener">Prefeitura de Murutinga do Sul</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Murutinga do Sul - SP publica edital de concurso com 15 vagas imediatas</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Superior</li></ul>
+      <footer>
+        <span>📋 15 vagas até R$ 5.118,20</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>30/10 a 16/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de paulo de faria prefeitura de paulo de faria - sp abre concurso público com salários de até r$ 8.632,29 fisioterapeuta (1 vaga + cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632" target="_blank" rel="noopener">Prefeitura de Paulo de Faria</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Paulo de Faria - SP abre concurso público com salários de até R$ 8.632,29</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 34 vagas até R$ 8.632,29</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>22/10 a 05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de piedade prefeitura de piedade - sp publica edital de concurso público com salários de até r$ 17.397,46 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397" target="_blank" rel="noopener">Prefeitura de Piedade</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Piedade - SP publica edital de concurso público com salários de até R$ 17.397,46</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Superior</li></ul>
+      <footer>
+        <span>📋 20 vagas até R$ 17.397,46</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>09/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de porto feliz prefeitura de porto feliz - sp publica editais de concursos para cadastro de reserva em diversas áreas fisioterapeuta/sus">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas" target="_blank" rel="noopener">Prefeitura de Porto Feliz</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Porto Feliz - SP publica editais de concursos para cadastro de reserva em diversas áreas</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 Cadastro de reserva até R$ 5.882,37</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de taquaritinga prefeitura de taquaritinga - sp abre concurso público para diversos cargos fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos" target="_blank" rel="noopener">Prefeitura de Taquaritinga</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Taquaritinga - SP abre concurso público para diversos cargos</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 2 vagas até R$ 6.055,67</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de taquarituba prefeitura de taquarituba - sp divulga retificação do concurso público com salários de até r$ 22.537,36 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537" target="_blank" rel="noopener">Prefeitura de Taquarituba</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Taquarituba - SP divulga retificação do concurso público com salários de até R$ 22.537,36</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 22 vagas até R$ 22.537,36</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>23/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de tarumã prefeitura de tarumã - sp prorroga inscrições para processo seletivo com salários de até r$ 23.539,17 fisioterapeuta (cr)">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539" target="_blank" rel="noopener">Prefeitura de Tarumã</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Tarumã - SP prorroga inscrições para processo seletivo com salários de até R$ 23.539,17</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 CR até R$ 23.539,17</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>Prorrogado até 22/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de tuiuti prefeitura de tuiuti - sp abre concurso público com vagas imediatas e cadastro de reserva ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva" target="_blank" rel="noopener">Prefeitura de Tuiuti</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Tuiuti - SP abre concurso público com vagas imediatas e cadastro de reserva</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 11 vagas até R$ 5.209,01</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>21/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura de votorantim prefeitura de votorantim - sp abre concursos públicos com salários de até r$ 8.377,33 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377" target="_blank" rel="noopener">Prefeitura de Votorantim</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Votorantim - SP abre concursos públicos com salários de até R$ 8.377,33</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Superior</li></ul>
+      <footer>
+        <span>📋 37 vagas até R$ 8.377,33</span>
+        <span>🎓 Fundamental / Médio / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>16/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prefeitura do município de carapicuíba prefeitura de carapicuíba - sp abre novos concursos para cadastro de reserva em diversas áreas ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-carapicuiba-sp-abre-novos-concursos-para-cadastro-de-reserva-em-diversas-areas" target="_blank" rel="noopener">Prefeitura do Município de Carapicuíba</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">Prefeitura de Carapicuíba - SP abre novos concursos para cadastro de reserva em diversas áreas</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 Cadastro de Reserva até R$ 12.118,50</span>
+        <span>🎓 Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>30/10/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="prudenprev - sistema de previdência do município de presidente prudente prudenprev - sp abre concurso público com salários de até r$ 11.102,06 ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102" target="_blank" rel="noopener">PRUDENPREV - Sistema de Previdência do Município de Presidente Prudente</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">PRUDENPREV - SP abre concurso público com salários de até R$ 11.102,06</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Fundamental / Médio / Técnico / Superior</li></ul>
+      <footer>
+        <span>📋 10 vagas até R$ 11.102,06</span>
+        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
+        <span class="prazo">⏰ Inscrições até <b>10/11/2026</b></span>
+      </footer>
+    </article>
+    <article class="card" data-busca="unesp - universidade estadual paulista unesp de sorocaba - sp abre concurso para assistente de suporte acadêmico ii ">
+      <header>
+        <h3><a href="https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii" target="_blank" rel="noopener">UNESP - Universidade Estadual Paulista</a> <span class="badge novo">NOVO</span></h3>
+        <p class="titulo">UNESP de Sorocaba - SP abre concurso para Assistente de Suporte Acadêmico II</p>
+      </header>
+      <ul class="cargos"><li>Níveis: Ensino Médio</li></ul>
+      <footer>
+        <span>📋 1 vaga até R$ 6.537,74</span>
+        <span>🎓 Ensino Médio</span>
+        <span class="prazo">⏰ Inscrições até <b>30/10/2026</b></span>
+      </footer>
+    </article></div>
+  </section>
+  </main>
+<script>
+  const btns = document.querySelectorAll('nav button');
+  function abrir(tab) {
+    btns.forEach(b => b.classList.toggle('ativo', b.dataset.tab === tab));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('ativo', p.id === tab));
+    history.replaceState(null, '', '#' + tab);
+  }
+  btns.forEach(b => b.addEventListener('click', () => abrir(b.dataset.tab)));
+  abrir(['fisio','medio','possiveis'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'fisio');
+  document.getElementById('q').addEventListener('input', ev => {
+    const q = ev.target.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    document.querySelectorAll('.card').forEach(c => {
+      const t = c.dataset.busca.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      c.style.display = t.includes(q) ? '' : 'none';
+    });
+  });
+</script>
+</body>
+</html>

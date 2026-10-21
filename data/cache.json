@@ -1,0 +1,1148 @@
+{
+ "https://www.pciconcursos.com.br/noticias/camara-de-boituva-sp-abre-concursos-com-salarios-de-ate-8595": {
+  "first_seen": "2026-10-21",
+  "hash": "eb3b13b02ada",
+  "fisio_linhas": [],
+  "salario_max_texto": 8595.15,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433": {
+  "first_seen": "2026-10-21",
+  "hash": "03d242dedee5",
+  "fisio_linhas": [
+   "Fisioterapeuta (1 vaga)"
+  ],
+  "salario_max_texto": 17433.24,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717": {
+  "first_seen": "2026-10-21",
+  "hash": "63473cd09be9",
+  "fisio_linhas": [],
+  "salario_max_texto": 9717.96,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-piracicaba-sp-abre-selecao-para-professores-substitutos": {
+  "first_seen": "2026-10-21",
+  "hash": "553c95c57945",
+  "fisio_linhas": [],
+  "salario_max_texto": 4090.34,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-carlos-sp-abre-concurso-com-salarios-de-ate-9833": {
+  "first_seen": "2026-10-21",
+  "hash": "78f713486a68",
+  "fisio_linhas": [],
+  "salario_max_texto": 9833.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428": {
+  "first_seen": "2026-10-21",
+  "hash": "0dbb87d1fc3c",
+  "fisio_linhas": [],
+  "salario_max_texto": 10428.05,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario": {
+  "first_seen": "2026-10-21",
+  "hash": "c999da8091f2",
+  "fisio_linhas": [],
+  "salario_max_texto": 9856.95,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-ibiuna-sp-abre-concurso-publico-para-assistente-administrativo-e-controlador-interno": {
+  "first_seen": "2026-10-21",
+  "hash": "05336c6138ed",
+  "fisio_linhas": [],
+  "salario_max_texto": 5570.09,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065": {
+  "first_seen": "2026-10-21",
+  "hash": "43df5c3b829e",
+  "fisio_linhas": [],
+  "salario_max_texto": 11065.27,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-barao-de-antonina-sp-abre-concurso-publico-para-o-cargo-de-advogado": {
+  "first_seen": "2026-10-21",
+  "hash": "125f02e804f1",
+  "fisio_linhas": [],
+  "salario_max_texto": 6603.39,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-cesario-lange-sp-abre-concurso-publico-com-salarios-de-ate-3774": {
+  "first_seen": "2026-10-21",
+  "hash": "3301e74f6351",
+  "fisio_linhas": [],
+  "salario_max_texto": 3774.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-clementina-sp-abre-concurso-para-o-cargo-de-controlador-interno": {
+  "first_seen": "2026-10-21",
+  "hash": "c72370196bb7",
+  "fisio_linhas": [],
+  "salario_max_texto": 2500.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114": {
+  "first_seen": "2026-10-21",
+  "hash": "39bc9f6423c4",
+  "fisio_linhas": [],
+  "salario_max_texto": 7114.33,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-jarinu-sp-abre-concurso-publico-com-salarios-de-ate-10744": {
+  "first_seen": "2026-10-21",
+  "hash": "16916b79698a",
+  "fisio_linhas": [],
+  "salario_max_texto": 10744.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-torre-de-pedra-sp-abre-concurso-publico-para-procurador-legislativo": {
+  "first_seen": "2026-10-21",
+  "hash": "607d263e5e78",
+  "fisio_linhas": [],
+  "salario_max_texto": 5015.07,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba": {
+  "first_seen": "2026-10-21",
+  "hash": "b90c1f0e9a1e",
+  "fisio_linhas": [],
+  "salario_max_texto": 6889.64,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-vagas-para-nivel-fundamental-em-pirassununga": {
+  "first_seen": "2026-10-21",
+  "hash": "39d337063b9b",
+  "fisio_linhas": [],
+  "salario_max_texto": 2298.12,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/comderp-sp-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva": {
+  "first_seen": "2026-10-21",
+  "hash": "5a493e852c99",
+  "fisio_linhas": [],
+  "salario_max_texto": 2405.2,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/defensoria-publica-de-sp-abre-concurso-para-defensor-publico": {
+  "first_seen": "2026-10-21",
+  "hash": "bdc6b072fd53",
+  "fisio_linhas": [],
+  "salario_max_texto": 250.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/detran-sp-prorroga-inscricoes-do-concurso-com-145-vagas-para-agentes-estaduais-de-transito": {
+  "first_seen": "2026-10-21",
+  "hash": "0c0b07dcacc5",
+  "fisio_linhas": [],
+  "salario_max_texto": 5702.18,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/famesp-sp-abre-processos-seletivos-em-diferentes-cidades": {
+  "first_seen": "2026-10-21",
+  "hash": "9c3cc68d6d67",
+  "fisio_linhas": [],
+  "salario_max_texto": 12154.19,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/fundacao-jose-pedro-de-oliveira-sp-abre-concurso-publico-com-salarios-de-ate-8991": {
+  "first_seen": "2026-10-21",
+  "hash": "e9b80aa7973c",
+  "fisio_linhas": [],
+  "salario_max_texto": 8991.96,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-assistente-contabil-exclusivo-para-pcd": {
+  "first_seen": "2026-10-21",
+  "hash": "c44576d464d0",
+  "fisio_linhas": [],
+  "salario_max_texto": 3254.51,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-o-cargo-de-ajudante-de-cozinha": {
+  "first_seen": "2026-10-21",
+  "hash": "7e052b309553",
+  "fisio_linhas": [],
+  "salario_max_texto": 1999.99,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-selecoes-para-auxiliar-de-cozinha-auxiliar-de-lavanderia-e-recepcionista": {
+  "first_seen": "2026-10-21",
+  "hash": "0b0cc4479cba",
+  "fisio_linhas": [],
+  "salario_max_texto": 2197.08,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-garcom": {
+  "first_seen": "2026-10-21",
+  "hash": "400e8b588e5c",
+  "fisio_linhas": [],
+  "salario_max_texto": 2100.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-vaga-para-tecnico-de-administracao-hospitalar-pcd": {
+  "first_seen": "2026-10-21",
+  "hash": "e32f877242f2",
+  "fisio_linhas": [],
+  "salario_max_texto": 3254.51,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-telefonista-pcd-no-ame-santa-barbara-doeste": {
+  "first_seen": "2026-10-21",
+  "hash": "004f7892e0bc",
+  "fisio_linhas": [],
+  "salario_max_texto": 2260.93,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-selecoes-para-o-hospital-de-clinicas-e-hospital-estadual-sumare": {
+  "first_seen": "2026-10-21",
+  "hash": "231ab6ab1516",
+  "fisio_linhas": [],
+  "salario_max_texto": 4830.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-analista-de-pesquisa-clinica-junior-no-hemocentro": {
+  "first_seen": "2026-10-21",
+  "hash": "1fb63fff6e28",
+  "fisio_linhas": [],
+  "salario_max_texto": 4526.93,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-para-medicos-em-duas-especialidades-cirurgicas": {
+  "first_seen": "2026-10-21",
+  "hash": "97d9dda27dc8",
+  "fisio_linhas": [],
+  "salario_max_texto": 5979.93,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-com-vagas-para-medicos-em-diversas-especialidades": {
+  "first_seen": "2026-10-21",
+  "hash": "2b5a9eaa3ff7",
+  "fisio_linhas": [],
+  "salario_max_texto": 5979.93,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/iamspe-sp-abre-selecao-para-residencia-medica-em-diversas-especialidades": {
+  "first_seen": "2026-10-21",
+  "hash": "c13a4777e1d4",
+  "fisio_linhas": [],
+  "salario_max_texto": 550.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/ifsp-retifica-edital-de-concurso-publico-para-o-cargo-de-professor-do-ensino-basico-tecnico-e-tecnologico": {
+  "first_seen": "2026-10-21",
+  "hash": "1a8ad6d9be48",
+  "fisio_linhas": [],
+  "salario_max_texto": 7356.77,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/ifsp-abre-processo-seletivo-com-vagas-para-professores-substitutos": {
+  "first_seen": "2026-10-21",
+  "hash": "1bee8647524d",
+  "fisio_linhas": [],
+  "salario_max_texto": 8340.33,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/ipa-sp-abre-concurso-publico-para-pesquisadores-cientificos": {
+  "first_seen": "2026-10-21",
+  "hash": "d801b146bf96",
+  "fisio_linhas": [],
+  "salario_max_texto": 9052.47,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/ipsm-de-sao-jose-dos-campos-sp-abre-concurso-para-diversos-cargos-de-nivel-superior": {
+  "first_seen": "2026-10-21",
+  "hash": "c3824284fecb",
+  "fisio_linhas": [],
+  "salario_max_texto": 5185.46,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "a97e2d196234",
+  "fisio_linhas": [
+   "Oportunidades contemplam diversas áreas como Engenharia, Medicina, Administração, Fisioterapia e Informática. A seleção inclui prova objetiva, teste físico, avaliação de títulos e inspeção de saúde.",
+   "Fisioterapia, São Paulo - SP (1 vaga)"
+  ],
+  "salario_max_texto": 150.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional": {
+  "first_seen": "2026-10-21",
+  "hash": "ff1cc49ddec1",
+  "fisio_linhas": [
+   "Oportunidade para profissionais de nível superior nas áreas de enfermagem, fisioterapia, odontologia e psicologia com bolsa mensal de R$ 4.106,09 e jornada de 60 horas semanais.",
+   "Fisioterapia (4 vagas)"
+  ],
+  "salario_max_texto": 4106.09,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-piraju-sp-abre-processo-seletivo-para-a-area-da-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "ffbc51b259e2",
+  "fisio_linhas": [],
+  "salario_max_texto": 4193.9,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-sp-abre-processo-seletivo-para-profissionais-da-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "412cc4d97b65",
+  "fisio_linhas": [],
+  "salario_max_texto": 2805.09,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-sp-abre-selecao-para-o-cargo-de-medico-do-trabalho": {
+  "first_seen": "2026-10-21",
+  "hash": "e6ddd2991b82",
+  "fisio_linhas": [],
+  "salario_max_texto": 5901.75,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-sp-abre-concurso-publico-para-guarda-civil-municipal": {
+  "first_seen": "2026-10-21",
+  "hash": "e3653cdb2488",
+  "fisio_linhas": [],
+  "salario_max_texto": 2220.94,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-amparo-sp-abre-processo-seletivo-para-professores": {
+  "first_seen": "2026-10-21",
+  "hash": "dd45ca850c2d",
+  "fisio_linhas": [],
+  "salario_max_texto": 4389.71,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-aparecida-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
+  "first_seen": "2026-10-21",
+  "hash": "7277bb59acd2",
+  "fisio_linhas": [],
+  "salario_max_texto": 6946.91,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-aracoiaba-da-serra-sp-abre-selecao-para-cadastro-de-reserva-na-area-da-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "357f39579989",
+  "fisio_linhas": [],
+  "salario_max_texto": 3940.7,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-prorroga-inscricoes-de-concurso-publico-para-professores-auxiliares": {
+  "first_seen": "2026-10-21",
+  "hash": "e7010e310e05",
+  "fisio_linhas": [],
+  "salario_max_texto": 1250.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-buritizal-sp-abre-processo-seletivo-para-a-area-da-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "44daa82c1065",
+  "fisio_linhas": [],
+  "salario_max_texto": 5923.15,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-cabreuva-sp-abre-concurso-publico-para-guarda-municipal": {
+  "first_seen": "2026-10-21",
+  "hash": "c34269ab07b1",
+  "fisio_linhas": [],
+  "salario_max_texto": 3846.34,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-cerquilho-sp-abre-selecao-com-vagas-imediatas-e-cadastro-de-reserva": {
+  "first_seen": "2026-10-21",
+  "hash": "750c2bc4cfec",
+  "fisio_linhas": [],
+  "salario_max_texto": 2613.11,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-conchal-sp-abre-processo-seletivo-para-agentes-de-saude-e-de-endemias": {
+  "first_seen": "2026-10-21",
+  "hash": "8518c5d2253a",
+  "fisio_linhas": [],
+  "salario_max_texto": 2277.89,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-cosmopolis-sp-abre-selecao-para-professores-na-area-de-educacao-especial": {
+  "first_seen": "2026-10-21",
+  "hash": "ee091a72508c",
+  "fisio_linhas": [],
+  "salario_max_texto": 900.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-cosmorama-sp-abre-concurso-com-salarios-de-ate-4980": {
+  "first_seen": "2026-10-21",
+  "hash": "99cdd438a934",
+  "fisio_linhas": [],
+  "salario_max_texto": 4980.82,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concursos-publicos-com-salarios-de-ate-5565": {
+  "first_seen": "2026-10-21",
+  "hash": "aec3634a7c9e",
+  "fisio_linhas": [],
+  "salario_max_texto": 5565.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600": {
+  "first_seen": "2026-10-21",
+  "hash": "ec6c8ee631f2",
+  "fisio_linhas": [],
+  "salario_max_texto": 5600.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500": {
+  "first_seen": "2026-10-21",
+  "hash": "7f9aef932f21",
+  "fisio_linhas": [
+   "Fisioterapeuta (CR)"
+  ],
+  "salario_max_texto": 10500.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-general-salgado-sp-abre-concurso-para-cargos-na-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "aa46d1a5e2a4",
+  "fisio_linhas": [],
+  "salario_max_texto": 6319.48,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude": {
+  "first_seen": "2026-10-21",
+  "hash": "07eb6882270f",
+  "fisio_linhas": [
+   "Fisioterapia (3 vagas)"
+  ],
+  "salario_max_texto": 4106.09,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-guatapara-sp-abre-selecao-para-cadastro-de-reserva-em-diversas-areas": {
+  "first_seen": "2026-10-21",
+  "hash": "ce76b5231842",
+  "fisio_linhas": [],
+  "salario_max_texto": 3242.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352": {
+  "first_seen": "2026-10-21",
+  "hash": "e55763363516",
+  "fisio_linhas": [],
+  "salario_max_texto": 5352.38,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431": {
+  "first_seen": "2026-10-21",
+  "hash": "891782dafc80",
+  "fisio_linhas": [
+   "Fisioterapeuta (CR)"
+  ],
+  "salario_max_texto": 8431.01,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-icem-sp-abre-novo-concurso-publico-para-diversos-cargos": {
+  "first_seen": "2026-10-21",
+  "hash": "b1fc99f8a2f2",
+  "fisio_linhas": [],
+  "salario_max_texto": 3611.12,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapecerica-da-serra-sp-abre-concurso-para-motorista-de-caminhao": {
+  "first_seen": "2026-10-21",
+  "hash": "1577ebee319d",
+  "fisio_linhas": [],
+  "salario_max_texto": 2755.86,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapeva-sp-abre-processo-seletivo-para-professores": {
+  "first_seen": "2026-10-21",
+  "hash": "411bbc2681a4",
+  "fisio_linhas": [],
+  "salario_max_texto": 500.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-selecao-para-professores": {
+  "first_seen": "2026-10-21",
+  "hash": "a10c207940c2",
+  "fisio_linhas": [],
+  "salario_max_texto": 5356.52,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-processo-seletivo-para-profissionais-de-apoio-na-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "f0cdb9202c8c",
+  "fisio_linhas": [],
+  "salario_max_texto": 2786.98,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatinga-sp-abre-processo-seletivo-para-a-area-da-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "56dd82ba7ecf",
+  "fisio_linhas": [],
+  "salario_max_texto": 2558.75,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325": {
+  "first_seen": "2026-10-21",
+  "hash": "84b2670e3455",
+  "fisio_linhas": [
+   "Fisioterapeuta (CR)"
+  ],
+  "salario_max_texto": 5325.6,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-lagoinha-sp-abre-vagas-para-assistente-social-e-psicologo": {
+  "first_seen": "2026-10-21",
+  "hash": "c524839cd51c",
+  "fisio_linhas": [],
+  "salario_max_texto": 4362.76,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-para-cargos-de-nivel-superior-na-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "3b31d3136323",
+  "fisio_linhas": [],
+  "salario_max_texto": 8644.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044": {
+  "first_seen": "2026-10-21",
+  "hash": "371f33fcfc32",
+  "fisio_linhas": [],
+  "salario_max_texto": 5044.35,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-processo-seletivo-para-professores": {
+  "first_seen": "2026-10-21",
+  "hash": "1c39ccb0085b",
+  "fisio_linhas": [],
+  "salario_max_texto": 45.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890": {
+  "first_seen": "2026-10-21",
+  "hash": "238fccc3dddf",
+  "fisio_linhas": [],
+  "salario_max_texto": 8890.46,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva": {
+  "first_seen": "2026-10-21",
+  "hash": "12a1b19108b8",
+  "fisio_linhas": [],
+  "salario_max_texto": 8738.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-lucelia-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos": {
+  "first_seen": "2026-10-21",
+  "hash": "9de1810fff28",
+  "fisio_linhas": [],
+  "salario_max_texto": 4048.35,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189": {
+  "first_seen": "2026-10-21",
+  "hash": "2f0248b7223e",
+  "fisio_linhas": [],
+  "salario_max_texto": 8189.58,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-maraba-paulista-sp-abre-concurso-publico-para-psicologo": {
+  "first_seen": "2026-10-21",
+  "hash": "845e811528f6",
+  "fisio_linhas": [],
+  "salario_max_texto": 3857.19,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-processo-seletivo-para-professores-temporarios": {
+  "first_seen": "2026-10-21",
+  "hash": "408beaf2f29d",
+  "fisio_linhas": [],
+  "salario_max_texto": 97.0,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-maua-sp-abre-processo-seletivo-para-medicos-de-diversas-especialidades": {
+  "first_seen": "2026-10-21",
+  "hash": "f6d3e8f09a72",
+  "fisio_linhas": [],
+  "salario_max_texto": 130.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-mirassol-sp-abre-processo-seletivo-para-agente-de-suporte-ao-atendimento-da-crianca": {
+  "first_seen": "2026-10-21",
+  "hash": "55aa582364b4",
+  "fisio_linhas": [],
+  "salario_max_texto": 2073.62,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-mongagua-sp-abre-processo-seletivo-para-profissional-de-apoio-escolar-e-atendente-de-educacao-i": {
+  "first_seen": "2026-10-21",
+  "hash": "9eb0f57d7f6d",
+  "fisio_linhas": [],
+  "salario_max_texto": 1968.83,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815": {
+  "first_seen": "2026-10-21",
+  "hash": "4dcf36791564",
+  "fisio_linhas": [],
+  "salario_max_texto": 5815.68,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas": {
+  "first_seen": "2026-10-21",
+  "hash": "2f73d2c6be65",
+  "fisio_linhas": [],
+  "salario_max_texto": 5118.2,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-campina-sp-abre-concurso-para-auxiliar-de-enfermagem-e-tecnico-em-enfermagem": {
+  "first_seen": "2026-10-21",
+  "hash": "aae0d9dc82c3",
+  "fisio_linhas": [],
+  "salario_max_texto": 2154.21,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-orlandia-sp-abre-processo-seletivo-para-a-area-da-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "8668de0ce6e9",
+  "fisio_linhas": [],
+  "salario_max_texto": 4221.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632": {
+  "first_seen": "2026-10-21",
+  "hash": "433931beb422",
+  "fisio_linhas": [
+   "Fisioterapeuta (1 vaga + CR)"
+  ],
+  "salario_max_texto": 8632.29,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397": {
+  "first_seen": "2026-10-21",
+  "hash": "b432e0c54115",
+  "fisio_linhas": [],
+  "salario_max_texto": 17397.46,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-processo-seletivo-para-a-area-da-educacao": {
+  "first_seen": "2026-10-21",
+  "hash": "2b10c7e2dde3",
+  "fisio_linhas": [],
+  "salario_max_texto": 6640.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas": {
+  "first_seen": "2026-10-21",
+  "hash": "dd8a0bd13a31",
+  "fisio_linhas": [
+   "Fisioterapeuta/SUS"
+  ],
+  "salario_max_texto": 5882.37,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-das-pedras-sp-abre-selecao-para-cadastro-reserva-de-professores": {
+  "first_seen": "2026-10-21",
+  "hash": "016103f56399",
+  "fisio_linhas": [],
+  "salario_max_texto": 5130.63,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-sebastiao-sp-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva-de-professores": {
+  "first_seen": "2026-10-21",
+  "hash": "1d190338eb46",
+  "fisio_linhas": [],
+  "salario_max_texto": 6106.94,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sarapui-sp-abre-concurso-publico-para-o-cargo-de-procurador-juridico": {
+  "first_seen": "2026-10-21",
+  "hash": "b8a5dbf6e31b",
+  "fisio_linhas": [],
+  "salario_max_texto": 5663.04,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos": {
+  "first_seen": "2026-10-21",
+  "hash": "982172669ea7",
+  "fisio_linhas": [
+   "Fisioterapeuta (CR)"
+  ],
+  "salario_max_texto": 6055.67,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537": {
+  "first_seen": "2026-10-21",
+  "hash": "5c29d02641e9",
+  "fisio_linhas": [
+   "Fisioterapeuta (CR)"
+  ],
+  "salario_max_texto": 22537.36,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539": {
+  "first_seen": "2026-10-21",
+  "hash": "887cc375491e",
+  "fisio_linhas": [
+   "Fisioterapeuta (CR)"
+  ],
+  "salario_max_texto": 23539.17,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-tatui-sp-abre-concurso-publico-para-cargos-de-nivel-fundamental-e-medio": {
+  "first_seen": "2026-10-21",
+  "hash": "4b554e720e9b",
+  "fisio_linhas": [],
+  "salario_max_texto": 2193.73,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
+  "first_seen": "2026-10-21",
+  "hash": "be0295d43a46",
+  "fisio_linhas": [],
+  "salario_max_texto": 5209.01,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377": {
+  "first_seen": "2026-10-21",
+  "hash": "826b6a8efe19",
+  "fisio_linhas": [],
+  "salario_max_texto": 8377.33,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-carapicuiba-sp-abre-novos-concursos-para-cadastro-de-reserva-em-diversas-areas": {
+  "first_seen": "2026-10-21",
+  "hash": "6b9de5eb9f1e",
+  "fisio_linhas": [],
+  "salario_max_texto": 12118.5,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-cordeiropolis-sp-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva": {
+  "first_seen": "2026-10-21",
+  "hash": "06872c321a3b",
+  "fisio_linhas": [],
+  "salario_max_texto": 4972.9,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-maua-sp-abre-concurso-com-100-vagas-para-guardas-civis-municipais": {
+  "first_seen": "2026-10-21",
+  "hash": "dd3b89a30f2f",
+  "fisio_linhas": [],
+  "salario_max_texto": 3823.39,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/prudenco-sp-abre-concurso-publico-para-coletor-e-motorista": {
+  "first_seen": "2026-10-21",
+  "hash": "5b900914b34d",
+  "fisio_linhas": [],
+  "salario_max_texto": 2636.72,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102": {
+  "first_seen": "2026-10-21",
+  "hash": "a86cb85fe43d",
+  "fisio_linhas": [],
+  "salario_max_texto": 11102.06,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas": {
+  "first_seen": "2026-10-21",
+  "hash": "aa5c3277fc76",
+  "fisio_linhas": [],
+  "salario_max_texto": 11359.5,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-para-o-cargo-de-procurador": {
+  "first_seen": "2026-10-21",
+  "hash": "4f74790a1b0f",
+  "fisio_linhas": [],
+  "salario_max_texto": 11427.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-pesquisador-iv-na-area-de-producao-sustentavel-em-aquicultura": {
+  "first_seen": "2026-10-21",
+  "hash": "53d73f710117",
+  "fisio_linhas": [],
+  "salario_max_texto": 15294.61,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii": {
+  "first_seen": "2026-10-21",
+  "hash": "2d020ff1f99b",
+  "fisio_linhas": [],
+  "salario_max_texto": 6537.74,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-odontologia-de-araraquara-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "5358f457caee",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-prorroga-inscricoes-de-concurso-para-professor-assistente-na-area-de-sistemas-de-computacao": {
+  "first_seen": "2026-10-21",
+  "hash": "d5866d7aa845",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.01,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-araraquara-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "bab11cb9a50c",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-na-area-de-educacao-em-presidente-prudente-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "920254502c3d",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.01,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-sp-abre-concurso-para-professor-substituto-de-fisica-geral-em-araraquara": {
+  "first_seen": "2026-10-21",
+  "hash": "197872555abd",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-na-faculdade-de-ciencias-e-letras-de-assis-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "5d08167e2f27",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-vagas-para-professores-substitutos-de-fisica-geral-em-sao-jose-do-rio-preto-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "0585e9d1b2cf",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-engenharia-quimica-em-botucatu-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "e304181abd38",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-na-area-de-enfermagem-em-botucatu-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "85eeebabdeab",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-de-bauru-sp-abre-concurso-publico-para-professor-titular-na-faculdade-de-ciencias": {
+  "first_seen": "2026-10-21",
+  "hash": "bac072f847fb",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-titular-na-faculdade-de-filosofia-e-ciencias-de-marilia-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "7cc8d0f54e90",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-de-engenharia-sanitaria-em-rio-claro-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "ea497dbe236a",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.01,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-zoologia-em-jaboticabal-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "fe647e6bc69b",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-botucatu-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "74c11a53af30",
+  "fisio_linhas": [],
+  "salario_max_texto": 286.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-de-franca-sp-abre-concurso-publico-para-professor-substituto-na-area-de-historia-da-america": {
+  "first_seen": "2026-10-21",
+  "hash": "ef0d0de7d358",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-na-area-de-educacao-em-rio-claro-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "b33935c830a6",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-em-sao-jose-do-rio-preto-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "52948d0eb66e",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-de-geografia-em-bauru-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "bb6b4adeefbd",
+  "fisio_linhas": [],
+  "salario_max_texto": 2000.02,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professores-substitutos-em-sao-jose-dos-campos-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "0603827f84bf",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-jaboticabal-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "a3494ae7cdaa",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-ciencias-exatas-e-da-terra-em-assis-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "f6fe4040c194",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-medicina-veterinaria-em-aracatuba-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "0324b7bb7914",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-publicos-para-professores-substitutos-em-araraquara-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "b185af335a1c",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-letras-em-sao-jose-do-rio-preto-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "f49779b355b9",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-com-vaga-para-professor-substituto-em-sao-jose-do-rio-preto-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "e2cfe8f97777",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-engenharia-civil-no-campus-de-ilha-solteira": {
+  "first_seen": "2026-10-21",
+  "hash": "62fa3d819283",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-medicina-veterinaria-em-jaboticabal-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "db9bed59f52a",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-medicina-veterinaria-em-botucatu-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "584306dfe55e",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-medicina-veterinaria-em-aracatuba-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "59b066f57a26",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-docente-de-nivel-medio-em-bauru-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "b99a9316665d",
+  "fisio_linhas": [],
+  "salario_max_texto": 2000.02,
+  "tem_medio": true
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-de-ciencias-agrarias-em-dracena-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "a0684b2a73b4",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.01,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-na-area-de-ciencias-politicas-em-marilia-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "070e164a982a",
+  "fisio_linhas": [],
+  "salario_max_texto": 16920.47,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-o-cargo-de-professor-titular-na-faculdade-de-medicina-de-botucatu-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "0339c71a1560",
+  "fisio_linhas": [],
+  "salario_max_texto": 286.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-ciencias-e-tecnologia-de-presidente-prudente-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "94831414aee7",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-ciencias-agrarias-em-jaboticabal-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "a0d9643b2bf5",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unicamp-sp-abre-concurso-publico-para-professor-doutor-na-area-de-ortodontia": {
+  "first_seen": "2026-10-21",
+  "hash": "430a989abaa7",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.31,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unicamp-sp-prorroga-inscricoes-de-concurso-publico-para-professor-doutor-na-faculdade-de-engenharia-mecanica": {
+  "first_seen": "2026-10-21",
+  "hash": "59fca6dced3d",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.31,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unicamp-sp-abre-concurso-para-professor-doutor-na-area-de-fisica-geral": {
+  "first_seen": "2026-10-21",
+  "hash": "6f75a797937f",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.31,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unifesp-abre-processo-seletivo-para-professor-substituto-na-area-de-fisiologia-engenharia-biomedica": {
+  "first_seen": "2026-10-21",
+  "hash": "3ce8f09e2147",
+  "fisio_linhas": [],
+  "salario_max_texto": 5037.78,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/unifesp-abre-selecao-para-professor-substituto-de-quimica-analitica-em-diadema-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "5dd2eb3eb62f",
+  "fisio_linhas": [],
+  "salario_max_texto": 8340.33,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/fauscs-sp-abre-selecao-para-residencia-medica-em-diversas-areas": {
+  "first_seen": "2026-10-21",
+  "hash": "5e74fa99f344",
+  "fisio_linhas": [],
+  "salario_max_texto": 490.0,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concursos-publicos-para-professores-titulares-em-diversas-areas-de-atuacao": {
+  "first_seen": "2026-10-21",
+  "hash": "d81299b386db",
+  "fisio_linhas": [],
+  "salario_max_texto": 24309.11,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-o-cargo-de-professor-titular-no-instituto-de-relacoes-internacionais": {
+  "first_seen": "2026-10-21",
+  "hash": "3dfecd4cbeb8",
+  "fisio_linhas": [],
+  "salario_max_texto": 24309.11,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-sp-abre-concurso-publico-para-o-cargo-de-professor-titular-na-area-de-sistemas-de-computacao": {
+  "first_seen": "2026-10-21",
+  "hash": "11f21af2009c",
+  "fisio_linhas": [],
+  "salario_max_texto": 24309.11,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-professor-titular-nas-areas-de-lepidoptera-e-diptera": {
+  "first_seen": "2026-10-21",
+  "hash": "fdbd913baa9a",
+  "fisio_linhas": [],
+  "salario_max_texto": 24309.11,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concursos-para-professores-titulares-nas-areas-de-psicologia-clinica-e-experimental": {
+  "first_seen": "2026-10-21",
+  "hash": "8233fb2fe5dc",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-o-cargo-de-professor-titular-na-fau": {
+  "first_seen": "2026-10-21",
+  "hash": "28cd72aa99ca",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-professor-doutor-na-faculdade-de-medicina": {
+  "first_seen": "2026-10-21",
+  "hash": "79ea8e7d6bb4",
+  "fisio_linhas": [],
+  "salario_max_texto": 7477.48,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-vaga-para-professor-titular-no-instituto-de-quimica-de-sao-carlos": {
+  "first_seen": "2026-10-21",
+  "hash": "f2ba2dd2b514",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-o-cargo-de-professor-doutor-no-instituto-de-arquitetura-e-urbanismo": {
+  "first_seen": "2026-10-21",
+  "hash": "adca0eb67467",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.01,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-para-professor-doutor-na-faculdade-de-ciencias-farmaceuticas": {
+  "first_seen": "2026-10-21",
+  "hash": "f044f9f01b8f",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.01,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concursos-para-professores-na-faculdade-de-economia-administracao-e-contabilidade-de-ribeirao-preto-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "1b087cc0aa5a",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-professor-doutor-na-escola-de-engenharia-de-sao-carlos-sp": {
+  "first_seen": "2026-10-21",
+  "hash": "cd5c898f8e84",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.01,
+  "tem_medio": false
+ }
+}
