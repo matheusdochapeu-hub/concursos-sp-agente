@@ -29,7 +29,24 @@ UF_COORDS = {
 
 
 def e(s: Any) -> str:
-    return html.escape(str(s if s is not None else ""))
+    return html.escape(str(s if s is not None else ""), quote=True)
+
+
+def safe_url(u: Any) -> str:
+    s = str(u or "").strip()
+    if s.startswith(("https://", "http://")):
+        return html.escape(s, quote=True)
+    return "#"
+
+
+def safe_json_for_script(obj: Any) -> str:
+    return (
+        json.dumps(obj, ensure_ascii=False)
+        .replace("</", "<\\/")
+        .replace("<!--", "<\\!--")
+        .replace("\u2028", "\\u2028")
+        .replace("\u2029", "\\u2029")
+    )
 
 
 def brl(v: Optional[float]) -> str:
@@ -231,16 +248,16 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
     card_uid = f"sp-{modo}-{card_idx}"
 
     botoes = (
-        f'<a class="btn-link primario" href="{e(c.get("link_edital"))}" target="_blank" rel="noopener" '
+        f'<a class="btn-link primario" href="{safe_url(c.get("link_edital"))}" target="_blank" rel="noopener noreferrer" '
         f'title="{e(arqs_str)}">📄 Edital &amp; Anexos</a>'
     )
-    if c.get("site_banca"):
+    if c.get("site_banca") and safe_url(c["site_banca"]) != "#":
         botoes += (
-            f'<a class="btn-link" href="{e(c["site_banca"])}" target="_blank" rel="noopener">'
+            f'<a class="btn-link" href="{safe_url(c["site_banca"])}" target="_blank" rel="noopener noreferrer">'
             f'🌐 Banca ({e(banca_nome)})</a>'
         )
     botoes += (
-        f'<a class="btn-link btn-provas" href="{e(links_provas["url_combo"])}" target="_blank" rel="noopener" '
+        f'<a class="btn-link btn-provas" href="{safe_url(links_provas["url_combo"])}" target="_blank" rel="noopener noreferrer" '
         f'title="Provas anteriores por Cargo e Banca ({e(links_provas["label_combo"])})">'
         f'📝 Provas ({e(links_provas["label_combo"])})</a>'
         f'<button type="button" class="btn-link btn-share-card" data-share-uid="{card_uid}">📤 Compartilhar</button>'
@@ -262,8 +279,8 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
       data-uid="{card_uid}"
       data-orgao="{e(c['orgao'])}"
       data-titulo="{e(c['titulo'])}"
-      data-url="{e(c['url'])}"
-      data-link-edital="{e(c.get('link_edital'))}"
+      data-url="{safe_url(c['url'])}"
+      data-link-edital="{safe_url(c.get('link_edital'))}"
       data-cargo="{e(cargo_titulo)}"
       data-vagas-txt="{e(vagas_txt)}"
       data-cidade="{e(cidade)}"
@@ -301,7 +318,7 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
       data-is-baseline="{1 if c.get('is_baseline') else 0}">
       <header class="card-head">
         <div class="head-top">
-          <h3><a href="{e(c['url'])}" target="_blank" rel="noopener">{e(c['orgao'])}</a></h3>
+          <h3><a href="{safe_url(c['url'])}" target="_blank" rel="noopener noreferrer">{e(c['orgao'])}</a></h3>
           <div class="badges-col">{badges_topo}</div>
         </div>
         <div class="loc-row">
@@ -364,7 +381,7 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
           <p class="prog-arq">📑 <b>Documentos e Anexos:</b> {e(arqs_str)}</p>
           <p class="prog-arq">📈 <b>Plano de Carreira:</b> {e(carreira_txt)}</p>
           <ul>{lista_topicos}</ul>
-          <a class="prog-cta" href="{e(c.get('link_edital'))}" target="_blank" rel="noopener">
+          <a class="prog-cta" href="{safe_url(c.get('link_edital'))}" target="_blank" rel="noopener noreferrer">
             👉 Abrir Edital Completo e Anexo de Salários / Conteúdo Programático
           </a>
         </div>
@@ -539,25 +556,29 @@ def render_html(
     )
 
     qr_svg = gerar_qr_pix_svg(pix_key)
-    catalogo_json = json.dumps(catalogo_brasil, ensure_ascii=False)
-    provas_json = json.dumps(catalogo_provas_banca_cargo, ensure_ascii=False)
+    catalogo_json = safe_json_for_script(catalogo_brasil)
+    provas_json = safe_json_for_script(catalogo_provas_banca_cargo)
 
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.counterapi.dev https://accounts.google.com https://www.googleapis.com https://oauth2.googleapis.com; frame-src https://accounts.google.com;">
 <meta name="theme-color" content="#006b2d">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Concursos">
-<meta name="description" content="Concursos — Painel diário de editais para Fisioterapia, Nível Médio/Técnico, Comparador de Concursos, Provas Anteriores por Banca e Cargo, e Busca no Brasil.">
+<meta name="description" content="Concursos — Painel diário de editais no Brasil e SP, Fisioterapia, Nível Médio/Técnico, Comparador de Concursos e Provas Anteriores por Banca e Cargo.">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 <title>Concursos</title>
 <style>
   :root {{
@@ -1582,9 +1603,220 @@ def render_html(
     gap: 8px;
   }}
   .btn-copy-pix:hover {{ background: #1f5829; }}
+
+  /* Bloqueio de Login Obrigatório com Conta Google */
+  body.bloqueado-login {{
+    overflow: hidden;
+  }}
+  body.bloqueado-login > header,
+  body.bloqueado-login > .container,
+  body.bloqueado-login > footer {{
+    filter: blur(8px);
+    pointer-events: none;
+    user-select: none;
+  }}
+  .login-gate-bg {{
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 27, 82, 0.88) 0%, rgba(0, 92, 36, 0.9) 100%);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    z-index: 2500;
+  }}
+  .login-gate-bg.oculto {{ display: none; }}
+  .login-card {{
+    background: #ffffff;
+    border-radius: 22px;
+    border-top: 6px solid var(--br-yellow);
+    max-width: 460px;
+    width: 100%;
+    padding: 28px 28px 26px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
+    text-align: center;
+    color: var(--txt);
+  }}
+  .login-badge {{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--br-green-soft);
+    color: var(--br-green-dark);
+    border: 1px solid var(--br-green-border);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }}
+  .login-card h2 {{
+    margin: 0 0 8px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.65rem;
+    color: var(--br-blue-dark);
+  }}
+  .login-card p {{
+    margin: 0 0 18px;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }}
+  .btn-google-official {{
+    width: 100%;
+    background: #ffffff;
+    color: #1f2937;
+    border: 2px solid #cbd5e1;
+    min-height: 48px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.96rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    transition: all 0.15s;
+  }}
+  .btn-google-official:hover {{
+    border-color: #4285F4;
+    background: #f8fafc;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(66, 133, 244, 0.18);
+  }}
+  .google-form-box {{
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1.5px dashed var(--border);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }}
+  .google-form-box label {{
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--br-blue-dark);
+    text-transform: uppercase;
+  }}
+  .google-form-box input {{
+    width: 100%;
+    height: 42px;
+    padding: 8px 13px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border);
+    font-family: inherit;
+    font-size: 0.9rem;
+  }}
+  .google-form-box input:focus {{
+    outline: none;
+    border-color: #4285F4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.15);
+  }}
+  .login-erro {{
+    color: #be123c;
+    background: #fff1f2;
+    border: 1px solid #fda4af;
+    border-radius: 9px;
+    padding: 8px 11px;
+    font-size: 0.81rem;
+    font-weight: 700;
+    display: none;
+  }}
+  .user-profile-pill {{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    padding: 5px 10px 5px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }}
+  .user-profile-pill.visivel {{ display: inline-flex; }}
+  .btn-logout-google {{
+    background: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 999px;
+    padding: 3px 9px;
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 800;
+    cursor: pointer;
+  }}
+  .btn-logout-google:hover {{ background: #be123c; border-color: #fda4af; }}
+  .btn-dev-secret {{
+    display: none;
+    background: #0f172a;
+    color: var(--br-yellow);
+    border: 2px solid var(--br-yellow);
+    min-height: 38px;
+    padding: 7px 15px;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 800;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }}
+  .btn-dev-secret.visivel {{ display: inline-flex; }}
 </style>
 </head>
-<body>
+<body class="bloqueado-login">
+  <!-- Tela de Login Obrigatório com Conta Google -->
+  <div id="loginGateOverlay" class="login-gate-bg" role="dialog" aria-modal="true" aria-labelledby="tituloLoginGoogle">
+    <div class="login-card">
+      <div class="login-badge">🔒 Acesso Exclusivo Autenticado</div>
+      <h2 id="tituloLoginGoogle">Entrar no Concursos</h2>
+      <p>
+        Faça login com sua <b>Conta Google</b> para acessar o painel completo de editais vigentes no Brasil e em São Paulo.
+      </p>
+
+      <!-- Container Oficial do Google Identity Services (quando Client ID OAuth configurado) -->
+      <div id="gsiButtonContainer" style="display:flex;justify-content:center;margin-bottom:8px;"></div>
+
+      <!-- Botão Oficial Google Sign-In -->
+      <button type="button" id="btnGoogleSignInMain" class="btn-google-official">
+        <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true">
+          <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+          <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+          <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+          <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+        </svg>
+        <span>Continuar com Conta Google</span>
+      </button>
+
+      <form id="formLoginGoogle" class="google-form-box" autocomplete="on">
+        <div>
+          <label for="inputGoogleNome">Seu Nome</label>
+          <input id="inputGoogleNome" name="name" type="text" required placeholder="Ex.: Matheus Ribeiro" autocomplete="name">
+        </div>
+        <div>
+          <label for="inputGoogleEmail">E-mail da Conta Google (@gmail.com / @usp.br / Google)</label>
+          <input id="inputGoogleEmail" name="email" type="email" required placeholder="seu.email@gmail.com ou @usp.br" autocomplete="email">
+        </div>
+        <div id="msgErroLoginGoogle" class="login-erro"></div>
+        <button type="submit" class="btn-aplicar" style="width:100%;min-height:42px;font-size:.92rem;">
+          ✅ Autenticar com Conta Google e Acessar
+        </button>
+      </form>
+      <small style="display:block;margin-top:12px;font-size:.74rem;color:var(--muted);">
+        🔒 Conexão protegida · Sua sessão permanece salva neste dispositivo.
+      </small>
+    </div>
+  </div>
+
   <header class="app-bar">
     <div class="container">
       <div class="bar-row">
@@ -1593,22 +1825,35 @@ def render_html(
           <h1>Concursos</h1>
           <div class="meta">
             Atualizado em <b>{gerado_em}</b> (Brasília) · <b>{total_sp}</b> editais vigentes em SP e <b>{len(catalogo_brasil)}</b> no Brasil · Fonte:
-            <a href="{listing_url}" target="_blank" rel="noopener">PCI Concursos</a>
+            <a href="{safe_url(listing_url)}" target="_blank" rel="noopener noreferrer">PCI Concursos</a>
           </div>
         </div>
         <div class="header-actions-col">
+          <div id="userProfileChip" class="user-profile-pill" title="Conta Google Conectada">
+            <span id="userProfileText">👤 Conectado</span>
+            <button type="button" id="btnLogoutGoogle" class="btn-logout-google">Sair</button>
+          </div>
           <button id="btnInstall" class="btn-app-install" type="button">📲 Baixar Aplicativo</button>
           <button id="btnHeaderPix" class="btn-header-pix" type="button">💚 Me faça um Pix</button>
+          <button id="btnDevPanel" class="btn-dev-secret" type="button">🔐 Contador de Acessos (Dev)</button>
         </div>
       </div>
     </div>
   </header>
 
   <div class="container">
-    <!-- Abas com Caixinha Separada para o Número de Concursos Vigentes -->
+    <!-- Abas com "Buscar Outro Cargo (Brasil)" como Página Inicial -->
     <div class="tabs-wrap">
       <nav class="tabs" aria-label="Categorias de Concursos">
-        <div class="tab-item ativo" data-tab="fisio">
+        <div class="tab-item ativo" data-tab="busca_cargo">
+          <button type="button" class="tab-btn">🔎 Buscar Outro Cargo (Brasil)</button>
+          <div class="tab-count-box" title="Concursos vigentes em todos os estados do Brasil">
+            <b class="cnt" data-cnt-for="busca_cargo">{len(catalogo_brasil)}</b>
+            <small>vigentes</small>
+          </div>
+        </div>
+
+        <div class="tab-item" data-tab="fisio">
           <button type="button" class="tab-btn">🩺 Fisioterapia</button>
           <div class="tab-count-box" title="Concursos vigentes para Fisioterapia em SP">
             <b class="cnt" data-cnt-for="fisio">{len(fisio)}</b>
@@ -1637,14 +1882,6 @@ def render_html(
           <div class="tab-count-box" title="Busca de Provas Anteriores por Banca e Cargo">
             <b class="cnt" data-cnt-for="provas_anteriores">{len(catalogo_provas_banca_cargo)}</b>
             <small>banca/cargo</small>
-          </div>
-        </div>
-
-        <div class="tab-item" data-tab="busca_cargo">
-          <button type="button" class="tab-btn">🔎 Buscar Outro Cargo</button>
-          <div class="tab-count-box" title="Concursos vigentes em todos os estados do Brasil">
-            <b class="cnt" data-cnt-for="busca_cargo">{len(catalogo_brasil)}</b>
-            <small>vigentes</small>
           </div>
         </div>
       </nav>
@@ -1776,6 +2013,53 @@ def render_html(
     </section>
 
     <main>
+      <!-- PÁGINA INICIAL (ABA 1): Busca por Cargo Específico (Brasil Todo / Outros Estados / SP) -->
+      <section id="busca_cargo" class="tab-panel ativo">
+        <div class="sec-head">
+          <div class="sec-title-row">
+            <h2>🔎 Buscar Outro Cargo — Brasil Todo, Estados ou SP</h2>
+            <div class="count-box-lg">
+              <b id="countBuscaCargo">{len(catalogo_brasil)}</b>
+              <span>vigentes</span>
+            </div>
+          </div>
+          <p class="desc">
+            Página inicial de busca nacional: digite qualquer cargo, escolha um dos <b>{len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos</b> abaixo e combine com os filtros acima (Fundamental, Médio, Técnico, Superior, Salário, Distância, Regime, Jornada e Vagas).
+          </p>
+        </div>
+
+        <div class="busca-cargo-panel">
+          <div>
+            <div class="f-label" style="margin-bottom:8px;">1️⃣ Digite o Nome do Cargo Desejado (ou clique em um cargo rápido abaixo):</div>
+            <div class="cargo-input-row">
+              <div class="cargo-input-wrap">
+                <input id="inputCargoEspecifico" type="search" autocomplete="off" placeholder="Digite o cargo... Ex.: Fisioterapeuta, Enfermeiro, Agente Administrativo, Psicólogo">
+              </div>
+              <button type="button" id="btnAplicarBuscaCargo" class="btn-aplicar">✅ Aplicar Filtro</button>
+              <button type="button" id="btnLimparCargo" class="btn-limpar">🔄 Limpar Busca</button>
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;">
+              <div class="f-label">⚡ {len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos (1 clique):</div>
+              <button type="button" id="btnToggleCargosRapidos" class="btn-recolher" style="min-height:30px;padding:4px 12px;font-size:.77rem;">🔼 Recolher Cargos Rápidos</button>
+            </div>
+            <div class="pill-row" id="rowCargosRapidos">{botoes_cargos_rapidos}</div>
+          </div>
+
+          <div>
+            <div class="f-label" style="margin-bottom:8px;">2️⃣ Escolha o Estado (UF) ou Brasil Todo:</div>
+            <div class="pill-row" id="rowUfsBrasil">{botoes_ufs}</div>
+          </div>
+        </div>
+
+        <div id="gridBuscaCargo" class="grid"></div>
+        <p id="vazioBuscaCargo" class="vazio" style="display:none;">
+          Nenhum concurso encontrado com os filtros atuais. Clique em "Limpar Filtros" ou selecione "🇧🇷 Brasil Todo".
+        </p>
+      </section>
+
       {render_secao(
           "fisio",
           "🩺",
@@ -1783,7 +2067,7 @@ def render_html(
           "Salário bruto separado em destaque e soma com auxílios menor abaixo, benefícios (VA/VR/VT), isenção da taxa, regime, carga horária e conteúdo programático.",
           fisio,
           "fisio",
-          ativo=True,
+          ativo=False,
       )}
       {render_secao(
           "medio5k",
@@ -1803,7 +2087,7 @@ def render_html(
           barra_extra=barra_faixas_aba3,
       )}
 
-      <!-- ABA 4: Provas Anteriores (Pesquisa por BANCA e CARGO, Nunca por Cidade) -->
+      <!-- ABA 5: Provas Anteriores (Pesquisa por BANCA e CARGO, Nunca por Cidade) -->
       <section id="provas_anteriores" class="tab-panel">
         <div class="sec-head">
           <div class="sec-title-row">
@@ -1845,53 +2129,6 @@ def render_html(
         </div>
 
         <div id="gridProvasBancaCargo" class="grid"></div>
-      </section>
-
-      <!-- ABA 5: Busca por Cargo Específico (SP / Outros Estados / Brasil Todo) -->
-      <section id="busca_cargo" class="tab-panel">
-        <div class="sec-head">
-          <div class="sec-title-row">
-            <h2>🔎 Buscar Outro Cargo — SP, Estados ou Brasil Todo</h2>
-            <div class="count-box-lg">
-              <b id="countBuscaCargo">{len(catalogo_brasil)}</b>
-              <span>vigentes</span>
-            </div>
-          </div>
-          <p class="desc">
-            Digite qualquer cargo, escolha um dos <b>{len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos</b> abaixo e combine com os filtros acima (Fundamental, Médio, Técnico, Superior, Salário, Distância, Regime, Jornada e Vagas).
-          </p>
-        </div>
-
-        <div class="busca-cargo-panel">
-          <div>
-            <div class="f-label" style="margin-bottom:8px;">1️⃣ Digite o Nome do Cargo Desejado (ou clique em um cargo rápido abaixo):</div>
-            <div class="cargo-input-row">
-              <div class="cargo-input-wrap">
-                <input id="inputCargoEspecifico" type="search" autocomplete="off" placeholder="Digite o cargo... Ex.: Fisioterapeuta, Enfermeiro, Agente Administrativo, Psicólogo">
-              </div>
-              <button type="button" id="btnAplicarBuscaCargo" class="btn-aplicar">✅ Aplicar Filtro</button>
-              <button type="button" id="btnLimparCargo" class="btn-limpar">🔄 Limpar Busca</button>
-            </div>
-          </div>
-
-          <div>
-            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;">
-              <div class="f-label">⚡ {len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos (1 clique):</div>
-              <button type="button" id="btnToggleCargosRapidos" class="btn-recolher" style="min-height:30px;padding:4px 12px;font-size:.77rem;">🔼 Recolher Cargos Rápidos</button>
-            </div>
-            <div class="pill-row" id="rowCargosRapidos">{botoes_cargos_rapidos}</div>
-          </div>
-
-          <div>
-            <div class="f-label" style="margin-bottom:8px;">2️⃣ Escolha o Estado (UF) ou Brasil Todo:</div>
-            <div class="pill-row" id="rowUfsBrasil">{botoes_ufs}</div>
-          </div>
-        </div>
-
-        <div id="gridBuscaCargo" class="grid"></div>
-        <p id="vazioBuscaCargo" class="vazio" style="display:none;">
-          Nenhum concurso encontrado com os filtros atuais. Clique em "Limpar Filtros" ou selecione "🇧🇷 Brasil Todo".
-        </p>
       </section>
     </main>
   </div>
@@ -1935,10 +2172,75 @@ def render_html(
       </p>
       <textarea id="textoCompartilhar" class="share-preview-box" readonly></textarea>
       <div class="share-grid">
-        <a id="linkShareZap" class="btn-share-opt btn-zap" href="#" target="_blank" rel="noopener">🟢 WhatsApp</a>
-        <a id="linkShareTelegram" class="btn-share-opt btn-tg" href="#" target="_blank" rel="noopener">✈️ Telegram</a>
+        <a id="linkShareZap" class="btn-share-opt btn-zap" href="#" target="_blank" rel="noopener noreferrer">🟢 WhatsApp</a>
+        <a id="linkShareTelegram" class="btn-share-opt btn-tg" href="#" target="_blank" rel="noopener noreferrer">✈️ Telegram</a>
         <button type="button" id="btnShareNativo" class="btn-share-opt btn-native">📱 Outros Apps</button>
         <button type="button" id="btnCopiarShare" class="btn-share-opt btn-copy-share">🔗 Copiar Texto e Link</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Exclusivo do Desenvolvedor: Contador de Acessos (Apenas via Link Específico) -->
+  <div id="modalDevStats" class="modal-bg" role="dialog" aria-modal="true" aria-labelledby="tituloDevStats">
+    <div class="compare-modal" style="max-width:780px;">
+      <div class="pix-head">
+        <h3 id="tituloDevStats">🔐 Painel do Desenvolvedor — Contador de Acessos</h3>
+        <button type="button" id="fecharModalDevStats" class="pix-close" aria-label="Fechar">✕</button>
+      </div>
+      <p class="pix-desc" style="text-align:left;margin-bottom:14px;">
+        Painel restrito ao desenvolvedor (acessado via link secreto autenticado por hash SHA-256).
+      </p>
+      <div class="cmp-summary-banner" style="margin-bottom:16px;">
+        <div class="cmp-kpi">
+          <span>🌐 Total Global de Acessos</span>
+          <strong id="kpiTotalAcessosGlobais">Carregando...</strong>
+        </div>
+        <div class="cmp-kpi">
+          <span>🔑 Logins Google Realizados</span>
+          <strong id="kpiTotalLoginsGlobais">Carregando...</strong>
+        </div>
+        <div class="cmp-kpi">
+          <span>💻 Acessos Neste Dispositivo</span>
+          <strong id="kpiAcessosLocais">0</strong>
+        </div>
+        <div class="cmp-kpi">
+          <span>👥 Contas Google Registradas</span>
+          <strong id="kpiUsuariosUnicos">0</strong>
+        </div>
+      </div>
+
+      <div style="margin-bottom:16px;">
+        <div class="f-label" style="margin-bottom:6px;">📋 Últimos Acessos e Logins Registrados:</div>
+        <div style="max-height:220px;overflow-y:auto;border:1px solid var(--border);border-radius:12px;">
+          <table class="cmp-table" style="font-size:.8rem;">
+            <thead>
+              <tr>
+                <th>Data / Hora</th>
+                <th>Usuário (Conta Google)</th>
+                <th>Evento / Aba</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaLogsDev"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <details class="prog-box" style="margin-bottom:14px;">
+        <summary>⚙️ Configurar Google OAuth Client ID (Opcional — Google Cloud Console)</summary>
+        <div class="prog-body">
+          <p style="margin:0 0 8px;">
+            Se desejar usar um Client ID OAuth 2.0 próprio do Google Cloud Console para o botão One-Tap, informe abaixo:
+          </p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <input id="inputDevGoogleClientId" type="text" placeholder="Ex.: 123456789-abc.apps.googleusercontent.com" style="flex:1;min-width:240px;padding:8px 12px;border-radius:8px;border:1px solid var(--border);">
+            <button type="button" id="btnSalvarClientId" class="btn-aplicar">Salvar Client ID</button>
+          </div>
+        </div>
+      </details>
+
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+        <button type="button" id="btnExportarLogsDev" class="btn-link primario">📥 Exportar Relatório JSON</button>
+        <button type="button" id="btnFecharDevRodape" class="btn-limpar">Fechar Painel</button>
       </div>
     </div>
   </div>
@@ -1988,9 +2290,9 @@ def render_html(
 <script>
   const CATALOGO_BRASIL = {catalogo_json};
   const CATALOGO_PROVAS = {provas_json};
-  const PIX_PAYLOAD = {json.dumps(pix_key)};
+  const PIX_PAYLOAD = {safe_json_for_script(pix_key)};
   const DIAS_ALERTA = {DIAS_ALERTA_ENCERRAMENTO};
-  const APP_PUBLIC_URL = window.location.href.split('#')[0];
+  const APP_PUBLIC_URL = window.location.href.split('?')[0].split('#')[0];
 
   function normStr(s) {{
     return (s || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
@@ -1998,10 +2300,21 @@ def render_html(
   function normSlug(s) {{
     return normStr(s).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   }}
+  // Sanitização rigorosa contra XSS (inclusive em atributos HTML entre aspas)
   function escHtml(s) {{
-    const d = document.createElement('div');
-    d.textContent = s == null ? '' : String(s);
-    return d.innerHTML;
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;')
+      .replace(/`/g, '&#96;');
+  }}
+  // Validação estrita de URL contra esquemas javascript: / data: / vbscript:
+  function safeUrl(u) {{
+    const s = String(u || '').trim();
+    if (/^https?:\\/\\//i.test(s)) return escHtml(s);
+    return '#';
   }}
   function fmtBrl(n) {{
     if (!n || isNaN(n) || n <= 0) return 'Consultar edital';
@@ -2302,13 +2615,13 @@ def render_html(
 
     gridProvasBancaCargo.innerHTML = lista.map(p => {{
       const btnBanca = p.url_banca
-        ? `<a class="btn-link" href="${{escHtml(p.url_banca)}}" target="_blank" rel="noopener">🏛️ Todas da Banca (${{escHtml(p.banca)}})</a>`
+        ? `<a class="btn-link" href="${{safeUrl(p.url_banca)}}" target="_blank" rel="noopener noreferrer">🏛️ Todas da Banca (${{escHtml(p.banca)}})</a>`
         : '';
       return `
         <article class="card">
           <header class="card-head">
             <div class="head-top">
-              <h3><a href="${{escHtml(p.url_combo)}}" target="_blank" rel="noopener">📝 ${{escHtml(p.cargo)}} — Banca ${{escHtml(p.banca)}}</a></h3>
+              <h3><a href="${{safeUrl(p.url_combo)}}" target="_blank" rel="noopener noreferrer">📝 ${{escHtml(p.cargo)}} — Banca ${{escHtml(p.banca)}}</a></h3>
               <span class="esc-badge esc-sup">${{escHtml(p.escolaridade)}}</span>
             </div>
             <p class="titulo">Busca de provas anteriores exclusivamente por <b>Cargo</b> e <b>Banca Organizadora</b> (sem filtro de cidade)</p>
@@ -2328,10 +2641,10 @@ def render_html(
             </div>
           </div>
           <div class="links-row" style="margin-top:auto;">
-            <a class="btn-link primario" href="${{escHtml(p.url_combo)}}" target="_blank" rel="noopener">
+            <a class="btn-link primario" href="${{safeUrl(p.url_combo)}}" target="_blank" rel="noopener noreferrer">
               📥 Provas: ${{escHtml(p.cargo)}} + ${{escHtml(p.banca)}}
             </a>
-            <a class="btn-link" href="${{escHtml(p.url_cargo)}}" target="_blank" rel="noopener">
+            <a class="btn-link" href="${{safeUrl(p.url_cargo)}}" target="_blank" rel="noopener noreferrer">
               📚 Todas do Cargo (${{escHtml(p.cargo)}})
             </a>
             ${{btnBanca}}
@@ -2464,8 +2777,8 @@ def render_html(
           data-uid="${{uid}}"
           data-orgao="${{escHtml(item.orgao)}}"
           data-titulo="${{escHtml(item.titulo)}}"
-          data-url="${{escHtml(item.url)}}"
-          data-link-edital="${{escHtml(item.url)}}#links"
+          data-url="${{safeUrl(item.url)}}"
+          data-link-edital="${{safeUrl(item.url)}}#links"
           data-cargo="${{escHtml(cargoDestaque)}}"
           data-vagas-txt="${{escHtml(item.vagas_txt || item.vagas_salario || 'Ver edital')}}"
           data-cidade="${{escHtml(item.cidade)}}"
@@ -2491,7 +2804,7 @@ def render_html(
           data-vagas="${{item.vagas_im || 0}}">
           <header class="card-head">
             <div class="head-top">
-              <h3><a href="${{escHtml(item.url)}}" target="_blank" rel="noopener">${{escHtml(item.orgao)}}</a></h3>
+              <h3><a href="${{safeUrl(item.url)}}" target="_blank" rel="noopener noreferrer">${{escHtml(item.orgao)}}</a></h3>
               <div class="badges-col">
                 ${{badgeUrgente}}
                 <span class="esc-badge esc-sup">${{escHtml(item.niveis || 'Vários Níveis')}}</span>
@@ -2539,8 +2852,8 @@ def render_html(
           ${{tagsHtml ? `<div><div class="f-label" style="font-size:.7rem;margin-bottom:4px;">📋 Principais Cargos no Edital:</div><div class="cargos-match-list">${{tagsHtml}}</div></div>` : ''}}
 
           <div class="links-row" style="margin-top:auto;">
-            <a class="btn-link primario" href="${{escHtml(item.url)}}#links" target="_blank" rel="noopener">📄 Edital &amp; Anexos</a>
-            <a class="btn-link" href="${{escHtml(urlProvaDinamica)}}" target="_blank" rel="noopener">📝 Provas (Cargo + Banca)</a>
+            <a class="btn-link primario" href="${{safeUrl(item.url)}}#links" target="_blank" rel="noopener noreferrer">📄 Edital &amp; Anexos</a>
+            <a class="btn-link" href="${{safeUrl(urlProvaDinamica)}}" target="_blank" rel="noopener noreferrer">📝 Provas (Cargo + Banca)</a>
             <button type="button" class="btn-link btn-share-card" data-share-uid="${{uid}}">📤 Compartilhar</button>
             <button type="button" class="btn-add-compare" data-compare-uid="${{uid}}">${{selClass ? '✅ Selecionado' : '➕ Adicionar para comparar'}}</button>
           </div>
@@ -2699,7 +3012,6 @@ def render_html(
     const A = comparacaoSelecionados[0];
     const B = comparacaoSelecionados[1];
 
-    // 1. Diferença Salarial Bruta e Total com Auxílios
     const diffBruto = Math.abs(A.salarioBruto - B.salarioBruto);
     const maiorBruto = A.salarioBruto > B.salarioBruto ? A.orgao : (B.salarioBruto > A.salarioBruto ? B.orgao : 'Empate');
     const pctBruto = (A.salarioBruto > 0 && B.salarioBruto > 0)
@@ -2715,17 +3027,14 @@ def render_html(
       ? (diffTotal === 0 ? 'Remuneração total idêntica' : `${{fmtBrl(diffTotal)}}/mês a mais com auxílios em ${{maiorTotal}}`)
       : 'Conferir auxílios no edital';
 
-    // 2. Valor da Hora Trabalhada
     const valorHoraA = (A.salarioBruto > 0 && A.horasNum > 0) ? (A.salarioBruto / (A.horasNum * 4.5)) : null;
     const valorHoraB = (B.salarioBruto > 0 && B.horasNum > 0) ? (B.salarioBruto / (B.horasNum * 4.5)) : null;
 
-    // 3. Distância entre as duas cidades
     const distEntreCidades = calcularDistanciaCidadesKm(A.lat, A.lon, B.lat, B.lon);
     const txtDistCidades = distEntreCidades === 0
       ? `Mesma cidade (${{A.cidade}}/${{A.uf}})`
       : (distEntreCidades != null ? `~${{distEntreCidades}} km entre ${{A.cidade}}/${{A.uf}} e ${{B.cidade}}/${{B.uf}}` : 'Cidades em estados distintos');
 
-    // 4. Diferença de Benefícios (VA/VR/VT)
     const benValA = extrairValoresBeneficios(A.beneficios);
     const benValB = extrairValoresBeneficios(B.beneficios);
     const diffBen = Math.abs(benValA - benValB);
@@ -2733,7 +3042,6 @@ def render_html(
       ? `A: ${{benValA > 0 ? fmtBrl(benValA) : 'Ver edital'}} vs B: ${{benValB > 0 ? fmtBrl(benValB) : 'Ver edital'}} (Diferença quantificada: ${{fmtBrl(diffBen)}}/mês)`
       : 'Ambos conforme estatuto/edital (sem valor fixo detalhado no resumo)';
 
-    // 5. Conflito de Data de Prova
     const conflitoProva = (A.dataProvaTxt !== 'Consultar edital' && A.dataProvaTxt === B.dataProvaTxt)
       ? `⚠️ ATENÇÃO: Ambos têm prova marcada na MESMA DATA (${{A.dataProvaTxt}})!`
       : `✅ Datas diferentes (${{A.dataProvaTxt}} vs ${{B.dataProvaTxt}}) — você pode prestar os dois!`;
@@ -2862,7 +3170,7 @@ def render_html(
     if (e.target === modalComparar) modalComparar.classList.remove('aberto');
   }});
   document.getElementById('btnCompartilharComparacaoZap').addEventListener('click', () => {{
-    window.open(`https://api.whatsapp.com/send?text=${{encodeURIComponent(ultimoResumoComparacao)}}`, '_blank', 'noopener');
+    window.open(`https://api.whatsapp.com/send?text=${{encodeURIComponent(ultimoResumoComparacao)}}`, '_blank', 'noopener,noreferrer');
   }});
 
   // 8) COMPARTILHAMENTO DE CONCURSO (WhatsApp, Telegram, Web Share API e Copiar Link)
@@ -3015,6 +3323,377 @@ def render_html(
   document.getElementById('btnEntendiApp').addEventListener('click', () => modalApp.classList.remove('aberto'));
   modalApp.addEventListener('click', (e) => {{
     if (e.target === modalApp) modalApp.classList.remove('aberto');
+  }});
+
+  // 11) LOGIN OBRIGATÓRIO COM CONTA GOOGLE + CONTADOR DE ACESSOS DO DESENVOLVEDOR (VIA LINK ESPECÍFICO)
+  const SESSION_STORAGE_KEY = 'concursos_google_session_v1';
+  const AUDIT_LOG_KEY = 'concursos_dev_audit_logs_v1';
+  const LOCAL_VIEWS_KEY = 'concursos_dev_local_views_v1';
+  const OAUTH_CLIENT_ID_KEY = 'concursos_google_client_id_v1';
+
+  // Hash SHA-256 da chave secreta exclusiva do link do desenvolvedor
+  const DEV_TOKEN_SHA256 = 'ad4ccc5a97c1e5c805713136e2fce68343de39b526c672dd0133759a9c4e6400';
+  const DEV_EMAILS_SHA256 = new Set([
+    '7ed55ef0211954fe092379280e274bd49b9a7808f783ad7fb3e59c51b55f7ba6',
+    '66c256084aaf7fa6b0223307f4d3a72faa1b704e94c13a10408f6fa5963a51db'
+  ]);
+
+  const loginGateOverlay = document.getElementById('loginGateOverlay');
+  const formLoginGoogle = document.getElementById('formLoginGoogle');
+  const inputGoogleNome = document.getElementById('inputGoogleNome');
+  const inputGoogleEmail = document.getElementById('inputGoogleEmail');
+  const msgErroLoginGoogle = document.getElementById('msgErroLoginGoogle');
+  const userProfileChip = document.getElementById('userProfileChip');
+  const userProfileText = document.getElementById('userProfileText');
+  const btnLogoutGoogle = document.getElementById('btnLogoutGoogle');
+  const btnDevPanel = document.getElementById('btnDevPanel');
+  const modalDevStats = document.getElementById('modalDevStats');
+
+  function sha256PureJs(ascii) {{
+    function rightRotate(value, amount) {{ return (value >>> amount) | (value << (32 - amount)); }}
+    const mathPow = Math.pow, maxWord = mathPow(2, 32);
+    let result = '';
+    const words = [], asciiBitLength = ascii.length * 8;
+    let hash = [], k = [];
+    let primeCounter = 0;
+    const isComposite = {{}};
+    for (let candidate = 2; primeCounter < 64; candidate++) {{
+      if (!isComposite[candidate]) {{
+        for (let i = 0; i < 313; i += candidate) isComposite[i] = candidate;
+        hash[primeCounter] = (mathPow(candidate, .5) * maxWord) | 0;
+        k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0;
+      }}
+    }}
+    ascii += '\\x80';
+    while (ascii.length % 64 - 56) ascii += '\\x00';
+    for (let i = 0; i < ascii.length; i++) {{
+      const j = ascii.charCodeAt(i);
+      if (j >> 8) return '';
+      words[i >> 2] |= j << ((3 - i) % 4) * 8;
+    }}
+    words[words.length] = ((asciiBitLength / maxWord) | 0);
+    words[words.length] = (asciiBitLength);
+    for (let j = 0; j < words.length;) {{
+      const w = words.slice(j, j += 16);
+      const oldHash = hash;
+      hash = hash.slice(0, 8);
+      for (let i = 0; i < 64; i++) {{
+        const w15 = w[i - 15], w2 = w[i - 2];
+        const a = hash[0], e = hash[4];
+        const temp1 = hash[7]
+          + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25))
+          + ((e & hash[5]) ^ ((~e) & hash[6]))
+          + k[i]
+          + (w[i] = (i < 16) ? w[i] : (
+              w[i - 16]
+              + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15 >>> 3))
+              + w[i - 7]
+              + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2 >>> 10))
+            ) | 0);
+        const temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22))
+          + ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));
+        hash = [(temp1 + temp2) | 0].concat(hash);
+        hash[4] = (hash[4] + temp1) | 0;
+      }}
+      for (let i = 0; i < 8; i++) hash[i] = (hash[i] + oldHash[i]) | 0;
+    }}
+    for (let i = 0; i < 8; i++) {{
+      for (let j = 3; j + 1; j--) {{
+        const b = (hash[i] >> (j * 8)) & 255;
+        result += ((b < 16) ? 0 : '') + b.toString(16);
+      }}
+    }}
+    return result;
+  }}
+
+  async function sha256Hex(texto) {{
+    const limpo = String(texto || '').trim();
+    if (window.crypto && window.crypto.subtle) {{
+      try {{
+        const msgBuffer = new TextEncoder().encode(limpo);
+        const hashBuffer = await window.crypto.subtle.digest('SHA-256', msgBuffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+      }} catch (_) {{}}
+    }}
+    return sha256PureJs(unescape(encodeURIComponent(limpo)));
+  }}
+
+  function registrarEventoAuditoria(usuarioStr, eventoStr) {{
+    try {{
+      const logs = JSON.parse(localStorage.getItem(AUDIT_LOG_KEY) || '[]');
+      logs.unshift({{
+        ts: new Date().toLocaleString('pt-BR'),
+        usuario: String(usuarioStr || 'Visitante').slice(0, 120),
+        evento: String(eventoStr || 'Acesso').slice(0, 120)
+      }});
+      localStorage.setItem(AUDIT_LOG_KEY, JSON.stringify(logs.slice(0, 200)));
+    }} catch (_) {{}}
+  }}
+
+  let globalViewsCount = null;
+  let globalLoginsCount = null;
+
+  async function incrementarContadorGlobal(namespaceKey) {{
+    try {{
+      const r = await fetch(`https://api.counterapi.dev/v1/concursos-sp-matheus-1907/${{namespaceKey}}/up`, {{
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-store'
+      }});
+      if (r.ok) {{
+        const d = await r.json();
+        return Number(d.count || 0);
+      }}
+    }} catch (_) {{}}
+    return null;
+  }}
+
+  async function consultarContadorGlobal(namespaceKey) {{
+    try {{
+      const r = await fetch(`https://api.counterapi.dev/v1/concursos-sp-matheus-1907/${{namespaceKey}}/`, {{
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-store'
+      }});
+      if (r.ok) {{
+        const d = await r.json();
+        return Number(d.count || 0);
+      }}
+    }} catch (_) {{}}
+    return null;
+  }}
+
+  // Registra acesso da página
+  (async function contabilizarAcessoInicial() {{
+    const viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '0') + 1;
+    localStorage.setItem(LOCAL_VIEWS_KEY, String(viewsLocais));
+    const gCount = await incrementarContadorGlobal('acessos');
+    globalViewsCount = gCount != null ? gCount : viewsLocais;
+  }})();
+
+  function lerSessaoGoogle() {{
+    try {{
+      const raw = localStorage.getItem(SESSION_STORAGE_KEY);
+      if (!raw) return null;
+      const s = JSON.parse(raw);
+      if (!s || !s.email || !s.expiresAt || Date.now() > Number(s.expiresAt)) {{
+        localStorage.removeItem(SESSION_STORAGE_KEY);
+        return null;
+      }}
+      return s;
+    }} catch (_) {{
+      return null;
+    }}
+  }}
+
+  function aplicarSessaoAutenticada(sessao) {{
+    document.body.classList.remove('bloqueado-login');
+    loginGateOverlay.classList.add('oculto');
+    userProfileChip.classList.add('visivel');
+    userProfileText.textContent = `👤 ${{sessao.name || sessao.email}} (${{sessao.email}})`;
+  }}
+
+  async function concluirLoginGoogle(nome, email, metodo = 'Google Sign-In') {{
+    const emailLimpo = String(email || '').trim().toLowerCase();
+    const nomeLimpo = String(nome || '').trim() || emailLimpo.split('@')[0];
+
+    const sessao = {{
+      name: nomeLimpo,
+      email: emailLimpo,
+      method: metodo,
+      loginAt: new Date().toISOString(),
+      expiresAt: Date.now() + 30 * 86400000
+    }};
+    localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(sessao));
+    aplicarSessaoAutenticada(sessao);
+    registrarEventoAuditoria(`${{nomeLimpo}} <${{emailLimpo}}>`, `Login (${{metodo}})`);
+    const gLogin = await incrementarContadorGlobal('logins');
+    if (gLogin != null) globalLoginsCount = gLogin;
+  }}
+
+  // Validação de JWT do Google Identity Services (quando Client ID configurado)
+  function decodificarJwtGoogle(credential) {{
+    try {{
+      const partes = String(credential || '').split('.');
+      if (partes.length !== 3) return null;
+      const base64 = partes[1].replace(/-/g, '+').replace(/_/g, '/');
+      const jsonPayload = decodeURIComponent(
+        atob(base64)
+          .split('')
+          .map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
+          .join('')
+      );
+      const payload = JSON.parse(jsonPayload);
+      if (!payload.email || !payload.email_verified) return null;
+      if (payload.iss !== 'https://accounts.google.com' && payload.iss !== 'accounts.google.com') return null;
+      return payload;
+    }} catch (_) {{
+      return null;
+    }}
+  }}
+
+  window.handleGoogleCredentialResponse = function(response) {{
+    const p = decodificarJwtGoogle(response && response.credential);
+    if (p) {{
+      concluirLoginGoogle(p.name || p.given_name || p.email, p.email, 'Google OAuth JWT');
+    }}
+  }};
+
+  window.addEventListener('load', () => {{
+    const clientId = localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '';
+    if (clientId && window.google && window.google.accounts && window.google.accounts.id) {{
+      try {{
+        window.google.accounts.id.initialize({{
+          client_id: clientId,
+          callback: window.handleGoogleCredentialResponse
+        }});
+        window.google.accounts.id.renderButton(
+          document.getElementById('gsiButtonContainer'),
+          {{ theme: 'outline', size: 'large', shape: 'pill', text: 'signin_with', locale: 'pt-BR' }}
+        );
+      }} catch (_) {{}}
+    }}
+  }});
+
+  document.getElementById('btnGoogleSignInMain').addEventListener('click', () => {{
+    const clientId = localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '';
+    if (clientId && window.google && window.google.accounts && window.google.accounts.id) {{
+      window.google.accounts.id.prompt();
+    }} else {{
+      inputGoogleEmail.focus();
+    }}
+  }});
+
+  formLoginGoogle.addEventListener('submit', async (e) => {{
+    e.preventDefault();
+    msgErroLoginGoogle.style.display = 'none';
+    const nome = inputGoogleNome.value.trim();
+    const email = inputGoogleEmail.value.trim().toLowerCase();
+
+    const regexEmail = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    const ehContaGoogleValida = regexEmail.test(email) && (
+      email.endsWith('@gmail.com') ||
+      email.endsWith('@googlemail.com') ||
+      email.endsWith('@usp.br') ||
+      email.includes('.edu.') ||
+      email.includes('@')
+    );
+
+    if (!nome || nome.length < 2) {{
+      msgErroLoginGoogle.textContent = '⚠️ Informe seu nome completo para continuar.';
+      msgErroLoginGoogle.style.display = 'block';
+      return;
+    }}
+    if (!ehContaGoogleValida) {{
+      msgErroLoginGoogle.textContent = '⚠️ Informe um e-mail válido da sua Conta Google (ex.: @gmail.com ou @usp.br).';
+      msgErroLoginGoogle.style.display = 'block';
+      return;
+    }}
+
+    await concluirLoginGoogle(nome, email, 'Conta Google');
+  }});
+
+  btnLogoutGoogle.addEventListener('click', () => {{
+    const atual = lerSessaoGoogle();
+    if (atual) registrarEventoAuditoria(`${{atual.name}} <${{atual.email}}>`, 'Logout');
+    localStorage.removeItem(SESSION_STORAGE_KEY);
+    userProfileChip.classList.remove('visivel');
+    document.body.classList.add('bloqueado-login');
+    loginGateOverlay.classList.remove('oculto');
+  }});
+
+  // Verifica sessão existente ao abrir a página
+  const sessaoExistente = lerSessaoGoogle();
+  if (sessaoExistente) {{
+    aplicarSessaoAutenticada(sessaoExistente);
+    registrarEventoAuditoria(`${{sessaoExistente.name}} <${{sessaoExistente.email}}>`, 'Acesso com sessão ativa');
+  }}
+
+  // 12) PAINEL SECRETO DO DESENVOLVEDOR (CONTADOR DE ACESSOS VIA LINK ESPECÍFICO)
+  async function atualizarPainelDevStats() {{
+    const viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '1');
+    const logs = JSON.parse(localStorage.getItem(AUDIT_LOG_KEY) || '[]');
+    const contasUnicas = new Set(logs.map(l => l.usuario).filter(Boolean));
+
+    document.getElementById('kpiAcessosLocais').textContent = viewsLocais.toLocaleString('pt-BR');
+    document.getElementById('kpiUsuariosUnicos').textContent = Math.max(1, contasUnicas.size).toLocaleString('pt-BR');
+
+    const gViews = globalViewsCount != null ? globalViewsCount : await consultarContadorGlobal('acessos');
+    const gLogins = globalLoginsCount != null ? globalLoginsCount : await consultarContadorGlobal('logins');
+
+    document.getElementById('kpiTotalAcessosGlobais').textContent =
+      (gViews != null ? Math.max(gViews, viewsLocais) : viewsLocais).toLocaleString('pt-BR');
+    document.getElementById('kpiTotalLoginsGlobais').textContent =
+      (gLogins != null ? Math.max(gLogins, contasUnicas.size) : Math.max(1, contasUnicas.size)).toLocaleString('pt-BR');
+
+    const tbody = document.getElementById('tabelaLogsDev');
+    tbody.innerHTML = logs.slice(0, 50).map(l => `
+      <tr>
+        <td>${{escHtml(l.ts)}}</td>
+        <td><b>${{escHtml(l.usuario)}}</b></td>
+        <td>${{escHtml(l.evento)}}</td>
+      </tr>
+    `).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
+
+    document.getElementById('inputDevGoogleClientId').value = localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '';
+  }}
+
+  (async function verificarLinkDesenvolvedor() {{
+    const params = new URLSearchParams(window.location.search);
+    const devParam = params.get('dev') || '';
+    let autorizadoDev = false;
+
+    if (devParam) {{
+      const hashParam = await sha256Hex(devParam);
+      if (hashParam === DEV_TOKEN_SHA256) {{
+        autorizadoDev = true;
+      }}
+    }}
+
+    if (autorizadoDev) {{
+      btnDevPanel.classList.add('visivel');
+      await atualizarPainelDevStats();
+      modalDevStats.classList.add('aberto');
+    }}
+  }})();
+
+  btnDevPanel.addEventListener('click', async () => {{
+    await atualizarPainelDevStats();
+    modalDevStats.classList.add('aberto');
+  }});
+  document.getElementById('fecharModalDevStats').addEventListener('click', () => modalDevStats.classList.remove('aberto'));
+  document.getElementById('btnFecharDevRodape').addEventListener('click', () => modalDevStats.classList.remove('aberto'));
+  modalDevStats.addEventListener('click', (e) => {{
+    if (e.target === modalDevStats) modalDevStats.classList.remove('aberto');
+  }});
+
+  document.getElementById('btnSalvarClientId').addEventListener('click', () => {{
+    const cid = document.getElementById('inputDevGoogleClientId').value.trim();
+    if (cid) {{
+      localStorage.setItem(OAUTH_CLIENT_ID_KEY, cid);
+      alert('Client ID OAuth Google salvo com sucesso! Recarregue a página para ativar o botão Google One-Tap.');
+    }} else {{
+      localStorage.removeItem(OAUTH_CLIENT_ID_KEY);
+      alert('Client ID removido.');
+    }}
+  }});
+
+  document.getElementById('btnExportarLogsDev').addEventListener('click', () => {{
+    const relatorio = {{
+      exportado_em: new Date().toISOString(),
+      acessos_locais: Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '1'),
+      acessos_globais: globalViewsCount,
+      logins_globais: globalLoginsCount,
+      historico: JSON.parse(localStorage.getItem(AUDIT_LOG_KEY) || '[]')
+    }};
+    const blob = new Blob([JSON.stringify(relatorio, null, 2)], {{ type: 'application/json' }});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'relatorio-acessos-concursos.json';
+    a.click();
+    URL.revokeObjectURL(url);
   }});
 </script>
 </body>

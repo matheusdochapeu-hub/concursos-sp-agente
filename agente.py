@@ -326,10 +326,16 @@ def info_distancia(cidade: Optional[str]) -> Dict[str, Any]:
 # Utilidades HTTP, Datas e Formatação
 # --------------------------------------------------------------------------- #
 def fetch(url: str, retries: int = 3) -> str:
+    if not (url and url.startswith("https://www.pciconcursos.com.br/")):
+        raise RuntimeError(f"URL bloqueada por política de segurança (domínio não autorizado): {url}")
     for tentativa in range(1, retries + 1):
         try:
-            r = session.get(url, timeout=60)
+            r = session.get(url, timeout=60, allow_redirects=True)
             r.raise_for_status()
+            if not r.url.startswith("https://www.pciconcursos.com.br/"):
+                raise RuntimeError(f"Redirecionamento externo bloqueado: {r.url}")
+            if len(r.content) > 5_000_000:
+                raise RuntimeError(f"Resposta excedeu limite de segurança (5 MB): {url}")
             r.encoding = r.encoding or "utf-8"
             if r.encoding.lower() in ("iso-8859-1", "latin-1"):
                 r.encoding = "utf-8"

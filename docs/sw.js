@@ -1,4 +1,4 @@
-const CACHE_NAME = "concursos-sp-v4";
+const CACHE_NAME = "concursos-sp-v5";
 const ASSETS = [
   "./",
   "./index.html",
@@ -23,9 +23,12 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// Network-First: busca sempre a versão diária mais recente e guarda em cache para uso offline
+// Network-First restrito à mesma origem (evita interceptar OAuth Google / APIs externas)
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
+  const reqUrl = new URL(event.request.url);
+  if (reqUrl.origin !== self.location.origin) return;
+
   event.respondWith(
     fetch(event.request)
       .then((response) => {
