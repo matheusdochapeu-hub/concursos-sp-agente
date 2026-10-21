@@ -1,8 +1,10 @@
 {
- "gerado_em": "21/10/2026 14:53",
+ "gerado_em": "21/10/2026 15:20",
+ "gerado_em_iso": "2026-10-21T15:20:50.422692-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
  "total_sp": 160,
  "ia_ativa": true,
+ "novos_ultimas_24h": 0,
  "fisioterapia": [
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433",
@@ -14,17 +16,52 @@
    "niveis": "Fundamental / Médio / Superior",
    "salario_max_listagem": 17433.24,
    "inscricao_ate": "29/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Matão",
+   "km_ribeirao_preto": 75,
+   "km_jarinu": 237,
+   "banca": "IBAM",
+   "site_banca": "https://www.ibamsp-concursos.org.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433#links",
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/matao-sp",
+   "data_prova": "06/12/2026",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios_gerais": "VA (Auxílio-alimentação em cartão): R$ 1.000,00/mês",
+   "jornada_geral": "10 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 17.433,24",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga)"
    ],
    "fisio": true,
-   "salario_max": 17433.24,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapeuta",
+    "vagas": "1 vaga imediata + CR",
+    "vagas_imediatas": 1,
+    "tem_cr": true,
+    "salario": 4727.38,
+    "salario_exibicao": "R$ 4.727,38",
+    "salario_detalhe": "R$ 4.727,38 (vencimento base exato) + R$ 1.000,00 VA = R$ 5.727,38",
+    "carga_horaria": "30h semanais",
+    "regime": "CLT (Celetista)",
+    "beneficios": "VA (Auxílio-alimentação): R$ 1.000,00/mês (VR/VT conforme legislação municipal)",
+    "resumo_conteudo": [
+     "Língua Portuguesa (interpretação de texto, gramática aplicada, concordância, regência e pontuação — padrão IBAM)",
+     "Políticas de Saúde e Legislação do SUS (Lei 8.080/90, Lei 8.142/90, PNAB, Rede de Atenção à Saúde e Vigilância em Saúde)",
+     "Conhecimentos Específicos em Fisioterapia: Anatomia e fisiologia humana, biomecânica e cinesiologia",
+     "Avaliação funcional, testes musculares, goniometria, semiologia e diagnóstico cinético-funcional",
+     "Cinesioterapia, eletrotermofototerapia, mecanoterapia, órteses e próteses",
+     "Fisioterapia em Ortopedia/Traumatologia, Neurologia (adulto e pediátrica), Cardiorrespiratória, Geriatria e Saúde da Família (NASF/eMulti)",
+     "Código de Ética e Deontologia da Fisioterapia (Resoluções COFFITO)"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp",
@@ -36,18 +73,49 @@
    "niveis": "Superior",
    "salario_max_listagem": null,
    "inscricao_ate": "10/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "São Paulo",
+   "km_ribeirao_preto": 289,
+   "km_jarinu": 49,
+   "banca": "Marinha — 8º Distrito Naval",
+   "site_banca": "https://www.marinha.mil.br/com8dn/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp#links",
+   "arquivos_edital": [
+    "AVISO DE CONVOCAÇÃO Nº 02/2026 (OFICIAIS-RM2)",
+    "AVISO DE CONVOCAÇÃO Nº 03/2026 (OFICIAIS-RM2-MD)"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/marinha-do-brasil",
+   "data_prova": "21/02/2027",
+   "regime_geral": "Militar Temporário (RM2 — até 8 anos)",
+   "beneficios_gerais": "Assistência médico-hospitalar e odontológica, alimentação no quartel e auxílio-fardamento",
+   "jornada_geral": "Consultar edital",
+   "faixa_salarial": "Consultar edital",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
-    "Oportunidades contemplam diversas áreas como Engenharia, Medicina, Administração, Fisioterapia e Informática. A seleção inclui prova objetiva, teste físico, avaliação de títulos e inspeção de saúde.",
     "Fisioterapia, São Paulo - SP (1 vaga)"
    ],
    "fisio": true,
-   "salario_max": 150.0,
+   "fisio_detalhes": {
+    "cargo": "Oficial Temporário RM2 — Apoio à Saúde (Fisioterapia)",
+    "vagas": "1 vaga imediata (São Paulo/SP)",
+    "vagas_imediatas": 1,
+    "tem_cr": false,
+    "salario": 9575.0,
+    "salario_exibicao": "R$ 9.575,00",
+    "salario_detalhe": "R$ 9.575,00 brutos iniciais (Guarda-Marinha RM2: soldo R$ 7.315,00 + adicionais militares; sobe após 6 meses como 2º Tenente)",
+    "carga_horaria": "40h semanais (Expediente Militar)",
+    "regime": "Militar Temporário (RM2)",
+    "beneficios": "Assistência médico-hospitalar (FUSMA), alimentação na OM e auxílio-fardamento",
+    "resumo_conteudo": [
+     "Língua Portuguesa (25 questões — interpretação textual, coesão, coerência, sintaxe, concordância, regência e redação oficial)",
+     "Formação Militar-Naval e História Naval (25 questões — Estatuto dos Militares Lei 6.880/80, Organização Básica da Marinha, História Naval Brasileira e Relações Internacionais)",
+     "Etapas complementares: Prova de Títulos, Inspeção de Saúde (IS) e Teste de Aptidão Física de Ingresso (TAF-i: natação 25m e corrida 2.400m)"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": false
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional",
@@ -59,18 +127,51 @@
    "niveis": "Superior",
    "salario_max_listagem": 4106.09,
    "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Praia Grande",
+   "km_ribeirao_preto": 347,
+   "km_jarinu": 106,
+   "banca": "IBAM",
+   "site_banca": "https://www.ibamsp-concursos.org.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DE PROCESSO SELETIVO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/praia-grande-sp",
+   "data_prova": "06/12/2026",
+   "regime_geral": "Residência Multiprofissional (Bolsa — 2 anos)",
+   "beneficios_gerais": "Bolsa do Ministério da Saúde (sem VA/VR/VT adicional informado)",
+   "jornada_geral": "60 horas semanais",
+   "faixa_salarial": "Até R$ 4.106,09",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Oportunidade para profissionais de nível superior nas áreas de enfermagem, fisioterapia, odontologia e psicologia com bolsa mensal de R$ 4.106,09 e jornada de 60 horas semanais.",
     "Fisioterapia (4 vagas)"
    ],
    "fisio": true,
-   "salario_max": 4106.09,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapia — Residência Multiprofissional em Saúde da Família e Comunidade (R1)",
+    "vagas": "4 vagas imediatas",
+    "vagas_imediatas": 4,
+    "tem_cr": false,
+    "salario": 4106.09,
+    "salario_exibicao": "R$ 4.106,09",
+    "salario_detalhe": "R$ 4.106,09 (bolsa mensal exata — Ministério da Saúde)",
+    "carga_horaria": "60h semanais (dedicação exclusiva)",
+    "regime": "Residência (Bolsa)",
+    "beneficios": "Bolsa-Residência MS (sem VA/VR/VT informado no edital)",
+    "resumo_conteudo": [
+     "Língua Portuguesa e Interpretação de Textos",
+     "Políticas Públicas de Saúde, SUS e Atenção Primária (PNAB, Estratégia Saúde da Família, Territorialização, PTS e Apoio Matricial)",
+     "Conhecimentos Específicos em Fisioterapia: Reabilitação funcional na Atenção Básica e domiciliar",
+     "Fisioterapia preventiva, saúde do idoso, saúde da mulher, saúde da criança e do trabalhador",
+     "Avaliação cinético-funcional, cinesioterapia, reabilitação neurofuncional, ortopédica e cardiorrespiratória comunitária"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": false
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500",
@@ -82,17 +183,51 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 10500.0,
    "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Floreal",
+   "km_ribeirao_preto": 249,
+   "km_jarinu": 445,
+   "banca": "Instituto Unique",
+   "site_banca": "https://www.institutounique.org.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500#links",
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/floreal-sp",
+   "data_prova": "22/11/2026",
+   "regime_geral": "Estatutário (RPPS)",
+   "beneficios_gerais": "Benefícios conforme estatuto municipal (VA/VR/VT não detalhados no resumo)",
+   "jornada_geral": "10 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 10.500,00",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (CR)"
    ],
    "fisio": true,
-   "salario_max": 10500.0,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapeuta",
+    "vagas": "Cadastro de Reserva (CR)",
+    "vagas_imediatas": 0,
+    "tem_cr": true,
+    "salario": 4118.39,
+    "salario_exibicao": "R$ 4.118,39",
+    "salario_detalhe": "R$ 4.118,39 (vencimento base exato)",
+    "carga_horaria": "30h semanais",
+    "regime": "Estatutário",
+    "beneficios": "Conforme legislação municipal de Floreal (consultar edital)",
+    "resumo_conteudo": [
+     "Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais/Atualidades",
+     "Saúde Pública e Legislação do SUS (Constituição Federal arts. 196-200, Leis 8.080/90 e 8.142/90)",
+     "Conhecimentos Específicos em Fisioterapia: Anatomia, fisiologia, cinesiologia e biomecânica",
+     "Recursos terapêuticos manuais, cinesioterapia, eletrotermofototerapia e hidroterapia",
+     "Fisioterapia traumatológica, ortopédica, reumatológica, neurológica, pneumofuncional e geriátrica",
+     "Avaliação de Títulos (classificatória para nível superior)"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude",
@@ -104,17 +239,49 @@
    "niveis": "Superior",
    "salario_max_listagem": 4106.09,
    "inscricao_ate": "29/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Guarulhos",
+   "km_ribeirao_preto": 286,
+   "km_jarinu": 44,
+   "banca": "IBAM",
+   "site_banca": "https://www.ibamsp-concursos.org.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DE SELEÇÃO PÚBLICA Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/guarulhos-sp",
+   "data_prova": "13/12/2026",
+   "regime_geral": "Residência Multiprofissional (Bolsa — 2 anos)",
+   "beneficios_gerais": "Bolsa do Ministério da Saúde (sem VA/VR/VT adicional informado)",
+   "jornada_geral": "60 horas semanais",
+   "faixa_salarial": "Até R$ 4.106,09",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapia (3 vagas)"
    ],
    "fisio": true,
-   "salario_max": 4106.09,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapia — Residência Multiprofissional (Atenção Básica / Saúde da Família)",
+    "vagas": "3 vagas imediatas",
+    "vagas_imediatas": 3,
+    "tem_cr": false,
+    "salario": 4106.09,
+    "salario_exibicao": "R$ 4.106,09",
+    "salario_detalhe": "R$ 4.106,09 (bolsa mensal exata — Ministério da Saúde)",
+    "carga_horaria": "60h semanais (dedicação exclusiva)",
+    "regime": "Residência (Bolsa)",
+    "beneficios": "Bolsa-Residência MS (sem VA/VR/VT informado no edital)",
+    "resumo_conteudo": [
+     "Políticas Públicas de Saúde, Reforma Sanitária, SUS, PNAB e Redes de Atenção à Saúde",
+     "Trabalho multiprofissional, interdisciplinaridade, Clínica Ampliada e Projeto Terapêutico Singular (PTS)",
+     "Conhecimentos Específicos de Fisioterapia na Atenção Primária à Saúde",
+     "Atuação fisioterapêutica nos ciclos de vida (criança, adulto, gestante e idoso), doenças crônicas não transmissíveis, dor musculoesquelética e reabilitação neurofuncional e respiratória comunitária"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": false
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431",
@@ -126,17 +293,50 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 8431.01,
    "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Holambra",
+   "km_ribeirao_preto": 181,
+   "km_jarinu": 61,
+   "banca": "GL Consultoria",
+   "site_banca": "https://www.glconsultoria.com.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431#links",
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/holambra-sp",
+   "data_prova": "29/11/2026",
+   "regime_geral": "Estatutário / Efetivo",
+   "beneficios_gerais": "Benefícios conforme legislação municipal de Holambra (ver edital)",
+   "jornada_geral": "20 a 44 horas semanais",
+   "faixa_salarial": "Até R$ 8.431,01",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (CR)"
    ],
    "fisio": true,
-   "salario_max": 8431.01,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapeuta",
+    "vagas": "Cadastro de Reserva (CR)",
+    "vagas_imediatas": 0,
+    "tem_cr": true,
+    "salario": 3703.27,
+    "salario_exibicao": "R$ 3.703,27",
+    "salario_detalhe": "R$ 3.703,27 (vencimento base exato para 20h/sem)",
+    "carga_horaria": "20h semanais",
+    "regime": "Estatutário",
+    "beneficios": "Conforme legislação municipal de Holambra (consultar edital)",
+    "resumo_conteudo": [
+     "Língua Portuguesa e Matemática / Raciocínio Lógico (padrão GL Consultoria)",
+     "Legislação do SUS e Saúde Coletiva (Leis 8.080/90, 8.142/90, Decreto 7.508/11)",
+     "Conhecimentos Específicos em Fisioterapia: Avaliação musculoesquelética e neurológica, testes especiais e goniometria",
+     "Eletrotermofototerapia, cinesioterapia, reabilitação ortopédica, traumatológica, reumatológica, respiratória e geriátrica; Ética profissional COFFITO",
+     "Inclui etapa de Avaliação de Títulos (Grupo B — prova em 29/11/2026)"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325",
@@ -148,17 +348,50 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 5325.6,
    "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Jaborandi",
+   "km_ribeirao_preto": 82,
+   "km_jarinu": 320,
+   "banca": "GL Consultoria",
+   "site_banca": "https://www.glconsultoria.com.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325#links",
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/jaborandi-sp",
+   "data_prova": "22/11/2026",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios_gerais": "Benefícios conforme legislação municipal de Jaborandi (ver edital)",
+   "jornada_geral": "20 a 48 horas semanais",
+   "faixa_salarial": "Até R$ 5.325,60",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (CR)"
    ],
    "fisio": true,
-   "salario_max": 5325.6,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapeuta",
+    "vagas": "Cadastro de Reserva (CR)",
+    "vagas_imediatas": 0,
+    "tem_cr": true,
+    "salario": 2068.85,
+    "salario_exibicao": "R$ 2.068,85",
+    "salario_detalhe": "R$ 2.068,85 (vencimento base exato para 20h/sem)",
+    "carga_horaria": "20h semanais",
+    "regime": "CLT (Celetista)",
+    "beneficios": "Conforme legislação municipal de Jaborandi (consultar edital)",
+    "resumo_conteudo": [
+     "Língua Portuguesa e Matemática / Conhecimentos Gerais (padrão GL Consultoria)",
+     "Saúde Pública e Legislação do SUS",
+     "Conhecimentos Específicos em Fisioterapia: Anatomia, fisiologia do exercício, biomecânica e cinesiologia",
+     "Fisioterapia aplicada à ortopedia, traumatologia, neurologia, cardiologia, pneumologia e pediatria/geriatria",
+     "Avaliação de Títulos (classificatória)"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632",
@@ -170,17 +403,50 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 8632.29,
    "inscricao_ate": "22/10 a 05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Paulo de Faria",
+   "km_ribeirao_preto": 208,
+   "km_jarinu": 440,
+   "banca": "Império Concursos",
+   "site_banca": "https://portal.imperioconcursos.com.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/paulo-de-faria-sp",
+   "data_prova": "22/11/2026",
+   "regime_geral": "Estatutário (Efetivo)",
+   "beneficios_gerais": "Benefícios conforme legislação municipal de Paulo de Faria (ver edital)",
+   "jornada_geral": "20 a 44 horas semanais",
+   "faixa_salarial": "Até R$ 8.632,29",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga + CR)"
    ],
    "fisio": true,
-   "salario_max": 8632.29,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapeuta",
+    "vagas": "1 vaga imediata + CR",
+    "vagas_imediatas": 1,
+    "tem_cr": true,
+    "salario": 3018.97,
+    "salario_exibicao": "R$ 3.018,97",
+    "salario_detalhe": "R$ 3.018,97 (vencimento base inicial)",
+    "carga_horaria": "30h semanais",
+    "regime": "Estatutário",
+    "beneficios": "Conforme legislação municipal de Paulo de Faria (consultar edital)",
+    "resumo_conteudo": [
+     "Língua Portuguesa, Matemática e Conhecimentos Gerais/Atualidades",
+     "Conhecimentos de Saúde Pública / SUS e Legislação Municipal",
+     "Conhecimentos Específicos em Fisioterapia: Métodos e técnicas de avaliação, diagnóstico cinético-funcional, cinesioterapia e eletrotermofototerapia",
+     "Reabilitação em ortopedia/traumatologia, neurologia, reumatologia, cardiorrespiratória e saúde pública; Ética COFFITO",
+     "Avaliação de Títulos para cargos de nível superior"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas",
@@ -192,17 +458,51 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 5882.37,
    "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Porto Feliz",
+   "km_ribeirao_preto": 229,
+   "km_jarinu": 82,
+   "banca": "Instituto Avalia",
+   "site_banca": "https://www.avalia.org.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA CONCURSO PARA EMPREGO PÚBLICO Nº 002/2026",
+    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 003/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/porto-feliz-sp",
+   "data_prova": "13/12/2026",
+   "regime_geral": "CLT (Edital 002/2026 — SUS)",
+   "beneficios_gerais": "VA (Vale-alimentação): R$ 863,50 mensais",
+   "jornada_geral": "15 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 5.882,37",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta/SUS"
    ],
    "fisio": true,
-   "salario_max": 5882.37,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapeuta/SUS (Edital 002/2026)",
+    "vagas": "Cadastro de Reserva (CR)",
+    "vagas_imediatas": 0,
+    "tem_cr": true,
+    "salario": 4086.88,
+    "salario_exibicao": "R$ 4.086,88",
+    "salario_detalhe": "R$ 4.086,88 (base exato) + R$ 863,50 VA = R$ 4.950,38",
+    "carga_horaria": "30h semanais",
+    "regime": "CLT (Celetista)",
+    "beneficios": "VA (Vale-alimentação): R$ 863,50/mês",
+    "resumo_conteudo": [
+     "Língua Portuguesa, Raciocínio Lógico/Matemático e Noções de Informática (padrão Instituto Avalia)",
+     "Legislação do SUS e Saúde Coletiva (Leis 8.080/90 e 8.142/90, PNAB, Redes de Atenção à Saúde)",
+     "Conhecimentos Específicos em Fisioterapia/SUS: Fisioterapia na Atenção Básica, domiciliar e ambulatorial",
+     "Cinesioterapia, eletroterapia, termoterapia, fototerapia, órteses e próteses",
+     "Fisioterapia neurofuncional, traumato-ortopédica, cardiorrespiratória, uroginecológica e geriátrica"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos",
@@ -214,17 +514,49 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 6055.67,
    "inscricao_ate": "05/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Taquaritinga",
+   "km_ribeirao_preto": 77,
+   "km_jarinu": 263,
+   "banca": "GL Consultoria",
+   "site_banca": "https://www.glconsultoria.com.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos#links",
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/taquaritinga-sp",
+   "data_prova": "22/11/2026",
+   "regime_geral": "Estatutário (Efetivo)",
+   "beneficios_gerais": "Benefícios conforme legislação municipal de Taquaritinga (ver edital)",
+   "jornada_geral": "10 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 6.055,67",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (CR)"
    ],
    "fisio": true,
-   "salario_max": 6055.67,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapeuta",
+    "vagas": "Cadastro de Reserva (CR)",
+    "vagas_imediatas": 0,
+    "tem_cr": true,
+    "salario": 2586.0,
+    "salario_exibicao": "R$ 2.586,00",
+    "salario_detalhe": "R$ 2.586,00 (vencimento base inicial)",
+    "carga_horaria": "30h semanais",
+    "regime": "Estatutário",
+    "beneficios": "Conforme legislação municipal de Taquaritinga (consultar edital)",
+    "resumo_conteudo": [
+     "Língua Portuguesa e Matemática (padrão GL Consultoria)",
+     "Saúde Pública e Diretrizes do SUS",
+     "Conhecimentos Específicos em Fisioterapia: Anatomia, fisiologia, semiologia e avaliação funcional",
+     "Cinesioterapia, eletrotermofototerapia, reabilitação ortopédica, neurológica, respiratória e saúde coletiva"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537",
@@ -236,102 +568,52 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 22537.36,
    "inscricao_ate": "23/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Taquarituba",
+   "km_ribeirao_preto": 301,
+   "km_jarinu": 261,
+   "banca": "Instituto Unique",
+   "site_banca": "https://www.institutounique.org.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA Nº 01/2026",
+    "ERRATA Nº 02/2026",
+    "EDITAL RETIFICADO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/taquarituba-sp",
+   "data_prova": "15/11/2026",
+   "regime_geral": "Estatutário (Efetivo)",
+   "beneficios_gerais": "Benefícios conforme estatuto municipal de Taquarituba (ver edital)",
+   "jornada_geral": "10 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 22.537,36",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (CR)"
    ],
    "fisio": true,
-   "salario_max": 22537.36,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapeuta",
+    "vagas": "Cadastro de Reserva (CR)",
+    "vagas_imediatas": 0,
+    "tem_cr": true,
+    "salario": 6154.54,
+    "salario_exibicao": "R$ 6.154,54",
+    "salario_detalhe": "R$ 6.154,54 (vencimento base exato para 30h/sem)",
+    "carga_horaria": "30h semanais",
+    "regime": "Estatutário",
+    "beneficios": "Conforme legislação municipal de Taquarituba (consultar edital)",
+    "resumo_conteudo": [
+     "Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais/Atualidades (Errata nº 02/2026 publicada)",
+     "Legislação do SUS e Políticas Públicas de Saúde",
+     "Conhecimentos Específicos em Fisioterapia: Anatomia, cinesiologia, biomecânica e avaliação fisioterapêutica",
+     "Cinesioterapia, eletrotermofototerapia, mecanoterapia, reabilitação neurofuncional, traumato-ortopédica, cardiorrespiratória e geriátrica; Ética COFFITO",
+     "Avaliação de Títulos (classificatória)"
+    ]
+   },
    "medio_confirmado": [],
-   "medio_sem_salario": [
-    {
-     "nome": "Inspetor de Alunos",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Auxiliar Administrativo",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Agente de Fiscalização de Atividades Urbanas",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Agente Comunitário de Saúde - ESF Gino Chamorro/Bairro Parque São Roque Área 01",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Agente Comunitário de Saúde - ESF Juca Pena/Bairro Pedro Barros Área 06",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Agente Comunitário de Saúde - UBS Vila Santa Rita de Cássia Área 07",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Motorista",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Auxiliar de Educador/Cuidador",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Carpinteiro",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Pedreiro",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Operador de Máquinas Rodoviárias",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Encanador Hidráulico",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Monitor de Artes",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Fiscal de Higiene",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
-    }
-   ],
-   "medio_possivel": true,
-   "analise_ia": true
+   "medio_sem_salario": [],
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539",
@@ -343,76 +625,52 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 23539.17,
    "inscricao_ate": "Prorrogado até 22/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Tarumã",
+   "km_ribeirao_preto": 335,
+   "km_jarinu": 396,
+   "banca": "IPELL Consultoria",
+   "site_banca": "https://www.ipell.com.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA Nº 01/2026 DO PROCESSO SELETIVO Nº 02/2026",
+    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 01/2026 RETIFICADO E CONSOLIDADO"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/taruma-sp",
+   "data_prova": "22/11/2026",
+   "regime_geral": "Processo Seletivo / Temporário",
+   "beneficios_gerais": "Benefícios conforme legislação municipal de Tarumã (ver edital)",
+   "jornada_geral": "20 e 40 horas semanais",
+   "faixa_salarial": "Até R$ 23.539,17",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (CR)"
    ],
    "fisio": true,
-   "salario_max": 23539.17,
+   "fisio_detalhes": {
+    "cargo": "Fisioterapeuta",
+    "vagas": "Cadastro de Reserva (CR)",
+    "vagas_imediatas": 0,
+    "tem_cr": true,
+    "salario": null,
+    "salario_exibicao": "Até R$ 23.539,17",
+    "salario_detalhe": "Faixa do edital: R$ 1.717,55 a R$ 23.539,17 (consultar anexo de vencimentos no edital)",
+    "carga_horaria": "20h a 40h semanais",
+    "regime": "Processo Seletivo",
+    "beneficios": "Conforme legislação municipal de Tarumã (consultar edital)",
+    "resumo_conteudo": [
+     "Língua Portuguesa, Matemática e Conhecimentos Gerais (padrão IPELL — prova no período da tarde em 22/11/2026)",
+     "Legislação do SUS e Saúde Pública",
+     "Conhecimentos Específicos em Fisioterapia: Avaliação cinético-funcional, recursos fisioterapêuticos, reabilitação ortopédica, neurológica, respiratória e atenção básica"
+    ]
+   },
    "medio_confirmado": [],
    "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
+   "medio_possivel": false
   }
  ],
  "nivel_medio_acima_5000": [
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario",
-   "orgao": "TJSP - Tribunal de Justiça do Estado de São Paulo",
-   "titulo": "TJSP abre concursos para Oficial de Justiça e Escrevente Técnico Judiciário",
-   "uf": "SP",
-   "vagas_salario": "132 vagas até R$ 9.856,95",
-   "cargos_resumo": "Oficial de Justiça, Escrevente Técnico Judiciário",
-   "niveis": "Médio / Superior",
-   "salario_max_listagem": 9856.95,
-   "inscricao_ate": "28/10 a 10/12/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 9856.95,
-   "medio_confirmado": [
-    {
-     "nome": "Escrevente Técnico Judiciário",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": 6782.54
-    }
-   ],
-   "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii",
-   "orgao": "UNESP - Universidade Estadual Paulista",
-   "titulo": "UNESP de Sorocaba - SP abre concurso para Assistente de Suporte Acadêmico II",
-   "uf": "SP",
-   "vagas_salario": "1 vaga até R$ 6.537,74",
-   "cargos_resumo": "Assistente de Suporte Acadêmico II",
-   "niveis": "Ensino Médio",
-   "salario_max_listagem": 6537.74,
-   "inscricao_ate": "30/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 6537.74,
-   "medio_confirmado": [
-    {
-     "nome": "Assistente de Suporte Acadêmico II - Área de atuação: Mecatrônica",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": 6537.74
-    }
-   ],
-   "medio_sem_salario": [],
-   "medio_possivel": false,
-   "analise_ia": true
-  }
- ],
- "nivel_medio_possiveis": [
   {
    "url": "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428",
    "orgao": "SETEC - Serviços Técnicos Gerais de Campinas",
@@ -423,40 +681,101 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 10428.05,
    "inscricao_ate": "04/12/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Campinas",
+   "km_ribeirao_preto": 208,
+   "km_jarinu": 41,
+   "banca": "INDEPAC",
+   "site_banca": "https://indepac.selecao.net.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428#links",
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/campinas-sp",
+   "data_prova": "17/01/2027",
+   "regime_geral": "Estatutário (Efetivo)",
+   "beneficios_gerais": "VA/VR (Vale-alimentação/refeição): R$ 2.150,12/mês + Prêmio de produtividade até 85% (Fiscalização)",
+   "jornada_geral": "30 horas semanais",
+   "faixa_salarial": "Até R$ 10.428,05",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 10428.05,
-   "medio_confirmado": [],
-   "medio_sem_salario": [
+   "medio_confirmado": [
     {
-     "nome": "Agente Administrativo",
-     "escolaridade": "medio",
-     "vagas": "8 vagas + CR",
-     "salario": null
-    },
-    {
-     "nome": "Agente de Fiscalização",
-     "escolaridade": "medio",
-     "vagas": "5 vagas + CR",
-     "salario": null
-    },
-    {
-     "nome": "Agente de Suporte Técnico",
-     "escolaridade": "medio",
-     "vagas": "4 vagas + CR",
-     "salario": null
-    },
-    {
-     "nome": "Assistente de S.V.O.",
-     "escolaridade": "medio",
-     "vagas": "2 vagas + CR",
-     "salario": null
+     "nome": "Agente de Fiscalização (5 vagas + CR) / Agente Administrativo (8 vagas + CR)",
+     "vagas": "13 vagas imediatas + CR",
+     "vagas_imediatas": 13,
+     "tem_cr": true,
+     "salario": 6435.59,
+     "salario_detalhe": "Agente de Fiscalização: R$ 4.285,47 base + R$ 2.150,12 VA/VR = R$ 6.435,59 (até R$ 10.078,24 com prêmio de 85%) | Agente Administrativo: R$ 3.714,09 base + R$ 2.150,12 VA/VR = R$ 5.864,21",
+     "carga_horaria": "36h semanais",
+     "regime": "Estatutário",
+     "beneficios": "VA/VR (Vale-alimentação/refeição): R$ 2.150,12/mês + prêmio de produtividade de até 85% (Agente de Fiscalização)",
+     "resumo_conteudo": [
+      "Língua Portuguesa, Matemática e Noções de Informática (padrão INDEPAC)",
+      "Legislação Municipal de Campinas, Estatuto dos Servidores e legislação da SETEC",
+      "Conhecimentos Específicos de Administração Pública, atendimento, redação oficial e arquivologia (Agente Administrativo) ou Posturas Municipais, Poder de Polícia e Fiscalização (Agente de Fiscalização)"
+     ]
     }
    ],
-   "medio_possivel": true,
-   "analise_ia": true
+   "medio_sem_salario": [],
+   "medio_possivel": false
+  },
+  {
+   "url": "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario",
+   "orgao": "TJSP - Tribunal de Justiça do Estado de São Paulo",
+   "titulo": "TJSP abre concursos para Oficial de Justiça e Escrevente Técnico Judiciário",
+   "uf": "SP",
+   "vagas_salario": "132 vagas até R$ 9.856,95",
+   "cargos_resumo": "Oficial de Justiça, Escrevente Técnico Judiciário",
+   "niveis": "Médio / Superior",
+   "salario_max_listagem": 9856.95,
+   "inscricao_ate": "28/10 a 10/12/2026",
+   "cidade": "São Paulo",
+   "km_ribeirao_preto": 289,
+   "km_jarinu": 49,
+   "banca": "VUNESP",
+   "site_banca": "https://www.vunesp.com.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA Nº 02/2026 CONCURSO PÚBLICO",
+    "EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO",
+    "EDITAL COMPLETO Nº 02/2026 CONCURSO PÚBLICO",
+    "EDITAL COMPLETO Nº 01/2026 CONCURSO PÚBLICO"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
+   "data_prova": "14/03/2027",
+   "regime_geral": "Estatutário (Efetivo)",
+   "beneficios_gerais": "VA/VR (Auxílio-alimentação), VT (Auxílio-transporte) e Auxílio-saúde",
+   "jornada_geral": "40 horas semanais",
+   "faixa_salarial": "Até R$ 9.856,95",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [
+    {
+     "nome": "Escrevente Técnico Judiciário",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 6782.54,
+     "salario_detalhe": "R$ 6.782,54 (vencimento base exato) + Auxílios Alimentação, Transporte e Saúde",
+     "carga_horaria": "40h semanais",
+     "regime": "Estatutário",
+     "beneficios": "Auxílio-alimentação (VA/VR), Auxílio-transporte (VT) e Auxílio-saúde",
+     "resumo_conteudo": [
+      "Bloco I — Língua Portuguesa (interpretação, gramática, concordância, regência, crase e redação)",
+      "Bloco II — Conhecimentos em Direito: Direito Penal, Processo Penal, Processo Civil, Constitucional, Administrativo e Normas da Corregedoria Geral da Justiça (NSCGJ)",
+      "Bloco III — Conhecimentos Gerais: Atualidades, Estatuto da Pessoa com Deficiência, Matemática, Raciocínio Lógico e Informática (Windows, Word, Excel, Teams)",
+      "Prova Discursiva (Redação) aplicada no mesmo dia da prova objetiva (14/03/2027)"
+     ]
+    }
+   ],
+   "medio_sem_salario": [],
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065",
@@ -468,22 +787,47 @@
    "niveis": "Fundamental / Médio / Superior",
    "salario_max_listagem": 11065.27,
    "inscricao_ate": "15/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Paraguaçu Paulista",
+   "km_ribeirao_preto": 317,
+   "km_jarinu": 402,
+   "banca": "Instituto IBEPP",
+   "site_banca": "https://www.institutoibepp.com.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065#links",
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/paraguacu-paulista-sp",
+   "data_prova": "13/12/2026",
+   "regime_geral": "Estatutário (Efetivo)",
+   "beneficios_gerais": "Benefícios conforme legislação da Câmara Municipal (ver edital)",
+   "jornada_geral": "20 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 11.065,27",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 11065.27,
-   "medio_confirmado": [],
-   "medio_sem_salario": [
+   "medio_confirmado": [
     {
      "nome": "Agente Administrativo",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 5323.27,
+     "salario_detalhe": "R$ 5.323,27 (vencimento base exato para Ensino Médio)",
+     "carga_horaria": "40h semanais",
+     "regime": "Estatutário",
+     "beneficios": "Conforme legislação da Câmara de Paraguaçu Paulista",
+     "resumo_conteudo": [
+      "Língua Portuguesa (compreensão textual, gramática normativa e redação oficial)",
+      "Matemática e Raciocínio Lógico",
+      "Noções de Informática (Windows, pacote Office, internet e correio eletrônico)",
+      "Conhecimentos Específicos e Legislação: Regimento Interno da Câmara, Lei Orgânica Municipal, Noções de Administração Pública, Licitações (Lei 14.133/2021) e rotinas administrativas"
+     ]
     }
    ],
-   "medio_possivel": true,
-   "analise_ia": true
+   "medio_sem_salario": [],
+   "medio_possivel": false
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114",
@@ -495,67 +839,273 @@
    "niveis": "Médio / Superior",
    "salario_max_listagem": 7114.33,
    "inscricao_ate": "22/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Dois Córregos",
+   "km_ribeirao_preto": 146,
+   "km_jarinu": 188,
+   "banca": "Império Concursos",
+   "site_banca": "https://portal.imperioconcursos.com.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/dois-corregos-sp",
+   "data_prova": "15/11/2026",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios_gerais": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior",
+   "jornada_geral": "20 horas semanais",
+   "faixa_salarial": "Até R$ 7.114,33",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 7114.33,
-   "medio_confirmado": [],
-   "medio_sem_salario": [
+   "medio_confirmado": [
     {
-     "nome": "Oficial de Finanças",
-     "escolaridade": "medio",
-     "vagas": "Cadastro Reserva",
-     "salario": null
-    },
-    {
-     "nome": "Oficial Legislativo",
-     "escolaridade": "medio",
-     "vagas": "Cadastro Reserva",
-     "salario": null
+     "nome": "Oficial Legislativo / Oficial de Finanças",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 6029.83,
+     "salario_detalhe": "R$ 6.029,83 total (R$ 4.879,83 base exato + R$ 1.150,00 Vale-Alimentação)",
+     "carga_horaria": "35h semanais",
+     "regime": "CLT (Celetista)",
+     "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior prevista em lei municipal",
+     "resumo_conteudo": [
+      "Língua Portuguesa, Matemática e Noções de Informática",
+      "Legislação Municipal (Lei Orgânica de Dois Córregos e Regimento Interno da Câmara)",
+      "Conhecimentos Específicos: Administração Pública, Processo Legislativo, Direito Constitucional/Administrativo básico (Oficial Legislativo) ou Contabilidade Pública, Orçamento, LRF e Lei 4.320/64 (Oficial de Finanças)"
+     ]
     }
    ],
-   "medio_possivel": true,
-   "analise_ia": true
+   "medio_sem_salario": [],
+   "medio_possivel": false
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concursos-publicos-com-salarios-de-ate-5565",
-   "orgao": "Prefeitura de Cubatão",
-   "titulo": "Prefeitura de Cubatão - SP abre concursos públicos com salários de até R$ 5.565,00",
+   "url": "https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii",
+   "orgao": "UNESP - Universidade Estadual Paulista",
+   "titulo": "UNESP de Sorocaba - SP abre concurso para Assistente de Suporte Acadêmico II",
    "uf": "SP",
-   "vagas_salario": "56 vagas até R$ 5.565,00",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Médio / Técnico / Superior",
-   "salario_max_listagem": 5565.0,
-   "inscricao_ate": "15/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "vagas_salario": "1 vaga até R$ 6.537,74",
+   "cargos_resumo": "Assistente de Suporte Acadêmico II",
+   "niveis": "Ensino Médio",
+   "salario_max_listagem": 6537.74,
+   "inscricao_ate": "30/10/2026",
+   "cidade": "Sorocaba",
+   "km_ribeirao_preto": 261,
+   "km_jarinu": 85,
+   "banca": "UNESP",
+   "site_banca": "https://inscricoes.unesp.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii#links",
+   "arquivos_edital": [
+    "EDITAL Nº 114/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/sorocaba-sp",
+   "data_prova": "Ver edital de convocação",
+   "regime_geral": "CLT (Celetista — Substituto)",
+   "beneficios_gerais": "VA (Vale-alimentação), VR e VT conforme normas UNESP",
+   "jornada_geral": "40 horas semanais",
+   "faixa_salarial": "Até R$ 6.537,74",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 5565.0,
+   "medio_confirmado": [
+    {
+     "nome": "Assistente de Suporte Acadêmico II — Mecatrônica",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 6537.74,
+     "salario_detalhe": "R$ 6.537,74 (salário base exato)",
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "beneficios": "Vale-alimentação e benefícios UNESP conforme edital",
+     "resumo_conteudo": [
+      "Língua Portuguesa (interpretação de textos, ortografia, morfologia, sintaxe, pontuação)",
+      "Matemática e Raciocínio Lógico (operações, porcentagem, razão e proporção, geometria, lógica proposicional)",
+      "Conhecimentos Específicos em Mecatrônica: Eletrônica analógica e digital, instrumentação de laboratório, sensores e atuadores, CLP, comandos elétricos, pneumática/hidráulica e segurança em laboratórios"
+     ]
+    }
+   ],
+   "medio_sem_salario": [],
+   "medio_possivel": false
+  }
+ ],
+ "nivel_medio_possiveis": [
+  {
+   "url": "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba",
+   "orgao": "Cemmil - Consórcio Intermunicipal Cemmil para o Desenvolvimento Sustentável",
+   "titulo": "Consórcio Cemmil - SP abre processo seletivo com vagas em Carapicuíba",
+   "uf": "SP",
+   "vagas_salario": "28 vagas até R$ 6.889,64",
+   "cargos_resumo": "Vários Cargos",
+   "niveis": "Fundamental / Médio / Superior",
+   "salario_max_listagem": 6889.64,
+   "inscricao_ate": "12/11/2026",
+   "cidade": "Carapicuíba",
+   "km_ribeirao_preto": 280,
+   "km_jarinu": 48,
+   "banca": "Consultar edital",
+   "site_banca": "https://www.sigmarh.com.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA PARA PROCESSO SELETIVO Nº 014/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/carapicuiba-sp",
+   "data_prova": "06/12/2026",
+   "regime_geral": "Processo Seletivo / Temporário",
+   "beneficios_gerais": "Auxílio-transporte e vale-alimentação · Vale-alimentação de R$ 522,30, auxílio-transporte de R$ 273,69, adicional de insalubridade para Coveiro/Sepulta",
+   "jornada_geral": "40 a 44 horas semanais",
+   "faixa_salarial": "Até R$ 6.889,64",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
+   "fisio_linhas": [],
+   "fisio": false,
    "medio_confirmado": [],
    "medio_sem_salario": [
     {
-     "nome": "TNM - Almoxarife",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "TNM - Técnico de Serviços Administrativos",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Guarda Civil Municipal",
-     "escolaridade": "medio",
-     "vagas": "13 vagas",
-     "salario": null
+     "nome": "Auxiliar Administrativo (Carapicuíba)",
+     "vagas": "5 vagas imediatas",
+     "vagas_imediatas": 5,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 6.889,64",
+     "carga_horaria": "40 a 44 horas semanais",
+     "regime": "Processo Seletivo / Temporário",
+     "beneficios": "Auxílio-transporte e vale-alimentação · Vale-alimentação de R$ 522,30, auxílio-transporte de R$ 273,69, adicional de insalubridade para Coveiro/Sepulta",
+     "resumo_conteudo": [
+      "Língua Portuguesa: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Auxiliar Administrativo (Carapicuíba)): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     }
    ],
    "medio_possivel": true,
-   "analise_ia": true
+   "salario_max": 6889.64
+  },
+  {
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600",
+   "orgao": "Prefeitura de Embaúba",
+   "titulo": "Prefeitura de Embaúba - SP abre concurso público com salários de até R$ 5.600,00",
+   "uf": "SP",
+   "vagas_salario": "51 vagas até R$ 5.600,00",
+   "cargos_resumo": "Vários Cargos",
+   "niveis": "Fundamental / Médio / Técnico / Superior",
+   "salario_max_listagem": 5600.0,
+   "inscricao_ate": "05/11/2026",
+   "cidade": "Embaúba",
+   "km_ribeirao_preto": 108,
+   "km_jarinu": 321,
+   "banca": "Prefeitura Municipal de Embaúba",
+   "site_banca": "https://www.embauba.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600#links",
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/embauba-sp",
+   "data_prova": "13/12/2026",
+   "regime_geral": "Estatutário",
+   "beneficios_gerais": "Consultar edital (não detalhado no resumo)",
+   "jornada_geral": "20 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 5.600,00",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Agente de Fiscalização Sanitária e Epidemiológica",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.600,00",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Embaúba): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente de Fiscalização Sanitária e Epidemiológica): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
+    },
+    {
+     "nome": "Almoxarife",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.600,00",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Embaúba): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Almoxarife): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
+    },
+    {
+     "nome": "Escriturário",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.600,00",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Embaúba): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Escriturário): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
+    },
+    {
+     "nome": "Agente Administrativo",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.600,00",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Embaúba): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Administrativo): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
+    },
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "vagas": "2 vagas imediatas",
+     "vagas_imediatas": 2,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.600,00",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Embaúba): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Monitor de Transporte Escolar): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
+    }
+   ],
+   "medio_possivel": true,
+   "salario_max": 5600.0
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352",
@@ -567,94 +1117,65 @@
    "niveis": "Médio / Superior",
    "salario_max_listagem": 5352.38,
    "inscricao_ate": "23/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Guzolândia",
+   "km_ribeirao_preto": 302,
+   "km_jarinu": 489,
+   "banca": "Município de Guzolândia",
+   "site_banca": "https://guzolandia.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352#links",
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/guzolandia-sp",
+   "data_prova": "01/11/2026",
+   "regime_geral": "Processo Seletivo / Temporário",
+   "beneficios_gerais": "Consultar edital (não detalhado no resumo)",
+   "jornada_geral": "30 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 5.352,38",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 5352.38,
    "medio_confirmado": [],
    "medio_sem_salario": [
     {
      "nome": "Auxiliar de Desenvolvimento Infantil - ADI",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.352,38",
+     "carga_horaria": "30 a 40 horas semanais",
+     "regime": "Processo Seletivo / Temporário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Município de Guzolândia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Auxiliar de Desenvolvimento Infantil - ADI): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Monitor de Transporte Escolar",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.352,38",
+     "carga_horaria": "30 a 40 horas semanais",
+     "regime": "Processo Seletivo / Temporário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Município de Guzolândia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Monitor de Transporte Escolar): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     }
    ],
    "medio_possivel": true,
-   "analise_ia": true
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044",
-   "orgao": "Prefeitura de Lençóis Paulista",
-   "titulo": "Prefeitura de Lençóis Paulista - SP abre concurso público com salários de até R$ 5.044,35",
-   "uf": "SP",
-   "vagas_salario": "14 vagas até R$ 5.044,35",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Superior",
-   "salario_max_listagem": 5044.35,
-   "inscricao_ate": "15/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 5044.35,
-   "medio_confirmado": [],
-   "medio_sem_salario": [
-    {
-     "nome": "Agente Comunitário de Saúde - área 24",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Agente de Vigilância Eletrônica",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Monitor de Creche",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    }
-   ],
-   "medio_possivel": true,
-   "analise_ia": true
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890",
-   "orgao": "Prefeitura de Lorena",
-   "titulo": "Prefeitura de Lorena - SP abre concurso com salários de até R$ 8.890,46",
-   "uf": "SP",
-   "vagas_salario": "3 vagas até R$ 8.890,46",
-   "cargos_resumo": "Agente de Atendimento Especial, Médico Psiquiatra, Tesoureiro",
-   "niveis": "Médio / Superior",
-   "salario_max_listagem": 8890.46,
-   "inscricao_ate": "03/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [],
-   "fisio": false,
-   "salario_max": 8890.46,
-   "medio_confirmado": [],
-   "medio_sem_salario": [
-    {
-     "nome": "Agente de Atendimento Especial",
-     "escolaridade": "medio",
-     "vagas": "1 vaga + CR",
-     "salario": null
-    }
-   ],
-   "medio_possivel": true,
-   "analise_ia": true
+   "salario_max": 5352.38
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189",
@@ -666,234 +1187,409 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 8189.58,
    "inscricao_ate": "08/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Macedônia",
+   "km_ribeirao_preto": 273,
+   "km_jarinu": 487,
+   "banca": "Prefeitura Municipal de Macedônia",
+   "site_banca": "https://www.macedonia.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 002/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/macedonia-sp",
+   "data_prova": "22/11/2026",
+   "regime_geral": "Estatutário",
+   "beneficios_gerais": "Consultar edital (não detalhado no resumo)",
+   "jornada_geral": "20 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 8.189,58",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 8189.58,
    "medio_confirmado": [],
    "medio_sem_salario": [
     {
      "nome": "Agente de Informação, Educação e Comunicação (IEC) no Controle de Vetores",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente de Informação, Educação e Comunicação (IEC) no Controle de Vetores): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Assistente de Administração",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Assistente de Administração): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Auxiliar de Administração I",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Auxiliar de Administração I): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Auxiliar de Lançadoria",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Auxiliar de Lançadoria): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Auxiliar de Tesouraria",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Auxiliar de Tesouraria): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Entrevistador do Cadastro Único",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Entrevistador do Cadastro Único): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Escriturário I",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Escriturário I): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Lançador Fiscal",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Lançador Fiscal): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Monitor de Ônibus Escolar",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Monitor de Ônibus Escolar): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Orientador Social",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Orientador Social): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Ouvidor",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Ouvidor): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Profissional de Apoio Escolar",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Profissional de Apoio Escolar): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Recepcionista",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Recepcionista): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Secretário da Junta de Serviço Militar",
-     "escolaridade": "medio",
-     "vagas": null,
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.189,58",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Secretário da Junta de Serviço Militar): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     }
    ],
    "medio_possivel": true,
-   "analise_ia": true
+   "salario_max": 8189.58
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397",
-   "orgao": "Prefeitura de Piedade",
-   "titulo": "Prefeitura de Piedade - SP publica edital de concurso público com salários de até R$ 17.397,46",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815",
+   "orgao": "Prefeitura de Morro Agudo",
+   "titulo": "Prefeitura de Morro Agudo - SP abre concurso com salários de até R$ 5.815,68",
    "uf": "SP",
-   "vagas_salario": "20 vagas até R$ 17.397,46",
+   "vagas_salario": "7 vagas até R$ 5.815,68",
    "cargos_resumo": "Vários Cargos",
    "niveis": "Fundamental / Médio / Superior",
-   "salario_max_listagem": 17397.46,
-   "inscricao_ate": "09/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "salario_max_listagem": 5815.68,
+   "inscricao_ate": "05/11/2026",
+   "cidade": "Morro Agudo",
+   "km_ribeirao_preto": 55,
+   "km_jarinu": 298,
+   "banca": "Prefeitura Municipal de Morro Agudo",
+   "site_banca": "https://www.morroagudo.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/morro-agudo-sp",
+   "data_prova": "29/11/2026",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Auxílio-alimentação de R$ 1.100,00, plano de saúde e complemento salarial quando necessário, conforme a legislação",
+   "jornada_geral": "30 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 5.815,68",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 17397.46,
    "medio_confirmado": [],
    "medio_sem_salario": [
     {
-     "nome": "Monitor de Transporte Escolar",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    }
-   ],
-   "medio_possivel": true,
-   "analise_ia": true
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537",
-   "orgao": "Prefeitura de Taquarituba",
-   "titulo": "Prefeitura de Taquarituba - SP divulga retificação do concurso público com salários de até R$ 22.537,36",
-   "uf": "SP",
-   "vagas_salario": "22 vagas até R$ 22.537,36",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 22537.36,
-   "inscricao_ate": "23/10/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
-   "fisio_linhas": [
-    "Fisioterapeuta (CR)"
-   ],
-   "fisio": true,
-   "salario_max": 22537.36,
-   "medio_confirmado": [],
-   "medio_sem_salario": [
+     "nome": "Escriturário I",
+     "vagas": "1 vaga imediata + CR",
+     "vagas_imediatas": 1,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.815,68",
+     "carga_horaria": "30 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Auxílio-alimentação de R$ 1.100,00, plano de saúde e complemento salarial quando necessário, conforme a legislação",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Morro Agudo): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Escriturário I): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
+    },
     {
      "nome": "Inspetor de Alunos",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.815,68",
+     "carga_horaria": "30 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Auxílio-alimentação de R$ 1.100,00, plano de saúde e complemento salarial quando necessário, conforme a legislação",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Morro Agudo): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Inspetor de Alunos): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
-     "nome": "Auxiliar Administrativo",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Agente de Fiscalização de Atividades Urbanas",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Agente Comunitário de Saúde - ESF Gino Chamorro/Bairro Parque São Roque Área 01",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Agente Comunitário de Saúde - ESF Juca Pena/Bairro Pedro Barros Área 06",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Agente Comunitário de Saúde - UBS Vila Santa Rita de Cássia Área 07",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Motorista",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Auxiliar de Educador/Cuidador",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Carpinteiro",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Pedreiro",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Operador de Máquinas Rodoviárias",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Encanador Hidráulico",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Monitor de Artes",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Fiscal de Higiene",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "nome": "Agente Comunitário de Saúde",
+     "vagas": "1 vaga imediata + CR",
+     "vagas_imediatas": 1,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.815,68",
+     "carga_horaria": "30 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Auxílio-alimentação de R$ 1.100,00, plano de saúde e complemento salarial quando necessário, conforme a legislação",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Morro Agudo): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Comunitário de Saúde): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     }
    ],
    "medio_possivel": true,
-   "analise_ia": true
+   "salario_max": 5815.68
+  },
+  {
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas",
+   "orgao": "Prefeitura de Murutinga do Sul",
+   "titulo": "Prefeitura de Murutinga do Sul - SP publica edital de concurso com 15 vagas imediatas",
+   "uf": "SP",
+   "vagas_salario": "15 vagas até R$ 5.118,20",
+   "cargos_resumo": "Vários Cargos",
+   "niveis": "Fundamental / Médio / Superior",
+   "salario_max_listagem": 5118.2,
+   "inscricao_ate": "30/10 a 16/11/2026",
+   "cidade": "Murutinga do Sul",
+   "km_ribeirao_preto": 360,
+   "km_jarinu": 524,
+   "banca": "Prefeitura Municipal de Murutinga do Sul",
+   "site_banca": "https://www.murutingadosul.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas#links",
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/murutinga-do-sul-sp",
+   "data_prova": "06/12/2026",
+   "regime_geral": "Estatutário",
+   "beneficios_gerais": "Vale-alimentação de R$ 1.090,10. Para alguns cargos haverá abono salarial",
+   "jornada_geral": "30 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 5.118,20",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_sem_salario": [
+    {
+     "nome": "Escriturário",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.118,20",
+     "carga_horaria": "30 a 40 horas semanais",
+     "regime": "Estatutário",
+     "beneficios": "Vale-alimentação de R$ 1.090,10. Para alguns cargos haverá abono salarial",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Murutinga do Sul): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Escriturário): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
+    }
+   ],
+   "medio_possivel": true,
+   "salario_max": 5118.2
   },
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
@@ -905,115 +1601,289 @@
    "niveis": "Fundamental / Médio / Técnico / Superior",
    "salario_max_listagem": 5209.01,
    "inscricao_ate": "21/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "cidade": "Tuiuti",
+   "km_ribeirao_preto": 217,
+   "km_jarinu": 32,
+   "banca": "Prefeitura Municipal de Tuiuti",
+   "site_banca": "https://www.tuiuti.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva#links",
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/tuiuti-sp",
+   "data_prova": "20/12/2026",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Consultar edital (não detalhado no resumo)",
+   "jornada_geral": "20 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 5.209,01",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 5209.01,
    "medio_confirmado": [],
    "medio_sem_salario": [
     {
      "nome": "Agente Comunitário de Saúde, Centro",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Comunitário de Saúde, Centro): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Agente Comunitário de Saúde, Godoy/Arraial",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Comunitário de Saúde, Godoy/Arraial): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Agente Comunitário de Saúde, Lima Rico/Pantano",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Comunitário de Saúde, Lima Rico/Pantano): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Agente Comunitário de Saúde, Passa Três/Machados/Caetanos/Rio Abaixo",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Comunitário de Saúde, Passa Três/Machados/Caetanos/Rio Abaixo): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Agente de Controle de Endemia",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente de Controle de Endemia): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Almoxarife",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Almoxarife): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Assistente Administrativo",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Assistente Administrativo): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Auxiliar Administrativo",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Auxiliar Administrativo): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Merendeira",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Merendeira): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Recepcionista",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Recepcionista): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Servente",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Servente): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     },
     {
      "nome": "Servidor Braçal",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 5.209,01",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Consultar edital (não detalhado no resumo)",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Servidor Braçal): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     }
    ],
    "medio_possivel": true,
-   "analise_ia": true
+   "salario_max": 5209.01
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102",
-   "orgao": "PRUDENPREV - Sistema de Previdência do Município de Presidente Prudente",
-   "titulo": "PRUDENPREV - SP abre concurso público com salários de até R$ 11.102,06",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377",
+   "orgao": "Prefeitura de Votorantim",
+   "titulo": "Prefeitura de Votorantim - SP abre concursos públicos com salários de até R$ 8.377,33",
    "uf": "SP",
-   "vagas_salario": "10 vagas até R$ 11.102,06",
+   "vagas_salario": "37 vagas até R$ 8.377,33",
    "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 11102.06,
-   "inscricao_ate": "10/11/2026",
-   "first_seen": "2026-10-21",
-   "novo": true,
+   "niveis": "Fundamental / Médio / Superior",
+   "salario_max_listagem": 8377.33,
+   "inscricao_ate": "16/11/2026",
+   "cidade": "Votorantim",
+   "km_ribeirao_preto": 267,
+   "km_jarinu": 88,
+   "banca": "Prefeitura Municipal de Votorantim",
+   "site_banca": "https://www.votorantim.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377#links",
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO 01/2026",
+    "EDITAL DE CONCURSO PÚBLICO 02/2026"
+   ],
+   "link_provas": "https://www.pciconcursos.com.br/provas/votorantim-sp",
+   "data_prova": "13/12/2026",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Vale-alimentação de R$ 1.100,00.",
+   "jornada_geral": "27 a 40 horas semanais",
+   "faixa_salarial": "Até R$ 8.377,33",
+   "first_seen_ts": "2026-10-20T07:00:00-03:00",
+   "is_baseline": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
-   "salario_max": 11102.06,
    "medio_confirmado": [],
    "medio_sem_salario": [
     {
-     "nome": "Escriturário",
-     "escolaridade": "medio",
-     "vagas": "5 vagas AC + 1 vaga NI",
-     "salario": null
+     "nome": "Inspetor de Alunos",
+     "vagas": "5 vagas imediatas + CR",
+     "vagas_imediatas": 5,
+     "tem_cr": true,
+     "salario": null,
+     "salario_detalhe": "Faixa do edital: Até R$ 8.377,33",
+     "carga_horaria": "27 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "beneficios": "Vale-alimentação de R$ 1.100,00.",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Votorantim): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Inspetor de Alunos): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão"
+     ]
     }
    ],
    "medio_possivel": true,
-   "analise_ia": true
+   "salario_max": 8377.33
   }
  ]
 }

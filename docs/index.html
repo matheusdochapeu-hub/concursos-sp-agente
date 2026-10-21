@@ -2,407 +2,2316 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Concursos SP">
+<meta name="description" content="Concursos abertos em São Paulo para Fisioterapeuta/Fisioterapia e Nível Médio acima de R$ 5.000,00 com salário exato, VA/VR/VT, carga horária, regime e data da prova.">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
 <title>Concursos SP — Fisioterapia &amp; Nível Médio</title>
 <style>
-  :root { --bg:#0f172a; --card:#1e293b; --muted:#94a3b8; --txt:#e2e8f0; --acc:#22d3ee; --ok:#4ade80; --warn:#fbbf24; }
+  :root {
+    --bg:#0b1120; --surface:#111827; --card:#1e293b; --card2:#0f172a;
+    --border:#334155; --muted:#94a3b8; --txt:#f1f5f9;
+    --acc:#22d3ee; --ok:#4ade80; --warn:#fbbf24; --new:#f43f5e;
+  }
   * { box-sizing:border-box; }
-  body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--txt); }
-  .top { padding:28px 20px 12px; max-width:1200px; margin:auto; }
-  h1 { margin:0 0 6px; font-size:1.6rem; }
-  .meta { color:var(--muted); font-size:.9rem; }
-  .stats { display:flex; gap:12px; flex-wrap:wrap; margin:16px 0; }
-  .stat { background:var(--card); padding:10px 16px; border-radius:10px; }
-  .stat b { font-size:1.4rem; display:block; }
-  nav { display:flex; gap:8px; flex-wrap:wrap; max-width:1200px; margin:auto; padding:0 20px; }
-  nav button { background:var(--card); color:var(--txt); border:1px solid #334155; padding:10px 16px; border-radius:999px; cursor:pointer; font-size:.95rem; }
-  nav button.ativo { background:var(--acc); color:#0f172a; border-color:var(--acc); font-weight:600; }
-  .filtro { max-width:1200px; margin:14px auto 0; padding:0 20px; }
-  .filtro input { width:100%; padding:10px 14px; border-radius:10px; border:1px solid #334155; background:#0b1222; color:var(--txt); font-size:1rem; }
-  main { max-width:1200px; margin:auto; padding:10px 20px 40px; }
-  .tab-panel { display:none; } .tab-panel.ativo { display:block; }
-  h2 small { color:var(--muted); font-weight:400; }
-  .desc { color:var(--muted); margin-top:-6px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:14px; }
-  .card { background:var(--card); border-radius:14px; padding:16px; display:flex; flex-direction:column; gap:10px; border:1px solid #334155; }
-  .card h3 { margin:0; font-size:1.08rem; } .card h3 a { color:var(--acc); text-decoration:none; }
+  body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--txt); line-height:1.45; }
+  .container { max-width:1280px; margin:auto; padding:0 18px; }
+
+  /* Cabeçalho e Botão PWA */
+  header.app-bar { padding:22px 0 14px; border-bottom:1px solid #1e293b; background:linear-gradient(180deg,#0f172a 0%,#0b1120 100%); }
+  .bar-row { display:flex; justify-content:space-between; align-items:flex-start; gap:14px; flex-wrap:wrap; }
+  h1 { margin:0 0 4px; font-size:1.55rem; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .meta { color:var(--muted); font-size:.88rem; }
+  .meta a { color:var(--acc); text-decoration:none; }
+  .btn-pwa {
+    background:linear-gradient(135deg,#22d3ee,#38bdf8); color:#082f49; border:none;
+    padding:10px 18px; border-radius:999px; font-weight:700; font-size:.92rem;
+    cursor:pointer; display:inline-flex; align-items:center; gap:8px;
+    box-shadow:0 4px 14px rgba(34,211,238,.25); transition:transform .15s;
+  }
+  .btn-pwa:hover { transform:translateY(-1px); }
+
+  /* Estatísticas */
+  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px; margin:16px 0 6px; }
+  .stat { background:var(--card); padding:12px 15px; border-radius:12px; border:1px solid var(--border); }
+  .stat b { font-size:1.45rem; display:block; color:var(--acc); }
+  .stat span { font-size:.83rem; color:var(--muted); }
+
+  /* Navegação por Abas */
+  nav.tabs { display:flex; gap:8px; flex-wrap:wrap; margin:16px 0 12px; }
+  nav.tabs button {
+    background:var(--card); color:var(--txt); border:1px solid var(--border);
+    padding:11px 18px; border-radius:999px; cursor:pointer; font-size:.94rem;
+    transition:all .15s;
+  }
+  nav.tabs button.ativo { background:var(--acc); color:#082f49; border-color:var(--acc); font-weight:700; }
+
+  /* Painel de Filtros */
+  .filtros-panel {
+    background:var(--surface); border:1px solid var(--border); border-radius:14px;
+    padding:14px 16px; margin-bottom:18px;
+  }
+  .filtros-head { display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:10px; }
+  .filtros-head strong { font-size:.95rem; color:var(--acc); }
+  .filtros-actions { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .chk-novo { display:inline-flex; align-items:center; gap:6px; font-size:.86rem; cursor:pointer; background:#1e293b; padding:6px 12px; border-radius:999px; border:1px solid var(--border); }
+  .btn-limpar { background:transparent; color:var(--muted); border:1px solid var(--border); padding:6px 12px; border-radius:8px; cursor:pointer; font-size:.83rem; }
+  .btn-limpar:hover { color:var(--txt); border-color:var(--acc); }
+  .filtros-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:10px; }
+  .f-item { display:flex; flex-direction:column; gap:4px; }
+  .f-item label { font-size:.76rem; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.03em; }
+  .f-item input, .f-item select {
+    width:100%; padding:9px 11px; border-radius:9px; border:1px solid var(--border);
+    background:var(--card2); color:var(--txt); font-size:.9rem;
+  }
+  .f-item input:focus, .f-item select:focus { outline:none; border-color:var(--acc); }
+
+  /* Seções e Grid de Cards */
+  main { padding-bottom:50px; }
+  .tab-panel { display:none; }
+  .tab-panel.ativo { display:block; }
+  .sec-head h2 { margin:8px 0 4px; font-size:1.25rem; }
+  .sec-head h2 small { color:var(--muted); font-weight:400; }
+  .desc { color:var(--muted); margin:0 0 14px; font-size:.9rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(380px,1fr)); gap:16px; }
+  @media (max-width:480px) { .grid { grid-template-columns:1fr; } }
+
+  /* Card Rico */
+  .card {
+    background:var(--card); border-radius:16px; padding:16px;
+    display:flex; flex-direction:column; gap:12px;
+    border:1px solid var(--border); box-shadow:0 4px 16px rgba(0,0,0,.22);
+  }
+  .head-top { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+  .card h3 { margin:0; font-size:1.1rem; line-height:1.3; }
+  .card h3 a { color:var(--acc); text-decoration:none; }
   .card h3 a:hover { text-decoration:underline; }
-  .titulo { margin:4px 0 0; color:var(--muted); font-size:.88rem; }
-  .cargos { margin:0; padding-left:18px; font-size:.92rem; line-height:1.45; }
-  .card footer { display:flex; flex-direction:column; gap:3px; font-size:.85rem; color:var(--muted); margin-top:auto; }
-  .prazo b { color:var(--warn); }
-  .badge.novo { background:var(--ok); color:#052e16; font-size:.7rem; padding:2px 7px; border-radius:6px; vertical-align:middle; font-weight:700; }
-  .alerta { background:#422006; border:1px solid var(--warn); color:#fde68a; padding:10px 14px; border-radius:10px; margin:10px 0; font-size:.9rem; }
-  .vazio { color:var(--muted); }
-  a.fonte { color:var(--acc); }
+  .badge-novo {
+    background:linear-gradient(135deg,#f43f5e,#fb7185); color:#fff;
+    font-size:.72rem; padding:4px 9px; border-radius:999px; font-weight:800;
+    white-space:nowrap; letter-spacing:.02em; box-shadow:0 2px 10px rgba(244,63,94,.4);
+    animation:pulso 2s infinite;
+  }
+  @keyframes pulso { 0%,100% { transform:scale(1); } 50% { transform:scale(1.04); } }
+
+  .loc-row { display:flex; gap:6px; flex-wrap:wrap; margin-top:6px; }
+  .chip-loc { background:#082f49; color:#7dd3fc; border:1px solid #0369a1; font-size:.76rem; padding:2px 9px; border-radius:999px; font-weight:600; }
+  .chip-dist { background:var(--card2); color:var(--muted); border:1px solid var(--border); font-size:.75rem; padding:2px 8px; border-radius:999px; }
+  .titulo { margin:6px 0 0; color:var(--muted); font-size:.84rem; }
+
+  .cargo-banner {
+    background:var(--card2); border:1px solid #1e3a5f; border-radius:10px;
+    padding:9px 12px; display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap;
+  }
+  .cargo-nome { font-size:.94rem; color:#e0f2fe; }
+  .badge-vagas { background:#064e3b; color:#6ee7b7; font-size:.76rem; padding:3px 9px; border-radius:999px; font-weight:700; }
+
+  .info-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:8px; }
+  @media (max-width:440px) { .info-grid { grid-template-columns:1fr; } }
+  .info-box {
+    background:var(--card2); border:1px solid #263349; border-radius:10px;
+    padding:9px 11px; display:flex; flex-direction:column; gap:2px;
+  }
+  .info-box .lbl { font-size:.72rem; color:var(--muted); text-transform:uppercase; letter-spacing:.02em; }
+  .info-box .val { font-size:1.1rem; color:var(--ok); }
+  .info-box .val-sm { font-size:.88rem; color:var(--txt); }
+  .info-box .sub { font-size:.75rem; color:var(--muted); }
+  .destaque-sal { border-color:#14532d; background:rgba(20,83,45,.18); }
+  .destaque-prova .val-sm { color:#38bdf8; }
+  .destaque-prazo .val-sm { color:var(--warn); }
+
+  /* Botões de Link e Conteúdo Programático */
+  .links-row { display:flex; gap:7px; flex-wrap:wrap; }
+  .btn-link {
+    background:var(--card2); color:var(--txt); border:1px solid var(--border);
+    padding:6px 11px; border-radius:8px; font-size:.8rem; text-decoration:none;
+    font-weight:600; transition:border-color .15s;
+  }
+  .btn-link:hover { border-color:var(--acc); color:var(--acc); }
+  .btn-link.primario { background:#083344; color:#67e8f9; border-color:#0e7490; }
+
+  details.prog-box {
+    background:var(--card2); border:1px solid var(--border); border-radius:10px;
+    padding:8px 12px; margin-top:auto;
+  }
+  details.prog-box summary { cursor:pointer; font-size:.85rem; font-weight:600; color:var(--acc); }
+  .prog-body { margin-top:8px; font-size:.83rem; color:#cbd5e1; }
+  .prog-arq { margin:0 0 6px; font-size:.79rem; color:var(--muted); }
+  .prog-body ul { margin:0 0 8px; padding-left:18px; display:flex; flex-direction:column; gap:4px; }
+  .prog-cta { display:inline-block; color:var(--ok); font-weight:600; text-decoration:none; font-size:.82rem; }
+  .prog-cta:hover { text-decoration:underline; }
+
+  .vazio { color:var(--muted); text-align:center; padding:30px 10px; font-size:.98rem; }
+
+  /* Modal de instalação PWA */
+  .modal-bg {
+    position:fixed; inset:0; background:rgba(0,0,0,.7); display:none;
+    align-items:center; justify-content:center; padding:18px; z-index:999;
+  }
+  .modal-bg.aberto { display:flex; }
+  .modal {
+    background:var(--card); border:1px solid var(--border); border-radius:16px;
+    max-width:460px; width:100%; padding:20px;
+  }
+  .modal h3 { margin:0 0 10px; color:var(--acc); }
+  .modal ol { padding-left:20px; font-size:.92rem; line-height:1.55; }
+  .modal button {
+    margin-top:12px; width:100%; padding:10px; border-radius:10px;
+    border:none; background:var(--acc); color:#082f49; font-weight:700; cursor:pointer;
+  }
 </style>
 </head>
 <body>
-  <div class="top">
-    <h1>🔎 Concursos em São Paulo</h1>
-    <div class="meta">Atualizado em <b>21/10/2026 14:53</b> (horário de Brasília) · Fonte:
-      <a class="fonte" href="https://www.pciconcursos.com.br/concursos/sudeste/" target="_blank" rel="noopener">PCI Concursos — Sudeste</a></div>
-    <div class="stats">
-      <div class="stat"><b>160</b>concursos abertos em SP</div>
-      <div class="stat"><b>12</b>com Fisioterapia</div>
-      <div class="stat"><b>2</b>nível médio &gt; R$ 5 mil</div>
-      <div class="stat"><b>12</b>possíveis (verificar)</div>
+  <header class="app-bar">
+    <div class="container">
+      <div class="bar-row">
+        <div>
+          <h1>🔎 Concursos São Paulo — Fisioterapia &amp; Nível Médio</h1>
+          <div class="meta">
+            Atualizado em <b>21/10/2026 15:20</b> (Brasília) · Fonte:
+            <a href="https://www.pciconcursos.com.br/concursos/sudeste/" target="_blank" rel="noopener">PCI Concursos — Sudeste (SP)</a>
+          </div>
+        </div>
+        <button id="btnInstall" class="btn-pwa" type="button">📲 Baixar App (PWA)</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b>160</b><span>concursos abertos em SP</span></div>
+        <div class="stat"><b>12</b><span>vagas de Fisioterapia</span></div>
+        <div class="stat"><b>5</b><span>Nível Médio &gt; R$ 5.000</span></div>
+        <div class="stat"><b>8</b><span>Possíveis (verificar edital)</span></div>
+        <div class="stat"><b id="statNovos">0</b><span>Novos (últimas 24h)</span></div>
+      </div>
     </div>
-    
-  </div>
-  <nav>
-    <button data-tab="fisio" class="ativo">🩺 Fisioterapia (12)</button>
-    <button data-tab="medio">💰 Nível médio &gt; R$ 5.000 (2)</button>
-    <button data-tab="possiveis">🔍 Possíveis — verificar edital (12)</button>
-  </nav>
-  <div class="filtro"><input id="q" type="search" placeholder="Filtrar por cidade, órgão ou cargo..."></div>
-  <main>
-    
-  <section id="fisio" class="tab-panel">
-    <h2>Fisioterapeuta / Fisioterapia <small>(12)</small></h2>
-    <p class="desc">Concursos de SP cuja notícia cita cargos de fisioterapia.</p>
+  </header>
+
+  <div class="container">
+    <nav class="tabs">
+      <button data-tab="fisio" class="ativo">🩺 Fisioterapeuta / Fisioterapia (<span class="cnt">12</span>)</button>
+      <button data-tab="medio">💰 Nível Médio &gt; R$ 5.000 (<span class="cnt">5</span>)</button>
+      <button data-tab="possiveis">🔍 Possíveis — Nível Médio (<span class="cnt">8</span>)</button>
+    </nav>
+
+    <section class="filtros-panel" aria-label="Filtros de concursos">
+      <div class="filtros-head">
+        <strong>🎛️ Filtrar e Ordenar Concursos</strong>
+        <div class="filtros-actions">
+          <label class="chk-novo">
+            <input type="checkbox" id="fNovo"> ✨ Apenas novos (últimas 24h)
+          </label>
+          <button type="button" id="btnLimpar" class="btn-limpar">Limpar filtros</button>
+        </div>
+      </div>
+      <div class="filtros-grid">
+        <div class="f-item">
+          <label for="fBusca">🔍 Cidade, Órgão ou Cargo</label>
+          <input id="fBusca" type="search" placeholder="Ex.: Ribeirão, Matão, IBAM...">
+        </div>
+        <div class="f-item">
+          <label for="fCidade">🏙️ Cidade (SP)</label>
+          <select id="fCidade"><option value="">Todas as cidades de SP</option><option value="Campinas">Campinas (208 km Rib. Preto · 41 km Jarinu)</option><option value="Carapicuíba">Carapicuíba (280 km Rib. Preto · 48 km Jarinu)</option><option value="Dois Córregos">Dois Córregos (146 km Rib. Preto · 188 km Jarinu)</option><option value="Embaúba">Embaúba (108 km Rib. Preto · 321 km Jarinu)</option><option value="Floreal">Floreal (249 km Rib. Preto · 445 km Jarinu)</option><option value="Guarulhos">Guarulhos (286 km Rib. Preto · 44 km Jarinu)</option><option value="Guzolândia">Guzolândia (302 km Rib. Preto · 489 km Jarinu)</option><option value="Holambra">Holambra (181 km Rib. Preto · 61 km Jarinu)</option><option value="Jaborandi">Jaborandi (82 km Rib. Preto · 320 km Jarinu)</option><option value="Macedônia">Macedônia (273 km Rib. Preto · 487 km Jarinu)</option><option value="Matão">Matão (75 km Rib. Preto · 237 km Jarinu)</option><option value="Morro Agudo">Morro Agudo (55 km Rib. Preto · 298 km Jarinu)</option><option value="Murutinga do Sul">Murutinga do Sul (360 km Rib. Preto · 524 km Jarinu)</option><option value="Paraguaçu Paulista">Paraguaçu Paulista (317 km Rib. Preto · 402 km Jarinu)</option><option value="Paulo de Faria">Paulo de Faria (208 km Rib. Preto · 440 km Jarinu)</option><option value="Porto Feliz">Porto Feliz (229 km Rib. Preto · 82 km Jarinu)</option><option value="Praia Grande">Praia Grande (347 km Rib. Preto · 106 km Jarinu)</option><option value="Sorocaba">Sorocaba (261 km Rib. Preto · 85 km Jarinu)</option><option value="São Paulo">São Paulo (289 km Rib. Preto · 49 km Jarinu)</option><option value="Taquaritinga">Taquaritinga (77 km Rib. Preto · 263 km Jarinu)</option><option value="Taquarituba">Taquarituba (301 km Rib. Preto · 261 km Jarinu)</option><option value="Tarumã">Tarumã (335 km Rib. Preto · 396 km Jarinu)</option><option value="Tuiuti">Tuiuti (217 km Rib. Preto · 32 km Jarinu)</option><option value="Votorantim">Votorantim (267 km Rib. Preto · 88 km Jarinu)</option></select>
+        </div>
+        <div class="f-item">
+          <label for="fKmRp">📍 Proximidade de Ribeirão Preto/SP</label>
+          <select id="fKmRp">
+            <option value="">Qualquer distância</option>
+            <option value="50">Até 50 km de Ribeirão Preto</option>
+            <option value="100">Até 100 km de Ribeirão Preto</option>
+            <option value="150">Até 150 km de Ribeirão Preto</option>
+            <option value="220">Até 220 km de Ribeirão Preto</option>
+            <option value="300">Até 300 km de Ribeirão Preto</option>
+            <option value="400">Até 400 km de Ribeirão Preto</option>
+          </select>
+        </div>
+        <div class="f-item">
+          <label for="fKmJa">📍 Proximidade de Jarinu/SP</label>
+          <select id="fKmJa">
+            <option value="">Qualquer distância</option>
+            <option value="50">Até 50 km de Jarinu</option>
+            <option value="100">Até 100 km de Jarinu</option>
+            <option value="150">Até 150 km de Jarinu</option>
+            <option value="250">Até 250 km de Jarinu</option>
+            <option value="350">Até 350 km de Jarinu</option>
+          </select>
+        </div>
+        <div class="f-item">
+          <label for="fSalario">💵 Salário Bruto Mínimo</label>
+          <select id="fSalario">
+            <option value="0">Qualquer valor</option>
+            <option value="2500">A partir de R$ 2.500,00</option>
+            <option value="3500">A partir de R$ 3.500,00</option>
+            <option value="4000">A partir de R$ 4.000,00</option>
+            <option value="4500">A partir de R$ 4.500,00</option>
+            <option value="5000">A partir de R$ 5.000,00</option>
+            <option value="6000">A partir de R$ 6.000,00</option>
+            <option value="8000">A partir de R$ 8.000,00</option>
+          </select>
+        </div>
+        <div class="f-item">
+          <label for="fVagas">👥 Número de Vagas</label>
+          <select id="fVagas">
+            <option value="todas">Todas (Vagas imediatas + CR)</option>
+            <option value="1">Com vagas imediatas (≥ 1 vaga)</option>
+            <option value="2">2 ou mais vagas imediatas (≥ 2)</option>
+            <option value="3">3 ou mais vagas imediatas (≥ 3)</option>
+            <option value="cr">Somente Cadastro de Reserva (CR)</option>
+          </select>
+        </div>
+        <div class="f-item">
+          <label for="fRegime">🏛️ Regime de Contratação</label>
+          <select id="fRegime">
+            <option value="">Todos os regimes</option>
+            <option value="estatutario">Estatutário (Efetivo)</option>
+            <option value="clt">CLT (Celetista)</option>
+            <option value="outros">Residência / Militar / Seletivo</option>
+          </select>
+        </div>
+        <div class="f-item">
+          <label for="fHoras">⏱️ Carga Horária Semanal</label>
+          <select id="fHoras">
+            <option value="">Qualquer carga horária</option>
+            <option value="20">Até 20h semanais</option>
+            <option value="30">Até 30h semanais</option>
+            <option value="36">Até 36h semanais</option>
+            <option value="40">Até 40h semanais</option>
+          </select>
+        </div>
+        <div class="f-item">
+          <label for="fOrdem">↕️ Ordenar por</label>
+          <select id="fOrdem">
+            <option value="padrao">Padrão</option>
+            <option value="rp">Mais próximos de Ribeirão Preto/SP</option>
+            <option value="jarinu">Mais próximos de Jarinu/SP</option>
+            <option value="salario">Maior salário bruto</option>
+            <option value="vagas">Maior nº de vagas imediatas</option>
+            <option value="prova">Data da prova mais próxima</option>
+            <option value="inscricao">Inscrições encerrando primeiro</option>
+            <option value="novos">Concursos novos (24h) primeiro</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      
+  <section id="fisio" class="tab-panel ativo" data-total="12">
+    <div class="sec-head">
+      <h2>Fisioterapeuta / Fisioterapia — Estado de São Paulo <small class="sec-count">(12)</small></h2>
+      <p class="desc">Valores exatos do cargo, benefícios (VA/VR/VT), regime estatutário/CLT, carga horária semanal, data da prova e conteúdo programático.</p>
+    </div>
     <div class="grid">
-    <article class="card" data-busca="prefeitura de matão prefeitura de matão - sp abre concurso público com salários de até r$ 17.433,24 fisioterapeuta (1 vaga)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433" target="_blank" rel="noopener">Prefeitura de Matão</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de matao prefeitura de matao - sp abre concurso publico com salarios de ate r$ 17.433,24 matao fisioterapeuta ibam clt (celetista) va (auxilio-alimentacao): r$ 1.000,00/mes (vr/vt conforme legislacao municipal)"
+      data-cidade="Matão"
+      data-km-rp="75"
+      data-km-jarinu="237"
+      data-salario="4727.38"
+      data-vagas="1"
+      data-tem-cr="1"
+      data-regime="clt"
+      data-horas="30"
+      data-prova="2026-12-06"
+      data-inscricao="2026-10-29"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433" target="_blank" rel="noopener">Prefeitura de Matão</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Matão/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 75 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 237 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Matão - SP abre concurso público com salários de até R$ 17.433,24</p>
       </header>
-      <ul class="cargos"><li>Fisioterapeuta (1 vaga)</li></ul>
-      <footer>
-        <span>📋 44 vagas até R$ 17.433,24</span>
-        <span>🎓 Fundamental / Médio / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>29/10/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapeuta</strong></div>
+        <span class="badge-vagas">1 vaga imediata + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 4.727,38</strong>
+          <small class="sub">R$ 4.727,38 (vencimento base exato) + R$ 1.000,00 VA = R$ 5.727,38</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">VA (Auxílio-alimentação): R$ 1.000,00/mês (VR/VT conforme legislação municipal)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">CLT (Celetista)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">30h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">06/12/2026</strong>
+          <small class="sub">Banca: IBAM</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">29/10/2026</strong>
+          <small class="sub">44 vagas até R$ 17.433,24</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433#links" target="_blank" rel="noopener" title="EDITAL DE CONCURSO PÚBLICO Nº 01/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.ibamsp-concursos.org.br/" target="_blank" rel="noopener">🌐 Banca (IBAM)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/matao-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE CONCURSO PÚBLICO Nº 01/2026</p>
+          <ul><li>Língua Portuguesa (interpretação de texto, gramática aplicada, concordância, regência e pontuação — padrão IBAM)</li><li>Políticas de Saúde e Legislação do SUS (Lei 8.080/90, Lei 8.142/90, PNAB, Rede de Atenção à Saúde e Vigilância em Saúde)</li><li>Conhecimentos Específicos em Fisioterapia: Anatomia e fisiologia humana, biomecânica e cinesiologia</li><li>Avaliação funcional, testes musculares, goniometria, semiologia e diagnóstico cinético-funcional</li><li>Cinesioterapia, eletrotermofototerapia, mecanoterapia, órteses e próteses</li><li>Fisioterapia em Ortopedia/Traumatologia, Neurologia (adulto e pediátrica), Cardiorrespiratória, Geriatria e Saúde da Família (NASF/eMulti)</li><li>Código de Ética e Deontologia da Fisioterapia (Resoluções COFFITO)</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="marinha do brasil - comando do 8º distrito naval marinha do brasil - 8º distrito naval abre vagas para oficiais rm2 em sp oportunidades contemplam diversas áreas como engenharia, medicina, administração, fisioterapia e informática. a seleção inclui prova objetiva, teste físico, avaliação de títulos e inspeção de saúde. fisioterapia, são paulo - sp (1 vaga)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp" target="_blank" rel="noopener">Marinha do Brasil - Comando do 8º Distrito Naval</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="marinha do brasil - comando do 8o distrito naval marinha do brasil - 8o distrito naval abre vagas para oficiais rm2 em sp sao paulo oficial temporario rm2 — apoio a saude (fisioterapia) marinha — 8o distrito naval militar temporario (rm2) assistencia medico-hospitalar (fusma), alimentacao na om e auxilio-fardamento"
+      data-cidade="São Paulo"
+      data-km-rp="289"
+      data-km-jarinu="49"
+      data-salario="9575.0"
+      data-vagas="1"
+      data-tem-cr="0"
+      data-regime="outros"
+      data-horas="40"
+      data-prova="2027-02-21"
+      data-inscricao="2026-11-10"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp" target="_blank" rel="noopener">Marinha do Brasil - Comando do 8º Distrito Naval</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 São Paulo/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 289 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 49 km de Jarinu</span></div>
         <p class="titulo">Marinha do Brasil - 8º Distrito Naval abre vagas para Oficiais RM2 em SP</p>
       </header>
-      <ul class="cargos"><li>Oportunidades contemplam diversas áreas como Engenharia, Medicina, Administração, Fisioterapia e Informática. A seleção inclui prova objetiva, teste físico, avaliação de títulos e inspeção de saúde.</li><li>Fisioterapia, São Paulo - SP (1 vaga)</li></ul>
-      <footer>
-        <span>📋 36 vagas</span>
-        <span>🎓 Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>10/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Oficial Temporário RM2 — Apoio à Saúde (Fisioterapia)</strong></div>
+        <span class="badge-vagas">1 vaga imediata (São Paulo/SP)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 9.575,00</strong>
+          <small class="sub">R$ 9.575,00 brutos iniciais (Guarda-Marinha RM2: soldo R$ 7.315,00 + adicionais militares; sobe após 6 meses como 2º Tenente)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Assistência médico-hospitalar (FUSMA), alimentação na OM e auxílio-fardamento</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Militar Temporário (RM2)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">40h semanais (Expediente Militar)</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">21/02/2027</strong>
+          <small class="sub">Banca: Marinha — 8º Distrito Naval</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">10/11/2026</strong>
+          <small class="sub">36 vagas</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp#links" target="_blank" rel="noopener" title="AVISO DE CONVOCAÇÃO Nº 02/2026 (OFICIAIS-RM2) • AVISO DE CONVOCAÇÃO Nº 03/2026 (OFICIAIS-RM2-MD)">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.marinha.mil.br/com8dn/" target="_blank" rel="noopener">🌐 Banca (Marinha — 8º Distrito Naval)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/marinha-do-brasil" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> AVISO DE CONVOCAÇÃO Nº 02/2026 (OFICIAIS-RM2) • AVISO DE CONVOCAÇÃO Nº 03/2026 (OFICIAIS-RM2-MD)</p>
+          <ul><li>Língua Portuguesa (25 questões — interpretação textual, coesão, coerência, sintaxe, concordância, regência e redação oficial)</li><li>Formação Militar-Naval e História Naval (25 questões — Estatuto dos Militares Lei 6.880/80, Organização Básica da Marinha, História Naval Brasileira e Relações Internacionais)</li><li>Etapas complementares: Prova de Títulos, Inspeção de Saúde (IS) e Teste de Aptidão Física de Ingresso (TAF-i: natação 25m e corrida 2.400m)</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="município da estância balneária de praia grande prefeitura de praia grande - sp abre processo seletivo para residência multiprofissional oportunidade para profissionais de nível superior nas áreas de enfermagem, fisioterapia, odontologia e psicologia com bolsa mensal de r$ 4.106,09 e jornada de 60 horas semanais. fisioterapia (4 vagas)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional" target="_blank" rel="noopener">Município da Estância Balneária de Praia Grande</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="municipio da estancia balnearia de praia grande prefeitura de praia grande - sp abre processo seletivo para residencia multiprofissional praia grande fisioterapia — residencia multiprofissional em saude da familia e comunidade (r1) ibam residencia (bolsa) bolsa-residencia ms (sem va/vr/vt informado no edital)"
+      data-cidade="Praia Grande"
+      data-km-rp="347"
+      data-km-jarinu="106"
+      data-salario="4106.09"
+      data-vagas="4"
+      data-tem-cr="0"
+      data-regime="outros"
+      data-horas="60"
+      data-prova="2026-12-06"
+      data-inscricao="2026-11-05"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional" target="_blank" rel="noopener">Município da Estância Balneária de Praia Grande</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Praia Grande/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 347 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 106 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Praia Grande - SP abre processo seletivo para residência multiprofissional</p>
       </header>
-      <ul class="cargos"><li>Oportunidade para profissionais de nível superior nas áreas de enfermagem, fisioterapia, odontologia e psicologia com bolsa mensal de R$ 4.106,09 e jornada de 60 horas semanais.</li><li>Fisioterapia (4 vagas)</li></ul>
-      <footer>
-        <span>📋 28 vagas até R$ 4.106,09</span>
-        <span>🎓 Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapia — Residência Multiprofissional em Saúde da Família e Comunidade (R1)</strong></div>
+        <span class="badge-vagas">4 vagas imediatas</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 4.106,09</strong>
+          <small class="sub">R$ 4.106,09 (bolsa mensal exata — Ministério da Saúde)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Bolsa-Residência MS (sem VA/VR/VT informado no edital)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Residência (Bolsa)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">60h semanais (dedicação exclusiva)</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">06/12/2026</strong>
+          <small class="sub">Banca: IBAM</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">05/11/2026</strong>
+          <small class="sub">28 vagas até R$ 4.106,09</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA DE PROCESSO SELETIVO Nº 001/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.ibamsp-concursos.org.br/" target="_blank" rel="noopener">🌐 Banca (IBAM)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/praia-grande-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA DE PROCESSO SELETIVO Nº 001/2026</p>
+          <ul><li>Língua Portuguesa e Interpretação de Textos</li><li>Políticas Públicas de Saúde, SUS e Atenção Primária (PNAB, Estratégia Saúde da Família, Territorialização, PTS e Apoio Matricial)</li><li>Conhecimentos Específicos em Fisioterapia: Reabilitação funcional na Atenção Básica e domiciliar</li><li>Fisioterapia preventiva, saúde do idoso, saúde da mulher, saúde da criança e do trabalhador</li><li>Avaliação cinético-funcional, cinesioterapia, reabilitação neurofuncional, ortopédica e cardiorrespiratória comunitária</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de floreal prefeitura de floreal - sp abre concurso público com salários de até r$ 10.500,00 fisioterapeuta (cr)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500" target="_blank" rel="noopener">Prefeitura de Floreal</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de floreal prefeitura de floreal - sp abre concurso publico com salarios de ate r$ 10.500,00 floreal fisioterapeuta instituto unique estatutario conforme legislacao municipal de floreal (consultar edital)"
+      data-cidade="Floreal"
+      data-km-rp="249"
+      data-km-jarinu="445"
+      data-salario="4118.39"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="30"
+      data-prova="2026-11-22"
+      data-inscricao="2026-11-05"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500" target="_blank" rel="noopener">Prefeitura de Floreal</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Floreal/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 249 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 445 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Floreal - SP abre concurso público com salários de até R$ 10.500,00</p>
       </header>
-      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
-      <footer>
-        <span>📋 12 vagas até R$ 10.500,00</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapeuta</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 4.118,39</strong>
+          <small class="sub">R$ 4.118,39 (vencimento base exato)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Conforme legislação municipal de Floreal (consultar edital)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">30h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">22/11/2026</strong>
+          <small class="sub">Banca: Instituto Unique</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">05/11/2026</strong>
+          <small class="sub">12 vagas até R$ 10.500,00</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500#links" target="_blank" rel="noopener" title="EDITAL DE CONCURSO PÚBLICO 01/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.institutounique.org.br/" target="_blank" rel="noopener">🌐 Banca (Instituto Unique)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/floreal-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE CONCURSO PÚBLICO 01/2026</p>
+          <ul><li>Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais/Atualidades</li><li>Saúde Pública e Legislação do SUS (Constituição Federal arts. 196-200, Leis 8.080/90 e 8.142/90)</li><li>Conhecimentos Específicos em Fisioterapia: Anatomia, fisiologia, cinesiologia e biomecânica</li><li>Recursos terapêuticos manuais, cinesioterapia, eletrotermofototerapia e hidroterapia</li><li>Fisioterapia traumatológica, ortopédica, reumatológica, neurológica, pneumofuncional e geriátrica</li><li>Avaliação de Títulos (classificatória para nível superior)</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de guarulhos prefeitura de guarulhos - sp abre vagas para programas de residência multiprofissional em saúde fisioterapia (3 vagas)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude" target="_blank" rel="noopener">Prefeitura de Guarulhos</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de guarulhos prefeitura de guarulhos - sp abre vagas para programas de residencia multiprofissional em saude guarulhos fisioterapia — residencia multiprofissional (atencao basica / saude da familia) ibam residencia (bolsa) bolsa-residencia ms (sem va/vr/vt informado no edital)"
+      data-cidade="Guarulhos"
+      data-km-rp="286"
+      data-km-jarinu="44"
+      data-salario="4106.09"
+      data-vagas="3"
+      data-tem-cr="0"
+      data-regime="outros"
+      data-horas="60"
+      data-prova="2026-12-13"
+      data-inscricao="2026-10-29"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude" target="_blank" rel="noopener">Prefeitura de Guarulhos</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Guarulhos/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 286 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 44 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Guarulhos - SP abre vagas para Programas de Residência Multiprofissional em Saúde</p>
       </header>
-      <ul class="cargos"><li>Fisioterapia (3 vagas)</li></ul>
-      <footer>
-        <span>📋 22 vagas até R$ 4.106,09</span>
-        <span>🎓 Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>29/10/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapia — Residência Multiprofissional (Atenção Básica / Saúde da Família)</strong></div>
+        <span class="badge-vagas">3 vagas imediatas</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 4.106,09</strong>
+          <small class="sub">R$ 4.106,09 (bolsa mensal exata — Ministério da Saúde)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Bolsa-Residência MS (sem VA/VR/VT informado no edital)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Residência (Bolsa)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">60h semanais (dedicação exclusiva)</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">13/12/2026</strong>
+          <small class="sub">Banca: IBAM</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">29/10/2026</strong>
+          <small class="sub">22 vagas até R$ 4.106,09</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA DE SELEÇÃO PÚBLICA Nº 001/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.ibamsp-concursos.org.br/" target="_blank" rel="noopener">🌐 Banca (IBAM)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/guarulhos-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA DE SELEÇÃO PÚBLICA Nº 001/2026</p>
+          <ul><li>Políticas Públicas de Saúde, Reforma Sanitária, SUS, PNAB e Redes de Atenção à Saúde</li><li>Trabalho multiprofissional, interdisciplinaridade, Clínica Ampliada e Projeto Terapêutico Singular (PTS)</li><li>Conhecimentos Específicos de Fisioterapia na Atenção Primária à Saúde</li><li>Atuação fisioterapêutica nos ciclos de vida (criança, adulto, gestante e idoso), doenças crônicas não transmissíveis, dor musculoesquelética e reabilitação neurofuncional e respiratória comunitária</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de holambra prefeitura de holambra - sp abre concurso com salários de até r$ 8.431,01 fisioterapeuta (cr)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431" target="_blank" rel="noopener">Prefeitura de Holambra</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de holambra prefeitura de holambra - sp abre concurso com salarios de ate r$ 8.431,01 holambra fisioterapeuta gl consultoria estatutario conforme legislacao municipal de holambra (consultar edital)"
+      data-cidade="Holambra"
+      data-km-rp="181"
+      data-km-jarinu="61"
+      data-salario="3703.27"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="20"
+      data-prova="2026-11-29"
+      data-inscricao="2026-11-05"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431" target="_blank" rel="noopener">Prefeitura de Holambra</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Holambra/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 181 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 61 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Holambra - SP abre concurso com salários de até R$ 8.431,01</p>
       </header>
-      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
-      <footer>
-        <span>📋 18 vagas até R$ 8.431,01</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapeuta</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 3.703,27</strong>
+          <small class="sub">R$ 3.703,27 (vencimento base exato para 20h/sem)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Conforme legislação municipal de Holambra (consultar edital)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">20h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">29/11/2026</strong>
+          <small class="sub">Banca: GL Consultoria</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">05/11/2026</strong>
+          <small class="sub">18 vagas até R$ 8.431,01</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431#links" target="_blank" rel="noopener" title="EDITAL DE CONCURSO PÚBLICO Nº 001/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.glconsultoria.com.br/" target="_blank" rel="noopener">🌐 Banca (GL Consultoria)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/holambra-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE CONCURSO PÚBLICO Nº 001/2026</p>
+          <ul><li>Língua Portuguesa e Matemática / Raciocínio Lógico (padrão GL Consultoria)</li><li>Legislação do SUS e Saúde Coletiva (Leis 8.080/90, 8.142/90, Decreto 7.508/11)</li><li>Conhecimentos Específicos em Fisioterapia: Avaliação musculoesquelética e neurológica, testes especiais e goniometria</li><li>Eletrotermofototerapia, cinesioterapia, reabilitação ortopédica, traumatológica, reumatológica, respiratória e geriátrica; Ética profissional COFFITO</li><li>Inclui etapa de Avaliação de Títulos (Grupo B — prova em 29/11/2026)</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de jaborandi prefeitura de jaborandi - sp abre concurso público com salários de até r$ 5.325,60 fisioterapeuta (cr)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325" target="_blank" rel="noopener">Prefeitura de Jaborandi</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de jaborandi prefeitura de jaborandi - sp abre concurso publico com salarios de ate r$ 5.325,60 jaborandi fisioterapeuta gl consultoria clt (celetista) conforme legislacao municipal de jaborandi (consultar edital)"
+      data-cidade="Jaborandi"
+      data-km-rp="82"
+      data-km-jarinu="320"
+      data-salario="2068.85"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="clt"
+      data-horas="20"
+      data-prova="2026-11-22"
+      data-inscricao="2026-11-05"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325" target="_blank" rel="noopener">Prefeitura de Jaborandi</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Jaborandi/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 82 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 320 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Jaborandi - SP abre concurso público com salários de até R$ 5.325,60</p>
       </header>
-      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
-      <footer>
-        <span>📋 31 vagas até R$ 5.325,60</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapeuta</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 2.068,85</strong>
+          <small class="sub">R$ 2.068,85 (vencimento base exato para 20h/sem)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Conforme legislação municipal de Jaborandi (consultar edital)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">CLT (Celetista)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">20h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">22/11/2026</strong>
+          <small class="sub">Banca: GL Consultoria</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">05/11/2026</strong>
+          <small class="sub">31 vagas até R$ 5.325,60</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325#links" target="_blank" rel="noopener" title="EDITAL DE CONCURSO PÚBLICO Nº 001/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.glconsultoria.com.br/" target="_blank" rel="noopener">🌐 Banca (GL Consultoria)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/jaborandi-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE CONCURSO PÚBLICO Nº 001/2026</p>
+          <ul><li>Língua Portuguesa e Matemática / Conhecimentos Gerais (padrão GL Consultoria)</li><li>Saúde Pública e Legislação do SUS</li><li>Conhecimentos Específicos em Fisioterapia: Anatomia, fisiologia do exercício, biomecânica e cinesiologia</li><li>Fisioterapia aplicada à ortopedia, traumatologia, neurologia, cardiologia, pneumologia e pediatria/geriatria</li><li>Avaliação de Títulos (classificatória)</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de paulo de faria prefeitura de paulo de faria - sp abre concurso público com salários de até r$ 8.632,29 fisioterapeuta (1 vaga + cr)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632" target="_blank" rel="noopener">Prefeitura de Paulo de Faria</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de paulo de faria prefeitura de paulo de faria - sp abre concurso publico com salarios de ate r$ 8.632,29 paulo de faria fisioterapeuta imperio concursos estatutario conforme legislacao municipal de paulo de faria (consultar edital)"
+      data-cidade="Paulo de Faria"
+      data-km-rp="208"
+      data-km-jarinu="440"
+      data-salario="3018.97"
+      data-vagas="1"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="30"
+      data-prova="2026-11-22"
+      data-inscricao="2026-11-05"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632" target="_blank" rel="noopener">Prefeitura de Paulo de Faria</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Paulo de Faria/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 208 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 440 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Paulo de Faria - SP abre concurso público com salários de até R$ 8.632,29</p>
       </header>
-      <ul class="cargos"><li>Fisioterapeuta (1 vaga + CR)</li></ul>
-      <footer>
-        <span>📋 34 vagas até R$ 8.632,29</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>22/10 a 05/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapeuta</strong></div>
+        <span class="badge-vagas">1 vaga imediata + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 3.018,97</strong>
+          <small class="sub">R$ 3.018,97 (vencimento base inicial)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Conforme legislação municipal de Paulo de Faria (consultar edital)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">30h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">22/11/2026</strong>
+          <small class="sub">Banca: Império Concursos</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">22/10 a 05/11/2026</strong>
+          <small class="sub">34 vagas até R$ 8.632,29</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://portal.imperioconcursos.com.br/" target="_blank" rel="noopener">🌐 Banca (Império Concursos)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/paulo-de-faria-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026</p>
+          <ul><li>Língua Portuguesa, Matemática e Conhecimentos Gerais/Atualidades</li><li>Conhecimentos de Saúde Pública / SUS e Legislação Municipal</li><li>Conhecimentos Específicos em Fisioterapia: Métodos e técnicas de avaliação, diagnóstico cinético-funcional, cinesioterapia e eletrotermofototerapia</li><li>Reabilitação em ortopedia/traumatologia, neurologia, reumatologia, cardiorrespiratória e saúde pública; Ética COFFITO</li><li>Avaliação de Títulos para cargos de nível superior</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de porto feliz prefeitura de porto feliz - sp publica editais de concursos para cadastro de reserva em diversas áreas fisioterapeuta/sus">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas" target="_blank" rel="noopener">Prefeitura de Porto Feliz</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de porto feliz prefeitura de porto feliz - sp publica editais de concursos para cadastro de reserva em diversas areas porto feliz fisioterapeuta/sus (edital 002/2026) instituto avalia clt (celetista) va (vale-alimentacao): r$ 863,50/mes"
+      data-cidade="Porto Feliz"
+      data-km-rp="229"
+      data-km-jarinu="82"
+      data-salario="4086.88"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="clt"
+      data-horas="30"
+      data-prova="2026-12-13"
+      data-inscricao="2026-11-05"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas" target="_blank" rel="noopener">Prefeitura de Porto Feliz</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Porto Feliz/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 229 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 82 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Porto Feliz - SP publica editais de concursos para cadastro de reserva em diversas áreas</p>
       </header>
-      <ul class="cargos"><li>Fisioterapeuta/SUS</li></ul>
-      <footer>
-        <span>📋 Cadastro de reserva até R$ 5.882,37</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapeuta/SUS (Edital 002/2026)</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 4.086,88</strong>
+          <small class="sub">R$ 4.086,88 (base exato) + R$ 863,50 VA = R$ 4.950,38</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">VA (Vale-alimentação): R$ 863,50/mês</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">CLT (Celetista)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">30h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">13/12/2026</strong>
+          <small class="sub">Banca: Instituto Avalia</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">05/11/2026</strong>
+          <small class="sub">Cadastro de reserva até R$ 5.882,37</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA CONCURSO PARA EMPREGO PÚBLICO Nº 002/2026 • EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 003/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.avalia.org.br/" target="_blank" rel="noopener">🌐 Banca (Instituto Avalia)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/porto-feliz-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA CONCURSO PARA EMPREGO PÚBLICO Nº 002/2026 • EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 003/2026</p>
+          <ul><li>Língua Portuguesa, Raciocínio Lógico/Matemático e Noções de Informática (padrão Instituto Avalia)</li><li>Legislação do SUS e Saúde Coletiva (Leis 8.080/90 e 8.142/90, PNAB, Redes de Atenção à Saúde)</li><li>Conhecimentos Específicos em Fisioterapia/SUS: Fisioterapia na Atenção Básica, domiciliar e ambulatorial</li><li>Cinesioterapia, eletroterapia, termoterapia, fototerapia, órteses e próteses</li><li>Fisioterapia neurofuncional, traumato-ortopédica, cardiorrespiratória, uroginecológica e geriátrica</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de taquaritinga prefeitura de taquaritinga - sp abre concurso público para diversos cargos fisioterapeuta (cr)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos" target="_blank" rel="noopener">Prefeitura de Taquaritinga</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de taquaritinga prefeitura de taquaritinga - sp abre concurso publico para diversos cargos taquaritinga fisioterapeuta gl consultoria estatutario conforme legislacao municipal de taquaritinga (consultar edital)"
+      data-cidade="Taquaritinga"
+      data-km-rp="77"
+      data-km-jarinu="263"
+      data-salario="2586.0"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="30"
+      data-prova="2026-11-22"
+      data-inscricao="2026-11-05"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos" target="_blank" rel="noopener">Prefeitura de Taquaritinga</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Taquaritinga/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 77 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 263 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Taquaritinga - SP abre concurso público para diversos cargos</p>
       </header>
-      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
-      <footer>
-        <span>📋 2 vagas até R$ 6.055,67</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>05/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapeuta</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 2.586,00</strong>
+          <small class="sub">R$ 2.586,00 (vencimento base inicial)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Conforme legislação municipal de Taquaritinga (consultar edital)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">30h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">22/11/2026</strong>
+          <small class="sub">Banca: GL Consultoria</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">05/11/2026</strong>
+          <small class="sub">2 vagas até R$ 6.055,67</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos#links" target="_blank" rel="noopener" title="EDITAL DE CONCURSO PÚBLICO Nº 001/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.glconsultoria.com.br/" target="_blank" rel="noopener">🌐 Banca (GL Consultoria)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/taquaritinga-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE CONCURSO PÚBLICO Nº 001/2026</p>
+          <ul><li>Língua Portuguesa e Matemática (padrão GL Consultoria)</li><li>Saúde Pública e Diretrizes do SUS</li><li>Conhecimentos Específicos em Fisioterapia: Anatomia, fisiologia, semiologia e avaliação funcional</li><li>Cinesioterapia, eletrotermofototerapia, reabilitação ortopédica, neurológica, respiratória e saúde coletiva</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de taquarituba prefeitura de taquarituba - sp divulga retificação do concurso público com salários de até r$ 22.537,36 fisioterapeuta (cr)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537" target="_blank" rel="noopener">Prefeitura de Taquarituba</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de taquarituba prefeitura de taquarituba - sp divulga retificacao do concurso publico com salarios de ate r$ 22.537,36 taquarituba fisioterapeuta instituto unique estatutario conforme legislacao municipal de taquarituba (consultar edital)"
+      data-cidade="Taquarituba"
+      data-km-rp="301"
+      data-km-jarinu="261"
+      data-salario="6154.54"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="30"
+      data-prova="2026-11-15"
+      data-inscricao="2026-10-23"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537" target="_blank" rel="noopener">Prefeitura de Taquarituba</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Taquarituba/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 301 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 261 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Taquarituba - SP divulga retificação do concurso público com salários de até R$ 22.537,36</p>
       </header>
-      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
-      <footer>
-        <span>📋 22 vagas até R$ 22.537,36</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>23/10/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapeuta</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 6.154,54</strong>
+          <small class="sub">R$ 6.154,54 (vencimento base exato para 30h/sem)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Conforme legislação municipal de Taquarituba (consultar edital)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">30h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">15/11/2026</strong>
+          <small class="sub">Banca: Instituto Unique</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">23/10/2026</strong>
+          <small class="sub">22 vagas até R$ 22.537,36</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA Nº 01/2026 • ERRATA Nº 02/2026 • EDITAL RETIFICADO Nº 01/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.institutounique.org.br/" target="_blank" rel="noopener">🌐 Banca (Instituto Unique)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/taquarituba-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA Nº 01/2026 • ERRATA Nº 02/2026 • EDITAL RETIFICADO Nº 01/2026</p>
+          <ul><li>Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais/Atualidades (Errata nº 02/2026 publicada)</li><li>Legislação do SUS e Políticas Públicas de Saúde</li><li>Conhecimentos Específicos em Fisioterapia: Anatomia, cinesiologia, biomecânica e avaliação fisioterapêutica</li><li>Cinesioterapia, eletrotermofototerapia, mecanoterapia, reabilitação neurofuncional, traumato-ortopédica, cardiorrespiratória e geriátrica; Ética COFFITO</li><li>Avaliação de Títulos (classificatória)</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de tarumã prefeitura de tarumã - sp prorroga inscrições para processo seletivo com salários de até r$ 23.539,17 fisioterapeuta (cr)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539" target="_blank" rel="noopener">Prefeitura de Tarumã</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de taruma prefeitura de taruma - sp prorroga inscricoes para processo seletivo com salarios de ate r$ 23.539,17 taruma fisioterapeuta ipell consultoria processo seletivo conforme legislacao municipal de taruma (consultar edital)"
+      data-cidade="Tarumã"
+      data-km-rp="335"
+      data-km-jarinu="396"
+      data-salario="0"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="outros"
+      data-horas="20"
+      data-prova="2026-11-22"
+      data-inscricao="2026-10-22"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539" target="_blank" rel="noopener">Prefeitura de Tarumã</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Tarumã/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 335 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 396 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Tarumã - SP prorroga inscrições para processo seletivo com salários de até R$ 23.539,17</p>
       </header>
-      <ul class="cargos"><li>Fisioterapeuta (CR)</li></ul>
-      <footer>
-        <span>📋 CR até R$ 23.539,17</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>Prorrogado até 22/10/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🩺 <strong>Fisioterapeuta</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">Até R$ 23.539,17</strong>
+          <small class="sub">Faixa do edital: R$ 1.717,55 a R$ 23.539,17 (consultar anexo de vencimentos no edital)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Conforme legislação municipal de Tarumã (consultar edital)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Processo Seletivo</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">20h a 40h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">22/11/2026</strong>
+          <small class="sub">Banca: IPELL Consultoria</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">Prorrogado até 22/10/2026</strong>
+          <small class="sub">CR até R$ 23.539,17</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA Nº 01/2026 DO PROCESSO SELETIVO Nº 02/2026 • EDITAL DE ABERTURA DE INSCRIÇÕES Nº 01/2026 RETIFICADO E CONSOLIDADO">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.ipell.com.br/" target="_blank" rel="noopener">🌐 Banca (IPELL Consultoria)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/taruma-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático (Fisioterapeuta)</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA Nº 01/2026 DO PROCESSO SELETIVO Nº 02/2026 • EDITAL DE ABERTURA DE INSCRIÇÕES Nº 01/2026 RETIFICADO E CONSOLIDADO</p>
+          <ul><li>Língua Portuguesa, Matemática e Conhecimentos Gerais (padrão IPELL — prova no período da tarde em 22/11/2026)</li><li>Legislação do SUS e Saúde Pública</li><li>Conhecimentos Específicos em Fisioterapia: Avaliação cinético-funcional, recursos fisioterapêuticos, reabilitação ortopédica, neurológica, respiratória e atenção básica</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article></div>
+    <p class="vazio" style="display:none;">
+      Nenhum concurso encontrado com os filtros selecionados.
+    </p>
   </section>
-    
-  <section id="medio" class="tab-panel">
-    <h2>Nível médio com salário acima de R$ 5.000 <small>(2)</small></h2>
-    <p class="desc">Cargos que exigem apenas ensino médio e cujo salário informado é maior que R$ 5.000,00 (extraído por IA — confirme no edital).</p>
+      
+  <section id="medio" class="tab-panel" data-total="5">
+    <div class="sec-head">
+      <h2>Nível Médio com Remuneração Acima de R$ 5.000,00 <small class="sec-count">(5)</small></h2>
+      <p class="desc">Cargos que exigem apenas ensino médio completo com ganhos confirmados acima de R$ 5.000,00 (salário base ou base + benefício fixo).</p>
+    </div>
     <div class="grid">
-    <article class="card" data-busca="tjsp - tribunal de justiça do estado de são paulo tjsp abre concursos para oficial de justiça e escrevente técnico judiciário ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario" target="_blank" rel="noopener">TJSP - Tribunal de Justiça do Estado de São Paulo</a> <span class="badge novo">NOVO</span></h3>
-        <p class="titulo">TJSP abre concursos para Oficial de Justiça e Escrevente Técnico Judiciário</p>
-      </header>
-      <ul class="cargos"><li><b>Escrevente Técnico Judiciário</b> — R$ 6.782,54 · CR</li></ul>
-      <footer>
-        <span>📋 132 vagas até R$ 9.856,95</span>
-        <span>🎓 Médio / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>28/10 a 10/12/2026</b></span>
-      </footer>
-    </article>
-    <article class="card" data-busca="unesp - universidade estadual paulista unesp de sorocaba - sp abre concurso para assistente de suporte acadêmico ii ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii" target="_blank" rel="noopener">UNESP - Universidade Estadual Paulista</a> <span class="badge novo">NOVO</span></h3>
-        <p class="titulo">UNESP de Sorocaba - SP abre concurso para Assistente de Suporte Acadêmico II</p>
-      </header>
-      <ul class="cargos"><li><b>Assistente de Suporte Acadêmico II - Área de atuação: Mecatrônica</b> — R$ 6.537,74 · 1 vaga</li></ul>
-      <footer>
-        <span>📋 1 vaga até R$ 6.537,74</span>
-        <span>🎓 Ensino Médio</span>
-        <span class="prazo">⏰ Inscrições até <b>30/10/2026</b></span>
-      </footer>
-    </article></div>
-  </section>
-    
-  <section id="possiveis" class="tab-panel">
-    <h2>Possíveis — nível médio, salário por cargo não informado <small>(12)</small></h2>
-    <p class="desc">Concursos com cargos de nível médio e teto salarial acima de R$ 5.000, mas a notícia não detalha o salário de cada cargo. Confira o edital.</p>
-    <div class="grid">
-    <article class="card" data-busca="setec - serviços técnicos gerais de campinas setec campinas - sp abre concurso público com salários de até r$ 10.428,05 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428" target="_blank" rel="noopener">SETEC - Serviços Técnicos Gerais de Campinas</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="setec - servicos tecnicos gerais de campinas setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05 campinas agente de fiscalizacao (5 vagas + cr) / agente administrativo (8 vagas + cr) indepac estatutario va/vr (vale-alimentacao/refeicao): r$ 2.150,12/mes + premio de produtividade de ate 85% (agente de fiscalizacao)"
+      data-cidade="Campinas"
+      data-km-rp="208"
+      data-km-jarinu="41"
+      data-salario="6435.59"
+      data-vagas="13"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="36"
+      data-prova="2027-01-17"
+      data-inscricao="2026-12-04"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428" target="_blank" rel="noopener">SETEC - Serviços Técnicos Gerais de Campinas</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Campinas/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 208 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 41 km de Jarinu</span></div>
         <p class="titulo">SETEC Campinas - SP abre concurso público com salários de até R$ 10.428,05</p>
       </header>
-      <ul class="cargos"><li><b>Agente Administrativo</b> · 8 vagas + CR</li><li><b>Agente de Fiscalização</b> · 5 vagas + CR</li><li><b>Agente de Suporte Técnico</b> · 4 vagas + CR</li><li><b>Assistente de S.V.O.</b> · 2 vagas + CR</li></ul>
-      <footer>
-        <span>📋 39 vagas até R$ 10.428,05</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>04/12/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">💼 <strong>Agente de Fiscalização (5 vagas + CR) / Agente Administrativo (8 vagas + CR)</strong></div>
+        <span class="badge-vagas">13 vagas imediatas + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 6.435,59</strong>
+          <small class="sub">Agente de Fiscalização: R$ 4.285,47 base + R$ 2.150,12 VA/VR = R$ 6.435,59 (até R$ 10.078,24 com prêmio de 85%) | Agente Administrativo: R$ 3.714,09 base + R$ 2.150,12 VA/VR = R$ 5.864,21</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">VA/VR (Vale-alimentação/refeição): R$ 2.150,12/mês + prêmio de produtividade de até 85% (Agente de Fiscalização)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">36h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">17/01/2027</strong>
+          <small class="sub">Banca: INDEPAC</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">04/12/2026</strong>
+          <small class="sub">39 vagas até R$ 10.428,05</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428#links" target="_blank" rel="noopener" title="EDITAL Nº 01/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://indepac.selecao.net.br/" target="_blank" rel="noopener">🌐 Banca (INDEPAC)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/campinas-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL Nº 01/2026</p>
+          <ul><li>Língua Portuguesa, Matemática e Noções de Informática (padrão INDEPAC)</li><li>Legislação Municipal de Campinas, Estatuto dos Servidores e legislação da SETEC</li><li>Conhecimentos Específicos de Administração Pública, atendimento, redação oficial e arquivologia (Agente Administrativo) ou Posturas Municipais, Poder de Polícia e Fiscalização (Agente de Fiscalização)</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="câmara da estância turística de paraguaçu paulista câmara de paraguaçu paulista - sp abre concurso público com salários de até r$ 11.065,27 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065" target="_blank" rel="noopener">Câmara da Estância Turística de Paraguaçu Paulista</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="tjsp - tribunal de justica do estado de sao paulo tjsp abre concursos para oficial de justica e escrevente tecnico judiciario sao paulo escrevente tecnico judiciario vunesp estatutario auxilio-alimentacao (va/vr), auxilio-transporte (vt) e auxilio-saude"
+      data-cidade="São Paulo"
+      data-km-rp="289"
+      data-km-jarinu="49"
+      data-salario="6782.54"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="40"
+      data-prova="2027-03-14"
+      data-inscricao="2026-12-10"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario" target="_blank" rel="noopener">TJSP - Tribunal de Justiça do Estado de São Paulo</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 São Paulo/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 289 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 49 km de Jarinu</span></div>
+        <p class="titulo">TJSP abre concursos para Oficial de Justiça e Escrevente Técnico Judiciário</p>
+      </header>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">💼 <strong>Escrevente Técnico Judiciário</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 6.782,54</strong>
+          <small class="sub">R$ 6.782,54 (vencimento base exato) + Auxílios Alimentação, Transporte e Saúde</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Auxílio-alimentação (VA/VR), Auxílio-transporte (VT) e Auxílio-saúde</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">40h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">14/03/2027</strong>
+          <small class="sub">Banca: VUNESP</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">28/10 a 10/12/2026</strong>
+          <small class="sub">132 vagas até R$ 9.856,95</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA Nº 02/2026 CONCURSO PÚBLICO • EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO • EDITAL COMPLETO Nº 02/2026 CONCURSO PÚBLICO • EDITAL COMPLETO Nº 01/2026 CONCURSO PÚBLICO">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.vunesp.com.br/" target="_blank" rel="noopener">🌐 Banca (VUNESP)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/sao-paulo-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA Nº 02/2026 CONCURSO PÚBLICO • EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO • EDITAL COMPLETO Nº 02/2026 CONCURSO PÚBLICO • EDITAL COMPLETO Nº 01/2026 CONCURSO PÚBLICO</p>
+          <ul><li>Bloco I — Língua Portuguesa (interpretação, gramática, concordância, regência, crase e redação)</li><li>Bloco II — Conhecimentos em Direito: Direito Penal, Processo Penal, Processo Civil, Constitucional, Administrativo e Normas da Corregedoria Geral da Justiça (NSCGJ)</li><li>Bloco III — Conhecimentos Gerais: Atualidades, Estatuto da Pessoa com Deficiência, Matemática, Raciocínio Lógico e Informática (Windows, Word, Excel, Teams)</li><li>Prova Discursiva (Redação) aplicada no mesmo dia da prova objetiva (14/03/2027)</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
+    </article>
+    <article class="card"
+      data-busca="camara da estancia turistica de paraguacu paulista camara de paraguacu paulista - sp abre concurso publico com salarios de ate r$ 11.065,27 paraguacu paulista agente administrativo instituto ibepp estatutario conforme legislacao da camara de paraguacu paulista"
+      data-cidade="Paraguaçu Paulista"
+      data-km-rp="317"
+      data-km-jarinu="402"
+      data-salario="5323.27"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="40"
+      data-prova="2026-12-13"
+      data-inscricao="2026-11-15"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065" target="_blank" rel="noopener">Câmara da Estância Turística de Paraguaçu Paulista</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Paraguaçu Paulista/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 317 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 402 km de Jarinu</span></div>
         <p class="titulo">Câmara de Paraguaçu Paulista - SP abre concurso público com salários de até R$ 11.065,27</p>
       </header>
-      <ul class="cargos"><li><b>Agente Administrativo</b> · CR</li></ul>
-      <footer>
-        <span>📋 Cadastro de reserva até R$ 11.065,27</span>
-        <span>🎓 Fundamental / Médio / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>15/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">💼 <strong>Agente Administrativo</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 5.323,27</strong>
+          <small class="sub">R$ 5.323,27 (vencimento base exato para Ensino Médio)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Conforme legislação da Câmara de Paraguaçu Paulista</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">40h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">13/12/2026</strong>
+          <small class="sub">Banca: Instituto IBEPP</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">15/11/2026</strong>
+          <small class="sub">Cadastro de reserva até R$ 11.065,27</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065#links" target="_blank" rel="noopener" title="EDITAL DE CONCURSO PÚBLICO Nº 01/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.institutoibepp.com.br/" target="_blank" rel="noopener">🌐 Banca (Instituto IBEPP)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/paraguacu-paulista-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE CONCURSO PÚBLICO Nº 01/2026</p>
+          <ul><li>Língua Portuguesa (compreensão textual, gramática normativa e redação oficial)</li><li>Matemática e Raciocínio Lógico</li><li>Noções de Informática (Windows, pacote Office, internet e correio eletrônico)</li><li>Conhecimentos Específicos e Legislação: Regimento Interno da Câmara, Lei Orgânica Municipal, Noções de Administração Pública, Licitações (Lei 14.133/2021) e rotinas administrativas</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="câmara de dois córregos câmara de dois córregos - sp abre concurso público com salários de até r$ 7.114,33 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114" target="_blank" rel="noopener">Câmara de Dois Córregos</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="camara de dois corregos camara de dois corregos - sp abre concurso publico com salarios de ate r$ 7.114,33 dois corregos oficial legislativo / oficial de financas imperio concursos clt (celetista) va (vale-alimentacao): r$ 1.150,00/mes + gratificacao por formacao superior prevista em lei municipal"
+      data-cidade="Dois Córregos"
+      data-km-rp="146"
+      data-km-jarinu="188"
+      data-salario="6029.83"
+      data-vagas="0"
+      data-tem-cr="1"
+      data-regime="clt"
+      data-horas="35"
+      data-prova="2026-11-15"
+      data-inscricao="2026-10-22"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114" target="_blank" rel="noopener">Câmara de Dois Córregos</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Dois Córregos/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 146 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 188 km de Jarinu</span></div>
         <p class="titulo">Câmara de Dois Córregos - SP abre concurso público com salários de até R$ 7.114,33</p>
       </header>
-      <ul class="cargos"><li><b>Oficial de Finanças</b> · Cadastro Reserva</li><li><b>Oficial Legislativo</b> · Cadastro Reserva</li></ul>
-      <footer>
-        <span>📋 4 vagas e CR até R$ 7.114,33</span>
-        <span>🎓 Médio / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>22/10/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">💼 <strong>Oficial Legislativo / Oficial de Finanças</strong></div>
+        <span class="badge-vagas">Cadastro de Reserva (CR)</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 6.029,83</strong>
+          <small class="sub">R$ 6.029,83 total (R$ 4.879,83 base exato + R$ 1.150,00 Vale-Alimentação)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior prevista em lei municipal</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">CLT (Celetista)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">35h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">15/11/2026</strong>
+          <small class="sub">Banca: Império Concursos</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">22/10/2026</strong>
+          <small class="sub">4 vagas e CR até R$ 7.114,33</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://portal.imperioconcursos.com.br/" target="_blank" rel="noopener">🌐 Banca (Império Concursos)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/dois-corregos-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026</p>
+          <ul><li>Língua Portuguesa, Matemática e Noções de Informática</li><li>Legislação Municipal (Lei Orgânica de Dois Córregos e Regimento Interno da Câmara)</li><li>Conhecimentos Específicos: Administração Pública, Processo Legislativo, Direito Constitucional/Administrativo básico (Oficial Legislativo) ou Contabilidade Pública, Orçamento, LRF e Lei 4.320/64 (Oficial de Finanças)</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de cubatão prefeitura de cubatão - sp abre concursos públicos com salários de até r$ 5.565,00 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concursos-publicos-com-salarios-de-ate-5565" target="_blank" rel="noopener">Prefeitura de Cubatão</a> <span class="badge novo">NOVO</span></h3>
-        <p class="titulo">Prefeitura de Cubatão - SP abre concursos públicos com salários de até R$ 5.565,00</p>
+    <article class="card"
+      data-busca="unesp - universidade estadual paulista unesp de sorocaba - sp abre concurso para assistente de suporte academico ii sorocaba assistente de suporte academico ii — mecatronica unesp clt (celetista) vale-alimentacao e beneficios unesp conforme edital"
+      data-cidade="Sorocaba"
+      data-km-rp="261"
+      data-km-jarinu="85"
+      data-salario="6537.74"
+      data-vagas="1"
+      data-tem-cr="0"
+      data-regime="clt"
+      data-horas="40"
+      data-prova="9999-12-31"
+      data-inscricao="2026-10-30"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii" target="_blank" rel="noopener">UNESP - Universidade Estadual Paulista</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Sorocaba/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 261 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 85 km de Jarinu</span></div>
+        <p class="titulo">UNESP de Sorocaba - SP abre concurso para Assistente de Suporte Acadêmico II</p>
       </header>
-      <ul class="cargos"><li><b>TNM - Almoxarife</b> · 1 vaga</li><li><b>TNM - Técnico de Serviços Administrativos</b> · 1 vaga</li><li><b>Guarda Civil Municipal</b> · 13 vagas</li></ul>
-      <footer>
-        <span>📋 56 vagas até R$ 5.565,00</span>
-        <span>🎓 Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>15/10/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">💼 <strong>Assistente de Suporte Acadêmico II — Mecatrônica</strong></div>
+        <span class="badge-vagas">1 vaga imediata</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">R$ 6.537,74</strong>
+          <small class="sub">R$ 6.537,74 (salário base exato)</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Vale-alimentação e benefícios UNESP conforme edital</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">CLT (Celetista)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">40h semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">Ver edital de convocação</strong>
+          <small class="sub">Banca: UNESP</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">30/10/2026</strong>
+          <small class="sub">1 vaga até R$ 6.537,74</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii#links" target="_blank" rel="noopener" title="EDITAL Nº 114/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://inscricoes.unesp.br/" target="_blank" rel="noopener">🌐 Banca (UNESP)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/sorocaba-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL Nº 114/2026</p>
+          <ul><li>Língua Portuguesa (interpretação de textos, ortografia, morfologia, sintaxe, pontuação)</li><li>Matemática e Raciocínio Lógico (operações, porcentagem, razão e proporção, geometria, lógica proposicional)</li><li>Conhecimentos Específicos em Mecatrônica: Eletrônica analógica e digital, instrumentação de laboratório, sensores e atuadores, CLP, comandos elétricos, pneumática/hidráulica e segurança em laboratórios</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
+    </article></div>
+    <p class="vazio" style="display:none;">
+      Nenhum concurso encontrado com os filtros selecionados.
+    </p>
+  </section>
+      
+  <section id="possiveis" class="tab-panel" data-total="8">
+    <div class="sec-head">
+      <h2>Possíveis Nível Médio — Verificar Tabela de Vencimentos no Edital <small class="sec-count">(8)</small></h2>
+      <p class="desc">Concursos com vagas de nível médio e teto salarial do certame acima de R$ 5.000,00 cujo salário específico do cargo deve ser conferido na tabela anexa do edital.</p>
+    </div>
+    <div class="grid">
+    <article class="card"
+      data-busca="cemmil - consorcio intermunicipal cemmil para o desenvolvimento sustentavel consorcio cemmil - sp abre processo seletivo com vagas em carapicuiba carapicuiba auxiliar administrativo (carapicuiba) consultar edital processo seletivo / temporario auxilio-transporte e vale-alimentacao · vale-alimentacao de r$ 522,30, auxilio-transporte de r$ 273,69, adicional de insalubridade para coveiro/sepulta"
+      data-cidade="Carapicuíba"
+      data-km-rp="280"
+      data-km-jarinu="48"
+      data-salario="6889.64"
+      data-vagas="5"
+      data-tem-cr="1"
+      data-regime="outros"
+      data-horas="44"
+      data-prova="2026-12-06"
+      data-inscricao="2026-11-12"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba" target="_blank" rel="noopener">Cemmil - Consórcio Intermunicipal Cemmil para o Desenvolvimento Sustentável</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Carapicuíba/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 280 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 48 km de Jarinu</span></div>
+        <p class="titulo">Consórcio Cemmil - SP abre processo seletivo com vagas em Carapicuíba</p>
+      </header>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🔍 <strong>Auxiliar Administrativo (Carapicuíba)</strong></div>
+        <span class="badge-vagas">5 vaga(s) + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">Até R$ 6.889,64</strong>
+          <small class="sub">Salário individual por cargo na tabela do edital completo</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Auxílio-transporte e vale-alimentação · Vale-alimentação de R$ 522,30, auxílio-transporte de R$ 273,69, adicional de insalubridade para Coveiro/Sepulta</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Processo Seletivo / Temporário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">40 a 44 horas semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">06/12/2026</strong>
+          <small class="sub">Banca: Consultar edital</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">12/11/2026</strong>
+          <small class="sub">28 vagas até R$ 6.889,64</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA PARA PROCESSO SELETIVO Nº 014/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.sigmarh.com.br/" target="_blank" rel="noopener">🌐 Banca (Consultar edital)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/carapicuiba-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA PARA PROCESSO SELETIVO Nº 014/2026</p>
+          <ul><li>Língua Portuguesa: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial</li><li>Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional</li><li>Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação</li><li>Conhecimentos Específicos (Auxiliar Administrativo (Carapicuíba)): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de guzolândia prefeitura de guzolândia - sp abre processo seletivo com salários de até r$ 5.352,38 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352" target="_blank" rel="noopener">Prefeitura de Guzolândia</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de embauba prefeitura de embauba - sp abre concurso publico com salarios de ate r$ 5.600,00 embauba agente de fiscalizacao sanitaria e epidemiologica, almoxarife, escriturario, agente administrativo (+1) prefeitura municipal de embauba estatutario consultar edital (nao detalhado no resumo)"
+      data-cidade="Embaúba"
+      data-km-rp="108"
+      data-km-jarinu="321"
+      data-salario="5600.0"
+      data-vagas="6"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="40"
+      data-prova="2026-12-13"
+      data-inscricao="2026-11-05"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600" target="_blank" rel="noopener">Prefeitura de Embaúba</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Embaúba/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 108 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 321 km de Jarinu</span></div>
+        <p class="titulo">Prefeitura de Embaúba - SP abre concurso público com salários de até R$ 5.600,00</p>
+      </header>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🔍 <strong>Agente de Fiscalização Sanitária e Epidemiológica, Almoxarife, Escriturário, Agente Administrativo (+1)</strong></div>
+        <span class="badge-vagas">6 vaga(s) + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">Até R$ 5.600,00</strong>
+          <small class="sub">Salário individual por cargo na tabela do edital completo</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Consultar edital (não detalhado no resumo)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">20 a 40 horas semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">13/12/2026</strong>
+          <small class="sub">Banca: Prefeitura Municipal de Embaúba</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">05/11/2026</strong>
+          <small class="sub">51 vagas até R$ 5.600,00</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600#links" target="_blank" rel="noopener" title="EDITAL Nº 01/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.embauba.sp.gov.br/" target="_blank" rel="noopener">🌐 Banca (Prefeitura Municipal de Embaúba)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/embauba-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL Nº 01/2026</p>
+          <ul><li>Língua Portuguesa (Prefeitura Municipal de Embaúba): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial</li><li>Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional</li><li>Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação</li><li>Conhecimentos Específicos (Agente de Fiscalização Sanitária e Epidemiológica): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
+    </article>
+    <article class="card"
+      data-busca="prefeitura de guzolandia prefeitura de guzolandia - sp abre processo seletivo com salarios de ate r$ 5.352,38 guzolandia auxiliar de desenvolvimento infantil - adi, monitor de transporte escolar municipio de guzolandia processo seletivo / temporario consultar edital (nao detalhado no resumo)"
+      data-cidade="Guzolândia"
+      data-km-rp="302"
+      data-km-jarinu="489"
+      data-salario="5352.38"
+      data-vagas="1"
+      data-tem-cr="1"
+      data-regime="outros"
+      data-horas="40"
+      data-prova="2026-11-01"
+      data-inscricao="2026-10-23"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352" target="_blank" rel="noopener">Prefeitura de Guzolândia</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Guzolândia/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 302 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 489 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Guzolândia - SP abre processo seletivo com salários de até R$ 5.352,38</p>
       </header>
-      <ul class="cargos"><li><b>Auxiliar de Desenvolvimento Infantil - ADI</b> · CR</li><li><b>Monitor de Transporte Escolar</b> · 1 vaga</li></ul>
-      <footer>
-        <span>📋 3 vagas até R$ 5.352,38</span>
-        <span>🎓 Médio / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>23/10/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🔍 <strong>Auxiliar de Desenvolvimento Infantil - ADI, Monitor de Transporte Escolar</strong></div>
+        <span class="badge-vagas">1 vaga(s) + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">Até R$ 5.352,38</strong>
+          <small class="sub">Salário individual por cargo na tabela do edital completo</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Consultar edital (não detalhado no resumo)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Processo Seletivo / Temporário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">30 a 40 horas semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">01/11/2026</strong>
+          <small class="sub">Banca: Município de Guzolândia</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">23/10/2026</strong>
+          <small class="sub">3 vagas até R$ 5.352,38</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352#links" target="_blank" rel="noopener" title="EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://guzolandia.sp.gov.br/" target="_blank" rel="noopener">🌐 Banca (Município de Guzolândia)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/guzolandia-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026</p>
+          <ul><li>Língua Portuguesa (Município de Guzolândia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial</li><li>Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional</li><li>Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação</li><li>Conhecimentos Específicos (Auxiliar de Desenvolvimento Infantil - ADI): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-guzolandia-sp-abre-processo-seletivo-com-salarios-de-ate-5352#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de lençóis paulista prefeitura de lençóis paulista - sp abre concurso público com salários de até r$ 5.044,35 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044" target="_blank" rel="noopener">Prefeitura de Lençóis Paulista</a> <span class="badge novo">NOVO</span></h3>
-        <p class="titulo">Prefeitura de Lençóis Paulista - SP abre concurso público com salários de até R$ 5.044,35</p>
-      </header>
-      <ul class="cargos"><li><b>Agente Comunitário de Saúde - área 24</b> · 1 vaga</li><li><b>Agente de Vigilância Eletrônica</b> · 1 vaga</li><li><b>Monitor de Creche</b> · 1 vaga</li></ul>
-      <footer>
-        <span>📋 14 vagas até R$ 5.044,35</span>
-        <span>🎓 Fundamental / Médio / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>15/11/2026</b></span>
-      </footer>
-    </article>
-    <article class="card" data-busca="prefeitura de lorena prefeitura de lorena - sp abre concurso com salários de até r$ 8.890,46 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890" target="_blank" rel="noopener">Prefeitura de Lorena</a> <span class="badge novo">NOVO</span></h3>
-        <p class="titulo">Prefeitura de Lorena - SP abre concurso com salários de até R$ 8.890,46</p>
-      </header>
-      <ul class="cargos"><li><b>Agente de Atendimento Especial</b> · 1 vaga + CR</li></ul>
-      <footer>
-        <span>📋 3 vagas até R$ 8.890,46</span>
-        <span>🎓 Médio / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>03/11/2026</b></span>
-      </footer>
-    </article>
-    <article class="card" data-busca="prefeitura de macedônia prefeitura de macedônia - sp abre concurso público com salários de até r$ 8.189,58 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189" target="_blank" rel="noopener">Prefeitura de Macedônia</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de macedonia prefeitura de macedonia - sp abre concurso publico com salarios de ate r$ 8.189,58 macedonia agente de informacao, educacao e comunicacao (iec) no controle de vetores, assistente de administracao, auxiliar de administracao i, auxiliar de lancadoria (+10) prefeitura municipal de macedonia estatutario consultar edital (nao detalhado no resumo)"
+      data-cidade="Macedônia"
+      data-km-rp="273"
+      data-km-jarinu="487"
+      data-salario="8189.58"
+      data-vagas="1"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="40"
+      data-prova="2026-11-22"
+      data-inscricao="2026-11-08"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189" target="_blank" rel="noopener">Prefeitura de Macedônia</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Macedônia/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 273 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 487 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Macedônia - SP abre concurso público com salários de até R$ 8.189,58</p>
       </header>
-      <ul class="cargos"><li><b>Agente de Informação, Educação e Comunicação (IEC) no Controle de Vetores</b></li><li><b>Assistente de Administração</b></li><li><b>Auxiliar de Administração I</b></li><li><b>Auxiliar de Lançadoria</b></li><li><b>Auxiliar de Tesouraria</b></li><li><b>Entrevistador do Cadastro Único</b></li><li><b>Escriturário I</b></li><li><b>Lançador Fiscal</b></li><li><b>Monitor de Ônibus Escolar</b></li><li><b>Orientador Social</b></li><li><b>Ouvidor</b></li><li><b>Profissional de Apoio Escolar</b> · 1 vaga</li></ul>
-      <footer>
-        <span>📋 1 vaga até R$ 8.189,58</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>08/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🔍 <strong>Agente de Informação, Educação e Comunicação (IEC) no Controle de Vetores, Assistente de Administração, Auxiliar de Administração I, Auxiliar de Lançadoria (+10)</strong></div>
+        <span class="badge-vagas">1 vaga(s) + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">Até R$ 8.189,58</strong>
+          <small class="sub">Salário individual por cargo na tabela do edital completo</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Consultar edital (não detalhado no resumo)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">20 a 40 horas semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">22/11/2026</strong>
+          <small class="sub">Banca: Prefeitura Municipal de Macedônia</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">08/11/2026</strong>
+          <small class="sub">1 vaga até R$ 8.189,58</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 002/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.macedonia.sp.gov.br/" target="_blank" rel="noopener">🌐 Banca (Prefeitura Municipal de Macedônia)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/macedonia-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 002/2026</p>
+          <ul><li>Língua Portuguesa (Prefeitura Municipal de Macedônia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial</li><li>Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional</li><li>Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação</li><li>Conhecimentos Específicos (Agente de Informação, Educação e Comunicação (IEC) no Controle de Vetores): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de piedade prefeitura de piedade - sp publica edital de concurso público com salários de até r$ 17.397,46 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397" target="_blank" rel="noopener">Prefeitura de Piedade</a> <span class="badge novo">NOVO</span></h3>
-        <p class="titulo">Prefeitura de Piedade - SP publica edital de concurso público com salários de até R$ 17.397,46</p>
+    <article class="card"
+      data-busca="prefeitura de morro agudo prefeitura de morro agudo - sp abre concurso com salarios de ate r$ 5.815,68 morro agudo escriturario i, inspetor de alunos, agente comunitario de saude prefeitura municipal de morro agudo consultar edital auxilio-alimentacao de r$ 1.100,00, plano de saude e complemento salarial quando necessario, conforme a legislacao"
+      data-cidade="Morro Agudo"
+      data-km-rp="55"
+      data-km-jarinu="298"
+      data-salario="5815.68"
+      data-vagas="2"
+      data-tem-cr="1"
+      data-regime="outros"
+      data-horas="40"
+      data-prova="2026-11-29"
+      data-inscricao="2026-11-05"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815" target="_blank" rel="noopener">Prefeitura de Morro Agudo</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Morro Agudo/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 55 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 298 km de Jarinu</span></div>
+        <p class="titulo">Prefeitura de Morro Agudo - SP abre concurso com salários de até R$ 5.815,68</p>
       </header>
-      <ul class="cargos"><li><b>Monitor de Transporte Escolar</b> · 1 vaga</li></ul>
-      <footer>
-        <span>📋 20 vagas até R$ 17.397,46</span>
-        <span>🎓 Fundamental / Médio / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>09/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🔍 <strong>Escriturário I, Inspetor de Alunos, Agente Comunitário de Saúde</strong></div>
+        <span class="badge-vagas">2 vaga(s) + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">Até R$ 5.815,68</strong>
+          <small class="sub">Salário individual por cargo na tabela do edital completo</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Auxílio-alimentação de R$ 1.100,00, plano de saúde e complemento salarial quando necessário, conforme a legislação</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Consultar edital</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">30 a 40 horas semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">29/11/2026</strong>
+          <small class="sub">Banca: Prefeitura Municipal de Morro Agudo</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">05/11/2026</strong>
+          <small class="sub">7 vagas até R$ 5.815,68</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815#links" target="_blank" rel="noopener" title="EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 001/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.morroagudo.sp.gov.br/" target="_blank" rel="noopener">🌐 Banca (Prefeitura Municipal de Morro Agudo)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/morro-agudo-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 001/2026</p>
+          <ul><li>Língua Portuguesa (Prefeitura Municipal de Morro Agudo): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial</li><li>Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional</li><li>Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação</li><li>Conhecimentos Específicos (Escriturário I): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de taquarituba prefeitura de taquarituba - sp divulga retificação do concurso público com salários de até r$ 22.537,36 fisioterapeuta (cr)">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537" target="_blank" rel="noopener">Prefeitura de Taquarituba</a> <span class="badge novo">NOVO</span></h3>
-        <p class="titulo">Prefeitura de Taquarituba - SP divulga retificação do concurso público com salários de até R$ 22.537,36</p>
+    <article class="card"
+      data-busca="prefeitura de murutinga do sul prefeitura de murutinga do sul - sp publica edital de concurso com 15 vagas imediatas murutinga do sul escriturario prefeitura municipal de murutinga do sul estatutario vale-alimentacao de r$ 1.090,10. para alguns cargos havera abono salarial"
+      data-cidade="Murutinga do Sul"
+      data-km-rp="360"
+      data-km-jarinu="524"
+      data-salario="5118.2"
+      data-vagas="1"
+      data-tem-cr="1"
+      data-regime="estatutario"
+      data-horas="40"
+      data-prova="2026-12-06"
+      data-inscricao="2026-11-16"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas" target="_blank" rel="noopener">Prefeitura de Murutinga do Sul</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Murutinga do Sul/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 360 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 524 km de Jarinu</span></div>
+        <p class="titulo">Prefeitura de Murutinga do Sul - SP publica edital de concurso com 15 vagas imediatas</p>
       </header>
-      <ul class="cargos"><li><b>Inspetor de Alunos</b> · 1 vaga</li><li><b>Auxiliar Administrativo</b> · 1 vaga</li><li><b>Agente de Fiscalização de Atividades Urbanas</b> · CR</li><li><b>Agente Comunitário de Saúde - ESF Gino Chamorro/Bairro Parque São Roque Área 01</b> · 1 vaga</li><li><b>Agente Comunitário de Saúde - ESF Juca Pena/Bairro Pedro Barros Área 06</b> · 1 vaga</li><li><b>Agente Comunitário de Saúde - UBS Vila Santa Rita de Cássia Área 07</b> · 1 vaga</li><li><b>Motorista</b> · 1 vaga</li><li><b>Auxiliar de Educador/Cuidador</b> · 1 vaga</li><li><b>Carpinteiro</b> · 1 vaga</li><li><b>Pedreiro</b> · 1 vaga</li><li><b>Operador de Máquinas Rodoviárias</b> · 1 vaga</li><li><b>Encanador Hidráulico</b> · CR</li></ul>
-      <footer>
-        <span>📋 22 vagas até R$ 22.537,36</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>23/10/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🔍 <strong>Escriturário</strong></div>
+        <span class="badge-vagas">1 vaga(s) + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">Até R$ 5.118,20</strong>
+          <small class="sub">Salário individual por cargo na tabela do edital completo</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Vale-alimentação de R$ 1.090,10. Para alguns cargos haverá abono salarial</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Estatutário</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">30 a 40 horas semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">06/12/2026</strong>
+          <small class="sub">Banca: Prefeitura Municipal de Murutinga do Sul</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">30/10 a 16/11/2026</strong>
+          <small class="sub">15 vagas até R$ 5.118,20</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas#links" target="_blank" rel="noopener" title="EDITAL DE CONCURSO PÚBLICO Nº 001/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.murutingadosul.sp.gov.br/" target="_blank" rel="noopener">🌐 Banca (Prefeitura Municipal de Murutinga do Sul)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/murutinga-do-sul-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE CONCURSO PÚBLICO Nº 001/2026</p>
+          <ul><li>Língua Portuguesa (Prefeitura Municipal de Murutinga do Sul): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial</li><li>Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional</li><li>Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação</li><li>Conhecimentos Específicos (Escriturário): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-edital-de-concurso-com-15-vagas-imediatas#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prefeitura de tuiuti prefeitura de tuiuti - sp abre concurso público com vagas imediatas e cadastro de reserva ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva" target="_blank" rel="noopener">Prefeitura de Tuiuti</a> <span class="badge novo">NOVO</span></h3>
+    <article class="card"
+      data-busca="prefeitura de tuiuti prefeitura de tuiuti - sp abre concurso publico com vagas imediatas e cadastro de reserva tuiuti agente comunitario de saude, centro, agente comunitario de saude, godoy/arraial, agente comunitario de saude, lima rico/pantano, agente comunitario de saude, passa tres/machados/caetanos/rio abaixo (+8) prefeitura municipal de tuiuti consultar edital consultar edital (nao detalhado no resumo)"
+      data-cidade="Tuiuti"
+      data-km-rp="217"
+      data-km-jarinu="32"
+      data-salario="5209.01"
+      data-vagas="3"
+      data-tem-cr="1"
+      data-regime="outros"
+      data-horas="40"
+      data-prova="2026-12-20"
+      data-inscricao="2026-11-21"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva" target="_blank" rel="noopener">Prefeitura de Tuiuti</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Tuiuti/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 217 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 32 km de Jarinu</span></div>
         <p class="titulo">Prefeitura de Tuiuti - SP abre concurso público com vagas imediatas e cadastro de reserva</p>
       </header>
-      <ul class="cargos"><li><b>Agente Comunitário de Saúde, Centro</b> · CR</li><li><b>Agente Comunitário de Saúde, Godoy/Arraial</b> · CR</li><li><b>Agente Comunitário de Saúde, Lima Rico/Pantano</b> · CR</li><li><b>Agente Comunitário de Saúde, Passa Três/Machados/Caetanos/Rio Abaixo</b> · CR</li><li><b>Agente de Controle de Endemia</b> · CR</li><li><b>Almoxarife</b> · CR</li><li><b>Assistente Administrativo</b> · CR</li><li><b>Auxiliar Administrativo</b> · CR</li><li><b>Merendeira</b> · 1 vaga</li><li><b>Recepcionista</b> · CR</li><li><b>Servente</b> · 1 vaga</li><li><b>Servidor Braçal</b> · 1 vaga</li></ul>
-      <footer>
-        <span>📋 11 vagas até R$ 5.209,01</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>21/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🔍 <strong>Agente Comunitário de Saúde, Centro, Agente Comunitário de Saúde, Godoy/Arraial, Agente Comunitário de Saúde, Lima Rico/Pantano, Agente Comunitário de Saúde, Passa Três/Machados/Caetanos/Rio Abaixo (+8)</strong></div>
+        <span class="badge-vagas">3 vaga(s) + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">Até R$ 5.209,01</strong>
+          <small class="sub">Salário individual por cargo na tabela do edital completo</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Consultar edital (não detalhado no resumo)</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Consultar edital</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">20 a 40 horas semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">20/12/2026</strong>
+          <small class="sub">Banca: Prefeitura Municipal de Tuiuti</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">21/11/2026</strong>
+          <small class="sub">11 vagas até R$ 5.209,01</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva#links" target="_blank" rel="noopener" title="EDITAL DE CONCURSO PÚBLICO Nº 01/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.tuiuti.sp.gov.br/" target="_blank" rel="noopener">🌐 Banca (Prefeitura Municipal de Tuiuti)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/tuiuti-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE CONCURSO PÚBLICO Nº 01/2026</p>
+          <ul><li>Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial</li><li>Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional</li><li>Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação</li><li>Conhecimentos Específicos (Agente Comunitário de Saúde, Centro): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article>
-    <article class="card" data-busca="prudenprev - sistema de previdência do município de presidente prudente prudenprev - sp abre concurso público com salários de até r$ 11.102,06 ">
-      <header>
-        <h3><a href="https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102" target="_blank" rel="noopener">PRUDENPREV - Sistema de Previdência do Município de Presidente Prudente</a> <span class="badge novo">NOVO</span></h3>
-        <p class="titulo">PRUDENPREV - SP abre concurso público com salários de até R$ 11.102,06</p>
+    <article class="card"
+      data-busca="prefeitura de votorantim prefeitura de votorantim - sp abre concursos publicos com salarios de ate r$ 8.377,33 votorantim inspetor de alunos prefeitura municipal de votorantim consultar edital vale-alimentacao de r$ 1.100,00."
+      data-cidade="Votorantim"
+      data-km-rp="267"
+      data-km-jarinu="88"
+      data-salario="8377.33"
+      data-vagas="5"
+      data-tem-cr="1"
+      data-regime="outros"
+      data-horas="40"
+      data-prova="2026-12-13"
+      data-inscricao="2026-11-16"
+      data-novo="0"
+      data-first-seen-ts="2026-10-20T07:00:00-03:00"
+      data-is-baseline="1">
+      <header class="card-head">
+        <div class="head-top">
+          <h3><a href="https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377" target="_blank" rel="noopener">Prefeitura de Votorantim</a></h3>
+          
+        </div>
+        <div class="loc-row"><span class="chip-loc">📍 Votorantim/SP</span><span class="chip-dist" title="Distância aproximada até Ribeirão Preto/SP">🧭 267 km de Rib. Preto</span><span class="chip-dist" title="Distância aproximada até Jarinu/SP">🧭 88 km de Jarinu</span></div>
+        <p class="titulo">Prefeitura de Votorantim - SP abre concursos públicos com salários de até R$ 8.377,33</p>
       </header>
-      <ul class="cargos"><li><b>Escriturário</b> · 5 vagas AC + 1 vaga NI</li></ul>
-      <footer>
-        <span>📋 10 vagas até R$ 11.102,06</span>
-        <span>🎓 Fundamental / Médio / Técnico / Superior</span>
-        <span class="prazo">⏰ Inscrições até <b>10/11/2026</b></span>
-      </footer>
+
+      <div class="cargo-banner">
+        <div class="cargo-nome">🔍 <strong>Inspetor de Alunos</strong></div>
+        <span class="badge-vagas">5 vaga(s) + CR</span>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box destaque-sal">
+          <span class="lbl">💰 Salário Bruto do Cargo</span>
+          <strong class="val">Até R$ 8.377,33</strong>
+          <small class="sub">Salário individual por cargo na tabela do edital completo</small>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
+          <strong class="val-sm">Vale-alimentação de R$ 1.100,00.</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">🏛️ Regime de Contratação</span>
+          <strong class="val-sm">Consultar edital</strong>
+        </div>
+        <div class="info-box">
+          <span class="lbl">⏱️ Horas por Semana</span>
+          <strong class="val-sm">27 a 40 horas semanais</strong>
+        </div>
+        <div class="info-box destaque-prova">
+          <span class="lbl">📅 Data da Prova</span>
+          <strong class="val-sm">13/12/2026</strong>
+          <small class="sub">Banca: Prefeitura Municipal de Votorantim</small>
+        </div>
+        <div class="info-box destaque-prazo">
+          <span class="lbl">⏰ Inscrições até</span>
+          <strong class="val-sm">16/11/2026</strong>
+          <small class="sub">37 vagas até R$ 8.377,33</small>
+        </div>
+      </div>
+
+      <div class="links-row"><a class="btn-link primario" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377#links" target="_blank" rel="noopener" title="EDITAL DE CONCURSO PÚBLICO 01/2026 • EDITAL DE CONCURSO PÚBLICO 02/2026">📄 Edital &amp; Conteúdo Programático</a><a class="btn-link" href="https://www.votorantim.sp.gov.br/" target="_blank" rel="noopener">🌐 Banca (Prefeitura Municipal de Votorantim)</a><a class="btn-link" href="https://www.pciconcursos.com.br/provas/votorantim-sp" target="_blank" rel="noopener">📝 Provas Anteriores</a></div>
+
+      <details class="prog-box">
+        <summary>📚 Ver Resumo do Conteúdo Programático</summary>
+        <div class="prog-body">
+          <p class="prog-arq">📑 <b>Documentos do Edital:</b> EDITAL DE CONCURSO PÚBLICO 01/2026 • EDITAL DE CONCURSO PÚBLICO 02/2026</p>
+          <ul><li>Língua Portuguesa (Prefeitura Municipal de Votorantim): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial</li><li>Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional</li><li>Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação</li><li>Conhecimentos Específicos (Inspetor de Alunos): Rotinas administrativas, atendimento ao público, noções de Administração Pública, Direito Constitucional/Administrativo e legislação municipal/estadual do órgão</li></ul>
+          <a class="prog-cta" href="https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377#links" target="_blank" rel="noopener">
+            👉 Abrir Anexo de Conteúdo Programático no Edital Oficial
+          </a>
+        </div>
+      </details>
     </article></div>
+    <p class="vazio" style="display:none;">
+      Nenhum concurso encontrado com os filtros selecionados.
+    </p>
   </section>
-  </main>
+    </main>
+  </div>
+
+  <!-- Modal de Instrução de Instalação PWA -->
+  <div id="modalPwa" class="modal-bg" role="dialog" aria-modal="true">
+    <div class="modal">
+      <h3>📲 Instalar Aplicativo Concursos SP</h3>
+      <p style="margin:0 0 8px;color:var(--muted);font-size:.9rem;">
+        Você pode instalar este painel como um aplicativo no celular ou computador (funciona até offline):
+      </p>
+      <ol>
+        <li><b>No Chrome / Edge (PC ou Android):</b> clique no ícone de instalação <b>⊕</b> na barra de endereços ou no menu <b>⋮ → Instalar aplicativo / Adicionar à tela inicial</b>.</li>
+        <li><b>No iPhone / iPad (Safari):</b> toque em <b>Compartilhar (⬆️)</b> e escolha <b>"Adicionar à Tela de Início"</b>.</li>
+      </ol>
+      <button type="button" id="fecharModal">Entendi</button>
+    </div>
+  </div>
+
 <script>
-  const btns = document.querySelectorAll('nav button');
-  function abrir(tab) {
+  // 1) Atualização dinâmica da plaquinha de "CONCURSO NOVO (24h)" no navegador
+  (function atualizarNovos24h() {
+    const agora = Date.now();
+    let totalNovos = 0;
+    document.querySelectorAll('.card').forEach(card => {
+      const isBaseline = card.dataset.isBaseline === '1';
+      const ts = Date.parse(card.dataset.firstSeenTs || '');
+      const ehNovo = !isBaseline && !isNaN(ts) && (agora - ts) >= 0 && (agora - ts) <= 86400000;
+      card.dataset.novo = ehNovo ? '1' : '0';
+      const badge = card.querySelector('.badge-novo');
+      if (ehNovo) {
+        totalNovos++;
+        if (!badge) {
+          const span = document.createElement('span');
+          span.className = 'badge-novo';
+          span.textContent = '✨ CONCURSO NOVO · 24h';
+          card.querySelector('.head-top').appendChild(span);
+        }
+      } else if (badge) {
+        badge.remove();
+      }
+    });
+    const elStat = document.getElementById('statNovos');
+    if (elStat) elStat.textContent = totalNovos;
+  })();
+
+  // 2) Navegação entre abas
+  const btns = document.querySelectorAll('nav.tabs button');
+  function abrirTab(tab) {
     btns.forEach(b => b.classList.toggle('ativo', b.dataset.tab === tab));
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('ativo', p.id === tab));
     history.replaceState(null, '', '#' + tab);
   }
-  btns.forEach(b => b.addEventListener('click', () => abrir(b.dataset.tab)));
-  abrir(['fisio','medio','possiveis'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'fisio');
-  document.getElementById('q').addEventListener('input', ev => {
-    const q = ev.target.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    document.querySelectorAll('.card').forEach(c => {
-      const t = c.dataset.busca.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      c.style.display = t.includes(q) ? '' : 'none';
+  btns.forEach(b => b.addEventListener('click', () => abrirTab(b.dataset.tab)));
+  const hashInicial = location.hash.slice(1);
+  if (['fisio', 'medio', 'possiveis'].includes(hashInicial)) abrirTab(hashInicial);
+
+  // 3) Filtragem e Ordenação Completa
+  const fBusca = document.getElementById('fBusca');
+  const fCidade = document.getElementById('fCidade');
+  const fKmRp = document.getElementById('fKmRp');
+  const fKmJa = document.getElementById('fKmJa');
+  const fSalario = document.getElementById('fSalario');
+  const fVagas = document.getElementById('fVagas');
+  const fRegime = document.getElementById('fRegime');
+  const fHoras = document.getElementById('fHoras');
+  const fOrdem = document.getElementById('fOrdem');
+  const fNovo = document.getElementById('fNovo');
+
+  function normStr(s) {
+    return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function aplicarFiltros() {
+    const q = normStr(fBusca.value);
+    const cid = fCidade.value;
+    const maxRp = fKmRp.value ? Number(fKmRp.value) : null;
+    const maxJa = fKmJa.value ? Number(fKmJa.value) : null;
+    const minSal = Number(fSalario.value || 0);
+    const vagasMode = fVagas.value;
+    const regime = fRegime.value;
+    const maxHoras = fHoras.value ? Number(fHoras.value) : null;
+    const soNovos = fNovo.checked;
+    const ordem = fOrdem.value;
+
+    document.querySelectorAll('.tab-panel').forEach(panel => {
+      const grid = panel.querySelector('.grid');
+      const cards = Array.from(grid.querySelectorAll('.card'));
+      let visiveis = 0;
+
+      cards.forEach(c => {
+        let ok = true;
+        if (q && !c.dataset.busca.includes(q)) ok = false;
+        if (ok && cid && c.dataset.cidade !== cid) ok = false;
+        if (ok && maxRp !== null && Number(c.dataset.kmRp) > maxRp) ok = false;
+        if (ok && maxJa !== null && Number(c.dataset.kmJarinu) > maxJa) ok = false;
+        if (ok && minSal > 0 && Number(c.dataset.salario) < minSal) ok = false;
+        if (ok && vagasMode !== 'todas') {
+          const v = Number(c.dataset.vagas);
+          if (vagasMode === 'cr' && v > 0) ok = false;
+          else if (vagasMode !== 'cr' && v < Number(vagasMode)) ok = false;
+        }
+        if (ok && regime && c.dataset.regime !== regime) ok = false;
+        if (ok && maxHoras !== null && Number(c.dataset.horas) > maxHoras) ok = false;
+        if (ok && soNovos && c.dataset.novo !== '1') ok = false;
+
+        c.style.display = ok ? '' : 'none';
+        if (ok) visiveis++;
+      });
+
+      // Ordenação
+      if (ordem !== 'padrao') {
+        cards.sort((a, b) => {
+          if (ordem === 'rp') return Number(a.dataset.kmRp) - Number(b.dataset.kmRp);
+          if (ordem === 'jarinu') return Number(a.dataset.kmJarinu) - Number(b.dataset.kmJarinu);
+          if (ordem === 'salario') return Number(b.dataset.salario) - Number(a.dataset.salario);
+          if (ordem === 'vagas') return Number(b.dataset.vagas) - Number(a.dataset.vagas);
+          if (ordem === 'prova') return (a.dataset.prova || '').localeCompare(b.dataset.prova || '');
+          if (ordem === 'inscricao') return (a.dataset.inscricao || '').localeCompare(b.dataset.inscricao || '');
+          if (ordem === 'novos') return Number(b.dataset.novo) - Number(a.dataset.novo);
+          return 0;
+        });
+        cards.forEach(c => grid.appendChild(c));
+      }
+
+      panel.querySelector('.sec-count').textContent = `(${visiveis})`;
+      const btnTab = document.querySelector(`nav.tabs button[data-tab="${panel.id}"] .cnt`);
+      if (btnTab) btnTab.textContent = visiveis;
+      panel.querySelector('.vazio').style.display = visiveis === 0 ? 'block' : 'none';
     });
+  }
+
+  [fBusca, fCidade, fKmRp, fKmJa, fSalario, fVagas, fRegime, fHoras, fOrdem, fNovo].forEach(el => {
+    el.addEventListener('input', aplicarFiltros);
+    el.addEventListener('change', aplicarFiltros);
+  });
+
+  document.getElementById('btnLimpar').addEventListener('click', () => {
+    fBusca.value = '';
+    fCidade.value = '';
+    fKmRp.value = '';
+    fKmJa.value = '';
+    fSalario.value = '0';
+    fVagas.value = 'todas';
+    fRegime.value = '';
+    fHoras.value = '';
+    fOrdem.value = 'padrao';
+    fNovo.checked = false;
+    aplicarFiltros();
+  });
+
+  // 4) PWA — Service Worker e Botão de Instalação
+  let deferredPrompt = null;
+  const btnInstall = document.getElementById('btnInstall');
+  const modalPwa = document.getElementById('modalPwa');
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    });
+  }
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+  });
+
+  btnInstall.addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      deferredPrompt = null;
+    } else {
+      modalPwa.classList.add('aberto');
+    }
+  });
+
+  document.getElementById('fecharModal').addEventListener('click', () => {
+    modalPwa.classList.remove('aberto');
+  });
+  modalPwa.addEventListener('click', (e) => {
+    if (e.target === modalPwa) modalPwa.classList.remove('aberto');
   });
 </script>
 </body>

@@ -1,0 +1,479 @@
+{
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433": {
+    "cidade": "Matão",
+    "banca": "IBAM",
+    "site_banca": "https://www.ibamsp-concursos.org.br/",
+    "data_prova": "06/12/2026",
+    "regime": "CLT (Celetista)",
+    "beneficios": "VA (Auxílio-alimentação em cartão): R$ 1.000,00/mês",
+    "fisio": {
+      "cargo": "Fisioterapeuta",
+      "vagas": "1 vaga imediata + CR",
+      "vagas_imediatas": 1,
+      "tem_cr": true,
+      "salario": 4727.38,
+      "salario_detalhe": "R$ 4.727,38 (vencimento base exato) + R$ 1.000,00 VA = R$ 5.727,38",
+      "carga_horaria": "30h semanais",
+      "regime": "CLT (Celetista)",
+      "beneficios": "VA (Auxílio-alimentação): R$ 1.000,00/mês (VR/VT conforme legislação municipal)",
+      "resumo_conteudo": [
+        "Língua Portuguesa (interpretação de texto, gramática aplicada, concordância, regência e pontuação — padrão IBAM)",
+        "Políticas de Saúde e Legislação do SUS (Lei 8.080/90, Lei 8.142/90, PNAB, Rede de Atenção à Saúde e Vigilância em Saúde)",
+        "Conhecimentos Específicos em Fisioterapia: Anatomia e fisiologia humana, biomecânica e cinesiologia",
+        "Avaliação funcional, testes musculares, goniometria, semiologia e diagnóstico cinético-funcional",
+        "Cinesioterapia, eletrotermofototerapia, mecanoterapia, órteses e próteses",
+        "Fisioterapia em Ortopedia/Traumatologia, Neurologia (adulto e pediátrica), Cardiorrespiratória, Geriatria e Saúde da Família (NASF/eMulti)",
+        "Código de Ética e Deontologia da Fisioterapia (Resoluções COFFITO)"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp": {
+    "cidade": "São Paulo",
+    "banca": "Marinha — 8º Distrito Naval",
+    "site_banca": "https://www.marinha.mil.br/com8dn/",
+    "data_prova": "21/02/2027",
+    "regime": "Militar Temporário (RM2 — até 8 anos)",
+    "beneficios": "Assistência médico-hospitalar e odontológica, alimentação no quartel e auxílio-fardamento",
+    "fisio": {
+      "cargo": "Oficial Temporário RM2 — Apoio à Saúde (Fisioterapia)",
+      "vagas": "1 vaga imediata (São Paulo/SP)",
+      "vagas_imediatas": 1,
+      "tem_cr": false,
+      "salario": 9575.00,
+      "salario_detalhe": "R$ 9.575,00 brutos iniciais (Guarda-Marinha RM2: soldo R$ 7.315,00 + adicionais militares; sobe após 6 meses como 2º Tenente)",
+      "carga_horaria": "40h semanais (Expediente Militar)",
+      "regime": "Militar Temporário (RM2)",
+      "beneficios": "Assistência médico-hospitalar (FUSMA), alimentação na OM e auxílio-fardamento",
+      "resumo_conteudo": [
+        "Língua Portuguesa (25 questões — interpretação textual, coesão, coerência, sintaxe, concordância, regência e redação oficial)",
+        "Formação Militar-Naval e História Naval (25 questões — Estatuto dos Militares Lei 6.880/80, Organização Básica da Marinha, História Naval Brasileira e Relações Internacionais)",
+        "Etapas complementares: Prova de Títulos, Inspeção de Saúde (IS) e Teste de Aptidão Física de Ingresso (TAF-i: natação 25m e corrida 2.400m)"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sp-abre-processo-seletivo-para-residencia-multiprofissional": {
+    "cidade": "Praia Grande",
+    "banca": "IBAM",
+    "site_banca": "https://www.ibamsp-concursos.org.br/",
+    "data_prova": "06/12/2026",
+    "regime": "Residência Multiprofissional (Bolsa — 2 anos)",
+    "beneficios": "Bolsa do Ministério da Saúde (sem VA/VR/VT adicional informado)",
+    "fisio": {
+      "cargo": "Fisioterapia — Residência Multiprofissional em Saúde da Família e Comunidade (R1)",
+      "vagas": "4 vagas imediatas",
+      "vagas_imediatas": 4,
+      "tem_cr": false,
+      "salario": 4106.09,
+      "salario_detalhe": "R$ 4.106,09 (bolsa mensal exata — Ministério da Saúde)",
+      "carga_horaria": "60h semanais (dedicação exclusiva)",
+      "regime": "Residência (Bolsa)",
+      "beneficios": "Bolsa-Residência MS (sem VA/VR/VT informado no edital)",
+      "resumo_conteudo": [
+        "Língua Portuguesa e Interpretação de Textos",
+        "Políticas Públicas de Saúde, SUS e Atenção Primária (PNAB, Estratégia Saúde da Família, Territorialização, PTS e Apoio Matricial)",
+        "Conhecimentos Específicos em Fisioterapia: Reabilitação funcional na Atenção Básica e domiciliar",
+        "Fisioterapia preventiva, saúde do idoso, saúde da mulher, saúde da criança e do trabalhador",
+        "Avaliação cinético-funcional, cinesioterapia, reabilitação neurofuncional, ortopédica e cardiorrespiratória comunitária"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500": {
+    "cidade": "Floreal",
+    "banca": "Instituto Unique",
+    "site_banca": "https://www.institutounique.org.br/",
+    "data_prova": "22/11/2026",
+    "regime": "Estatutário (RPPS)",
+    "beneficios": "Benefícios conforme estatuto municipal (VA/VR/VT não detalhados no resumo)",
+    "fisio": {
+      "cargo": "Fisioterapeuta",
+      "vagas": "Cadastro de Reserva (CR)",
+      "vagas_imediatas": 0,
+      "tem_cr": true,
+      "salario": 4118.39,
+      "salario_detalhe": "R$ 4.118,39 (vencimento base exato)",
+      "carga_horaria": "30h semanais",
+      "regime": "Estatutário",
+      "beneficios": "Conforme legislação municipal de Floreal (consultar edital)",
+      "resumo_conteudo": [
+        "Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais/Atualidades",
+        "Saúde Pública e Legislação do SUS (Constituição Federal arts. 196-200, Leis 8.080/90 e 8.142/90)",
+        "Conhecimentos Específicos em Fisioterapia: Anatomia, fisiologia, cinesiologia e biomecânica",
+        "Recursos terapêuticos manuais, cinesioterapia, eletrotermofototerapia e hidroterapia",
+        "Fisioterapia traumatológica, ortopédica, reumatológica, neurológica, pneumofuncional e geriátrica",
+        "Avaliação de Títulos (classificatória para nível superior)"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude": {
+    "cidade": "Guarulhos",
+    "banca": "IBAM",
+    "site_banca": "https://www.ibamsp-concursos.org.br/",
+    "data_prova": "13/12/2026",
+    "regime": "Residência Multiprofissional (Bolsa — 2 anos)",
+    "beneficios": "Bolsa do Ministério da Saúde (sem VA/VR/VT adicional informado)",
+    "fisio": {
+      "cargo": "Fisioterapia — Residência Multiprofissional (Atenção Básica / Saúde da Família)",
+      "vagas": "3 vagas imediatas",
+      "vagas_imediatas": 3,
+      "tem_cr": false,
+      "salario": 4106.09,
+      "salario_detalhe": "R$ 4.106,09 (bolsa mensal exata — Ministério da Saúde)",
+      "carga_horaria": "60h semanais (dedicação exclusiva)",
+      "regime": "Residência (Bolsa)",
+      "beneficios": "Bolsa-Residência MS (sem VA/VR/VT informado no edital)",
+      "resumo_conteudo": [
+        "Políticas Públicas de Saúde, Reforma Sanitária, SUS, PNAB e Redes de Atenção à Saúde",
+        "Trabalho multiprofissional, interdisciplinaridade, Clínica Ampliada e Projeto Terapêutico Singular (PTS)",
+        "Conhecimentos Específicos de Fisioterapia na Atenção Primária à Saúde",
+        "Atuação fisioterapêutica nos ciclos de vida (criança, adulto, gestante e idoso), doenças crônicas não transmissíveis, dor musculoesquelética e reabilitação neurofuncional e respiratória comunitária"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-holambra-sp-abre-concurso-com-salarios-de-ate-8431": {
+    "cidade": "Holambra",
+    "banca": "GL Consultoria",
+    "site_banca": "https://www.glconsultoria.com.br/",
+    "data_prova": "29/11/2026",
+    "regime": "Estatutário / Efetivo",
+    "beneficios": "Benefícios conforme legislação municipal de Holambra (ver edital)",
+    "fisio": {
+      "cargo": "Fisioterapeuta",
+      "vagas": "Cadastro de Reserva (CR)",
+      "vagas_imediatas": 0,
+      "tem_cr": true,
+      "salario": 3703.27,
+      "salario_detalhe": "R$ 3.703,27 (vencimento base exato para 20h/sem)",
+      "carga_horaria": "20h semanais",
+      "regime": "Estatutário",
+      "beneficios": "Conforme legislação municipal de Holambra (consultar edital)",
+      "resumo_conteudo": [
+        "Língua Portuguesa e Matemática / Raciocínio Lógico (padrão GL Consultoria)",
+        "Legislação do SUS e Saúde Coletiva (Leis 8.080/90, 8.142/90, Decreto 7.508/11)",
+        "Conhecimentos Específicos em Fisioterapia: Avaliação musculoesquelética e neurológica, testes especiais e goniometria",
+        "Eletrotermofototerapia, cinesioterapia, reabilitação ortopédica, traumatológica, reumatológica, respiratória e geriátrica; Ética profissional COFFITO",
+        "Inclui etapa de Avaliação de Títulos (Grupo B — prova em 29/11/2026)"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325": {
+    "cidade": "Jaborandi",
+    "banca": "GL Consultoria",
+    "site_banca": "https://www.glconsultoria.com.br/",
+    "data_prova": "22/11/2026",
+    "regime": "CLT (Celetista)",
+    "beneficios": "Benefícios conforme legislação municipal de Jaborandi (ver edital)",
+    "fisio": {
+      "cargo": "Fisioterapeuta",
+      "vagas": "Cadastro de Reserva (CR)",
+      "vagas_imediatas": 0,
+      "tem_cr": true,
+      "salario": 2068.85,
+      "salario_detalhe": "R$ 2.068,85 (vencimento base exato para 20h/sem)",
+      "carga_horaria": "20h semanais",
+      "regime": "CLT (Celetista)",
+      "beneficios": "Conforme legislação municipal de Jaborandi (consultar edital)",
+      "resumo_conteudo": [
+        "Língua Portuguesa e Matemática / Conhecimentos Gerais (padrão GL Consultoria)",
+        "Saúde Pública e Legislação do SUS",
+        "Conhecimentos Específicos em Fisioterapia: Anatomia, fisiologia do exercício, biomecânica e cinesiologia",
+        "Fisioterapia aplicada à ortopedia, traumatologia, neurologia, cardiologia, pneumologia e pediatria/geriatria",
+        "Avaliação de Títulos (classificatória)"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632": {
+    "cidade": "Paulo de Faria",
+    "banca": "Império Concursos",
+    "site_banca": "https://portal.imperioconcursos.com.br/",
+    "data_prova": "22/11/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Benefícios conforme legislação municipal de Paulo de Faria (ver edital)",
+    "fisio": {
+      "cargo": "Fisioterapeuta",
+      "vagas": "1 vaga imediata + CR",
+      "vagas_imediatas": 1,
+      "tem_cr": true,
+      "salario": 3018.97,
+      "salario_detalhe": "R$ 3.018,97 (vencimento base inicial)",
+      "carga_horaria": "30h semanais",
+      "regime": "Estatutário",
+      "beneficios": "Conforme legislação municipal de Paulo de Faria (consultar edital)",
+      "resumo_conteudo": [
+        "Língua Portuguesa, Matemática e Conhecimentos Gerais/Atualidades",
+        "Conhecimentos de Saúde Pública / SUS e Legislação Municipal",
+        "Conhecimentos Específicos em Fisioterapia: Métodos e técnicas de avaliação, diagnóstico cinético-funcional, cinesioterapia e eletrotermofototerapia",
+        "Reabilitação em ortopedia/traumatologia, neurologia, reumatologia, cardiorrespiratória e saúde pública; Ética COFFITO",
+        "Avaliação de Títulos para cargos de nível superior"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas": {
+    "cidade": "Porto Feliz",
+    "banca": "Instituto Avalia",
+    "site_banca": "https://www.avalia.org.br/",
+    "data_prova": "13/12/2026",
+    "regime": "CLT (Edital 002/2026 — SUS)",
+    "beneficios": "VA (Vale-alimentação): R$ 863,50 mensais",
+    "fisio": {
+      "cargo": "Fisioterapeuta/SUS (Edital 002/2026)",
+      "vagas": "Cadastro de Reserva (CR)",
+      "vagas_imediatas": 0,
+      "tem_cr": true,
+      "salario": 4086.88,
+      "salario_detalhe": "R$ 4.086,88 (base exato) + R$ 863,50 VA = R$ 4.950,38",
+      "carga_horaria": "30h semanais",
+      "regime": "CLT (Celetista)",
+      "beneficios": "VA (Vale-alimentação): R$ 863,50/mês",
+      "resumo_conteudo": [
+        "Língua Portuguesa, Raciocínio Lógico/Matemático e Noções de Informática (padrão Instituto Avalia)",
+        "Legislação do SUS e Saúde Coletiva (Leis 8.080/90 e 8.142/90, PNAB, Redes de Atenção à Saúde)",
+        "Conhecimentos Específicos em Fisioterapia/SUS: Fisioterapia na Atenção Básica, domiciliar e ambulatorial",
+        "Cinesioterapia, eletroterapia, termoterapia, fototerapia, órteses e próteses",
+        "Fisioterapia neurofuncional, traumato-ortopédica, cardiorrespiratória, uroginecológica e geriátrica"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos": {
+    "cidade": "Taquaritinga",
+    "banca": "GL Consultoria",
+    "site_banca": "https://www.glconsultoria.com.br/",
+    "data_prova": "22/11/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Benefícios conforme legislação municipal de Taquaritinga (ver edital)",
+    "fisio": {
+      "cargo": "Fisioterapeuta",
+      "vagas": "Cadastro de Reserva (CR)",
+      "vagas_imediatas": 0,
+      "tem_cr": true,
+      "salario": 2586.00,
+      "salario_detalhe": "R$ 2.586,00 (vencimento base inicial)",
+      "carga_horaria": "30h semanais",
+      "regime": "Estatutário",
+      "beneficios": "Conforme legislação municipal de Taquaritinga (consultar edital)",
+      "resumo_conteudo": [
+        "Língua Portuguesa e Matemática (padrão GL Consultoria)",
+        "Saúde Pública e Diretrizes do SUS",
+        "Conhecimentos Específicos em Fisioterapia: Anatomia, fisiologia, semiologia e avaliação funcional",
+        "Cinesioterapia, eletrotermofototerapia, reabilitação ortopédica, neurológica, respiratória e saúde coletiva"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537": {
+    "cidade": "Taquarituba",
+    "banca": "Instituto Unique",
+    "site_banca": "https://www.institutounique.org.br/",
+    "data_prova": "15/11/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Benefícios conforme estatuto municipal de Taquarituba (ver edital)",
+    "fisio": {
+      "cargo": "Fisioterapeuta",
+      "vagas": "Cadastro de Reserva (CR)",
+      "vagas_imediatas": 0,
+      "tem_cr": true,
+      "salario": 6154.54,
+      "salario_detalhe": "R$ 6.154,54 (vencimento base exato para 30h/sem)",
+      "carga_horaria": "30h semanais",
+      "regime": "Estatutário",
+      "beneficios": "Conforme legislação municipal de Taquarituba (consultar edital)",
+      "resumo_conteudo": [
+        "Língua Portuguesa, Matemática/Raciocínio Lógico e Conhecimentos Gerais/Atualidades (Errata nº 02/2026 publicada)",
+        "Legislação do SUS e Políticas Públicas de Saúde",
+        "Conhecimentos Específicos em Fisioterapia: Anatomia, cinesiologia, biomecânica e avaliação fisioterapêutica",
+        "Cinesioterapia, eletrotermofototerapia, mecanoterapia, reabilitação neurofuncional, traumato-ortopédica, cardiorrespiratória e geriátrica; Ética COFFITO",
+        "Avaliação de Títulos (classificatória)"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539": {
+    "cidade": "Tarumã",
+    "banca": "IPELL Consultoria",
+    "site_banca": "https://www.ipell.com.br/",
+    "data_prova": "22/11/2026",
+    "regime": "Processo Seletivo / Temporário",
+    "beneficios": "Benefícios conforme legislação municipal de Tarumã (ver edital)",
+    "fisio": {
+      "cargo": "Fisioterapeuta",
+      "vagas": "Cadastro de Reserva (CR)",
+      "vagas_imediatas": 0,
+      "tem_cr": true,
+      "salario": null,
+      "salario_detalhe": "Faixa do edital: R$ 1.717,55 a R$ 23.539,17 (consultar anexo de vencimentos no edital)",
+      "carga_horaria": "20h a 40h semanais",
+      "regime": "Processo Seletivo",
+      "beneficios": "Conforme legislação municipal de Tarumã (consultar edital)",
+      "resumo_conteudo": [
+        "Língua Portuguesa, Matemática e Conhecimentos Gerais (padrão IPELL — prova no período da tarde em 22/11/2026)",
+        "Legislação do SUS e Saúde Pública",
+        "Conhecimentos Específicos em Fisioterapia: Avaliação cinético-funcional, recursos fisioterapêuticos, reabilitação ortopédica, neurológica, respiratória e atenção básica"
+      ]
+    },
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario": {
+    "cidade": "São Paulo",
+    "banca": "VUNESP",
+    "site_banca": "https://www.vunesp.com.br/",
+    "data_prova": "14/03/2027",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "VA/VR (Auxílio-alimentação), VT (Auxílio-transporte) e Auxílio-saúde",
+    "medio": [
+      {
+        "nome": "Escrevente Técnico Judiciário",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 6782.54,
+        "salario_detalhe": "R$ 6.782,54 (vencimento base exato) + Auxílios Alimentação, Transporte e Saúde",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "beneficios": "Auxílio-alimentação (VA/VR), Auxílio-transporte (VT) e Auxílio-saúde",
+        "resumo_conteudo": [
+          "Bloco I — Língua Portuguesa (interpretação, gramática, concordância, regência, crase e redação)",
+          "Bloco II — Conhecimentos em Direito: Direito Penal, Processo Penal, Processo Civil, Constitucional, Administrativo e Normas da Corregedoria Geral da Justiça (NSCGJ)",
+          "Bloco III — Conhecimentos Gerais: Atualidades, Estatuto da Pessoa com Deficiência, Matemática, Raciocínio Lógico e Informática (Windows, Word, Excel, Teams)",
+          "Prova Discursiva (Redação) aplicada no mesmo dia da prova objetiva (14/03/2027)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii": {
+    "cidade": "Sorocaba",
+    "banca": "UNESP",
+    "site_banca": "https://inscricoes.unesp.br/",
+    "data_prova": "Ver edital de convocação",
+    "regime": "CLT (Celetista — Substituto)",
+    "beneficios": "VA (Vale-alimentação), VR e VT conforme normas UNESP",
+    "medio": [
+      {
+        "nome": "Assistente de Suporte Acadêmico II — Mecatrônica",
+        "vagas": "1 vaga imediata",
+        "vagas_imediatas": 1,
+        "tem_cr": false,
+        "salario": 6537.74,
+        "salario_detalhe": "R$ 6.537,74 (salário base exato)",
+        "carga_horaria": "40h semanais",
+        "regime": "CLT (Celetista)",
+        "beneficios": "Vale-alimentação e benefícios UNESP conforme edital",
+        "resumo_conteudo": [
+          "Língua Portuguesa (interpretação de textos, ortografia, morfologia, sintaxe, pontuação)",
+          "Matemática e Raciocínio Lógico (operações, porcentagem, razão e proporção, geometria, lógica proposicional)",
+          "Conhecimentos Específicos em Mecatrônica: Eletrônica analógica e digital, instrumentação de laboratório, sensores e atuadores, CLP, comandos elétricos, pneumática/hidráulica e segurança em laboratórios"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065": {
+    "cidade": "Paraguaçu Paulista",
+    "banca": "Instituto IBEPP",
+    "site_banca": "https://www.institutoibepp.com.br/",
+    "data_prova": "13/12/2026",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "Benefícios conforme legislação da Câmara Municipal (ver edital)",
+    "medio": [
+      {
+        "nome": "Agente Administrativo",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 5323.27,
+        "salario_detalhe": "R$ 5.323,27 (vencimento base exato para Ensino Médio)",
+        "carga_horaria": "40h semanais",
+        "regime": "Estatutário",
+        "beneficios": "Conforme legislação da Câmara de Paraguaçu Paulista",
+        "resumo_conteudo": [
+          "Língua Portuguesa (compreensão textual, gramática normativa e redação oficial)",
+          "Matemática e Raciocínio Lógico",
+          "Noções de Informática (Windows, pacote Office, internet e correio eletrônico)",
+          "Conhecimentos Específicos e Legislação: Regimento Interno da Câmara, Lei Orgânica Municipal, Noções de Administração Pública, Licitações (Lei 14.133/2021) e rotinas administrativas"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114": {
+    "cidade": "Dois Córregos",
+    "banca": "Império Concursos",
+    "site_banca": "https://portal.imperioconcursos.com.br/",
+    "data_prova": "15/11/2026",
+    "regime": "CLT (Celetista)",
+    "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior",
+    "medio": [
+      {
+        "nome": "Oficial Legislativo / Oficial de Finanças",
+        "vagas": "Cadastro de Reserva (CR)",
+        "vagas_imediatas": 0,
+        "tem_cr": true,
+        "salario": 6029.83,
+        "salario_detalhe": "R$ 6.029,83 total (R$ 4.879,83 base exato + R$ 1.150,00 Vale-Alimentação)",
+        "carga_horaria": "35h semanais",
+        "regime": "CLT (Celetista)",
+        "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior prevista em lei municipal",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Noções de Informática",
+          "Legislação Municipal (Lei Orgânica de Dois Córregos e Regimento Interno da Câmara)",
+          "Conhecimentos Específicos: Administração Pública, Processo Legislativo, Direito Constitucional/Administrativo básico (Oficial Legislativo) ou Contabilidade Pública, Orçamento, LRF e Lei 4.320/64 (Oficial de Finanças)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428": {
+    "cidade": "Campinas",
+    "banca": "INDEPAC",
+    "site_banca": "https://indepac.selecao.net.br/",
+    "data_prova": "17/01/2027",
+    "regime": "Estatutário (Efetivo)",
+    "beneficios": "VA/VR (Vale-alimentação/refeição): R$ 2.150,12/mês + Prêmio de produtividade até 85% (Fiscalização)",
+    "medio": [
+      {
+        "nome": "Agente de Fiscalização (5 vagas + CR) / Agente Administrativo (8 vagas + CR)",
+        "vagas": "13 vagas imediatas + CR",
+        "vagas_imediatas": 13,
+        "tem_cr": true,
+        "salario": 6435.59,
+        "salario_detalhe": "Agente de Fiscalização: R$ 4.285,47 base + R$ 2.150,12 VA/VR = R$ 6.435,59 (até R$ 10.078,24 com prêmio de 85%) | Agente Administrativo: R$ 3.714,09 base + R$ 2.150,12 VA/VR = R$ 5.864,21",
+        "carga_horaria": "36h semanais",
+        "regime": "Estatutário",
+        "beneficios": "VA/VR (Vale-alimentação/refeição): R$ 2.150,12/mês + prêmio de produtividade de até 85% (Agente de Fiscalização)",
+        "resumo_conteudo": [
+          "Língua Portuguesa, Matemática e Noções de Informática (padrão INDEPAC)",
+          "Legislação Municipal de Campinas, Estatuto dos Servidores e legislação da SETEC",
+          "Conhecimentos Específicos de Administração Pública, atendimento, redação oficial e arquivologia (Agente Administrativo) ou Posturas Municipais, Poder de Polícia e Fiscalização (Agente de Fiscalização)"
+        ]
+      }
+    ]
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concursos-publicos-com-salarios-de-ate-5565": {
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397": {
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044": {
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890": {
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102": {
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/camara-de-boituva-sp-abre-concursos-com-salarios-de-ate-8595": {
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717": {
+    "medio_excluido": true
+  },
+  "https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva": {
+    "medio_excluido": true
+  }
+}

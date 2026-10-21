@@ -1,0 +1,4517 @@
+{
+ "adamantina": {
+  "nome": "Adamantina",
+  "lat": -21.682,
+  "lon": -51.0737,
+  "km_ribeirao_preto": 343,
+  "km_jarinu": 474
+ },
+ "adolfo": {
+  "nome": "Adolfo",
+  "lat": -21.2325,
+  "lon": -49.6451,
+  "km_ribeirao_preto": 190,
+  "km_jarinu": 365
+ },
+ "aguai": {
+  "nome": "Aguaí",
+  "lat": -22.0572,
+  "lon": -46.9735,
+  "km_ribeirao_preto": 131,
+  "km_jarinu": 119
+ },
+ "aguas da prata": {
+  "nome": "Águas da Prata",
+  "lat": -21.9319,
+  "lon": -46.7176,
+  "km_ribeirao_preto": 141,
+  "km_jarinu": 130
+ },
+ "aguas de lindoia": {
+  "nome": "Águas de Lindóia",
+  "lat": -22.4733,
+  "lon": -46.6314,
+  "km_ribeirao_preto": 189,
+  "km_jarinu": 71
+ },
+ "aguas de santa barbara": {
+  "nome": "Águas de Santa Bárbara",
+  "lat": -22.8812,
+  "lon": -49.2421,
+  "km_ribeirao_preto": 241,
+  "km_jarinu": 259
+ },
+ "aguas de sao pedro": {
+  "nome": "Águas de São Pedro",
+  "lat": -22.5977,
+  "lon": -47.8734,
+  "km_ribeirao_preto": 159,
+  "km_jarinu": 130
+ },
+ "agudos": {
+  "nome": "Agudos",
+  "lat": -22.4694,
+  "lon": -48.9863,
+  "km_ribeirao_preto": 189,
+  "km_jarinu": 242
+ },
+ "alambari": {
+  "nome": "Alambari",
+  "lat": -23.5503,
+  "lon": -47.898,
+  "km_ribeirao_preto": 265,
+  "km_jarinu": 129
+ },
+ "alfredo marcondes": {
+  "nome": "Alfredo Marcondes",
+  "lat": -21.9527,
+  "lon": -51.414,
+  "km_ribeirao_preto": 383,
+  "km_jarinu": 498
+ },
+ "altair": {
+  "nome": "Altair",
+  "lat": -20.5242,
+  "lon": -49.0571,
+  "km_ribeirao_preto": 148,
+  "km_jarinu": 374
+ },
+ "altinopolis": {
+  "nome": "Altinópolis",
+  "lat": -21.0214,
+  "lon": -47.3712,
+  "km_ribeirao_preto": 48,
+  "km_jarinu": 241
+ },
+ "alto alegre": {
+  "nome": "Alto Alegre",
+  "lat": -21.5811,
+  "lon": -50.168,
+  "km_ribeirao_preto": 248,
+  "km_jarinu": 392
+ },
+ "aluminio": {
+  "nome": "Alumínio",
+  "lat": -23.5306,
+  "lon": -47.2546,
+  "km_ribeirao_preto": 269,
+  "km_jarinu": 72
+ },
+ "alvares florence": {
+  "nome": "Álvares Florence",
+  "lat": -20.3203,
+  "lon": -49.9141,
+  "km_ribeirao_preto": 238,
+  "km_jarinu": 452
+ },
+ "alvares machado": {
+  "nome": "Álvares Machado",
+  "lat": -22.0764,
+  "lon": -51.4722,
+  "km_ribeirao_preto": 392,
+  "km_jarinu": 500
+ },
+ "alvaro de carvalho": {
+  "nome": "Álvaro de Carvalho",
+  "lat": -22.0841,
+  "lon": -49.719,
+  "km_ribeirao_preto": 222,
+  "km_jarinu": 327
+ },
+ "alvinlandia": {
+  "nome": "Alvinlândia",
+  "lat": -22.4435,
+  "lon": -49.7623,
+  "km_ribeirao_preto": 246,
+  "km_jarinu": 320
+ },
+ "americana": {
+  "nome": "Americana",
+  "lat": -22.7374,
+  "lon": -47.3331,
+  "km_ribeirao_preto": 181,
+  "km_jarinu": 74
+ },
+ "americo brasiliense": {
+  "nome": "Américo Brasiliense",
+  "lat": -21.7288,
+  "lon": -48.1147,
+  "km_ribeirao_preto": 70,
+  "km_jarinu": 209
+ },
+ "americo de campos": {
+  "nome": "Américo de Campos",
+  "lat": -20.2985,
+  "lon": -49.7359,
+  "km_ribeirao_preto": 222,
+  "km_jarinu": 440
+ },
+ "amparo": {
+  "nome": "Amparo",
+  "lat": -22.7088,
+  "lon": -46.772,
+  "km_ribeirao_preto": 202,
+  "km_jarinu": 44
+ },
+ "analandia": {
+  "nome": "Analândia",
+  "lat": -22.1289,
+  "lon": -47.6619,
+  "km_ribeirao_preto": 108,
+  "km_jarinu": 145
+ },
+ "andradina": {
+  "nome": "Andradina",
+  "lat": -20.8948,
+  "lon": -51.3786,
+  "km_ribeirao_preto": 372,
+  "km_jarinu": 539
+ },
+ "angatuba": {
+  "nome": "Angatuba",
+  "lat": -23.4917,
+  "lon": -48.4139,
+  "km_ribeirao_preto": 266,
+  "km_jarinu": 177
+ },
+ "anhembi": {
+  "nome": "Anhembi",
+  "lat": -22.793,
+  "lon": -48.1336,
+  "km_ribeirao_preto": 184,
+  "km_jarinu": 148
+ },
+ "anhumas": {
+  "nome": "Anhumas",
+  "lat": -22.2934,
+  "lon": -51.3895,
+  "km_ribeirao_preto": 390,
+  "km_jarinu": 487
+ },
+ "aparecida": {
+  "nome": "Aparecida",
+  "lat": -22.8495,
+  "lon": -45.2325,
+  "km_ribeirao_preto": 325,
+  "km_jarinu": 156
+ },
+ "aparecida d'oeste": {
+  "nome": "Aparecida d'Oeste",
+  "lat": -20.4487,
+  "lon": -50.8835,
+  "km_ribeirao_preto": 329,
+  "km_jarinu": 521
+ },
+ "apiai": {
+  "nome": "Apiaí",
+  "lat": -24.5108,
+  "lon": -48.8443,
+  "km_ribeirao_preto": 386,
+  "km_jarinu": 266
+ },
+ "aracariguama": {
+  "nome": "Araçariguama",
+  "lat": -23.4366,
+  "lon": -47.0608,
+  "km_ribeirao_preto": 264,
+  "km_jarinu": 50
+ },
+ "aracatuba": {
+  "nome": "Araçatuba",
+  "lat": -21.2076,
+  "lon": -50.4401,
+  "km_ribeirao_preto": 273,
+  "km_jarinu": 437
+ },
+ "aracoiaba da serra": {
+  "nome": "Araçoiaba da Serra",
+  "lat": -23.5029,
+  "lon": -47.6166,
+  "km_ribeirao_preto": 260,
+  "km_jarinu": 101
+ },
+ "aramina": {
+  "nome": "Aramina",
+  "lat": -20.0882,
+  "lon": -47.7873,
+  "km_ribeirao_preto": 120,
+  "km_jarinu": 353
+ },
+ "arandu": {
+  "nome": "Arandu",
+  "lat": -23.1386,
+  "lon": -49.0487,
+  "km_ribeirao_preto": 253,
+  "km_jarinu": 237
+ },
+ "arapei": {
+  "nome": "Arapeí",
+  "lat": -22.6717,
+  "lon": -44.4441,
+  "km_ribeirao_preto": 385,
+  "km_jarinu": 239
+ },
+ "araraquara": {
+  "nome": "Araraquara",
+  "lat": -21.7845,
+  "lon": -48.178,
+  "km_ribeirao_preto": 78,
+  "km_jarinu": 209
+ },
+ "araras": {
+  "nome": "Araras",
+  "lat": -22.3572,
+  "lon": -47.3842,
+  "km_ribeirao_preto": 139,
+  "km_jarinu": 107
+ },
+ "arco-iris": {
+  "nome": "Arco-Íris",
+  "lat": -21.7728,
+  "lon": -50.466,
+  "km_ribeirao_preto": 283,
+  "km_jarinu": 412
+ },
+ "arealva": {
+  "nome": "Arealva",
+  "lat": -22.031,
+  "lon": -48.9135,
+  "km_ribeirao_preto": 149,
+  "km_jarinu": 254
+ },
+ "areias": {
+  "nome": "Areias",
+  "lat": -22.5786,
+  "lon": -44.6992,
+  "km_ribeirao_preto": 357,
+  "km_jarinu": 216
+ },
+ "areiopolis": {
+  "nome": "Areiópolis",
+  "lat": -22.6672,
+  "lon": -48.6681,
+  "km_ribeirao_preto": 189,
+  "km_jarinu": 205
+ },
+ "ariranha": {
+  "nome": "Ariranha",
+  "lat": -21.1872,
+  "lon": -48.7904,
+  "km_ribeirao_preto": 102,
+  "km_jarinu": 301
+ },
+ "artur nogueira": {
+  "nome": "Artur Nogueira",
+  "lat": -22.5727,
+  "lon": -47.1727,
+  "km_ribeirao_preto": 169,
+  "km_jarinu": 75
+ },
+ "aruja": {
+  "nome": "Arujá",
+  "lat": -23.3965,
+  "lon": -46.32,
+  "km_ribeirao_preto": 291,
+  "km_jarinu": 53
+ },
+ "aspasia": {
+  "nome": "Aspásia",
+  "lat": -20.16,
+  "lon": -50.728,
+  "km_ribeirao_preto": 324,
+  "km_jarinu": 527
+ },
+ "assis": {
+  "nome": "Assis",
+  "lat": -22.66,
+  "lon": -50.4183,
+  "km_ribeirao_preto": 316,
+  "km_jarinu": 381
+ },
+ "atibaia": {
+  "nome": "Atibaia",
+  "lat": -23.1171,
+  "lon": -46.5563,
+  "km_ribeirao_preto": 252,
+  "km_jarinu": 18
+ },
+ "auriflama": {
+  "nome": "Auriflama",
+  "lat": -20.6836,
+  "lon": -50.5572,
+  "km_ribeirao_preto": 290,
+  "km_jarinu": 478
+ },
+ "avai": {
+  "nome": "Avaí",
+  "lat": -22.1514,
+  "lon": -49.3356,
+  "km_ribeirao_preto": 192,
+  "km_jarinu": 288
+ },
+ "avanhandava": {
+  "nome": "Avanhandava",
+  "lat": -21.4584,
+  "lon": -49.9509,
+  "km_ribeirao_preto": 224,
+  "km_jarinu": 379
+ },
+ "avare": {
+  "nome": "Avaré",
+  "lat": -23.1067,
+  "lon": -48.9251,
+  "km_ribeirao_preto": 244,
+  "km_jarinu": 225
+ },
+ "bady bassitt": {
+  "nome": "Bady Bassitt",
+  "lat": -20.9197,
+  "lon": -49.4385,
+  "km_ribeirao_preto": 171,
+  "km_jarinu": 370
+ },
+ "balbinos": {
+  "nome": "Balbinos",
+  "lat": -21.8963,
+  "lon": -49.3619,
+  "km_ribeirao_preto": 180,
+  "km_jarinu": 302
+ },
+ "balsamo": {
+  "nome": "Bálsamo",
+  "lat": -20.7348,
+  "lon": -49.5865,
+  "km_ribeirao_preto": 191,
+  "km_jarinu": 395
+ },
+ "bananal": {
+  "nome": "Bananal",
+  "lat": -22.6819,
+  "lon": -44.3281,
+  "km_ribeirao_preto": 397,
+  "km_jarinu": 250
+ },
+ "barao de antonina": {
+  "nome": "Barão de Antonina",
+  "lat": -23.6284,
+  "lon": -49.5634,
+  "km_ribeirao_preto": 327,
+  "km_jarinu": 295
+ },
+ "barbosa": {
+  "nome": "Barbosa",
+  "lat": -21.2657,
+  "lon": -49.9518,
+  "km_ribeirao_preto": 222,
+  "km_jarinu": 390
+ },
+ "bariri": {
+  "nome": "Bariri",
+  "lat": -22.073,
+  "lon": -48.7438,
+  "km_ribeirao_preto": 139,
+  "km_jarinu": 237
+ },
+ "barra bonita": {
+  "nome": "Barra Bonita",
+  "lat": -22.4909,
+  "lon": -48.5583,
+  "km_ribeirao_preto": 166,
+  "km_jarinu": 200
+ },
+ "barra do chapeu": {
+  "nome": "Barra do Chapéu",
+  "lat": -24.4722,
+  "lon": -49.0238,
+  "km_ribeirao_preto": 388,
+  "km_jarinu": 279
+ },
+ "barra do turvo": {
+  "nome": "Barra do Turvo",
+  "lat": -24.759,
+  "lon": -48.5013,
+  "km_ribeirao_preto": 405,
+  "km_jarinu": 258
+ },
+ "barretos": {
+  "nome": "Barretos",
+  "lat": -20.5531,
+  "lon": -48.5698,
+  "km_ribeirao_preto": 105,
+  "km_jarinu": 341
+ },
+ "barrinha": {
+  "nome": "Barrinha",
+  "lat": -21.1864,
+  "lon": -48.1636,
+  "km_ribeirao_preto": 37,
+  "km_jarinu": 259
+ },
+ "barueri": {
+  "nome": "Barueri",
+  "lat": -23.5057,
+  "lon": -46.879,
+  "km_ribeirao_preto": 277,
+  "km_jarinu": 47
+ },
+ "bastos": {
+  "nome": "Bastos",
+  "lat": -21.921,
+  "lon": -50.7357,
+  "km_ribeirao_preto": 314,
+  "km_jarinu": 432
+ },
+ "batatais": {
+  "nome": "Batatais",
+  "lat": -20.8929,
+  "lon": -47.5921,
+  "km_ribeirao_preto": 38,
+  "km_jarinu": 261
+ },
+ "bauru": {
+  "nome": "Bauru",
+  "lat": -22.3246,
+  "lon": -49.0871,
+  "km_ribeirao_preto": 184,
+  "km_jarinu": 257
+ },
+ "bebedouro": {
+  "nome": "Bebedouro",
+  "lat": -20.9491,
+  "lon": -48.4791,
+  "km_ribeirao_preto": 74,
+  "km_jarinu": 300
+ },
+ "bento de abreu": {
+  "nome": "Bento de Abreu",
+  "lat": -21.2686,
+  "lon": -50.814,
+  "km_ribeirao_preto": 312,
+  "km_jarinu": 468
+ },
+ "bernardino de campos": {
+  "nome": "Bernardino de Campos",
+  "lat": -23.0164,
+  "lon": -49.4679,
+  "km_ribeirao_preto": 267,
+  "km_jarinu": 280
+ },
+ "bertioga": {
+  "nome": "Bertioga",
+  "lat": -23.8486,
+  "lon": -46.1396,
+  "km_ribeirao_preto": 344,
+  "km_jarinu": 102
+ },
+ "bilac": {
+  "nome": "Bilac",
+  "lat": -21.404,
+  "lon": -50.4746,
+  "km_ribeirao_preto": 277,
+  "km_jarinu": 429
+ },
+ "birigui": {
+  "nome": "Birigui",
+  "lat": -21.291,
+  "lon": -50.3432,
+  "km_ribeirao_preto": 263,
+  "km_jarinu": 423
+ },
+ "biritiba-mirim": {
+  "nome": "Biritiba-Mirim",
+  "lat": -23.5698,
+  "lon": -46.0407,
+  "km_ribeirao_preto": 323,
+  "km_jarinu": 87
+ },
+ "boa esperanca do sul": {
+  "nome": "Boa Esperança do Sul",
+  "lat": -21.9918,
+  "lon": -48.3906,
+  "km_ribeirao_preto": 109,
+  "km_jarinu": 211
+ },
+ "bocaina": {
+  "nome": "Bocaina",
+  "lat": -22.1365,
+  "lon": -48.523,
+  "km_ribeirao_preto": 130,
+  "km_jarinu": 213
+ },
+ "bofete": {
+  "nome": "Bofete",
+  "lat": -23.1055,
+  "lon": -48.2582,
+  "km_ribeirao_preto": 220,
+  "km_jarinu": 157
+ },
+ "boituva": {
+  "nome": "Boituva",
+  "lat": -23.2855,
+  "lon": -47.6786,
+  "km_ribeirao_preto": 236,
+  "km_jarinu": 99
+ },
+ "bom jesus dos perdoes": {
+  "nome": "Bom Jesus dos Perdões",
+  "lat": -23.1356,
+  "lon": -46.4675,
+  "km_ribeirao_preto": 259,
+  "km_jarinu": 27
+ },
+ "bom sucesso de itarare": {
+  "nome": "Bom Sucesso de Itararé",
+  "lat": -24.3155,
+  "lon": -49.1451,
+  "km_ribeirao_preto": 376,
+  "km_jarinu": 281
+ },
+ "bora": {
+  "nome": "Borá",
+  "lat": -22.2696,
+  "lon": -50.5409,
+  "km_ribeirao_preto": 307,
+  "km_jarinu": 402
+ },
+ "boraceia": {
+  "nome": "Boracéia",
+  "lat": -22.1926,
+  "lon": -48.7808,
+  "km_ribeirao_preto": 152,
+  "km_jarinu": 234
+ },
+ "borborema": {
+  "nome": "Borborema",
+  "lat": -21.6214,
+  "lon": -49.0741,
+  "km_ribeirao_preto": 140,
+  "km_jarinu": 292
+ },
+ "borebi": {
+  "nome": "Borebi",
+  "lat": -22.5728,
+  "lon": -48.9707,
+  "km_ribeirao_preto": 197,
+  "km_jarinu": 237
+ },
+ "botucatu": {
+  "nome": "Botucatu",
+  "lat": -22.8837,
+  "lon": -48.4437,
+  "km_ribeirao_preto": 201,
+  "km_jarinu": 177
+ },
+ "braganca paulista": {
+  "nome": "Bragança Paulista",
+  "lat": -22.9527,
+  "lon": -46.5419,
+  "km_ribeirao_preto": 237,
+  "km_jarinu": 25
+ },
+ "brauna": {
+  "nome": "Braúna",
+  "lat": -21.499,
+  "lon": -50.3175,
+  "km_ribeirao_preto": 262,
+  "km_jarinu": 410
+ },
+ "brejo alegre": {
+  "nome": "Brejo Alegre",
+  "lat": -21.1651,
+  "lon": -50.1861,
+  "km_ribeirao_preto": 246,
+  "km_jarinu": 416
+ },
+ "brodowski": {
+  "nome": "Brodowski",
+  "lat": -20.9845,
+  "lon": -47.6572,
+  "km_ribeirao_preto": 26,
+  "km_jarinu": 254
+ },
+ "brotas": {
+  "nome": "Brotas",
+  "lat": -22.2795,
+  "lon": -48.1251,
+  "km_ribeirao_preto": 128,
+  "km_jarinu": 170
+ },
+ "buri": {
+  "nome": "Buri",
+  "lat": -23.7977,
+  "lon": -48.5958,
+  "km_ribeirao_preto": 303,
+  "km_jarinu": 206
+ },
+ "buritama": {
+  "nome": "Buritama",
+  "lat": -21.0661,
+  "lon": -50.1475,
+  "km_ribeirao_preto": 243,
+  "km_jarinu": 419
+ },
+ "buritizal": {
+  "nome": "Buritizal",
+  "lat": -20.1911,
+  "lon": -47.7096,
+  "km_ribeirao_preto": 109,
+  "km_jarinu": 339
+ },
+ "cabralia paulista": {
+  "nome": "Cabrália Paulista",
+  "lat": -22.4576,
+  "lon": -49.3393,
+  "km_ribeirao_preto": 213,
+  "km_jarinu": 277
+ },
+ "cabreuva": {
+  "nome": "Cabreúva",
+  "lat": -23.3053,
+  "lon": -47.1362,
+  "km_ribeirao_preto": 247,
+  "km_jarinu": 47
+ },
+ "cacapava": {
+  "nome": "Caçapava",
+  "lat": -23.0992,
+  "lon": -45.7076,
+  "km_ribeirao_preto": 305,
+  "km_jarinu": 104
+ },
+ "cachoeira paulista": {
+  "nome": "Cachoeira Paulista",
+  "lat": -22.6665,
+  "lon": -45.0154,
+  "km_ribeirao_preto": 333,
+  "km_jarinu": 182
+ },
+ "caconde": {
+  "nome": "Caconde",
+  "lat": -21.528,
+  "lon": -46.6437,
+  "km_ribeirao_preto": 127,
+  "km_jarinu": 175
+ },
+ "cafelandia": {
+  "nome": "Cafelândia",
+  "lat": -21.8031,
+  "lon": -49.6092,
+  "km_ribeirao_preto": 199,
+  "km_jarinu": 330
+ },
+ "caiabu": {
+  "nome": "Caiabu",
+  "lat": -22.0127,
+  "lon": -51.2394,
+  "km_ribeirao_preto": 367,
+  "km_jarinu": 479
+ },
+ "caieiras": {
+  "nome": "Caieiras",
+  "lat": -23.3607,
+  "lon": -46.7397,
+  "km_ribeirao_preto": 267,
+  "km_jarinu": 29
+ },
+ "caiua": {
+  "nome": "Caiuá",
+  "lat": -21.8322,
+  "lon": -51.9969,
+  "km_ribeirao_preto": 439,
+  "km_jarinu": 560
+ },
+ "cajamar": {
+  "nome": "Cajamar",
+  "lat": -23.355,
+  "lon": -46.8781,
+  "km_ribeirao_preto": 261,
+  "km_jarinu": 32
+ },
+ "cajati": {
+  "nome": "Cajati",
+  "lat": -24.7324,
+  "lon": -48.1223,
+  "km_ribeirao_preto": 397,
+  "km_jarinu": 230
+ },
+ "cajobi": {
+  "nome": "Cajobi",
+  "lat": -20.8773,
+  "lon": -48.8063,
+  "km_ribeirao_preto": 108,
+  "km_jarinu": 327
+ },
+ "cajuru": {
+  "nome": "Cajuru",
+  "lat": -21.2749,
+  "lon": -47.303,
+  "km_ribeirao_preto": 54,
+  "km_jarinu": 212
+ },
+ "campina do monte alegre": {
+  "nome": "Campina do Monte Alegre",
+  "lat": -23.5895,
+  "lon": -48.4758,
+  "km_ribeirao_preto": 278,
+  "km_jarinu": 186
+ },
+ "campinas": {
+  "nome": "Campinas",
+  "lat": -22.9053,
+  "lon": -47.0659,
+  "km_ribeirao_preto": 208,
+  "km_jarinu": 41
+ },
+ "campo limpo paulista": {
+  "nome": "Campo Limpo Paulista",
+  "lat": -23.2078,
+  "lon": -46.7889,
+  "km_ribeirao_preto": 250,
+  "km_jarinu": 13
+ },
+ "campos do jordao": {
+  "nome": "Campos do Jordão",
+  "lat": -22.7296,
+  "lon": -45.5833,
+  "km_ribeirao_preto": 288,
+  "km_jarinu": 124
+ },
+ "campos novos paulista": {
+  "nome": "Campos Novos Paulista",
+  "lat": -22.602,
+  "lon": -49.9987,
+  "km_ribeirao_preto": 276,
+  "km_jarinu": 340
+ },
+ "cananeia": {
+  "nome": "Cananéia",
+  "lat": -25.0144,
+  "lon": -47.9341,
+  "km_ribeirao_preto": 428,
+  "km_jarinu": 245
+ },
+ "canas": {
+  "nome": "Canas",
+  "lat": -22.7003,
+  "lon": -45.0521,
+  "km_ribeirao_preto": 331,
+  "km_jarinu": 177
+ },
+ "candido mota": {
+  "nome": "Cândido Mota",
+  "lat": -22.7471,
+  "lon": -50.3873,
+  "km_ribeirao_preto": 318,
+  "km_jarinu": 377
+ },
+ "candido rodrigues": {
+  "nome": "Cândido Rodrigues",
+  "lat": -21.3275,
+  "lon": -48.6327,
+  "km_ribeirao_preto": 87,
+  "km_jarinu": 278
+ },
+ "canitar": {
+  "nome": "Canitar",
+  "lat": -23.004,
+  "lon": -49.7839,
+  "km_ribeirao_preto": 288,
+  "km_jarinu": 313
+ },
+ "capao bonito": {
+  "nome": "Capão Bonito",
+  "lat": -24.0113,
+  "lon": -48.3482,
+  "km_ribeirao_preto": 321,
+  "km_jarinu": 194
+ },
+ "capela do alto": {
+  "nome": "Capela do Alto",
+  "lat": -23.4685,
+  "lon": -47.7388,
+  "km_ribeirao_preto": 256,
+  "km_jarinu": 111
+ },
+ "capivari": {
+  "nome": "Capivari",
+  "lat": -22.9951,
+  "lon": -47.5071,
+  "km_ribeirao_preto": 205,
+  "km_jarinu": 81
+ },
+ "caraguatatuba": {
+  "nome": "Caraguatatuba",
+  "lat": -23.6125,
+  "lon": -45.4125,
+  "km_ribeirao_preto": 367,
+  "km_jarinu": 146
+ },
+ "carapicuiba": {
+  "nome": "Carapicuíba",
+  "lat": -23.5235,
+  "lon": -46.8407,
+  "km_ribeirao_preto": 280,
+  "km_jarinu": 48
+ },
+ "cardoso": {
+  "nome": "Cardoso",
+  "lat": -20.08,
+  "lon": -49.9183,
+  "km_ribeirao_preto": 251,
+  "km_jarinu": 471
+ },
+ "casa branca": {
+  "nome": "Casa Branca",
+  "lat": -21.7708,
+  "lon": -47.0852,
+  "km_ribeirao_preto": 100,
+  "km_jarinu": 153
+ },
+ "cassia dos coqueiros": {
+  "nome": "Cássia dos Coqueiros",
+  "lat": -21.2801,
+  "lon": -47.1643,
+  "km_ribeirao_preto": 68,
+  "km_jarinu": 208
+ },
+ "castilho": {
+  "nome": "Castilho",
+  "lat": -20.8689,
+  "lon": -51.4884,
+  "km_ribeirao_preto": 383,
+  "km_jarinu": 550
+ },
+ "catanduva": {
+  "nome": "Catanduva",
+  "lat": -21.1314,
+  "lon": -48.977,
+  "km_ribeirao_preto": 121,
+  "km_jarinu": 319
+ },
+ "catigua": {
+  "nome": "Catiguá",
+  "lat": -21.0519,
+  "lon": -49.0616,
+  "km_ribeirao_preto": 131,
+  "km_jarinu": 331
+ },
+ "cedral": {
+  "nome": "Cedral",
+  "lat": -20.9009,
+  "lon": -49.2664,
+  "km_ribeirao_preto": 154,
+  "km_jarinu": 358
+ },
+ "cerqueira cesar": {
+  "nome": "Cerqueira César",
+  "lat": -23.038,
+  "lon": -49.1655,
+  "km_ribeirao_preto": 250,
+  "km_jarinu": 249
+ },
+ "cerquilho": {
+  "nome": "Cerquilho",
+  "lat": -23.1665,
+  "lon": -47.7459,
+  "km_ribeirao_preto": 222,
+  "km_jarinu": 104
+ },
+ "cesario lange": {
+  "nome": "Cesário Lange",
+  "lat": -23.226,
+  "lon": -47.9545,
+  "km_ribeirao_preto": 229,
+  "km_jarinu": 126
+ },
+ "charqueada": {
+  "nome": "Charqueada",
+  "lat": -22.5096,
+  "lon": -47.7755,
+  "km_ribeirao_preto": 149,
+  "km_jarinu": 126
+ },
+ "chavantes": {
+  "nome": "Chavantes",
+  "lat": -23.0366,
+  "lon": -49.7096,
+  "km_ribeirao_preto": 285,
+  "km_jarinu": 305
+ },
+ "clementina": {
+  "nome": "Clementina",
+  "lat": -21.5604,
+  "lon": -50.4525,
+  "km_ribeirao_preto": 277,
+  "km_jarinu": 420
+ },
+ "colina": {
+  "nome": "Colina",
+  "lat": -20.7114,
+  "lon": -48.5387,
+  "km_ribeirao_preto": 91,
+  "km_jarinu": 325
+ },
+ "colombia": {
+  "nome": "Colômbia",
+  "lat": -20.1768,
+  "lon": -48.6865,
+  "km_ribeirao_preto": 143,
+  "km_jarinu": 383
+ },
+ "conchal": {
+  "nome": "Conchal",
+  "lat": -22.3375,
+  "lon": -47.1729,
+  "km_ribeirao_preto": 146,
+  "km_jarinu": 97
+ },
+ "conchas": {
+  "nome": "Conchas",
+  "lat": -23.0154,
+  "lon": -48.0134,
+  "km_ribeirao_preto": 206,
+  "km_jarinu": 132
+ },
+ "cordeiropolis": {
+  "nome": "Cordeirópolis",
+  "lat": -22.4778,
+  "lon": -47.4519,
+  "km_ribeirao_preto": 150,
+  "km_jarinu": 102
+ },
+ "coroados": {
+  "nome": "Coroados",
+  "lat": -21.3521,
+  "lon": -50.2859,
+  "km_ribeirao_preto": 257,
+  "km_jarinu": 415
+ },
+ "coronel macedo": {
+  "nome": "Coronel Macedo",
+  "lat": -23.6261,
+  "lon": -49.31,
+  "km_ribeirao_preto": 314,
+  "km_jarinu": 270
+ },
+ "corumbatai": {
+  "nome": "Corumbataí",
+  "lat": -22.2213,
+  "lon": -47.6215,
+  "km_ribeirao_preto": 119,
+  "km_jarinu": 134
+ },
+ "cosmopolis": {
+  "nome": "Cosmópolis",
+  "lat": -22.6419,
+  "lon": -47.1926,
+  "km_ribeirao_preto": 176,
+  "km_jarinu": 70
+ },
+ "cosmorama": {
+  "nome": "Cosmorama",
+  "lat": -20.4755,
+  "lon": -49.7827,
+  "km_ribeirao_preto": 219,
+  "km_jarinu": 430
+ },
+ "cotia": {
+  "nome": "Cotia",
+  "lat": -23.6022,
+  "lon": -46.919,
+  "km_ribeirao_preto": 286,
+  "km_jarinu": 59
+ },
+ "cravinhos": {
+  "nome": "Cravinhos",
+  "lat": -21.338,
+  "lon": -47.7324,
+  "km_ribeirao_preto": 20,
+  "km_jarinu": 222
+ },
+ "cristais paulista": {
+  "nome": "Cristais Paulista",
+  "lat": -20.4036,
+  "lon": -47.4209,
+  "km_ribeirao_preto": 94,
+  "km_jarinu": 309
+ },
+ "cruzalia": {
+  "nome": "Cruzália",
+  "lat": -22.7373,
+  "lon": -50.7909,
+  "km_ribeirao_preto": 353,
+  "km_jarinu": 418
+ },
+ "cruzeiro": {
+  "nome": "Cruzeiro",
+  "lat": -22.5728,
+  "lon": -44.969,
+  "km_ribeirao_preto": 332,
+  "km_jarinu": 190
+ },
+ "cubatao": {
+  "nome": "Cubatão",
+  "lat": -23.8911,
+  "lon": -46.424,
+  "km_ribeirao_preto": 334,
+  "km_jarinu": 93
+ },
+ "cunha": {
+  "nome": "Cunha",
+  "lat": -23.0731,
+  "lon": -44.9576,
+  "km_ribeirao_preto": 362,
+  "km_jarinu": 181
+ },
+ "descalvado": {
+  "nome": "Descalvado",
+  "lat": -21.9002,
+  "lon": -47.6181,
+  "km_ribeirao_preto": 84,
+  "km_jarinu": 162
+ },
+ "diadema": {
+  "nome": "Diadema",
+  "lat": -23.6813,
+  "lon": -46.6205,
+  "km_ribeirao_preto": 305,
+  "km_jarinu": 65
+ },
+ "dirce reis": {
+  "nome": "Dirce Reis",
+  "lat": -20.4642,
+  "lon": -50.6073,
+  "km_ribeirao_preto": 301,
+  "km_jarinu": 497
+ },
+ "divinolandia": {
+  "nome": "Divinolândia",
+  "lat": -21.6637,
+  "lon": -46.7361,
+  "km_ribeirao_preto": 124,
+  "km_jarinu": 160
+ },
+ "dobrada": {
+  "nome": "Dobrada",
+  "lat": -21.5155,
+  "lon": -48.3935,
+  "km_ribeirao_preto": 72,
+  "km_jarinu": 246
+ },
+ "dois corregos": {
+  "nome": "Dois Córregos",
+  "lat": -22.3673,
+  "lon": -48.3819,
+  "km_ribeirao_preto": 146,
+  "km_jarinu": 188
+ },
+ "dolcinopolis": {
+  "nome": "Dolcinópolis",
+  "lat": -20.124,
+  "lon": -50.5149,
+  "km_ribeirao_preto": 305,
+  "km_jarinu": 513
+ },
+ "dourado": {
+  "nome": "Dourado",
+  "lat": -22.1044,
+  "lon": -48.3178,
+  "km_ribeirao_preto": 116,
+  "km_jarinu": 197
+ },
+ "dracena": {
+  "nome": "Dracena",
+  "lat": -21.4843,
+  "lon": -51.535,
+  "km_ribeirao_preto": 387,
+  "km_jarinu": 526
+ },
+ "duartina": {
+  "nome": "Duartina",
+  "lat": -22.4146,
+  "lon": -49.4084,
+  "km_ribeirao_preto": 215,
+  "km_jarinu": 285
+ },
+ "dumont": {
+  "nome": "Dumont",
+  "lat": -21.2324,
+  "lon": -47.9756,
+  "km_ribeirao_preto": 19,
+  "km_jarinu": 245
+ },
+ "echapora": {
+  "nome": "Echaporã",
+  "lat": -22.4326,
+  "lon": -50.2038,
+  "km_ribeirao_preto": 284,
+  "km_jarinu": 364
+ },
+ "eldorado": {
+  "nome": "Eldorado",
+  "lat": -24.5281,
+  "lon": -48.1141,
+  "km_ribeirao_preto": 375,
+  "km_jarinu": 212
+ },
+ "elias fausto": {
+  "nome": "Elias Fausto",
+  "lat": -23.0428,
+  "lon": -47.3682,
+  "km_ribeirao_preto": 213,
+  "km_jarinu": 66
+ },
+ "elisiario": {
+  "nome": "Elisiário",
+  "lat": -21.1678,
+  "lon": -49.1146,
+  "km_ribeirao_preto": 135,
+  "km_jarinu": 327
+ },
+ "embauba": {
+  "nome": "Embaúba",
+  "lat": -20.9796,
+  "lon": -48.8325,
+  "km_ribeirao_preto": 108,
+  "km_jarinu": 321
+ },
+ "embu das artes": {
+  "nome": "Embu das Artes",
+  "lat": -23.6437,
+  "lon": -46.8579,
+  "km_ribeirao_preto": 292,
+  "km_jarinu": 61
+ },
+ "embu-guacu": {
+  "nome": "Embu-Guaçu",
+  "lat": -23.8297,
+  "lon": -46.8136,
+  "km_ribeirao_preto": 313,
+  "km_jarinu": 81
+ },
+ "emilianopolis": {
+  "nome": "Emilianópolis",
+  "lat": -21.8314,
+  "lon": -51.4832,
+  "km_ribeirao_preto": 387,
+  "km_jarinu": 509
+ },
+ "engenheiro coelho": {
+  "nome": "Engenheiro Coelho",
+  "lat": -22.4836,
+  "lon": -47.211,
+  "km_ribeirao_preto": 159,
+  "km_jarinu": 85
+ },
+ "espirito santo do pinhal": {
+  "nome": "Espírito Santo do Pinhal",
+  "lat": -22.1909,
+  "lon": -46.7477,
+  "km_ribeirao_preto": 158,
+  "km_jarinu": 102
+ },
+ "espirito santo do turvo": {
+  "nome": "Espírito Santo do Turvo",
+  "lat": -22.6925,
+  "lon": -49.4341,
+  "km_ribeirao_preto": 238,
+  "km_jarinu": 281
+ },
+ "estiva gerbi": {
+  "nome": "Estiva Gerbi",
+  "lat": -22.2713,
+  "lon": -46.9481,
+  "km_ribeirao_preto": 151,
+  "km_jarinu": 95
+ },
+ "estrela d'oeste": {
+  "nome": "Estrela d'Oeste",
+  "lat": -20.2875,
+  "lon": -50.4049,
+  "km_ribeirao_preto": 287,
+  "km_jarinu": 492
+ },
+ "estrela do norte": {
+  "nome": "Estrela do Norte",
+  "lat": -22.4859,
+  "lon": -51.6632,
+  "km_ribeirao_preto": 424,
+  "km_jarinu": 511
+ },
+ "euclides da cunha paulista": {
+  "nome": "Euclides da Cunha Paulista",
+  "lat": -22.5545,
+  "lon": -52.5928,
+  "km_ribeirao_preto": 517,
+  "km_jarinu": 604
+ },
+ "fartura": {
+  "nome": "Fartura",
+  "lat": -23.3916,
+  "lon": -49.5124,
+  "km_ribeirao_preto": 303,
+  "km_jarinu": 286
+ },
+ "fernando prestes": {
+  "nome": "Fernando Prestes",
+  "lat": -21.2661,
+  "lon": -48.6874,
+  "km_ribeirao_preto": 92,
+  "km_jarinu": 287
+ },
+ "fernandopolis": {
+  "nome": "Fernandópolis",
+  "lat": -20.2806,
+  "lon": -50.2471,
+  "km_ribeirao_preto": 272,
+  "km_jarinu": 480
+ },
+ "fernao": {
+  "nome": "Fernão",
+  "lat": -22.3607,
+  "lon": -49.5187,
+  "km_ribeirao_preto": 221,
+  "km_jarinu": 298
+ },
+ "ferraz de vasconcelos": {
+  "nome": "Ferraz de Vasconcelos",
+  "lat": -23.5411,
+  "lon": -46.371,
+  "km_ribeirao_preto": 302,
+  "km_jarinu": 61
+ },
+ "flora rica": {
+  "nome": "Flora Rica",
+  "lat": -21.6727,
+  "lon": -51.3821,
+  "km_ribeirao_preto": 374,
+  "km_jarinu": 504
+ },
+ "floreal": {
+  "nome": "Floreal",
+  "lat": -20.6752,
+  "lon": -50.1513,
+  "km_ribeirao_preto": 249,
+  "km_jarinu": 445
+ },
+ "florida paulista": {
+  "nome": "Flórida Paulista",
+  "lat": -21.6127,
+  "lon": -51.1724,
+  "km_ribeirao_preto": 352,
+  "km_jarinu": 486
+ },
+ "florinia": {
+  "nome": "Florínia",
+  "lat": -22.868,
+  "lon": -50.6814,
+  "km_ribeirao_preto": 351,
+  "km_jarinu": 406
+ },
+ "franca": {
+  "nome": "Franca",
+  "lat": -20.5352,
+  "lon": -47.4039,
+  "km_ribeirao_preto": 82,
+  "km_jarinu": 294
+ },
+ "francisco morato": {
+  "nome": "Francisco Morato",
+  "lat": -23.2792,
+  "lon": -46.7448,
+  "km_ribeirao_preto": 259,
+  "km_jarinu": 20
+ },
+ "franco da rocha": {
+  "nome": "Franco da Rocha",
+  "lat": -23.3229,
+  "lon": -46.729,
+  "km_ribeirao_preto": 264,
+  "km_jarinu": 24
+ },
+ "gabriel monteiro": {
+  "nome": "Gabriel Monteiro",
+  "lat": -21.5294,
+  "lon": -50.5573,
+  "km_ribeirao_preto": 287,
+  "km_jarinu": 431
+ },
+ "galia": {
+  "nome": "Gália",
+  "lat": -22.2918,
+  "lon": -49.5504,
+  "km_ribeirao_preto": 219,
+  "km_jarinu": 303
+ },
+ "garca": {
+  "nome": "Garça",
+  "lat": -22.2125,
+  "lon": -49.6546,
+  "km_ribeirao_preto": 223,
+  "km_jarinu": 316
+ },
+ "gastao vidigal": {
+  "nome": "Gastão Vidigal",
+  "lat": -20.7948,
+  "lon": -50.1912,
+  "km_ribeirao_preto": 251,
+  "km_jarinu": 440
+ },
+ "gaviao peixoto": {
+  "nome": "Gavião Peixoto",
+  "lat": -21.8367,
+  "lon": -48.4957,
+  "km_ribeirao_preto": 103,
+  "km_jarinu": 230
+ },
+ "general salgado": {
+  "nome": "General Salgado",
+  "lat": -20.6485,
+  "lon": -50.364,
+  "km_ribeirao_preto": 272,
+  "km_jarinu": 464
+ },
+ "getulina": {
+  "nome": "Getulina",
+  "lat": -21.7961,
+  "lon": -49.9312,
+  "km_ribeirao_preto": 230,
+  "km_jarinu": 360
+ },
+ "glicerio": {
+  "nome": "Glicério",
+  "lat": -21.3812,
+  "lon": -50.2123,
+  "km_ribeirao_preto": 250,
+  "km_jarinu": 407
+ },
+ "guaicara": {
+  "nome": "Guaiçara",
+  "lat": -21.6195,
+  "lon": -49.8013,
+  "km_ribeirao_preto": 212,
+  "km_jarinu": 357
+ },
+ "guaimbe": {
+  "nome": "Guaimbê",
+  "lat": -21.9091,
+  "lon": -49.8986,
+  "km_ribeirao_preto": 231,
+  "km_jarinu": 352
+ },
+ "guaira": {
+  "nome": "Guaíra",
+  "lat": -20.3196,
+  "lon": -48.312,
+  "km_ribeirao_preto": 108,
+  "km_jarinu": 350
+ },
+ "guapiacu": {
+  "nome": "Guapiaçu",
+  "lat": -20.7959,
+  "lon": -49.2172,
+  "km_ribeirao_preto": 152,
+  "km_jarinu": 363
+ },
+ "guapiara": {
+  "nome": "Guapiara",
+  "lat": -24.1892,
+  "lon": -48.5295,
+  "km_ribeirao_preto": 344,
+  "km_jarinu": 220
+ },
+ "guara": {
+  "nome": "Guará",
+  "lat": -20.4302,
+  "lon": -47.8236,
+  "km_ribeirao_preto": 82,
+  "km_jarinu": 318
+ },
+ "guaracai": {
+  "nome": "Guaraçaí",
+  "lat": -21.0292,
+  "lon": -51.2119,
+  "km_ribeirao_preto": 353,
+  "km_jarinu": 516
+ },
+ "guaraci": {
+  "nome": "Guaraci",
+  "lat": -20.4977,
+  "lon": -48.9391,
+  "km_ribeirao_preto": 139,
+  "km_jarinu": 369
+ },
+ "guarani d'oeste": {
+  "nome": "Guarani d'Oeste",
+  "lat": -20.0746,
+  "lon": -50.3411,
+  "km_ribeirao_preto": 290,
+  "km_jarinu": 503
+ },
+ "guaranta": {
+  "nome": "Guarantã",
+  "lat": -21.8942,
+  "lon": -49.5914,
+  "km_ribeirao_preto": 201,
+  "km_jarinu": 323
+ },
+ "guararapes": {
+  "nome": "Guararapes",
+  "lat": -21.2544,
+  "lon": -50.6453,
+  "km_ribeirao_preto": 294,
+  "km_jarinu": 453
+ },
+ "guararema": {
+  "nome": "Guararema",
+  "lat": -23.4112,
+  "lon": -46.0369,
+  "km_ribeirao_preto": 309,
+  "km_jarinu": 78
+ },
+ "guaratingueta": {
+  "nome": "Guaratinguetá",
+  "lat": -22.8075,
+  "lon": -45.1938,
+  "km_ribeirao_preto": 325,
+  "km_jarinu": 161
+ },
+ "guarei": {
+  "nome": "Guareí",
+  "lat": -23.3714,
+  "lon": -48.1837,
+  "km_ribeirao_preto": 248,
+  "km_jarinu": 152
+ },
+ "guariba": {
+  "nome": "Guariba",
+  "lat": -21.3594,
+  "lon": -48.2316,
+  "km_ribeirao_preto": 49,
+  "km_jarinu": 248
+ },
+ "guaruja": {
+  "nome": "Guarujá",
+  "lat": -23.9888,
+  "lon": -46.258,
+  "km_ribeirao_preto": 352,
+  "km_jarinu": 109
+ },
+ "guarulhos": {
+  "nome": "Guarulhos",
+  "lat": -23.4538,
+  "lon": -46.5333,
+  "km_ribeirao_preto": 286,
+  "km_jarinu": 44
+ },
+ "guatapara": {
+  "nome": "Guatapará",
+  "lat": -21.4944,
+  "lon": -48.0356,
+  "km_ribeirao_preto": 43,
+  "km_jarinu": 224
+ },
+ "guzolandia": {
+  "nome": "Guzolândia",
+  "lat": -20.6467,
+  "lon": -50.6645,
+  "km_ribeirao_preto": 302,
+  "km_jarinu": 489
+ },
+ "herculandia": {
+  "nome": "Herculândia",
+  "lat": -22.0038,
+  "lon": -50.3907,
+  "km_ribeirao_preto": 282,
+  "km_jarinu": 395
+ },
+ "holambra": {
+  "nome": "Holambra",
+  "lat": -22.6405,
+  "lon": -47.0487,
+  "km_ribeirao_preto": 181,
+  "km_jarinu": 61
+ },
+ "hortolandia": {
+  "nome": "Hortolândia",
+  "lat": -22.8529,
+  "lon": -47.2143,
+  "km_ribeirao_preto": 197,
+  "km_jarinu": 57
+ },
+ "iacanga": {
+  "nome": "Iacanga",
+  "lat": -21.8896,
+  "lon": -49.031,
+  "km_ribeirao_preto": 150,
+  "km_jarinu": 272
+ },
+ "iacri": {
+  "nome": "Iacri",
+  "lat": -21.8572,
+  "lon": -50.6932,
+  "km_ribeirao_preto": 308,
+  "km_jarinu": 430
+ },
+ "iaras": {
+  "nome": "Iaras",
+  "lat": -22.8682,
+  "lon": -49.1634,
+  "km_ribeirao_preto": 235,
+  "km_jarinu": 251
+ },
+ "ibate": {
+  "nome": "Ibaté",
+  "lat": -21.9584,
+  "lon": -47.9882,
+  "km_ribeirao_preto": 90,
+  "km_jarinu": 182
+ },
+ "ibira": {
+  "nome": "Ibirá",
+  "lat": -21.083,
+  "lon": -49.2448,
+  "km_ribeirao_preto": 149,
+  "km_jarinu": 343
+ },
+ "ibirarema": {
+  "nome": "Ibirarema",
+  "lat": -22.8185,
+  "lon": -50.0739,
+  "km_ribeirao_preto": 297,
+  "km_jarinu": 344
+ },
+ "ibitinga": {
+  "nome": "Ibitinga",
+  "lat": -21.7562,
+  "lon": -48.8319,
+  "km_ribeirao_preto": 124,
+  "km_jarinu": 263
+ },
+ "ibiuna": {
+  "nome": "Ibiúna",
+  "lat": -23.6596,
+  "lon": -47.223,
+  "km_ribeirao_preto": 283,
+  "km_jarinu": 80
+ },
+ "icem": {
+  "nome": "Icém",
+  "lat": -20.3391,
+  "lon": -49.1915,
+  "km_ribeirao_preto": 171,
+  "km_jarinu": 399
+ },
+ "iepe": {
+  "nome": "Iepê",
+  "lat": -22.6602,
+  "lon": -51.0779,
+  "km_ribeirao_preto": 376,
+  "km_jarinu": 448
+ },
+ "igaracu do tiete": {
+  "nome": "Igaraçu do Tietê",
+  "lat": -22.509,
+  "lon": -48.5597,
+  "km_ribeirao_preto": 168,
+  "km_jarinu": 199
+ },
+ "igarapava": {
+  "nome": "Igarapava",
+  "lat": -20.0407,
+  "lon": -47.7466,
+  "km_ribeirao_preto": 126,
+  "km_jarinu": 357
+ },
+ "igarata": {
+  "nome": "Igaratá",
+  "lat": -23.2037,
+  "lon": -46.157,
+  "km_ribeirao_preto": 283,
+  "km_jarinu": 59
+ },
+ "iguape": {
+  "nome": "Iguape",
+  "lat": -24.699,
+  "lon": -47.5537,
+  "km_ribeirao_preto": 393,
+  "km_jarinu": 196
+ },
+ "ilha comprida": {
+  "nome": "Ilha Comprida",
+  "lat": -24.7307,
+  "lon": -47.5383,
+  "km_ribeirao_preto": 397,
+  "km_jarinu": 199
+ },
+ "ilha solteira": {
+  "nome": "Ilha Solteira",
+  "lat": -20.4326,
+  "lon": -51.3426,
+  "km_ribeirao_preto": 376,
+  "km_jarinu": 561
+ },
+ "ilhabela": {
+  "nome": "Ilhabela",
+  "lat": -23.7785,
+  "lon": -45.3552,
+  "km_ribeirao_preto": 384,
+  "km_jarinu": 159
+ },
+ "indaiatuba": {
+  "nome": "Indaiatuba",
+  "lat": -23.0816,
+  "lon": -47.2101,
+  "km_ribeirao_preto": 221,
+  "km_jarinu": 49
+ },
+ "indiana": {
+  "nome": "Indiana",
+  "lat": -22.1738,
+  "lon": -51.2555,
+  "km_ribeirao_preto": 373,
+  "km_jarinu": 476
+ },
+ "indiapora": {
+  "nome": "Indiaporã",
+  "lat": -19.979,
+  "lon": -50.2909,
+  "km_ribeirao_preto": 290,
+  "km_jarinu": 506
+ },
+ "inubia paulista": {
+  "nome": "Inúbia Paulista",
+  "lat": -21.7695,
+  "lon": -50.9633,
+  "km_ribeirao_preto": 333,
+  "km_jarinu": 460
+ },
+ "ipaussu": {
+  "nome": "Ipaussu",
+  "lat": -23.0575,
+  "lon": -49.6279,
+  "km_ribeirao_preto": 281,
+  "km_jarinu": 297
+ },
+ "ipero": {
+  "nome": "Iperó",
+  "lat": -23.3513,
+  "lon": -47.6927,
+  "km_ribeirao_preto": 243,
+  "km_jarinu": 102
+ },
+ "ipeuna": {
+  "nome": "Ipeúna",
+  "lat": -22.4355,
+  "lon": -47.7151,
+  "km_ribeirao_preto": 141,
+  "km_jarinu": 126
+ },
+ "ipigua": {
+  "nome": "Ipiguá",
+  "lat": -20.6557,
+  "lon": -49.3842,
+  "km_ribeirao_preto": 173,
+  "km_jarinu": 386
+ },
+ "iporanga": {
+  "nome": "Iporanga",
+  "lat": -24.5847,
+  "lon": -48.5971,
+  "km_ribeirao_preto": 388,
+  "km_jarinu": 251
+ },
+ "ipua": {
+  "nome": "Ipuã",
+  "lat": -20.4438,
+  "lon": -48.0129,
+  "km_ribeirao_preto": 83,
+  "km_jarinu": 324
+ },
+ "iracemapolis": {
+  "nome": "Iracemápolis",
+  "lat": -22.5832,
+  "lon": -47.523,
+  "km_ribeirao_preto": 160,
+  "km_jarinu": 100
+ },
+ "irapua": {
+  "nome": "Irapuã",
+  "lat": -21.2768,
+  "lon": -49.4164,
+  "km_ribeirao_preto": 167,
+  "km_jarinu": 343
+ },
+ "irapuru": {
+  "nome": "Irapuru",
+  "lat": -21.5684,
+  "lon": -51.3472,
+  "km_ribeirao_preto": 369,
+  "km_jarinu": 505
+ },
+ "itabera": {
+  "nome": "Itaberá",
+  "lat": -23.8638,
+  "lon": -49.14,
+  "km_ribeirao_preto": 329,
+  "km_jarinu": 260
+ },
+ "itai": {
+  "nome": "Itaí",
+  "lat": -23.4213,
+  "lon": -49.092,
+  "km_ribeirao_preto": 283,
+  "km_jarinu": 244
+ },
+ "itajobi": {
+  "nome": "Itajobi",
+  "lat": -21.3123,
+  "lon": -49.0629,
+  "km_ribeirao_preto": 131,
+  "km_jarinu": 312
+ },
+ "itaju": {
+  "nome": "Itaju",
+  "lat": -21.9857,
+  "lon": -48.8116,
+  "km_ribeirao_preto": 138,
+  "km_jarinu": 247
+ },
+ "itanhaem": {
+  "nome": "Itanhaém",
+  "lat": -24.1736,
+  "lon": -46.788,
+  "km_ribeirao_preto": 350,
+  "km_jarinu": 119
+ },
+ "itaoca": {
+  "nome": "Itaóca",
+  "lat": -24.6393,
+  "lon": -48.8413,
+  "km_ribeirao_preto": 400,
+  "km_jarinu": 274
+ },
+ "itapecerica da serra": {
+  "nome": "Itapecerica da Serra",
+  "lat": -23.7161,
+  "lon": -46.8572,
+  "km_ribeirao_preto": 300,
+  "km_jarinu": 69
+ },
+ "itapetininga": {
+  "nome": "Itapetininga",
+  "lat": -23.5886,
+  "lon": -48.0483,
+  "km_ribeirao_preto": 270,
+  "km_jarinu": 145
+ },
+ "itapeva": {
+  "nome": "Itapeva",
+  "lat": -23.9788,
+  "lon": -48.8764,
+  "km_ribeirao_preto": 331,
+  "km_jarinu": 240
+ },
+ "itapevi": {
+  "nome": "Itapevi",
+  "lat": -23.5488,
+  "lon": -46.9327,
+  "km_ribeirao_preto": 279,
+  "km_jarinu": 54
+ },
+ "itapira": {
+  "nome": "Itapira",
+  "lat": -22.4357,
+  "lon": -46.8224,
+  "km_ribeirao_preto": 174,
+  "km_jarinu": 75
+ },
+ "itapirapua paulista": {
+  "nome": "Itapirapuã Paulista",
+  "lat": -24.572,
+  "lon": -49.1661,
+  "km_ribeirao_preto": 403,
+  "km_jarinu": 297
+ },
+ "itapolis": {
+  "nome": "Itápolis",
+  "lat": -21.5942,
+  "lon": -48.8149,
+  "km_ribeirao_preto": 114,
+  "km_jarinu": 272
+ },
+ "itaporanga": {
+  "nome": "Itaporanga",
+  "lat": -23.7043,
+  "lon": -49.4819,
+  "km_ribeirao_preto": 330,
+  "km_jarinu": 289
+ },
+ "itapui": {
+  "nome": "Itapuí",
+  "lat": -22.2324,
+  "lon": -48.7197,
+  "km_ribeirao_preto": 151,
+  "km_jarinu": 226
+ },
+ "itapura": {
+  "nome": "Itapura",
+  "lat": -20.6419,
+  "lon": -51.5063,
+  "km_ribeirao_preto": 388,
+  "km_jarinu": 564
+ },
+ "itaquaquecetuba": {
+  "nome": "Itaquaquecetuba",
+  "lat": -23.4835,
+  "lon": -46.3457,
+  "km_ribeirao_preto": 298,
+  "km_jarinu": 57
+ },
+ "itarare": {
+  "nome": "Itararé",
+  "lat": -24.1085,
+  "lon": -49.3352,
+  "km_ribeirao_preto": 362,
+  "km_jarinu": 288
+ },
+ "itariri": {
+  "nome": "Itariri",
+  "lat": -24.2834,
+  "lon": -47.1736,
+  "km_ribeirao_preto": 352,
+  "km_jarinu": 139
+ },
+ "itatiba": {
+  "nome": "Itatiba",
+  "lat": -23.0035,
+  "lon": -46.8464,
+  "km_ribeirao_preto": 227,
+  "km_jarinu": 16
+ },
+ "itatinga": {
+  "nome": "Itatinga",
+  "lat": -23.1047,
+  "lon": -48.6157,
+  "km_ribeirao_preto": 231,
+  "km_jarinu": 193
+ },
+ "itirapina": {
+  "nome": "Itirapina",
+  "lat": -22.2562,
+  "lon": -47.8166,
+  "km_ribeirao_preto": 121,
+  "km_jarinu": 146
+ },
+ "itirapua": {
+  "nome": "Itirapuã",
+  "lat": -20.6416,
+  "lon": -47.2194,
+  "km_ribeirao_preto": 85,
+  "km_jarinu": 278
+ },
+ "itobi": {
+  "nome": "Itobi",
+  "lat": -21.7309,
+  "lon": -46.9743,
+  "km_ribeirao_preto": 107,
+  "km_jarinu": 155
+ },
+ "itu": {
+  "nome": "Itu",
+  "lat": -23.2544,
+  "lon": -47.2927,
+  "km_ribeirao_preto": 238,
+  "km_jarinu": 60
+ },
+ "itupeva": {
+  "nome": "Itupeva",
+  "lat": -23.1526,
+  "lon": -47.0593,
+  "km_ribeirao_preto": 234,
+  "km_jarinu": 34
+ },
+ "ituverava": {
+  "nome": "Ituverava",
+  "lat": -20.3355,
+  "lon": -47.7902,
+  "km_ribeirao_preto": 93,
+  "km_jarinu": 327
+ },
+ "jaborandi": {
+  "nome": "Jaborandi",
+  "lat": -20.6884,
+  "lon": -48.4112,
+  "km_ribeirao_preto": 82,
+  "km_jarinu": 320
+ },
+ "jaboticabal": {
+  "nome": "Jaboticabal",
+  "lat": -21.252,
+  "lon": -48.3252,
+  "km_ribeirao_preto": 54,
+  "km_jarinu": 264
+ },
+ "jacarei": {
+  "nome": "Jacareí",
+  "lat": -23.2983,
+  "lon": -45.9658,
+  "km_ribeirao_preto": 303,
+  "km_jarinu": 81
+ },
+ "jaci": {
+  "nome": "Jaci",
+  "lat": -20.8805,
+  "lon": -49.5797,
+  "km_ribeirao_preto": 186,
+  "km_jarinu": 384
+ },
+ "jacupiranga": {
+  "nome": "Jacupiranga",
+  "lat": -24.6963,
+  "lon": -48.0064,
+  "km_ribeirao_preto": 393,
+  "km_jarinu": 220
+ },
+ "jaguariuna": {
+  "nome": "Jaguariúna",
+  "lat": -22.7037,
+  "lon": -46.9851,
+  "km_ribeirao_preto": 191,
+  "km_jarinu": 52
+ },
+ "jales": {
+  "nome": "Jales",
+  "lat": -20.2672,
+  "lon": -50.5494,
+  "km_ribeirao_preto": 302,
+  "km_jarinu": 505
+ },
+ "jambeiro": {
+  "nome": "Jambeiro",
+  "lat": -23.2522,
+  "lon": -45.6942,
+  "km_ribeirao_preto": 318,
+  "km_jarinu": 107
+ },
+ "jandira": {
+  "nome": "Jandira",
+  "lat": -23.5275,
+  "lon": -46.9023,
+  "km_ribeirao_preto": 278,
+  "km_jarinu": 50
+ },
+ "jardinopolis": {
+  "nome": "Jardinópolis",
+  "lat": -21.0176,
+  "lon": -47.7606,
+  "km_ribeirao_preto": 18,
+  "km_jarinu": 255
+ },
+ "jarinu": {
+  "nome": "Jarinu",
+  "lat": -23.1039,
+  "lon": -46.728,
+  "km_ribeirao_preto": 242,
+  "km_jarinu": 0
+ },
+ "jau": {
+  "nome": "Jaú",
+  "lat": -22.2936,
+  "lon": -48.5592,
+  "km_ribeirao_preto": 147,
+  "km_jarinu": 208
+ },
+ "jeriquara": {
+  "nome": "Jeriquara",
+  "lat": -20.3116,
+  "lon": -47.5918,
+  "km_ribeirao_preto": 98,
+  "km_jarinu": 323
+ },
+ "joanopolis": {
+  "nome": "Joanópolis",
+  "lat": -22.927,
+  "lon": -46.2741,
+  "km_ribeirao_preto": 251,
+  "km_jarinu": 50
+ },
+ "joao ramalho": {
+  "nome": "João Ramalho",
+  "lat": -22.2473,
+  "lon": -50.7694,
+  "km_ribeirao_preto": 328,
+  "km_jarinu": 425
+ },
+ "jose bonifacio": {
+  "nome": "José Bonifácio",
+  "lat": -21.0551,
+  "lon": -49.6892,
+  "km_ribeirao_preto": 195,
+  "km_jarinu": 381
+ },
+ "julio mesquita": {
+  "nome": "Júlio Mesquita",
+  "lat": -22.0112,
+  "lon": -49.7873,
+  "km_ribeirao_preto": 225,
+  "km_jarinu": 337
+ },
+ "jumirim": {
+  "nome": "Jumirim",
+  "lat": -23.0884,
+  "lon": -47.7868,
+  "km_ribeirao_preto": 213,
+  "km_jarinu": 108
+ },
+ "jundiai": {
+  "nome": "Jundiaí",
+  "lat": -23.1852,
+  "lon": -46.8974,
+  "km_ribeirao_preto": 243,
+  "km_jarinu": 20
+ },
+ "junqueiropolis": {
+  "nome": "Junqueirópolis",
+  "lat": -21.5103,
+  "lon": -51.4342,
+  "km_ribeirao_preto": 377,
+  "km_jarinu": 516
+ },
+ "juquia": {
+  "nome": "Juquiá",
+  "lat": -24.3101,
+  "lon": -47.6426,
+  "km_ribeirao_preto": 350,
+  "km_jarinu": 163
+ },
+ "juquitiba": {
+  "nome": "Juquitiba",
+  "lat": -23.9244,
+  "lon": -47.0653,
+  "km_ribeirao_preto": 316,
+  "km_jarinu": 98
+ },
+ "lagoinha": {
+  "nome": "Lagoinha",
+  "lat": -23.0846,
+  "lon": -45.1944,
+  "km_ribeirao_preto": 343,
+  "km_jarinu": 157
+ },
+ "laranjal paulista": {
+  "nome": "Laranjal Paulista",
+  "lat": -23.0506,
+  "lon": -47.8375,
+  "km_ribeirao_preto": 209,
+  "km_jarinu": 114
+ },
+ "lavinia": {
+  "nome": "Lavínia",
+  "lat": -21.1639,
+  "lon": -51.0412,
+  "km_ribeirao_preto": 335,
+  "km_jarinu": 494
+ },
+ "lavrinhas": {
+  "nome": "Lavrinhas",
+  "lat": -22.57,
+  "lon": -44.9024,
+  "km_ribeirao_preto": 338,
+  "km_jarinu": 196
+ },
+ "leme": {
+  "nome": "Leme",
+  "lat": -22.1809,
+  "lon": -47.3841,
+  "km_ribeirao_preto": 121,
+  "km_jarinu": 123
+ },
+ "lencois paulista": {
+  "nome": "Lençóis Paulista",
+  "lat": -22.6027,
+  "lon": -48.8037,
+  "km_ribeirao_preto": 189,
+  "km_jarinu": 220
+ },
+ "limeira": {
+  "nome": "Limeira",
+  "lat": -22.566,
+  "lon": -47.397,
+  "km_ribeirao_preto": 161,
+  "km_jarinu": 91
+ },
+ "lindoia": {
+  "nome": "Lindóia",
+  "lat": -22.5226,
+  "lon": -46.65,
+  "km_ribeirao_preto": 192,
+  "km_jarinu": 65
+ },
+ "lins": {
+  "nome": "Lins",
+  "lat": -21.6718,
+  "lon": -49.7526,
+  "km_ribeirao_preto": 209,
+  "km_jarinu": 349
+ },
+ "lorena": {
+  "nome": "Lorena",
+  "lat": -22.7334,
+  "lon": -45.1197,
+  "km_ribeirao_preto": 327,
+  "km_jarinu": 170
+ },
+ "lourdes": {
+  "nome": "Lourdes",
+  "lat": -20.966,
+  "lon": -50.2263,
+  "km_ribeirao_preto": 252,
+  "km_jarinu": 432
+ },
+ "louveira": {
+  "nome": "Louveira",
+  "lat": -23.0856,
+  "lon": -46.9484,
+  "km_ribeirao_preto": 231,
+  "km_jarinu": 23
+ },
+ "lucelia": {
+  "nome": "Lucélia",
+  "lat": -21.7182,
+  "lon": -51.0215,
+  "km_ribeirao_preto": 338,
+  "km_jarinu": 467
+ },
+ "lucianopolis": {
+  "nome": "Lucianópolis",
+  "lat": -22.4294,
+  "lon": -49.522,
+  "km_ribeirao_preto": 226,
+  "km_jarinu": 296
+ },
+ "luis antonio": {
+  "nome": "Luís Antônio",
+  "lat": -21.55,
+  "lon": -47.7801,
+  "km_ribeirao_preto": 42,
+  "km_jarinu": 204
+ },
+ "luiziania": {
+  "nome": "Luiziânia",
+  "lat": -21.6737,
+  "lon": -50.3294,
+  "km_ribeirao_preto": 267,
+  "km_jarinu": 403
+ },
+ "lupercio": {
+  "nome": "Lupércio",
+  "lat": -22.4146,
+  "lon": -49.818,
+  "km_ribeirao_preto": 249,
+  "km_jarinu": 326
+ },
+ "lutecia": {
+  "nome": "Lutécia",
+  "lat": -22.3384,
+  "lon": -50.394,
+  "km_ribeirao_preto": 297,
+  "km_jarinu": 386
+ },
+ "macatuba": {
+  "nome": "Macatuba",
+  "lat": -22.5002,
+  "lon": -48.7102,
+  "km_ribeirao_preto": 175,
+  "km_jarinu": 214
+ },
+ "macaubal": {
+  "nome": "Macaubal",
+  "lat": -20.8022,
+  "lon": -49.9687,
+  "km_ribeirao_preto": 228,
+  "km_jarinu": 421
+ },
+ "macedonia": {
+  "nome": "Macedônia",
+  "lat": -20.1444,
+  "lon": -50.1973,
+  "km_ribeirao_preto": 273,
+  "km_jarinu": 487
+ },
+ "magda": {
+  "nome": "Magda",
+  "lat": -20.6445,
+  "lon": -50.2305,
+  "km_ribeirao_preto": 258,
+  "km_jarinu": 453
+ },
+ "mairinque": {
+  "nome": "Mairinque",
+  "lat": -23.5398,
+  "lon": -47.185,
+  "km_ribeirao_preto": 271,
+  "km_jarinu": 67
+ },
+ "mairipora": {
+  "nome": "Mairiporã",
+  "lat": -23.3171,
+  "lon": -46.5897,
+  "km_ribeirao_preto": 270,
+  "km_jarinu": 28
+ },
+ "manduri": {
+  "nome": "Manduri",
+  "lat": -23.0056,
+  "lon": -49.3202,
+  "km_ribeirao_preto": 257,
+  "km_jarinu": 265
+ },
+ "maraba paulista": {
+  "nome": "Marabá Paulista",
+  "lat": -22.1068,
+  "lon": -51.9617,
+  "km_ribeirao_preto": 442,
+  "km_jarinu": 549
+ },
+ "maracai": {
+  "nome": "Maracaí",
+  "lat": -22.6149,
+  "lon": -50.6713,
+  "km_ribeirao_preto": 336,
+  "km_jarinu": 408
+ },
+ "marapoama": {
+  "nome": "Marapoama",
+  "lat": -21.2587,
+  "lon": -49.13,
+  "km_ribeirao_preto": 137,
+  "km_jarinu": 321
+ },
+ "mariapolis": {
+  "nome": "Mariápolis",
+  "lat": -21.7959,
+  "lon": -51.1824,
+  "km_ribeirao_preto": 356,
+  "km_jarinu": 480
+ },
+ "marilia": {
+  "nome": "Marília",
+  "lat": -22.2171,
+  "lon": -49.9501,
+  "km_ribeirao_preto": 250,
+  "km_jarinu": 345
+ },
+ "marinopolis": {
+  "nome": "Marinópolis",
+  "lat": -20.4389,
+  "lon": -50.8254,
+  "km_ribeirao_preto": 324,
+  "km_jarinu": 517
+ },
+ "martinopolis": {
+  "nome": "Martinópolis",
+  "lat": -22.1462,
+  "lon": -51.1709,
+  "km_ribeirao_preto": 364,
+  "km_jarinu": 468
+ },
+ "matao": {
+  "nome": "Matão",
+  "lat": -21.6025,
+  "lon": -48.364,
+  "km_ribeirao_preto": 75,
+  "km_jarinu": 237
+ },
+ "maua": {
+  "nome": "Mauá",
+  "lat": -23.6677,
+  "lon": -46.4613,
+  "km_ribeirao_preto": 310,
+  "km_jarinu": 68
+ },
+ "mendonca": {
+  "nome": "Mendonça",
+  "lat": -21.1757,
+  "lon": -49.5791,
+  "km_ribeirao_preto": 183,
+  "km_jarinu": 364
+ },
+ "meridiano": {
+  "nome": "Meridiano",
+  "lat": -20.3579,
+  "lon": -50.1811,
+  "km_ribeirao_preto": 263,
+  "km_jarinu": 469
+ },
+ "mesopolis": {
+  "nome": "Mesópolis",
+  "lat": -19.9684,
+  "lon": -50.6326,
+  "km_ribeirao_preto": 323,
+  "km_jarinu": 533
+ },
+ "miguelopolis": {
+  "nome": "Miguelópolis",
+  "lat": -20.1796,
+  "lon": -48.031,
+  "km_ribeirao_preto": 112,
+  "km_jarinu": 352
+ },
+ "mineiros do tiete": {
+  "nome": "Mineiros do Tietê",
+  "lat": -22.412,
+  "lon": -48.451,
+  "km_ribeirao_preto": 153,
+  "km_jarinu": 193
+ },
+ "mira estrela": {
+  "nome": "Mira Estrela",
+  "lat": -19.9789,
+  "lon": -50.139,
+  "km_ribeirao_preto": 276,
+  "km_jarinu": 495
+ },
+ "miracatu": {
+  "nome": "Miracatu",
+  "lat": -24.2766,
+  "lon": -47.4625,
+  "km_ribeirao_preto": 347,
+  "km_jarinu": 150
+ },
+ "mirandopolis": {
+  "nome": "Mirandópolis",
+  "lat": -21.1313,
+  "lon": -51.1035,
+  "km_ribeirao_preto": 342,
+  "km_jarinu": 501
+ },
+ "mirante do paranapanema": {
+  "nome": "Mirante do Paranapanema",
+  "lat": -22.2904,
+  "lon": -51.9084,
+  "km_ribeirao_preto": 441,
+  "km_jarinu": 539
+ },
+ "mirassol": {
+  "nome": "Mirassol",
+  "lat": -20.8169,
+  "lon": -49.5206,
+  "km_ribeirao_preto": 182,
+  "km_jarinu": 384
+ },
+ "mirassolandia": {
+  "nome": "Mirassolândia",
+  "lat": -20.6179,
+  "lon": -49.4617,
+  "km_ribeirao_preto": 182,
+  "km_jarinu": 395
+ },
+ "mococa": {
+  "nome": "Mococa",
+  "lat": -21.4647,
+  "lon": -47.0024,
+  "km_ribeirao_preto": 90,
+  "km_jarinu": 184
+ },
+ "mogi das cruzes": {
+  "nome": "Mogi das Cruzes",
+  "lat": -23.5208,
+  "lon": -46.1854,
+  "km_ribeirao_preto": 310,
+  "km_jarinu": 72
+ },
+ "mogi guacu": {
+  "nome": "Mogi Guaçu",
+  "lat": -22.3675,
+  "lon": -46.9428,
+  "km_ribeirao_preto": 160,
+  "km_jarinu": 85
+ },
+ "mogi mirim": {
+  "nome": "Mogi Mirim",
+  "lat": -22.4332,
+  "lon": -46.9532,
+  "km_ribeirao_preto": 166,
+  "km_jarinu": 78
+ },
+ "mombuca": {
+  "nome": "Mombuca",
+  "lat": -22.9285,
+  "lon": -47.559,
+  "km_ribeirao_preto": 197,
+  "km_jarinu": 87
+ },
+ "moncoes": {
+  "nome": "Monções",
+  "lat": -20.8509,
+  "lon": -50.0975,
+  "km_ribeirao_preto": 240,
+  "km_jarinu": 428
+ },
+ "mongagua": {
+  "nome": "Mongaguá",
+  "lat": -24.0809,
+  "lon": -46.6265,
+  "km_ribeirao_preto": 346,
+  "km_jarinu": 109
+ },
+ "monte alegre do sul": {
+  "nome": "Monte Alegre do Sul",
+  "lat": -22.6817,
+  "lon": -46.681,
+  "km_ribeirao_preto": 204,
+  "km_jarinu": 47
+ },
+ "monte alto": {
+  "nome": "Monte Alto",
+  "lat": -21.2655,
+  "lon": -48.4971,
+  "km_ribeirao_preto": 72,
+  "km_jarinu": 274
+ },
+ "monte aprazivel": {
+  "nome": "Monte Aprazível",
+  "lat": -20.768,
+  "lon": -49.7184,
+  "km_ribeirao_preto": 203,
+  "km_jarinu": 403
+ },
+ "monte azul paulista": {
+  "nome": "Monte Azul Paulista",
+  "lat": -20.9065,
+  "lon": -48.6387,
+  "km_ribeirao_preto": 91,
+  "km_jarinu": 314
+ },
+ "monte castelo": {
+  "nome": "Monte Castelo",
+  "lat": -21.2981,
+  "lon": -51.5679,
+  "km_ribeirao_preto": 390,
+  "km_jarinu": 537
+ },
+ "monte mor": {
+  "nome": "Monte Mor",
+  "lat": -22.945,
+  "lon": -47.3122,
+  "km_ribeirao_preto": 204,
+  "km_jarinu": 62
+ },
+ "monteiro lobato": {
+  "nome": "Monteiro Lobato",
+  "lat": -22.9544,
+  "lon": -45.8407,
+  "km_ribeirao_preto": 284,
+  "km_jarinu": 92
+ },
+ "morro agudo": {
+  "nome": "Morro Agudo",
+  "lat": -20.7288,
+  "lon": -48.0581,
+  "km_ribeirao_preto": 55,
+  "km_jarinu": 298
+ },
+ "morungaba": {
+  "nome": "Morungaba",
+  "lat": -22.8811,
+  "lon": -46.7896,
+  "km_ribeirao_preto": 217,
+  "km_jarinu": 26
+ },
+ "motuca": {
+  "nome": "Motuca",
+  "lat": -21.5103,
+  "lon": -48.1538,
+  "km_ribeirao_preto": 52,
+  "km_jarinu": 230
+ },
+ "murutinga do sul": {
+  "nome": "Murutinga do Sul",
+  "lat": -20.9908,
+  "lon": -51.2774,
+  "km_ribeirao_preto": 360,
+  "km_jarinu": 524
+ },
+ "nantes": {
+  "nome": "Nantes",
+  "lat": -22.6156,
+  "lon": -51.24,
+  "km_ribeirao_preto": 389,
+  "km_jarinu": 465
+ },
+ "narandiba": {
+  "nome": "Narandiba",
+  "lat": -22.4057,
+  "lon": -51.5274,
+  "km_ribeirao_preto": 408,
+  "km_jarinu": 498
+ },
+ "natividade da serra": {
+  "nome": "Natividade da Serra",
+  "lat": -23.3707,
+  "lon": -45.4468,
+  "km_ribeirao_preto": 345,
+  "km_jarinu": 134
+ },
+ "nazare paulista": {
+  "nome": "Nazaré Paulista",
+  "lat": -23.1747,
+  "lon": -46.3983,
+  "km_ribeirao_preto": 266,
+  "km_jarinu": 35
+ },
+ "neves paulista": {
+  "nome": "Neves Paulista",
+  "lat": -20.843,
+  "lon": -49.6358,
+  "km_ribeirao_preto": 193,
+  "km_jarinu": 391
+ },
+ "nhandeara": {
+  "nome": "Nhandeara",
+  "lat": -20.6945,
+  "lon": -50.0436,
+  "km_ribeirao_preto": 238,
+  "km_jarinu": 434
+ },
+ "nipoa": {
+  "nome": "Nipoã",
+  "lat": -20.9114,
+  "lon": -49.7833,
+  "km_ribeirao_preto": 207,
+  "km_jarinu": 398
+ },
+ "nova alianca": {
+  "nome": "Nova Aliança",
+  "lat": -21.0156,
+  "lon": -49.4986,
+  "km_ribeirao_preto": 176,
+  "km_jarinu": 368
+ },
+ "nova campina": {
+  "nome": "Nova Campina",
+  "lat": -24.1224,
+  "lon": -48.9022,
+  "km_ribeirao_preto": 347,
+  "km_jarinu": 249
+ },
+ "nova canaa paulista": {
+  "nome": "Nova Canaã Paulista",
+  "lat": -20.3836,
+  "lon": -50.9483,
+  "km_ribeirao_preto": 338,
+  "km_jarinu": 530
+ },
+ "nova castilho": {
+  "nome": "Nova Castilho",
+  "lat": -20.7615,
+  "lon": -50.3477,
+  "km_ribeirao_preto": 267,
+  "km_jarinu": 455
+ },
+ "nova europa": {
+  "nome": "Nova Europa",
+  "lat": -21.7765,
+  "lon": -48.5705,
+  "km_ribeirao_preto": 104,
+  "km_jarinu": 240
+ },
+ "nova granada": {
+  "nome": "Nova Granada",
+  "lat": -20.5321,
+  "lon": -49.3123,
+  "km_ribeirao_preto": 171,
+  "km_jarinu": 391
+ },
+ "nova guataporanga": {
+  "nome": "Nova Guataporanga",
+  "lat": -21.332,
+  "lon": -51.6447,
+  "km_ribeirao_preto": 398,
+  "km_jarinu": 543
+ },
+ "nova independencia": {
+  "nome": "Nova Independência",
+  "lat": -21.1026,
+  "lon": -51.4905,
+  "km_ribeirao_preto": 382,
+  "km_jarinu": 539
+ },
+ "nova luzitania": {
+  "nome": "Nova Luzitânia",
+  "lat": -20.856,
+  "lon": -50.2617,
+  "km_ribeirao_preto": 257,
+  "km_jarinu": 442
+ },
+ "nova odessa": {
+  "nome": "Nova Odessa",
+  "lat": -22.7832,
+  "lon": -47.2941,
+  "km_ribeirao_preto": 187,
+  "km_jarinu": 68
+ },
+ "novais": {
+  "nome": "Novais",
+  "lat": -20.9893,
+  "lon": -48.9141,
+  "km_ribeirao_preto": 116,
+  "km_jarinu": 326
+ },
+ "novo horizonte": {
+  "nome": "Novo Horizonte",
+  "lat": -21.4651,
+  "lon": -49.2234,
+  "km_ribeirao_preto": 150,
+  "km_jarinu": 315
+ },
+ "nuporanga": {
+  "nome": "Nuporanga",
+  "lat": -20.7296,
+  "lon": -47.7429,
+  "km_ribeirao_preto": 49,
+  "km_jarinu": 284
+ },
+ "ocaucu": {
+  "nome": "Ocauçu",
+  "lat": -22.438,
+  "lon": -49.922,
+  "km_ribeirao_preto": 260,
+  "km_jarinu": 336
+ },
+ "oleo": {
+  "nome": "Óleo",
+  "lat": -22.9435,
+  "lon": -49.3419,
+  "km_ribeirao_preto": 253,
+  "km_jarinu": 268
+ },
+ "olimpia": {
+  "nome": "Olímpia",
+  "lat": -20.7366,
+  "lon": -48.9106,
+  "km_ribeirao_preto": 124,
+  "km_jarinu": 346
+ },
+ "onda verde": {
+  "nome": "Onda Verde",
+  "lat": -20.6042,
+  "lon": -49.2929,
+  "km_ribeirao_preto": 166,
+  "km_jarinu": 384
+ },
+ "oriente": {
+  "nome": "Oriente",
+  "lat": -22.1549,
+  "lon": -50.0971,
+  "km_ribeirao_preto": 261,
+  "km_jarinu": 362
+ },
+ "orindiuva": {
+  "nome": "Orindiúva",
+  "lat": -20.1861,
+  "lon": -49.3464,
+  "km_ribeirao_preto": 194,
+  "km_jarinu": 422
+ },
+ "orlandia": {
+  "nome": "Orlândia",
+  "lat": -20.7169,
+  "lon": -47.8852,
+  "km_ribeirao_preto": 51,
+  "km_jarinu": 291
+ },
+ "osasco": {
+  "nome": "Osasco",
+  "lat": -23.5324,
+  "lon": -46.7916,
+  "km_ribeirao_preto": 283,
+  "km_jarinu": 48
+ },
+ "oscar bressane": {
+  "nome": "Oscar Bressane",
+  "lat": -22.3149,
+  "lon": -50.2811,
+  "km_ribeirao_preto": 285,
+  "km_jarinu": 375
+ },
+ "osvaldo cruz": {
+  "nome": "Osvaldo Cruz",
+  "lat": -21.7968,
+  "lon": -50.8793,
+  "km_ribeirao_preto": 325,
+  "km_jarinu": 451
+ },
+ "ourinhos": {
+  "nome": "Ourinhos",
+  "lat": -22.9797,
+  "lon": -49.8697,
+  "km_ribeirao_preto": 292,
+  "km_jarinu": 322
+ },
+ "ouro verde": {
+  "nome": "Ouro Verde",
+  "lat": -21.4872,
+  "lon": -51.7024,
+  "km_ribeirao_preto": 405,
+  "km_jarinu": 542
+ },
+ "ouroeste": {
+  "nome": "Ouroeste",
+  "lat": -20.0061,
+  "lon": -50.3768,
+  "km_ribeirao_preto": 297,
+  "km_jarinu": 511
+ },
+ "pacaembu": {
+  "nome": "Pacaembu",
+  "lat": -21.5627,
+  "lon": -51.2654,
+  "km_ribeirao_preto": 360,
+  "km_jarinu": 497
+ },
+ "palestina": {
+  "nome": "Palestina",
+  "lat": -20.39,
+  "lon": -49.4309,
+  "km_ribeirao_preto": 190,
+  "km_jarinu": 411
+ },
+ "palmares paulista": {
+  "nome": "Palmares Paulista",
+  "lat": -21.0854,
+  "lon": -48.8037,
+  "km_ribeirao_preto": 104,
+  "km_jarinu": 310
+ },
+ "palmeira d'oeste": {
+  "nome": "Palmeira d'Oeste",
+  "lat": -20.4148,
+  "lon": -50.7632,
+  "km_ribeirao_preto": 318,
+  "km_jarinu": 513
+ },
+ "palmital": {
+  "nome": "Palmital",
+  "lat": -22.7858,
+  "lon": -50.218,
+  "km_ribeirao_preto": 306,
+  "km_jarinu": 359
+ },
+ "panorama": {
+  "nome": "Panorama",
+  "lat": -21.354,
+  "lon": -51.8562,
+  "km_ribeirao_preto": 420,
+  "km_jarinu": 563
+ },
+ "paraguacu paulista": {
+  "nome": "Paraguaçu Paulista",
+  "lat": -22.4114,
+  "lon": -50.5732,
+  "km_ribeirao_preto": 317,
+  "km_jarinu": 402
+ },
+ "paraibuna": {
+  "nome": "Paraibuna",
+  "lat": -23.3872,
+  "lon": -45.6639,
+  "km_ribeirao_preto": 331,
+  "km_jarinu": 113
+ },
+ "paraiso": {
+  "nome": "Paraíso",
+  "lat": -21.0159,
+  "lon": -48.7761,
+  "km_ribeirao_preto": 102,
+  "km_jarinu": 314
+ },
+ "paranapanema": {
+  "nome": "Paranapanema",
+  "lat": -23.3862,
+  "lon": -48.7214,
+  "km_ribeirao_preto": 264,
+  "km_jarinu": 206
+ },
+ "paranapua": {
+  "nome": "Paranapuã",
+  "lat": -20.1048,
+  "lon": -50.5886,
+  "km_ribeirao_preto": 312,
+  "km_jarinu": 520
+ },
+ "parapua": {
+  "nome": "Parapuã",
+  "lat": -21.7792,
+  "lon": -50.7949,
+  "km_ribeirao_preto": 316,
+  "km_jarinu": 443
+ },
+ "pardinho": {
+  "nome": "Pardinho",
+  "lat": -23.0841,
+  "lon": -48.3679,
+  "km_ribeirao_preto": 220,
+  "km_jarinu": 168
+ },
+ "pariquera-acu": {
+  "nome": "Pariquera-Açu",
+  "lat": -24.7147,
+  "lon": -47.8742,
+  "km_ribeirao_preto": 394,
+  "km_jarinu": 214
+ },
+ "parisi": {
+  "nome": "Parisi",
+  "lat": -20.3034,
+  "lon": -50.0163,
+  "km_ribeirao_preto": 249,
+  "km_jarinu": 461
+ },
+ "patrocinio paulista": {
+  "nome": "Patrocínio Paulista",
+  "lat": -20.6384,
+  "lon": -47.2801,
+  "km_ribeirao_preto": 81,
+  "km_jarinu": 280
+ },
+ "pauliceia": {
+  "nome": "Paulicéia",
+  "lat": -21.3153,
+  "lon": -51.8321,
+  "km_ribeirao_preto": 417,
+  "km_jarinu": 562
+ },
+ "paulinia": {
+  "nome": "Paulínia",
+  "lat": -22.7542,
+  "lon": -47.1488,
+  "km_ribeirao_preto": 189,
+  "km_jarinu": 58
+ },
+ "paulistania": {
+  "nome": "Paulistânia",
+  "lat": -22.5768,
+  "lon": -49.4008,
+  "km_ribeirao_preto": 227,
+  "km_jarinu": 280
+ },
+ "paulo de faria": {
+  "nome": "Paulo de Faria",
+  "lat": -20.0296,
+  "lon": -49.4,
+  "km_ribeirao_preto": 208,
+  "km_jarinu": 440
+ },
+ "pederneiras": {
+  "nome": "Pederneiras",
+  "lat": -22.3511,
+  "lon": -48.7781,
+  "km_ribeirao_preto": 165,
+  "km_jarinu": 226
+ },
+ "pedra bela": {
+  "nome": "Pedra Bela",
+  "lat": -22.7902,
+  "lon": -46.4455,
+  "km_ribeirao_preto": 229,
+  "km_jarinu": 45
+ },
+ "pedranopolis": {
+  "nome": "Pedranópolis",
+  "lat": -20.2474,
+  "lon": -50.1129,
+  "km_ribeirao_preto": 261,
+  "km_jarinu": 472
+ },
+ "pedregulho": {
+  "nome": "Pedregulho",
+  "lat": -20.2535,
+  "lon": -47.4775,
+  "km_ribeirao_preto": 108,
+  "km_jarinu": 326
+ },
+ "pedreira": {
+  "nome": "Pedreira",
+  "lat": -22.7413,
+  "lon": -46.8948,
+  "km_ribeirao_preto": 199,
+  "km_jarinu": 44
+ },
+ "pedrinhas paulista": {
+  "nome": "Pedrinhas Paulista",
+  "lat": -22.8174,
+  "lon": -50.7933,
+  "km_ribeirao_preto": 358,
+  "km_jarinu": 417
+ },
+ "pedro de toledo": {
+  "nome": "Pedro de Toledo",
+  "lat": -24.2764,
+  "lon": -47.2354,
+  "km_ribeirao_preto": 350,
+  "km_jarinu": 140
+ },
+ "penapolis": {
+  "nome": "Penápolis",
+  "lat": -21.4148,
+  "lon": -50.0769,
+  "km_ribeirao_preto": 236,
+  "km_jarinu": 392
+ },
+ "pereira barreto": {
+  "nome": "Pereira Barreto",
+  "lat": -20.6368,
+  "lon": -51.1123,
+  "km_ribeirao_preto": 348,
+  "km_jarinu": 529
+ },
+ "pereiras": {
+  "nome": "Pereiras",
+  "lat": -23.0804,
+  "lon": -47.972,
+  "km_ribeirao_preto": 213,
+  "km_jarinu": 127
+ },
+ "peruibe": {
+  "nome": "Peruíbe",
+  "lat": -24.312,
+  "lon": -47.0012,
+  "km_ribeirao_preto": 359,
+  "km_jarinu": 137
+ },
+ "piacatu": {
+  "nome": "Piacatu",
+  "lat": -21.5921,
+  "lon": -50.6003,
+  "km_ribeirao_preto": 293,
+  "km_jarinu": 432
+ },
+ "piedade": {
+  "nome": "Piedade",
+  "lat": -23.7139,
+  "lon": -47.4256,
+  "km_ribeirao_preto": 286,
+  "km_jarinu": 98
+ },
+ "pilar do sul": {
+  "nome": "Pilar do Sul",
+  "lat": -23.8077,
+  "lon": -47.7222,
+  "km_ribeirao_preto": 293,
+  "km_jarinu": 128
+ },
+ "pindamonhangaba": {
+  "nome": "Pindamonhangaba",
+  "lat": -22.9246,
+  "lon": -45.4613,
+  "km_ribeirao_preto": 311,
+  "km_jarinu": 131
+ },
+ "pindorama": {
+  "nome": "Pindorama",
+  "lat": -21.1853,
+  "lon": -48.9086,
+  "km_ribeirao_preto": 114,
+  "km_jarinu": 310
+ },
+ "pinhalzinho": {
+  "nome": "Pinhalzinho",
+  "lat": -22.7811,
+  "lon": -46.5897,
+  "km_ribeirao_preto": 219,
+  "km_jarinu": 39
+ },
+ "piquerobi": {
+  "nome": "Piquerobi",
+  "lat": -21.8747,
+  "lon": -51.7282,
+  "km_ribeirao_preto": 413,
+  "km_jarinu": 532
+ },
+ "piquete": {
+  "nome": "Piquete",
+  "lat": -22.6069,
+  "lon": -45.1869,
+  "km_ribeirao_preto": 314,
+  "km_jarinu": 167
+ },
+ "piracaia": {
+  "nome": "Piracaia",
+  "lat": -23.0525,
+  "lon": -46.3594,
+  "km_ribeirao_preto": 257,
+  "km_jarinu": 38
+ },
+ "piracicaba": {
+  "nome": "Piracicaba",
+  "lat": -22.7338,
+  "lon": -47.6476,
+  "km_ribeirao_preto": 175,
+  "km_jarinu": 103
+ },
+ "piraju": {
+  "nome": "Piraju",
+  "lat": -23.1981,
+  "lon": -49.3803,
+  "km_ribeirao_preto": 277,
+  "km_jarinu": 271
+ },
+ "pirajui": {
+  "nome": "Pirajuí",
+  "lat": -21.999,
+  "lon": -49.4608,
+  "km_ribeirao_preto": 194,
+  "km_jarinu": 306
+ },
+ "pirangi": {
+  "nome": "Pirangi",
+  "lat": -21.0886,
+  "lon": -48.6607,
+  "km_ribeirao_preto": 89,
+  "km_jarinu": 300
+ },
+ "pirapora do bom jesus": {
+  "nome": "Pirapora do Bom Jesus",
+  "lat": -23.3965,
+  "lon": -46.9991,
+  "km_ribeirao_preto": 261,
+  "km_jarinu": 43
+ },
+ "pirapozinho": {
+  "nome": "Pirapozinho",
+  "lat": -22.2711,
+  "lon": -51.4976,
+  "km_ribeirao_preto": 400,
+  "km_jarinu": 498
+ },
+ "pirassununga": {
+  "nome": "Pirassununga",
+  "lat": -21.996,
+  "lon": -47.4257,
+  "km_ribeirao_preto": 100,
+  "km_jarinu": 143
+ },
+ "piratininga": {
+  "nome": "Piratininga",
+  "lat": -22.4142,
+  "lon": -49.1339,
+  "km_ribeirao_preto": 194,
+  "km_jarinu": 258
+ },
+ "pitangueiras": {
+  "nome": "Pitangueiras",
+  "lat": -21.0132,
+  "lon": -48.221,
+  "km_ribeirao_preto": 46,
+  "km_jarinu": 279
+ },
+ "planalto": {
+  "nome": "Planalto",
+  "lat": -21.0342,
+  "lon": -49.933,
+  "km_ribeirao_preto": 221,
+  "km_jarinu": 403
+ },
+ "platina": {
+  "nome": "Platina",
+  "lat": -22.6371,
+  "lon": -50.2104,
+  "km_ribeirao_preto": 297,
+  "km_jarinu": 361
+ },
+ "poa": {
+  "nome": "Poá",
+  "lat": -23.5333,
+  "lon": -46.3473,
+  "km_ribeirao_preto": 303,
+  "km_jarinu": 62
+ },
+ "poloni": {
+  "nome": "Poloni",
+  "lat": -20.7829,
+  "lon": -49.8258,
+  "km_ribeirao_preto": 214,
+  "km_jarinu": 411
+ },
+ "pompeia": {
+  "nome": "Pompéia",
+  "lat": -22.107,
+  "lon": -50.176,
+  "km_ribeirao_preto": 266,
+  "km_jarinu": 371
+ },
+ "pongai": {
+  "nome": "Pongaí",
+  "lat": -21.7396,
+  "lon": -49.3604,
+  "km_ribeirao_preto": 173,
+  "km_jarinu": 310
+ },
+ "pontal": {
+  "nome": "Pontal",
+  "lat": -21.0216,
+  "lon": -48.0423,
+  "km_ribeirao_preto": 29,
+  "km_jarinu": 268
+ },
+ "pontalinda": {
+  "nome": "Pontalinda",
+  "lat": -20.4396,
+  "lon": -50.5258,
+  "km_ribeirao_preto": 294,
+  "km_jarinu": 491
+ },
+ "pontes gestal": {
+  "nome": "Pontes Gestal",
+  "lat": -20.1727,
+  "lon": -49.7064,
+  "km_ribeirao_preto": 226,
+  "km_jarinu": 448
+ },
+ "populina": {
+  "nome": "Populina",
+  "lat": -19.9453,
+  "lon": -50.538,
+  "km_ribeirao_preto": 315,
+  "km_jarinu": 528
+ },
+ "porangaba": {
+  "nome": "Porangaba",
+  "lat": -23.1761,
+  "lon": -48.1195,
+  "km_ribeirao_preto": 225,
+  "km_jarinu": 143
+ },
+ "porto feliz": {
+  "nome": "Porto Feliz",
+  "lat": -23.2093,
+  "lon": -47.5251,
+  "km_ribeirao_preto": 229,
+  "km_jarinu": 82
+ },
+ "porto ferreira": {
+  "nome": "Porto Ferreira",
+  "lat": -21.8498,
+  "lon": -47.487,
+  "km_ribeirao_preto": 83,
+  "km_jarinu": 160
+ },
+ "potim": {
+  "nome": "Potim",
+  "lat": -22.8343,
+  "lon": -45.2552,
+  "km_ribeirao_preto": 322,
+  "km_jarinu": 154
+ },
+ "potirendaba": {
+  "nome": "Potirendaba",
+  "lat": -21.0428,
+  "lon": -49.3815,
+  "km_ribeirao_preto": 164,
+  "km_jarinu": 357
+ },
+ "pracinha": {
+  "nome": "Pracinha",
+  "lat": -21.8496,
+  "lon": -51.0868,
+  "km_ribeirao_preto": 347,
+  "km_jarinu": 469
+ },
+ "pradopolis": {
+  "nome": "Pradópolis",
+  "lat": -21.3626,
+  "lon": -48.0679,
+  "km_ribeirao_preto": 34,
+  "km_jarinu": 238
+ },
+ "praia grande": {
+  "nome": "Praia Grande",
+  "lat": -24.0084,
+  "lon": -46.4121,
+  "km_ribeirao_preto": 347,
+  "km_jarinu": 106
+ },
+ "pratania": {
+  "nome": "Pratânia",
+  "lat": -22.8112,
+  "lon": -48.6636,
+  "km_ribeirao_preto": 203,
+  "km_jarinu": 201
+ },
+ "presidente alves": {
+  "nome": "Presidente Alves",
+  "lat": -22.0999,
+  "lon": -49.4381,
+  "km_ribeirao_preto": 198,
+  "km_jarinu": 300
+ },
+ "presidente bernardes": {
+  "nome": "Presidente Bernardes",
+  "lat": -22.0082,
+  "lon": -51.5565,
+  "km_ribeirao_preto": 398,
+  "km_jarinu": 511
+ },
+ "presidente epitacio": {
+  "nome": "Presidente Epitácio",
+  "lat": -21.7651,
+  "lon": -52.1111,
+  "km_ribeirao_preto": 450,
+  "km_jarinu": 573
+ },
+ "presidente prudente": {
+  "nome": "Presidente Prudente",
+  "lat": -22.1207,
+  "lon": -51.3925,
+  "km_ribeirao_preto": 385,
+  "km_jarinu": 491
+ },
+ "presidente venceslau": {
+  "nome": "Presidente Venceslau",
+  "lat": -21.8732,
+  "lon": -51.8447,
+  "km_ribeirao_preto": 425,
+  "km_jarinu": 543
+ },
+ "promissao": {
+  "nome": "Promissão",
+  "lat": -21.5356,
+  "lon": -49.8599,
+  "km_ribeirao_preto": 216,
+  "km_jarinu": 366
+ },
+ "quadra": {
+  "nome": "Quadra",
+  "lat": -23.2993,
+  "lon": -48.0547,
+  "km_ribeirao_preto": 238,
+  "km_jarinu": 137
+ },
+ "quata": {
+  "nome": "Quatá",
+  "lat": -22.2456,
+  "lon": -50.6966,
+  "km_ribeirao_preto": 321,
+  "km_jarinu": 418
+ },
+ "queiroz": {
+  "nome": "Queiroz",
+  "lat": -21.7969,
+  "lon": -50.2415,
+  "km_ribeirao_preto": 261,
+  "km_jarinu": 389
+ },
+ "queluz": {
+  "nome": "Queluz",
+  "lat": -22.5312,
+  "lon": -44.7781,
+  "km_ribeirao_preto": 348,
+  "km_jarinu": 210
+ },
+ "quintana": {
+  "nome": "Quintana",
+  "lat": -22.0692,
+  "lon": -50.307,
+  "km_ribeirao_preto": 277,
+  "km_jarinu": 385
+ },
+ "rafard": {
+  "nome": "Rafard",
+  "lat": -23.0105,
+  "lon": -47.5318,
+  "km_ribeirao_preto": 207,
+  "km_jarinu": 83
+ },
+ "rancharia": {
+  "nome": "Rancharia",
+  "lat": -22.2269,
+  "lon": -50.893,
+  "km_ribeirao_preto": 340,
+  "km_jarinu": 438
+ },
+ "redencao da serra": {
+  "nome": "Redenção da Serra",
+  "lat": -23.2638,
+  "lon": -45.5422,
+  "km_ribeirao_preto": 330,
+  "km_jarinu": 123
+ },
+ "regente feijo": {
+  "nome": "Regente Feijó",
+  "lat": -22.2181,
+  "lon": -51.3055,
+  "km_ribeirao_preto": 379,
+  "km_jarinu": 480
+ },
+ "reginopolis": {
+  "nome": "Reginópolis",
+  "lat": -21.8914,
+  "lon": -49.2268,
+  "km_ribeirao_preto": 167,
+  "km_jarinu": 290
+ },
+ "registro": {
+  "nome": "Registro",
+  "lat": -24.4979,
+  "lon": -47.8449,
+  "km_ribeirao_preto": 370,
+  "km_jarinu": 192
+ },
+ "restinga": {
+  "nome": "Restinga",
+  "lat": -20.6056,
+  "lon": -47.4833,
+  "km_ribeirao_preto": 71,
+  "km_jarinu": 289
+ },
+ "ribeira": {
+  "nome": "Ribeira",
+  "lat": -24.6517,
+  "lon": -49.0044,
+  "km_ribeirao_preto": 406,
+  "km_jarinu": 288
+ },
+ "ribeirao bonito": {
+  "nome": "Ribeirão Bonito",
+  "lat": -22.0685,
+  "lon": -48.182,
+  "km_ribeirao_preto": 107,
+  "km_jarinu": 189
+ },
+ "ribeirao branco": {
+  "nome": "Ribeirão Branco",
+  "lat": -24.2206,
+  "lon": -48.7635,
+  "km_ribeirao_preto": 353,
+  "km_jarinu": 242
+ },
+ "ribeirao corrente": {
+  "nome": "Ribeirão Corrente",
+  "lat": -20.4579,
+  "lon": -47.5904,
+  "km_ribeirao_preto": 82,
+  "km_jarinu": 307
+ },
+ "ribeirao do sul": {
+  "nome": "Ribeirão do Sul",
+  "lat": -22.789,
+  "lon": -49.933,
+  "km_ribeirao_preto": 283,
+  "km_jarinu": 330
+ },
+ "ribeirao dos indios": {
+  "nome": "Ribeirão dos Índios",
+  "lat": -21.8382,
+  "lon": -51.6103,
+  "km_ribeirao_preto": 400,
+  "km_jarinu": 521
+ },
+ "ribeirao grande": {
+  "nome": "Ribeirão Grande",
+  "lat": -24.1011,
+  "lon": -48.3679,
+  "km_ribeirao_preto": 331,
+  "km_jarinu": 201
+ },
+ "ribeirao pires": {
+  "nome": "Ribeirão Pires",
+  "lat": -23.7067,
+  "lon": -46.4058,
+  "km_ribeirao_preto": 317,
+  "km_jarinu": 75
+ },
+ "ribeirao preto": {
+  "nome": "Ribeirão Preto",
+  "lat": -21.1699,
+  "lon": -47.8099,
+  "km_ribeirao_preto": 0,
+  "km_jarinu": 242
+ },
+ "rifaina": {
+  "nome": "Rifaina",
+  "lat": -20.0803,
+  "lon": -47.4291,
+  "km_ribeirao_preto": 127,
+  "km_jarinu": 344
+ },
+ "rincao": {
+  "nome": "Rincão",
+  "lat": -21.5894,
+  "lon": -48.0728,
+  "km_ribeirao_preto": 54,
+  "km_jarinu": 218
+ },
+ "rinopolis": {
+  "nome": "Rinópolis",
+  "lat": -21.7284,
+  "lon": -50.7239,
+  "km_ribeirao_preto": 308,
+  "km_jarinu": 438
+ },
+ "rio claro": {
+  "nome": "Rio Claro",
+  "lat": -22.3984,
+  "lon": -47.5546,
+  "km_ribeirao_preto": 139,
+  "km_jarinu": 115
+ },
+ "rio das pedras": {
+  "nome": "Rio das Pedras",
+  "lat": -22.8417,
+  "lon": -47.6047,
+  "km_ribeirao_preto": 187,
+  "km_jarinu": 94
+ },
+ "rio grande da serra": {
+  "nome": "Rio Grande da Serra",
+  "lat": -23.7437,
+  "lon": -46.3971,
+  "km_ribeirao_preto": 321,
+  "km_jarinu": 79
+ },
+ "riolandia": {
+  "nome": "Riolândia",
+  "lat": -19.9868,
+  "lon": -49.6836,
+  "km_ribeirao_preto": 235,
+  "km_jarinu": 462
+ },
+ "riversul": {
+  "nome": "Riversul",
+  "lat": -23.829,
+  "lon": -49.429,
+  "km_ribeirao_preto": 339,
+  "km_jarinu": 287
+ },
+ "rosana": {
+  "nome": "Rosana",
+  "lat": -22.5782,
+  "lon": -53.0603,
+  "km_ribeirao_preto": 564,
+  "km_jarinu": 651
+ },
+ "roseira": {
+  "nome": "Roseira",
+  "lat": -22.8938,
+  "lon": -45.307,
+  "km_ribeirao_preto": 321,
+  "km_jarinu": 147
+ },
+ "rubiacea": {
+  "nome": "Rubiácea",
+  "lat": -21.3006,
+  "lon": -50.7296,
+  "km_ribeirao_preto": 303,
+  "km_jarinu": 458
+ },
+ "rubineia": {
+  "nome": "Rubinéia",
+  "lat": -20.1759,
+  "lon": -51.007,
+  "km_ribeirao_preto": 350,
+  "km_jarinu": 549
+ },
+ "sabino": {
+  "nome": "Sabino",
+  "lat": -21.4593,
+  "lon": -49.5755,
+  "km_ribeirao_preto": 186,
+  "km_jarinu": 345
+ },
+ "sagres": {
+  "nome": "Sagres",
+  "lat": -21.8823,
+  "lon": -50.9594,
+  "km_ribeirao_preto": 335,
+  "km_jarinu": 455
+ },
+ "sales": {
+  "nome": "Sales",
+  "lat": -21.3427,
+  "lon": -49.4897,
+  "km_ribeirao_preto": 175,
+  "km_jarinu": 345
+ },
+ "sales oliveira": {
+  "nome": "Sales Oliveira",
+  "lat": -20.7696,
+  "lon": -47.8369,
+  "km_ribeirao_preto": 45,
+  "km_jarinu": 284
+ },
+ "salesopolis": {
+  "nome": "Salesópolis",
+  "lat": -23.5288,
+  "lon": -45.8465,
+  "km_ribeirao_preto": 331,
+  "km_jarinu": 102
+ },
+ "salmourao": {
+  "nome": "Salmourão",
+  "lat": -21.6267,
+  "lon": -50.8614,
+  "km_ribeirao_preto": 320,
+  "km_jarinu": 456
+ },
+ "saltinho": {
+  "nome": "Saltinho",
+  "lat": -22.8442,
+  "lon": -47.6754,
+  "km_ribeirao_preto": 187,
+  "km_jarinu": 101
+ },
+ "salto": {
+  "nome": "Salto",
+  "lat": -23.1996,
+  "lon": -47.2931,
+  "km_ribeirao_preto": 232,
+  "km_jarinu": 59
+ },
+ "salto de pirapora": {
+  "nome": "Salto de Pirapora",
+  "lat": -23.6474,
+  "lon": -47.5743,
+  "km_ribeirao_preto": 277,
+  "km_jarinu": 105
+ },
+ "salto grande": {
+  "nome": "Salto Grande",
+  "lat": -22.8894,
+  "lon": -49.9831,
+  "km_ribeirao_preto": 294,
+  "km_jarinu": 334
+ },
+ "sandovalina": {
+  "nome": "Sandovalina",
+  "lat": -22.4551,
+  "lon": -51.7648,
+  "km_ribeirao_preto": 433,
+  "km_jarinu": 521
+ },
+ "santa adelia": {
+  "nome": "Santa Adélia",
+  "lat": -21.2427,
+  "lon": -48.8063,
+  "km_ribeirao_preto": 104,
+  "km_jarinu": 298
+ },
+ "santa albertina": {
+  "nome": "Santa Albertina",
+  "lat": -20.0311,
+  "lon": -50.7297,
+  "km_ribeirao_preto": 329,
+  "km_jarinu": 537
+ },
+ "santa barbara d'oeste": {
+  "nome": "Santa Bárbara d'Oeste",
+  "lat": -22.7553,
+  "lon": -47.4143,
+  "km_ribeirao_preto": 181,
+  "km_jarinu": 80
+ },
+ "santa branca": {
+  "nome": "Santa Branca",
+  "lat": -23.3933,
+  "lon": -45.8875,
+  "km_ribeirao_preto": 317,
+  "km_jarinu": 92
+ },
+ "santa clara d'oeste": {
+  "nome": "Santa Clara d'Oeste",
+  "lat": -20.09,
+  "lon": -50.9491,
+  "km_ribeirao_preto": 348,
+  "km_jarinu": 550
+ },
+ "santa cruz da conceicao": {
+  "nome": "Santa Cruz da Conceição",
+  "lat": -22.1405,
+  "lon": -47.4512,
+  "km_ribeirao_preto": 114,
+  "km_jarinu": 130
+ },
+ "santa cruz da esperanca": {
+  "nome": "Santa Cruz da Esperança",
+  "lat": -21.2951,
+  "lon": -47.4304,
+  "km_ribeirao_preto": 42,
+  "km_jarinu": 214
+ },
+ "santa cruz das palmeiras": {
+  "nome": "Santa Cruz das Palmeiras",
+  "lat": -21.8235,
+  "lon": -47.248,
+  "km_ribeirao_preto": 93,
+  "km_jarinu": 152
+ },
+ "santa cruz do rio pardo": {
+  "nome": "Santa Cruz do Rio Pardo",
+  "lat": -22.8988,
+  "lon": -49.6354,
+  "km_ribeirao_preto": 269,
+  "km_jarinu": 298
+ },
+ "santa ernestina": {
+  "nome": "Santa Ernestina",
+  "lat": -21.4618,
+  "lon": -48.3953,
+  "km_ribeirao_preto": 69,
+  "km_jarinu": 251
+ },
+ "santa fe do sul": {
+  "nome": "Santa Fé do Sul",
+  "lat": -20.2083,
+  "lon": -50.932,
+  "km_ribeirao_preto": 342,
+  "km_jarinu": 541
+ },
+ "santa gertrudes": {
+  "nome": "Santa Gertrudes",
+  "lat": -22.4572,
+  "lon": -47.5272,
+  "km_ribeirao_preto": 146,
+  "km_jarinu": 109
+ },
+ "santa isabel": {
+  "nome": "Santa Isabel",
+  "lat": -23.3172,
+  "lon": -46.2237,
+  "km_ribeirao_preto": 289,
+  "km_jarinu": 57
+ },
+ "santa lucia": {
+  "nome": "Santa Lúcia",
+  "lat": -21.685,
+  "lon": -48.0885,
+  "km_ribeirao_preto": 64,
+  "km_jarinu": 211
+ },
+ "santa maria da serra": {
+  "nome": "Santa Maria da Serra",
+  "lat": -22.5661,
+  "lon": -48.1593,
+  "km_ribeirao_preto": 159,
+  "km_jarinu": 158
+ },
+ "santa mercedes": {
+  "nome": "Santa Mercedes",
+  "lat": -21.3495,
+  "lon": -51.7564,
+  "km_ribeirao_preto": 409,
+  "km_jarinu": 553
+ },
+ "santa rita d'oeste": {
+  "nome": "Santa Rita d'Oeste",
+  "lat": -20.1414,
+  "lon": -50.8358,
+  "km_ribeirao_preto": 335,
+  "km_jarinu": 537
+ },
+ "santa rita do passa quatro": {
+  "nome": "Santa Rita do Passa Quatro",
+  "lat": -21.7083,
+  "lon": -47.478,
+  "km_ribeirao_preto": 69,
+  "km_jarinu": 173
+ },
+ "santa rosa de viterbo": {
+  "nome": "Santa Rosa de Viterbo",
+  "lat": -21.4776,
+  "lon": -47.3622,
+  "km_ribeirao_preto": 58,
+  "km_jarinu": 192
+ },
+ "santa salete": {
+  "nome": "Santa Salete",
+  "lat": -20.2429,
+  "lon": -50.6887,
+  "km_ribeirao_preto": 317,
+  "km_jarinu": 518
+ },
+ "santana da ponte pensa": {
+  "nome": "Santana da Ponte Pensa",
+  "lat": -20.2523,
+  "lon": -50.8014,
+  "km_ribeirao_preto": 327,
+  "km_jarinu": 527
+ },
+ "santana de parnaiba": {
+  "nome": "Santana de Parnaíba",
+  "lat": -23.4439,
+  "lon": -46.9178,
+  "km_ribeirao_preto": 269,
+  "km_jarinu": 42
+ },
+ "santo anastacio": {
+  "nome": "Santo Anastácio",
+  "lat": -21.9747,
+  "lon": -51.6527,
+  "km_ribeirao_preto": 407,
+  "km_jarinu": 521
+ },
+ "santo andre": {
+  "nome": "Santo André",
+  "lat": -23.6737,
+  "lon": -46.5432,
+  "km_ribeirao_preto": 307,
+  "km_jarinu": 66
+ },
+ "santo antonio da alegria": {
+  "nome": "Santo Antônio da Alegria",
+  "lat": -21.0864,
+  "lon": -47.1464,
+  "km_ribeirao_preto": 69,
+  "km_jarinu": 228
+ },
+ "santo antonio de posse": {
+  "nome": "Santo Antônio de Posse",
+  "lat": -22.6029,
+  "lon": -46.9192,
+  "km_ribeirao_preto": 184,
+  "km_jarinu": 59
+ },
+ "santo antonio do aracangua": {
+  "nome": "Santo Antônio do Aracanguá",
+  "lat": -20.9331,
+  "lon": -50.498,
+  "km_ribeirao_preto": 280,
+  "km_jarinu": 457
+ },
+ "santo antonio do jardim": {
+  "nome": "Santo Antônio do Jardim",
+  "lat": -22.1121,
+  "lon": -46.6845,
+  "km_ribeirao_preto": 157,
+  "km_jarinu": 110
+ },
+ "santo antonio do pinhal": {
+  "nome": "Santo Antônio do Pinhal",
+  "lat": -22.827,
+  "lon": -45.663,
+  "km_ribeirao_preto": 288,
+  "km_jarinu": 113
+ },
+ "santo expedito": {
+  "nome": "Santo Expedito",
+  "lat": -21.8467,
+  "lon": -51.3929,
+  "km_ribeirao_preto": 378,
+  "km_jarinu": 499
+ },
+ "santopolis do aguapei": {
+  "nome": "Santópolis do Aguapeí",
+  "lat": -21.6376,
+  "lon": -50.5044,
+  "km_ribeirao_preto": 284,
+  "km_jarinu": 421
+ },
+ "santos": {
+  "nome": "Santos",
+  "lat": -23.9535,
+  "lon": -46.335,
+  "km_ribeirao_preto": 345,
+  "km_jarinu": 103
+ },
+ "sao bento do sapucai": {
+  "nome": "São Bento do Sapucaí",
+  "lat": -22.6837,
+  "lon": -45.7287,
+  "km_ribeirao_preto": 273,
+  "km_jarinu": 113
+ },
+ "sao bernardo do campo": {
+  "nome": "São Bernardo do Campo",
+  "lat": -23.6914,
+  "lon": -46.5646,
+  "km_ribeirao_preto": 308,
+  "km_jarinu": 67
+ },
+ "sao caetano do sul": {
+  "nome": "São Caetano do Sul",
+  "lat": -23.6229,
+  "lon": -46.5548,
+  "km_ribeirao_preto": 302,
+  "km_jarinu": 60
+ },
+ "sao carlos": {
+  "nome": "São Carlos",
+  "lat": -22.0174,
+  "lon": -47.886,
+  "km_ribeirao_preto": 95,
+  "km_jarinu": 170
+ },
+ "sao francisco": {
+  "nome": "São Francisco",
+  "lat": -20.3623,
+  "lon": -50.6952,
+  "km_ribeirao_preto": 313,
+  "km_jarinu": 511
+ },
+ "sao joao da boa vista": {
+  "nome": "São João da Boa Vista",
+  "lat": -21.9707,
+  "lon": -46.7944,
+  "km_ribeirao_preto": 138,
+  "km_jarinu": 126
+ },
+ "sao joao das duas pontes": {
+  "nome": "São João das Duas Pontes",
+  "lat": -20.3879,
+  "lon": -50.3792,
+  "km_ribeirao_preto": 281,
+  "km_jarinu": 483
+ },
+ "sao joao de iracema": {
+  "nome": "São João de Iracema",
+  "lat": -20.5111,
+  "lon": -50.3561,
+  "km_ribeirao_preto": 275,
+  "km_jarinu": 473
+ },
+ "sao joao do pau d'alho": {
+  "nome": "São João do Pau d'Alho",
+  "lat": -21.2662,
+  "lon": -51.6672,
+  "km_ribeirao_preto": 400,
+  "km_jarinu": 548
+ },
+ "sao joaquim da barra": {
+  "nome": "São Joaquim da Barra",
+  "lat": -20.5812,
+  "lon": -47.8593,
+  "km_ribeirao_preto": 66,
+  "km_jarinu": 304
+ },
+ "sao jose da bela vista": {
+  "nome": "São José da Bela Vista",
+  "lat": -20.5935,
+  "lon": -47.6424,
+  "km_ribeirao_preto": 66,
+  "km_jarinu": 295
+ },
+ "sao jose do barreiro": {
+  "nome": "São José do Barreiro",
+  "lat": -22.6414,
+  "lon": -44.5774,
+  "km_ribeirao_preto": 371,
+  "km_jarinu": 226
+ },
+ "sao jose do rio pardo": {
+  "nome": "São José do Rio Pardo",
+  "lat": -21.5953,
+  "lon": -46.8873,
+  "km_ribeirao_preto": 107,
+  "km_jarinu": 169
+ },
+ "sao jose do rio preto": {
+  "nome": "São José do Rio Preto",
+  "lat": -20.8113,
+  "lon": -49.3758,
+  "km_ribeirao_preto": 167,
+  "km_jarinu": 374
+ },
+ "sao jose dos campos": {
+  "nome": "São José dos Campos",
+  "lat": -23.1896,
+  "lon": -45.8841,
+  "km_ribeirao_preto": 300,
+  "km_jarinu": 87
+ },
+ "sao lourenco da serra": {
+  "nome": "São Lourenço da Serra",
+  "lat": -23.8491,
+  "lon": -46.9432,
+  "km_ribeirao_preto": 311,
+  "km_jarinu": 86
+ },
+ "sao luiz do paraitinga": {
+  "nome": "São Luiz do Paraitinga",
+  "lat": -23.222,
+  "lon": -45.3109,
+  "km_ribeirao_preto": 344,
+  "km_jarinu": 145
+ },
+ "sao manuel": {
+  "nome": "São Manuel",
+  "lat": -22.7321,
+  "lon": -48.5723,
+  "km_ribeirao_preto": 191,
+  "km_jarinu": 193
+ },
+ "sao miguel arcanjo": {
+  "nome": "São Miguel Arcanjo",
+  "lat": -23.8782,
+  "lon": -47.9935,
+  "km_ribeirao_preto": 302,
+  "km_jarinu": 155
+ },
+ "sao paulo": {
+  "nome": "São Paulo",
+  "lat": -23.5329,
+  "lon": -46.6395,
+  "km_ribeirao_preto": 289,
+  "km_jarinu": 49
+ },
+ "sao pedro": {
+  "nome": "São Pedro",
+  "lat": -22.5483,
+  "lon": -47.9096,
+  "km_ribeirao_preto": 154,
+  "km_jarinu": 136
+ },
+ "sao pedro do turvo": {
+  "nome": "São Pedro do Turvo",
+  "lat": -22.7453,
+  "lon": -49.7428,
+  "km_ribeirao_preto": 265,
+  "km_jarinu": 311
+ },
+ "sao roque": {
+  "nome": "São Roque",
+  "lat": -23.5226,
+  "lon": -47.1357,
+  "km_ribeirao_preto": 271,
+  "km_jarinu": 62
+ },
+ "sao sebastiao": {
+  "nome": "São Sebastião",
+  "lat": -23.7951,
+  "lon": -45.4143,
+  "km_ribeirao_preto": 382,
+  "km_jarinu": 154
+ },
+ "sao sebastiao da grama": {
+  "nome": "São Sebastião da Grama",
+  "lat": -21.7041,
+  "lon": -46.8208,
+  "km_ribeirao_preto": 118,
+  "km_jarinu": 156
+ },
+ "sao simao": {
+  "nome": "São Simão",
+  "lat": -21.4732,
+  "lon": -47.5518,
+  "km_ribeirao_preto": 43,
+  "km_jarinu": 200
+ },
+ "sao vicente": {
+  "nome": "São Vicente",
+  "lat": -23.9574,
+  "lon": -46.3883,
+  "km_ribeirao_preto": 343,
+  "km_jarinu": 101
+ },
+ "sarapui": {
+  "nome": "Sarapuí",
+  "lat": -23.6397,
+  "lon": -47.8249,
+  "km_ribeirao_preto": 275,
+  "km_jarinu": 127
+ },
+ "sarutaia": {
+  "nome": "Sarutaiá",
+  "lat": -23.2721,
+  "lon": -49.4763,
+  "km_ribeirao_preto": 290,
+  "km_jarinu": 282
+ },
+ "sebastianopolis do sul": {
+  "nome": "Sebastianópolis do Sul",
+  "lat": -20.6523,
+  "lon": -49.925,
+  "km_ribeirao_preto": 227,
+  "km_jarinu": 428
+ },
+ "serra azul": {
+  "nome": "Serra Azul",
+  "lat": -21.3074,
+  "lon": -47.5602,
+  "km_ribeirao_preto": 30,
+  "km_jarinu": 217
+ },
+ "serra negra": {
+  "nome": "Serra Negra",
+  "lat": -22.6139,
+  "lon": -46.7033,
+  "km_ribeirao_preto": 197,
+  "km_jarinu": 55
+ },
+ "serrana": {
+  "nome": "Serrana",
+  "lat": -21.2043,
+  "lon": -47.5952,
+  "km_ribeirao_preto": 23,
+  "km_jarinu": 229
+ },
+ "sertaozinho": {
+  "nome": "Sertãozinho",
+  "lat": -21.1316,
+  "lon": -47.9875,
+  "km_ribeirao_preto": 19,
+  "km_jarinu": 255
+ },
+ "sete barras": {
+  "nome": "Sete Barras",
+  "lat": -24.382,
+  "lon": -47.9279,
+  "km_ribeirao_preto": 357,
+  "km_jarinu": 187
+ },
+ "severinia": {
+  "nome": "Severínia",
+  "lat": -20.8108,
+  "lon": -48.8054,
+  "km_ribeirao_preto": 111,
+  "km_jarinu": 333
+ },
+ "silveiras": {
+  "nome": "Silveiras",
+  "lat": -22.6638,
+  "lon": -44.8522,
+  "km_ribeirao_preto": 347,
+  "km_jarinu": 198
+ },
+ "socorro": {
+  "nome": "Socorro",
+  "lat": -22.5903,
+  "lon": -46.5251,
+  "km_ribeirao_preto": 206,
+  "km_jarinu": 61
+ },
+ "sorocaba": {
+  "nome": "Sorocaba",
+  "lat": -23.4969,
+  "lon": -47.4451,
+  "km_ribeirao_preto": 261,
+  "km_jarinu": 85
+ },
+ "sud mennucci": {
+  "nome": "Sud Mennucci",
+  "lat": -20.6872,
+  "lon": -50.9238,
+  "km_ribeirao_preto": 328,
+  "km_jarinu": 509
+ },
+ "sumare": {
+  "nome": "Sumaré",
+  "lat": -22.8204,
+  "lon": -47.2728,
+  "km_ribeirao_preto": 192,
+  "km_jarinu": 64
+ },
+ "suzanapolis": {
+  "nome": "Suzanápolis",
+  "lat": -20.4981,
+  "lon": -51.0268,
+  "km_ribeirao_preto": 343,
+  "km_jarinu": 530
+ },
+ "suzano": {
+  "nome": "Suzano",
+  "lat": -23.5448,
+  "lon": -46.3112,
+  "km_ribeirao_preto": 306,
+  "km_jarinu": 65
+ },
+ "tabapua": {
+  "nome": "Tabapuã",
+  "lat": -20.9602,
+  "lon": -49.0307,
+  "km_ribeirao_preto": 129,
+  "km_jarinu": 336
+ },
+ "tabatinga": {
+  "nome": "Tabatinga",
+  "lat": -21.7239,
+  "lon": -48.6896,
+  "km_ribeirao_preto": 110,
+  "km_jarinu": 253
+ },
+ "taboao da serra": {
+  "nome": "Taboão da Serra",
+  "lat": -23.6019,
+  "lon": -46.7526,
+  "km_ribeirao_preto": 291,
+  "km_jarinu": 55
+ },
+ "taciba": {
+  "nome": "Taciba",
+  "lat": -22.3866,
+  "lon": -51.2882,
+  "km_ribeirao_preto": 384,
+  "km_jarinu": 474
+ },
+ "taguai": {
+  "nome": "Taguaí",
+  "lat": -23.4452,
+  "lon": -49.4024,
+  "km_ribeirao_preto": 301,
+  "km_jarinu": 276
+ },
+ "taiacu": {
+  "nome": "Taiaçu",
+  "lat": -21.1431,
+  "lon": -48.5112,
+  "km_ribeirao_preto": 73,
+  "km_jarinu": 285
+ },
+ "taiuva": {
+  "nome": "Taiúva",
+  "lat": -21.1223,
+  "lon": -48.4528,
+  "km_ribeirao_preto": 67,
+  "km_jarinu": 283
+ },
+ "tambau": {
+  "nome": "Tambaú",
+  "lat": -21.7029,
+  "lon": -47.2703,
+  "km_ribeirao_preto": 81,
+  "km_jarinu": 165
+ },
+ "tanabi": {
+  "nome": "Tanabi",
+  "lat": -20.6228,
+  "lon": -49.6563,
+  "km_ribeirao_preto": 201,
+  "km_jarinu": 409
+ },
+ "tapirai": {
+  "nome": "Tapiraí",
+  "lat": -23.9612,
+  "lon": -47.5062,
+  "km_ribeirao_preto": 312,
+  "km_jarinu": 124
+ },
+ "tapiratiba": {
+  "nome": "Tapiratiba",
+  "lat": -21.4713,
+  "lon": -46.7448,
+  "km_ribeirao_preto": 115,
+  "km_jarinu": 182
+ },
+ "taquaral": {
+  "nome": "Taquaral",
+  "lat": -21.0737,
+  "lon": -48.4126,
+  "km_ribeirao_preto": 63,
+  "km_jarinu": 285
+ },
+ "taquaritinga": {
+  "nome": "Taquaritinga",
+  "lat": -21.4049,
+  "lon": -48.5103,
+  "km_ribeirao_preto": 77,
+  "km_jarinu": 263
+ },
+ "taquarituba": {
+  "nome": "Taquarituba",
+  "lat": -23.5307,
+  "lon": -49.241,
+  "km_ribeirao_preto": 301,
+  "km_jarinu": 261
+ },
+ "taquarivai": {
+  "nome": "Taquarivaí",
+  "lat": -23.9211,
+  "lon": -48.6948,
+  "km_ribeirao_preto": 319,
+  "km_jarinu": 220
+ },
+ "tarabai": {
+  "nome": "Tarabai",
+  "lat": -22.3016,
+  "lon": -51.5621,
+  "km_ribeirao_preto": 407,
+  "km_jarinu": 504
+ },
+ "taruma": {
+  "nome": "Tarumã",
+  "lat": -22.7429,
+  "lon": -50.5786,
+  "km_ribeirao_preto": 335,
+  "km_jarinu": 396
+ },
+ "tatui": {
+  "nome": "Tatuí",
+  "lat": -23.3487,
+  "lon": -47.8461,
+  "km_ribeirao_preto": 242,
+  "km_jarinu": 117
+ },
+ "taubate": {
+  "nome": "Taubaté",
+  "lat": -23.0104,
+  "lon": -45.5593,
+  "km_ribeirao_preto": 309,
+  "km_jarinu": 120
+ },
+ "tejupa": {
+  "nome": "Tejupá",
+  "lat": -23.3425,
+  "lon": -49.3722,
+  "km_ribeirao_preto": 290,
+  "km_jarinu": 271
+ },
+ "teodoro sampaio": {
+  "nome": "Teodoro Sampaio",
+  "lat": -22.5299,
+  "lon": -52.1682,
+  "km_ribeirao_preto": 475,
+  "km_jarinu": 561
+ },
+ "terra roxa": {
+  "nome": "Terra Roxa",
+  "lat": -20.787,
+  "lon": -48.3314,
+  "km_ribeirao_preto": 69,
+  "km_jarinu": 306
+ },
+ "tiete": {
+  "nome": "Tietê",
+  "lat": -23.1101,
+  "lon": -47.7164,
+  "km_ribeirao_preto": 216,
+  "km_jarinu": 101
+ },
+ "timburi": {
+  "nome": "Timburi",
+  "lat": -23.2057,
+  "lon": -49.6096,
+  "km_ribeirao_preto": 293,
+  "km_jarinu": 295
+ },
+ "torre de pedra": {
+  "nome": "Torre de Pedra",
+  "lat": -23.2462,
+  "lon": -48.1955,
+  "km_ribeirao_preto": 234,
+  "km_jarinu": 151
+ },
+ "torrinha": {
+  "nome": "Torrinha",
+  "lat": -22.4237,
+  "lon": -48.1731,
+  "km_ribeirao_preto": 144,
+  "km_jarinu": 166
+ },
+ "trabiju": {
+  "nome": "Trabiju",
+  "lat": -22.0388,
+  "lon": -48.3342,
+  "km_ribeirao_preto": 111,
+  "km_jarinu": 203
+ },
+ "tremembe": {
+  "nome": "Tremembé",
+  "lat": -22.9571,
+  "lon": -45.5475,
+  "km_ribeirao_preto": 306,
+  "km_jarinu": 122
+ },
+ "tres fronteiras": {
+  "nome": "Três Fronteiras",
+  "lat": -20.2344,
+  "lon": -50.8905,
+  "km_ribeirao_preto": 337,
+  "km_jarinu": 536
+ },
+ "tuiuti": {
+  "nome": "Tuiuti",
+  "lat": -22.8193,
+  "lon": -46.6937,
+  "km_ribeirao_preto": 217,
+  "km_jarinu": 32
+ },
+ "tupa": {
+  "nome": "Tupã",
+  "lat": -21.9335,
+  "lon": -50.5191,
+  "km_ribeirao_preto": 293,
+  "km_jarinu": 411
+ },
+ "tupi paulista": {
+  "nome": "Tupi Paulista",
+  "lat": -21.3825,
+  "lon": -51.575,
+  "km_ribeirao_preto": 391,
+  "km_jarinu": 534
+ },
+ "turiuba": {
+  "nome": "Turiúba",
+  "lat": -20.9428,
+  "lon": -50.1135,
+  "km_ribeirao_preto": 240,
+  "km_jarinu": 424
+ },
+ "turmalina": {
+  "nome": "Turmalina",
+  "lat": -20.0486,
+  "lon": -50.4792,
+  "km_ribeirao_preto": 305,
+  "km_jarinu": 516
+ },
+ "ubarana": {
+  "nome": "Ubarana",
+  "lat": -21.165,
+  "lon": -49.7198,
+  "km_ribeirao_preto": 198,
+  "km_jarinu": 376
+ },
+ "ubatuba": {
+  "nome": "Ubatuba",
+  "lat": -23.4332,
+  "lon": -45.0834,
+  "km_ribeirao_preto": 377,
+  "km_jarinu": 172
+ },
+ "ubirajara": {
+  "nome": "Ubirajara",
+  "lat": -22.5272,
+  "lon": -49.6613,
+  "km_ribeirao_preto": 243,
+  "km_jarinu": 307
+ },
+ "uchoa": {
+  "nome": "Uchoa",
+  "lat": -20.9511,
+  "lon": -49.1713,
+  "km_ribeirao_preto": 143,
+  "km_jarinu": 347
+ },
+ "uniao paulista": {
+  "nome": "União Paulista",
+  "lat": -20.8862,
+  "lon": -49.9025,
+  "km_ribeirao_preto": 219,
+  "km_jarinu": 410
+ },
+ "urania": {
+  "nome": "Urânia",
+  "lat": -20.2455,
+  "lon": -50.6455,
+  "km_ribeirao_preto": 312,
+  "km_jarinu": 515
+ },
+ "uru": {
+  "nome": "Uru",
+  "lat": -21.7866,
+  "lon": -49.2848,
+  "km_ribeirao_preto": 167,
+  "km_jarinu": 301
+ },
+ "urupes": {
+  "nome": "Urupês",
+  "lat": -21.2032,
+  "lon": -49.2931,
+  "km_ribeirao_preto": 154,
+  "km_jarinu": 338
+ },
+ "valentim gentil": {
+  "nome": "Valentim Gentil",
+  "lat": -20.4217,
+  "lon": -50.0889,
+  "km_ribeirao_preto": 251,
+  "km_jarinu": 458
+ },
+ "valinhos": {
+  "nome": "Valinhos",
+  "lat": -22.9698,
+  "lon": -46.9974,
+  "km_ribeirao_preto": 217,
+  "km_jarinu": 31
+ },
+ "valparaiso": {
+  "nome": "Valparaíso",
+  "lat": -21.2229,
+  "lon": -50.8699,
+  "km_ribeirao_preto": 317,
+  "km_jarinu": 475
+ },
+ "vargem": {
+  "nome": "Vargem",
+  "lat": -22.887,
+  "lon": -46.4124,
+  "km_ribeirao_preto": 239,
+  "km_jarinu": 40
+ },
+ "vargem grande do sul": {
+  "nome": "Vargem Grande do Sul",
+  "lat": -21.8322,
+  "lon": -46.8913,
+  "km_ribeirao_preto": 120,
+  "km_jarinu": 142
+ },
+ "vargem grande paulista": {
+  "nome": "Vargem Grande Paulista",
+  "lat": -23.5993,
+  "lon": -47.022,
+  "km_ribeirao_preto": 282,
+  "km_jarinu": 63
+ },
+ "varzea paulista": {
+  "nome": "Várzea Paulista",
+  "lat": -23.2136,
+  "lon": -46.8234,
+  "km_ribeirao_preto": 249,
+  "km_jarinu": 16
+ },
+ "vera cruz": {
+  "nome": "Vera Cruz",
+  "lat": -22.2183,
+  "lon": -49.8207,
+  "km_ribeirao_preto": 238,
+  "km_jarinu": 332
+ },
+ "vinhedo": {
+  "nome": "Vinhedo",
+  "lat": -23.0302,
+  "lon": -46.9833,
+  "km_ribeirao_preto": 224,
+  "km_jarinu": 27
+ },
+ "viradouro": {
+  "nome": "Viradouro",
+  "lat": -20.8734,
+  "lon": -48.293,
+  "km_ribeirao_preto": 60,
+  "km_jarinu": 296
+ },
+ "vista alegre do alto": {
+  "nome": "Vista Alegre do Alto",
+  "lat": -21.1692,
+  "lon": -48.6284,
+  "km_ribeirao_preto": 85,
+  "km_jarinu": 291
+ },
+ "vitoria brasil": {
+  "nome": "Vitória Brasil",
+  "lat": -20.1956,
+  "lon": -50.4875,
+  "km_ribeirao_preto": 299,
+  "km_jarinu": 505
+ },
+ "votorantim": {
+  "nome": "Votorantim",
+  "lat": -23.5446,
+  "lon": -47.4388,
+  "km_ribeirao_preto": 267,
+  "km_jarinu": 88
+ },
+ "votuporanga": {
+  "nome": "Votuporanga",
+  "lat": -20.4237,
+  "lon": -49.9781,
+  "km_ribeirao_preto": 240,
+  "km_jarinu": 449
+ },
+ "zacarias": {
+  "nome": "Zacarias",
+  "lat": -21.0506,
+  "lon": -50.0552,
+  "km_ribeirao_preto": 233,
+  "km_jarinu": 412
+ }
+}
