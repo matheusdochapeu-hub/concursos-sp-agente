@@ -1,6 +1,6 @@
 {
-  "name": "Concursos SP & Brasil — Fisioterapia & Nível Médio",
-  "short_name": "Concursos BR",
+  "name": "Concursos",
+  "short_name": "Concursos",
   "description": "Monitoramento diário de concursos públicos em São Paulo e no Brasil para Fisioterapia, Nível Médio/Técnico e busca por cargo.",
   "lang": "pt-BR",
   "start_url": "./index.html",
