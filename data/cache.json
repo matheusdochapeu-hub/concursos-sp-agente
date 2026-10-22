@@ -1074,32 +1074,6 @@
    "isencao": "Doadores de medula óssea cadastrados no Registro Nacional de Doadores Voluntários de Medula Óssea e doadores regulares de sangue podem pedir isenção entre os dias 21 e 25 de outubro de 2026, mediante comprovação."
   }
  },
- "https://www.pciconcursos.com.br/noticias/camara-de-barao-de-antonina-sp-abre-concurso-publico-para-o-cargo-de-advogado": {
-  "first_seen": "2026-10-21",
-  "hash": "6d9e8088352c",
-  "fisio_linhas": [],
-  "salario_max_texto": 6603.39,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Advogado (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA Nº 01.01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/barao-de-antonina-sp",
-   "link_banca": "https://www.camarabaraodeantonina.sp.gov.br/",
-   "nome_banca": "Câmara Municipal de Barão de Antonina",
-   "data_prova": "22/11/2026",
-   "regime": "Estatutário",
-   "beneficios": "Consultar edital",
-   "jornada": "20 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 60,00. Pedidos de isenção podem ser feitos entre os dias 23 e 27 de setembro de 2026, para inscritos no CadÚnico ou doadores de medula óssea, conforme as regras do edital."
-  }
- },
  "https://www.pciconcursos.com.br/noticias/camara-de-cesario-lange-sp-abre-concurso-publico-com-salarios-de-ate-3774": {
   "first_seen": "2026-10-21",
   "hash": "8ba9398a818b",
@@ -10751,6 +10725,119 @@
    "beneficios": "Vale-alimentação e prêmio assiduidade de até R$ 1.250,00, conforme a legislação municipal",
    "jornada": "20 a 40 horas semanais",
    "isencao": "A isenção poderá ser solicitada em 22 e 23 de outubro de 2026 por candidatos que atendam aos requisitos previstos no edital, como doadores de sangue residentes em Birigui, pessoas que prestaram serviços à Justiça Eleitoral ou pessoas cadastradas como doadoras de medula óssea."
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-tecnico-de-enfermagem-e-biologista": {
+  "first_seen": "2026-10-22",
+  "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "0d1afd78662a",
+  "fisio_linhas": [],
+  "salario_max_texto": 2978.36,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Técnico de Enfermagem (1 vaga)",
+    "Agente Técnico de Assistência à Saúde (Biologista) (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO Nº 37/2026",
+    "EDITAL DE CONCURSO Nº 38/2026"
+   ],
+   "link_banca": "https://www.hcribeirao.sp.gov.br/",
+   "nome_banca": null,
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação de R$ 360,00 mensais e vale-transporte",
+   "jornada": "30 horas semanais",
+   "isencao": "Doadores de sangue podem solicitar isenção. Estudantes que recebam menos de dois salários mínimos por mês ou estejam desempregados podem solicitar redução de 50%."
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-canitar-sp-abre-processo-seletivo-para-a-area-da-educacao": {
+  "first_seen": "2026-10-22",
+  "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "0ceddc4d5027",
+  "fisio_linhas": [],
+  "salario_max_texto": 1621.0,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Profissional de Apoio Escolar (CR)",
+    "PEB I - Ensino Fundamental do 1º ao 5º ano (CR)",
+    "PEB II - Ensino Fundamental - Arte (CR)",
+    "PEB II - Ensino Fundamental - Ciências (CR)",
+    "PEB II - Ensino Fundamental - Educação Física (CR)",
+    "PEB II - Ensino Fundamental - Geografia (CR)",
+    "PEB II - Ensino Fundamental - História (CR)",
+    "PEB II - Ensino Fundamental - Informática (CR)",
+    "PEB II - Ensino Fundamental - Língua Estrangeira Moderna (Inglês) (CR)",
+    "PEB II - Ensino Fundamental - Língua Portuguesa (CR)",
+    "PEB II - Ensino Fundamental - Matemática (CR)",
+    "Professor de Ensino Infantil - PEI (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO Nº 001/2026"
+   ],
+   "link_banca": "https://www.canitar.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Canitar",
+   "data_prova": "06/12/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "25 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-letras-em-araraquara-sp": {
+  "first_seen": "2026-10-22",
+  "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "5cf9648d473e",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 305/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-na-faculdade-de-ciencias-humanas-e-sociais-de-franca-sp": {
+  "first_seen": "2026-10-22",
+  "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "ac810ea62a0c",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular nas disciplinas de Teoria do Estado e Ciência Política (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 246/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
   }
  }
 }

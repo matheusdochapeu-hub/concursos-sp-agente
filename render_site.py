@@ -164,6 +164,85 @@ def badge_escolaridade_html(esc_tipo: str, niveis_txt: str = "") -> str:
     return '<span class="esc-badge esc-med">📗 Exige Apenas Ensino Médio</span>'
 
 
+# Regras: cargo -> formações aceitas (cargos de nível superior costumam admitir várias graduações)
+_REGRAS_FORMACAO = [
+    (r"auditor|fiscal\s+de\s+tributos|fiscal\s+tribut|fiscal\s+de\s+rendas|agente\s+fiscal|fiscal\s+fazend",
+     ["Direito", "Ciências Contábeis", "Economia", "Administração"]),
+    (r"controlador|controle\s+interno|auditoria",
+     ["Direito", "Ciências Contábeis", "Economia", "Administração"]),
+    (r"contador|cont[áa]bil", ["Ciências Contábeis"]),
+    (r"economista", ["Ciências Econômicas"]),
+    (r"administrador|analista\s+(administrativo|de\s+gest|de\s+recursos)|gestor",
+     ["Administração", "Economia", "Ciências Contábeis", "Direito", "Gestão Pública"]),
+    (r"analista\s+(de\s+)?(t\.?i\b|tecnologia|sistemas|inform)|desenvolvedor",
+     ["Ciência da Computação", "Sistemas de Informação", "Engenharia da Computação", "Análise de Sistemas"]),
+    (r"procurador|advogado|jur[ií]dic|assessor\s+jur", ["Direito (OAB)"]),
+    (r"assistente\s+social", ["Serviço Social (CRESS)"]),
+    (r"psic[oó]log", ["Psicologia (CRP)"]),
+    (r"pedagog|coordenador\s+pedag|supervisor\s+(de\s+ensino|escolar)|diretor\s+de\s+escola",
+     ["Pedagogia", "Licenciatura plena"]),
+    (r"engenheir", ["Engenharia na área do cargo (CREA)"]),
+    (r"arquitet", ["Arquitetura e Urbanismo (CAU)"]),
+    (r"fisioterap", ["Fisioterapia (CREFITO)"]),
+    (r"enfermeir", ["Enfermagem (COREN)"]),
+    (r"m[eé]dico\s+veterin", ["Medicina Veterinária (CRMV)"]),
+    (r"m[eé]dic", ["Medicina (CRM)"]),
+    (r"farmac", ["Farmácia (CRF)"]),
+    (r"nutricion", ["Nutrição (CRN)"]),
+    (r"dentista|cirurgi[aã]o", ["Odontologia (CRO)"]),
+    (r"professor|docente|\bpeb\b", ["Licenciatura na disciplina"]),
+    (r"bibliotec", ["Biblioteconomia (CRB)"]),
+    (r"jornalist|comunicador", ["Jornalismo", "Comunicação Social"]),
+    (r"estat[ií]stic", ["Estatística", "Matemática"]),
+]
+
+# Termos que, ao serem buscados, também devem encontrar editais de cargos multidisciplinares
+_TERMOS_EQUIV = {
+    "Direito": ["advogado", "bacharel em direito", "direito"],
+    "Ciências Contábeis": ["contador", "contabilidade", "ciencias contabeis"],
+    "Economia": ["economista", "economia", "ciencias economicas"],
+    "Ciências Econômicas": ["economista", "economia"],
+    "Administração": ["administrador", "administracao"],
+}
+
+
+def inferir_formacoes_multidisciplinares(cargos, resumo: str = "", titulo: str = "") -> dict:
+    """Detecta cargos que aceitam mais de uma graduação (ex.: Auditor Fiscal -> Direito, Contábeis, Economia)."""
+    if isinstance(cargos, str):
+        cargos = [cargos]
+    texto = " ".join(list(cargos or []) + [resumo or "", titulo or ""]).lower()
+    formacoes: List[str] = []
+    for padrao, forms in _REGRAS_FORMACAO:
+        if re.search(padrao, texto, re.I):
+            for f_ in forms:
+                if f_ not in formacoes:
+                    formacoes.append(f_)
+    termos: List[str] = []
+    for f_ in formacoes:
+        for t in _TERMOS_EQUIV.get(f_, []):
+            if t not in termos:
+                termos.append(t)
+        base = re.sub(r"\s*\(.*?\)", "", f_).strip().lower()
+        if base and base not in termos:
+            termos.append(base)
+    if len(formacoes) > 1:
+        desc = "Aceita formações diversas: " + ", ".join(formacoes) + " (confirmar no edital)."
+    elif formacoes:
+        desc = "Formação: " + formacoes[0] + "."
+    else:
+        desc = ""
+    return {"descricao": desc, "termos_busca": termos}
+
+
+def inferir_requisitos_superior(nome: str, cargos=None) -> str:
+    info = inferir_formacoes_multidisciplinares(cargos or [nome], nome, "")
+    base = "Exige Ensino Superior completo (graduação reconhecida pelo MEC)."
+    if info["descricao"]:
+        base += " " + info["descricao"]
+    base += " Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo."
+    return base
+
+
 def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
     if modo == "fisio":
         fd = c.get("fisio_detalhes") or {}
@@ -183,7 +262,10 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
         topicos = fd.get("resumo_conteudo") or []
         icone_cargo = "🩺"
     else:
-        chave = "medio_confirmado" if modo == "medio5k" else "medio_outros"
+        if modo == "superior_sp":
+            chave = "superior_itens"
+        else:
+            chave = "medio_confirmado" if modo == "medio5k" else "medio_outros"
         itens = c.get(chave) or [{}]
         prim = itens[0]
         cargo_titulo = " / ".join(x.get("nome", "") for x in itens if x.get("nome"))
@@ -201,15 +283,13 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
         esc_tipo = prim.get("escolaridade_tipo") or "medio"
         requisitos = prim.get("requisitos") or "Exige Ensino Médio completo conforme especificações do Anexo I do edital."
         topicos = prim.get("resumo_conteudo") or []
-        icone_cargo = "💼"
+        icone_cargo = "🎓" if modo == "superior_sp" else "💼"
+        if modo == "superior_sp" and c.get("formacoes_aceitas") and c["formacoes_aceitas"] not in requisitos:
+            requisitos = requisitos + " " + c["formacoes_aceitas"]
 
     cidade = c.get("cidade") or "São Paulo"
     lat = c.get("lat") if c.get("lat") is not None else -23.5505
     lon = c.get("lon") if c.get("lon") is not None else -46.6333
-    km_rp = c.get("km_ribeirao_preto")
-    km_ja = c.get("km_jarinu")
-    km_rp_attr = km_rp if km_rp is not None else 9999
-    km_ja_attr = km_ja if km_ja is not None else 9999
     sal_bruto_attr = sal_bruto if sal_bruto is not None else 0
     sal_total_attr = sal_total if sal_total is not None else sal_bruto_attr
     faixa_attr = faixa_salarial_slug(sal_bruto, sal_total)
@@ -232,10 +312,7 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
         badges_topo += '<span class="badge-novo">✨ CONCURSO NOVO · 24h</span>'
 
     chips_dist = f'<span class="chip-loc">📍 {e(cidade)}/SP</span>'
-    if km_rp is not None:
-        chips_dist += f'<span class="chip-dist">🧭 {km_rp} km de Rib. Preto</span>'
-    if km_ja is not None:
-        chips_dist += f'<span class="chip-dist">🧭 {km_ja} km de Jarinu</span>'
+    chips_dist += '<span class="chip-dist chip-km-ref" hidden></span>'
 
     banca_nome = c.get("banca") or "Consultar edital"
     links_provas = c.get("links_provas_map", {}).get(modo) or {
@@ -287,8 +364,6 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
       data-uf="SP"
       data-lat="{lat}"
       data-lon="{lon}"
-      data-km-rp="{km_rp_attr}"
-      data-km-jarinu="{km_ja_attr}"
       data-salario="{sal_bruto_attr}"
       data-salario-total="{sal_total_attr}"
       data-salario-exib="{e(sal_exib)}"
@@ -315,6 +390,7 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
       data-encerrando="{1 if encerrando_bool else 0}"
       data-novo="{1 if c.get('novo') else 0}"
       data-first-seen-ts="{e(c.get('first_seen_ts'))}"
+      data-formacoes="{e(' '.join(c.get('termos_formacao') or []))}"
       data-is-baseline="{1 if c.get('is_baseline') else 0}">
       <header class="card-head">
         <div class="head-top">
@@ -458,6 +534,30 @@ CARGOS_RAPIDOS_MAX = [
 ]
 
 
+# Google OAuth Client ID (público, não é segredo). Cole aqui o seu ID ou defina a variável de
+# ambiente GOOGLE_CLIENT_ID antes de rodar o agente. Formato: 123456789-abc.apps.googleusercontent.com
+import os as _os
+
+GOOGLE_CLIENT_ID = _os.environ.get("GOOGLE_CLIENT_ID", "").strip()
+
+# Capitais usadas como cidade de referência: (nome, UF, lat, lon)
+CAPITAIS_REF = [
+    ("Rio Branco", "AC", -9.9747, -67.8243), ("Maceió", "AL", -9.6658, -35.7353),
+    ("Macapá", "AP", 0.0349, -51.0694), ("Manaus", "AM", -3.1190, -60.0217),
+    ("Salvador", "BA", -12.9714, -38.5014), ("Fortaleza", "CE", -3.7319, -38.5267),
+    ("Brasília", "DF", -15.7939, -47.8828), ("Vitória", "ES", -20.3155, -40.3128),
+    ("Goiânia", "GO", -16.6869, -49.2648), ("São Luís", "MA", -2.5307, -44.3068),
+    ("Cuiabá", "MT", -15.6014, -56.0979), ("Campo Grande", "MS", -20.4697, -54.6201),
+    ("Belo Horizonte", "MG", -19.9167, -43.9345), ("Belém", "PA", -1.4558, -48.5044),
+    ("João Pessoa", "PB", -7.1195, -34.8450), ("Curitiba", "PR", -25.4284, -49.2733),
+    ("Recife", "PE", -8.0476, -34.8770), ("Teresina", "PI", -5.0892, -42.8019),
+    ("Rio de Janeiro", "RJ", -22.9068, -43.1729), ("Natal", "RN", -5.7945, -35.2110),
+    ("Porto Alegre", "RS", -30.0346, -51.2177), ("Porto Velho", "RO", -8.7612, -63.9004),
+    ("Boa Vista", "RR", 2.8235, -60.6758), ("Florianópolis", "SC", -27.5954, -48.5480),
+    ("Aracaju", "SE", -10.9472, -37.0731), ("Palmas", "TO", -10.1844, -48.3336),
+]
+
+
 def render_html(
     fisio: List[dict],
     medio_ok: List[dict],
@@ -468,8 +568,11 @@ def render_html(
     gerado_em: str,
     listing_url: str,
     pix_key: str,
+    superior_sp: Optional[List[dict]] = None,
+    municipios_sp: Optional[dict] = None,
 ) -> str:
-    cidades_set = sorted({c.get("cidade") for c in (fisio + medio_ok + medio_todos) if c.get("cidade")})
+    superior_sp = superior_sp or []
+    cidades_set = sorted({c.get("cidade") for c in (fisio + medio_todos + superior_sp) if c.get("cidade")})
     botoes_cidades = (
         '<button type="button" class="pill-btn ativo" data-filter="cidade" data-val="">Todas as Cidades</button>'
         + "".join(
@@ -479,7 +582,7 @@ def render_html(
     )
 
     urls_unicas = {}
-    for c in fisio + medio_ok + medio_todos:
+    for c in fisio + medio_todos + superior_sp:
         urls_unicas[c["url"]] = c
     novos_count = sum(1 for c in urls_unicas.values() if c.get("novo"))
     encerrando_count = sum(1 for c in urls_unicas.values() if (c.get("inscricao_status") or {}).get("encerrando"))
@@ -554,6 +657,18 @@ def render_html(
             for cg in CARGOS_RAPIDOS_MAX
         )
     )
+
+    # Cidades para o campo "Minha cidade de referência" (SP + capitais) -> [nome, UF, lat, lon]
+    cidades_ref = []
+    for _k, _m in (municipios_sp or {}).items():
+        if _m.get("lat") is not None and _m.get("lon") is not None:
+            cidades_ref.append([_m.get("nome") or _k.title(), "SP", _m["lat"], _m["lon"]])
+    for _nome, _uf, _la, _lo in CAPITAIS_REF:
+        if not any(x[0] == _nome and x[1] == _uf for x in cidades_ref):
+            cidades_ref.append([_nome, _uf, _la, _lo])
+    cidades_ref.sort(key=lambda x: (x[0].lower(), x[1]))
+    cidades_ref_json = safe_json_for_script(cidades_ref)
+    opcoes_cidades_ref = "".join(f'<option value="{e(x[0])} - {x[1]}"></option>' for x in cidades_ref)
 
     qr_svg = gerar_qr_pix_svg(pix_key)
     catalogo_json = safe_json_for_script(catalogo_brasil)
@@ -1771,6 +1886,128 @@ def render_html(
     gap: 6px;
   }}
   .btn-dev-secret.visivel {{ display: inline-flex; }}
+
+  /* ===== Cidade de referência, blocos de busca, veredito da comparação ===== */
+  .chip-km-ref[hidden] {{ display: none !important; }}
+  .ref-body {{ display: flex; flex-direction: column; gap: 6px; min-width: 0; }}
+  .ref-row {{ display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }}
+  .ref-row input {{
+    flex: 1 1 240px; min-width: 0; min-height: 40px; padding: 8px 14px;
+    border: 1.5px solid var(--border); border-radius: 999px; font-family: inherit; font-size: 0.9rem;
+    background: #fff; color: var(--txt);
+  }}
+  .ref-row input:focus {{ outline: 2px solid var(--br-green); border-color: var(--br-green); }}
+  .ref-msg {{ color: var(--muted); font-size: 0.78rem; line-height: 1.4; }}
+  .busca-bloco {{ margin-bottom: 18px; }}
+  .toggle-head {{
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 10px; margin-bottom: 8px; flex-wrap: wrap;
+  }}
+  .btn-recolher-mini {{ min-height: 32px !important; padding: 4px 12px !important; font-size: 0.77rem !important; }}
+  .btn-pdf {{ background: var(--br-blue); color: #fff; border: 1.5px solid var(--br-blue-dark); }}
+  .print-only {{ display: none; }}
+
+  .cmp-veredito {{
+    border: 2px solid var(--br-green); background: var(--br-green-soft);
+    border-radius: 14px; padding: 14px 16px; margin-bottom: 16px;
+  }}
+  .cmp-vered-head {{ font-weight: 800; font-size: 1.05rem; color: var(--br-green-dark); margin-bottom: 8px; }}
+  .cmp-vered-top {{ list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 6px; }}
+  .cmp-vered-top li {{
+    background: #fff; border: 1.5px solid var(--br-green); border-radius: 10px;
+    padding: 9px 12px; font-size: 0.93rem; line-height: 1.4;
+  }}
+  .cmp-vered-list {{ display: grid; gap: 6px; }}
+  .cmp-v-row {{
+    display: grid; grid-template-columns: 28px 1fr auto; gap: 10px; align-items: start;
+    background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px;
+  }}
+  .cmp-v-row .ic {{ font-size: 1.15rem; }}
+  .cmp-v-row b {{ display: block; font-size: 0.82rem; color: var(--br-blue); }}
+  .cmp-v-row p {{ margin: 2px 0 0; font-size: 0.86rem; line-height: 1.4; }}
+  .cmp-v-row .tag {{
+    font-size: 0.72rem; font-weight: 800; padding: 3px 9px; border-radius: 999px;
+    background: var(--br-yellow); color: var(--br-blue-dark); white-space: nowrap;
+  }}
+  .cmp-v-row.empate .tag {{ background: #e5e7eb; color: #374151; }}
+
+  @media print {{
+    body.imprimindo-comp > *:not(#modalComparar) {{ display: none !important; }}
+    body.imprimindo-comp {{ background: #fff !important; }}
+    body.imprimindo-comp #modalComparar {{
+      position: static !important; display: block !important; background: #fff !important;
+      padding: 0 !important; overflow: visible !important;
+    }}
+    body.imprimindo-comp .compare-modal {{
+      max-height: none !important; overflow: visible !important; box-shadow: none !important;
+      width: 100% !important; max-width: none !important; border: 0 !important;
+    }}
+    body.imprimindo-comp .no-print, body.imprimindo-comp .pix-close {{ display: none !important; }}
+    body.imprimindo-comp .print-only {{ display: block !important; }}
+    body.imprimindo-comp .cmp-table {{ font-size: 10px; }}
+    body.imprimindo-comp .cmp-veredito, body.imprimindo-comp tr {{ break-inside: avoid; }}
+  }}
+
+  /* ===== Layout mobile: títulos, cabeçalho, abas e botões consistentes ===== */
+  @media (max-width: 640px) {{
+    .container {{ padding: 0 12px; }}
+    h1 {{ font-size: 1.7rem; line-height: 1.15; }}
+    .brand-badge {{ font-size: 0.66rem; padding: 3px 10px; }}
+    .meta {{ font-size: 0.8rem; line-height: 1.5; }}
+    .bar-row {{ flex-direction: column; align-items: stretch; gap: 12px; }}
+    .header-actions-col {{
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; min-width: 0; width: 100%;
+    }}
+    .header-actions-col > * {{ width: 100%; min-width: 0; }}
+    .header-actions-col .btn-app-install,
+    .header-actions-col .btn-header-pix,
+    .header-actions-col .btn-dev-secret {{
+      min-height: 42px; padding: 8px 10px; font-size: 0.8rem;
+    }}
+    .header-actions-col .btn-dev-secret {{ grid-column: 1 / -1; }}
+    .user-profile-pill {{ grid-column: 1 / -1; max-width: 100%; justify-content: space-between; }}
+    #userProfileText {{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 62vw; }}
+
+    .tabs-wrap {{ margin: 14px 0 12px; }}
+    nav.tabs {{
+      display: flex; overflow-x: auto; gap: 8px; padding-bottom: 6px;
+      scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch;
+    }}
+    .tab-item {{ flex: 0 0 auto; scroll-snap-align: start; gap: 6px; }}
+    .tab-btn {{ white-space: nowrap; font-size: 0.84rem; padding: 10px 12px; flex: 0 0 auto; }}
+    .tab-count-box {{ min-width: 58px; padding: 4px 7px; }}
+
+    .sec-title-row {{ flex-direction: column; align-items: flex-start; gap: 8px; }}
+    .sec-title-row h2 {{ font-size: 1.12rem; line-height: 1.25; }}
+    .desc {{ font-size: 0.85rem; line-height: 1.45; }}
+
+    .filtros-panel {{ padding: 14px 12px; }}
+    .filtros-head {{ flex-direction: column; align-items: stretch; }}
+    .filtros-actions {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }}
+    .filtros-actions .feedback-filtro {{ grid-column: 1 / -1; }}
+    .filtros-actions button {{ width: 100%; }}
+    .btn-comparar-toggle {{ width: 100%; }}
+    .filtros-foot {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }}
+    .f-group {{ padding: 10px 10px; }}
+    .f-label {{ font-size: 0.76rem; }}
+    .pill-btn {{ font-size: 0.8rem; }}
+
+    .cargo-input-row {{ flex-direction: column; align-items: stretch; }}
+    .cargo-input-row .btn-aplicar, .cargo-input-row .btn-limpar {{ width: 100%; }}
+    .toggle-head {{ flex-direction: column; align-items: flex-start; }}
+
+    .card h3 {{ font-size: 1rem; }}
+    .card .titulo {{ font-size: 0.85rem; }}
+    .cargo-nome {{ font-size: 0.95rem; }}
+    .info-grid {{ grid-template-columns: 1fr; }}
+    .links-row > * {{ flex: 1 1 100%; justify-content: center; text-align: center; }}
+
+    .compare-modal {{ width: 100%; max-width: 100%; max-height: 92vh; padding: 14px 12px; border-radius: 16px; }}
+    .cmp-summary-banner {{ grid-template-columns: 1fr; }}
+    .cmp-table {{ display: block; overflow-x: auto; font-size: 0.78rem; }}
+    .cmp-v-row {{ grid-template-columns: 24px 1fr; }}
+    .cmp-v-row .tag {{ grid-column: 2; justify-self: start; }}
+  }}
 </style>
 </head>
 <body class="bloqueado-login">
@@ -1834,7 +2071,7 @@ def render_html(
             <button type="button" id="btnLogoutGoogle" class="btn-logout-google">Sair</button>
           </div>
           <button id="btnInstall" class="btn-app-install" type="button">📲 Baixar Aplicativo</button>
-          <button id="btnHeaderPix" class="btn-header-pix" type="button">💚 Me faça um Pix</button>
+          <button id="btnHeaderPix" class="btn-header-pix" type="button">☕ Me pague um café</button>
           <button id="btnDevPanel" class="btn-dev-secret" type="button">🔐 Contador de Acessos (Dev)</button>
         </div>
       </div>
@@ -1842,11 +2079,11 @@ def render_html(
   </header>
 
   <div class="container">
-    <!-- Abas com "Buscar Outro Cargo (Brasil)" como Página Inicial -->
+    <!-- Abas com "Buscar Cargo" como Página Inicial -->
     <div class="tabs-wrap">
       <nav class="tabs" aria-label="Categorias de Concursos">
         <div class="tab-item ativo" data-tab="busca_cargo">
-          <button type="button" class="tab-btn">🔎 Buscar Outro Cargo (Brasil)</button>
+          <button type="button" class="tab-btn">🔎 Buscar Cargo</button>
           <div class="tab-count-box" title="Concursos vigentes em todos os estados do Brasil">
             <b class="cnt" data-cnt-for="busca_cargo">{len(catalogo_brasil)}</b>
             <small>vigentes</small>
@@ -1861,18 +2098,18 @@ def render_html(
           </div>
         </div>
 
-        <div class="tab-item" data-tab="medio5k">
-          <button type="button" class="tab-btn">💰 Nível Médio &gt; R$ 5.000</button>
-          <div class="tab-count-box" title="Concursos vigentes de Nível Médio acima de R$ 5.000 em SP">
-            <b class="cnt" data-cnt-for="medio5k">{len(medio_ok)}</b>
+        <div class="tab-item" data-tab="medio_todos">
+          <button type="button" class="tab-btn">📗 Nível Médio</button>
+          <div class="tab-count-box" title="Concursos vigentes de Nível Médio e Técnico em SP">
+            <b class="cnt" data-cnt-for="medio_todos">{len(medio_todos)}</b>
             <small>vigentes</small>
           </div>
         </div>
 
-        <div class="tab-item" data-tab="medio_todos">
-          <button type="button" class="tab-btn">📊 Nível Médio (Faixas)</button>
-          <div class="tab-count-box" title="Concursos vigentes de Nível Médio e Técnico em SP em todas as faixas salariais">
-            <b class="cnt" data-cnt-for="medio_todos">{len(medio_todos)}</b>
+        <div class="tab-item" data-tab="superior_sp">
+          <button type="button" class="tab-btn">🎓 Nível Superior</button>
+          <div class="tab-count-box" title="Concursos vigentes de Nível Superior em SP">
+            <b class="cnt" data-cnt-for="superior_sp">{len(superior_sp)}</b>
             <small>vigentes</small>
           </div>
         </div>
@@ -1886,6 +2123,52 @@ def render_html(
         </div>
       </nav>
     </div>
+
+    <!-- Buscar Cargo: fica ACIMA dos Filtros Rápidos (visível somente na aba Buscar Cargo) -->
+    <section id="blocoBuscaCargo" class="busca-bloco" aria-label="Buscar Cargo">
+      <div class="sec-head">
+        <div class="sec-title-row">
+          <h2>🔎 Buscar Cargo — Brasil Todo, Estados ou SP</h2>
+          <div class="count-box-lg">
+            <b id="countBuscaCargo">{len(catalogo_brasil)}</b>
+            <span>vigentes</span>
+          </div>
+        </div>
+        <p class="desc">
+          Digite qualquer cargo ou escolha um dos <b>{len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos</b> e combine com os filtros abaixo (escolaridade, salário, distância, regime, jornada e vagas).
+          Cargos como <i>Auditor Fiscal</i> também aparecem ao buscar <i>Contador</i>, <i>Economista</i> ou <i>Advogado</i>, pois aceitam várias formações.
+        </p>
+      </div>
+
+      <div class="busca-cargo-panel">
+        <div>
+          <div class="f-label" style="margin-bottom:8px;">1️⃣ Digite o Nome do Cargo Desejado (ou clique em um cargo rápido abaixo):</div>
+          <div class="cargo-input-row">
+            <div class="cargo-input-wrap">
+              <input id="inputCargoEspecifico" type="search" autocomplete="off" placeholder="Digite o cargo... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+            </div>
+            <button type="button" id="btnAplicarBuscaCargo" class="btn-aplicar">✅ Aplicar Filtro</button>
+            <button type="button" id="btnLimparCargo" class="btn-limpar">🔄 Limpar Busca</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="toggle-head">
+            <div class="f-label">⚡ {len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos (1 clique):</div>
+            <button type="button" id="btnToggleCargosRapidos" class="btn-recolher btn-recolher-mini">🔼 Recolher Cargos Rápidos</button>
+          </div>
+          <div class="pill-row" id="rowCargosRapidos">{botoes_cargos_rapidos}</div>
+        </div>
+
+        <div>
+          <div class="toggle-head">
+            <div class="f-label">2️⃣ Escolha o Estado (UF) ou Brasil Todo:</div>
+            <button type="button" id="btnToggleUfs" class="btn-recolher btn-recolher-mini">🔼 Recolher Estados</button>
+          </div>
+          <div class="pill-row" id="rowUfsBrasil">{botoes_ufs}</div>
+        </div>
+      </div>
+    </section>
 
     <!-- Painel Unificado de Filtros + Botão "Função comparar" + Botão "Recolher Filtros" -->
     <section id="painelFiltrosSp" class="filtros-panel" aria-label="Filtros e Função Comparar">
@@ -1916,27 +2199,23 @@ def render_html(
           </div>
         </div>
 
-        <div class="f-group">
-          <div class="f-label">📍 Perto de Ribeirão Preto</div>
-          <div class="pill-row">
-            <button type="button" class="pill-btn ativo" data-filter="kmRp" data-val="">Qualquer distância</button>
-            <button type="button" class="pill-btn" data-filter="kmRp" data-val="50">Até 50 km</button>
-            <button type="button" class="pill-btn" data-filter="kmRp" data-val="100">Até 100 km</button>
-            <button type="button" class="pill-btn" data-filter="kmRp" data-val="150">Até 150 km</button>
-            <button type="button" class="pill-btn" data-filter="kmRp" data-val="250">Até 250 km</button>
-            <button type="button" class="pill-btn" data-filter="kmRp" data-val="350">Até 350 km</button>
+        <div class="f-group f-group-ref">
+          <div class="f-label">📍 Minha cidade de referência (opcional)</div>
+          <div class="ref-body">
+          <div class="ref-row">
+            <input id="inputCidadeRef" type="text" list="listaCidadesRef" autocomplete="off" maxlength="80" placeholder="Digite sua cidade. Ex.: Campinas - SP">
+            <button type="button" id="btnLimparCidadeRef" class="btn-limpar">✖ Remover</button>
           </div>
-        </div>
-
-        <div class="f-group">
-          <div class="f-label">📍 Perto de Jarinu/SP</div>
-          <div class="pill-row">
-            <button type="button" class="pill-btn ativo" data-filter="kmJa" data-val="">Qualquer distância</button>
-            <button type="button" class="pill-btn" data-filter="kmJa" data-val="50">Até 50 km</button>
-            <button type="button" class="pill-btn" data-filter="kmJa" data-val="100">Até 100 km</button>
-            <button type="button" class="pill-btn" data-filter="kmJa" data-val="150">Até 150 km</button>
-            <button type="button" class="pill-btn" data-filter="kmJa" data-val="250">Até 250 km</button>
-            <button type="button" class="pill-btn" data-filter="kmJa" data-val="350">Até 350 km</button>
+          <datalist id="listaCidadesRef">{opcoes_cidades_ref}</datalist>
+          <small id="msgCidadeRef" class="ref-msg">Escolha sua cidade para ver a distância até cada concurso e filtrar por proximidade.</small>
+          <div class="pill-row" style="margin-top:8px;">
+            <button type="button" class="pill-btn ativo" data-filter="kmRef" data-val="">Qualquer distância</button>
+            <button type="button" class="pill-btn" data-filter="kmRef" data-val="50">Até 50 km</button>
+            <button type="button" class="pill-btn" data-filter="kmRef" data-val="100">Até 100 km</button>
+            <button type="button" class="pill-btn" data-filter="kmRef" data-val="150">Até 150 km</button>
+            <button type="button" class="pill-btn" data-filter="kmRef" data-val="250">Até 250 km</button>
+            <button type="button" class="pill-btn" data-filter="kmRef" data-val="350">Até 350 km</button>
+          </div>
           </div>
         </div>
 
@@ -1998,8 +2277,7 @@ def render_html(
             <button type="button" class="pill-btn ativo" data-filter="ordem" data-val="padrao">Ordenação Padrão</button>
             <button type="button" class="pill-btn" data-filter="ordem" data-val="inscricao">Inscrição encerrando primeiro</button>
             <button type="button" class="pill-btn" data-filter="ordem" data-val="salario">Maior Salário Bruto</button>
-            <button type="button" class="pill-btn" data-filter="ordem" data-val="rp">Mais perto de Rib. Preto</button>
-            <button type="button" class="pill-btn" data-filter="ordem" data-val="jarinu">Mais perto de Jarinu</button>
+            <button type="button" class="pill-btn" data-filter="ordem" data-val="proximo">Mais perto de mim</button>
             <button type="button" class="pill-btn" data-filter="ordem" data-val="vagas">Mais Vagas Imediatas</button>
             <button type="button" class="pill-btn" data-filter="ordem" data-val="prova">Prova mais próxima</button>
           </div>
@@ -2015,45 +2293,6 @@ def render_html(
     <main>
       <!-- PÁGINA INICIAL (ABA 1): Busca por Cargo Específico (Brasil Todo / Outros Estados / SP) -->
       <section id="busca_cargo" class="tab-panel ativo">
-        <div class="sec-head">
-          <div class="sec-title-row">
-            <h2>🔎 Buscar Outro Cargo — Brasil Todo, Estados ou SP</h2>
-            <div class="count-box-lg">
-              <b id="countBuscaCargo">{len(catalogo_brasil)}</b>
-              <span>vigentes</span>
-            </div>
-          </div>
-          <p class="desc">
-            Página inicial de busca nacional: digite qualquer cargo, escolha um dos <b>{len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos</b> abaixo e combine com os filtros acima (Fundamental, Médio, Técnico, Superior, Salário, Distância, Regime, Jornada e Vagas).
-          </p>
-        </div>
-
-        <div class="busca-cargo-panel">
-          <div>
-            <div class="f-label" style="margin-bottom:8px;">1️⃣ Digite o Nome do Cargo Desejado (ou clique em um cargo rápido abaixo):</div>
-            <div class="cargo-input-row">
-              <div class="cargo-input-wrap">
-                <input id="inputCargoEspecifico" type="search" autocomplete="off" placeholder="Digite o cargo... Ex.: Fisioterapeuta, Enfermeiro, Agente Administrativo, Psicólogo">
-              </div>
-              <button type="button" id="btnAplicarBuscaCargo" class="btn-aplicar">✅ Aplicar Filtro</button>
-              <button type="button" id="btnLimparCargo" class="btn-limpar">🔄 Limpar Busca</button>
-            </div>
-          </div>
-
-          <div>
-            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;">
-              <div class="f-label">⚡ {len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos (1 clique):</div>
-              <button type="button" id="btnToggleCargosRapidos" class="btn-recolher" style="min-height:30px;padding:4px 12px;font-size:.77rem;">🔼 Recolher Cargos Rápidos</button>
-            </div>
-            <div class="pill-row" id="rowCargosRapidos">{botoes_cargos_rapidos}</div>
-          </div>
-
-          <div>
-            <div class="f-label" style="margin-bottom:8px;">2️⃣ Escolha o Estado (UF) ou Brasil Todo:</div>
-            <div class="pill-row" id="rowUfsBrasil">{botoes_ufs}</div>
-          </div>
-        </div>
-
         <div id="gridBuscaCargo" class="grid"></div>
         <p id="vazioBuscaCargo" class="vazio" style="display:none;">
           Nenhum concurso encontrado com os filtros atuais. Clique em "Limpar Filtros" ou selecione "🇧🇷 Brasil Todo".
@@ -2070,21 +2309,21 @@ def render_html(
           ativo=False,
       )}
       {render_secao(
-          "medio5k",
-          "💰",
-          "Nível Médio com Remuneração Acima de R$ 5.000,00 (SP)",
-          "Cargos que exigem apenas Ensino Médio completo com ganhos iniciais acima de R$ 5.000,00, salário bruto separado + soma com auxílios, isenção da taxa e especificações técnicas.",
-          medio_ok,
-          "medio5k",
-      )}
-      {render_secao(
           "medio_todos",
-          "📊",
-          "Nível Médio &amp; Técnico — Escolha a Faixa de Remuneração (SP)",
-          "Todos os cargos identificados de Nível Médio e Técnico nos editais de São Paulo, com salário bruto separado e soma com auxílios menor, isenção da taxa e requisitos do edital.",
+          "📗",
+          "Nível Médio &amp; Técnico — SP",
+          "Cargos de Nível Médio e Técnico nos editais de São Paulo, com salário bruto separado e soma com auxílios menor, isenção da taxa e requisitos do edital. Use a faixa de remuneração abaixo.",
           medio_todos,
           "medio_todos",
           barra_extra=barra_faixas_aba3,
+      )}
+      {render_secao(
+          "superior_sp",
+          "🎓",
+          "Nível Superior — Estado de São Paulo",
+          "Cargos de Nível Superior (analistas, auditores, advogados, contadores, engenheiros, professores e outros). Cargos que aceitam várias formações mostram todas as graduações aceitas.",
+          superior_sp,
+          "superior_sp",
       )}
 
       <!-- ABA 5: Provas Anteriores (Pesquisa por BANCA e CARGO, Nunca por Cidade) -->
@@ -2154,8 +2393,9 @@ def render_html(
       </div>
       <div id="corpoModalComparar"></div>
       <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:18px;flex-wrap:wrap;">
-        <button type="button" id="btnCompartilharComparacaoZap" class="btn-share-opt btn-zap">🟢 Compartilhar Comparativo no WhatsApp</button>
-        <button type="button" id="btnFecharCompRodape" class="btn-limpar">Fechar</button>
+        <button type="button" id="btnBaixarPdfComparacao" class="btn-share-opt btn-pdf no-print">📄 Baixar PDF</button>
+        <button type="button" id="btnCompartilharComparacaoZap" class="btn-share-opt btn-zap no-print">🟢 Compartilhar no WhatsApp</button>
+        <button type="button" id="btnFecharCompRodape" class="btn-limpar no-print">Fechar</button>
       </div>
     </div>
   </div>
@@ -2249,7 +2489,7 @@ def render_html(
   <footer class="app-footer">
     <div class="container footer-coffee-wrap">
       <button type="button" id="btnAbrirPix" class="btn-coffee">☕ Me pague um café</button>
-      <p class="footer-note">Painel gratuito atualizado diariamente · Feito com carinho em São Paulo 🇧🇷</p>
+      <p class="footer-note">Painel gratuito atualizado diariamente · Feito com carinho por Matheus Rodrigues Ribeiro</p>
     </div>
   </footer>
 
@@ -2336,6 +2576,41 @@ def render_html(
     return Math.round(linear * 1.22);
   }}
 
+  // ===== Cidade de referência (opcional): o usuário escolhe; distâncias = Haversine * 1.22 =====
+  const CIDADES_REF = {cidades_ref_json};
+  const REF_STORAGE_KEY = 'concursos_cidade_ref_v1';
+  let cidadeRef = null;
+
+  function kmDaReferencia(lat, lon) {{
+    if (!cidadeRef) return null;
+    return calcularDistanciaCidadesKm(cidadeRef.lat, cidadeRef.lon, lat, lon);
+  }}
+  function textoDistanciaRef(km) {{
+    if (km == null || !cidadeRef) return '';
+    return km === 0 ? `🧭 Na sua cidade (${{cidadeRef.nome}})` : `🧭 ~${{km}} km de ${{cidadeRef.nome}}`;
+  }}
+  function acharCidadeRef(txt) {{
+    const q = normStr((txt || '').trim());
+    if (!q) return null;
+    let achada = CIDADES_REF.find(c => normStr(c[0] + ' - ' + c[1]) === q);
+    if (!achada) {{
+      const porNome = CIDADES_REF.filter(c => normStr(c[0]) === q);
+      if (porNome.length > 0) achada = porNome.find(c => c[1] === 'SP') || porNome[0];
+    }}
+    return achada ? {{ nome: achada[0], uf: achada[1], lat: achada[2], lon: achada[3] }} : null;
+  }}
+  function atualizarDistanciasRef() {{
+    document.querySelectorAll('.card').forEach(card => {{
+      const km = kmDaReferencia(card.dataset.lat, card.dataset.lon);
+      card.dataset.kmRef = km == null ? '9999' : String(km);
+      const chip = card.querySelector('.chip-km-ref');
+      if (chip) {{
+        chip.textContent = textoDistanciaRef(km);
+        chip.hidden = (km == null);
+      }}
+    }});
+  }}
+
   // Extrai valores em R$ de VA, VR, VT de um texto de benefícios
   function extrairValoresBeneficios(txt) {{
     const s = txt || '';
@@ -2412,28 +2687,37 @@ def render_html(
     btnToggleCargosRapidos.innerHTML = oculto ? '🔼 Recolher Cargos Rápidos' : '🔽 Mostrar {len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos';
   }});
 
-  // 3) Navegação entre as 5 Abas (Filtros visíveis em Fisioterapia, Médio 5k, Médio Faixas e Buscar Outro Cargo!)
+  // Botão de Recolher / Expandir Estados (UF) na aba Buscar Cargo
+  const btnToggleUfs = document.getElementById('btnToggleUfs');
+  const rowUfsBrasil = document.getElementById('rowUfsBrasil');
+  btnToggleUfs.addEventListener('click', () => {{
+    const oculto = rowUfsBrasil.style.display === 'none';
+    rowUfsBrasil.style.display = oculto ? 'flex' : 'none';
+    btnToggleUfs.innerHTML = oculto ? '🔼 Recolher Estados' : '🔽 Mostrar Estados';
+  }});
+
+  // 3) Navegação entre as Abas (Buscar Cargo, Fisioterapia, Nível Médio, Nível Superior e Provas Anteriores)
   const tabItems = document.querySelectorAll('.tab-item');
   function abrirTab(tab) {{
     tabItems.forEach(item => item.classList.toggle('ativo', item.dataset.tab === tab));
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('ativo', p.id === tab));
     painelFiltrosSp.style.display = (tab === 'provas_anteriores') ? 'none' : 'block';
+    document.getElementById('blocoBuscaCargo').style.display = (tab === 'busca_cargo') ? 'block' : 'none';
     history.replaceState(null, '', '#' + tab);
     if (tab === 'busca_cargo') renderizarBuscaCargo();
     if (tab === 'provas_anteriores') renderizarProvasAnteriores();
   }}
   tabItems.forEach(item => item.addEventListener('click', () => abrirTab(item.dataset.tab)));
   const hashInicial = location.hash.slice(1);
-  if (['fisio', 'medio5k', 'medio_todos', 'provas_anteriores', 'busca_cargo'].includes(hashInicial)) {{
+  if (['fisio', 'medio_todos', 'superior_sp', 'provas_anteriores', 'busca_cargo'].includes(hashInicial)) {{
     abrirTab(hashInicial);
   }}
 
-  // 4) Filtros Unificados (Funcionam tanto nas abas de SP quanto na aba "Buscar Outro Cargo")
+  // 4) Filtros Unificados (Funcionam tanto nas abas de SP quanto na aba "Buscar Cargo")
   const estadoFiltros = {{
     encerrando: '',
     novo: '',
-    kmRp: '',
-    kmJa: '',
+    kmRef: '',
     faixa: '',
     escolaridade: '',
     vagas: 'todas',
@@ -2462,8 +2746,7 @@ def render_html(
   function cardPassaNosFiltros(c) {{
     const soEncerrando = estadoFiltros.encerrando === '1';
     const soNovos = estadoFiltros.novo === '1';
-    const maxRp = estadoFiltros.kmRp ? Number(estadoFiltros.kmRp) : null;
-    const maxJa = estadoFiltros.kmJa ? Number(estadoFiltros.kmJa) : null;
+    const maxRef = (estadoFiltros.kmRef && cidadeRef) ? Number(estadoFiltros.kmRef) : null;
     const faixa = estadoFiltros.faixa;
     const esc = estadoFiltros.escolaridade;
     const vagasMode = estadoFiltros.vagas;
@@ -2474,8 +2757,7 @@ def render_html(
     if (soEncerrando && c.dataset.encerrando !== '1') return false;
     if (soNovos && c.dataset.novo !== '1') return false;
     if (cid && c.dataset.cidade !== cid) return false;
-    if (maxRp !== null && Number(c.dataset.kmRp) > maxRp) return false;
-    if (maxJa !== null && Number(c.dataset.kmJarinu) > maxJa) return false;
+    if (maxRef !== null && Number(c.dataset.kmRef) > maxRef) return false;
     if (faixa && c.dataset.faixa !== faixa) return false;
     if (esc) {{
       const niveis = (c.dataset.niveisLista || c.dataset.escolaridade || '').split(',');
@@ -2494,7 +2776,7 @@ def render_html(
   function aplicarFiltrosSp(comFeedback = false) {{
     const ordem = estadoFiltros.ordem;
 
-    ['fisio', 'medio5k', 'medio_todos'].forEach(panelId => {{
+    ['fisio', 'medio_todos', 'superior_sp'].forEach(panelId => {{
       const panel = document.getElementById(panelId);
       if (!panel) return;
       const grid = panel.querySelector('.grid');
@@ -2509,8 +2791,7 @@ def render_html(
 
       if (ordem !== 'padrao') {{
         cards.sort((a, b) => {{
-          if (ordem === 'rp') return Number(a.dataset.kmRp) - Number(b.dataset.kmRp);
-          if (ordem === 'jarinu') return Number(a.dataset.kmJarinu) - Number(b.dataset.kmJarinu);
+          if (ordem === 'proximo') return Number(a.dataset.kmRef || 9999) - Number(b.dataset.kmRef || 9999);
           if (ordem === 'salario') return Number(b.dataset.salario) - Number(a.dataset.salario);
           if (ordem === 'vagas') return Number(b.dataset.vagas) - Number(a.dataset.vagas);
           if (ordem === 'prova') return (a.dataset.prova || '').localeCompare(b.dataset.prova || '');
@@ -2528,6 +2809,10 @@ def render_html(
     }});
 
     renderizarBuscaCargo();
+    const msgRef = document.getElementById('msgCidadeRef');
+    if (msgRef && estadoFiltros.kmRef && !cidadeRef) {{
+      msgRef.textContent = '⚠️ Escolha primeiro a sua cidade de referência para filtrar por distância.';
+    }}
     if (comFeedback) mostrarFeedbackFiltro();
   }}
 
@@ -2550,8 +2835,7 @@ def render_html(
   function limparTodosFiltros() {{
     estadoFiltros.encerrando = '';
     estadoFiltros.novo = '';
-    estadoFiltros.kmRp = '';
-    estadoFiltros.kmJa = '';
+    estadoFiltros.kmRef = '';
     estadoFiltros.faixa = '';
     estadoFiltros.escolaridade = '';
     estadoFiltros.vagas = 'todas';
@@ -2693,8 +2977,10 @@ def render_html(
     if (estadoFiltros.encerrando === '1' && !item.encerrando) return false;
     if (estadoFiltros.novo === '1' && !item.novo) return false;
     if (estadoFiltros.cidade && item.cidade !== estadoFiltros.cidade) return false;
-    if (estadoFiltros.kmRp && (item.km_rp == null || item.km_rp > Number(estadoFiltros.kmRp))) return false;
-    if (estadoFiltros.kmJa && (item.km_ja == null || item.km_ja > Number(estadoFiltros.kmJa))) return false;
+    if (estadoFiltros.kmRef && cidadeRef) {{
+      const kmRefItem = kmDaReferencia(item.lat, item.lon);
+      if (kmRefItem == null || kmRefItem > Number(estadoFiltros.kmRef)) return false;
+    }}
     if (estadoFiltros.faixa && item.faixa !== estadoFiltros.faixa) return false;
     if (estadoFiltros.escolaridade) {{
       const nivs = (item.niveis_tokens || '').split(',');
@@ -2726,6 +3012,12 @@ def render_html(
           if (normStr(cg).includes(termo)) cargosCasados.push(cg);
         }}
         const cabecalhoMatch = normStr(item.orgao + ' ' + item.titulo + ' ' + item.cargos_resumo).includes(termo);
+        // Cargos que aceitam várias formações (ex.: Auditor Fiscal aceita Direito, Contábeis, Economia)
+        const formacaoMatch = termo.length >= 4 && (item.termos_formacao || []).some(t => normStr(t).includes(termo));
+        if (formacaoMatch && cargosCasados.length === 0) {{
+          const multi = (item.cargos || []).filter(cg => /auditor|fiscal|controlador|analista|gestor|administrador|tribut/i.test(normStr(cg)));
+          cargosCasados = multi.length > 0 ? multi : (item.cargos || []).slice(0, 3);
+        }}
         if (cargosCasados.length === 0 && !cabecalhoMatch) continue;
       }} else {{
         cargosCasados = (item.cargos || []).slice(0, 4);
@@ -2737,8 +3029,7 @@ def render_html(
     if (ordem !== 'padrao') {{
       filtrados.sort((a, b) => {{
         const ia = a.item, ib = b.item;
-        if (ordem === 'rp') return (ia.km_rp ?? 9999) - (ib.km_rp ?? 9999);
-        if (ordem === 'jarinu') return (ia.km_ja ?? 9999) - (ib.km_ja ?? 9999);
+        if (ordem === 'proximo') return (kmDaReferencia(ia.lat, ia.lon) ?? 9999) - (kmDaReferencia(ib.lat, ib.lon) ?? 9999);
         if (ordem === 'salario') return (ib.salario_max ?? 0) - (ia.salario_max ?? 0);
         if (ordem === 'vagas') return (ib.vagas_im ?? 0) - (ia.vagas_im ?? 0);
         if (ordem === 'prova') return (ia.prova_iso || '9999-12-31').localeCompare(ib.prova_iso || '9999-12-31');
@@ -2759,8 +3050,11 @@ def render_html(
         : (item.cargos_resumo || 'Conferir cargos no edital');
 
       let chips = `<span class="chip-loc">📍 ${{escHtml(item.cidade)}} (${{escHtml(item.uf)}})</span>`;
-      if (item.km_rp != null) chips += `<span class="chip-dist">🧭 ${{item.km_rp}} km de Rib. Preto</span>`;
-      if (item.km_ja != null) chips += `<span class="chip-dist">🧭 ${{item.km_ja}} km de Jarinu</span>`;
+      const kmRefItem = kmDaReferencia(item.lat, item.lon);
+      if (kmRefItem != null) chips += `<span class="chip-dist chip-km-ref">${{escHtml(textoDistanciaRef(kmRefItem))}}</span>`;
+      const notaFormacao = item.formacoes_aceitas
+        ? `<div class="req-box"><div class="req-title">🎓 Formações aceitas</div><p class="req-text">${{escHtml(item.formacoes_aceitas)}}</p></div>`
+        : '';
 
       const badgeUrgente = item.encerrando
         ? `<span class="badge-encerrando">${{escHtml(item.aviso_inscricao)}}</span>`
@@ -2785,8 +3079,7 @@ def render_html(
           data-uf="${{escHtml(item.uf)}}"
           data-lat="${{item.lat}}"
           data-lon="${{item.lon}}"
-          data-km-rp="${{item.km_rp ?? 9999}}"
-          data-km-jarinu="${{item.km_ja ?? 9999}}"
+          data-km-ref="${{kmRefItem ?? 9999}}"
           data-salario="${{item.salario_max || 0}}"
           data-salario-total="${{item.salario_total || item.salario_max || 0}}"
           data-salario-exib="${{escHtml(item.salario_exib)}}"
@@ -2799,7 +3092,7 @@ def render_html(
           data-banca-txt="${{escHtml(item.banca)}}"
           data-inscricao-txt="${{escHtml(item.inscricao_ate)}}"
           data-isencao-txt="${{escHtml(item.isencao)}}"
-          data-requisitos-txt="Escolaridade exigida no edital: ${{escHtml(item.niveis || 'Consultar Anexo I')}}"
+          data-requisitos-txt="Escolaridade exigida no edital: ${{escHtml(item.niveis || 'Consultar Anexo I')}}${{item.formacoes_aceitas ? ' · ' + escHtml(item.formacoes_aceitas) : ''}}"
           data-horas="${{item.horas_num || 40}}"
           data-vagas="${{item.vagas_im || 0}}">
           <header class="card-head">
@@ -2819,6 +3112,7 @@ def render_html(
             <span class="badge-vagas">${{escHtml(item.vagas_txt || 'Ver edital')}}</span>
           </div>
 
+          ${{notaFormacao}}
           <div class="info-grid">
             <div class="info-box destaque-sal">
               <span class="lbl">💰 Remuneração do Cargo (Bruto)</span>
@@ -2916,8 +3210,6 @@ def render_html(
       uf: d.uf || 'SP',
       lat: Number(d.lat),
       lon: Number(d.lon),
-      kmRp: Number(d.kmRp),
-      kmJarinu: Number(d.kmJarinu),
       salarioBruto: Number(d.salario || 0),
       salarioTotal: Number(d.salarioTotal || d.salario || 0),
       salarioExib: d.salarioExib || '',
@@ -3046,7 +3338,110 @@ def render_html(
       ? `⚠️ ATENÇÃO: Ambos têm prova marcada na MESMA DATA (${{A.dataProvaTxt}})!`
       : `✅ Datas diferentes (${{A.dataProvaTxt}} vs ${{B.dataProvaTxt}}) — você pode prestar os dois!`;
 
+    // ===== Veredito direto: quem paga mais, tem mais vantagens e mais estabilidade =====
+    const kmRefA = kmDaReferencia(A.lat, A.lon);
+    const kmRefB = kmDaReferencia(B.lat, B.lon);
+    const rotA = `${{A.orgao}} (${{A.cidade}}/${{A.uf}})`;
+    const rotB = `${{B.orgao}} (${{B.cidade}}/${{B.uf}})`;
+    const nomeDe = (v) => (v === 'A' ? rotA : rotB);
+    function pontosEstabilidade(x) {{
+      const r = normStr(x.regimeTxt);
+      let pts = 0;
+      if (/estatut/.test(r)) pts = 3;
+      else if (/clt|celetist|emprego publico/.test(r)) pts = 1;
+      const c = normStr(x.carreira);
+      if (/plano|progress|evolu|promoc|carreira/.test(c) && !/(nao|sem) (ha|ident|prev|exist|consta)/.test(c)) pts += 1;
+      return pts;
+    }}
+    let ptsA = 0, ptsB = 0;
+    const linhasVer = [];
+    function registrarVer(icone, titulo, venc, texto) {{
+      if (venc === 'A') ptsA++;
+      if (venc === 'B') ptsB++;
+      linhasVer.push({{ icone, titulo, venc, texto }});
+    }}
+
+    // 1) Salário bruto
+    if (A.salarioBruto > 0 && B.salarioBruto > 0 && A.salarioBruto !== B.salarioBruto) {{
+      const v = A.salarioBruto > B.salarioBruto ? 'A' : 'B';
+      registrarVer('💰', 'Quem paga mais (salário bruto)', v, `${{nomeDe(v)}} paga ${{fmtBrl(diffBruto)}} a mais por mês (${{pctBruto}}).`);
+    }} else {{
+      registrarVer('💰', 'Quem paga mais (salário bruto)', null, (A.salarioBruto > 0 && A.salarioBruto === B.salarioBruto) ? 'Salários brutos iguais.' : 'Sem dados suficientes: confira o salário no edital.');
+    }}
+    // 2) Total com auxílios
+    if (A.salarioTotal > 0 && B.salarioTotal > 0 && A.salarioTotal !== B.salarioTotal) {{
+      const v = A.salarioTotal > B.salarioTotal ? 'A' : 'B';
+      registrarVer('➕', 'Ganho mensal total (com auxílios)', v, `${{nomeDe(v)}} rende ${{fmtBrl(diffTotal)}} a mais por mês somando os auxílios.`);
+    }} else {{
+      registrarVer('➕', 'Ganho mensal total (com auxílios)', null, 'Totais iguais ou sem dados suficientes.');
+    }}
+    // 3) Valor por hora
+    if (valorHoraA && valorHoraB && Math.abs(valorHoraA - valorHoraB) > 0.01) {{
+      const v = valorHoraA > valorHoraB ? 'A' : 'B';
+      registrarVer('⏱️', 'Melhor valor por hora trabalhada', v, `${{nomeDe(v)}}: ${{fmtBrl(Math.max(valorHoraA, valorHoraB))}}/h contra ${{fmtBrl(Math.min(valorHoraA, valorHoraB))}}/h.`);
+    }} else {{
+      registrarVer('⏱️', 'Melhor valor por hora trabalhada', null, 'Sem diferença relevante ou sem dados de jornada.');
+    }}
+    // 4) Jornada
+    if (A.horasNum !== B.horasNum && A.horasNum > 0 && B.horasNum > 0) {{
+      const v = A.horasNum < B.horasNum ? 'A' : 'B';
+      registrarVer('🕒', 'Menor jornada semanal', v, `${{nomeDe(v)}} trabalha ${{Math.abs(A.horasNum - B.horasNum)}}h a menos por semana (${{Math.min(A.horasNum, B.horasNum)}}h contra ${{Math.max(A.horasNum, B.horasNum)}}h).`);
+    }} else {{
+      registrarVer('🕒', 'Menor jornada semanal', null, 'Jornadas iguais ou não informadas.');
+    }}
+    // 5) Benefícios
+    if (benValA !== benValB) {{
+      const v = benValA > benValB ? 'A' : 'B';
+      registrarVer('🎁', 'Mais benefícios (VA/VR/VT)', v, `${{nomeDe(v)}} oferece cerca de ${{fmtBrl(diffBen)}} a mais por mês em benefícios com valor informado.`);
+    }} else {{
+      registrarVer('🎁', 'Mais benefícios (VA/VR/VT)', null, (benValA > 0) ? 'Benefícios equivalentes.' : 'Nenhum dos dois informa valores de benefícios; veja o edital.');
+    }}
+    // 6) Estabilidade
+    const estA = pontosEstabilidade(A), estB = pontosEstabilidade(B);
+    if (estA !== estB) {{
+      const v = estA > estB ? 'A' : 'B';
+      const w = v === 'A' ? A : B, l = v === 'A' ? B : A;
+      registrarVer('🛡️', 'Maior estabilidade', v, `${{nomeDe(v)}} é mais estável: ${{w.regimeTxt}} contra ${{l.regimeTxt}}. Regime estatutário garante estabilidade após o estágio probatório; CLT pode ser desligado.`);
+    }} else {{
+      registrarVer('🛡️', 'Maior estabilidade', null, `Estabilidade equivalente (${{A.regimeTxt}} · ${{B.regimeTxt}}).`);
+    }}
+    // 7) Vagas
+    if (A.vagasNum !== B.vagasNum) {{
+      const v = A.vagasNum > B.vagasNum ? 'A' : 'B';
+      registrarVer('👥', 'Mais vagas imediatas', v, `${{nomeDe(v)}} tem mais vagas imediatas (${{Math.max(A.vagasNum, B.vagasNum)}} contra ${{Math.min(A.vagasNum, B.vagasNum)}}) — maior chance de aprovação.`);
+    }} else {{
+      registrarVer('👥', 'Mais vagas imediatas', null, 'Mesmo número de vagas imediatas ou somente cadastro de reserva.');
+    }}
+
+    const vencFin = (A.salarioTotal > 0 && B.salarioTotal > 0 && A.salarioTotal !== B.salarioTotal)
+      ? (A.salarioTotal > B.salarioTotal ? 'A' : 'B')
+      : ((A.salarioBruto > 0 && B.salarioBruto > 0 && A.salarioBruto !== B.salarioBruto) ? (A.salarioBruto > B.salarioBruto ? 'A' : 'B') : null);
+    const vencEst = estA !== estB ? (estA > estB ? 'A' : 'B') : null;
+    const vencGeral = ptsA !== ptsB ? (ptsA > ptsB ? 'A' : 'B') : null;
+    const totalCrit = linhasVer.length;
+    const topoVer = [
+      `💰 Compensa mais financeiramente: ${{vencFin ? nomeDe(vencFin) : 'empate / dados insuficientes'}}`,
+      `🛡️ Maior estabilidade: ${{vencEst ? nomeDe(vencEst) : 'equivalente'}}`,
+      `🏆 Mais vantagens no geral: ${{vencGeral ? nomeDe(vencGeral) + ` (vence em ${{Math.max(ptsA, ptsB)}} de ${{totalCrit}} critérios; o outro vence em ${{Math.min(ptsA, ptsB)}})` : `empate técnico (${{ptsA}} x ${{ptsB}})`}}`
+    ];
+    const txtVeredito = topoVer.join('\\n') + '\\n' + linhasVer.filter(l => l.venc).map(l => `• ${{l.titulo}}: ${{l.texto}}`).join('\\n');
+    const htmlVeredito = `
+      <div class="print-only"><h2>Comparativo de Concursos — gerado em ${{new Date().toLocaleDateString('pt-BR')}}</h2></div>
+      <div class="cmp-veredito">
+        <div class="cmp-vered-head">🏆 Resultado direto da comparação</div>
+        <ul class="cmp-vered-top">${{topoVer.map(t => `<li>${{escHtml(t)}}</li>`).join('')}}</ul>
+        <div class="cmp-vered-list">
+          ${{linhasVer.map(l => `
+            <div class="cmp-v-row${{l.venc ? '' : ' empate'}}">
+              <span class="ic">${{l.icone}}</span>
+              <div><b>${{escHtml(l.titulo)}}</b><p>${{escHtml(l.texto)}}</p></div>
+              <span class="tag">${{l.venc === 'A' ? '1️⃣ Concurso 1' : (l.venc === 'B' ? '2️⃣ Concurso 2' : 'Empate')}}</span>
+            </div>`).join('')}}
+        </div>
+      </div>`;
+
     corpoModalComparar.innerHTML = `
+      ${{htmlVeredito}}
       <div class="cmp-summary-banner">
         <div class="cmp-kpi">
           <span>💰 Diferença Salarial (Bruto)</span>
@@ -3117,14 +3512,14 @@ def render_html(
             <td>${{escHtml(B.carreira)}}</td>
           </tr>
           <tr>
-            <td class="cmp-crit">📍 Distância das Cidades</td>
-            <td class="${{A.kmRp < B.kmRp ? 'cmp-win' : ''}}">
+            <td class="cmp-crit">📍 Localização &amp; Distância</td>
+            <td class="${{(kmRefA != null && kmRefB != null && kmRefA < kmRefB) ? 'cmp-win' : ''}}">
               <b>${{escHtml(A.cidade)}}/${{escHtml(A.uf)}}</b><br>
-              ${{A.kmRp < 9000 ? `🧭 ${{A.kmRp}} km de Ribeirão Preto · ${{A.kmJarinu}} km de Jarinu` : 'Fora de SP'}}
+              ${{kmRefA != null ? escHtml(textoDistanciaRef(kmRefA)) : '<small>Escolha sua cidade de referência nos filtros para ver a distância.</small>'}}
             </td>
-            <td class="${{B.kmRp < A.kmRp ? 'cmp-win' : ''}}">
+            <td class="${{(kmRefA != null && kmRefB != null && kmRefB < kmRefA) ? 'cmp-win' : ''}}">
               <b>${{escHtml(B.cidade)}}/${{escHtml(B.uf)}}</b><br>
-              ${{B.kmRp < 9000 ? `🧭 ${{B.kmRp}} km de Ribeirão Preto · ${{B.kmJarinu}} km de Jarinu` : 'Fora de SP'}}
+              ${{kmRefB != null ? escHtml(textoDistanciaRef(kmRefB)) : '<small>—</small>'}}
             </td>
           </tr>
           <tr>
@@ -3156,6 +3551,7 @@ def render_html(
       `• Cargo: ${{A.cargo}}\n• Salário Bruto: ${{A.salarioExib}} (${{A.salarioDet}})\n• Benefícios: ${{A.beneficios}}\n• Regime/Jornada: ${{A.regimeTxt}} (${{A.jornadaTxt}})\n• Prova: ${{A.dataProvaTxt}} | Inscrições até: ${{A.inscricaoTxt}}\n\n` +
       `2️⃣ *${{B.orgao}} (${{B.cidade}}/${{B.uf}})*\n` +
       `• Cargo: ${{B.cargo}}\n• Salário Bruto: ${{B.salarioExib}} (${{B.salarioDet}})\n• Benefícios: ${{B.beneficios}}\n• Regime/Jornada: ${{B.regimeTxt}} (${{B.jornadaTxt}})\n• Prova: ${{B.dataProvaTxt}} | Inscrições até: ${{B.inscricaoTxt}}\n\n` +
+      `🏆 *RESULTADO DIRETO*\n${{txtVeredito}}\n\n` +
       `📊 *Diferença Salarial Bruta:* ${{txtDiffBruto}}\n` +
       `🧭 *Distância entre as cidades:* ${{txtDistCidades}}\n` +
       `🔗 Veja no app: ${{APP_PUBLIC_URL}}`;
@@ -3168,6 +3564,19 @@ def render_html(
   document.getElementById('btnFecharCompRodape').addEventListener('click', () => modalComparar.classList.remove('aberto'));
   modalComparar.addEventListener('click', (e) => {{
     if (e.target === modalComparar) modalComparar.classList.remove('aberto');
+  }});
+  // Baixar comparação em PDF: usa a impressão do navegador (opção "Salvar como PDF")
+  document.getElementById('btnBaixarPdfComparacao').addEventListener('click', () => {{
+    const tituloOriginal = document.title;
+    document.title = 'Comparativo-Concursos';
+    document.body.classList.add('imprimindo-comp');
+    const limpar = () => {{
+      document.body.classList.remove('imprimindo-comp');
+      document.title = tituloOriginal;
+      window.removeEventListener('afterprint', limpar);
+    }};
+    window.addEventListener('afterprint', limpar);
+    setTimeout(() => window.print(), 80);
   }});
   document.getElementById('btnCompartilharComparacaoZap').addEventListener('click', () => {{
     window.open(`https://api.whatsapp.com/send?text=${{encodeURIComponent(ultimoResumoComparacao)}}`, '_blank', 'noopener,noreferrer');
@@ -3266,7 +3675,59 @@ def render_html(
 
   renderizarBuscaCargo();
 
-  // 9) Modal Pix (Topo "💚 Me faça um Pix" + Rodapé "☕ Me pague um café")
+  // Inicialização da cidade de referência (campo opcional nos filtros)
+  (function iniciarCidadeRef() {{
+    const inp = document.getElementById('inputCidadeRef');
+    const btnLimpar = document.getElementById('btnLimparCidadeRef');
+    const msg = document.getElementById('msgCidadeRef');
+    const MSG_PADRAO = msg.textContent;
+
+    function aplicarRef(obj, persistir) {{
+      cidadeRef = obj;
+      if (obj) {{
+        inp.value = `${{obj.nome}} - ${{obj.uf}}`;
+        msg.textContent = `✓ Distâncias calculadas a partir de ${{obj.nome}}/${{obj.uf}} (estimativa por estrada).`;
+      }} else {{
+        msg.textContent = MSG_PADRAO;
+        estadoFiltros.kmRef = '';
+        sincronizarBotoesFiltro();
+      }}
+      if (persistir) {{
+        try {{
+          if (obj) localStorage.setItem(REF_STORAGE_KEY, JSON.stringify([obj.nome, obj.uf]));
+          else localStorage.removeItem(REF_STORAGE_KEY);
+        }} catch (err) {{ /* armazenamento indisponível */ }}
+      }}
+      atualizarDistanciasRef();
+      aplicarFiltrosSp(false);
+    }}
+
+    function aoDigitar() {{
+      const valor = inp.value.trim();
+      if (!valor) {{
+        if (cidadeRef) aplicarRef(null, true);
+        return;
+      }}
+      const achada = acharCidadeRef(valor);
+      if (achada) aplicarRef(achada, true);
+    }}
+    inp.addEventListener('input', aoDigitar);
+    inp.addEventListener('change', aoDigitar);
+    btnLimpar.addEventListener('click', () => {{
+      inp.value = '';
+      aplicarRef(null, true);
+    }});
+
+    try {{
+      const salvo = JSON.parse(localStorage.getItem(REF_STORAGE_KEY) || 'null');
+      if (Array.isArray(salvo) && salvo.length === 2) {{
+        const achada = acharCidadeRef(`${{salvo[0]}} - ${{salvo[1]}}`);
+        if (achada) aplicarRef(achada, false);
+      }}
+    }} catch (err) {{ /* ignora valor inválido */ }}
+  }})();
+
+  // 9) Modal Pix (Topo "☕ Me pague um café" + Rodapé "☕ Me pague um café")
   const modalPix = document.getElementById('modalPix');
   const btnAbrirPix = document.getElementById('btnAbrirPix');
   const btnHeaderPix = document.getElementById('btnHeaderPix');
@@ -3330,6 +3791,13 @@ def render_html(
   const AUDIT_LOG_KEY = 'concursos_dev_audit_logs_v1';
   const LOCAL_VIEWS_KEY = 'concursos_dev_local_views_v1';
   const OAUTH_CLIENT_ID_KEY = 'concursos_google_client_id_v1';
+  const GOOGLE_CLIENT_ID_FIXO = {safe_json_for_script(GOOGLE_CLIENT_ID)};
+  // Client ID: o definido no código tem prioridade; senão o salvo no painel do desenvolvedor
+  function obterClientId() {{
+    const salvo = (localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '').trim();
+    const id = GOOGLE_CLIENT_ID_FIXO || salvo;
+    return /^[0-9]+-[a-z0-9_]+\\.apps\\.googleusercontent\\.com$/i.test(id) ? id : '';
+  }}
 
   // Hash SHA-256 da chave secreta exclusiva do link do desenvolvedor
   const DEV_TOKEN_SHA256 = 'ad4ccc5a97c1e5c805713136e2fce68343de39b526c672dd0133759a9c4e6400';
@@ -3527,6 +3995,9 @@ def render_html(
       const payload = JSON.parse(jsonPayload);
       if (!payload.email || !payload.email_verified) return null;
       if (payload.iss !== 'https://accounts.google.com' && payload.iss !== 'accounts.google.com') return null;
+      // O token precisa ter sido emitido para ESTE app (aud) e não pode estar expirado
+      if (payload.aud !== obterClientId()) return null;
+      if (!payload.exp || payload.exp * 1000 < Date.now()) return null;
       return payload;
     }} catch (_) {{
       return null;
@@ -3540,25 +4011,45 @@ def render_html(
     }}
   }};
 
-  window.addEventListener('load', () => {{
-    const clientId = localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '';
-    if (clientId && window.google && window.google.accounts && window.google.accounts.id) {{
-      try {{
-        window.google.accounts.id.initialize({{
-          client_id: clientId,
-          callback: window.handleGoogleCredentialResponse
-        }});
-        window.google.accounts.id.renderButton(
-          document.getElementById('gsiButtonContainer'),
-          {{ theme: 'outline', size: 'large', shape: 'pill', text: 'signin_with', locale: 'pt-BR' }}
-        );
-      }} catch (_) {{}}
+  // Login Google automático: com Client ID configurado o Google mostra a conta já logada no
+  // navegador/celular ("Continuar como ..."), sem digitar nada.
+  let gsiIniciado = false;
+  function iniciarGoogleIdentity() {{
+    const clientId = obterClientId();
+    if (!clientId || gsiIniciado) return;
+    if (!(window.google && window.google.accounts && window.google.accounts.id)) return;
+    try {{
+      window.google.accounts.id.initialize({{
+        client_id: clientId,
+        callback: window.handleGoogleCredentialResponse,
+        auto_select: true,
+        cancel_on_tap_outside: false,
+        use_fedcm_for_prompt: true
+      }});
+      window.google.accounts.id.renderButton(
+        document.getElementById('gsiButtonContainer'),
+        {{ theme: 'outline', size: 'large', shape: 'pill', text: 'continue_with', locale: 'pt-BR', width: 280 }}
+      );
+      gsiIniciado = true;
+      if (!lerSessaoGoogle()) window.google.accounts.id.prompt();
+    }} catch (_) {{
+      gsiIniciado = false;
     }}
-  }});
+  }}
+  // Com Client ID: botão oficial do Google; sem Client ID: formulário manual (alternativa)
+  const btnGoogleMain = document.getElementById('btnGoogleSignInMain');
+  if (obterClientId()) {{
+    btnGoogleMain.style.display = 'none';
+    formLoginGoogle.style.display = 'none';
+  }} else {{
+    document.getElementById('gsiButtonContainer').style.display = 'none';
+  }}
+  window.addEventListener('load', iniciarGoogleIdentity);
+  window.onGoogleLibraryLoad = iniciarGoogleIdentity;
+  if (document.readyState === 'complete') iniciarGoogleIdentity();
 
-  document.getElementById('btnGoogleSignInMain').addEventListener('click', () => {{
-    const clientId = localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '';
-    if (clientId && window.google && window.google.accounts && window.google.accounts.id) {{
+  btnGoogleMain.addEventListener('click', () => {{
+    if (obterClientId() && window.google && window.google.accounts && window.google.accounts.id) {{
       window.google.accounts.id.prompt();
     }} else {{
       inputGoogleEmail.focus();

@@ -953,8 +953,6 @@ def montar_concurso_sp(c: dict, info: dict, enriquecidos: Dict[str, dict], agora
     cidade = detectar_cidade(c["orgao"], c["titulo"], url, det.get("texto", ""), cidade_ia)
     dist = info_distancia(cidade)
     c["cidade"] = dist["cidade"]
-    c["km_ribeirao_preto"] = dist["km_ribeirao_preto"]
-    c["km_jarinu"] = dist["km_jarinu"]
     c["lat"] = dist["lat"]
     c["lon"] = dist["lon"]
 
@@ -1078,90 +1076,143 @@ def montar_concurso_sp(c: dict, info: dict, enriquecidos: Dict[str, dict], agora
             ),
         }
 
-    # ---------------- 2) NÍVEL MÉDIO > R$ 5.000 & 3) OUTRAS FAIXAS ---------------- #
+    # ---------------- 2) NÍVEL MÉDIO / TÉCNICO ---------------- #
     c["medio_confirmado"] = []
     c["medio_outros"] = []
+    sal_max = max([v for v in (c.get("salario_max_listagem"), info.get("salario_max_texto")) if v] or [0]) or None
+    c["salario_max"] = sal_max
+    niveis_str = c.get("niveis", "")
 
     if enriq.get("medio"):
         for item in enriq["medio"]:
             c["medio_confirmado"].append(item)
             c["medio_outros"].append(item)
-        return
-
-    if enriq.get("medio_outros"):
+    elif enriq.get("medio_outros"):
         for item in enriq["medio_outros"]:
             c["medio_outros"].append(item)
-        return
+    elif not enriq.get("medio_excluido"):
+        tem_med_listagem = bool(re.search(r"m[ée]dio|t[ée]cnico", niveis_str, re.I))
+        if tem_med_listagem or info.get("tem_medio"):
+            cargos_med = []
+            if c.get("cargos_resumo") and "Vários" not in c["cargos_resumo"]:
+                for p in [x.strip() for x in c["cargos_resumo"].split(",") if x.strip()]:
+                    if not re.search(
+                        r"\b(m[ée]dico|professor|docente|peb|diretor|psic[óo]logo|engenheiro|arquiteto|advogado|procurador|contador|economista|auditor|enfermeiro|dentista|farmac[êe]utico|nutricionista|fisioterapeuta|terapeuta|assistente\s+social)\b",
+                        p,
+                        re.I,
+                    ):
+                        cargos_med.append(p)
+            if not cargos_med:
+                for cl in cargos_todos:
+                    if re.search(r"\b(docente|professor|peb)\b", cl, re.I):
+                        continue
+                    if CARGOS_MEDIO_CONHECIDOS.search(cl) or re.search(r"\bt[ée]cnico\b", cl, re.I):
+                        cargos_med.append(cl)
 
-    if enriq.get("medio_excluido"):
-        return
+            if not cargos_med and tem_med_listagem and "Superior" not in niveis_str:
+                resumo_c = c.get("cargos_resumo") or ""
+                if resumo_c and "Vários" not in resumo_c and not re.search(r"\b(docente|professor|peb)\b", resumo_c, re.I):
+                    cargos_med = [resumo_c]
 
-    # Extração automática para os demais concursos de Nível Médio / Técnico em SP
-    niveis_str = c.get("niveis", "")
-    tem_med_listagem = bool(re.search(r"m[ée]dio|t[ée]cnico", niveis_str, re.I))
-    if not tem_med_listagem and not info.get("tem_medio"):
-        return
+            if cargos_med:
+                nomes_limpos = [re.sub(r"\s*\([^)]*\)", "", x).strip() for x in cargos_med[:4]]
+                nome_exib = " / ".join(nomes_limpos)
+                if len(cargos_med) > 4:
+                    nome_exib += f" (+{len(cargos_med) - 4} cargos)"
 
-    sal_max = max([v for v in (c.get("salario_max_listagem"), info.get("salario_max_texto")) if v] or [0]) or None
-    c["salario_max"] = sal_max
+                v_im, t_cr, v_txt = extrair_vagas_info(c.get("vagas_salario"))
+                esc_tipo, req_txt = inferir_requisitos_cargo(nome_exib, niveis_str)
 
-    cargos_med = []
-    if c.get("cargos_resumo") and "Vários" not in c["cargos_resumo"]:
-        for p in [x.strip() for x in c["cargos_resumo"].split(",") if x.strip()]:
-            if not re.search(
-                r"\b(m[ée]dico|professor|docente|peb|diretor|psic[óo]logo|engenheiro|arquiteto|advogado|procurador|contador|enfermeiro|dentista|farmac[êe]utico|nutricionista|fisioterapeuta|terapeuta|assistente\s+social)\b",
-                p,
-                re.I,
-            ):
-                cargos_med.append(p)
-    if not cargos_med:
-        for cl in cargos_todos:
-            if re.search(r"\b(docente|professor|peb)\b", cl, re.I):
-                continue
-            if CARGOS_MEDIO_CONHECIDOS.search(cl) or re.search(r"\bt[ée]cnico\b", cl, re.I):
-                cargos_med.append(cl)
+                tem_superior = "Superior" in niveis_str
+                sal_bruto = sal_max if (sal_max and not tem_superior) else (min(sal_max, 3200.0) if sal_max else None)
+                sal_total, _, sal_det = formatar_bruto_e_soma_auxilios(
+                    sal_bruto, c["beneficios_gerais"], c["faixa_salarial"]
+                )
 
-    if not cargos_med and tem_med_listagem and "Superior" not in niveis_str:
-        resumo_c = c.get("cargos_resumo") or ""
-        if resumo_c and "Vários" not in resumo_c and not re.search(r"\b(docente|professor|peb)\b", resumo_c, re.I):
-            cargos_med = [resumo_c]
+                item_auto = {
+                    "nome": nome_exib,
+                    "vagas": v_txt,
+                    "vagas_imediatas": v_im,
+                    "tem_cr": t_cr,
+                    "salario": sal_bruto,
+                    "salario_bruto": sal_bruto,
+                    "salario_total": sal_total,
+                    "salario_detalhe": sal_det,
+                    "carga_horaria": c["jornada_geral"],
+                    "regime": c["regime_geral"],
+                    "escolaridade_tipo": esc_tipo,
+                    "requisitos": req_txt,
+                    "beneficios": c["beneficios_gerais"],
+                    "resumo_conteudo": conteudo_padrao_medio(nomes_limpos[0], c["banca"]),
+                }
+                if sal_bruto and sal_bruto > SALARIO_MINIMO_MEDIO and not tem_superior:
+                    c["medio_confirmado"].append(item_auto)
+                c["medio_outros"].append(item_auto)
 
-    if not cargos_med:
-        return
+    # ---------------- 3) NÍVEL SUPERIOR (SP) ---------------- #
+    c["superior_itens"] = []
+    from render_site import inferir_formacoes_multidisciplinares, inferir_requisitos_superior
 
-    nomes_limpos = [re.sub(r"\s*\([^)]*\)", "", x).strip() for x in cargos_med[:4]]
-    nome_exib = " / ".join(nomes_limpos)
-    if len(cargos_med) > 4:
-        nome_exib += f" (+{len(cargos_med) - 4} cargos)"
-
-    v_im, t_cr, v_txt = extrair_vagas_info(c.get("vagas_salario"))
-    esc_tipo, req_txt = inferir_requisitos_cargo(nome_exib, niveis_str)
-
-    tem_superior = "Superior" in niveis_str
-    sal_bruto = sal_max if (sal_max and not tem_superior) else (min(sal_max, 3200.0) if sal_max else None)
-    sal_total, _, sal_det = formatar_bruto_e_soma_auxilios(
-        sal_bruto, c["beneficios_gerais"], c["faixa_salarial"]
+    tem_sup_listagem = "Superior" in niveis_str or bool(c.get("fisio"))
+    cargos_sup = []
+    padrao_sup = re.compile(
+        r"\b(auditor|fiscal\s+de\s+tributos|fiscal\s+tribut[áa]rio|fiscal\s+de\s+rendas|controlador\s+interno|"
+        r"analista|contador|economista|administrador|advogado|procurador|jur[íi]dico|defensor|juiz|promotor|"
+        r"m[ée]dico|enfermeiro|psic[óo]logo|engenheiro|arquiteto|farmac[êe]utico|nutricionista|dentista|cirurgi[ãa]o|"
+        r"fisioterapeuta|terapeuta\s+ocupacional|fonoaudi[óo]logo|biom[ée]dico|assistente\s+social|veterin[áa]rio|"
+        r"professor|docente|peb|pedagogo|diretor|coordenador|orientador|especialista|gestor|bibliotec[áa]rio|"
+        r"soci[óo]logo|bi[óo]logo|qu[íi]mico|ge[óo]logo|estat[íi]stico|jornalista|comunicador|tesoureiro)\b",
+        re.I,
     )
+    for cl in cargos_todos:
+        if padrao_sup.search(cl) and not re.search(r"\b(t[ée]cnico\s+em|auxiliar\s+de)\b", cl, re.I):
+            cargos_sup.append(cl)
+    if not cargos_sup and c.get("cargos_resumo") and "Vários" not in c["cargos_resumo"]:
+        for p in [x.strip() for x in c["cargos_resumo"].split(",") if x.strip()]:
+            if padrao_sup.search(p) and not re.search(r"\b(t[ée]cnico\s+em|auxiliar\s+de)\b", p, re.I):
+                cargos_sup.append(p)
+    if not cargos_sup and c.get("fisio"):
+        cargos_sup.append((c.get("fisio_detalhes") or {}).get("cargo") or "Fisioterapeuta")
+    if not cargos_sup and tem_sup_listagem:
+        resumo_c = c.get("cargos_resumo") or "Cargos de Nível Superior (ver edital)"
+        cargos_sup.append(resumo_c)
 
-    item_auto = {
-        "nome": nome_exib,
-        "vagas": v_txt,
-        "vagas_imediatas": v_im,
-        "tem_cr": t_cr,
-        "salario": sal_bruto,
-        "salario_bruto": sal_bruto,
-        "salario_total": sal_total,
-        "salario_detalhe": sal_det,
-        "carga_horaria": c["jornada_geral"],
-        "regime": c["regime_geral"],
-        "escolaridade_tipo": esc_tipo,
-        "requisitos": req_txt,
-        "beneficios": c["beneficios_gerais"],
-        "resumo_conteudo": conteudo_padrao_medio(nomes_limpos[0], c["banca"]),
-    }
-    if sal_bruto and sal_bruto > SALARIO_MINIMO_MEDIO and not tem_superior:
-        c["medio_confirmado"].append(item_auto)
-    c["medio_outros"].append(item_auto)
+    if tem_sup_listagem or cargos_sup:
+        nomes_sup = [re.sub(r"\s*\([^)]*\)", "", x).strip() for x in cargos_sup[:4]]
+        nome_sup_exib = " / ".join(nomes_sup) if nomes_sup else "Cargos de Nível Superior"
+        if len(cargos_sup) > 4:
+            nome_sup_exib += f" (+{len(cargos_sup) - 4} cargos)"
+
+        v_im_s, t_cr_s, v_txt_s = extrair_vagas_info(c.get("vagas_salario"))
+        sal_bruto_s = sal_max
+        if c.get("fisio") and not sal_bruto_s:
+            sal_bruto_s = (c.get("fisio_detalhes") or {}).get("salario_bruto")
+        sal_total_s, _, sal_det_s = formatar_bruto_e_soma_auxilios(
+            sal_bruto_s, c["beneficios_gerais"], c["faixa_salarial"]
+        )
+        req_sup = inferir_requisitos_superior(nome_sup_exib, cargos_todos)
+        formacoes_info = inferir_formacoes_multidisciplinares(cargos_todos, c.get("cargos_resumo", ""), c.get("titulo", ""))
+        c["formacoes_aceitas"] = formacoes_info["descricao"]
+        c["termos_formacao"] = formacoes_info["termos_busca"]
+
+        c["superior_itens"].append(
+            {
+                "nome": nome_sup_exib,
+                "vagas": v_txt_s,
+                "vagas_imediatas": v_im_s,
+                "tem_cr": t_cr_s,
+                "salario": sal_bruto_s,
+                "salario_bruto": sal_bruto_s,
+                "salario_total": sal_total_s,
+                "salario_detalhe": sal_det_s,
+                "carga_horaria": c["jornada_geral"],
+                "regime": c["regime_geral"],
+                "escolaridade_tipo": "superior",
+                "requisitos": req_sup,
+                "beneficios": c["beneficios_gerais"],
+                "resumo_conteudo": conteudo_padrao_medio(nomes_sup[0] if nomes_sup else "Nível Superior", c["banca"]),
+            }
+        )
 
 
 # --------------------------------------------------------------------------- #
@@ -1266,6 +1317,7 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
             data_iso_sort as _data_iso,
             faixa_salarial_slug as _faixa_slug,
             horas_num as _horas_num,
+            inferir_formacoes_multidisciplinares as _inferir_formacoes,
             inferir_plano_carreira as _plano_carreira,
             niveis_tokens as _niveis_tokens,
             regime_categoria as _regime_cat,
@@ -1273,15 +1325,11 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
 
         uf_str = it["uf"] or "BR"
         cidade_sp = None
-        km_rp = None
-        km_ja = None
         lat_val, lon_val = UF_COORDS.get(uf_str, (-15.7975, -47.8919))
         if uf_str == "SP":
             cidade_sp = detectar_cidade(it["orgao"], it["titulo"], u, "", enriq.get("cidade") or sp_ia.get("cidade"))
             d_info = info_distancia(cidade_sp)
             cidade_sp = d_info["cidade"]
-            km_rp = d_info["km_ribeirao_preto"]
-            km_ja = d_info["km_jarinu"]
             lat_val = d_info["lat"]
             lon_val = d_info["lon"]
 
@@ -1330,6 +1378,8 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
         if sal_max_val:
             sal_exib_val = f"Até {brl(sal_max_val)}"
 
+        form_info = _inferir_formacoes(cargos_lista, it.get("cargos_resumo", ""), it.get("titulo", ""))
+
         catalogo_br.append(
             {
                 "url": u,
@@ -1340,8 +1390,6 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                 "cidade": cidade_sp or uf_str or "Nacional",
                 "lat": lat_val,
                 "lon": lon_val,
-                "km_rp": km_rp,
-                "km_ja": km_ja,
                 "vagas_salario": it["vagas_salario"],
                 "vagas_im": vagas_im_val,
                 "vagas_txt": vagas_txt_val,
@@ -1379,6 +1427,8 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                 "jornada": jornada_val,
                 "horas_num": _horas_num(jornada_val),
                 "cargos": cargos_lista[:80],
+                "formacoes_aceitas": form_info["descricao"],
+                "termos_formacao": form_info["termos_busca"],
             }
         )
 
@@ -1416,6 +1466,9 @@ def _preencher_links_provas_sp(c: dict) -> None:
     if c.get("medio_outros"):
         cg = c["medio_outros"][0].get("nome") or "Agente Administrativo"
         mapa["medio_todos"] = gerar_links_provas_banca_cargo(cg, banca_nome)
+    if c.get("superior_itens"):
+        cg = c["superior_itens"][0].get("nome") or "Analista"
+        mapa["superior_sp"] = gerar_links_provas_banca_cargo(cg, banca_nome)
     c["links_provas_map"] = mapa
 
 
@@ -1510,11 +1563,16 @@ def main() -> int:
         key=lambda x: max([it.get("salario_bruto") or it.get("salario") or 0 for it in x.get("medio_outros", [])] or [0]),
         reverse=True,
     )
+    superior_sp = [c for c in concursos_vigentes if c.get("superior_itens")]
+    superior_sp.sort(
+        key=lambda x: max([it.get("salario_bruto") or it.get("salario") or 0 for it in x.get("superior_itens", [])] or [0]),
+        reverse=True,
+    )
 
     urls_vistas = set()
     novos_24h = 0
     encerrando_count = 0
-    for c in fisio + medio_ok + medio_todos:
+    for c in fisio + medio_todos + superior_sp:
         if c["url"] not in urls_vistas:
             urls_vistas.add(c["url"])
             if c.get("novo"):
@@ -1525,7 +1583,7 @@ def main() -> int:
     # Catálogo de Provas Anteriores por Banca e Cargo (sem duplicar por cidade)
     pares_provas_vistos = set()
     catalogo_provas_banca_cargo = []
-    for c in fisio + medio_ok + medio_todos:
+    for c in fisio + medio_todos + superior_sp:
         banca_raw = c.get("banca") or "Consultar edital"
         if c.get("fisio"):
             c_nome = (c.get("fisio_detalhes") or {}).get("cargo") or "Fisioterapeuta"
@@ -1561,6 +1619,23 @@ def main() -> int:
                     "exemplo_orgao": c["orgao"],
                     "data_prova": c.get("data_prova") or "Consultar edital",
                 })
+        for s_it in c.get("superior_itens") or []:
+            c_nome = s_it.get("nome") or "Analista"
+            lp = gerar_links_provas_banca_cargo(c_nome, banca_raw)
+            chave_par = (lp["cargo_busca"], lp["banca_busca"])
+            if chave_par not in pares_provas_vistos:
+                pares_provas_vistos.add(chave_par)
+                catalogo_provas_banca_cargo.append({
+                    "cargo": lp["cargo_busca"],
+                    "banca": lp["banca_busca"],
+                    "banca_original": banca_raw,
+                    "escolaridade": "Ensino Superior",
+                    "url_combo": lp["url_combo"],
+                    "url_cargo": lp["url_cargo"],
+                    "url_banca": lp["url_banca"],
+                    "exemplo_orgao": c["orgao"],
+                    "data_prova": c.get("data_prova") or "Consultar edital",
+                })
 
     gerado_em = agora.strftime("%d/%m/%Y %H:%M")
 
@@ -1576,8 +1651,8 @@ def main() -> int:
                 "novos_ultimas_24h": novos_24h,
                 "encerrando_proximos_dias": encerrando_count,
                 "fisioterapia": fisio,
-                "nivel_medio_acima_5000": medio_ok,
                 "nivel_medio_todas_faixas": medio_todos,
+                "nivel_superior_sp": superior_sp,
             },
             ensure_ascii=False,
             indent=1,
@@ -1595,12 +1670,14 @@ def main() -> int:
             gerado_em=gerado_em,
             listing_url=LISTING_URL,
             pix_key=PIX_KEY,
+            superior_sp=superior_sp,
+            municipios_sp=MUNICIPIOS_SP,
         ),
         encoding="utf-8",
     )
     log(
-        f"Concluído! Fisioterapia: {len(fisio)} | Nível Médio > R$5k: {len(medio_ok)} | "
-        f"Nível Médio/Técnico (Todas as Faixas): {len(medio_todos)} | Brasil: {len(catalogo_brasil)}"
+        f"Concluído! Fisioterapia: {len(fisio)} | Nível Médio: {len(medio_todos)} | "
+        f"Nível Superior (SP): {len(superior_sp)} | Brasil: {len(catalogo_brasil)}"
     )
     log(f"Página gerada: {HTML_FILE}")
     return 0
