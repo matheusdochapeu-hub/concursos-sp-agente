@@ -679,6 +679,9 @@ def render_html(
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.counterapi.dev https://accounts.google.com https://*.google.com https://www.googleapis.com https://oauth2.googleapis.com https://*.googleapis.com; frame-src https://accounts.google.com https://*.google.com;">
@@ -748,7 +751,7 @@ def render_html(
     width: 100%;
     max-width: 1340px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
     box-sizing: border-box;
   }}
 
@@ -1903,7 +1906,7 @@ def render_html(
   }}
   .btn-logout-google:hover {{ background: #be123c; border-color: #fda4af; }}
   .btn-dev-secret {{
-    display: none;
+    display: none !important;
     background: #0f172a;
     color: var(--br-yellow);
     border: 2px solid var(--br-yellow);
@@ -1918,7 +1921,7 @@ def render_html(
     justify-content: center;
     gap: 6px;
   }}
-  .btn-dev-secret.visivel {{ display: inline-flex; }}
+  .btn-dev-secret.visivel {{ display: inline-flex !important; }}
 
   /* ===== Cidade de referência, blocos de busca, veredito da comparação ===== */
   .chip-km-ref[hidden] {{ display: none !important; }}
@@ -1982,10 +1985,10 @@ def render_html(
   }}
 
   /* ===== Layout mobile e tablet 100% responsivo (ocupa toda a largura da tela sem sobras brancas) ===== */
-  @media (max-width: 768px) {{
+  @media (max-width: 900px) {{
     html, body {{
       width: 100% !important;
-      max-width: 100vw !important;
+      max-width: 100% !important;
       overflow-x: hidden !important;
     }}
     .container {{
@@ -2021,11 +2024,18 @@ def render_html(
     }}
     .header-actions-col > * {{ width: 100% !important; min-width: 0 !important; }}
     .header-actions-col .btn-app-install,
-    .header-actions-col .btn-header-pix,
-    .header-actions-col .btn-dev-secret {{
+    .header-actions-col .btn-header-pix {{
       min-height: 42px !important; padding: 8px 10px !important; font-size: 0.8rem !important;
     }}
-    .header-actions-col .btn-dev-secret {{ grid-column: 1 / -1 !important; }}
+    .header-actions-col .btn-dev-secret:not(.visivel) {{ display: none !important; }}
+    .header-actions-col .btn-dev-secret.visivel {{
+      display: inline-flex !important;
+      grid-column: 1 / -1 !important;
+      width: 100% !important;
+      min-height: 42px !important;
+      padding: 8px 10px !important;
+      font-size: 0.8rem !important;
+    }}
     .user-profile-pill {{
       grid-column: 1 / -1 !important;
       max-width: 100% !important;
@@ -2177,9 +2187,9 @@ def render_html(
       <div id="gsiButtonContainer" style="display:flex;justify-content:center;margin-bottom:8px;"></div>
 
       <!-- Opção de alternar formulário manual -->
-      <div id="opcaoManualLogin" style="display:none;margin:6px 0 12px;text-align:center;">
-        <button type="button" id="btnAlternarManual" style="background:none;border:none;color:var(--br-blue);font-size:0.8rem;text-decoration:underline;cursor:pointer;font-family:inherit;padding:4px;">
-          ✍️ Ou preencher nome e e-mail manualmente
+      <div id="opcaoManualLogin" style="margin:8px 0 12px;text-align:center;">
+        <button type="button" id="btnAlternarManual" style="background:#f1f5f9;border:1px solid #cbd5e1;color:var(--br-blue);font-size:0.83rem;font-weight:700;padding:8px 14px;border-radius:10px;cursor:pointer;font-family:inherit;width:100%;transition:background 0.15s;">
+          ✍️ Entrar diretamente com Nome e E-mail
         </button>
       </div>
 
@@ -2587,9 +2597,22 @@ def render_html(
         <h3 id="tituloDevStats">🔐 Painel do Desenvolvedor — Contador de Acessos</h3>
         <button type="button" id="fecharModalDevStats" class="pix-close" aria-label="Fechar">✕</button>
       </div>
-      <p class="pix-desc" style="text-align:left;margin-bottom:14px;">
-        Painel restrito ao desenvolvedor (acessado via link secreto autenticado por hash SHA-256).
-      </p>
+
+      <!-- Banner de Status do Modo Desenvolvedor -->
+      <div style="background:#f1f5f9;border:1.5px solid #cbd5e1;border-radius:12px;padding:12px 14px;margin-bottom:14px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+          <div>
+            <b style="color:var(--br-blue-dark);font-size:0.86rem;">🛡️ Status: Modo Administrador Ativo</b>
+            <div style="font-size:0.77rem;color:var(--muted);margin-top:2px;">
+              Visitantes normais <b>NUNCA</b> veem este botão nem este painel. Apenas você tem acesso após digitar a chave.
+            </div>
+          </div>
+          <button type="button" id="btnSairModoDev" style="background:#fee2e2;color:#991b1b;border:1px solid #fca5a5;padding:6px 12px;border-radius:8px;font-size:0.8rem;font-weight:700;cursor:pointer;">
+            🚪 Sair do Modo Dev (Ocultar Botão)
+          </button>
+        </div>
+      </div>
+
       <div class="cmp-summary-banner" style="margin-bottom:16px;">
         <div class="cmp-kpi">
           <span>🌐 Total Global de Acessos</span>
@@ -2625,15 +2648,22 @@ def render_html(
         </div>
       </div>
 
-      <details class="prog-box" style="margin-bottom:14px;">
+      <details class="prog-box" style="margin-bottom:14px;" open>
         <summary>⚙️ Configurar Google OAuth Client ID (Opcional — Google Cloud Console)</summary>
         <div class="prog-body">
-          <p style="margin:0 0 8px;">
-            Se desejar usar um Client ID OAuth 2.0 próprio do Google Cloud Console para o botão One-Tap, informe abaixo:
+          <p style="margin:0 0 8px;font-size:0.82rem;line-height:1.4;">
+            Se desejar usar o botão oficial de 1 toque do Google ("Continuar como..."), cole o <b>Client ID</b> do Google Cloud Console:
           </p>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
             <input id="inputDevGoogleClientId" type="text" placeholder="Ex.: 123456789-abc.apps.googleusercontent.com" style="flex:1;min-width:240px;padding:8px 12px;border-radius:8px;border:1px solid var(--border);">
             <button type="button" id="btnSalvarClientId" class="btn-aplicar">Salvar Client ID</button>
+            <button type="button" id="btnLimparDevClientId" style="background:#fee2e2;color:#991b1b;border:1px solid #fca5a5;padding:8px 12px;border-radius:8px;font-size:0.82rem;font-weight:700;cursor:pointer;">🗑️ Remover Client ID</button>
+          </div>
+          <div style="margin-top:8px;padding:8px 10px;background:#fff1f2;border:1px solid #fda4af;border-radius:8px;font-size:0.75rem;color:#9f1239;line-height:1.4;">
+            ⚠️ <b>Aviso sobre Erro 401: invalid_client ("The OAuth client was not found"):</b><br>
+            Esse erro do Google indica que o Client ID informado não existe nos servidores do Google ou foi digitado com erro.<br>
+            • Se vir esse erro, clique em <b>"🗑️ Remover Client ID"</b> acima para voltar imediatamente ao login limpo.<br>
+            • Para usar Client ID do Google Cloud: certifique-se de criar como <b>"Aplicativo da Web"</b> com Origem JavaScript autorizada <code>https://matheusdochapeu-hub.github.io</code>.
           </div>
         </div>
       </details>
@@ -4209,7 +4239,7 @@ def render_html(
       window.google.accounts.id.initialize({{
         client_id: clientId,
         callback: window.handleGoogleCredentialResponse,
-        auto_select: true,
+        auto_select: false,
         cancel_on_tap_outside: false
       }});
 
@@ -4370,13 +4400,28 @@ def render_html(
       const hashParam = await sha256Hex(devParam);
       if (hashParam === DEV_TOKEN_SHA256) {{
         autorizadoDev = true;
+        try {{
+          sessionStorage.setItem('concursos_dev_autenticado', '1');
+          // Limpa o parâmetro ?dev= da URL para não poluir histórico nem ser compartilhado por acidente
+          const u = new URL(window.location.href);
+          u.searchParams.delete('dev');
+          window.history.replaceState({{}}, document.title, u.pathname + (u.search ? u.search : '') + u.hash);
+        }} catch (_) {{}}
       }}
+    }} else {{
+      try {{
+        if (sessionStorage.getItem('concursos_dev_autenticado') === '1') {{
+          autorizadoDev = true;
+        }}
+      }} catch (_) {{}}
     }}
 
     if (autorizadoDev) {{
       btnDevPanel.classList.add('visivel');
       await atualizarPainelDevStats();
       modalDevStats.classList.add('aberto');
+    }} else {{
+      btnDevPanel.classList.remove('visivel');
     }}
   }})();
 
@@ -4389,6 +4434,27 @@ def render_html(
   modalDevStats.addEventListener('click', (e) => {{
     if (e.target === modalDevStats) modalDevStats.classList.remove('aberto');
   }});
+
+  const btnSairModoDev = document.getElementById('btnSairModoDev');
+  if (btnSairModoDev) {{
+    btnSairModoDev.addEventListener('click', () => {{
+      try {{ sessionStorage.removeItem('concursos_dev_autenticado'); }} catch (_) {{}}
+      btnDevPanel.classList.remove('visivel');
+      modalDevStats.classList.remove('aberto');
+      alert('Modo Desenvolvedor desativado! O botão [🔐 Contador de Acessos] foi completamente ocultado, exatamente como qualquer visitante comum visualiza o site.');
+    }});
+  }}
+
+  const btnLimparDevClientId = document.getElementById('btnLimparDevClientId');
+  if (btnLimparDevClientId) {{
+    btnLimparDevClientId.addEventListener('click', () => {{
+      if (confirm('Deseja remover o Google Client ID customizado e retornar ao modo de login padrão?')) {{
+        localStorage.removeItem(OAUTH_CLIENT_ID_KEY);
+        alert('Client ID removido com sucesso! O aplicativo será recarregado.');
+        window.location.reload();
+      }}
+    }});
+  }}
 
   document.getElementById('btnSalvarClientId').addEventListener('click', () => {{
     const raw = document.getElementById('inputDevGoogleClientId').value;
