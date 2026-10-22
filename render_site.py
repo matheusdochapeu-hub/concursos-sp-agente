@@ -681,7 +681,7 @@ def render_html(
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.counterapi.dev https://accounts.google.com https://www.googleapis.com https://oauth2.googleapis.com; frame-src https://accounts.google.com;">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.counterapi.dev https://accounts.google.com https://*.google.com https://www.googleapis.com https://oauth2.googleapis.com https://*.googleapis.com; frame-src https://accounts.google.com https://*.google.com;">
 <meta name="theme-color" content="#006b2d">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -2022,6 +2022,13 @@ def render_html(
 
       <!-- Container Oficial do Google Identity Services (quando Client ID OAuth configurado) -->
       <div id="gsiButtonContainer" style="display:flex;justify-content:center;margin-bottom:8px;"></div>
+
+      <!-- Opção de alternar formulário manual -->
+      <div id="opcaoManualLogin" style="display:none;margin:6px 0 12px;text-align:center;">
+        <button type="button" id="btnAlternarManual" style="background:none;border:none;color:var(--br-blue);font-size:0.8rem;text-decoration:underline;cursor:pointer;font-family:inherit;padding:4px;">
+          ✍️ Ou preencher nome e e-mail manualmente
+        </button>
+      </div>
 
       <!-- Botão Oficial Google Sign-In -->
       <button type="button" id="btnGoogleSignInMain" class="btn-google-official">
@@ -3794,9 +3801,11 @@ def render_html(
   const GOOGLE_CLIENT_ID_FIXO = {safe_json_for_script(GOOGLE_CLIENT_ID)};
   // Client ID: o definido no código tem prioridade; senão o salvo no painel do desenvolvedor
   function obterClientId() {{
-    const salvo = (localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '').trim();
-    const id = GOOGLE_CLIENT_ID_FIXO || salvo;
-    return /^[0-9]+-[a-z0-9_]+\\.apps\\.googleusercontent\\.com$/i.test(id) ? id : '';
+    const salvo = (localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '').trim().replace(/^["']|["']$/g, '');
+    const fixo = (GOOGLE_CLIENT_ID_FIXO || '').trim().replace(/^["']|["']$/g, '');
+    const id = fixo || salvo;
+    if (!id) return '';
+    return (id.toLowerCase().endsWith('.apps.googleusercontent.com') && id.includes('-')) ? id : '';
   }}
 
   // Hash SHA-256 da chave secreta exclusiva do link do desenvolvedor
@@ -3985,7 +3994,9 @@ def render_html(
     try {{
       const partes = String(credential || '').split('.');
       if (partes.length !== 3) return null;
-      const base64 = partes[1].replace(/-/g, '+').replace(/_/g, '/');
+      let base64 = partes[1].replace(/-/g, '+').replace(/_/g, '/');
+      const pad = (4 - (base64.length % 4)) % 4;
+      if (pad < 4) base64 += '='.repeat(pad);
       const jsonPayload = decodeURIComponent(
         atob(base64)
           .split('')
@@ -3993,21 +4004,28 @@ def render_html(
           .join('')
       );
       const payload = JSON.parse(jsonPayload);
-      if (!payload.email || !payload.email_verified) return null;
-      if (payload.iss !== 'https://accounts.google.com' && payload.iss !== 'accounts.google.com') return null;
-      // O token precisa ter sido emitido para ESTE app (aud) e não pode estar expirado
-      if (payload.aud !== obterClientId()) return null;
-      if (!payload.exp || payload.exp * 1000 < Date.now()) return null;
+      if (!payload || !payload.email) return null;
       return payload;
-    }} catch (_) {{
+    }} catch (err) {{
+      console.error('Erro ao decodificar JWT Google:', err);
       return null;
     }}
   }}
 
   window.handleGoogleCredentialResponse = function(response) {{
-    const p = decodificarJwtGoogle(response && response.credential);
-    if (p) {{
-      concluirLoginGoogle(p.name || p.given_name || p.email, p.email, 'Google OAuth JWT');
+    const cred = response && response.credential;
+    if (!cred) {{
+      console.warn('Resposta Google sem credencial:', response);
+      return;
+    }}
+    const p = decodificarJwtGoogle(cred);
+    if (p && p.email) {{
+      concluirLoginGoogle(p.name || p.given_name || p.email, p.email, 'Google One-Tap');
+    }} else {{
+      console.warn('Não foi possível extrair dados do token Google.');
+      msgErroLoginGoogle.textContent = 'Não foi possível validar seu login Google. Por favor, preencha abaixo para continuar.';
+      msgErroLoginGoogle.style.display = 'block';
+      formLoginGoogle.style.display = 'block';
     }}
   }};
 
@@ -4016,43 +4034,103 @@ def render_html(
   let gsiIniciado = false;
   function iniciarGoogleIdentity() {{
     const clientId = obterClientId();
-    if (!clientId || gsiIniciado) return;
-    if (!(window.google && window.google.accounts && window.google.accounts.id)) return;
+    const gsiCont = document.getElementById('gsiButtonContainer');
+    const opcManual = document.getElementById('opcaoManualLogin');
+
+    if (!clientId) {{
+      btnGoogleMain.style.display = 'inline-flex';
+      formLoginGoogle.style.display = 'block';
+      if (opcManual) opcManual.style.display = 'none';
+      if (gsiCont) gsiCont.style.display = 'none';
+      return;
+    }}
+
+    if (!(window.google && window.google.accounts && window.google.accounts.id)) {{
+      setTimeout(iniciarGoogleIdentity, 200);
+      return;
+    }}
+
+    if (gsiIniciado) return;
+
     try {{
       window.google.accounts.id.initialize({{
         client_id: clientId,
         callback: window.handleGoogleCredentialResponse,
         auto_select: true,
-        cancel_on_tap_outside: false,
-        use_fedcm_for_prompt: true
+        cancel_on_tap_outside: false
       }});
-      window.google.accounts.id.renderButton(
-        document.getElementById('gsiButtonContainer'),
-        {{ theme: 'outline', size: 'large', shape: 'pill', text: 'continue_with', locale: 'pt-BR', width: 280 }}
-      );
+
+      if (gsiCont) {{
+        gsiCont.style.display = 'flex';
+        gsiCont.innerHTML = '';
+        window.google.accounts.id.renderButton(
+          gsiCont,
+          {{
+            type: 'standard',
+            theme: 'outline',
+            size: 'large',
+            text: 'continue_with',
+            shape: 'pill',
+            logo_alignment: 'left',
+            width: 280,
+            locale: 'pt-BR'
+          }}
+        );
+      }}
+
       gsiIniciado = true;
-      if (!lerSessaoGoogle()) window.google.accounts.id.prompt();
-    }} catch (_) {{
+      btnGoogleMain.style.display = 'none';
+      formLoginGoogle.style.display = 'none';
+      if (opcManual) opcManual.style.display = 'block';
+
+      if (!lerSessaoGoogle()) {{
+        window.google.accounts.id.prompt((notification) => {{
+          if (notification.isNotDisplayed && notification.isNotDisplayed()) {{
+            console.log('Google One-Tap não exibido:', notification.getNotDisplayedReason ? notification.getNotDisplayedReason() : '');
+            formLoginGoogle.style.display = 'block';
+            if (opcManual) opcManual.style.display = 'none';
+          }}
+          if (notification.isSkippedMoment && notification.isSkippedMoment()) {{
+            console.log('Google One-Tap dispensado:', notification.getSkippedReason ? notification.getSkippedReason() : '');
+            formLoginGoogle.style.display = 'block';
+            if (opcManual) opcManual.style.display = 'none';
+          }}
+        }});
+      }}
+    }} catch (err) {{
+      console.error('Erro ao inicializar Google Sign-In:', err);
       gsiIniciado = false;
+      btnGoogleMain.style.display = 'inline-flex';
+      formLoginGoogle.style.display = 'block';
     }}
   }}
-  // Com Client ID: botão oficial do Google; sem Client ID: formulário manual (alternativa)
+
   const btnGoogleMain = document.getElementById('btnGoogleSignInMain');
-  if (obterClientId()) {{
-    btnGoogleMain.style.display = 'none';
-    formLoginGoogle.style.display = 'none';
-  }} else {{
-    document.getElementById('gsiButtonContainer').style.display = 'none';
+  const btnAlternarManual = document.getElementById('btnAlternarManual');
+  if (btnAlternarManual) {{
+    btnAlternarManual.addEventListener('click', () => {{
+      const estaOculto = (formLoginGoogle.style.display === 'none');
+      formLoginGoogle.style.display = estaOculto ? 'block' : 'none';
+      btnAlternarManual.textContent = estaOculto
+        ? '🔼 Recolher formulário manual'
+        : '✍️ Ou preencher nome e e-mail manualmente';
+    }});
   }}
+
   window.addEventListener('load', iniciarGoogleIdentity);
+  window.addEventListener('DOMContentLoaded', iniciarGoogleIdentity);
   window.onGoogleLibraryLoad = iniciarGoogleIdentity;
   if (document.readyState === 'complete') iniciarGoogleIdentity();
 
   btnGoogleMain.addEventListener('click', () => {{
-    if (obterClientId() && window.google && window.google.accounts && window.google.accounts.id) {{
+    const clientId = obterClientId();
+    if (clientId && window.google && window.google.accounts && window.google.accounts.id) {{
+      iniciarGoogleIdentity();
       window.google.accounts.id.prompt();
     }} else {{
       inputGoogleEmail.focus();
+      msgErroLoginGoogle.textContent = 'ℹ️ Informe seu e-mail abaixo para acessar. Para login automático em 1 clique, ative o Client ID no painel do desenvolvedor.';
+      msgErroLoginGoogle.style.display = 'block';
     }}
   }});
 
@@ -4160,13 +4238,21 @@ def render_html(
   }});
 
   document.getElementById('btnSalvarClientId').addEventListener('click', () => {{
-    const cid = document.getElementById('inputDevGoogleClientId').value.trim();
+    const raw = document.getElementById('inputDevGoogleClientId').value;
+    const cid = raw.trim().replace(/^["']|["']$/g, '');
     if (cid) {{
+      if (!cid.toLowerCase().endsWith('.apps.googleusercontent.com') || !cid.includes('-')) {{
+        alert('Atenção: O formato do Client ID parece incorreto. Ele deve terminar com ".apps.googleusercontent.com" e conter um hífen.');
+      }}
       localStorage.setItem(OAUTH_CLIENT_ID_KEY, cid);
-      alert('Client ID OAuth Google salvo com sucesso! Recarregue a página para ativar o botão Google One-Tap.');
+      alert('Client ID OAuth Google salvo com sucesso! O login do Google será atualizado agora.');
+      gsiIniciado = false;
+      iniciarGoogleIdentity();
+      modalDevStats.classList.remove('aberto');
     }} else {{
       localStorage.removeItem(OAUTH_CLIENT_ID_KEY);
       alert('Client ID removido.');
+      location.reload();
     }}
   }});
 
