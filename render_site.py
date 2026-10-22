@@ -678,7 +678,7 @@ def render_html(
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.counterapi.dev https://accounts.google.com https://*.google.com https://www.googleapis.com https://oauth2.googleapis.com https://*.googleapis.com; frame-src https://accounts.google.com https://*.google.com;">
@@ -724,18 +724,39 @@ def render_html(
     --shadow-md: 0 8px 26px rgba(0, 45, 18, 0.08);
   }}
 
-  * {{ box-sizing: border-box; }}
+  *, *::before, *::after {{ box-sizing: border-box; }}
+  html {{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }}
   body {{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
     margin: 0;
+    padding: 0;
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     background: var(--bg);
     color: var(--txt);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }}
-  .container {{ max-width: 1340px; margin: 0 auto; padding: 0 20px; }}
+  .container {{
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }}
 
   header.app-bar {{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
     background: linear-gradient(135deg, var(--br-blue-dark) 0%, var(--br-blue) 42%, var(--br-green-dark) 100%);
     color: #ffffff;
     padding: 22px 0 20px;
@@ -823,8 +844,17 @@ def render_html(
   .btn-header-pix:hover {{ background: #1f5829; transform: translateY(-2px); }}
 
   /* Abas e Botão "Função comparar" */
-  .tabs-wrap {{ margin: 22px 0 18px; }}
+  .tabs-wrap {{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 22px 0 18px;
+    box-sizing: border-box;
+  }}
   nav.tabs {{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     gap: 12px;
@@ -1128,11 +1158,14 @@ def render_html(
 
   .grid {{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 20px;
     align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }}
-  @media (max-width: 500px) {{ .grid {{ grid-template-columns: 1fr; }} }}
+  @media (max-width: 680px) {{ .grid {{ grid-template-columns: 1fr !important; }} }}
 
   .card {{
     background: var(--surface);
@@ -1948,65 +1981,185 @@ def render_html(
     body.imprimindo-comp .cmp-veredito, body.imprimindo-comp tr {{ break-inside: avoid; }}
   }}
 
-  /* ===== Layout mobile: títulos, cabeçalho, abas e botões consistentes ===== */
-  @media (max-width: 640px) {{
-    .container {{ padding: 0 12px; }}
-    h1 {{ font-size: 1.7rem; line-height: 1.15; }}
-    .brand-badge {{ font-size: 0.66rem; padding: 3px 10px; }}
-    .meta {{ font-size: 0.8rem; line-height: 1.5; }}
-    .bar-row {{ flex-direction: column; align-items: stretch; gap: 12px; }}
-    .header-actions-col {{
-      display: grid; grid-template-columns: 1fr 1fr; gap: 8px; min-width: 0; width: 100%;
+  /* ===== Layout mobile e tablet 100% responsivo (ocupa toda a largura da tela sem sobras brancas) ===== */
+  @media (max-width: 768px) {{
+    html, body {{
+      width: 100% !important;
+      max-width: 100vw !important;
+      overflow-x: hidden !important;
     }}
-    .header-actions-col > * {{ width: 100%; min-width: 0; }}
+    .container {{
+      padding: 0 12px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }}
+    header.app-bar {{
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 16px 0 14px !important;
+      box-sizing: border-box !important;
+    }}
+    .bar-row {{
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 12px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }}
+    h1 {{ font-size: 1.65rem !important; line-height: 1.15 !important; }}
+    .brand-badge {{ font-size: 0.66rem !important; padding: 3px 10px !important; }}
+    .meta {{ font-size: 0.8rem !important; line-height: 1.5 !important; }}
+
+    .header-actions-col {{
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 8px !important;
+      min-width: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }}
+    .header-actions-col > * {{ width: 100% !important; min-width: 0 !important; }}
     .header-actions-col .btn-app-install,
     .header-actions-col .btn-header-pix,
     .header-actions-col .btn-dev-secret {{
-      min-height: 42px; padding: 8px 10px; font-size: 0.8rem;
+      min-height: 42px !important; padding: 8px 10px !important; font-size: 0.8rem !important;
     }}
-    .header-actions-col .btn-dev-secret {{ grid-column: 1 / -1; }}
-    .user-profile-pill {{ grid-column: 1 / -1; max-width: 100%; justify-content: space-between; }}
+    .header-actions-col .btn-dev-secret {{ grid-column: 1 / -1 !important; }}
+    .user-profile-pill {{
+      grid-column: 1 / -1 !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      justify-content: space-between !important;
+      box-sizing: border-box !important;
+    }}
     #userProfileText {{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 62vw; }}
 
-    .tabs-wrap {{ margin: 14px 0 12px; }}
-    nav.tabs {{
-      display: flex; overflow-x: auto; gap: 8px; padding-bottom: 6px;
-      scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch;
+    .tabs-wrap {{
+      width: 100% !important;
+      max-width: 100% !important;
+      overflow: hidden !important;
+      margin: 14px 0 12px !important;
+      box-sizing: border-box !important;
     }}
-    .tab-item {{ flex: 0 0 auto; scroll-snap-align: start; gap: 6px; }}
-    .tab-btn {{ white-space: nowrap; font-size: 0.84rem; padding: 10px 12px; flex: 0 0 auto; }}
-    .tab-count-box {{ min-width: 58px; padding: 4px 7px; }}
+    nav.tabs {{
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      gap: 8px !important;
+      padding: 2px 2px 8px 2px !important;
+      scroll-snap-type: x proximity !important;
+      -webkit-overflow-scrolling: touch !important;
+      scrollbar-width: thin !important;
+      box-sizing: border-box !important;
+    }}
+    .tab-item {{
+      flex: 0 0 auto !important;
+      scroll-snap-align: start !important;
+      gap: 6px !important;
+      max-width: 85vw !important;
+    }}
+    .tab-btn {{
+      white-space: nowrap !important;
+      font-size: 0.84rem !important;
+      padding: 10px 12px !important;
+      flex: 0 0 auto !important;
+    }}
+    .tab-count-box {{
+      min-width: 52px !important;
+      padding: 4px 6px !important;
+    }}
 
-    .sec-title-row {{ flex-direction: column; align-items: flex-start; gap: 8px; }}
-    .sec-title-row h2 {{ font-size: 1.12rem; line-height: 1.25; }}
-    .desc {{ font-size: 0.85rem; line-height: 1.45; }}
+    .sec-title-row {{ flex-direction: column !important; align-items: flex-start !important; gap: 8px !important; }}
+    .sec-title-row h2 {{ font-size: 1.12rem !important; line-height: 1.25 !important; }}
+    .desc {{ font-size: 0.85rem !important; line-height: 1.45 !important; }}
 
-    .filtros-panel {{ padding: 14px 12px; }}
-    .filtros-head {{ flex-direction: column; align-items: stretch; }}
-    .filtros-actions {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }}
-    .filtros-actions .feedback-filtro {{ grid-column: 1 / -1; }}
-    .filtros-actions button {{ width: 100%; }}
-    .btn-comparar-toggle {{ width: 100%; }}
-    .filtros-foot {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }}
-    .f-group {{ padding: 10px 10px; }}
-    .f-label {{ font-size: 0.76rem; }}
-    .pill-btn {{ font-size: 0.8rem; }}
+    .busca-bloco,
+    .busca-cargo-panel,
+    .filtros-panel,
+    .tab-panel,
+    .grid {{
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      box-sizing: border-box !important;
+    }}
+    .filtros-panel {{ padding: 14px 12px !important; }}
+    .filtros-head {{ flex-direction: column !important; align-items: stretch !important; }}
+    .filtros-actions {{ display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; }}
+    .filtros-actions .feedback-filtro {{ grid-column: 1 / -1 !important; }}
+    .filtros-actions button {{ width: 100% !important; }}
+    .btn-comparar-toggle {{ width: 100% !important; }}
+    .filtros-foot {{ display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; }}
+    .f-group {{
+      grid-template-columns: 1fr !important;
+      align-items: flex-start !important;
+      gap: 8px !important;
+      padding: 10px 10px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }}
+    .f-label {{ font-size: 0.76rem !important; }}
+    .pill-row {{
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }}
+    .pill-btn {{
+      font-size: 0.8rem !important;
+      max-width: 100% !important;
+      white-space: normal !important;
+      word-break: break-word !important;
+      box-sizing: border-box !important;
+    }}
 
-    .cargo-input-row {{ flex-direction: column; align-items: stretch; }}
-    .cargo-input-row .btn-aplicar, .cargo-input-row .btn-limpar {{ width: 100%; }}
-    .toggle-head {{ flex-direction: column; align-items: flex-start; }}
+    .cargo-input-row {{
+      flex-direction: column !important;
+      align-items: stretch !important;
+      width: 100% !important;
+      gap: 8px !important;
+    }}
+    .cargo-input-wrap {{
+      width: 100% !important;
+      min-width: 0 !important;
+      flex: 1 1 100% !important;
+    }}
+    .cargo-input-wrap input {{
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }}
+    .cargo-input-row .btn-aplicar, .cargo-input-row .btn-limpar {{ width: 100% !important; }}
+    .toggle-head {{ flex-direction: column !important; align-items: flex-start !important; }}
 
-    .card h3 {{ font-size: 1rem; }}
-    .card .titulo {{ font-size: 0.85rem; }}
-    .cargo-nome {{ font-size: 0.95rem; }}
-    .info-grid {{ grid-template-columns: 1fr; }}
-    .links-row > * {{ flex: 1 1 100%; justify-content: center; text-align: center; }}
+    .grid {{ grid-template-columns: 1fr !important; }}
+    .card {{
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      box-sizing: border-box !important;
+      overflow: hidden !important;
+      word-break: break-word !important;
+      overflow-wrap: break-word !important;
+    }}
+    .card h3 {{ font-size: 1rem !important; }}
+    .card .titulo {{ font-size: 0.85rem !important; }}
+    .cargo-nome {{ font-size: 0.95rem !important; }}
+    .info-grid {{ grid-template-columns: 1fr !important; }}
+    .links-row > * {{ flex: 1 1 100% !important; justify-content: center !important; text-align: center !important; }}
 
-    .compare-modal {{ width: 100%; max-width: 100%; max-height: 92vh; padding: 14px 12px; border-radius: 16px; }}
-    .cmp-summary-banner {{ grid-template-columns: 1fr; }}
-    .cmp-table {{ display: block; overflow-x: auto; font-size: 0.78rem; }}
-    .cmp-v-row {{ grid-template-columns: 24px 1fr; }}
-    .cmp-v-row .tag {{ grid-column: 2; justify-self: start; }}
+    .compare-modal {{ width: 100% !important; max-width: 100% !important; max-height: 92vh !important; padding: 14px 12px !important; border-radius: 16px !important; }}
+    .cmp-summary-banner {{ grid-template-columns: 1fr !important; }}
+    .cmp-table {{ display: block !important; overflow-x: auto !important; font-size: 0.78rem !important; width: 100% !important; }}
+    .cmp-v-row {{ grid-template-columns: 24px 1fr !important; }}
+    .cmp-v-row .tag {{ grid-column: 2 !important; justify-self: start !important; }}
   }}
 </style>
 </head>
