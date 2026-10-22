@@ -1555,7 +1555,7 @@
           <div class="brand-badge">🇧🇷 Monitoramento Diário de Editais · SP &amp; Brasil</div>
           <h1>Concursos</h1>
           <div class="meta">
-            Atualizado em <b>22/10/2026 11:37</b> (Brasília) · <b>161</b> editais vigentes em SP e <b>596</b> no Brasil · Fonte:
+            Atualizado em <b>22/10/2026 12:04</b> (Brasília) · <b>161</b> editais vigentes em SP e <b>596</b> no Brasil · Fonte:
             <a href="https://www.pciconcursos.com.br/concursos/sudeste/" target="_blank" rel="noopener noreferrer">PCI Concursos</a>
           </div>
         </div>
@@ -27346,7 +27346,7 @@ ${txtVeredito}
   const AUDIT_LOG_KEY = 'concursos_dev_audit_logs_v1';
   const LOCAL_VIEWS_KEY = 'concursos_dev_local_views_v1';
   const OAUTH_CLIENT_ID_KEY = 'concursos_google_client_id_v1';
-  const GOOGLE_CLIENT_ID_FIXO = "";
+  const GOOGLE_CLIENT_ID_FIXO = "1006150921481-phsaf0s3j0ie65d69j3l1uth3b895148.apps.googleusercontent.com";
   // Client ID: o definido no código tem prioridade; senão o salvo no painel do desenvolvedor
   function obterClientId() {
     const salvo = (localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '').trim().replace(/^["']|["']$/g, '');
@@ -27753,7 +27753,7 @@ ${txtVeredito}
       </tr>
     `).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
 
-    document.getElementById('inputDevGoogleClientId').value = localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '';
+    document.getElementById('inputDevGoogleClientId').value = obterClientId();
   }
 
   (async function verificarLinkDesenvolvedor() {

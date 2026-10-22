@@ -538,7 +538,10 @@ CARGOS_RAPIDOS_MAX = [
 # ambiente GOOGLE_CLIENT_ID antes de rodar o agente. Formato: 123456789-abc.apps.googleusercontent.com
 import os as _os
 
-GOOGLE_CLIENT_ID = _os.environ.get("GOOGLE_CLIENT_ID", "").strip()
+GOOGLE_CLIENT_ID = (
+    _os.environ.get("GOOGLE_CLIENT_ID", "").strip()
+    or "1006150921481-phsaf0s3j0ie65d69j3l1uth3b895148.apps.googleusercontent.com"
+)
 
 # Capitais usadas como cidade de referência: (nome, UF, lat, lon)
 CAPITAIS_REF = [
@@ -4388,7 +4391,7 @@ def render_html(
       </tr>
     `).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
 
-    document.getElementById('inputDevGoogleClientId').value = localStorage.getItem(OAUTH_CLIENT_ID_KEY) || '';
+    document.getElementById('inputDevGoogleClientId').value = obterClientId();
   }}
 
   (async function verificarLinkDesenvolvedor() {{
