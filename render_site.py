@@ -943,8 +943,9 @@ def render_html(
     border-bottom: 1.5px solid var(--border);
   }}
   .filtros-panel.recolhido .filter-groups,
-  .filtros-panel.recolhido .filtros-foot {{
-    display: none;
+  .filtros-panel.recolhido .filtros-foot,
+  .pill-row.recolhido {{
+    display: none !important;
   }}
   .filtros-head-title {{
     display: flex;
@@ -2114,6 +2115,11 @@ def render_html(
     .filtros-actions button {{ width: 100% !important; }}
     .btn-comparar-toggle {{ width: 100% !important; }}
     .filtros-foot {{ display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; }}
+    .filtros-panel.recolhido .filter-groups,
+    .filtros-panel.recolhido .filtros-foot,
+    .pill-row.recolhido {{
+      display: none !important;
+    }}
     .f-group {{
       grid-template-columns: 1fr !important;
       align-items: flex-start !important;
@@ -2124,12 +2130,12 @@ def render_html(
     }}
     .f-label {{ font-size: 0.76rem !important; }}
     .pill-row {{
-      display: flex !important;
-      flex-wrap: wrap !important;
-      gap: 6px !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      box-sizing: border-box !important;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }}
     .pill-btn {{
       font-size: 0.8rem !important;
@@ -2896,28 +2902,34 @@ def render_html(
   // 2) Botão de Recolher / Expandir Filtros
   const painelFiltrosSp = document.getElementById('painelFiltrosSp');
   const btnToggleFiltros = document.getElementById('btnToggleFiltros');
-  btnToggleFiltros.addEventListener('click', () => {{
-    const recolhido = painelFiltrosSp.classList.toggle('recolhido');
-    btnToggleFiltros.innerHTML = recolhido ? '🔽 Mostrar Filtros' : '🔼 Recolher Filtros';
-  }});
+  if (btnToggleFiltros && painelFiltrosSp) {{
+    btnToggleFiltros.addEventListener('click', () => {{
+      const recolhido = painelFiltrosSp.classList.toggle('recolhido');
+      btnToggleFiltros.innerHTML = recolhido ? '🔽 Mostrar Filtros' : '🔼 Recolher Filtros';
+    }});
+  }}
 
   // Botão de Recolher / Expandir Cargos Rápidos na Aba 5
   const btnToggleCargosRapidos = document.getElementById('btnToggleCargosRapidos');
   const rowCargosRapidos = document.getElementById('rowCargosRapidos');
-  btnToggleCargosRapidos.addEventListener('click', () => {{
-    const oculto = rowCargosRapidos.style.display === 'none';
-    rowCargosRapidos.style.display = oculto ? 'flex' : 'none';
-    btnToggleCargosRapidos.innerHTML = oculto ? '🔼 Recolher Cargos Rápidos' : '🔽 Mostrar {len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos';
-  }});
+  if (btnToggleCargosRapidos && rowCargosRapidos) {{
+    btnToggleCargosRapidos.addEventListener('click', () => {{
+      const recolhido = rowCargosRapidos.classList.toggle('recolhido');
+      rowCargosRapidos.style.setProperty('display', recolhido ? 'none' : 'flex', recolhido ? 'important' : '');
+      btnToggleCargosRapidos.innerHTML = recolhido ? '⚡ Mostrar {len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos' : '🔼 Recolher Cargos Rápidos';
+    }});
+  }}
 
   // Botão de Recolher / Expandir Estados (UF) na aba Buscar Cargo
   const btnToggleUfs = document.getElementById('btnToggleUfs');
   const rowUfsBrasil = document.getElementById('rowUfsBrasil');
-  btnToggleUfs.addEventListener('click', () => {{
-    const oculto = rowUfsBrasil.style.display === 'none';
-    rowUfsBrasil.style.display = oculto ? 'flex' : 'none';
-    btnToggleUfs.innerHTML = oculto ? '🔼 Recolher Estados' : '🔽 Mostrar Estados';
-  }});
+  if (btnToggleUfs && rowUfsBrasil) {{
+    btnToggleUfs.addEventListener('click', () => {{
+      const recolhido = rowUfsBrasil.classList.toggle('recolhido');
+      rowUfsBrasil.style.setProperty('display', recolhido ? 'none' : 'flex', recolhido ? 'important' : '');
+      btnToggleUfs.innerHTML = recolhido ? '🌍 Mostrar Estados' : '🔼 Recolher Estados';
+    }});
+  }}
 
   // 3) Navegação entre as Abas (Buscar Cargo, Fisioterapia, Nível Médio, Nível Superior e Provas Anteriores)
   const tabItems = document.querySelectorAll('.tab-item');

@@ -10413,5 +10413,80 @@
    "jornada": "20 a 40 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
   }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-matematica-em-sao-jose-do-rio-preto-sp": {
+  "first_seen": "2026-10-23",
+  "first_seen_ts": "2026-10-23T11:21:38.771994-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "e17d39d9798c",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 354/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-na-area-de-artes-em-sao-paulo": {
+  "first_seen": "2026-10-23",
+  "first_seen_ts": "2026-10-23T11:21:38.771994-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "091befc49944",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Artes, subárea de Fundamentos e Crítica das Artes (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 155/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/usp-abre-processo-seletivo-para-professor-na-area-de-filosofia-e-sociologia-do-direito-em-ribeirao-preto": {
+  "first_seen": "2026-10-23",
+  "first_seen_ts": "2026-10-23T11:21:38.771994-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "1b170da9d103",
+  "fisio_linhas": [],
+  "salario_max_texto": 2945.73,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Contratado III, na área de Filosofia do Direito e Sociologia do Direito (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 034/2026"
+   ],
+   "link_banca": "https://uspdigital.usp.br/gr/admissao",
+   "nome_banca": "USP Digital",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "12 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
+  }
  }
 }

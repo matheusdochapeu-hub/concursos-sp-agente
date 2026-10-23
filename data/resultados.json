@@ -1,11 +1,11 @@
 {
- "gerado_em": "23/10/2026 09:41",
- "gerado_em_iso": "2026-10-23T09:41:53.696227-03:00",
+ "gerado_em": "23/10/2026 11:21",
+ "gerado_em_iso": "2026-10-23T11:21:38.771994-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
- "total_sp": 157,
- "total_brasil": 589,
+ "total_sp": 160,
+ "total_brasil": 592,
  "ia_ativa": true,
- "novos_ultimas_24h": 7,
+ "novos_ultimas_24h": 6,
  "encerrando_proximos_dias": 48,
  "fisioterapia": [
   {
@@ -5557,7 +5557,7 @@
    ],
    "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -10485,7 +10485,7 @@
    ],
    "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -11136,7 +11136,7 @@
    ],
    "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -23977,7 +23977,7 @@
    ],
    "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -24018,6 +24018,88 @@
      "cargo_busca": "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas",
      "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
      "label_combo": "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+    }
+   }
+  },
+  {
+   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-matematica-em-sao-jose-do-rio-preto-sp",
+   "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+   "titulo": "UNESP abre concurso para professor substituto de matemática em São José do Rio Preto - SP",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 3.511,90",
+   "cargos_resumo": "Professor Substituto",
+   "niveis": "Superior",
+   "salario_max_listagem": 3511.9,
+   "inscricao_ate": "30/10 a 13/11/2026",
+   "cidade": "São José do Rio Preto",
+   "lat": -20.8113,
+   "lon": -49.3758,
+   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "site_banca": "https://www.unesp.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-matematica-em-sao-jose-do-rio-preto-sp#links",
+   "arquivos_edital": [
+    "EDITAL Nº 354/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada_geral": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "faixa_salarial": "Até R$ 3.511,90",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-13",
+    "dias_restantes": 21,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 21 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática (1 vaga)"
+   ],
+   "first_seen_ts": "2026-10-23T11:21:38.771994-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 3511.9,
+   "superior_itens": [
+    {
+     "nome": "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 3511.9,
+     "salario_bruto": 3511.9,
+     "salario_total": 5511.92,
+     "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
+     "carga_horaria": "12 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
+   "termos_formacao": [
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-ciencias-exatas-e-da-terra-subarea-de-matematica-universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-ciencias-exatas-e-da-terra-subarea-de-matematica",
+     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
+     "cargo_busca": "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática",
+     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+     "label_combo": "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
     }
    }
   },
@@ -24100,6 +24182,88 @@
      "cargo_busca": "Professor Substituto na área de Ciências Agrárias, subárea de Agronomia",
      "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
      "label_combo": "Professor Substituto na área de Ciências Agrárias, subárea de Agronomia · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+    }
+   }
+  },
+  {
+   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-na-area-de-artes-em-sao-paulo",
+   "orgao": "UNESP - Universidade Estadual Paulista Júlio de Mesquita Filho",
+   "titulo": "UNESP abre concurso público para professor substituto na área de artes em São Paulo",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 3.511,90",
+   "cargos_resumo": "Professor Substituto",
+   "niveis": "Superior",
+   "salario_max_listagem": 3511.9,
+   "inscricao_ate": "27/10 a 10/11/2026",
+   "cidade": "São Paulo",
+   "lat": -23.5329,
+   "lon": -46.6395,
+   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "site_banca": "https://www.unesp.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-na-area-de-artes-em-sao-paulo#links",
+   "arquivos_edital": [
+    "EDITAL Nº 155/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada_geral": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "faixa_salarial": "Até R$ 3.511,90",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-10",
+    "dias_restantes": 18,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 18 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Professor Substituto na área de Artes, subárea de Fundamentos e Crítica das Artes (1 vaga)"
+   ],
+   "first_seen_ts": "2026-10-23T11:21:38.771994-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 3511.9,
+   "superior_itens": [
+    {
+     "nome": "Professor Substituto na área de Artes, subárea de Fundamentos e Crítica das Artes",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 3511.9,
+     "salario_bruto": 3511.9,
+     "salario_total": 5511.92,
+     "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
+     "carga_horaria": "12 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Professor Substituto na área de Artes, subárea de Fundamentos e Crítica das Artes): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
+   "termos_formacao": [
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-artes-subarea-de-fundamentos-e-critica-das-artes-universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-artes-subarea-de-fundamentos-e-critica-das-artes",
+     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
+     "cargo_busca": "Professor Substituto na área de Artes, subárea de Fundamentos e Crítica das Artes",
+     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+     "label_combo": "Professor Substituto na área de Artes, subárea de Fundamentos e Crítica das Artes · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
     }
    }
   },
@@ -24370,7 +24534,7 @@
    ],
    "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -24439,6 +24603,88 @@
      "cargo_busca": "Técnico de Enfermagem, Agente Técnico de Assistência à Saúde",
      "banca_busca": "Todas as Bancas",
      "label_combo": "Técnico de Enfermagem, Agente Técnico de Assistência à Saúde"
+    }
+   }
+  },
+  {
+   "url": "https://www.pciconcursos.com.br/noticias/usp-abre-processo-seletivo-para-professor-na-area-de-filosofia-e-sociologia-do-direito-em-ribeirao-preto",
+   "orgao": "USP - Faculdade de Direito de Ribeirão Preto da Universidade de São Paulo",
+   "titulo": "USP abre processo seletivo para professor na área de Filosofia e Sociologia do Direito em Ribeirão Preto",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 2.945,73",
+   "cargos_resumo": "Professor Contratado III",
+   "niveis": "Superior",
+   "salario_max_listagem": 2945.73,
+   "inscricao_ate": "26/10 a 24/11/2026",
+   "cidade": "Ribeirão Preto",
+   "lat": -21.1699,
+   "lon": -47.8099,
+   "banca": "USP Digital",
+   "site_banca": "https://uspdigital.usp.br/gr/admissao",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/usp-abre-processo-seletivo-para-professor-na-area-de-filosofia-e-sociologia-do-direito-em-ribeirao-preto#links",
+   "arquivos_edital": [
+    "EDITAL Nº 034/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Processo Seletivo / Temporário",
+   "beneficios_gerais": "Consultar edital",
+   "jornada_geral": "12 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "Até R$ 2.945,73",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-24",
+    "dias_restantes": 32,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 32 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Professor Contratado III, na área de Filosofia do Direito e Sociologia do Direito (1 vaga)"
+   ],
+   "first_seen_ts": "2026-10-23T11:21:38.771994-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 2945.73,
+   "superior_itens": [
+    {
+     "nome": "Professor Contratado III, na área de Filosofia do Direito e Sociologia do Direito",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 2945.73,
+     "salario_bruto": 2945.73,
+     "salario_total": 2945.73,
+     "salario_detalhe": "Bruto: R$ 2.945,73 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "12 horas semanais",
+     "regime": "Processo Seletivo / Temporário",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Consultar edital",
+     "resumo_conteudo": [
+      "Língua Portuguesa (USP Digital): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Professor Contratado III, na área de Filosofia do Direito e Sociologia do Direito): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
+   "termos_formacao": [
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-contratado-iii-na-area-de-filosofia-do-direito-e-sociologia-do-direito-usp-digital",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-contratado-iii-na-area-de-filosofia-do-direito-e-sociologia-do-direito",
+     "url_banca": "https://www.pciconcursos.com.br/provas/usp-digital",
+     "cargo_busca": "Professor Contratado III, na área de Filosofia do Direito e Sociologia do Direito",
+     "banca_busca": "USP Digital",
+     "label_combo": "Professor Contratado III, na área de Filosofia do Direito e Sociologia do Direito · USP Digital"
     }
    }
   },
@@ -24999,7 +25245,7 @@
    ],
    "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
