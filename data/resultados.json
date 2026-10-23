@@ -1,12 +1,12 @@
 {
- "gerado_em": "22/10/2026 12:04",
- "gerado_em_iso": "2026-10-22T12:04:53.926758-03:00",
+ "gerado_em": "23/10/2026 09:41",
+ "gerado_em_iso": "2026-10-23T09:41:53.696227-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
- "total_sp": 161,
- "total_brasil": 596,
+ "total_sp": 157,
+ "total_brasil": 589,
  "ia_ativa": true,
- "novos_ultimas_24h": 6,
- "encerrando_proximos_dias": 51,
+ "novos_ultimas_24h": 7,
+ "encerrando_proximos_dias": 48,
  "fisioterapia": [
   {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433",
@@ -36,10 +36,10 @@
    "faixa_salarial": "Até R$ 17.433,24",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Agente de Gestão Pública - Assistente Administrativo (10 vagas)",
@@ -225,10 +225,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Medicina - Auditoria Médica, São Paulo - SP (1 vaga)",
@@ -375,10 +375,10 @@
    "faixa_salarial": "Até R$ 4.106,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Enfermagem (10 vagas, sendo 9 de ampla concorrência e 1 reservada para pessoas com deficiência)",
@@ -496,10 +496,10 @@
    "faixa_salarial": "Até R$ 13.881,85",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 49,
+    "dias_restantes": 48,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 49 dias para encerrar"
+    "aviso_texto": "Faltam 48 dias para encerrar"
    },
    "cargos_lista": [
     "Apreensor de Animais (CR)",
@@ -585,7 +585,7 @@
    ],
    "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga)"
    ],
@@ -744,10 +744,10 @@
    "faixa_salarial": "Até R$ 10.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Limpeza Urbana (Roçador) (1 vaga)",
@@ -948,10 +948,10 @@
    "faixa_salarial": "Até R$ 4.106,09",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Enfermagem (4 vagas)",
@@ -1073,10 +1073,10 @@
    "faixa_salarial": "Até R$ 8.431,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante de Pedreiro (1 vaga)",
@@ -1390,10 +1390,10 @@
    "faixa_salarial": "Até R$ 5.325,60",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista (11 vagas CR)",
@@ -1603,10 +1603,10 @@
    "faixa_salarial": "Até R$ 8.632,29",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (2 vagas + CR)",
@@ -1854,10 +1854,10 @@
    "faixa_salarial": "Até R$ 5.882,37",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Consultório Dentário/SUS",
@@ -2062,10 +2062,10 @@
    "faixa_salarial": "Até R$ 6.055,67",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Artífice de Obras e Serviços Públicos (CR)",
@@ -2411,10 +2411,10 @@
    "faixa_salarial": "Até R$ 22.537,36",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Serviços Gerais (1 vaga)",
@@ -2592,244 +2592,6 @@
      "label_combo": "Professor · Unique"
     }
    }
-  },
-  {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539",
-   "orgao": "Prefeitura de Tarumã",
-   "titulo": "Prefeitura de Tarumã - SP prorroga inscrições para processo seletivo com salários de até R$ 23.539,17",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "CR até R$ 23.539,17",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 23539.17,
-   "inscricao_ate": "Prorrogado até 22/10/2026",
-   "cidade": "Tarumã",
-   "lat": -22.7429,
-   "lon": -50.5786,
-   "banca": "IPELL Consultoria",
-   "site_banca": "https://www.ipell.com.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539#links",
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA Nº 01/2026 DO PROCESSO SELETIVO Nº 02/2026",
-    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 01/2026 RETIFICADO E CONSOLIDADO"
-   ],
-   "data_prova": "22/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
-   "beneficios_gerais": "Benefícios conforme legislação municipal de Tarumã (ver edital)",
-   "jornada_geral": "20 e 40 horas semanais",
-   "isencao": "✅ Há isenção da taxa (Taxa: R$ 40,00 a R$ 60,00) — Requisitos: candidatos doadores de sangue residentes ou comprovados conforme edital (solicitação de 05 a 20/10/2026).",
-   "faixa_salarial": "Até R$ 23.539,17",
-   "inscricao_status": {
-    "data_fim_iso": "2026-10-22",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Agente Administrativo (CR)",
-    "Agente Comunitário de Saúde (CR)",
-    "Agente de Combate às Endemias (CR)",
-    "Agente de Saneamento (CR)",
-    "Ajudante de Serviços (CR)",
-    "Ajudante Geral (CR)",
-    "Analista Contábil (CR)",
-    "Analista Programador (CR)",
-    "Assistente de Esportes (CR)",
-    "Assistente Social (CR)",
-    "Atendente de Consultório Dentário (CR)",
-    "Auditor Fiscal (CR)",
-    "Auxiliar de Enfermagem (CR)",
-    "Bibliotecário (CR)",
-    "Coordenador Pedagógico (CR)",
-    "Cozinheiro (CR)",
-    "Cuidador (CR)",
-    "Dentista - 20h (CR)",
-    "Dentista - 40h (CR)",
-    "Enfermeiro (CR)",
-    "Educador Social (CR)",
-    "Farmacêutico (CR)",
-    "Fisioterapeuta (CR)",
-    "Fonoaudiólogo (CR)",
-    "Inspetor de Alunos (CR)",
-    "Médico de Saúde da Família (CR)",
-    "Motorista (CR)",
-    "Nutricionista (CR)",
-    "Operador de Máquinas (CR)",
-    "Psicólogo (CR)",
-    "Psicopedagogo (CR)",
-    "Procurador Municipal (CR)",
-    "Técnico em Enfermagem (CR)",
-    "Técnico Agropecuário (CR)",
-    "Terapeuta Ocupacional (CR)",
-    "Tratorista (CR)",
-    "Oficial de Conservação (CR)",
-    "Agente Administrativo",
-    "Agente Comunitário de Saúde",
-    "Agente de Combate às Endemias",
-    "Agente de Saneamento",
-    "Ajudante de Serviços",
-    "Ajudante Geral",
-    "Analista Contábil",
-    "Analista Programador",
-    "Assistente de Esportes",
-    "Assistente Social",
-    "Atendente de Consultório Dentário",
-    "Auditor Fiscal",
-    "Auxiliar de Enfermagem",
-    "Bibliotecário",
-    "Coordenador Pedagógico",
-    "Cozinheiro",
-    "Cuidador",
-    "Dentista - 20h",
-    "Dentista - 40h",
-    "Enfermeiro",
-    "Educador Social",
-    "Farmacêutico",
-    "Fisioterapeuta",
-    "Fonoaudiólogo",
-    "Inspetor de Alunos",
-    "Médico de Saúde da Família",
-    "Motorista",
-    "Nutricionista",
-    "Operador de Máquinas",
-    "Psicólogo",
-    "Psicopedagogo",
-    "Procurador Municipal",
-    "Técnico em Enfermagem",
-    "Técnico Agropecuário",
-    "Terapeuta Ocupacional",
-    "Tratorista",
-    "Oficial de Conservação"
-   ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [
-    "Fisioterapeuta (CR)"
-   ],
-   "fisio": true,
-   "fisio_detalhes": {
-    "cargo": "Fisioterapeuta",
-    "vagas": "Cadastro de Reserva (CR)",
-    "vagas_imediatas": 0,
-    "tem_cr": true,
-    "salario": 3450.0,
-    "salario_bruto": 3450.0,
-    "salario_total": 3450.0,
-    "salario_exibicao": "R$ 3.450,00",
-    "salario_detalhe": "Bruto: R$ 3.450,00 (referência salarial 30h/sem no quadro municipal) + auxílios legais",
-    "carga_horaria": "30h semanais",
-    "regime": "Processo Seletivo",
-    "escolaridade_tipo": "superior",
-    "requisitos": "Graduação em Fisioterapia + Registro ativo no CREFITO-3.",
-    "beneficios": "Conforme legislação municipal de Tarumã (consultar edital)",
-    "resumo_conteudo": [
-     "Língua Portuguesa, Matemática e Conhecimentos Gerais (padrão IPELL — prova no período da tarde em 22/11/2026)",
-     "Legislação do SUS e Saúde Pública",
-     "Conhecimentos Específicos em Fisioterapia: Avaliação cinético-funcional, recursos fisioterapêuticos, reabilitação ortopédica, neurológica, respiratória e atenção básica"
-    ]
-   },
-   "medio_confirmado": [],
-   "medio_outros": [
-    {
-     "nome": "Agente Administrativo / Agente Comunitário de Saúde / Agente de Combate às Endemias / Técnico de Enfermagem",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 2824.0,
-     "salario_detalhe": "Bruto: R$ 2.824,00 (ACS/ACE) e R$ 2.100,00 a R$ 2.840,00 (Ag. Adm. / Téc. Enf.) + benefícios legais",
-     "carga_horaria": "40h semanais",
-     "regime": "Processo Seletivo",
-     "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Agente Administrativo e Agente de Combate às Endemias exigem APENAS Ensino Médio completo; ACS exige Ensino Médio + residir na microárea de atuação; Técnico de Enfermagem exige Curso Técnico + COREN-SP.",
-     "beneficios": "Conforme legislação municipal de Tarumã",
-     "resumo_conteudo": [
-      "Língua Portuguesa, Matemática e Conhecimentos Gerais (IPELL Consultoria)",
-      "Conhecimentos Específicos conforme o cargo (rotinas administrativas e informática para Agente Administrativo; SUS e vigilância para ACS/ACE)"
-     ],
-     "salario_bruto": 2824.0,
-     "salario_total": 2840.0
-    }
-   ],
-   "salario_max": 23539.17,
-   "superior_itens": [
-    {
-     "nome": "Analista Contábil / Analista Programador / Assistente Social / Auditor Fiscal (+30 cargos)",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 23539.17,
-     "salario_bruto": 23539.17,
-     "salario_total": 23539.17,
-     "salario_detalhe": "Bruto: R$ 23.539,17 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 e 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Fisioterapia (CREFITO), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Odontologia (CRO), Biblioteconomia (CRB) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Benefícios conforme legislação municipal de Tarumã (ver edital)",
-     "resumo_conteudo": [
-      "Língua Portuguesa (IPELL Consultoria): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Analista Contábil): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Fisioterapia (CREFITO), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Odontologia (CRO), Biblioteconomia (CRB) (confirmar no edital).",
-   "termos_formacao": [
-    "advogado",
-    "bacharel em direito",
-    "direito",
-    "contador",
-    "contabilidade",
-    "ciencias contabeis",
-    "ciências contábeis",
-    "economista",
-    "economia",
-    "ciencias economicas",
-    "administrador",
-    "administracao",
-    "administração",
-    "serviço social",
-    "psicologia",
-    "pedagogia",
-    "licenciatura plena",
-    "fisioterapia",
-    "enfermagem",
-    "medicina",
-    "farmácia",
-    "nutrição",
-    "odontologia",
-    "biblioteconomia"
-   ],
-   "links_provas_map": {
-    "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-ipell",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/ipell",
-     "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "IPELL",
-     "label_combo": "Fisioterapeuta · IPELL"
-    },
-    "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-administrativo-ipell",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-administrativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/ipell",
-     "cargo_busca": "Agente Administrativo",
-     "banca_busca": "IPELL",
-     "label_combo": "Agente Administrativo · IPELL"
-    },
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/analista-contabil-ipell",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/analista-contabil",
-     "url_banca": "https://www.pciconcursos.com.br/provas/ipell",
-     "cargo_busca": "Analista Contábil",
-     "banca_busca": "IPELL",
-     "label_combo": "Analista Contábil · IPELL"
-    }
-   }
   }
  ],
  "nivel_medio_todas_faixas": [
@@ -2864,10 +2626,10 @@
    "faixa_salarial": "Até R$ 9.856,95",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 49,
+    "dias_restantes": 48,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 49 dias para encerrar"
+    "aviso_texto": "Faltam 48 dias para encerrar"
    },
    "cargos_lista": [
     "Oficial de Justiça (132 vagas e cadastro de reserva)",
@@ -3007,10 +2769,10 @@
    "faixa_salarial": "Até R$ 6.537,74",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Assistente de Suporte Acadêmico II - Área de atuação: Mecatrônica (1 vaga)",
@@ -3114,10 +2876,10 @@
    "faixa_salarial": "Até R$ 11.065,27",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 24,
+    "dias_restantes": 23,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 24 dias para encerrar"
+    "aviso_texto": "Faltam 23 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Operacional",
@@ -3232,174 +2994,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114",
-   "orgao": "Câmara de Dois Córregos",
-   "titulo": "Câmara de Dois Córregos - SP abre concurso público com salários de até R$ 7.114,33",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "4 vagas e CR até R$ 7.114,33",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Médio / Superior",
-   "salario_max_listagem": 7114.33,
-   "inscricao_ate": "22/10/2026",
-   "cidade": "Dois Córregos",
-   "lat": -22.3673,
-   "lon": -48.3819,
-   "banca": "Império Concursos",
-   "site_banca": "https://portal.imperioconcursos.com.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114#links",
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
-   ],
-   "data_prova": "15/11/2026",
-   "regime_geral": "CLT (Celetista)",
-   "beneficios_gerais": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior",
-   "jornada_geral": "20 horas semanais",
-   "isencao": "✅ Há isenção e redução de taxa (Taxa: R$ 60,00 médio) — Requisitos: estudantes, desempregados, inscritos em programas sociais (CadÚnico) e doadores de sangue.",
-   "faixa_salarial": "Até R$ 7.114,33",
-   "inscricao_status": {
-    "data_fim_iso": "2026-10-22",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Analista Administrativo (1 vaga)",
-    "Analista de Comunicação Institucional (1 vaga)",
-    "Analista Legislativo (1 vaga)",
-    "Diretor Administrativo Legislativo (1 vaga)",
-    "Diretor Contábil Legislativo (1 vaga)",
-    "Diretor Jurídico Legislativo (Cadastro Reserva)",
-    "Oficial de Finanças (Cadastro Reserva)",
-    "Oficial Legislativo (Cadastro Reserva)",
-    "Analista Administrativo",
-    "Analista de Comunicação Institucional",
-    "Analista Legislativo",
-    "Diretor Administrativo Legislativo",
-    "Diretor Contábil Legislativo",
-    "Diretor Jurídico Legislativo",
-    "Oficial de Finanças",
-    "Oficial Legislativo"
-   ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [
-    {
-     "nome": "Oficial Legislativo / Oficial de Finanças",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 4879.83,
-     "salario_detalhe": "Bruto: R$ 4.879,83 + R$ 1.150,00 (VA fixo) = R$ 6.029,83 com auxílios",
-     "carga_horaria": "35h semanais",
-     "regime": "CLT (Celetista)",
-     "escolaridade_tipo": "medio",
-     "requisitos": "Oficial de Finanças exige APENAS Ensino Médio completo; Oficial Legislativo exige Ensino Médio completo + CNH categoria 'B' (nenhum deles exige curso técnico).",
-     "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior prevista em lei municipal",
-     "resumo_conteudo": [
-      "Língua Portuguesa, Matemática e Noções de Informática",
-      "Legislação Municipal (Lei Orgânica de Dois Córregos e Regimento Interno da Câmara)",
-      "Conhecimentos Específicos: Administração Pública, Processo Legislativo, Direito Constitucional/Administrativo básico (Oficial Legislativo) ou Contabilidade Pública, Orçamento, LRF e Lei 4.320/64 (Oficial de Finanças)"
-     ],
-     "salario_bruto": 4879.83,
-     "salario_total": 6029.83
-    }
-   ],
-   "medio_outros": [
-    {
-     "nome": "Oficial Legislativo / Oficial de Finanças",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 4879.83,
-     "salario_detalhe": "Bruto: R$ 4.879,83 + R$ 1.150,00 (VA fixo) = R$ 6.029,83 com auxílios",
-     "carga_horaria": "35h semanais",
-     "regime": "CLT (Celetista)",
-     "escolaridade_tipo": "medio",
-     "requisitos": "Oficial de Finanças exige APENAS Ensino Médio completo; Oficial Legislativo exige Ensino Médio completo + CNH categoria 'B' (nenhum deles exige curso técnico).",
-     "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior prevista em lei municipal",
-     "resumo_conteudo": [
-      "Língua Portuguesa, Matemática e Noções de Informática",
-      "Legislação Municipal (Lei Orgânica de Dois Córregos e Regimento Interno da Câmara)",
-      "Conhecimentos Específicos: Administração Pública, Processo Legislativo, Direito Constitucional/Administrativo básico (Oficial Legislativo) ou Contabilidade Pública, Orçamento, LRF e Lei 4.320/64 (Oficial de Finanças)"
-     ],
-     "salario_bruto": 4879.83,
-     "salario_total": 6029.83
-    }
-   ],
-   "salario_max": 7114.33,
-   "superior_itens": [
-    {
-     "nome": "Analista Administrativo / Analista de Comunicação Institucional / Analista Legislativo / Diretor Administrativo Legislativo (+8 cargos)",
-     "vagas": "4 vagas imediatas + CR",
-     "vagas_imediatas": 4,
-     "tem_cr": true,
-     "salario": 7114.33,
-     "salario_bruto": 7114.33,
-     "salario_total": 8264.33,
-     "salario_detalhe": "Bruto: R$ 7.114,33 + R$ 1.150,00 (auxílios) = R$ 8.264,33 com auxílios",
-     "carga_horaria": "20 horas semanais",
-     "regime": "CLT (Celetista)",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Ciências Contábeis, Administração, Economia, Direito, Gestão Pública, Direito (OAB) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Império Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Analista Administrativo): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Aceita formações diversas: Ciências Contábeis, Administração, Economia, Direito, Gestão Pública, Direito (OAB) (confirmar no edital).",
-   "termos_formacao": [
-    "contador",
-    "contabilidade",
-    "ciencias contabeis",
-    "ciências contábeis",
-    "administrador",
-    "administracao",
-    "administração",
-    "economista",
-    "economia",
-    "ciencias economicas",
-    "advogado",
-    "bacharel em direito",
-    "direito",
-    "gestão pública"
-   ],
-   "links_provas_map": {
-    "medio5k": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/oficial-legislativo-imperio",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/oficial-legislativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
-     "cargo_busca": "Oficial Legislativo",
-     "banca_busca": "Império",
-     "label_combo": "Oficial Legislativo · Império"
-    },
-    "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/oficial-legislativo-imperio",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/oficial-legislativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
-     "cargo_busca": "Oficial Legislativo",
-     "banca_busca": "Império",
-     "label_combo": "Oficial Legislativo · Império"
-    },
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/analista-administrativo-imperio",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/analista-administrativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
-     "cargo_busca": "Analista Administrativo",
-     "banca_busca": "Império",
-     "label_combo": "Analista Administrativo · Império"
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428",
    "orgao": "SETEC - Serviços Técnicos Gerais de Campinas",
    "titulo": "SETEC Campinas - SP abre concurso público com salários de até R$ 10.428,05",
@@ -3427,10 +3021,10 @@
    "faixa_salarial": "Até R$ 10.428,05",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 43,
+    "dias_restantes": 42,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 43 dias para encerrar"
+    "aviso_texto": "Faltam 42 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (6 vagas + CR)",
@@ -3595,10 +3189,10 @@
    "faixa_salarial": "Até R$ 9.833,00",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Auxiliar em Saúde Bucal (1 vaga)",
@@ -3761,10 +3355,10 @@
    "faixa_salarial": "Até R$ 8.991,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (1 vaga + CR)",
@@ -3887,10 +3481,10 @@
    "faixa_salarial": "Até R$ 3.846,34",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Guarda Municipal (2 vagas + CR)"
@@ -3964,10 +3558,10 @@
    "faixa_salarial": "Até R$ 8.595,15",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Gerais (1 vaga)",
@@ -4096,10 +3690,10 @@
    "faixa_salarial": "Até R$ 3.774,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-02",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Apoio Administrativo (1 vaga)",
@@ -4174,10 +3768,10 @@
    "faixa_salarial": "Até R$ 5.600,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira (3 vagas)",
@@ -4363,10 +3957,10 @@
    "faixa_salarial": "Até R$ 5.044,35",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 24,
+    "dias_restantes": 23,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 24 dias para encerrar"
+    "aviso_texto": "Faltam 23 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cemitério (1 vaga)",
@@ -4501,10 +4095,10 @@
    "faixa_salarial": "Até R$ 9.717,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 27 dias para encerrar"
+    "aviso_texto": "Faltam 26 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos (CR)",
@@ -4671,10 +4265,10 @@
    "faixa_salarial": "Até R$ 8.738,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Escriturário (5 vagas + CR)",
@@ -4801,10 +4395,10 @@
    "faixa_salarial": "Até R$ 13.881,85",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 49,
+    "dias_restantes": 48,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 49 dias para encerrar"
+    "aviso_texto": "Faltam 48 dias para encerrar"
    },
    "cargos_lista": [
     "Apreensor de Animais (CR)",
@@ -4890,7 +4484,7 @@
    ],
    "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga)"
    ],
@@ -5049,10 +4643,10 @@
    "faixa_salarial": "Até R$ 3.254,51",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Assistente Contábil (1 vaga)"
@@ -5161,10 +4755,10 @@
    "faixa_salarial": "Até R$ 3.254,51",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Técnico de Administração Hospitalar (1 vaga)"
@@ -5239,10 +4833,10 @@
    "faixa_salarial": "Até R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-01",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (CR)",
@@ -5363,10 +4957,10 @@
    "faixa_salarial": "Até R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -5382,7 +4976,7 @@
    ],
    "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -5462,6 +5056,148 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva",
+   "orgao": "Prefeitura de São José da Bela Vista",
+   "titulo": "Prefeitura de São José da Bela Vista - SP abre concurso público para cadastro de reserva",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "Cadastro de reserva até R$ 7.078,72",
+   "cargos_resumo": "Vários Cargos",
+   "niveis": "Médio / Superior",
+   "salario_max_listagem": 7078.72,
+   "inscricao_ate": "05/11/2026",
+   "cidade": "São José da Bela Vista",
+   "lat": -20.5935,
+   "lon": -47.6424,
+   "banca": "Prefeitura Municipal de São José da Bela Vista",
+   "site_banca": "https://www.saojosedabelavista.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva#links",
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026"
+   ],
+   "data_prova": "06/12/2026",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Auxílio-alimentação · Auxílio-alimentação",
+   "jornada_geral": "20 a 40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "Até R$ 7.078,72",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-05",
+    "dias_restantes": 13,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 13 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Agente Fiscal Tributário (cadastro de reserva)",
+    "Agente Orientador Escolar (cadastro de reserva)",
+    "Auxiliar de Farmácia (cadastro de reserva)",
+    "Fiscal de Rendas e Postura (cadastro de reserva)",
+    "Assistente Social (cadastro de reserva)",
+    "Coordenador Pedagógico de Educação Fundamental I (cadastro de reserva)",
+    "Farmacêutico (cadastro de reserva)",
+    "Fonoaudiólogo (cadastro de reserva)",
+    "Médico do Trabalho (cadastro de reserva)",
+    "Nutricionista (cadastro de reserva)",
+    "Nutricionista da Saúde (cadastro de reserva)",
+    "Professor de Educação Básica II - Artes (cadastro de reserva)"
+   ],
+   "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [
+    {
+     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 3200.0,
+     "salario_bruto": 3200.0,
+     "salario_total": 3200.0,
+     "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "medio",
+     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
+     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "salario_max": 7078.72,
+   "superior_itens": [
+    {
+     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+7 cargos)",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 7078.72,
+     "salario_bruto": 7078.72,
+     "salario_total": 7078.72,
+     "salario_detalhe": "Bruto: R$ 7.078,72 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Pedagogia, Licenciatura plena, Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Pedagogia, Licenciatura plena, Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Licenciatura na disciplina (confirmar no edital).",
+   "termos_formacao": [
+    "advogado",
+    "bacharel em direito",
+    "direito",
+    "contador",
+    "contabilidade",
+    "ciencias contabeis",
+    "ciências contábeis",
+    "economista",
+    "economia",
+    "ciencias economicas",
+    "administrador",
+    "administracao",
+    "administração",
+    "serviço social",
+    "pedagogia",
+    "licenciatura plena",
+    "medicina",
+    "farmácia",
+    "nutrição",
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "medio_todos": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "cargo_busca": "Agente Fiscal Tributário",
+     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
+     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+    },
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "cargo_busca": "Agente Fiscal Tributário",
+     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
+     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
    "orgao": "Prefeitura de Tuiuti",
    "titulo": "Prefeitura de Tuiuti - SP abre concurso público com vagas imediatas e cadastro de reserva",
@@ -5489,10 +5225,10 @@
    "faixa_salarial": "Até R$ 5.209,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante Geral (1 vaga)",
@@ -5685,10 +5421,10 @@
    "faixa_salarial": "Até R$ 4.980,82",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (1 vaga + cadastro de reserva)",
@@ -5810,10 +5546,10 @@
    "faixa_salarial": "Até R$ 2.978,36",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 22,
+    "dias_restantes": 21,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 22 dias para encerrar"
+    "aviso_texto": "Faltam 21 dias para encerrar"
    },
    "cargos_lista": [
     "Técnico de Enfermagem (1 vaga)",
@@ -5923,10 +5659,10 @@
    "faixa_salarial": "Até R$ 22.537,36",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Serviços Gerais (1 vaga)",
@@ -6133,10 +5869,10 @@
    "faixa_salarial": "Até R$ 11.102,06",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista (Cadastro de reserva)",
@@ -6269,10 +6005,10 @@
    "faixa_salarial": "Até R$ 5.325,60",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista (11 vagas CR)",
@@ -6455,244 +6191,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539",
-   "orgao": "Prefeitura de Tarumã",
-   "titulo": "Prefeitura de Tarumã - SP prorroga inscrições para processo seletivo com salários de até R$ 23.539,17",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "CR até R$ 23.539,17",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 23539.17,
-   "inscricao_ate": "Prorrogado até 22/10/2026",
-   "cidade": "Tarumã",
-   "lat": -22.7429,
-   "lon": -50.5786,
-   "banca": "IPELL Consultoria",
-   "site_banca": "https://www.ipell.com.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539#links",
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA Nº 01/2026 DO PROCESSO SELETIVO Nº 02/2026",
-    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 01/2026 RETIFICADO E CONSOLIDADO"
-   ],
-   "data_prova": "22/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
-   "beneficios_gerais": "Benefícios conforme legislação municipal de Tarumã (ver edital)",
-   "jornada_geral": "20 e 40 horas semanais",
-   "isencao": "✅ Há isenção da taxa (Taxa: R$ 40,00 a R$ 60,00) — Requisitos: candidatos doadores de sangue residentes ou comprovados conforme edital (solicitação de 05 a 20/10/2026).",
-   "faixa_salarial": "Até R$ 23.539,17",
-   "inscricao_status": {
-    "data_fim_iso": "2026-10-22",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Agente Administrativo (CR)",
-    "Agente Comunitário de Saúde (CR)",
-    "Agente de Combate às Endemias (CR)",
-    "Agente de Saneamento (CR)",
-    "Ajudante de Serviços (CR)",
-    "Ajudante Geral (CR)",
-    "Analista Contábil (CR)",
-    "Analista Programador (CR)",
-    "Assistente de Esportes (CR)",
-    "Assistente Social (CR)",
-    "Atendente de Consultório Dentário (CR)",
-    "Auditor Fiscal (CR)",
-    "Auxiliar de Enfermagem (CR)",
-    "Bibliotecário (CR)",
-    "Coordenador Pedagógico (CR)",
-    "Cozinheiro (CR)",
-    "Cuidador (CR)",
-    "Dentista - 20h (CR)",
-    "Dentista - 40h (CR)",
-    "Enfermeiro (CR)",
-    "Educador Social (CR)",
-    "Farmacêutico (CR)",
-    "Fisioterapeuta (CR)",
-    "Fonoaudiólogo (CR)",
-    "Inspetor de Alunos (CR)",
-    "Médico de Saúde da Família (CR)",
-    "Motorista (CR)",
-    "Nutricionista (CR)",
-    "Operador de Máquinas (CR)",
-    "Psicólogo (CR)",
-    "Psicopedagogo (CR)",
-    "Procurador Municipal (CR)",
-    "Técnico em Enfermagem (CR)",
-    "Técnico Agropecuário (CR)",
-    "Terapeuta Ocupacional (CR)",
-    "Tratorista (CR)",
-    "Oficial de Conservação (CR)",
-    "Agente Administrativo",
-    "Agente Comunitário de Saúde",
-    "Agente de Combate às Endemias",
-    "Agente de Saneamento",
-    "Ajudante de Serviços",
-    "Ajudante Geral",
-    "Analista Contábil",
-    "Analista Programador",
-    "Assistente de Esportes",
-    "Assistente Social",
-    "Atendente de Consultório Dentário",
-    "Auditor Fiscal",
-    "Auxiliar de Enfermagem",
-    "Bibliotecário",
-    "Coordenador Pedagógico",
-    "Cozinheiro",
-    "Cuidador",
-    "Dentista - 20h",
-    "Dentista - 40h",
-    "Enfermeiro",
-    "Educador Social",
-    "Farmacêutico",
-    "Fisioterapeuta",
-    "Fonoaudiólogo",
-    "Inspetor de Alunos",
-    "Médico de Saúde da Família",
-    "Motorista",
-    "Nutricionista",
-    "Operador de Máquinas",
-    "Psicólogo",
-    "Psicopedagogo",
-    "Procurador Municipal",
-    "Técnico em Enfermagem",
-    "Técnico Agropecuário",
-    "Terapeuta Ocupacional",
-    "Tratorista",
-    "Oficial de Conservação"
-   ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [
-    "Fisioterapeuta (CR)"
-   ],
-   "fisio": true,
-   "fisio_detalhes": {
-    "cargo": "Fisioterapeuta",
-    "vagas": "Cadastro de Reserva (CR)",
-    "vagas_imediatas": 0,
-    "tem_cr": true,
-    "salario": 3450.0,
-    "salario_bruto": 3450.0,
-    "salario_total": 3450.0,
-    "salario_exibicao": "R$ 3.450,00",
-    "salario_detalhe": "Bruto: R$ 3.450,00 (referência salarial 30h/sem no quadro municipal) + auxílios legais",
-    "carga_horaria": "30h semanais",
-    "regime": "Processo Seletivo",
-    "escolaridade_tipo": "superior",
-    "requisitos": "Graduação em Fisioterapia + Registro ativo no CREFITO-3.",
-    "beneficios": "Conforme legislação municipal de Tarumã (consultar edital)",
-    "resumo_conteudo": [
-     "Língua Portuguesa, Matemática e Conhecimentos Gerais (padrão IPELL — prova no período da tarde em 22/11/2026)",
-     "Legislação do SUS e Saúde Pública",
-     "Conhecimentos Específicos em Fisioterapia: Avaliação cinético-funcional, recursos fisioterapêuticos, reabilitação ortopédica, neurológica, respiratória e atenção básica"
-    ]
-   },
-   "medio_confirmado": [],
-   "medio_outros": [
-    {
-     "nome": "Agente Administrativo / Agente Comunitário de Saúde / Agente de Combate às Endemias / Técnico de Enfermagem",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 2824.0,
-     "salario_detalhe": "Bruto: R$ 2.824,00 (ACS/ACE) e R$ 2.100,00 a R$ 2.840,00 (Ag. Adm. / Téc. Enf.) + benefícios legais",
-     "carga_horaria": "40h semanais",
-     "regime": "Processo Seletivo",
-     "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Agente Administrativo e Agente de Combate às Endemias exigem APENAS Ensino Médio completo; ACS exige Ensino Médio + residir na microárea de atuação; Técnico de Enfermagem exige Curso Técnico + COREN-SP.",
-     "beneficios": "Conforme legislação municipal de Tarumã",
-     "resumo_conteudo": [
-      "Língua Portuguesa, Matemática e Conhecimentos Gerais (IPELL Consultoria)",
-      "Conhecimentos Específicos conforme o cargo (rotinas administrativas e informática para Agente Administrativo; SUS e vigilância para ACS/ACE)"
-     ],
-     "salario_bruto": 2824.0,
-     "salario_total": 2840.0
-    }
-   ],
-   "salario_max": 23539.17,
-   "superior_itens": [
-    {
-     "nome": "Analista Contábil / Analista Programador / Assistente Social / Auditor Fiscal (+30 cargos)",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 23539.17,
-     "salario_bruto": 23539.17,
-     "salario_total": 23539.17,
-     "salario_detalhe": "Bruto: R$ 23.539,17 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 e 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Fisioterapia (CREFITO), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Odontologia (CRO), Biblioteconomia (CRB) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Benefícios conforme legislação municipal de Tarumã (ver edital)",
-     "resumo_conteudo": [
-      "Língua Portuguesa (IPELL Consultoria): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Analista Contábil): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Fisioterapia (CREFITO), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Odontologia (CRO), Biblioteconomia (CRB) (confirmar no edital).",
-   "termos_formacao": [
-    "advogado",
-    "bacharel em direito",
-    "direito",
-    "contador",
-    "contabilidade",
-    "ciencias contabeis",
-    "ciências contábeis",
-    "economista",
-    "economia",
-    "ciencias economicas",
-    "administrador",
-    "administracao",
-    "administração",
-    "serviço social",
-    "psicologia",
-    "pedagogia",
-    "licenciatura plena",
-    "fisioterapia",
-    "enfermagem",
-    "medicina",
-    "farmácia",
-    "nutrição",
-    "odontologia",
-    "biblioteconomia"
-   ],
-   "links_provas_map": {
-    "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-ipell",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/ipell",
-     "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "IPELL",
-     "label_combo": "Fisioterapeuta · IPELL"
-    },
-    "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-administrativo-ipell",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-administrativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/ipell",
-     "cargo_busca": "Agente Administrativo",
-     "banca_busca": "IPELL",
-     "label_combo": "Agente Administrativo · IPELL"
-    },
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/analista-contabil-ipell",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/analista-contabil",
-     "url_banca": "https://www.pciconcursos.com.br/provas/ipell",
-     "cargo_busca": "Analista Contábil",
-     "banca_busca": "IPELL",
-     "label_combo": "Analista Contábil · IPELL"
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397",
    "orgao": "Prefeitura de Piedade",
    "titulo": "Prefeitura de Piedade - SP publica edital de concurso público com salários de até R$ 17.397,46",
@@ -6720,10 +6218,10 @@
    "faixa_salarial": "Até R$ 17.397,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista de Veículos Pesados (1 vaga)",
@@ -6846,9 +6344,9 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-processo-seletivo-para-profissionais-de-apoio-na-educacao",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-retifica-processo-seletivo-para-profissionais-de-apoio-na-educacao",
    "orgao": "Prefeitura de Itatiba",
-   "titulo": "Prefeitura de Itatiba - SP abre processo seletivo para profissionais de apoio na educação",
+   "titulo": "Prefeitura de Itatiba - SP retifica processo seletivo para profissionais de apoio na educação",
    "uf": "SP",
    "regiao": "Sudeste",
    "vagas_salario": "Cadastro de reserva até R$ 2.786,98",
@@ -6861,30 +6359,32 @@
    "lon": -46.8464,
    "banca": "Secretaria Municipal de Educação",
    "site_banca": "https://www.itatiba.sp.gov.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-processo-seletivo-para-profissionais-de-apoio-na-educacao#links",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-retifica-processo-seletivo-para-profissionais-de-apoio-na-educacao#links",
    "arquivos_edital": [
-    "EDITAL Nº 04/2026"
+    "EDITAL Nº 04/2026",
+    "RETIFICAÇÃO Nº 01",
+    "EDITAL Nº 04/2026 ATUALIZADO"
    ],
    "data_prova": "06/12/2026",
-   "regime_geral": "CLT (Celetista)",
+   "regime_geral": "Processo Seletivo / Temporário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "Consultar edital",
    "isencao": "O valor da taxa de inscrição é de R$ 60,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
    "faixa_salarial": "Até R$ 2.786,98",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio I",
     "Profissional de Apoio II"
    ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
+   "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
+   "is_baseline": false,
+   "novo": true,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -6899,7 +6399,7 @@
      "salario_total": 2786.98,
      "salario_detalhe": "Bruto: R$ 2.786,98 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "Consultar edital",
-     "regime": "CLT (Celetista)",
+     "regime": "Processo Seletivo / Temporário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Profissional de Apoio I / Profissional de Apoio II), sem necessidade de curso técnico profissionalizante.",
      "beneficios": "Consultar edital",
@@ -6952,10 +6452,10 @@
    "faixa_salarial": "Até R$ 6.946,91",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Cozinha (1 vaga + CR)",
@@ -7122,10 +6622,10 @@
    "faixa_salarial": "Até R$ 2.755,86",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Motorista de Caminhão (1 vaga + cadastro de reserva)"
@@ -7200,10 +6700,10 @@
    "faixa_salarial": "Até R$ 8.189,58",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Analista de Sistemas",
@@ -7392,10 +6892,10 @@
    "faixa_salarial": "Até R$ 10.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Limpeza Urbana (Roçador) (1 vaga)",
@@ -7596,10 +7096,10 @@
    "faixa_salarial": "Até R$ 8.632,29",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (2 vagas + CR)",
@@ -7846,10 +7346,10 @@
    "faixa_salarial": "Até R$ 2.613,11",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Cuidador em Serviço Residencial Terapêutico (12 vagas + CR)",
@@ -7960,10 +7460,10 @@
    "faixa_salarial": "Até R$ 2.558,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Desenvolvimento Infantil (5 vagas)",
@@ -8084,10 +7584,10 @@
    "faixa_salarial": "Até R$ 5.118,20",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira (1 vaga)",
@@ -8225,10 +7725,10 @@
    "faixa_salarial": "Até R$ 5.882,37",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Consultório Dentário/SUS",
@@ -8443,10 +7943,10 @@
    "faixa_salarial": "Até R$ 12.154,19",
    "inscricao_status": {
     "data_fim_iso": "2026-10-25",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Fonoaudiólogo - Itapetininga/SP (1 vaga)",
@@ -8576,10 +8076,10 @@
    "faixa_salarial": "Até R$ 8.377,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Inspetor de Alunos (5 vagas + CR)",
@@ -8701,10 +8201,10 @@
    "faixa_salarial": "Até R$ 3.611,12",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Coveiro (Cadastro de reserva)",
@@ -8836,10 +8336,10 @@
    "faixa_salarial": "Até R$ 2.405,20",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Auxiliar Geral (Cadastro de reserva)",
@@ -8921,10 +8421,10 @@
    "faixa_salarial": "Até R$ 8.890,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Atendimento Especial (1 vaga + CR)",
@@ -9037,10 +8537,10 @@
    "faixa_salarial": "Até R$ 12.118,50",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Saúde Bucal (CR)",
@@ -9177,10 +8677,10 @@
    "faixa_salarial": "Até R$ 2.277,89",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde, PSF Centro (1 vaga + CR)",
@@ -9257,10 +8757,10 @@
    "faixa_salarial": "Até R$ 2.260,93",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Telefonista (1 vaga)"
@@ -9335,10 +8835,10 @@
    "faixa_salarial": "Até R$ 2.220,94",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 28,
+    "dias_restantes": 27,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 28 dias para encerrar"
+    "aviso_texto": "Faltam 27 dias para encerrar"
    },
    "cargos_lista": [
     "Guarda Civil Municipal de 3ª Classe, masculino (24 vagas + CR)",
@@ -9414,10 +8914,10 @@
    "faixa_salarial": "Até R$ 6.055,67",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Artífice de Obras e Serviços Públicos (CR)",
@@ -9761,10 +9261,10 @@
    "faixa_salarial": "Até R$ 8.431,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante de Pedreiro (1 vaga)",
@@ -10080,10 +9580,10 @@
    "faixa_salarial": "Até R$ 2.197,08",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Cozinha (1 vaga)",
@@ -10160,10 +9660,10 @@
    "faixa_salarial": "Até R$ 2.154,21",
    "inscricao_status": {
     "data_fim_iso": "2026-10-27",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Enfermagem (5 vagas)",
@@ -10239,10 +9739,10 @@
    "faixa_salarial": "Até R$ 2.100,00",
    "inscricao_status": {
     "data_fim_iso": "2026-10-27",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Garçom (1 vaga)"
@@ -10317,10 +9817,10 @@
    "faixa_salarial": "Até R$ 2.073,62",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Suporte ao Atendimento da Criança (30 vagas + CR)"
@@ -10395,10 +9895,10 @@
    "faixa_salarial": "Até R$ 1.968,83",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 28,
+    "dias_restantes": 27,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 28 dias para encerrar"
+    "aviso_texto": "Faltam 27 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio Escolar (44 vagas)",
@@ -10474,10 +9974,10 @@
    "faixa_salarial": "Até R$ 6.889,64",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar Administrativo (Carapicuíba) (5 vagas)",
@@ -10597,10 +10097,10 @@
    "faixa_salarial": "Até R$ 5.815,68",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Cozinha (1 vaga + CR)",
@@ -10732,10 +10232,10 @@
    "faixa_salarial": "Até R$ 4.193,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 27 dias para encerrar"
+    "aviso_texto": "Faltam 26 dias para encerrar"
    },
    "cargos_lista": [
     "Professor I",
@@ -10845,10 +10345,10 @@
    "faixa_salarial": "Até R$ 5.923,15",
    "inscricao_status": {
     "data_fim_iso": "2026-10-25",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Diretor",
@@ -10946,7 +10446,7 @@
    "cargos_resumo": "Profissional de Apoio Escolar, PEB I, PEB II",
    "niveis": "Médio / Superior",
    "salario_max_listagem": 1621.0,
-   "inscricao_ate": "23/10 a 18/11/2026",
+   "inscricao_ate": "18/11/2026",
    "cidade": "Canitar",
    "lat": -23.004,
    "lon": -49.7839,
@@ -10964,10 +10464,10 @@
    "faixa_salarial": "Até R$ 1.621,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 27 dias para encerrar"
+    "aviso_texto": "Faltam 26 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio Escolar (CR)",
@@ -11087,10 +10587,10 @@
    "faixa_salarial": "Até R$ 5.352,38",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Auxiliar de Desenvolvimento Infantil - ADI (CR)",
@@ -11188,88 +10688,6 @@
  ],
  "nivel_superior_sp": [
   {
-   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-odontologia-de-araraquara-sp",
-   "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-   "titulo": "UNESP abre concurso para professor titular na Faculdade de Odontologia de Araraquara - SP",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "1 vaga até R$ 25.261,98",
-   "cargos_resumo": "Professor Titular",
-   "niveis": "Superior",
-   "salario_max_listagem": 25261.98,
-   "inscricao_ate": "22/10/2026",
-   "cidade": "Araraquara",
-   "lat": -21.7845,
-   "lon": -48.178,
-   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "site_banca": "https://www.unesp.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-odontologia-de-araraquara-sp#links",
-   "arquivos_edital": [
-    "EDITAL Nº 111/2026"
-   ],
-   "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 25.261,98",
-   "inscricao_status": {
-    "data_fim_iso": "2026-10-22",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Professor Titular no Departamento de Morfologia e Clínica Infantil, nas disciplinas de Ortodontia Preventiva I, Ortodontia Preventiva II e Ortopedia Funcional dos Maxilares (1 vaga)"
-   ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [],
-   "medio_outros": [],
-   "salario_max": 25261.98,
-   "superior_itens": [
-    {
-     "nome": "Professor Titular no Departamento de Morfologia e Clínica Infantil, nas disciplinas de Ortodontia Preventiva I, Ortodontia Preventiva II e Ortopedia Funcional dos Maxilares",
-     "vagas": "1 vaga imediata",
-     "vagas_imediatas": 1,
-     "tem_cr": false,
-     "salario": 25261.98,
-     "salario_bruto": 25261.98,
-     "salario_total": 25261.98,
-     "salario_detalhe": "Bruto: R$ 25.261,98 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "Consultar edital",
-     "regime": "Consultar edital",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Consultar edital",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Professor Titular no Departamento de Morfologia e Clínica Infantil, nas disciplinas de Ortodontia Preventiva I, Ortodontia Preventiva II e Ortopedia Funcional dos Maxilares): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
-   "termos_formacao": [
-    "licenciatura na disciplina"
-   ],
-   "links_provas_map": {
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-titular-no-departamento-de-morfologia-e-clinica-infantil-nas-disciplinas-de-ortodontia-preventiva-i-ortodontia-preventiva-ii-e-ortopedia-funcional-dos-maxilares-universidade-estadual-paulista-julio-de-mesquita-filho",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-titular-no-departamento-de-morfologia-e-clinica-infantil-nas-disciplinas-de-ortodontia-preventiva-i-ortodontia-preventiva-ii-e-ortopedia-funcional-dos-maxilares",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
-     "cargo_busca": "Professor Titular no Departamento de Morfologia e Clínica Infantil, nas disciplinas de Ortodontia Preventiva I, Ortodontia Preventiva II e Ortopedia Funcional dos Maxilares",
-     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-     "label_combo": "Professor Titular no Departamento de Morfologia e Clínica Infantil, nas disciplinas de Ortodontia Preventiva I, Ortodontia Preventiva II e Ortopedia Funcional dos Maxilares · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-araraquara-sp",
    "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
    "titulo": "UNESP abre concurso público para professor titular em Araraquara - SP",
@@ -11297,10 +10715,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 27 dias para encerrar"
+    "aviso_texto": "Faltam 26 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular no Departamento de Administração Pública, no conjunto de disciplinas: Direito Constitucional e Tópicos de Direito Constitucional Econômico (1 vaga)"
@@ -11379,10 +10797,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 42,
+    "dias_restantes": 41,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 42 dias para encerrar"
+    "aviso_texto": "Faltam 41 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Química Analítica Quantitativa (1 vaga)"
@@ -11461,10 +10879,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-11-22",
-    "dias_restantes": 31,
+    "dias_restantes": 30,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 31 dias para encerrar"
+    "aviso_texto": "Faltam 30 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular nas disciplinas de Filosofia da Educação, Filosofia da Educação I e Filosofia da Educação II (1 vaga)"
@@ -11543,10 +10961,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-09",
-    "dias_restantes": 48,
+    "dias_restantes": 47,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 48 dias para encerrar"
+    "aviso_texto": "Faltam 47 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Química Medicinal (1 vaga)"
@@ -11626,10 +11044,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-14",
-    "dias_restantes": 53,
+    "dias_restantes": 52,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 53 dias para encerrar"
+    "aviso_texto": "Faltam 52 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Aplicação e Relevância Clínica da Pesquisa, realizada na Ortopedia e Neurocirurgia de Cães e Gatos (1 vaga)"
@@ -11708,10 +11126,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-17",
-    "dias_restantes": 56,
+    "dias_restantes": 55,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 56 dias para encerrar"
+    "aviso_texto": "Faltam 55 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular nas disciplinas de Teoria do Estado e Ciência Política (1 vaga)"
@@ -11790,10 +11208,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-11-30",
-    "dias_restantes": 39,
+    "dias_restantes": 38,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 39 dias para encerrar"
+    "aviso_texto": "Faltam 38 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Teoria da Medida (1 vaga)"
@@ -11873,10 +11291,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2027-02-27",
-    "dias_restantes": 128,
+    "dias_restantes": 127,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 128 dias para encerrar"
+    "aviso_texto": "Faltam 127 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Psicologia Clínica (1 vaga)",
@@ -11957,10 +11375,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2027-03-15",
-    "dias_restantes": 144,
+    "dias_restantes": 143,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 144 dias para encerrar"
+    "aviso_texto": "Faltam 143 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Planejamento Urbano e Regional (1 vaga)"
@@ -12039,10 +11457,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2027-04-06",
-    "dias_restantes": 166,
+    "dias_restantes": 165,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 166 dias para encerrar"
+    "aviso_texto": "Faltam 165 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Química Geral (1 vaga)"
@@ -12122,10 +11540,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2027-04-16",
-    "dias_restantes": 176,
+    "dias_restantes": 175,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 176 dias para encerrar"
+    "aviso_texto": "Faltam 175 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular junto ao Departamento de Administração (1 vaga)",
@@ -12211,10 +11629,10 @@
    "faixa_salarial": "Até R$ 24.309,11",
    "inscricao_status": {
     "data_fim_iso": "2026-12-14",
-    "dias_restantes": 53,
+    "dias_restantes": 52,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 53 dias para encerrar"
+    "aviso_texto": "Faltam 52 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Ciências Sociais (1 vaga)",
@@ -12295,10 +11713,10 @@
    "faixa_salarial": "Até R$ 24.309,11",
    "inscricao_status": {
     "data_fim_iso": "2027-01-15",
-    "dias_restantes": 85,
+    "dias_restantes": 84,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 85 dias para encerrar"
+    "aviso_texto": "Faltam 84 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de História das Relações Internacionais (1 vaga)"
@@ -12377,10 +11795,10 @@
    "faixa_salarial": "Até R$ 24.309,11",
    "inscricao_status": {
     "data_fim_iso": "2027-01-08",
-    "dias_restantes": 78,
+    "dias_restantes": 77,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 78 dias para encerrar"
+    "aviso_texto": "Faltam 77 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular no Departamento de Sistemas de Computação, na área de Sistemas de Computação (1 vaga)"
@@ -12459,10 +11877,10 @@
    "faixa_salarial": "Até R$ 24.309,11",
    "inscricao_status": {
     "data_fim_iso": "2027-02-06",
-    "dias_restantes": 107,
+    "dias_restantes": 106,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 107 dias para encerrar"
+    "aviso_texto": "Faltam 106 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular das áreas de Lepidoptera e Diptera (1 vaga)"
@@ -12514,244 +11932,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539",
-   "orgao": "Prefeitura de Tarumã",
-   "titulo": "Prefeitura de Tarumã - SP prorroga inscrições para processo seletivo com salários de até R$ 23.539,17",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "CR até R$ 23.539,17",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Fundamental / Médio / Técnico / Superior",
-   "salario_max_listagem": 23539.17,
-   "inscricao_ate": "Prorrogado até 22/10/2026",
-   "cidade": "Tarumã",
-   "lat": -22.7429,
-   "lon": -50.5786,
-   "banca": "IPELL Consultoria",
-   "site_banca": "https://www.ipell.com.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539#links",
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA Nº 01/2026 DO PROCESSO SELETIVO Nº 02/2026",
-    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 01/2026 RETIFICADO E CONSOLIDADO"
-   ],
-   "data_prova": "22/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
-   "beneficios_gerais": "Benefícios conforme legislação municipal de Tarumã (ver edital)",
-   "jornada_geral": "20 e 40 horas semanais",
-   "isencao": "✅ Há isenção da taxa (Taxa: R$ 40,00 a R$ 60,00) — Requisitos: candidatos doadores de sangue residentes ou comprovados conforme edital (solicitação de 05 a 20/10/2026).",
-   "faixa_salarial": "Até R$ 23.539,17",
-   "inscricao_status": {
-    "data_fim_iso": "2026-10-22",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Agente Administrativo (CR)",
-    "Agente Comunitário de Saúde (CR)",
-    "Agente de Combate às Endemias (CR)",
-    "Agente de Saneamento (CR)",
-    "Ajudante de Serviços (CR)",
-    "Ajudante Geral (CR)",
-    "Analista Contábil (CR)",
-    "Analista Programador (CR)",
-    "Assistente de Esportes (CR)",
-    "Assistente Social (CR)",
-    "Atendente de Consultório Dentário (CR)",
-    "Auditor Fiscal (CR)",
-    "Auxiliar de Enfermagem (CR)",
-    "Bibliotecário (CR)",
-    "Coordenador Pedagógico (CR)",
-    "Cozinheiro (CR)",
-    "Cuidador (CR)",
-    "Dentista - 20h (CR)",
-    "Dentista - 40h (CR)",
-    "Enfermeiro (CR)",
-    "Educador Social (CR)",
-    "Farmacêutico (CR)",
-    "Fisioterapeuta (CR)",
-    "Fonoaudiólogo (CR)",
-    "Inspetor de Alunos (CR)",
-    "Médico de Saúde da Família (CR)",
-    "Motorista (CR)",
-    "Nutricionista (CR)",
-    "Operador de Máquinas (CR)",
-    "Psicólogo (CR)",
-    "Psicopedagogo (CR)",
-    "Procurador Municipal (CR)",
-    "Técnico em Enfermagem (CR)",
-    "Técnico Agropecuário (CR)",
-    "Terapeuta Ocupacional (CR)",
-    "Tratorista (CR)",
-    "Oficial de Conservação (CR)",
-    "Agente Administrativo",
-    "Agente Comunitário de Saúde",
-    "Agente de Combate às Endemias",
-    "Agente de Saneamento",
-    "Ajudante de Serviços",
-    "Ajudante Geral",
-    "Analista Contábil",
-    "Analista Programador",
-    "Assistente de Esportes",
-    "Assistente Social",
-    "Atendente de Consultório Dentário",
-    "Auditor Fiscal",
-    "Auxiliar de Enfermagem",
-    "Bibliotecário",
-    "Coordenador Pedagógico",
-    "Cozinheiro",
-    "Cuidador",
-    "Dentista - 20h",
-    "Dentista - 40h",
-    "Enfermeiro",
-    "Educador Social",
-    "Farmacêutico",
-    "Fisioterapeuta",
-    "Fonoaudiólogo",
-    "Inspetor de Alunos",
-    "Médico de Saúde da Família",
-    "Motorista",
-    "Nutricionista",
-    "Operador de Máquinas",
-    "Psicólogo",
-    "Psicopedagogo",
-    "Procurador Municipal",
-    "Técnico em Enfermagem",
-    "Técnico Agropecuário",
-    "Terapeuta Ocupacional",
-    "Tratorista",
-    "Oficial de Conservação"
-   ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [
-    "Fisioterapeuta (CR)"
-   ],
-   "fisio": true,
-   "fisio_detalhes": {
-    "cargo": "Fisioterapeuta",
-    "vagas": "Cadastro de Reserva (CR)",
-    "vagas_imediatas": 0,
-    "tem_cr": true,
-    "salario": 3450.0,
-    "salario_bruto": 3450.0,
-    "salario_total": 3450.0,
-    "salario_exibicao": "R$ 3.450,00",
-    "salario_detalhe": "Bruto: R$ 3.450,00 (referência salarial 30h/sem no quadro municipal) + auxílios legais",
-    "carga_horaria": "30h semanais",
-    "regime": "Processo Seletivo",
-    "escolaridade_tipo": "superior",
-    "requisitos": "Graduação em Fisioterapia + Registro ativo no CREFITO-3.",
-    "beneficios": "Conforme legislação municipal de Tarumã (consultar edital)",
-    "resumo_conteudo": [
-     "Língua Portuguesa, Matemática e Conhecimentos Gerais (padrão IPELL — prova no período da tarde em 22/11/2026)",
-     "Legislação do SUS e Saúde Pública",
-     "Conhecimentos Específicos em Fisioterapia: Avaliação cinético-funcional, recursos fisioterapêuticos, reabilitação ortopédica, neurológica, respiratória e atenção básica"
-    ]
-   },
-   "medio_confirmado": [],
-   "medio_outros": [
-    {
-     "nome": "Agente Administrativo / Agente Comunitário de Saúde / Agente de Combate às Endemias / Técnico de Enfermagem",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 2824.0,
-     "salario_detalhe": "Bruto: R$ 2.824,00 (ACS/ACE) e R$ 2.100,00 a R$ 2.840,00 (Ag. Adm. / Téc. Enf.) + benefícios legais",
-     "carga_horaria": "40h semanais",
-     "regime": "Processo Seletivo",
-     "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Agente Administrativo e Agente de Combate às Endemias exigem APENAS Ensino Médio completo; ACS exige Ensino Médio + residir na microárea de atuação; Técnico de Enfermagem exige Curso Técnico + COREN-SP.",
-     "beneficios": "Conforme legislação municipal de Tarumã",
-     "resumo_conteudo": [
-      "Língua Portuguesa, Matemática e Conhecimentos Gerais (IPELL Consultoria)",
-      "Conhecimentos Específicos conforme o cargo (rotinas administrativas e informática para Agente Administrativo; SUS e vigilância para ACS/ACE)"
-     ],
-     "salario_bruto": 2824.0,
-     "salario_total": 2840.0
-    }
-   ],
-   "salario_max": 23539.17,
-   "superior_itens": [
-    {
-     "nome": "Analista Contábil / Analista Programador / Assistente Social / Auditor Fiscal (+30 cargos)",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 23539.17,
-     "salario_bruto": 23539.17,
-     "salario_total": 23539.17,
-     "salario_detalhe": "Bruto: R$ 23.539,17 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 e 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Fisioterapia (CREFITO), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Odontologia (CRO), Biblioteconomia (CRB) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Benefícios conforme legislação municipal de Tarumã (ver edital)",
-     "resumo_conteudo": [
-      "Língua Portuguesa (IPELL Consultoria): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Analista Contábil): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Fisioterapia (CREFITO), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Odontologia (CRO), Biblioteconomia (CRB) (confirmar no edital).",
-   "termos_formacao": [
-    "advogado",
-    "bacharel em direito",
-    "direito",
-    "contador",
-    "contabilidade",
-    "ciencias contabeis",
-    "ciências contábeis",
-    "economista",
-    "economia",
-    "ciencias economicas",
-    "administrador",
-    "administracao",
-    "administração",
-    "serviço social",
-    "psicologia",
-    "pedagogia",
-    "licenciatura plena",
-    "fisioterapia",
-    "enfermagem",
-    "medicina",
-    "farmácia",
-    "nutrição",
-    "odontologia",
-    "biblioteconomia"
-   ],
-   "links_provas_map": {
-    "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-ipell",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/ipell",
-     "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "IPELL",
-     "label_combo": "Fisioterapeuta · IPELL"
-    },
-    "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-administrativo-ipell",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-administrativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/ipell",
-     "cargo_busca": "Agente Administrativo",
-     "banca_busca": "IPELL",
-     "label_combo": "Agente Administrativo · IPELL"
-    },
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/analista-contabil-ipell",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/analista-contabil",
-     "url_banca": "https://www.pciconcursos.com.br/provas/ipell",
-     "cargo_busca": "Analista Contábil",
-     "banca_busca": "IPELL",
-     "label_combo": "Analista Contábil · IPELL"
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquarituba-sp-divulga-retificacao-do-concurso-publico-com-salarios-de-ate-22537",
    "orgao": "Prefeitura de Taquarituba",
    "titulo": "Prefeitura de Taquarituba - SP divulga retificação do concurso público com salários de até R$ 22.537,36",
@@ -12781,10 +11961,10 @@
    "faixa_salarial": "Até R$ 22.537,36",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Serviços Gerais (1 vaga)",
@@ -12991,10 +12171,10 @@
    "faixa_salarial": "Até R$ 17.433,24",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Agente de Gestão Pública - Assistente Administrativo (10 vagas)",
@@ -13179,10 +12359,10 @@
    "faixa_salarial": "Até R$ 17.397,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista de Veículos Pesados (1 vaga)",
@@ -13332,10 +12512,10 @@
    "faixa_salarial": "Até R$ 16.994,31",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Professor Doutor na área de Ortodontia (1 vaga)"
@@ -13415,10 +12595,10 @@
    "faixa_salarial": "Até R$ 16.994,31",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 20,
+    "dias_restantes": 19,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 20 dias para encerrar"
+    "aviso_texto": "Faltam 19 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de Energia, Térmica e Fluidos e Petróleo (1 vaga)"
@@ -13497,10 +12677,10 @@
    "faixa_salarial": "Até R$ 16.994,31",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Professor Doutor na área de Física Geral (1 vaga)"
@@ -13581,10 +12761,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Sistemas de Computação (1 vaga)"
@@ -13663,10 +12843,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Educação (1 vaga)"
@@ -13745,10 +12925,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 20,
+    "dias_restantes": 19,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 20 dias para encerrar"
+    "aviso_texto": "Faltam 19 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Engenharia Sanitária, junto ao Departamento de Engenharia Ambiental (1 vaga)"
@@ -13827,10 +13007,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-26",
-    "dias_restantes": 35,
+    "dias_restantes": 34,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 35 dias para encerrar"
+    "aviso_texto": "Faltam 34 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Ciências Agrárias, junto ao Departamento de Produção Animal (1 vaga)"
@@ -13909,10 +13089,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de Representação e Linguagem (1 vaga)"
@@ -13992,10 +13172,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2027-01-19",
-    "dias_restantes": 89,
+    "dias_restantes": 88,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 89 dias para encerrar"
+    "aviso_texto": "Faltam 88 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de Epidemiologia e Farmacoepidemiologia (1 vaga)"
@@ -14075,10 +13255,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2027-01-18",
-    "dias_restantes": 88,
+    "dias_restantes": 87,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 88 dias para encerrar"
+    "aviso_texto": "Faltam 87 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de empreendedorismo tecnológico com análise de investimento e estratégia (1 vaga)"
@@ -14157,10 +13337,10 @@
    "faixa_salarial": "Até R$ 16.920,47",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Ciências Políticas, no Departamento de Ciências Políticas e Econômicas (1 vaga)"
@@ -14239,10 +13419,10 @@
    "faixa_salarial": "Até R$ 15.294,61",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Pesquisador IV na área de Produção Sustentável em Aquicultura (1 vaga)"
@@ -14319,10 +13499,10 @@
    "faixa_salarial": "Até R$ 13.881,85",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 49,
+    "dias_restantes": 48,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 49 dias para encerrar"
+    "aviso_texto": "Faltam 48 dias para encerrar"
    },
    "cargos_lista": [
     "Apreensor de Animais (CR)",
@@ -14408,7 +13588,7 @@
    ],
    "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga)"
    ],
@@ -14577,10 +13757,10 @@
    "faixa_salarial": "Até R$ 12.154,19",
    "inscricao_status": {
     "data_fim_iso": "2026-10-25",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Fonoaudiólogo - Itapetininga/SP (1 vaga)",
@@ -14710,10 +13890,10 @@
    "faixa_salarial": "Até R$ 12.118,50",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Saúde Bucal (CR)",
@@ -14850,10 +14030,10 @@
    "faixa_salarial": "Até R$ 11.427,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 43,
+    "dias_restantes": 42,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 43 dias para encerrar"
+    "aviso_texto": "Faltam 42 dias para encerrar"
    },
    "cargos_lista": [
     "Procurador (1 vaga + cadastro reserva)"
@@ -14932,10 +14112,10 @@
    "faixa_salarial": "Até R$ 11.359,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Analista em Planejamento, Orçamento e Finanças Públicas - Orçamento e Finanças Públicas (20 vagas)",
@@ -15019,10 +14199,10 @@
    "faixa_salarial": "Até R$ 11.102,06",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista (Cadastro de reserva)",
@@ -15155,10 +14335,10 @@
    "faixa_salarial": "Até R$ 11.065,27",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 24,
+    "dias_restantes": 23,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 24 dias para encerrar"
+    "aviso_texto": "Faltam 23 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Operacional",
@@ -15300,10 +14480,10 @@
    "faixa_salarial": "Até R$ 10.744,00",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Analista de Comunicação (1 vaga)",
@@ -15401,10 +14581,10 @@
    "faixa_salarial": "Até R$ 10.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Limpeza Urbana (Roçador) (1 vaga)",
@@ -15605,10 +14785,10 @@
    "faixa_salarial": "Até R$ 10.428,05",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 43,
+    "dias_restantes": 42,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 43 dias para encerrar"
+    "aviso_texto": "Faltam 42 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (6 vagas + CR)",
@@ -15776,10 +14956,10 @@
    "faixa_salarial": "Até R$ 9.856,95",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 49,
+    "dias_restantes": 48,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 49 dias para encerrar"
+    "aviso_texto": "Faltam 48 dias para encerrar"
    },
    "cargos_lista": [
     "Oficial de Justiça (132 vagas e cadastro de reserva)",
@@ -15919,10 +15099,10 @@
    "faixa_salarial": "Até R$ 9.833,00",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Auxiliar em Saúde Bucal (1 vaga)",
@@ -16085,10 +15265,10 @@
    "faixa_salarial": "Até R$ 9.717,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 27 dias para encerrar"
+    "aviso_texto": "Faltam 26 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos (CR)",
@@ -16255,10 +15435,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Medicina - Auditoria Médica, São Paulo - SP (1 vaga)",
@@ -16405,10 +15585,10 @@
    "faixa_salarial": "Até R$ 9.052,47",
    "inscricao_status": {
     "data_fim_iso": "2026-12-22",
-    "dias_restantes": 61,
+    "dias_restantes": 60,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 61 dias para encerrar"
+    "aviso_texto": "Faltam 60 dias para encerrar"
    },
    "cargos_lista": [
     "Pesquisador Científico I A, área de Agroecologia e manejo sustentável: I, Agroecologia (5 vagas)",
@@ -16529,10 +15709,10 @@
    "faixa_salarial": "Até R$ 8.991,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (1 vaga + CR)",
@@ -16655,10 +15835,10 @@
    "faixa_salarial": "Até R$ 8.890,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Atendimento Especial (1 vaga + CR)",
@@ -16771,10 +15951,10 @@
    "faixa_salarial": "Até R$ 8.738,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Escriturário (5 vagas + CR)",
@@ -16901,10 +16081,10 @@
    "faixa_salarial": "Até R$ 8.644,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Diretor de Escola (1 vaga)",
@@ -16989,10 +16169,10 @@
    "faixa_salarial": "Até R$ 8.632,29",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (2 vagas + CR)",
@@ -17240,10 +16420,10 @@
    "faixa_salarial": "Até R$ 8.595,15",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Gerais (1 vaga)",
@@ -17372,10 +16552,10 @@
    "faixa_salarial": "Até R$ 8.431,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante de Pedreiro (1 vaga)",
@@ -17690,10 +16870,10 @@
    "faixa_salarial": "Até R$ 8.377,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Inspetor de Alunos (5 vagas + CR)",
@@ -17815,10 +16995,10 @@
    "faixa_salarial": "Até R$ 8.340,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 22,
+    "dias_restantes": 21,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 22 dias para encerrar"
+    "aviso_texto": "Faltam 21 dias para encerrar"
    },
    "cargos_lista": [
     "Professor substituto de História (1 vaga)",
@@ -17933,10 +17113,10 @@
    "faixa_salarial": "Até R$ 8.340,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 26,
+    "dias_restantes": 25,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 26 dias para encerrar"
+    "aviso_texto": "Faltam 25 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente A Substituto, na área de Química/Química Analítica (2 vagas)"
@@ -18015,10 +17195,10 @@
    "faixa_salarial": "Até R$ 8.189,58",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Analista de Sistemas",
@@ -18207,10 +17387,10 @@
    "faixa_salarial": "Até R$ 7.477,48",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na Disciplina de Transplante de Órgãos do Aparelho Digestivo (1 vaga)"
@@ -18292,10 +17472,10 @@
    "faixa_salarial": "Até R$ 6.397,19",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 26,
+    "dias_restantes": 25,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 26 dias para encerrar"
+    "aviso_texto": "Faltam 25 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Artes Cênicas - São José do Rio Preto (1 vaga)",
@@ -18383,170 +17563,144 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114",
-   "orgao": "Câmara de Dois Córregos",
-   "titulo": "Câmara de Dois Córregos - SP abre concurso público com salários de até R$ 7.114,33",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva",
+   "orgao": "Prefeitura de São José da Bela Vista",
+   "titulo": "Prefeitura de São José da Bela Vista - SP abre concurso público para cadastro de reserva",
    "uf": "SP",
    "regiao": "Sudeste",
-   "vagas_salario": "4 vagas e CR até R$ 7.114,33",
+   "vagas_salario": "Cadastro de reserva até R$ 7.078,72",
    "cargos_resumo": "Vários Cargos",
    "niveis": "Médio / Superior",
-   "salario_max_listagem": 7114.33,
-   "inscricao_ate": "22/10/2026",
-   "cidade": "Dois Córregos",
-   "lat": -22.3673,
-   "lon": -48.3819,
-   "banca": "Império Concursos",
-   "site_banca": "https://portal.imperioconcursos.com.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114#links",
+   "salario_max_listagem": 7078.72,
+   "inscricao_ate": "05/11/2026",
+   "cidade": "São José da Bela Vista",
+   "lat": -20.5935,
+   "lon": -47.6424,
+   "banca": "Prefeitura Municipal de São José da Bela Vista",
+   "site_banca": "https://www.saojosedabelavista.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva#links",
    "arquivos_edital": [
-    "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
+    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026"
    ],
-   "data_prova": "15/11/2026",
-   "regime_geral": "CLT (Celetista)",
-   "beneficios_gerais": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior",
-   "jornada_geral": "20 horas semanais",
-   "isencao": "✅ Há isenção e redução de taxa (Taxa: R$ 60,00 médio) — Requisitos: estudantes, desempregados, inscritos em programas sociais (CadÚnico) e doadores de sangue.",
-   "faixa_salarial": "Até R$ 7.114,33",
+   "data_prova": "06/12/2026",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Auxílio-alimentação · Auxílio-alimentação",
+   "jornada_geral": "20 a 40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "Até R$ 7.078,72",
    "inscricao_status": {
-    "data_fim_iso": "2026-10-22",
-    "dias_restantes": 0,
-    "encerrando": true,
+    "data_fim_iso": "2026-11-05",
+    "dias_restantes": 13,
+    "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
-    "Analista Administrativo (1 vaga)",
-    "Analista de Comunicação Institucional (1 vaga)",
-    "Analista Legislativo (1 vaga)",
-    "Diretor Administrativo Legislativo (1 vaga)",
-    "Diretor Contábil Legislativo (1 vaga)",
-    "Diretor Jurídico Legislativo (Cadastro Reserva)",
-    "Oficial de Finanças (Cadastro Reserva)",
-    "Oficial Legislativo (Cadastro Reserva)",
-    "Analista Administrativo",
-    "Analista de Comunicação Institucional",
-    "Analista Legislativo",
-    "Diretor Administrativo Legislativo",
-    "Diretor Contábil Legislativo",
-    "Diretor Jurídico Legislativo",
-    "Oficial de Finanças",
-    "Oficial Legislativo"
+    "Agente Fiscal Tributário (cadastro de reserva)",
+    "Agente Orientador Escolar (cadastro de reserva)",
+    "Auxiliar de Farmácia (cadastro de reserva)",
+    "Fiscal de Rendas e Postura (cadastro de reserva)",
+    "Assistente Social (cadastro de reserva)",
+    "Coordenador Pedagógico de Educação Fundamental I (cadastro de reserva)",
+    "Farmacêutico (cadastro de reserva)",
+    "Fonoaudiólogo (cadastro de reserva)",
+    "Médico do Trabalho (cadastro de reserva)",
+    "Nutricionista (cadastro de reserva)",
+    "Nutricionista da Saúde (cadastro de reserva)",
+    "Professor de Educação Básica II - Artes (cadastro de reserva)"
    ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
+   "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
+   "is_baseline": false,
+   "novo": true,
    "fisio_linhas": [],
    "fisio": false,
-   "medio_confirmado": [
-    {
-     "nome": "Oficial Legislativo / Oficial de Finanças",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 4879.83,
-     "salario_detalhe": "Bruto: R$ 4.879,83 + R$ 1.150,00 (VA fixo) = R$ 6.029,83 com auxílios",
-     "carga_horaria": "35h semanais",
-     "regime": "CLT (Celetista)",
-     "escolaridade_tipo": "medio",
-     "requisitos": "Oficial de Finanças exige APENAS Ensino Médio completo; Oficial Legislativo exige Ensino Médio completo + CNH categoria 'B' (nenhum deles exige curso técnico).",
-     "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior prevista em lei municipal",
-     "resumo_conteudo": [
-      "Língua Portuguesa, Matemática e Noções de Informática",
-      "Legislação Municipal (Lei Orgânica de Dois Córregos e Regimento Interno da Câmara)",
-      "Conhecimentos Específicos: Administração Pública, Processo Legislativo, Direito Constitucional/Administrativo básico (Oficial Legislativo) ou Contabilidade Pública, Orçamento, LRF e Lei 4.320/64 (Oficial de Finanças)"
-     ],
-     "salario_bruto": 4879.83,
-     "salario_total": 6029.83
-    }
-   ],
+   "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Oficial Legislativo / Oficial de Finanças",
+     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
-     "salario": 4879.83,
-     "salario_detalhe": "Bruto: R$ 4.879,83 + R$ 1.150,00 (VA fixo) = R$ 6.029,83 com auxílios",
-     "carga_horaria": "35h semanais",
-     "regime": "CLT (Celetista)",
+     "salario": 3200.0,
+     "salario_bruto": 3200.0,
+     "salario_total": 3200.0,
+     "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
      "escolaridade_tipo": "medio",
-     "requisitos": "Oficial de Finanças exige APENAS Ensino Médio completo; Oficial Legislativo exige Ensino Médio completo + CNH categoria 'B' (nenhum deles exige curso técnico).",
-     "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior prevista em lei municipal",
+     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
+     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
      "resumo_conteudo": [
-      "Língua Portuguesa, Matemática e Noções de Informática",
-      "Legislação Municipal (Lei Orgânica de Dois Córregos e Regimento Interno da Câmara)",
-      "Conhecimentos Específicos: Administração Pública, Processo Legislativo, Direito Constitucional/Administrativo básico (Oficial Legislativo) ou Contabilidade Pública, Orçamento, LRF e Lei 4.320/64 (Oficial de Finanças)"
-     ],
-     "salario_bruto": 4879.83,
-     "salario_total": 6029.83
-    }
-   ],
-   "salario_max": 7114.33,
-   "superior_itens": [
-    {
-     "nome": "Analista Administrativo / Analista de Comunicação Institucional / Analista Legislativo / Diretor Administrativo Legislativo (+8 cargos)",
-     "vagas": "4 vagas imediatas + CR",
-     "vagas_imediatas": 4,
-     "tem_cr": true,
-     "salario": 7114.33,
-     "salario_bruto": 7114.33,
-     "salario_total": 8264.33,
-     "salario_detalhe": "Bruto: R$ 7.114,33 + R$ 1.150,00 (auxílios) = R$ 8.264,33 com auxílios",
-     "carga_horaria": "20 horas semanais",
-     "regime": "CLT (Celetista)",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Ciências Contábeis, Administração, Economia, Direito, Gestão Pública, Direito (OAB) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "VA (Vale-alimentação): R$ 1.150,00/mês + gratificação por formação superior",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Império Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Analista Administrativo): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+      "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
      ]
     }
    ],
-   "formacoes_aceitas": "Aceita formações diversas: Ciências Contábeis, Administração, Economia, Direito, Gestão Pública, Direito (OAB) (confirmar no edital).",
+   "salario_max": 7078.72,
+   "superior_itens": [
+    {
+     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+7 cargos)",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 7078.72,
+     "salario_bruto": 7078.72,
+     "salario_total": 7078.72,
+     "salario_detalhe": "Bruto: R$ 7.078,72 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Pedagogia, Licenciatura plena, Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Pedagogia, Licenciatura plena, Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Licenciatura na disciplina (confirmar no edital).",
    "termos_formacao": [
+    "advogado",
+    "bacharel em direito",
+    "direito",
     "contador",
     "contabilidade",
     "ciencias contabeis",
     "ciências contábeis",
-    "administrador",
-    "administracao",
-    "administração",
     "economista",
     "economia",
     "ciencias economicas",
-    "advogado",
-    "bacharel em direito",
-    "direito",
-    "gestão pública"
+    "administrador",
+    "administracao",
+    "administração",
+    "serviço social",
+    "pedagogia",
+    "licenciatura plena",
+    "medicina",
+    "farmácia",
+    "nutrição",
+    "licenciatura na disciplina"
    ],
    "links_provas_map": {
-    "medio5k": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/oficial-legislativo-imperio",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/oficial-legislativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
-     "cargo_busca": "Oficial Legislativo",
-     "banca_busca": "Império",
-     "label_combo": "Oficial Legislativo · Império"
-    },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/oficial-legislativo-imperio",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/oficial-legislativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
-     "cargo_busca": "Oficial Legislativo",
-     "banca_busca": "Império",
-     "label_combo": "Oficial Legislativo · Império"
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "cargo_busca": "Agente Fiscal Tributário",
+     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
+     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/analista-administrativo-imperio",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/analista-administrativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
-     "cargo_busca": "Analista Administrativo",
-     "banca_busca": "Império",
-     "label_combo": "Analista Administrativo · Império"
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "cargo_busca": "Agente Fiscal Tributário",
+     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
+     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
     }
    }
   },
@@ -18578,10 +17732,10 @@
    "faixa_salarial": "Até R$ 6.946,91",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Cozinha (1 vaga + CR)",
@@ -18748,10 +17902,10 @@
    "faixa_salarial": "Até R$ 6.889,64",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar Administrativo (Carapicuíba) (5 vagas)",
@@ -18871,10 +18025,10 @@
    "faixa_salarial": "Até R$ 6.640,00",
    "inscricao_status": {
     "data_fim_iso": "2026-10-28",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Coordenador Pedagógico de Escola da Educação Básica (1 vaga)",
@@ -18933,94 +18087,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-general-salgado-sp-abre-concurso-para-cargos-na-educacao",
-   "orgao": "Prefeitura de General Salgado",
-   "titulo": "Prefeitura de General Salgado - SP abre concurso para cargos na educação",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "5 vagas até R$ 6.319,48",
-   "cargos_resumo": "Diretor de Escola, Professor Coordenador, Professor Auxiliar I",
-   "niveis": "Superior",
-   "salario_max_listagem": 6319.48,
-   "inscricao_ate": "22/10/2026",
-   "cidade": "General Salgado",
-   "lat": -20.6485,
-   "lon": -50.364,
-   "banca": "Prefeitura Municipal de General Salgado",
-   "site_banca": "https://www.generalsalgado.sp.gov.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-general-salgado-sp-abre-concurso-para-cargos-na-educacao#links",
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA DE INSCRIÇÕES DO CONCURSO PÚBLICO Nº 01/2026"
-   ],
-   "data_prova": "22/11/2026",
-   "regime_geral": "Estatutário",
-   "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "30 a 40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 100,00 para todos os cargos e não haverá isenção total ou parcial.",
-   "faixa_salarial": "Até R$ 6.319,48",
-   "inscricao_status": {
-    "data_fim_iso": "2026-10-22",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Diretor de Escola (1 vaga + CR)",
-    "Professor Coordenador (1 vaga + CR)",
-    "Professor Auxiliar I (1 vaga + CR)",
-    "Professor Auxiliar II - Língua Portuguesa (1 vaga + CR)",
-    "Professor Auxiliar II - Língua Matemática (1 vaga + CR)"
-   ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [],
-   "medio_outros": [],
-   "salario_max": 6319.48,
-   "superior_itens": [
-    {
-     "nome": "Diretor de Escola / Professor Coordenador / Professor Auxiliar I / Professor Auxiliar II - Língua Portuguesa (+1 cargos)",
-     "vagas": "5 vagas imediatas",
-     "vagas_imediatas": 5,
-     "tem_cr": false,
-     "salario": 6319.48,
-     "salario_bruto": 6319.48,
-     "salario_total": 6319.48,
-     "salario_detalhe": "Bruto: R$ 6.319,48 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "30 a 40 horas semanais",
-     "regime": "Estatutário",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Pedagogia, Licenciatura plena, Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Consultar edital",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de General Salgado): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Diretor de Escola): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Aceita formações diversas: Pedagogia, Licenciatura plena, Licenciatura na disciplina (confirmar no edital).",
-   "termos_formacao": [
-    "pedagogia",
-    "licenciatura plena",
-    "licenciatura na disciplina"
-   ],
-   "links_provas_map": {
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/diretor-de-escola-prefeitura-municipal-de-general-salgado",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/diretor-de-escola",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-general-salgado",
-     "cargo_busca": "Diretor de Escola",
-     "banca_busca": "Prefeitura Municipal de General Salgado",
-     "label_combo": "Diretor de Escola · Prefeitura Municipal de General Salgado"
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/famesp-divulga-10-processos-seletivos-em-marilia-sp",
    "orgao": "FAMESP - Fundação para o Desenvolvimento Médico e Hospitalar",
    "titulo": "FAMESP divulga 10 processos seletivos em Marília - SP",
@@ -19057,10 +18123,10 @@
    "faixa_salarial": "Até R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -19076,7 +18142,7 @@
    ],
    "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -19183,10 +18249,10 @@
    "faixa_salarial": "Até R$ 6.055,67",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Artífice de Obras e Serviços Públicos (CR)",
@@ -19531,10 +18597,10 @@
    "faixa_salarial": "Até R$ 5.979,93",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Médico I - Cirurgia do Ombro e Cotovelo (1 vaga)",
@@ -19620,10 +18686,10 @@
    "faixa_salarial": "Até R$ 5.979,93",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Médico I - Cirurgia Avançada em Tumores da Pelve Feminina (1 vaga)",
@@ -19707,10 +18773,10 @@
    "faixa_salarial": "Até R$ 5.923,15",
    "inscricao_status": {
     "data_fim_iso": "2026-10-25",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Diretor",
@@ -19826,10 +18892,10 @@
    "faixa_salarial": "Até R$ 5.901,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Médico do Trabalho"
@@ -19909,10 +18975,10 @@
    "faixa_salarial": "Até R$ 5.882,37",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Consultório Dentário/SUS",
@@ -20117,10 +19183,10 @@
    "faixa_salarial": "Até R$ 5.860,31",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Analista em Gestão Previdenciária (7 vagas + 1 vaga para PCD)",
@@ -20221,10 +19287,10 @@
    "faixa_salarial": "Até R$ 5.815,68",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Cozinha (1 vaga + CR)",
@@ -20356,10 +19422,10 @@
    "faixa_salarial": "Até R$ 5.663,04",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Procurador Jurídico (1 vaga)"
@@ -20438,10 +19504,10 @@
    "faixa_salarial": "Até R$ 5.600,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira (3 vagas)",
@@ -20627,10 +19693,10 @@
    "faixa_salarial": "Até R$ 5.570,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente Administrativo (1 vaga + CR)",
@@ -20695,37 +19761,39 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-selecao-para-professores",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-prorroga-inscricoes-de-processo-seletivo-para-professores",
    "orgao": "Prefeitura de Itatiba",
-   "titulo": "Prefeitura de Itatiba - SP abre seleção para professores",
+   "titulo": "Prefeitura de Itatiba - SP prorroga inscrições de processo seletivo para professores",
    "uf": "SP",
    "regiao": "Sudeste",
-   "vagas_salario": "Cadastro de Reserva até R$ 5.356,52",
-   "cargos_resumo": "Vários Cargos",
+   "vagas_salario": "Cadastro Reserva até R$ 5.356,52",
+   "cargos_resumo": "Professor de Desenvolvimento Infantil, Professor de Educação Infantil, Professor de Educação Básica",
    "niveis": "Superior",
    "salario_max_listagem": 5356.52,
-   "inscricao_ate": "22/10/2026",
+   "inscricao_ate": "Prorrogado até 05/11/2026",
    "cidade": "Itatiba",
    "lat": -23.0035,
    "lon": -46.8464,
    "banca": "Secretaria Municipal de Educação",
    "site_banca": "https://www.itatiba.sp.gov.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-selecao-para-professores#links",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-prorroga-inscricoes-de-processo-seletivo-para-professores#links",
    "arquivos_edital": [
-    "EDITAL Nº 03/2026"
+    "EDITAL Nº 03/2026",
+    "RETIFICAÇÃO Nº 01",
+    "EDITAL RETIFICADO Nº 03/2026"
    ],
    "data_prova": "22/11/2026",
    "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "Consultar edital",
-   "isencao": "O valor da taxa é de R$ 69,00 por inscrição. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "isencao": "O pagamento da taxa de inscrição terá vencimento no dia 6 de novembro de 2026. O valor da taxa é de R$ 69,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
    "faixa_salarial": "Até R$ 5.356,52",
    "inscricao_status": {
-    "data_fim_iso": "2026-10-22",
-    "dias_restantes": 0,
-    "encerrando": true,
+    "data_fim_iso": "2026-11-05",
+    "dias_restantes": 13,
+    "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Desenvolvimento Infantil (CR)",
@@ -20741,9 +19809,9 @@
     "Professor de Educação Básica - PEB II: Matemática (CR)",
     "Professor de Educação Básica - PEB II: Língua Portuguesa (CR)"
    ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
+   "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
+   "is_baseline": false,
+   "novo": true,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -20815,10 +19883,10 @@
    "faixa_salarial": "Até R$ 5.352,38",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Auxiliar de Desenvolvimento Infantil - ADI (CR)",
@@ -20941,10 +20009,10 @@
    "faixa_salarial": "Até R$ 5.325,60",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista (11 vagas CR)",
@@ -21154,10 +20222,10 @@
    "faixa_salarial": "Até R$ 5.209,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante Geral (1 vaga)",
@@ -21350,10 +20418,10 @@
    "faixa_salarial": "Até R$ 5.130,63",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Educação Básica I",
@@ -21447,10 +20515,10 @@
    "faixa_salarial": "Até R$ 5.118,20",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira (1 vaga)",
@@ -21587,10 +20655,10 @@
    "faixa_salarial": "Até R$ 5.044,35",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 24,
+    "dias_restantes": 23,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 24 dias para encerrar"
+    "aviso_texto": "Faltam 23 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cemitério (1 vaga)",
@@ -21725,10 +20793,10 @@
    "faixa_salarial": "Até R$ 5.037,78",
    "inscricao_status": {
     "data_fim_iso": "2026-11-02",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Professor(a) Assistente Substituto(a) - Fisiologia/Engenharia Biomédica (1 vaga)"
@@ -21808,10 +20876,10 @@
    "faixa_salarial": "Até R$ 5.015,07",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 32,
+    "dias_restantes": 31,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 32 dias para encerrar"
+    "aviso_texto": "Faltam 31 dias para encerrar"
    },
    "cargos_lista": [
     "Procurador Legislativo (1 vaga)"
@@ -21890,10 +20958,10 @@
    "faixa_salarial": "Até R$ 4.980,82",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (1 vaga + cadastro de reserva)",
@@ -22014,10 +21082,10 @@
    "faixa_salarial": "Até R$ 4.972,90",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Professor de Educação Básica (PEB I)",
@@ -22109,10 +21177,10 @@
    "faixa_salarial": "Até R$ 4.830,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -22192,10 +21260,10 @@
    "faixa_salarial": "Até R$ 4.526,93",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Analista de Pesquisa Clínica Júnior (1 vaga)"
@@ -22272,10 +21340,10 @@
    "faixa_salarial": "Até R$ 4.389,71",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Professor de Educação Básica I - PEB I (cadastro de reserva)",
@@ -22355,10 +21423,10 @@
    "faixa_salarial": "Até R$ 4.362,76",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -22439,10 +21507,10 @@
    "faixa_salarial": "Até R$ 4.221,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Acompanhante Educacional Especializado",
@@ -22533,10 +21601,10 @@
    "faixa_salarial": "Até R$ 4.193,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 27 dias para encerrar"
+    "aviso_texto": "Faltam 26 dias para encerrar"
    },
    "cargos_lista": [
     "Professor I",
@@ -22646,10 +21714,10 @@
    "faixa_salarial": "Até R$ 4.106,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Enfermagem (10 vagas, sendo 9 de ampla concorrência e 1 reservada para pessoas com deficiência)",
@@ -22767,10 +21835,10 @@
    "faixa_salarial": "Até R$ 4.106,09",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Enfermagem (4 vagas)",
@@ -22892,10 +21960,10 @@
    "faixa_salarial": "Até R$ 4.090,34",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto de Educação Infantil - Temporário (70 vagas + cadastro de reserva)",
@@ -22976,10 +22044,10 @@
    "faixa_salarial": "Até R$ 4.048,35",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Sepultador (CR)",
@@ -23079,10 +22147,10 @@
    "faixa_salarial": "Até R$ 3.940,70",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Professor Educação Básica I, II ou III - Projetos (ESTUDANTE)",
@@ -23189,10 +22257,10 @@
    "faixa_salarial": "Até R$ 3.857,19",
    "inscricao_status": {
     "data_fim_iso": "2026-11-02",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Psicólogo (1 vaga)"
@@ -23271,10 +22339,10 @@
    "faixa_salarial": "Até R$ 3.611,12",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Coveiro (Cadastro de reserva)",
@@ -23406,10 +22474,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 27 dias para encerrar"
+    "aviso_texto": "Faltam 26 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Física Geral (1 vaga)"
@@ -23488,10 +22556,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-10-28",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Probabilidade e Estatística (1 vaga)"
@@ -23572,10 +22640,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-10-27",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Física Geral (3 vagas)"
@@ -23654,10 +22722,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Engenharia Química, subárea de Operações Industriais e Equipamentos para Engenharia Química (1 vaga)"
@@ -23737,10 +22805,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-10-27",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Enfermagem de Saúde Pública (1 vaga)",
@@ -23821,10 +22889,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Zoologia, subárea de Paleozoologia (1 vaga)"
@@ -23903,10 +22971,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de História da América, subárea de História da América e História dos Estados Unidos (1 vaga)"
@@ -23987,10 +23055,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Educação, subárea de Fundamentos da Educação, nas disciplinas de \"Filosofia da Ciência\", \"Fundamentos da Bioética\" e \"Filosofia da Educação\" (1 vaga)"
@@ -24069,10 +23137,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Professor Substituto"
@@ -24151,10 +23219,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências (1 vaga)"
@@ -24233,10 +23301,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Inspeção de Produtos de Origem Animal (1 vaga)"
@@ -24319,10 +23387,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Francesa\" e \"Língua Francesa IV\" (1 vaga)",
@@ -24404,10 +23472,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 26,
+    "dias_restantes": 25,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 26 dias para encerrar"
+    "aviso_texto": "Faltam 25 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Letras, subárea de Literatura Brasileira (1 vaga)"
@@ -24486,10 +23554,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciência e Tecnologia de Alimentos, subárea de Engenharia de Alimentos (1 vaga)"
@@ -24550,7 +23618,7 @@
    "cargos_resumo": "Professor Substituto",
    "niveis": "Superior",
    "salario_max_listagem": 3511.9,
-   "inscricao_ate": "23/10 a 06/11/2026",
+   "inscricao_ate": "06/11/2026",
    "cidade": "Ilha Solteira",
    "lat": -20.4326,
    "lon": -51.3426,
@@ -24568,10 +23636,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Engenharia Civil, subárea de Infraestrutura de Transportes (1 vaga)"
@@ -24632,7 +23700,7 @@
    "cargos_resumo": "Professor Substituto",
    "niveis": "Superior",
    "salario_max_listagem": 3511.9,
-   "inscricao_ate": "23/10 a 06/11/2026",
+   "inscricao_ate": "06/11/2026",
    "cidade": "Jaboticabal",
    "lat": -21.252,
    "lon": -48.3252,
@@ -24650,10 +23718,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Clínica e Cirurgia Animal (1 vaga)"
@@ -24733,10 +23801,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Patologia Animal (1 vaga)"
@@ -24816,10 +23884,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Clínica e Cirurgia Animal (1 vaga)"
@@ -24899,10 +23967,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas (1 vaga)"
@@ -24981,10 +24049,10 @@
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Agrárias, subárea de Agronomia (1 vaga)"
@@ -25063,10 +24131,10 @@
    "faixa_salarial": "Até R$ 3.254,51",
    "inscricao_status": {
     "data_fim_iso": "2026-10-23",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Assistente Contábil (1 vaga)"
@@ -25175,10 +24243,10 @@
    "faixa_salarial": "Até R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-01",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (CR)",
@@ -25291,10 +24359,10 @@
    "faixa_salarial": "Até R$ 2.978,36",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 22,
+    "dias_restantes": 21,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 22 dias para encerrar"
+    "aviso_texto": "Faltam 21 dias para encerrar"
    },
    "cargos_lista": [
     "Técnico de Enfermagem (1 vaga)",
@@ -25402,10 +24470,10 @@
    "faixa_salarial": "Até R$ 2.805,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Educação Básica",
@@ -25496,10 +24564,10 @@
    "faixa_salarial": "Até R$ 2.613,11",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Cuidador em Serviço Residencial Terapêutico (12 vagas + CR)",
@@ -25610,10 +24678,10 @@
    "faixa_salarial": "Até R$ 2.558,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Desenvolvimento Infantil (5 vagas)",
@@ -25734,10 +24802,10 @@
    "faixa_salarial": "Até R$ 2.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-10-26",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Controlador Interno (1 vaga)"
@@ -25801,88 +24869,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-de-geografia-em-bauru-sp",
-   "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-   "titulo": "UNESP abre concurso público para professor de Geografia em Bauru - SP",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "Cadastro de Reserva até R$ 34,22 por hora-aula",
-   "cargos_resumo": "Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio",
-   "niveis": "Superior",
-   "salario_max_listagem": null,
-   "inscricao_ate": "22/10/2026",
-   "cidade": "Bauru",
-   "lat": -22.3246,
-   "lon": -49.0871,
-   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "site_banca": "https://www.unesp.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-de-geografia-em-bauru-sp#links",
-   "arquivos_edital": [
-    "EDITAL Nº 266/2026"
-   ],
-   "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Vale-alimentação e vale-transporte · Vale-alimentação de R$ 2.000,02 e vale-transporte",
-   "jornada_geral": "Consultar edital",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Consultar edital",
-   "inscricao_status": {
-    "data_fim_iso": "2026-10-22",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio - componente curricular: Geografia"
-   ],
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [],
-   "medio_outros": [],
-   "salario_max": 2000.02,
-   "superior_itens": [
-    {
-     "nome": "Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio - componente curricular: Geografia",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 2000.02,
-     "salario_bruto": 2000.02,
-     "salario_total": 4000.04,
-     "salario_detalhe": "Bruto: R$ 2.000,02 + R$ 2.000,02 (auxílios) = R$ 4.000,04 com auxílios",
-     "carga_horaria": "Consultar edital",
-     "regime": "Consultar edital",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Vale-alimentação e vale-transporte · Vale-alimentação de R$ 2.000,02 e vale-transporte",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio - componente curricular: Geografia): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
-   "termos_formacao": [
-    "licenciatura na disciplina"
-   ],
-   "links_provas_map": {
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/docente-do-ensino-medio-e-da-educacao-profissional-tecnica-de-nivel-medio-universidade-estadual-paulista-julio-de-mesquita-filho",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/docente-do-ensino-medio-e-da-educacao-profissional-tecnica-de-nivel-medio",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
-     "cargo_busca": "Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio",
-     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-     "label_combo": "Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-docente-de-nivel-medio-em-bauru-sp",
    "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
    "titulo": "UNESP abre concurso público para docente de nível médio em Bauru - SP",
@@ -25910,10 +24896,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Docente na área de Mecânica"
@@ -25974,7 +24960,7 @@
    "cargos_resumo": "Profissional de Apoio Escolar, PEB I, PEB II",
    "niveis": "Médio / Superior",
    "salario_max_listagem": 1621.0,
-   "inscricao_ate": "23/10 a 18/11/2026",
+   "inscricao_ate": "18/11/2026",
    "cidade": "Canitar",
    "lat": -23.004,
    "lon": -49.7839,
@@ -25992,10 +24978,10 @@
    "faixa_salarial": "Até R$ 1.621,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 27 dias para encerrar"
+    "aviso_texto": "Faltam 26 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio Escolar (CR)",
@@ -26116,10 +25102,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Professor Auxiliar (10 vagas)"
@@ -26198,10 +25184,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "PEB II - Educação Especial - DI/TEA (Deficiência Intelectual/Transtorno do Espectro Autista) (CR)",
@@ -26282,10 +25268,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Anestesiologia (10 vagas)",
@@ -26408,10 +25394,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Educação Básica I - PEB I - Educação Infantil e Ensino Fundamental - Anos Iniciais (500 vagas CR)",
@@ -26499,10 +25485,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 20,
+    "dias_restantes": 19,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 20 dias para encerrar"
+    "aviso_texto": "Faltam 19 dias para encerrar"
    },
    "cargos_lista": [
     "Defensor Público do Estado de São Paulo (70 vagas)"
@@ -26579,10 +25565,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Educação Especial (CR)",
@@ -26670,10 +25656,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Professor I Temporário - Educação Infantil (0 a 6 anos) (0 a 3 anos - Creche; 4 a 5 anos - EMEI) (CR)",
@@ -26774,10 +25760,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-10-27",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Médico Cardiologista (1 vaga + CR)",
@@ -26865,10 +25851,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-12-02",
-    "dias_restantes": 41,
+    "dias_restantes": 40,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 41 dias para encerrar"
+    "aviso_texto": "Faltam 40 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Oftalmologia (1 vaga)"
@@ -26947,10 +25933,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular no Departamento de Pediatria, no conjunto de disciplinas: Pediatria I e Pediatria II (1 vaga)"
@@ -27030,10 +26016,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-12-06",
-    "dias_restantes": 45,
+    "dias_restantes": 44,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 45 dias para encerrar"
+    "aviso_texto": "Faltam 44 dias para encerrar"
    },
    "cargos_lista": [
     "Pediatria (4 vagas)",

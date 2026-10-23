@@ -1128,94 +1128,6 @@
    "isencao": "O valor da taxa de inscrição é de R$ 80,00. Não haverá isenção de taxa."
   }
  },
- "https://www.pciconcursos.com.br/noticias/camara-de-dois-corregos-sp-abre-concurso-publico-com-salarios-de-ate-7114": {
-  "first_seen": "2026-10-21",
-  "hash": "c0c67bca4914",
-  "fisio_linhas": [],
-  "salario_max_texto": 7114.33,
-  "tem_medio": true,
-  "ia": {
-   "cargos": [
-    {
-     "nome": "Analista Administrativo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Analista de Comunicação Institucional",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Analista Legislativo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Diretor Administrativo Legislativo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Diretor Contábil Legislativo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Diretor Jurídico Legislativo",
-     "escolaridade": "superior",
-     "vagas": "Cadastro Reserva",
-     "salario": null
-    },
-    {
-     "nome": "Oficial de Finanças",
-     "escolaridade": "medio",
-     "vagas": "Cadastro Reserva",
-     "salario": null
-    },
-    {
-     "nome": "Oficial Legislativo",
-     "escolaridade": "medio",
-     "vagas": "Cadastro Reserva",
-     "salario": null
-    }
-   ],
-   "salario_min": 4879.83,
-   "salario_max": 7114.33
-  },
-  "ia_model": "gemini-3.5-flash-lite",
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 3,
-  "detalhes": {
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/dois-corregos-sp",
-   "link_banca": "https://camaradoiscorregos.sp.gov.br/",
-   "nome_banca": "Câmara Municipal de Dois Córregos",
-   "data_prova": "15/11/2026",
-   "regime": "CLT (Celetista)",
-   "beneficios": "Vale-alimentação de R$ 1.150,00 e gratificações · Vale-alimentação de R$ 1.150,00.",
-   "jornada": "20 horas semanais",
-   "cargos_li": [
-    "Analista Administrativo (1 vaga)",
-    "Analista de Comunicação Institucional (1 vaga)",
-    "Analista Legislativo (1 vaga)",
-    "Diretor Administrativo Legislativo (1 vaga)",
-    "Diretor Contábil Legislativo (1 vaga)",
-    "Diretor Jurídico Legislativo (Cadastro Reserva)",
-    "Oficial de Finanças (Cadastro Reserva)",
-    "Oficial Legislativo (Cadastro Reserva)"
-   ],
-   "isencao": "A taxa é de R$ 80,00 para nível superior e de R$ 60,00 para nível médio, com possibilidade de isenção/redução para estudantes, desempregados, inscritos em programas sociais e doadores de sangue. Os pedidos de isenção serão aceitos de 23 a 30 de setembro de 2026, conforme as regras do edital."
-  }
- },
  "https://www.pciconcursos.com.br/noticias/camara-de-jarinu-sp-abre-concurso-publico-com-salarios-de-ate-10744": {
   "first_seen": "2026-10-21",
   "hash": "16916b79698a",
@@ -3576,36 +3488,6 @@
    "isencao": "Pedidos de isenção estão previstos de 9 a 17 de outubro de 2026 para candidatos que atendam aos requisitos do edital."
   }
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-general-salgado-sp-abre-concurso-para-cargos-na-educacao": {
-  "first_seen": "2026-10-21",
-  "hash": "aa46d1a5e2a4",
-  "fisio_linhas": [],
-  "salario_max_texto": 6319.48,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Diretor de Escola (1 vaga + CR)",
-    "Professor Coordenador (1 vaga + CR)",
-    "Professor Auxiliar I (1 vaga + CR)",
-    "Professor Auxiliar II - Língua Portuguesa (1 vaga + CR)",
-    "Professor Auxiliar II - Língua Matemática (1 vaga + CR)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA DE INSCRIÇÕES DO CONCURSO PÚBLICO Nº 01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/general-salgado-sp",
-   "link_banca": "https://www.generalsalgado.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de General Salgado",
-   "data_prova": "22/11/2026",
-   "regime": "Estatutário",
-   "beneficios": "Consultar edital",
-   "jornada": "30 a 40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 100,00 para todos os cargos e não haverá isenção total ou parcial."
-  }
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude": {
   "first_seen": "2026-10-21",
   "hash": "07eb6882270f",
@@ -4418,70 +4300,6 @@
    "beneficios": "Vale-alimentação de R$ 500,00. A seleção dos profissionais ocorrerá por meio de prova objetiva · Vale-alimentação de R$ 500,00.",
    "jornada": "40 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 60,00. Candidatos desempregados ou estudantes com renda de até dois salários mínimos podem solicitar redução de 50% da taxa nos dias 15 e 16 de outubro de 2026."
-  }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-selecao-para-professores": {
-  "first_seen": "2026-10-21",
-  "hash": "a10c207940c2",
-  "fisio_linhas": [],
-  "salario_max_texto": 5356.52,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor de Desenvolvimento Infantil (CR)",
-    "Professor de Educação Infantil (CR)",
-    "Professor de Educação Básica - PEB I: 1º ao 5º ano (CR)",
-    "Professor de Educação Básica - PEB I: Educação Especial (CR)",
-    "Professor de Educação Básica - PEB II: Artes (CR)",
-    "Professor de Educação Básica - PEB II: Ciências (CR)",
-    "Professor de Educação Básica - PEB II: Educação Física (CR)",
-    "Professor de Educação Básica - PEB II: Geografia (CR)",
-    "Professor de Educação Básica - PEB II: História (CR)",
-    "Professor de Educação Básica - PEB II: Inglês (CR)",
-    "Professor de Educação Básica - PEB II: Matemática (CR)",
-    "Professor de Educação Básica - PEB II: Língua Portuguesa (CR)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 03/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/itatiba-sp",
-   "link_banca": "https://www.itatiba.sp.gov.br/",
-   "nome_banca": "Secretaria Municipal de Educação",
-   "data_prova": "22/11/2026",
-   "regime": "CLT (Celetista)",
-   "beneficios": "Consultar edital",
-   "jornada": "Consultar edital",
-   "isencao": "O valor da taxa é de R$ 69,00 por inscrição. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-abre-processo-seletivo-para-profissionais-de-apoio-na-educacao": {
-  "first_seen": "2026-10-21",
-  "hash": "66ec7c266781",
-  "fisio_linhas": [],
-  "salario_max_texto": 2786.98,
-  "tem_medio": true,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Profissional de Apoio I",
-    "Profissional de Apoio II"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 04/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/itatiba-sp",
-   "link_banca": "https://www.itatiba.sp.gov.br/",
-   "nome_banca": "Secretaria Municipal de Educação",
-   "data_prova": "06/12/2026",
-   "regime": "CLT (Celetista)",
-   "beneficios": "Consultar edital",
-   "jornada": "Consultar edital",
-   "isencao": "O valor da taxa de inscrição é de R$ 60,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatinga-sp-abre-processo-seletivo-para-a-area-da-educacao": {
@@ -7986,300 +7804,6 @@
    "isencao": "A taxa de inscrição varia de R$ 48,50 a R$ 107,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
   }
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-taruma-sp-prorroga-inscricoes-para-processo-seletivo-com-salarios-de-ate-23539": {
-  "first_seen": "2026-10-21",
-  "hash": "887cc375491e",
-  "fisio_linhas": [
-   "Fisioterapeuta (CR)"
-  ],
-  "salario_max_texto": 23539.17,
-  "tem_medio": true,
-  "ia": {
-   "cargos": [
-    {
-     "nome": "Agente Administrativo",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Agente Comunitário de Saúde",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Agente de Combate às Endemias",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Agente de Saneamento",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Ajudante de Serviços",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Ajudante Geral",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Analista Contábil",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Analista Programador",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Assistente de Esportes",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Assistente Social",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Atendente de Consultório Dentário",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Auditor Fiscal",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Auxiliar de Enfermagem",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Bibliotecário",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Coordenador Pedagógico",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Cozinheiro",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Cuidador",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Dentista - 20h",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Dentista - 40h",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Enfermeiro",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Educador Social",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Farmacêutico",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Fisioterapeuta",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Fonoaudiólogo",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Inspetor de Alunos",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Médico de Saúde da Família",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Motorista",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Nutricionista",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Operador de Máquinas",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Psicólogo",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Psicopedagogo",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Procurador Municipal",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Técnico em Enfermagem",
-     "escolaridade": "tecnico",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Técnico Agropecuário",
-     "escolaridade": "tecnico",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Terapeuta Ocupacional",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Tratorista",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    },
-    {
-     "nome": "Oficial de Conservação",
-     "escolaridade": "desconhecida",
-     "vagas": "CR",
-     "salario": null
-    }
-   ],
-   "salario_min": 1717.55,
-   "salario_max": 23539.17
-  },
-  "ia_model": "gemini-3.5-flash-lite",
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 3,
-  "detalhes": {
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA Nº 01/2026 DO PROCESSO SELETIVO Nº 02/2026",
-    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 01/2026 RETIFICADO E CONSOLIDADO"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/taruma-sp",
-   "link_banca": "https://www.taruma.sp.gov.br/",
-   "nome_banca": "Prefeitura de Tarumã",
-   "data_prova": "22/11/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 e 40 horas semanais",
-   "cargos_li": [
-    "Agente Administrativo (CR)",
-    "Agente Comunitário de Saúde (CR)",
-    "Agente de Combate às Endemias (CR)",
-    "Agente de Saneamento (CR)",
-    "Ajudante de Serviços (CR)",
-    "Ajudante Geral (CR)",
-    "Analista Contábil (CR)",
-    "Analista Programador (CR)",
-    "Assistente de Esportes (CR)",
-    "Assistente Social (CR)",
-    "Atendente de Consultório Dentário (CR)",
-    "Auditor Fiscal (CR)",
-    "Auxiliar de Enfermagem (CR)",
-    "Bibliotecário (CR)",
-    "Coordenador Pedagógico (CR)",
-    "Cozinheiro (CR)",
-    "Cuidador (CR)",
-    "Dentista - 20h (CR)",
-    "Dentista - 40h (CR)",
-    "Enfermeiro (CR)",
-    "Educador Social (CR)",
-    "Farmacêutico (CR)",
-    "Fisioterapeuta (CR)",
-    "Fonoaudiólogo (CR)",
-    "Inspetor de Alunos (CR)",
-    "Médico de Saúde da Família (CR)",
-    "Motorista (CR)",
-    "Nutricionista (CR)",
-    "Operador de Máquinas (CR)",
-    "Psicólogo (CR)",
-    "Psicopedagogo (CR)",
-    "Procurador Municipal (CR)",
-    "Técnico em Enfermagem (CR)",
-    "Técnico Agropecuário (CR)",
-    "Terapeuta Ocupacional (CR)",
-    "Tratorista (CR)",
-    "Oficial de Conservação (CR)"
-   ],
-   "isencao": "Conforme o edital retificado, o prazo de inscrição foi prorrogado até o dia 22 de outubro de 2026 e o período para solicitar isenção da taxa de inscrição será de 5 a 20 de outubro de 2026. Doadores de sangue podem solicitar isenção conforme regras do edital, entre os dias 5 e 20 de outubro de 2026."
-  }
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-tatui-sp-abre-concurso-publico-para-cargos-de-nivel-fundamental-e-medio": {
   "first_seen": "2026-10-21",
   "hash": "4b554e720e9b",
@@ -9142,32 +8666,6 @@
    "isencao": "A taxa de inscrição é de R$ 141,00. Será possível solicitar redução de 50% do valor da taxa, conforme os critérios do edital."
   }
  },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-odontologia-de-araraquara-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "d75e53bbf409",
-  "fisio_linhas": [],
-  "salario_max_texto": 25261.98,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Titular no Departamento de Morfologia e Clínica Infantil, nas disciplinas de Ortodontia Preventiva I, Ortodontia Preventiva II e Ortopedia Funcional dos Maxilares (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 111/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/araraquara-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Consultar edital",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
- },
  "https://www.pciconcursos.com.br/noticias/unesp-prorroga-inscricoes-de-concurso-para-professor-assistente-na-area-de-sistemas-de-computacao": {
   "first_seen": "2026-10-21",
   "hash": "d5866d7aa845",
@@ -9588,32 +9086,6 @@
    "beneficios": "Consultar edital",
    "jornada": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-de-geografia-em-bauru-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "bb6b4adeefbd",
-  "fisio_linhas": [],
-  "salario_max_texto": 2000.02,
-  "tem_medio": true,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio - componente curricular: Geografia"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 266/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/bauru-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação e vale-transporte · Vale-alimentação de R$ 2.000,02 e vale-transporte",
-   "jornada": "Consultar edital",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
   }
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professores-substitutos-em-sao-jose-dos-campos-sp": {
@@ -10838,6 +10310,108 @@
    "beneficios": "Consultar edital",
    "jornada": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-prorroga-inscricoes-de-processo-seletivo-para-professores": {
+  "first_seen": "2026-10-23",
+  "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "4ff8292ce722",
+  "fisio_linhas": [],
+  "salario_max_texto": 5356.52,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Desenvolvimento Infantil (CR)",
+    "Professor de Educação Infantil (CR)",
+    "Professor de Educação Básica - PEB I: 1º ao 5º ano (CR)",
+    "Professor de Educação Básica - PEB I: Educação Especial (CR)",
+    "Professor de Educação Básica - PEB II: Artes (CR)",
+    "Professor de Educação Básica - PEB II: Ciências (CR)",
+    "Professor de Educação Básica - PEB II: Educação Física (CR)",
+    "Professor de Educação Básica - PEB II: Geografia (CR)",
+    "Professor de Educação Básica - PEB II: História (CR)",
+    "Professor de Educação Básica - PEB II: Inglês (CR)",
+    "Professor de Educação Básica - PEB II: Matemática (CR)",
+    "Professor de Educação Básica - PEB II: Língua Portuguesa (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 03/2026",
+    "RETIFICAÇÃO Nº 01",
+    "EDITAL RETIFICADO Nº 03/2026"
+   ],
+   "link_banca": "https://www.itatiba.sp.gov.br/",
+   "nome_banca": "Secretaria Municipal de Educação",
+   "data_prova": "22/11/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital",
+   "isencao": "O pagamento da taxa de inscrição terá vencimento no dia 6 de novembro de 2026. O valor da taxa é de R$ 69,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-itatiba-sp-retifica-processo-seletivo-para-profissionais-de-apoio-na-educacao": {
+  "first_seen": "2026-10-23",
+  "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "59a248a3b7fa",
+  "fisio_linhas": [],
+  "salario_max_texto": 2786.98,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Profissional de Apoio I",
+    "Profissional de Apoio II"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 04/2026",
+    "RETIFICAÇÃO Nº 01",
+    "EDITAL Nº 04/2026 ATUALIZADO"
+   ],
+   "link_banca": "https://www.itatiba.sp.gov.br/",
+   "nome_banca": "Secretaria Municipal de Educação",
+   "data_prova": "06/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "Consultar edital",
+   "isencao": "O valor da taxa de inscrição é de R$ 60,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva": {
+  "first_seen": "2026-10-23",
+  "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "d80cbd6938ab",
+  "fisio_linhas": [],
+  "salario_max_texto": 7078.72,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Fiscal Tributário (cadastro de reserva)",
+    "Agente Orientador Escolar (cadastro de reserva)",
+    "Auxiliar de Farmácia (cadastro de reserva)",
+    "Fiscal de Rendas e Postura (cadastro de reserva)",
+    "Assistente Social (cadastro de reserva)",
+    "Coordenador Pedagógico de Educação Fundamental I (cadastro de reserva)",
+    "Farmacêutico (cadastro de reserva)",
+    "Fonoaudiólogo (cadastro de reserva)",
+    "Médico do Trabalho (cadastro de reserva)",
+    "Nutricionista (cadastro de reserva)",
+    "Nutricionista da Saúde (cadastro de reserva)",
+    "Professor de Educação Básica II - Artes (cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026"
+   ],
+   "link_banca": "https://www.saojosedabelavista.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de São José da Bela Vista",
+   "data_prova": "06/12/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+   "jornada": "20 a 40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
   }
  }
 }

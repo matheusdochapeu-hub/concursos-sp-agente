@@ -543,6 +543,12 @@ GOOGLE_CLIENT_ID = (
     or "1006150921481-phsaf0s3j0ie65d69j3l1uth3b895148.apps.googleusercontent.com"
 )
 
+# Webhook centralizado da Planilha Google (Apps Script) para contabilizar acessos e logins de terceiros em tempo real
+AUDIT_WEBHOOK_URL = (
+    _os.environ.get("AUDIT_WEBHOOK_URL", "").strip()
+    or "https://script.google.com/macros/s/AKfycby4DRby4jG-nE9V9c4IGcFgpI14U7Jc76eQy0fQww-ME0AJDCOq9bGcmhxN-0ETnYtJbw/exec"
+)
+
 # Capitais usadas como cidade de referência: (nome, UF, lat, lon)
 CAPITAIS_REF = [
     ("Rio Branco", "AC", -9.9747, -67.8243), ("Maceió", "AL", -9.6658, -35.7353),
@@ -687,7 +693,7 @@ def render_html(
 <meta http-equiv="Expires" content="0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.counterapi.dev https://accounts.google.com https://*.google.com https://www.googleapis.com https://oauth2.googleapis.com https://*.googleapis.com; frame-src https://accounts.google.com https://*.google.com;">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://accounts.google.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://api.counterapi.dev https://accounts.google.com https://*.google.com https://www.googleapis.com https://oauth2.googleapis.com https://*.googleapis.com; frame-src https://accounts.google.com https://*.google.com;">
 <meta name="theme-color" content="#006b2d">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -2616,6 +2622,16 @@ def render_html(
         </div>
       </div>
 
+      <!-- Banner da Planilha Google Conectada -->
+      <div style="background:#f0fdf4;border:1.5px solid #bbf7d0;border-radius:12px;padding:10px 14px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+        <div style="font-size:0.83rem;color:#166534;">
+          📊 <b>Planilha Google Conectada:</b> Acessos e logins de terceiros são gravados em tempo real na sua planilha central.
+        </div>
+        <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem;color:#15803d;font-weight:700;text-decoration:underline;">
+          Abrir Google Drive ↗
+        </a>
+      </div>
+
       <div class="cmp-summary-banner" style="margin-bottom:16px;">
         <div class="cmp-kpi">
           <span>🌐 Total Global de Acessos</span>
@@ -2636,7 +2652,7 @@ def render_html(
       </div>
 
       <div style="margin-bottom:16px;">
-        <div class="f-label" style="margin-bottom:6px;">📋 Últimos Acessos e Logins Registrados:</div>
+        <div class="f-label" style="margin-bottom:6px;">📋 Últimos Acessos e Logins Registrados (Geral e Terceiros):</div>
         <div style="max-height:220px;overflow-y:auto;border:1px solid var(--border);border-radius:12px;">
           <table class="cmp-table" style="font-size:.8rem;">
             <thead>
@@ -2651,7 +2667,21 @@ def render_html(
         </div>
       </div>
 
-      <details class="prog-box" style="margin-bottom:14px;" open>
+      <details class="prog-box" style="margin-bottom:14px;">
+        <summary>📊 Webhook da Planilha Google (Acessos e Logins de Terceiros)</summary>
+        <div class="prog-body">
+          <p style="margin:0 0 8px;font-size:0.82rem;line-height:1.4;">
+            URL do Web App do Google Apps Script que recebe e registra os acessos e logins de todos os usuários:
+          </p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <input id="inputDevWebhookUrl" type="text" placeholder="https://script.google.com/macros/s/.../exec" style="flex:1;min-width:240px;padding:8px 12px;border-radius:8px;border:1px solid var(--border);">
+            <button type="button" id="btnSalvarWebhookUrl" class="btn-aplicar">Salvar URL</button>
+            <button type="button" id="btnRestaurarWebhookUrl" style="background:#f1f5f9;color:#334155;border:1px solid #cbd5e1;padding:8px 12px;border-radius:8px;font-size:0.82rem;font-weight:700;cursor:pointer;">Restaurar Padrão</button>
+          </div>
+        </div>
+      </details>
+
+      <details class="prog-box" style="margin-bottom:14px;">
         <summary>⚙️ Configurar Google OAuth Client ID (Opcional — Google Cloud Console)</summary>
         <div class="prog-body">
           <p style="margin:0 0 8px;font-size:0.82rem;line-height:1.4;">
@@ -3994,6 +4024,14 @@ def render_html(
     return (id.toLowerCase().endsWith('.apps.googleusercontent.com') && id.includes('-')) ? id : '';
   }}
 
+  const AUDIT_WEBHOOK_KEY = 'concursos_audit_webhook_url_v1';
+  const AUDIT_WEBHOOK_URL_FIXO = {safe_json_for_script(AUDIT_WEBHOOK_URL)};
+  function obterAuditWebhookUrl() {{
+    const salvo = (localStorage.getItem(AUDIT_WEBHOOK_KEY) || '').trim();
+    const fixo = (AUDIT_WEBHOOK_URL_FIXO || '').trim();
+    return fixo || salvo;
+  }}
+
   // Hash SHA-256 da chave secreta exclusiva do link do desenvolvedor
   const DEV_TOKEN_SHA256 = 'ad4ccc5a97c1e5c805713136e2fce68343de39b526c672dd0133759a9c4e6400';
   const DEV_EMAILS_SHA256 = new Set([
@@ -4097,42 +4135,42 @@ def render_html(
   let globalViewsCount = null;
   let globalLoginsCount = null;
 
-  async function incrementarContadorGlobal(namespaceKey) {{
+  async function enviarPingAcessoGlobal() {{
     try {{
-      const r = await fetch(`https://api.counterapi.dev/v1/concursos-sp-matheus-1907/${{namespaceKey}}/up`, {{
-        method: 'GET',
-        mode: 'cors',
+      const webhookUrl = obterAuditWebhookUrl();
+      if (!webhookUrl) return null;
+      const sep = webhookUrl.includes('?') ? '&' : '?';
+      fetch(webhookUrl + sep + 'action=ping&t=' + Date.now(), {{
+        mode: 'no-cors',
         cache: 'no-store'
-      }});
-      if (r.ok) {{
-        const d = await r.json();
-        return Number(d.count || 0);
-      }}
+      }}).catch(() => {{}});
     }} catch (_) {{}}
-    return null;
   }}
 
-  async function consultarContadorGlobal(namespaceKey) {{
+  async function enviarRegistroLoginGlobal(nomeStr, emailStr, eventoStr) {{
     try {{
-      const r = await fetch(`https://api.counterapi.dev/v1/concursos-sp-matheus-1907/${{namespaceKey}}/`, {{
-        method: 'GET',
-        mode: 'cors',
-        cache: 'no-store'
+      const webhookUrl = obterAuditWebhookUrl();
+      if (!webhookUrl) return;
+      const payload = JSON.stringify({{
+        nome: String(nomeStr || 'Visitante').slice(0, 120),
+        email: String(emailStr || '-').slice(0, 120),
+        evento: String(eventoStr || 'Login').slice(0, 120),
+        ua: (navigator.userAgent || '').slice(0, 150)
       }});
-      if (r.ok) {{
-        const d = await r.json();
-        return Number(d.count || 0);
-      }}
+      fetch(webhookUrl, {{
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
+        body: payload
+      }}).catch(() => {{}});
     }} catch (_) {{}}
-    return null;
   }}
 
-  // Registra acesso da página
+  // Registra acesso da página local e na Planilha Google
   (async function contabilizarAcessoInicial() {{
     const viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '0') + 1;
     localStorage.setItem(LOCAL_VIEWS_KEY, String(viewsLocais));
-    const gCount = await incrementarContadorGlobal('acessos');
-    globalViewsCount = gCount != null ? gCount : viewsLocais;
+    await enviarPingAcessoGlobal();
   }})();
 
   function lerSessaoGoogle() {{
@@ -4171,8 +4209,7 @@ def render_html(
     localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(sessao));
     aplicarSessaoAutenticada(sessao);
     registrarEventoAuditoria(`${{nomeLimpo}} <${{emailLimpo}}>`, `Login (${{metodo}})`);
-    const gLogin = await incrementarContadorGlobal('logins');
-    if (gLogin != null) globalLoginsCount = gLogin;
+    await enviarRegistroLoginGlobal(nomeLimpo, emailLimpo, `Login (${{metodo}})`);
   }}
 
   // Validação de JWT do Google Identity Services (quando Client ID configurado)
@@ -4368,30 +4405,73 @@ def render_html(
   // 12) PAINEL SECRETO DO DESENVOLVEDOR (CONTADOR DE ACESSOS VIA LINK ESPECÍFICO)
   async function atualizarPainelDevStats() {{
     const viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '1');
-    const logs = JSON.parse(localStorage.getItem(AUDIT_LOG_KEY) || '[]');
-    const contasUnicas = new Set(logs.map(l => l.usuario).filter(Boolean));
+    const logsLocais = JSON.parse(localStorage.getItem(AUDIT_LOG_KEY) || '[]');
+    const contasUnicasLocais = new Set(logsLocais.map(l => l.usuario).filter(Boolean));
 
     document.getElementById('kpiAcessosLocais').textContent = viewsLocais.toLocaleString('pt-BR');
-    document.getElementById('kpiUsuariosUnicos').textContent = Math.max(1, contasUnicas.size).toLocaleString('pt-BR');
 
-    const gViews = globalViewsCount != null ? globalViewsCount : await consultarContadorGlobal('acessos');
-    const gLogins = globalLoginsCount != null ? globalLoginsCount : await consultarContadorGlobal('logins');
+    let dadosRemotos = null;
+    const webhookUrl = obterAuditWebhookUrl();
+    if (webhookUrl) {{
+      try {{
+        const sep = webhookUrl.includes('?') ? '&' : '?';
+        const r = await fetch(webhookUrl + sep + 'action=stats&t=' + Date.now(), {{
+          cache: 'no-store'
+        }});
+        if (r.ok) {{
+          dadosRemotos = await r.json();
+        }}
+      }} catch (err) {{
+        console.warn('Erro ao consultar estatísticas remotas da Planilha Google:', err);
+      }}
+    }}
 
-    document.getElementById('kpiTotalAcessosGlobais').textContent =
-      (gViews != null ? Math.max(gViews, viewsLocais) : viewsLocais).toLocaleString('pt-BR');
-    document.getElementById('kpiTotalLoginsGlobais').textContent =
-      (gLogins != null ? Math.max(gLogins, contasUnicas.size) : Math.max(1, contasUnicas.size)).toLocaleString('pt-BR');
+    if (dadosRemotos && typeof dadosRemotos.totalAcessos === 'number') {{
+      const gViews = Math.max(dadosRemotos.totalAcessos, viewsLocais);
+      const gLogins = Math.max(Number(dadosRemotos.totalLogins) || 0, contasUnicasLocais.size);
+      const gUnicos = Math.max(Number(dadosRemotos.usuariosUnicos) || 0, contasUnicasLocais.size);
 
-    const tbody = document.getElementById('tabelaLogsDev');
-    tbody.innerHTML = logs.slice(0, 50).map(l => `
-      <tr>
-        <td>${{escHtml(l.ts)}}</td>
-        <td><b>${{escHtml(l.usuario)}}</b></td>
-        <td>${{escHtml(l.evento)}}</td>
-      </tr>
-    `).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
+      document.getElementById('kpiTotalAcessosGlobais').textContent = gViews.toLocaleString('pt-BR');
+      document.getElementById('kpiTotalLoginsGlobais').textContent = gLogins.toLocaleString('pt-BR');
+      document.getElementById('kpiUsuariosUnicos').textContent = gUnicos.toLocaleString('pt-BR');
+
+      const logsParaExibir = (dadosRemotos.logs && dadosRemotos.logs.length > 0) ? dadosRemotos.logs : logsLocais;
+      const tbody = document.getElementById('tabelaLogsDev');
+      tbody.innerHTML = logsParaExibir.slice(0, 100).map(l => {{
+        let tsStr = l.ts;
+        try {{
+          const d = new Date(l.ts);
+          if (!isNaN(d.getTime())) {{
+            tsStr = d.toLocaleString('pt-BR', {{ timeZone: 'America/Sao_Paulo' }});
+          }}
+        }} catch (_) {{}}
+        return `
+          <tr>
+            <td>${{escHtml(tsStr)}}</td>
+            <td><b>${{escHtml(l.usuario)}}</b></td>
+            <td>${{escHtml(l.evento)}}</td>
+          </tr>
+        `;
+      }}).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
+    }} else {{
+      document.getElementById('kpiTotalAcessosGlobais').textContent = viewsLocais.toLocaleString('pt-BR');
+      document.getElementById('kpiTotalLoginsGlobais').textContent = Math.max(1, contasUnicasLocais.size).toLocaleString('pt-BR');
+      document.getElementById('kpiUsuariosUnicos').textContent = Math.max(1, contasUnicasLocais.size).toLocaleString('pt-BR');
+
+      const tbody = document.getElementById('tabelaLogsDev');
+      tbody.innerHTML = logsLocais.slice(0, 50).map(l => `
+        <tr>
+          <td>${{escHtml(l.ts)}}</td>
+          <td><b>${{escHtml(l.usuario)}}</b></td>
+          <td>${{escHtml(l.evento)}}</td>
+        </tr>
+      `).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
+    }}
 
     document.getElementById('inputDevGoogleClientId').value = obterClientId();
+    if (document.getElementById('inputDevWebhookUrl')) {{
+      document.getElementById('inputDevWebhookUrl').value = obterAuditWebhookUrl();
+    }}
   }}
 
   (async function verificarLinkDesenvolvedor() {{
@@ -4477,6 +4557,33 @@ def render_html(
       location.reload();
     }}
   }});
+
+  const btnSalvarWebhookUrl = document.getElementById('btnSalvarWebhookUrl');
+  if (btnSalvarWebhookUrl) {{
+    btnSalvarWebhookUrl.addEventListener('click', () => {{
+      const raw = (document.getElementById('inputDevWebhookUrl').value || '').trim();
+      if (raw) {{
+        localStorage.setItem(AUDIT_WEBHOOK_KEY, raw);
+        alert('URL do Webhook da Planilha Google salva com sucesso!');
+      }} else {{
+        localStorage.removeItem(AUDIT_WEBHOOK_KEY);
+        alert('URL personalizada removida. Usando URL padrão da Planilha Google.');
+      }}
+      atualizarPainelDevStats();
+    }});
+  }}
+
+  const btnRestaurarWebhookUrl = document.getElementById('btnRestaurarWebhookUrl');
+  if (btnRestaurarWebhookUrl) {{
+    btnRestaurarWebhookUrl.addEventListener('click', () => {{
+      localStorage.removeItem(AUDIT_WEBHOOK_KEY);
+      if (document.getElementById('inputDevWebhookUrl')) {{
+        document.getElementById('inputDevWebhookUrl').value = obterAuditWebhookUrl();
+      }}
+      alert('Restaurada a URL oficial da Planilha Google configurada no código.');
+      atualizarPainelDevStats();
+    }});
+  }}
 
   document.getElementById('btnExportarLogsDev').addEventListener('click', () => {{
     const relatorio = {{
