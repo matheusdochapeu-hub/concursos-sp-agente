@@ -4751,7 +4751,7 @@
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
   "is_baseline": true,
-  "schema_version": 4,
+  "schema_version": 5,
   "detalhes": {
    "cargos_li": [
     "Professor de Educação Especial (CR)",
@@ -4768,7 +4768,6 @@
    "arquivos_edital": [
     "EDITAL Nº 01/2026"
    ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/lencois-paulista-sp",
    "link_banca": "https://www.lencoispaulista.sp.gov.br/",
    "nome_banca": "Prefeitura de Lençóis Paulista",
    "data_prova": "29/11/2026",
@@ -4776,7 +4775,110 @@
    "beneficios": "Vale-alimentação, conforme legislação municipal",
    "jornada": "12 a 35 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 45,00 para todos os cargos. Haverá possibilidade de isenção para doadores de medula óssea ou para inscritos no CadÚnico, conforme regras do edital e datas específicas (16 a 19 de outubro de 2026)."
-  }
+  },
+  "ia": {
+   "cidade": "Lençóis Paulista",
+   "banca": "Indepac",
+   "data_prova": "29/11/2026",
+   "regime_geral": "Processo seletivo",
+   "beneficios": "Vale-alimentação (conforme legislação municipal)",
+   "isencao": "Taxa de inscrição de R$ 45,00. Possibilidade de isenção para doadores de medula óssea ou para inscritos no CadÚnico, conforme regras do edital (solicitação de 16 a 19 de outubro de 2026).",
+   "jornada_geral": "12 a 35 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Professor de Educação Especial",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Professor de Ensino Fundamental II - Arte",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Professor de Ensino Fundamental II - Ciências",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Professor de Ensino Fundamental II - Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Professor de Ensino Fundamental II - Geografia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Professor de Ensino Fundamental II - História",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Professor de Ensino Fundamental II - Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Professor de Ensino Fundamental II - Português",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Professor Substituto de Educação Infantil",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Nível médio (modalidade normal)"
+    },
+    {
+     "nome": "Professor Substituto de Ensino Fundamental I",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "12 a 35h semanais",
+     "regime": null,
+     "requisitos": "Nível médio (modalidade normal)"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890": {
   "first_seen": "2026-10-21",
@@ -5434,7 +5536,7 @@
   "tem_medio": true,
   "first_seen_ts": "2026-10-20T07:00:00-03:00",
   "is_baseline": true,
-  "schema_version": 4,
+  "schema_version": 5,
   "detalhes": {
    "cargos_li": [
     "Professor I Temporário - Educação Infantil (0 a 6 anos) (0 a 3 anos - Creche; 4 a 5 anos - EMEI) (CR)",
@@ -5464,7 +5566,6 @@
    "arquivos_edital": [
     "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
    ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/matao-sp",
    "link_banca": "https://www.matao.sp.gov.br/",
    "nome_banca": "Prefeitura Municipal de Matão",
    "data_prova": "06/12/2026",
@@ -5472,7 +5573,227 @@
    "beneficios": "Consultar edital",
    "jornada": "15 e 28 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 97,00, com possibilidade de isenção nos dias 28 e 29 de setembro de 2026 para candidatos que atendam aos requisitos previstos em lei."
-  }
+  },
+  "ia": {
+   "cidade": "Matão",
+   "banca": "IBAM SP",
+   "data_prova": "06/12/2026",
+   "regime_geral": "Temporário",
+   "beneficios": null,
+   "isencao": "Taxa de inscrição de R$ 97,00. Possibilidade de isenção nos dias 28 e 29 de setembro de 2026 para candidatos que atendam aos requisitos previstos em lei.",
+   "jornada_geral": "15 a 28 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Professor I Temporário - Educação Infantil (0 a 6 anos)",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Nível superior ou magistério"
+    },
+    {
+     "nome": "Professor I Temporário - Ensino Fundamental (Séries Iniciais)",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Nível superior ou magistério"
+    },
+    {
+     "nome": "Professor de Educação Especial Temporário - Deficiência Auditiva",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Nível superior com especialização na área"
+    },
+    {
+     "nome": "Professor de Educação Especial Temporário - Deficiência Intelectual",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Nível superior com especialização na área"
+    },
+    {
+     "nome": "Professor de Educação Especial Temporário - Deficiência Visual",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Nível superior com especialização na área"
+    },
+    {
+     "nome": "Professor III Temporário - Português",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Matemática",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Geografia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Ciências",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Filosofia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Arte/Educação Artística",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - História",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Química",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Biologia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Sociologia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Arte/Educação Artística - Arte Musical",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Arte/Educação Artística Artes Cênicas",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na respectiva área"
+    },
+    {
+     "nome": "Professor III Temporário - Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura e registro no conselho de classe"
+    },
+    {
+     "nome": "Professor III Temporário - Educação Física - Dança",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura e registro no conselho de classe"
+    },
+    {
+     "nome": "Professor III Temporário - Educação Física - Ginástica Geral",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura e registro no conselho de classe"
+    },
+    {
+     "nome": "Professor III Temporário - Educação Física - Natação",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Até 28h semanais",
+     "regime": "Temporário",
+     "requisitos": "Licenciatura e registro no conselho de classe"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-maua-sp-abre-processo-seletivo-para-medicos-de-diversas-especialidades": {
   "first_seen": "2026-10-21",
@@ -10055,7 +10376,7 @@
   "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
   "is_baseline": false,
   "schema_version": 5,
-  "hash": "b32e8b2f49f6",
+  "hash": "97be64c1c5ec",
   "fisio_linhas": [],
   "salario_max_texto": 6077.09,
   "tem_medio": true,
@@ -10091,7 +10412,110 @@
    "beneficios": "Consultar edital",
    "jornada": "20 a 40 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
-  }
+  },
+  "ia": {
+   "cidade": "Marília",
+   "banca": "FAMESP",
+   "data_prova": null,
+   "regime_geral": "CLT (Celetista)",
+   "beneficios": null,
+   "isencao": "Taxa de inscrição no valor de R$ 110,00. O edital não detalha requisitos de isenção.",
+   "jornada_geral": "20 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Serviço Social e registro no conselho de classe"
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Fonoaudiologia e registro no conselho de classe"
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Nutrição e registro no conselho de classe"
+    },
+    {
+     "nome": "Pedagogo (Psicopedagogo)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Pedagogia com especialização em Psicopedagogia"
+    },
+    {
+     "nome": "Educador Físico (Bacharelado)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Educação Física (Bacharelado) e registro no conselho"
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Psicologia e registro no CRP"
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Terapia Ocupacional e registro no conselho"
+    },
+    {
+     "nome": "Médico Ortopedista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 6077.09,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Medicina, especialização em Ortopedia e registro no CRM"
+    },
+    {
+     "nome": "Psicólogo para atuar em Neuropsicologia",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Psicologia com atuação/especialização em Neuropsicologia e registro no CRP"
+    },
+    {
+     "nome": "Técnico Administrativo",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": 1949.88,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Apenas Ensino Médio completo"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-abre-concurso-publico-com-salarios-de-ate-13881": {
   "first_seen": "2026-10-21",
@@ -10412,7 +10836,128 @@
    "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
    "jornada": "20 a 40 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
-  }
+  },
+  "ia": {
+   "cidade": "São José da Bela Vista",
+   "banca": "Instituto INDEC",
+   "data_prova": "06/12/2026",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios": "Auxílio-alimentação para todos os cargos",
+   "isencao": "Taxa de R$ 75,00 para nível médio e R$ 85,00 para nível superior. Não há informações detalhadas sobre requisitos de isenção no texto.",
+   "jornada_geral": "20 a 40 horas semanais (e 117 horas mensais para Professor de Artes)",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Agente Fiscal Tributário",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio completo"
+    },
+    {
+     "nome": "Agente Orientador Escolar",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio completo"
+    },
+    {
+     "nome": "Auxiliar de Farmácia",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio completo"
+    },
+    {
+     "nome": "Fiscal de Rendas e Postura",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio completo"
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "Coordenador Pedagógico de Educação Fundamental I",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "Médico do Trabalho",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "Nutricionista da Saúde",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Artes",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "117 horas mensais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-matematica-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-23",
@@ -10488,5 +11033,66 @@
    "jornada": "12 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
   }
+ },
+ "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional": {
+  "first_seen": "2026-10-23",
+  "first_seen_ts": "2026-10-23T11:53:06.790658-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "31d63517c6ce",
+  "fisio_linhas": [
+   "HCFMRP-USP - SP abre concursos públicos para Fisioterapeuta e Terapeuta Ocupacional",
+   "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)"
+  ],
+  "salario_max_texto": 2978.36,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
+    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional) (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 39/2026",
+    "EDITAL Nº 40/2026"
+   ],
+   "link_banca": "https://www.hcrp.usp.br/",
+   "nome_banca": null,
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação no valor de R$ 360,00, adicional de insalubridade e vale-transporte",
+   "jornada": "30 horas semanais",
+   "isencao": "Há isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais."
+  },
+  "ia": {
+   "cidade": "Ribeirão Preto",
+   "banca": "HCFMRP-USP",
+   "data_prova": null,
+   "regime_geral": null,
+   "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
+   "isencao": "Taxa de inscrição de R$ 126,79. Há previsão de isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
+   "jornada_geral": "30 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 2978.36,
+     "carga_horaria": "30h semanais",
+     "regime": null,
+     "requisitos": "Ensino Superior completo em Fisioterapia e registro no conselho de classe."
+    },
+    {
+     "nome": "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 2978.36,
+     "carga_horaria": "30h semanais",
+     "regime": null,
+     "requisitos": "Ensino Superior completo em Terapia Ocupacional e registro no conselho de classe."
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  }
 }

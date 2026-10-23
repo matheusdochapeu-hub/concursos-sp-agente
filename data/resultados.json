@@ -1,11 +1,11 @@
 {
- "gerado_em": "23/10/2026 11:31",
- "gerado_em_iso": "2026-10-23T11:31:11.652853-03:00",
+ "gerado_em": "23/10/2026 11:53",
+ "gerado_em_iso": "2026-10-23T11:53:06.790658-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
- "total_sp": 160,
- "total_brasil": 593,
+ "total_sp": 161,
+ "total_brasil": 596,
  "ia_ativa": true,
- "novos_ultimas_24h": 6,
+ "novos_ultimas_24h": 7,
  "encerrando_proximos_dias": 48,
  "fisioterapia": [
   {
@@ -193,6 +193,127 @@
      "cargo_busca": "Cirurgião Dentista Generalista",
      "banca_busca": "IBAM",
      "label_combo": "Cirurgião Dentista Generalista · IBAM"
+    }
+   }
+  },
+  {
+   "url": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional",
+   "orgao": "HCFMRP-USP - Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto da Universidade de São Paulo",
+   "titulo": "HCFMRP-USP - SP abre concursos públicos para Fisioterapeuta e Terapeuta Ocupacional",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "2 vagas até R$ 2.978,36",
+   "cargos_resumo": "Agente Técnico de Assistência à Saúde",
+   "niveis": "Superior",
+   "salario_max_listagem": 2978.36,
+   "inscricao_ate": "26/10 a 13/11/2026",
+   "cidade": "Ribeirão Preto",
+   "lat": -21.1699,
+   "lon": -47.8099,
+   "banca": "HCFMRP-USP",
+   "site_banca": "https://www.hcrp.usp.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional#links",
+   "arquivos_edital": [
+    "EDITAL Nº 39/2026",
+    "EDITAL Nº 40/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
+   "jornada_geral": "30 horas semanais",
+   "isencao": "Taxa de inscrição de R$ 126,79. Há previsão de isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
+   "faixa_salarial": "Até R$ 2.978,36",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-13",
+    "dias_restantes": 21,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 21 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
+    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional) (1 vaga)",
+    "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
+    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional)"
+   ],
+   "first_seen_ts": "2026-10-23T11:53:06.790658-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [
+    "HCFMRP-USP - SP abre concursos públicos para Fisioterapeuta e Terapeuta Ocupacional",
+    "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)"
+   ],
+   "fisio": true,
+   "fisio_detalhes": {
+    "cargo": "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
+    "vagas": "1 vaga imediata",
+    "vagas_imediatas": 1,
+    "tem_cr": false,
+    "salario": 2978.36,
+    "salario_bruto": 2978.36,
+    "salario_total": 3338.36,
+    "salario_exibicao": "R$ 2.978,36",
+    "salario_detalhe": "Bruto: R$ 2.978,36 + R$ 360,00 (auxílios) = R$ 3.338,36 com auxílios",
+    "carga_horaria": "30h semanais",
+    "regime": "Consultar edital",
+    "escolaridade_tipo": "superior",
+    "requisitos": "Ensino Superior completo em Fisioterapia e registro no conselho de classe.",
+    "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
+    "resumo_conteudo": [
+     "Língua Portuguesa (HCFMRP-USP): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
+     "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
+     "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
+     "Fisioterapia Clínica e Preventiva: Traumato-ortopédica, reumatológica, neurofuncional (adulto e infantil), cardiorrespiratória, uroginecológica, geriátrica e Saúde da Família",
+     "Ética e Legislação Profissional: Código de Ética e Deontologia da Fisioterapia e resoluções do COFFITO/CREFITO"
+    ]
+   },
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 2978.36,
+   "superior_itens": [
+    {
+     "nome": "Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde",
+     "vagas": "2 vagas imediatas",
+     "vagas_imediatas": 2,
+     "tem_cr": false,
+     "salario": 2978.36,
+     "salario_bruto": 2978.36,
+     "salario_total": 3338.36,
+     "salario_detalhe": "Bruto: R$ 2.978,36 + R$ 360,00 (auxílios) = R$ 3.338,36 com auxílios",
+     "carga_horaria": "30 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Fisioterapia (CREFITO). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
+     "resumo_conteudo": [
+      "Língua Portuguesa (HCFMRP-USP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Técnico de Assistência à Saúde): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Fisioterapia (CREFITO).",
+   "termos_formacao": [
+    "fisioterapia"
+   ],
+   "links_provas_map": {
+    "fisio": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude-hcfmrp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
+     "url_banca": "https://www.pciconcursos.com.br/provas/hcfmrp",
+     "cargo_busca": "Agente Técnico de Assistência à Saúde",
+     "banca_busca": "HCFMRP",
+     "label_combo": "Agente Técnico de Assistência à Saúde · HCFMRP"
+    },
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude-hcfmrp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
+     "url_banca": "https://www.pciconcursos.com.br/provas/hcfmrp",
+     "cargo_busca": "Agente Técnico de Assistência à Saúde",
+     "banca_busca": "HCFMRP",
+     "label_combo": "Agente Técnico de Assistência à Saúde · HCFMRP"
     }
    }
   },
@@ -4934,7 +5055,7 @@
    "cidade": "Marília",
    "lat": -22.2171,
    "lon": -49.9501,
-   "banca": "Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)",
+   "banca": "FAMESP",
    "site_banca": "https://www.famesp.org.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/famesp-divulga-10-processos-seletivos-em-marilia-sp#links",
    "arquivos_edital": [
@@ -4950,10 +5071,10 @@
     "EDITAL Nº 306/2026"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxa de inscrição no valor de R$ 110,00. O edital não detalha requisitos de isenção.",
    "faixa_salarial": "Até R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
@@ -4972,7 +5093,17 @@
     "Terapeuta Ocupacional (1 vaga)",
     "Médico Ortopedista (1 vaga)",
     "Psicólogo para atuar em Neuropsicologia (1 vaga)",
-    "Técnico Administrativo (1 vaga)"
+    "Técnico Administrativo (1 vaga)",
+    "Assistente Social",
+    "Fonoaudiólogo",
+    "Nutricionista",
+    "Pedagogo (Psicopedagogo)",
+    "Educador Físico (Bacharelado)",
+    "Psicólogo",
+    "Terapeuta Ocupacional",
+    "Médico Ortopedista",
+    "Psicólogo para atuar em Neuropsicologia",
+    "Técnico Administrativo"
    ],
    "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
    "is_baseline": false,
@@ -4982,7 +5113,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Técnico Administrativo",
+     "nome": "Técnico Administrativo / Técnico Administrativo",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -4991,12 +5122,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico Administrativo) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
+     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico Administrativo / Técnico Administrativo) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (FAMESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Técnico Administrativo): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5006,7 +5137,7 @@
    "salario_max": 6077.09,
    "superior_itens": [
     {
-     "nome": "Assistente Social / Fonoaudiólogo / Nutricionista / Pedagogo (+4 cargos)",
+     "nome": "Assistente Social / Fonoaudiólogo / Nutricionista / Pedagogo (+12 cargos)",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -5015,12 +5146,12 @@
      "salario_total": 6077.09,
      "salario_detalhe": "Bruto: R$ 6.077,09 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Medicina (CRM), Nutrição (CRN) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (FAMESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Assistente Social): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5038,20 +5169,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo-fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo-famesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_banca": "https://www.pciconcursos.com.br/provas/famesp",
      "cargo_busca": "Técnico Administrativo",
-     "banca_busca": "Fundação para o Desenvolvimento Médico e Hospitalar",
-     "label_combo": "Técnico Administrativo · Fundação para o Desenvolvimento Médico e Hospitalar"
+     "banca_busca": "FAMESP",
+     "label_combo": "Técnico Administrativo · FAMESP"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-famesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/assistente-social",
-     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_banca": "https://www.pciconcursos.com.br/provas/famesp",
      "cargo_busca": "Assistente Social",
-     "banca_busca": "Fundação para o Desenvolvimento Médico e Hospitalar",
-     "label_combo": "Assistente Social · Fundação para o Desenvolvimento Médico e Hospitalar"
+     "banca_busca": "FAMESP",
+     "label_combo": "Assistente Social · FAMESP"
     }
    }
   },
@@ -5069,17 +5200,17 @@
    "cidade": "São José da Bela Vista",
    "lat": -20.5935,
    "lon": -47.6424,
-   "banca": "Prefeitura Municipal de São José da Bela Vista",
+   "banca": "Instituto INDEC",
    "site_banca": "https://www.saojosedabelavista.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva#links",
    "arquivos_edital": [
     "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026"
    ],
    "data_prova": "06/12/2026",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Auxílio-alimentação · Auxílio-alimentação",
-   "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios_gerais": "Auxílio-alimentação para todos os cargos",
+   "jornada_geral": "20 a 40 horas semanais (e 117 horas mensais para Professor de Artes)",
+   "isencao": "Taxa de R$ 75,00 para nível médio e R$ 85,00 para nível superior. Não há informações detalhadas sobre requisitos de isenção no texto.",
    "faixa_salarial": "Até R$ 7.078,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
@@ -5100,7 +5231,19 @@
     "Médico do Trabalho (cadastro de reserva)",
     "Nutricionista (cadastro de reserva)",
     "Nutricionista da Saúde (cadastro de reserva)",
-    "Professor de Educação Básica II - Artes (cadastro de reserva)"
+    "Professor de Educação Básica II - Artes (cadastro de reserva)",
+    "Agente Fiscal Tributário",
+    "Agente Orientador Escolar",
+    "Auxiliar de Farmácia",
+    "Fiscal de Rendas e Postura",
+    "Assistente Social",
+    "Coordenador Pedagógico de Educação Fundamental I",
+    "Farmacêutico",
+    "Fonoaudiólogo",
+    "Médico do Trabalho",
+    "Nutricionista",
+    "Nutricionista da Saúde",
+    "Professor de Educação Básica II - Artes"
    ],
    "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
    "is_baseline": false,
@@ -5110,7 +5253,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura",
+     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura / Agente Fiscal Tributário / Fiscal de Rendas e Postura",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -5118,13 +5261,13 @@
      "salario_bruto": 3200.0,
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "carga_horaria": "20 a 40 horas semanais (e 117 horas mensais para Professor de Artes)",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio",
-     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
-     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura / Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
+     "beneficios": "Auxílio-alimentação para todos os cargos",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto INDEC): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5134,7 +5277,7 @@
    "salario_max": 7078.72,
    "superior_itens": [
     {
-     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+7 cargos)",
+     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+18 cargos)",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -5142,13 +5285,13 @@
      "salario_bruto": 7078.72,
      "salario_total": 7078.72,
      "salario_detalhe": "Bruto: R$ 7.078,72 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "carga_horaria": "20 a 40 horas semanais (e 117 horas mensais para Professor de Artes)",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Pedagogia, Licenciatura plena, Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "beneficios": "Auxílio-alimentação para todos os cargos",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto INDEC): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5180,20 +5323,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-indec",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indec",
      "cargo_busca": "Agente Fiscal Tributário",
-     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
-     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+     "banca_busca": "INDEC",
+     "label_combo": "Agente Fiscal Tributário · INDEC"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-indec",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indec",
      "cargo_busca": "Agente Fiscal Tributário",
-     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
-     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+     "banca_busca": "INDEC",
+     "label_combo": "Agente Fiscal Tributário · INDEC"
     }
    }
   },
@@ -17576,17 +17719,17 @@
    "cidade": "São José da Bela Vista",
    "lat": -20.5935,
    "lon": -47.6424,
-   "banca": "Prefeitura Municipal de São José da Bela Vista",
+   "banca": "Instituto INDEC",
    "site_banca": "https://www.saojosedabelavista.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva#links",
    "arquivos_edital": [
     "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026"
    ],
    "data_prova": "06/12/2026",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Auxílio-alimentação · Auxílio-alimentação",
-   "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios_gerais": "Auxílio-alimentação para todos os cargos",
+   "jornada_geral": "20 a 40 horas semanais (e 117 horas mensais para Professor de Artes)",
+   "isencao": "Taxa de R$ 75,00 para nível médio e R$ 85,00 para nível superior. Não há informações detalhadas sobre requisitos de isenção no texto.",
    "faixa_salarial": "Até R$ 7.078,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
@@ -17607,7 +17750,19 @@
     "Médico do Trabalho (cadastro de reserva)",
     "Nutricionista (cadastro de reserva)",
     "Nutricionista da Saúde (cadastro de reserva)",
-    "Professor de Educação Básica II - Artes (cadastro de reserva)"
+    "Professor de Educação Básica II - Artes (cadastro de reserva)",
+    "Agente Fiscal Tributário",
+    "Agente Orientador Escolar",
+    "Auxiliar de Farmácia",
+    "Fiscal de Rendas e Postura",
+    "Assistente Social",
+    "Coordenador Pedagógico de Educação Fundamental I",
+    "Farmacêutico",
+    "Fonoaudiólogo",
+    "Médico do Trabalho",
+    "Nutricionista",
+    "Nutricionista da Saúde",
+    "Professor de Educação Básica II - Artes"
    ],
    "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
    "is_baseline": false,
@@ -17617,7 +17772,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura",
+     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura / Agente Fiscal Tributário / Fiscal de Rendas e Postura",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -17625,13 +17780,13 @@
      "salario_bruto": 3200.0,
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "carga_horaria": "20 a 40 horas semanais (e 117 horas mensais para Professor de Artes)",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio",
-     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
-     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura / Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
+     "beneficios": "Auxílio-alimentação para todos os cargos",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto INDEC): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -17641,7 +17796,7 @@
    "salario_max": 7078.72,
    "superior_itens": [
     {
-     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+7 cargos)",
+     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+18 cargos)",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -17649,13 +17804,13 @@
      "salario_bruto": 7078.72,
      "salario_total": 7078.72,
      "salario_detalhe": "Bruto: R$ 7.078,72 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "carga_horaria": "20 a 40 horas semanais (e 117 horas mensais para Professor de Artes)",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Pedagogia, Licenciatura plena, Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "beneficios": "Auxílio-alimentação para todos os cargos",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto INDEC): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -17687,20 +17842,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-indec",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indec",
      "cargo_busca": "Agente Fiscal Tributário",
-     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
-     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+     "banca_busca": "INDEC",
+     "label_combo": "Agente Fiscal Tributário · INDEC"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-indec",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indec",
      "cargo_busca": "Agente Fiscal Tributário",
-     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
-     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+     "banca_busca": "INDEC",
+     "label_combo": "Agente Fiscal Tributário · INDEC"
     }
    }
   },
@@ -18100,7 +18255,7 @@
    "cidade": "Marília",
    "lat": -22.2171,
    "lon": -49.9501,
-   "banca": "Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)",
+   "banca": "FAMESP",
    "site_banca": "https://www.famesp.org.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/famesp-divulga-10-processos-seletivos-em-marilia-sp#links",
    "arquivos_edital": [
@@ -18116,10 +18271,10 @@
     "EDITAL Nº 306/2026"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxa de inscrição no valor de R$ 110,00. O edital não detalha requisitos de isenção.",
    "faixa_salarial": "Até R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
@@ -18138,7 +18293,17 @@
     "Terapeuta Ocupacional (1 vaga)",
     "Médico Ortopedista (1 vaga)",
     "Psicólogo para atuar em Neuropsicologia (1 vaga)",
-    "Técnico Administrativo (1 vaga)"
+    "Técnico Administrativo (1 vaga)",
+    "Assistente Social",
+    "Fonoaudiólogo",
+    "Nutricionista",
+    "Pedagogo (Psicopedagogo)",
+    "Educador Físico (Bacharelado)",
+    "Psicólogo",
+    "Terapeuta Ocupacional",
+    "Médico Ortopedista",
+    "Psicólogo para atuar em Neuropsicologia",
+    "Técnico Administrativo"
    ],
    "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
    "is_baseline": false,
@@ -18148,7 +18313,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Técnico Administrativo",
+     "nome": "Técnico Administrativo / Técnico Administrativo",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -18157,12 +18322,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico Administrativo) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
+     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico Administrativo / Técnico Administrativo) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (FAMESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Técnico Administrativo): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -18172,7 +18337,7 @@
    "salario_max": 6077.09,
    "superior_itens": [
     {
-     "nome": "Assistente Social / Fonoaudiólogo / Nutricionista / Pedagogo (+4 cargos)",
+     "nome": "Assistente Social / Fonoaudiólogo / Nutricionista / Pedagogo (+12 cargos)",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -18181,12 +18346,12 @@
      "salario_total": 6077.09,
      "salario_detalhe": "Bruto: R$ 6.077,09 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Medicina (CRM), Nutrição (CRN) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (FAMESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Assistente Social): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -18204,20 +18369,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo-fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo-famesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_banca": "https://www.pciconcursos.com.br/provas/famesp",
      "cargo_busca": "Técnico Administrativo",
-     "banca_busca": "Fundação para o Desenvolvimento Médico e Hospitalar",
-     "label_combo": "Técnico Administrativo · Fundação para o Desenvolvimento Médico e Hospitalar"
+     "banca_busca": "FAMESP",
+     "label_combo": "Técnico Administrativo · FAMESP"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-famesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/assistente-social",
-     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_banca": "https://www.pciconcursos.com.br/provas/famesp",
      "cargo_busca": "Assistente Social",
-     "banca_busca": "Fundação para o Desenvolvimento Médico e Hospitalar",
-     "label_combo": "Assistente Social · Fundação para o Desenvolvimento Médico e Hospitalar"
+     "banca_busca": "FAMESP",
+     "label_combo": "Assistente Social · FAMESP"
     }
    }
   },
@@ -24607,6 +24772,127 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional",
+   "orgao": "HCFMRP-USP - Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto da Universidade de São Paulo",
+   "titulo": "HCFMRP-USP - SP abre concursos públicos para Fisioterapeuta e Terapeuta Ocupacional",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "2 vagas até R$ 2.978,36",
+   "cargos_resumo": "Agente Técnico de Assistência à Saúde",
+   "niveis": "Superior",
+   "salario_max_listagem": 2978.36,
+   "inscricao_ate": "26/10 a 13/11/2026",
+   "cidade": "Ribeirão Preto",
+   "lat": -21.1699,
+   "lon": -47.8099,
+   "banca": "HCFMRP-USP",
+   "site_banca": "https://www.hcrp.usp.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional#links",
+   "arquivos_edital": [
+    "EDITAL Nº 39/2026",
+    "EDITAL Nº 40/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
+   "jornada_geral": "30 horas semanais",
+   "isencao": "Taxa de inscrição de R$ 126,79. Há previsão de isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
+   "faixa_salarial": "Até R$ 2.978,36",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-13",
+    "dias_restantes": 21,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 21 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
+    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional) (1 vaga)",
+    "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
+    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional)"
+   ],
+   "first_seen_ts": "2026-10-23T11:53:06.790658-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [
+    "HCFMRP-USP - SP abre concursos públicos para Fisioterapeuta e Terapeuta Ocupacional",
+    "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)"
+   ],
+   "fisio": true,
+   "fisio_detalhes": {
+    "cargo": "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
+    "vagas": "1 vaga imediata",
+    "vagas_imediatas": 1,
+    "tem_cr": false,
+    "salario": 2978.36,
+    "salario_bruto": 2978.36,
+    "salario_total": 3338.36,
+    "salario_exibicao": "R$ 2.978,36",
+    "salario_detalhe": "Bruto: R$ 2.978,36 + R$ 360,00 (auxílios) = R$ 3.338,36 com auxílios",
+    "carga_horaria": "30h semanais",
+    "regime": "Consultar edital",
+    "escolaridade_tipo": "superior",
+    "requisitos": "Ensino Superior completo em Fisioterapia e registro no conselho de classe.",
+    "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
+    "resumo_conteudo": [
+     "Língua Portuguesa (HCFMRP-USP): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
+     "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
+     "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
+     "Fisioterapia Clínica e Preventiva: Traumato-ortopédica, reumatológica, neurofuncional (adulto e infantil), cardiorrespiratória, uroginecológica, geriátrica e Saúde da Família",
+     "Ética e Legislação Profissional: Código de Ética e Deontologia da Fisioterapia e resoluções do COFFITO/CREFITO"
+    ]
+   },
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 2978.36,
+   "superior_itens": [
+    {
+     "nome": "Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde",
+     "vagas": "2 vagas imediatas",
+     "vagas_imediatas": 2,
+     "tem_cr": false,
+     "salario": 2978.36,
+     "salario_bruto": 2978.36,
+     "salario_total": 3338.36,
+     "salario_detalhe": "Bruto: R$ 2.978,36 + R$ 360,00 (auxílios) = R$ 3.338,36 com auxílios",
+     "carga_horaria": "30 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Fisioterapia (CREFITO). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
+     "resumo_conteudo": [
+      "Língua Portuguesa (HCFMRP-USP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Agente Técnico de Assistência à Saúde): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Fisioterapia (CREFITO).",
+   "termos_formacao": [
+    "fisioterapia"
+   ],
+   "links_provas_map": {
+    "fisio": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude-hcfmrp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
+     "url_banca": "https://www.pciconcursos.com.br/provas/hcfmrp",
+     "cargo_busca": "Agente Técnico de Assistência à Saúde",
+     "banca_busca": "HCFMRP",
+     "label_combo": "Agente Técnico de Assistência à Saúde · HCFMRP"
+    },
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude-hcfmrp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
+     "url_banca": "https://www.pciconcursos.com.br/provas/hcfmrp",
+     "cargo_busca": "Agente Técnico de Assistência à Saúde",
+     "banca_busca": "HCFMRP",
+     "label_combo": "Agente Técnico de Assistência à Saúde · HCFMRP"
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/usp-abre-processo-seletivo-para-professor-na-area-de-filosofia-e-sociologia-do-direito-em-ribeirao-preto",
    "orgao": "USP - Faculdade de Direito de Ribeirão Preto da Universidade de São Paulo",
    "titulo": "USP abre processo seletivo para professor na área de Filosofia e Sociologia do Direito em Ribeirão Preto",
@@ -25797,17 +26083,17 @@
    "cidade": "Lençóis Paulista",
    "lat": -22.6027,
    "lon": -48.8037,
-   "banca": "Prefeitura de Lençóis Paulista",
+   "banca": "Indepac",
    "site_banca": "https://www.lencoispaulista.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-processo-seletivo-para-professores#links",
    "arquivos_edital": [
     "EDITAL Nº 01/2026"
    ],
    "data_prova": "29/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
-   "beneficios_gerais": "Vale-alimentação, conforme legislação municipal",
+   "regime_geral": "Processo seletivo",
+   "beneficios_gerais": "Vale-alimentação (conforme legislação municipal)",
    "jornada_geral": "12 a 35 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 45,00 para todos os cargos. Haverá possibilidade de isenção para doadores de medula óssea ou para inscritos no CadÚnico, conforme regras do edital e datas específicas (16 a 19 de outubro de 2026).",
+   "isencao": "Taxa de inscrição de R$ 45,00. Possibilidade de isenção para doadores de medula óssea ou para inscritos no CadÚnico, conforme regras do edital (solicitação de 16 a 19 de outubro de 2026).",
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
@@ -25826,7 +26112,17 @@
     "Professor de Ensino Fundamental II - Inglês (CR)",
     "Professor de Ensino Fundamental II - Português (CR)",
     "Professor Substituto de Educação Infantil (CR)",
-    "Professor Substituto de Ensino Fundamental I (CR)"
+    "Professor Substituto de Ensino Fundamental I (CR)",
+    "Professor de Educação Especial",
+    "Professor de Ensino Fundamental II - Arte",
+    "Professor de Ensino Fundamental II - Ciências",
+    "Professor de Ensino Fundamental II - Educação Física",
+    "Professor de Ensino Fundamental II - Geografia",
+    "Professor de Ensino Fundamental II - História",
+    "Professor de Ensino Fundamental II - Inglês",
+    "Professor de Ensino Fundamental II - Português",
+    "Professor Substituto de Educação Infantil",
+    "Professor Substituto de Ensino Fundamental I"
    ],
    "first_seen_ts": "2026-10-20T07:00:00-03:00",
    "is_baseline": true,
@@ -25838,7 +26134,7 @@
    "salario_max": null,
    "superior_itens": [
     {
-     "nome": "Professor de Educação Especial / Professor de Ensino Fundamental II - Arte / Professor de Ensino Fundamental II - Ciências / Professor de Ensino Fundamental II - Educação Física (+6 cargos)",
+     "nome": "Professor de Educação Especial / Professor de Ensino Fundamental II - Arte / Professor de Ensino Fundamental II - Ciências / Professor de Ensino Fundamental II - Educação Física (+16 cargos)",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -25847,12 +26143,12 @@
      "salario_total": null,
      "salario_detalhe": "Faixa bruta no edital: Consultar edital (+ auxílios legais)",
      "carga_horaria": "12 a 35 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "Processo seletivo",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Vale-alimentação, conforme legislação municipal",
+     "beneficios": "Vale-alimentação (conforme legislação municipal)",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura de Lençóis Paulista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Indepac): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Professor de Educação Especial): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -25865,12 +26161,12 @@
    ],
    "links_provas_map": {
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-de-educacao-especial-prefeitura-de-lencois-paulista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-de-educacao-especial-indepac",
      "url_cargo": "https://www.pciconcursos.com.br/provas/professor-de-educacao-especial",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-de-lencois-paulista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indepac",
      "cargo_busca": "Professor de Educação Especial",
-     "banca_busca": "Prefeitura de Lençóis Paulista",
-     "label_combo": "Professor de Educação Especial · Prefeitura de Lençóis Paulista"
+     "banca_busca": "INDEPAC",
+     "label_combo": "Professor de Educação Especial · INDEPAC"
     }
    }
   },
@@ -25888,17 +26184,17 @@
    "cidade": "Matão",
    "lat": -21.6025,
    "lon": -48.364,
-   "banca": "Prefeitura Municipal de Matão",
+   "banca": "IBAM SP",
    "site_banca": "https://www.matao.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-processo-seletivo-para-professores-temporarios#links",
    "arquivos_edital": [
     "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
    ],
    "data_prova": "06/12/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "Temporário",
    "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "15 e 28 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 97,00, com possibilidade de isenção nos dias 28 e 29 de setembro de 2026 para candidatos que atendam aos requisitos previstos em lei.",
+   "jornada_geral": "15 a 28 horas semanais",
+   "isencao": "Taxa de inscrição de R$ 97,00. Possibilidade de isenção nos dias 28 e 29 de setembro de 2026 para candidatos que atendam aos requisitos previstos em lei.",
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
@@ -25930,7 +26226,30 @@
     "Professor III Temporário - Educação Física (CR)",
     "Professor III Temporário - Educação Física - Dança (CR)",
     "Professor III Temporário - Educação Física - Ginástica Geral (CR)",
-    "Professor III Temporário - Educação Física - Natação (CR)"
+    "Professor III Temporário - Educação Física - Natação (CR)",
+    "Professor I Temporário - Educação Infantil (0 a 6 anos)",
+    "Professor I Temporário - Ensino Fundamental (Séries Iniciais)",
+    "Professor de Educação Especial Temporário - Deficiência Auditiva",
+    "Professor de Educação Especial Temporário - Deficiência Intelectual",
+    "Professor de Educação Especial Temporário - Deficiência Visual",
+    "Professor III Temporário - Português",
+    "Professor III Temporário - Matemática",
+    "Professor III Temporário - Geografia",
+    "Professor III Temporário - Ciências",
+    "Professor III Temporário - Inglês",
+    "Professor III Temporário - Filosofia",
+    "Professor III Temporário - Arte/Educação Artística",
+    "Professor III Temporário - História",
+    "Professor III Temporário - Química",
+    "Professor III Temporário - Biologia",
+    "Professor III Temporário - Física",
+    "Professor III Temporário - Sociologia",
+    "Professor III Temporário - Arte/Educação Artística - Arte Musical",
+    "Professor III Temporário - Arte/Educação Artística Artes Cênicas",
+    "Professor III Temporário - Educação Física",
+    "Professor III Temporário - Educação Física - Dança",
+    "Professor III Temporário - Educação Física - Ginástica Geral",
+    "Professor III Temporário - Educação Física - Natação"
    ],
    "first_seen_ts": "2026-10-20T07:00:00-03:00",
    "is_baseline": true,
@@ -25942,7 +26261,7 @@
    "salario_max": null,
    "superior_itens": [
     {
-     "nome": "Professor I Temporário - Educação Infantil / Professor I Temporário - Ensino Fundamental 1º, 2º, 3º, 4º e 5º anos / Professor de Educação Especial Temporário - Deficiência Auditiva / Professor de Educação Especial Temporário - Deficiência Intelectual (+19 cargos)",
+     "nome": "Professor I Temporário - Educação Infantil / Professor I Temporário - Ensino Fundamental 1º, 2º, 3º, 4º e 5º anos / Professor de Educação Especial Temporário - Deficiência Auditiva / Professor de Educação Especial Temporário - Deficiência Intelectual (+42 cargos)",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -25950,13 +26269,13 @@
      "salario_bruto": null,
      "salario_total": null,
      "salario_detalhe": "Faixa bruta no edital: Consultar edital (+ auxílios legais)",
-     "carga_horaria": "15 e 28 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "carga_horaria": "15 a 28 horas semanais",
+     "regime": "Temporário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Matão): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (IBAM SP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Professor I Temporário - Educação Infantil): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -25969,12 +26288,12 @@
    ],
    "links_provas_map": {
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-i-temporario-prefeitura-municipal-de-matao",
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-i-temporario-ibam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/professor-i-temporario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-matao",
+     "url_banca": "https://www.pciconcursos.com.br/provas/ibam",
      "cargo_busca": "Professor I Temporário",
-     "banca_busca": "Prefeitura Municipal de Matão",
-     "label_combo": "Professor I Temporário · Prefeitura Municipal de Matão"
+     "banca_busca": "IBAM",
+     "label_combo": "Professor I Temporário · IBAM"
     }
    }
   },
