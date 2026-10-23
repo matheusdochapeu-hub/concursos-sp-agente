@@ -2640,11 +2640,11 @@ def render_html(
 
       <div class="cmp-summary-banner" style="margin-bottom:16px;">
         <div class="cmp-kpi">
-          <span>🌐 Total Global de Acessos</span>
+          <span>🌐 Total Geral de Acessos</span>
           <strong id="kpiTotalAcessosGlobais">Carregando...</strong>
         </div>
         <div class="cmp-kpi">
-          <span>🔑 Logins Google Realizados</span>
+          <span>🔑 Logins com Conta Google</span>
           <strong id="kpiTotalLoginsGlobais">Carregando...</strong>
         </div>
         <div class="cmp-kpi">
@@ -2652,13 +2652,13 @@ def render_html(
           <strong id="kpiAcessosLocais">0</strong>
         </div>
         <div class="cmp-kpi">
-          <span>👥 Contas Google Registradas</span>
+          <span>👥 Usuários Únicos (Contas)</span>
           <strong id="kpiUsuariosUnicos">0</strong>
         </div>
       </div>
 
       <div style="margin-bottom:16px;">
-        <div class="f-label" style="margin-bottom:6px;">📋 Últimos Acessos e Logins Registrados (Geral e Terceiros):</div>
+        <div class="f-label" style="margin-bottom:6px;">📋 Histórico em Tempo Real de Acessos e Logins (Planilha Google):</div>
         <div style="max-height:220px;overflow-y:auto;border:1px solid var(--border);border-radius:12px;">
           <table class="cmp-table" style="font-size:.8rem;">
             <thead>
@@ -4147,26 +4147,14 @@ def render_html(
   let globalViewsCount = null;
   let globalLoginsCount = null;
 
-  async function enviarPingAcessoGlobal() {{
-    try {{
-      const webhookUrl = obterAuditWebhookUrl();
-      if (!webhookUrl) return null;
-      const sep = webhookUrl.includes('?') ? '&' : '?';
-      fetch(webhookUrl + sep + 'action=ping&t=' + Date.now(), {{
-        mode: 'no-cors',
-        cache: 'no-store'
-      }}).catch(() => {{}});
-    }} catch (_) {{}}
-  }}
-
-  async function enviarRegistroLoginGlobal(nomeStr, emailStr, eventoStr) {{
+  async function enviarRegistroAcessoGlobal(nomeStr, emailStr, eventoStr) {{
     try {{
       const webhookUrl = obterAuditWebhookUrl();
       if (!webhookUrl) return;
       const payload = JSON.stringify({{
         nome: String(nomeStr || 'Visitante').slice(0, 120),
         email: String(emailStr || '-').slice(0, 120),
-        evento: String(eventoStr || 'Login').slice(0, 120),
+        evento: String(eventoStr || 'Acesso à página').slice(0, 120),
         ua: (navigator.userAgent || '').slice(0, 150)
       }});
       fetch(webhookUrl, {{
@@ -4177,13 +4165,6 @@ def render_html(
       }}).catch(() => {{}});
     }} catch (_) {{}}
   }}
-
-  // Registra acesso da página local e na Planilha Google
-  (async function contabilizarAcessoInicial() {{
-    const viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '0') + 1;
-    localStorage.setItem(LOCAL_VIEWS_KEY, String(viewsLocais));
-    await enviarPingAcessoGlobal();
-  }})();
 
   function lerSessaoGoogle() {{
     try {{
@@ -4207,6 +4188,22 @@ def render_html(
     userProfileText.textContent = `👤 ${{sessao.name || sessao.email}} (${{sessao.email}})`;
   }}
 
+  // Contabiliza cada acesso à página (usuários autenticados ou visitantes) no Google Sheets e localmente
+  (async function contabilizarAcessoInicial() {{
+    const viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '0') + 1;
+    localStorage.setItem(LOCAL_VIEWS_KEY, String(viewsLocais));
+
+    const sessaoExistente = lerSessaoGoogle();
+    if (sessaoExistente) {{
+      aplicarSessaoAutenticada(sessaoExistente);
+      registrarEventoAuditoria(`${{sessaoExistente.name}} <${{sessaoExistente.email}}>`, 'Acesso (sessão ativa)');
+      await enviarRegistroAcessoGlobal(sessaoExistente.name, sessaoExistente.email, 'Acesso (sessão ativa)');
+    }} else {{
+      registrarEventoAuditoria('Visitante', 'Acesso à página');
+      await enviarRegistroAcessoGlobal('Visitante', '-', 'Acesso à página');
+    }}
+  }})();
+
   async function concluirLoginGoogle(nome, email, metodo = 'Google Sign-In') {{
     const emailLimpo = String(email || '').trim().toLowerCase();
     const nomeLimpo = String(nome || '').trim() || emailLimpo.split('@')[0];
@@ -4221,7 +4218,7 @@ def render_html(
     localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(sessao));
     aplicarSessaoAutenticada(sessao);
     registrarEventoAuditoria(`${{nomeLimpo}} <${{emailLimpo}}>`, `Login (${{metodo}})`);
-    await enviarRegistroLoginGlobal(nomeLimpo, emailLimpo, `Login (${{metodo}})`);
+    await enviarRegistroAcessoGlobal(nomeLimpo, emailLimpo, `Login (${{metodo}})`);
   }}
 
   // Validação de JWT do Google Identity Services (quando Client ID configurado)
@@ -4440,14 +4437,24 @@ def render_html(
 
     if (dadosRemotos && typeof dadosRemotos.totalAcessos === 'number') {{
       const gViews = Math.max(dadosRemotos.totalAcessos, viewsLocais);
-      const gLogins = Math.max(Number(dadosRemotos.totalLogins) || 0, contasUnicasLocais.size);
+      const listaLogs = Array.isArray(dadosRemotos.logs) ? dadosRemotos.logs : [];
+      const loginsReais = listaLogs.filter(l => (l.evento || '').toLowerCase().includes('login')).length;
+      const gLogins = Math.max(loginsReais, Number(dadosRemotos.totalLogins) || 0, contasUnicasLocais.size);
       const gUnicos = Math.max(Number(dadosRemotos.usuariosUnicos) || 0, contasUnicasLocais.size);
+
+      globalViewsCount = gViews;
+      globalLoginsCount = gLogins;
 
       document.getElementById('kpiTotalAcessosGlobais').textContent = gViews.toLocaleString('pt-BR');
       document.getElementById('kpiTotalLoginsGlobais').textContent = gLogins.toLocaleString('pt-BR');
+      document.getElementById('kpiAcessosLocais').textContent = viewsLocais.toLocaleString('pt-BR');
       document.getElementById('kpiUsuariosUnicos').textContent = gUnicos.toLocaleString('pt-BR');
 
-      const logsParaExibir = (dadosRemotos.logs && dadosRemotos.logs.length > 0) ? dadosRemotos.logs : logsLocais;
+      if (btnDevPanel) {{
+        btnDevPanel.innerHTML = `📊 Acessos: <b>${{gViews.toLocaleString('pt-BR')}}</b> (Dev)`;
+      }}
+
+      const logsParaExibir = (listaLogs.length > 0) ? listaLogs : logsLocais;
       const tbody = document.getElementById('tabelaLogsDev');
       tbody.innerHTML = logsParaExibir.slice(0, 100).map(l => {{
         let tsStr = l.ts;
@@ -4457,11 +4464,17 @@ def render_html(
             tsStr = d.toLocaleString('pt-BR', {{ timeZone: 'America/Sao_Paulo' }});
           }}
         }} catch (_) {{}}
+        const ev = String(l.evento || 'Acesso');
+        const isLogin = ev.toLowerCase().includes('login');
+        const badgeStyle = isLogin
+          ? 'background:#dcfce7;color:#166534;border:1px solid #86efac;padding:3px 9px;border-radius:999px;font-weight:700;'
+          : 'background:#e0f2fe;color:#0369a1;border:1px solid #7dd3fc;padding:3px 9px;border-radius:999px;font-weight:700;';
+        const icon = isLogin ? '🔑 ' : '🌐 ';
         return `
           <tr>
-            <td>${{escHtml(tsStr)}}</td>
+            <td style="white-space:nowrap;font-size:0.78rem;">${{escHtml(tsStr)}}</td>
             <td><b>${{escHtml(l.usuario)}}</b></td>
-            <td>${{escHtml(l.evento)}}</td>
+            <td><span style="${{badgeStyle}}">${{icon}}${{escHtml(ev)}}</span></td>
           </tr>
         `;
       }}).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
@@ -4470,12 +4483,16 @@ def render_html(
       document.getElementById('kpiTotalLoginsGlobais').textContent = Math.max(1, contasUnicasLocais.size).toLocaleString('pt-BR');
       document.getElementById('kpiUsuariosUnicos').textContent = Math.max(1, contasUnicasLocais.size).toLocaleString('pt-BR');
 
+      if (btnDevPanel) {{
+        btnDevPanel.innerHTML = `📊 Acessos: <b>${{viewsLocais.toLocaleString('pt-BR')}}</b> (Dev)`;
+      }}
+
       const tbody = document.getElementById('tabelaLogsDev');
       tbody.innerHTML = logsLocais.slice(0, 50).map(l => `
         <tr>
-          <td>${{escHtml(l.ts)}}</td>
+          <td style="white-space:nowrap;font-size:0.78rem;">${{escHtml(l.ts)}}</td>
           <td><b>${{escHtml(l.usuario)}}</b></td>
-          <td>${{escHtml(l.evento)}}</td>
+          <td><span style="background:#e0f2fe;color:#0369a1;padding:3px 9px;border-radius:999px;font-weight:700;">🌐 ${{escHtml(l.evento)}}</span></td>
         </tr>
       `).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
     }}
@@ -4514,7 +4531,9 @@ def render_html(
     if (autorizadoDev) {{
       btnDevPanel.classList.add('visivel');
       await atualizarPainelDevStats();
-      modalDevStats.classList.add('aberto');
+      if (devParam) {{
+        modalDevStats.classList.add('aberto');
+      }}
     }} else {{
       btnDevPanel.classList.remove('visivel');
     }}
