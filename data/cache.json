@@ -9978,5 +9978,30 @@
    "jornada": "20 a 40 horas semanais",
    "isencao": "Candidatos inscritos no CadÚnico que sejam membros de família de baixa renda poderão solicitar isenção de 23 a 26 de outubro de 2026."
   }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sabino-sp-abre-concurso-publico-para-monitor-de-transporte-escolar": {
+  "first_seen": "2026-10-26",
+  "first_seen_ts": "2026-10-26T13:24:18.678158-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "45eb260fd2fa",
+  "fisio_linhas": [],
+  "salario_max_texto": 1572.65,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Monitor de Transporte Escolar (1 vaga + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DO CONCURSO PÚBLICO Nº 02/2026"
+   ],
+   "link_banca": "https://www.sabino.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Sabino",
+   "data_prova": "06/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
+  }
  }
 }

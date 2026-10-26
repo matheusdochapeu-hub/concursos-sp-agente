@@ -297,7 +297,8 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
     reg_cat = regime_categoria(regime)
     prova_sort = data_iso_sort(c.get("data_prova", ""))
     niveis_attr = niveis_tokens(c.get("niveis", ""), esc_tipo)
-    carreira_txt = inferir_plano_carreira(c["orgao"], regime, beneficios, requisitos)
+    orgao_nome = c.get("orgao") or c.get("titulo") or "Órgão Concursal"
+    carreira_txt = inferir_plano_carreira(orgao_nome, regime, beneficios, requisitos)
 
     st_insc = c.get("inscricao_status") or {}
     insc_sort = st_insc.get("data_fim_iso", "9999-12-31")
@@ -354,9 +355,10 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
     <article class="card{' card-urgente' if encerrando_bool else ''}"
       id="{card_uid}"
       data-uid="{card_uid}"
-      data-orgao="{e(c['orgao'])}"
-      data-titulo="{e(c['titulo'])}"
-      data-url="{safe_url(c['url'])}"
+      data-idx="{card_idx}"
+      data-orgao="{e(c.get('orgao') or c.get('titulo') or '')}"
+      data-titulo="{e(c.get('titulo') or c.get('orgao') or '')}"
+      data-url="{safe_url(c.get('url', ''))}"
       data-link-edital="{safe_url(c.get('link_edital'))}"
       data-cargo="{e(cargo_titulo)}"
       data-vagas-txt="{e(vagas_txt)}"
@@ -394,14 +396,14 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
       data-is-baseline="{1 if c.get('is_baseline') else 0}">
       <header class="card-head">
         <div class="head-top">
-          <h3><a href="{safe_url(c['url'])}" target="_blank" rel="noopener noreferrer">{e(c['orgao'])}</a></h3>
+          <h3><a href="{safe_url(c.get('url', ''))}" target="_blank" rel="noopener noreferrer">{e(c.get('orgao') or c.get('titulo') or 'Concurso')}</a></h3>
           <div class="badges-col">{badges_topo}</div>
         </div>
         <div class="loc-row">
           {chips_dist}
           {badge_escolaridade_html(esc_tipo)}
         </div>
-        <p class="titulo">{e(c['titulo'])}</p>
+        <p class="titulo">{e(c.get('titulo') or c.get('orgao') or '')}</p>
       </header>
 
       <div class="cargo-banner">
@@ -592,7 +594,9 @@ def render_html(
 
     urls_unicas = {}
     for c in fisio + medio_todos + superior_sp:
-        urls_unicas[c["url"]] = c
+        u_key = c.get("url") or c.get("titulo") or ""
+        if u_key:
+            urls_unicas[u_key] = c
     novos_count = sum(1 for c in urls_unicas.values() if c.get("novo"))
     encerrando_count = sum(1 for c in urls_unicas.values() if (c.get("inscricao_status") or {}).get("encerrando"))
 
@@ -1308,6 +1312,28 @@ def render_html(
     line-height: 1.3;
   }}
   .pill-row {{ display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }}
+  .pill-row.recolhido {{ display: none !important; }}
+  .toast-filtro {{
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: #0f172a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 10001;
+  }}
+  .toast-filtro.visivel {{
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }}
   .pill-btn {{
     background: #ffffff;
     color: var(--txt);
@@ -3013,6 +3039,8 @@ def render_html(
     </div>
   </div>
 
+  <div id="msgFiltroAplicado" class="toast-filtro" aria-live="polite">✓ Filtros atualizados</div>
+
   <!-- Rodapé com botão "☕ Me pague um café" -->
   <footer class="app-footer">
     <div class="container footer-coffee-wrap">
@@ -3595,6 +3623,9 @@ def render_html(
           return 0;
         }});
         cards.forEach(c => grid.appendChild(c));
+      }} else {{
+        cards.sort((a, b) => Number(a.dataset.idx || 0) - Number(b.dataset.idx || 0));
+        cards.forEach(c => grid.appendChild(c));
       }}
 
       const secCount = panel.querySelector('.sec-count');
@@ -3758,8 +3789,8 @@ def render_html(
       renderizarProvasAnteriores();
     }});
   }});
-  inputProvaCargo.addEventListener('input', () => renderizarProvasAnteriores());
-  inputProvaBanca.addEventListener('input', () => renderizarProvasAnteriores());
+  if (inputProvaCargo) inputProvaCargo.addEventListener('input', () => renderizarProvasAnteriores());
+  if (inputProvaBanca) inputProvaBanca.addEventListener('input', () => renderizarProvasAnteriores());
   document.getElementById('btnAbrirProvaDireta').addEventListener('click', () => {{
     window.open(montarUrlProva(inputProvaCargo.value.trim(), inputProvaBanca.value.trim()), '_blank', 'noopener');
   }});
@@ -4735,12 +4766,16 @@ def render_html(
         evento: String(eventoStr || 'Acesso à página').slice(0, 120),
         ua: (navigator.userAgent || '').slice(0, 150)
       }});
-      fetch(webhookUrl, {{
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
-        body: payload
-      }}).catch(() => {{}});
+      if (navigator.sendBeacon) {{
+        navigator.sendBeacon(webhookUrl, new Blob([payload], {{ type: 'text/plain;charset=utf-8' }}));
+      }} else {{
+        fetch(webhookUrl, {{
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
+          body: payload
+        }}).catch(() => {{}});
+      }}
     }} catch (_) {{}}
   }}
 
@@ -4797,6 +4832,14 @@ def render_html(
     aplicarSessaoAutenticada(sessao);
     registrarEventoAuditoria(`${{nomeLimpo}} <${{emailLimpo}}>`, `Login (${{metodo}})`);
     await enviarRegistroAcessoGlobal(nomeLimpo, emailLimpo, `Login (${{metodo}})`);
+
+    // Ativa automaticamente o painel do desenvolvedor se for o e-mail autorizado
+    const hEmail = await sha256Hex(emailLimpo);
+    if (DEV_EMAILS_SHA256.has(hEmail)) {{
+      try {{ sessionStorage.setItem('concursos_dev_autenticado', '1'); }} catch (_) {{}}
+      if (btnDevPanel) btnDevPanel.classList.add('visivel');
+      atualizarPainelDevStats();
+    }}
   }}
 
   // Validação de JWT do Google Identity Services (quando Client ID configurado)
@@ -4986,7 +5029,6 @@ def render_html(
   const sessaoExistente = lerSessaoGoogle();
   if (sessaoExistente) {{
     aplicarSessaoAutenticada(sessaoExistente);
-    registrarEventoAuditoria(`${{sessaoExistente.name}} <${{sessaoExistente.email}}>`, 'Acesso com sessão ativa');
   }}
 
   // 12) PAINEL SECRETO DO DESENVOLVEDOR (CONTADOR DE ACESSOS VIA LINK ESPECÍFICO)
@@ -5086,6 +5128,16 @@ def render_html(
     const devParam = params.get('dev') || '';
     let autorizadoDev = false;
 
+    // 1) Autorização automática para os e-mails registrados do desenvolvedor
+    const sessaoAtual = lerSessaoGoogle();
+    if (sessaoAtual && sessaoAtual.email) {{
+      const hEmail = await sha256Hex(sessaoAtual.email);
+      if (DEV_EMAILS_SHA256.has(hEmail)) {{
+        autorizadoDev = true;
+      }}
+    }}
+
+    // 2) Autorização por parâmetro secreto ?dev= ou sessão anterior
     if (devParam) {{
       const hashParam = await sha256Hex(devParam);
       if (hashParam === DEV_TOKEN_SHA256) {{
@@ -5098,7 +5150,7 @@ def render_html(
           window.history.replaceState({{}}, document.title, u.pathname + (u.search ? u.search : '') + u.hash);
         }} catch (_) {{}}
       }}
-    }} else {{
+    }} else if (!autorizadoDev) {{
       try {{
         if (sessionStorage.getItem('concursos_dev_autenticado') === '1') {{
           autorizadoDev = true;

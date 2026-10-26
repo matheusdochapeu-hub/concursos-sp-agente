@@ -367,12 +367,15 @@ def brl(v: Optional[float]) -> str:
 
 def extrair_data_final_br(texto_data: str) -> Optional[date]:
     """Extrai a última data DD/MM/AAAA de uma string como '22/10 a 05/11/2026'."""
-    matches = re.findall(r"(\d{2})/(\d{2})/(\d{4})", texto_data or "")
+    matches = re.findall(r"(\d{1,2})/(\d{1,2})/(\d{2,4})", texto_data or "")
     if not matches:
         return None
     d_str, m_str, y_str = matches[-1]
     try:
-        return date(int(y_str), int(m_str), int(d_str))
+        y = int(y_str)
+        if y < 100:
+            y += 2000
+        return date(y, int(m_str), int(d_str))
     except ValueError:
         return None
 
