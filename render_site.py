@@ -1094,6 +1094,12 @@ def render_html(
     padding: 2px 6px;
     line-height: 1;
   }}
+  .toolbar-left-actions {{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }}
   .toolbar-actions {{
     display: flex;
     align-items: center;
@@ -2369,6 +2375,12 @@ def render_html(
       gap: 10px !important;
     }}
     .toolbar-busca-cargo {{ width: 100% !important; min-width: 0 !important; }}
+    .toolbar-left-actions {{
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 8px !important;
+      width: 100% !important;
+    }}
     .toolbar-actions {{
       display: grid !important;
       grid-template-columns: 1fr 1fr !important;
@@ -2579,24 +2591,24 @@ def render_html(
       </nav>
     </div>
 
-    <!-- Barra de Controle Compacta e Limpa (Filtros na Barra Lateral) -->
+    <!-- Barra de Controle Compacta e Limpa: Filtros no Canto Superior Esquerdo -->
     <div id="barraControlePrincipal" class="main-control-bar" aria-label="Ações de busca e filtros">
-      <div id="wrapBuscaCargoToolbar" class="toolbar-busca-cargo">
-        <input id="inputCargoEspecifico" type="search" autocomplete="off" placeholder="🔎 Digite o cargo desejado... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
-        <button type="button" id="btnLimparCargo" class="btn-clear-inline" title="Limpar busca" style="display:none;">✕</button>
-      </div>
-
-      <div class="toolbar-actions">
-        <button type="button" id="btnAbrirSidebarFiltros" class="btn-abrir-sidebar" aria-label="Abrir filtros">
+      <div class="toolbar-left-actions">
+        <button type="button" id="btnAbrirSidebarFiltros" class="btn-abrir-sidebar" aria-label="Abrir filtros dos concursos">
           <span class="icon">🎛️</span>
-          <span class="txt">Filtrar Concursos</span>
+          <span class="txt">Filtros</span>
           <span id="badgeFiltrosAtivos" class="badge-filtros-cnt" style="display:none;">0</span>
         </button>
 
         <button type="button" id="btnToggleComparar" class="btn-comparar-toggle" aria-label="Função comparar">
           <span>⚖️</span>
-          <span class="txt">Função comparar</span>
+          <span class="txt">Comparar</span>
         </button>
+      </div>
+
+      <div id="wrapBuscaCargoToolbar" class="toolbar-busca-cargo">
+        <input id="inputCargoEspecifico" type="search" autocomplete="off" placeholder="🔎 Digite o cargo desejado... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+        <button type="button" id="btnLimparCargo" class="btn-clear-inline" title="Limpar busca" style="display:none;">✕</button>
       </div>
     </div>
 
@@ -3298,7 +3310,7 @@ def render_html(
     if (estadoFiltros.horas) cnt++;
     if (estadoFiltros.cidade) cnt++;
     if (estadoFiltros.ordem && estadoFiltros.ordem !== 'padrao') cnt++;
-    if (ufSelecionada) cnt++;
+    if (ufSelecionada && ufSelecionada !== 'TODOS') cnt++;
     const termo = (inputCargo ? inputCargo.value.trim() : '');
     if (termo) cnt++;
     return cnt;
@@ -3357,12 +3369,12 @@ def render_html(
         }}
       }});
     }}
-    if (ufSelecionada) {{
+    if (ufSelecionada && ufSelecionada !== 'TODOS') {{
       chips.push({{
         label: `📍 Estado: ${{ufSelecionada}}`,
         limpar: () => {{
-          ufSelecionada = '';
-          document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b.dataset.uf === ''));
+          ufSelecionada = 'TODOS';
+          document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b.dataset.uf === 'TODOS'));
           renderizarBuscaCargo();
           atualizarUIFiltrosSidebar();
         }}
@@ -3628,12 +3640,12 @@ def render_html(
     estadoFiltros.horas = '';
     estadoFiltros.cidade = '';
     estadoFiltros.ordem = 'padrao';
-    ufSelecionada = '';
+    ufSelecionada = 'TODOS';
     if (inputCargo) inputCargo.value = '';
     const btnClear = document.getElementById('btnLimparCargo');
     if (btnClear) btnClear.style.display = 'none';
     document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b.dataset.cargo === ''));
-    document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b.dataset.uf === ''));
+    document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b.dataset.uf === 'TODOS'));
     sincronizarBotoesFiltro();
     aplicarFiltrosSp(true);
     atualizarUIFiltrosSidebar();
@@ -3837,7 +3849,7 @@ def render_html(
     if (tabCntBusca) tabCntBusca.textContent = filtrados.length;
     vazioBusca.style.display = filtrados.length === 0 ? 'block' : 'none';
 
-    const fatia = filtrados.slice(0, 120);
+    const fatia = filtrados;
     gridBusca.innerHTML = fatia.map(({{ item, cargosCasados, idx }}) => {{
       const uid = `br-${{idx}}`;
       const cargoDestaque = cargosCasados.length > 0
