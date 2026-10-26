@@ -920,47 +920,301 @@ def render_html(
     box-shadow: 0 6px 18px rgba(254, 221, 0, 0.35);
   }}
 
-  /* Barra de Ferramentas: Função Comparar + Recolher Filtros */
-  .filtros-panel {{
+  /* Backdrop da Barra Lateral */
+  .sidebar-backdrop {{
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.28s ease, visibility 0.28s ease;
+  }}
+  .sidebar-backdrop.aberto {{
+    opacity: 1;
+    visibility: visible;
+  }}
+
+  /* Barra Lateral de Filtros (Drawer Off-Canvas - Mobile e Desktop) */
+  .sidebar-filtros {{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(520px, 94vw);
+    height: 100vh;
+    max-height: 100vh;
+    background: #ffffff;
+    box-shadow: -10px 0 38px rgba(0, 0, 0, 0.28);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(105%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+    overflow: hidden;
+  }}
+  .sidebar-filtros.aberto {{
+    transform: translateX(0);
+  }}
+  .sidebar-filtros-head {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, var(--br-blue-dark), var(--br-blue));
+    color: #ffffff;
+    border-bottom: 3px solid var(--br-yellow);
+    flex-shrink: 0;
+  }}
+  .sidebar-head-info h3 {{
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+  }}
+  .sidebar-head-info p {{
+    margin: 4px 0 0;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.88);
+  }}
+  .sidebar-close-btn {{
+    background: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: all 0.15s;
+  }}
+  .sidebar-close-btn:hover {{
+    background: rgba(255, 255, 255, 0.32);
+    transform: scale(1.06);
+  }}
+  .sidebar-filtros-body {{
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    -webkit-overflow-scrolling: touch;
+  }}
+  .sidebar-filtros .f-group {{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 12px 14px;
+    background: var(--surface-alt);
+    border-radius: 12px;
+    border: 1px solid #e3eee7;
+  }}
+  .sidebar-filtros-foot {{
+    display: flex;
+    gap: 10px;
+    padding: 14px 18px;
+    background: #ffffff;
+    border-top: 2px solid var(--border);
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.07);
+    flex-shrink: 0;
+  }}
+  .sidebar-filtros-foot .btn-limpar {{
+    flex: 1;
+    min-height: 44px;
+    font-weight: 800;
+  }}
+  .sidebar-filtros-foot .btn-aplicar {{
+    flex: 2;
+    min-height: 44px;
+    font-weight: 800;
+    font-size: 0.95rem;
+  }}
+
+  /* Barra de Controle Compacta e Limpa no Topo */
+  .main-control-bar {{
     background: var(--surface);
     border: 2px solid var(--border);
-    border-top: 5px solid var(--br-green);
     border-radius: var(--radius-lg);
-    padding: 18px 22px;
-    margin-bottom: 24px;
-    box-shadow: var(--shadow-sm);
-  }}
-  .filtros-head {{
+    padding: 12px 16px;
+    margin-bottom: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
+    box-shadow: var(--shadow-sm);
   }}
-  .filtros-panel:not(.recolhido) .filtros-head {{
-    padding-bottom: 14px;
-    margin-bottom: 16px;
-    border-bottom: 1.5px solid var(--border);
+  .toolbar-busca-cargo {{
+    flex: 1;
+    min-width: 260px;
+    position: relative;
   }}
-  .filtros-panel.recolhido .filter-groups,
-  .filtros-panel.recolhido .filtros-foot,
-  .pill-row.recolhido {{
-    display: none !important;
+  .toolbar-busca-cargo input {{
+    width: 100%;
+    height: 42px;
+    padding: 8px 36px 8px 16px;
+    border-radius: 999px;
+    border: 2px solid var(--br-blue-border);
+    background: var(--surface-alt);
+    font-family: inherit;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--txt);
+    box-sizing: border-box;
+    transition: all 0.15s;
   }}
-  .filtros-head-title {{
+  .toolbar-busca-cargo input:focus {{
+    outline: none;
+    border-color: var(--br-green);
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 151, 57, 0.14);
+  }}
+  .toolbar-busca-cargo .btn-clear-inline {{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 1.05rem;
+    cursor: pointer;
+    padding: 2px 6px;
+    line-height: 1;
+  }}
+  .toolbar-actions {{
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.02rem;
-    font-weight: 800;
-    color: var(--br-blue);
     flex-wrap: wrap;
   }}
-  .filtros-actions {{
+  .btn-abrir-sidebar {{
+    background: var(--br-green);
+    color: #ffffff;
+    border: 2px solid var(--br-green-dark);
+    min-height: 42px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 0.92rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 3px 12px rgba(0, 151, 57, 0.25);
+    transition: all 0.15s ease;
+  }}
+  .btn-abrir-sidebar:hover {{
+    background: var(--br-green-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0, 151, 57, 0.35);
+  }}
+  .badge-filtros-cnt {{
+    background: var(--br-yellow);
+    color: var(--br-blue-dark);
+    font-size: 0.76rem;
+    font-weight: 900;
+    padding: 2px 7px;
+    border-radius: 999px;
+    line-height: 1.2;
+    border: 1px solid #ca8a04;
+  }}
+
+  /* Barra de Chips Ativos */
+  .active-filters-bar {{
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 8px;
     flex-wrap: wrap;
+    padding: 10px 14px;
+    margin-bottom: 18px;
+    background: var(--surface-alt);
+    border: 1.5px dashed var(--br-green-border);
+    border-radius: 12px;
+    font-size: 0.82rem;
+  }}
+  .af-label {{
+    font-weight: 800;
+    color: var(--br-green-dark);
+    text-transform: uppercase;
+    font-size: 0.72rem;
+  }}
+  .af-chips {{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }}
+  .af-chip {{
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 11px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--txt);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.14s;
+  }}
+  .af-chip:hover {{
+    border-color: #ef4444;
+    color: #b91c1c;
+    background: #fef2f2;
+  }}
+  .af-btn-clear {{
+    background: none;
+    border: none;
+    color: var(--br-blue);
+    font-weight: 800;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: auto;
+  }}
+
+  /* Botão Flutuante (FAB) */
+  .btn-fab-filtros {{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--br-blue);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 18px;
+    border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(0, 39, 118, 0.38);
+    z-index: 920;
+    font-family: inherit;
+    font-size: 0.92rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.18s ease;
+  }}
+  .btn-fab-filtros:hover {{
+    background: var(--br-blue-dark);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 12px 28px rgba(0, 39, 118, 0.48);
   }}
   .btn-comparar-toggle {{
     background: var(--br-yellow);
@@ -2108,17 +2362,33 @@ def render_html(
       min-width: 0 !important;
       box-sizing: border-box !important;
     }}
-    .filtros-panel {{ padding: 14px 12px !important; }}
-    .filtros-head {{ flex-direction: column !important; align-items: stretch !important; }}
-    .filtros-actions {{ display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; }}
-    .filtros-actions .feedback-filtro {{ grid-column: 1 / -1 !important; }}
-    .filtros-actions button {{ width: 100% !important; }}
+    .main-control-bar {{
+      flex-direction: column !important;
+      align-items: stretch !important;
+      padding: 12px !important;
+      gap: 10px !important;
+    }}
+    .toolbar-busca-cargo {{ width: 100% !important; min-width: 0 !important; }}
+    .toolbar-actions {{
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 8px !important;
+      width: 100% !important;
+    }}
+    .btn-abrir-sidebar {{ width: 100% !important; }}
     .btn-comparar-toggle {{ width: 100% !important; }}
-    .filtros-foot {{ display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; }}
-    .filtros-panel.recolhido .filter-groups,
-    .filtros-panel.recolhido .filtros-foot,
-    .pill-row.recolhido {{
-      display: none !important;
+    .sidebar-filtros {{
+      width: 100vw !important;
+      max-width: 100vw !important;
+    }}
+    .sidebar-filtros-head {{ padding: 14px 16px !important; }}
+    .sidebar-filtros-body {{ padding: 12px 14px !important; }}
+    .sidebar-filtros-foot {{ padding: 12px 14px !important; }}
+    .btn-fab-filtros {{
+      bottom: 20px !important;
+      right: 16px !important;
+      padding: 8px 14px !important;
+      font-size: 0.85rem !important;
     }}
     .f-group {{
       grid-template-columns: 1fr !important;
@@ -2309,74 +2579,80 @@ def render_html(
       </nav>
     </div>
 
-    <!-- Buscar Cargo: fica ACIMA dos Filtros Rápidos (visível somente na aba Buscar Cargo) -->
-    <section id="blocoBuscaCargo" class="busca-bloco" aria-label="Buscar Cargo">
-      <div class="sec-head">
-        <div class="sec-title-row">
-          <h2>🔎 Buscar Cargo — Brasil Todo, Estados ou SP</h2>
-          <div class="count-box-lg">
-            <b id="countBuscaCargo">{len(catalogo_brasil)}</b>
-            <span>vigentes</span>
-          </div>
-        </div>
-        <p class="desc">
-          Digite qualquer cargo ou escolha um dos <b>{len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos</b> e combine com os filtros abaixo (escolaridade, salário, distância, regime, jornada e vagas).
-          Cargos como <i>Auditor Fiscal</i> também aparecem ao buscar <i>Contador</i>, <i>Economista</i> ou <i>Advogado</i>, pois aceitam várias formações.
-        </p>
+    <!-- Barra de Controle Compacta e Limpa (Filtros na Barra Lateral) -->
+    <div id="barraControlePrincipal" class="main-control-bar" aria-label="Ações de busca e filtros">
+      <div id="wrapBuscaCargoToolbar" class="toolbar-busca-cargo">
+        <input id="inputCargoEspecifico" type="search" autocomplete="off" placeholder="🔎 Digite o cargo desejado... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+        <button type="button" id="btnLimparCargo" class="btn-clear-inline" title="Limpar busca" style="display:none;">✕</button>
       </div>
 
-      <div class="busca-cargo-panel">
-        <div>
-          <div class="f-label" style="margin-bottom:8px;">1️⃣ Digite o Nome do Cargo Desejado (ou clique em um cargo rápido abaixo):</div>
-          <div class="cargo-input-row">
-            <div class="cargo-input-wrap">
-              <input id="inputCargoEspecifico" type="search" autocomplete="off" placeholder="Digite o cargo... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+      <div class="toolbar-actions">
+        <button type="button" id="btnAbrirSidebarFiltros" class="btn-abrir-sidebar" aria-label="Abrir filtros">
+          <span class="icon">🎛️</span>
+          <span class="txt">Filtrar Concursos</span>
+          <span id="badgeFiltrosAtivos" class="badge-filtros-cnt" style="display:none;">0</span>
+        </button>
+
+        <button type="button" id="btnToggleComparar" class="btn-comparar-toggle" aria-label="Função comparar">
+          <span>⚖️</span>
+          <span class="txt">Função comparar</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Barra de Chips de Filtros Ativos (aparece somente se houver algum filtro ativo) -->
+    <div id="barraFiltrosAtivos" class="active-filters-bar" style="display:none;">
+      <span class="af-label">Filtros ativos:</span>
+      <div id="chipsFiltrosAtivos" class="af-chips"></div>
+      <button type="button" id="btnLimparFiltrosRapido" class="af-btn-clear" title="Limpar todos os filtros">Limpar tudo ✕</button>
+    </div>
+
+    <!-- Botão Flutuante (FAB) nos cantos para acesso imediato aos filtros ao rolar a página -->
+    <button type="button" id="btnFabFiltros" class="btn-fab-filtros" title="Abrir filtros dos concursos" aria-label="Abrir filtros">
+      <span class="fab-icon">🎛️</span>
+      <span class="fab-text">Filtros</span>
+      <span id="badgeFabFiltrosAtivos" class="badge-filtros-cnt" style="display:none;">0</span>
+    </button>
+
+    <!-- Backdrop da Barra Lateral de Filtros -->
+    <div id="backdropSidebarFiltros" class="sidebar-backdrop" aria-hidden="true"></div>
+
+    <!-- BARRA LATERAL DE FILTROS (DRAWER OFF-CANVAS) -->
+    <aside id="painelFiltrosSp" class="sidebar-filtros" role="dialog" aria-modal="true" aria-labelledby="tituloSidebarFiltros">
+      <div class="sidebar-filtros-head">
+        <div class="sidebar-head-info">
+          <h3 id="tituloSidebarFiltros">🎛️ Filtros dos Concursos</h3>
+          <p><span id="sidebarCountEncontrados">Carregando...</span> concursos encontrados</p>
+        </div>
+        <button type="button" id="btnFecharSidebarFiltros" class="sidebar-close-btn" aria-label="Fechar barra de filtros">✕</button>
+      </div>
+
+      <div class="sidebar-filtros-body">
+        <!-- Bloco de Cargos Rápidos e Estados (Visível na aba Buscar Cargo) -->
+        <div id="blocoBuscaCargo" class="sidebar-busca-extra">
+          <div class="f-group">
+            <div class="toggle-head">
+              <div class="f-label">2️⃣ Escolha o Estado (UF) ou Brasil Todo:</div>
+              <button type="button" id="btnToggleUfs" class="btn-recolher btn-recolher-mini">🔼 Recolher Estados</button>
             </div>
-            <button type="button" id="btnAplicarBuscaCargo" class="btn-aplicar">✅ Aplicar Filtro</button>
-            <button type="button" id="btnLimparCargo" class="btn-limpar">🔄 Limpar Busca</button>
+            <div class="pill-row" id="rowUfsBrasil">{botoes_ufs}</div>
+          </div>
+
+          <div class="f-group" style="margin-top:10px;">
+            <div class="toggle-head">
+              <div class="f-label">⚡ {len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos (1 clique):</div>
+              <button type="button" id="btnToggleCargosRapidos" class="btn-recolher btn-recolher-mini">🔼 Recolher Cargos Rápidos</button>
+            </div>
+            <div class="pill-row" id="rowCargosRapidos">{botoes_cargos_rapidos}</div>
           </div>
         </div>
 
-        <div>
-          <div class="toggle-head">
-            <div class="f-label">⚡ {len(CARGOS_RAPIDOS_MAX)} Cargos Rápidos (1 clique):</div>
-            <button type="button" id="btnToggleCargosRapidos" class="btn-recolher btn-recolher-mini">🔼 Recolher Cargos Rápidos</button>
-          </div>
-          <div class="pill-row" id="rowCargosRapidos">{botoes_cargos_rapidos}</div>
-        </div>
-
-        <div>
-          <div class="toggle-head">
-            <div class="f-label">2️⃣ Escolha o Estado (UF) ou Brasil Todo:</div>
-            <button type="button" id="btnToggleUfs" class="btn-recolher btn-recolher-mini">🔼 Recolher Estados</button>
-          </div>
-          <div class="pill-row" id="rowUfsBrasil">{botoes_ufs}</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Painel Unificado de Filtros + Botão "Função comparar" + Botão "Recolher Filtros" -->
-    <section id="painelFiltrosSp" class="filtros-panel" aria-label="Filtros e Função Comparar">
-      <div class="filtros-head">
-        <div class="filtros-head-title">
-          <span>🎛️ Filtros Rápidos</span>
-          <button type="button" id="btnToggleComparar" class="btn-comparar-toggle">⚖️ Função comparar</button>
-        </div>
-        <div class="filtros-actions">
-          <span id="msgFiltroAplicado" class="feedback-filtro">✓ Filtros aplicados!</span>
-          <button type="button" id="btnAplicarTopo" class="btn-aplicar">✅ Aplicar Filtros</button>
-          <button type="button" id="btnLimpar" class="btn-limpar">🔄 Limpar Filtros</button>
-          <button type="button" id="btnToggleFiltros" class="btn-recolher">🔼 Recolher Filtros</button>
-        </div>
-      </div>
-
-      <div class="filter-groups">
         <div class="f-group">
           <div class="f-label">⏳ Prazo &amp; Destaques</div>
           <div class="pill-row">
             <button type="button" class="pill-btn ativo" data-filter="encerrando" data-val="">Todos os Prazos</button>
             <button type="button" class="pill-btn pill-urgente" data-filter="encerrando" data-val="1">
-              ⏳ Inscrições Encerrando (Próximos dias) <span class="mini-cnt" id="cntEncerrandoBtn">{encerrando_count}</span>
+              ⏳ Inscrições Encerrando <span class="mini-cnt" id="cntEncerrandoBtn">{encerrando_count}</span>
             </button>
             <button type="button" class="pill-btn" data-filter="novo" data-val="1">
               ✨ Concursos Novos · 24h <span class="mini-cnt">{novos_count}</span>
@@ -2387,20 +2663,20 @@ def render_html(
         <div class="f-group f-group-ref">
           <div class="f-label">📍 Minha cidade de referência (opcional)</div>
           <div class="ref-body">
-          <div class="ref-row">
-            <input id="inputCidadeRef" type="text" list="listaCidadesRef" autocomplete="off" maxlength="80" placeholder="Digite sua cidade. Ex.: Campinas - SP">
-            <button type="button" id="btnLimparCidadeRef" class="btn-limpar">✖ Remover</button>
-          </div>
-          <datalist id="listaCidadesRef">{opcoes_cidades_ref}</datalist>
-          <small id="msgCidadeRef" class="ref-msg">Escolha sua cidade para ver a distância até cada concurso e filtrar por proximidade.</small>
-          <div class="pill-row" style="margin-top:8px;">
-            <button type="button" class="pill-btn ativo" data-filter="kmRef" data-val="">Qualquer distância</button>
-            <button type="button" class="pill-btn" data-filter="kmRef" data-val="50">Até 50 km</button>
-            <button type="button" class="pill-btn" data-filter="kmRef" data-val="100">Até 100 km</button>
-            <button type="button" class="pill-btn" data-filter="kmRef" data-val="150">Até 150 km</button>
-            <button type="button" class="pill-btn" data-filter="kmRef" data-val="250">Até 250 km</button>
-            <button type="button" class="pill-btn" data-filter="kmRef" data-val="350">Até 350 km</button>
-          </div>
+            <div class="ref-row">
+              <input id="inputCidadeRef" type="text" list="listaCidadesRef" autocomplete="off" maxlength="80" placeholder="Digite sua cidade. Ex.: Campinas - SP">
+              <button type="button" id="btnLimparCidadeRef" class="btn-limpar">✖ Remover</button>
+            </div>
+            <datalist id="listaCidadesRef">{opcoes_cidades_ref}</datalist>
+            <small id="msgCidadeRef" class="ref-msg">Escolha sua cidade para ver a distância e filtrar por proximidade.</small>
+            <div class="pill-row" style="margin-top:8px;">
+              <button type="button" class="pill-btn ativo" data-filter="kmRef" data-val="">Qualquer distância</button>
+              <button type="button" class="pill-btn" data-filter="kmRef" data-val="50">Até 50 km</button>
+              <button type="button" class="pill-btn" data-filter="kmRef" data-val="100">Até 100 km</button>
+              <button type="button" class="pill-btn" data-filter="kmRef" data-val="150">Até 150 km</button>
+              <button type="button" class="pill-btn" data-filter="kmRef" data-val="250">Até 250 km</button>
+              <button type="button" class="pill-btn" data-filter="kmRef" data-val="350">Até 350 km</button>
+            </div>
           </div>
         </div>
 
@@ -2433,7 +2709,7 @@ def render_html(
             <button type="button" class="pill-btn" data-filter="vagas" data-val="1">Com Vagas Imediatas (≥ 1)</button>
             <button type="button" class="pill-btn" data-filter="vagas" data-val="3">≥ 3 Vagas Imediatas</button>
             <button type="button" class="pill-btn" data-filter="vagas" data-val="5">≥ 5 Vagas Imediatas</button>
-            <button type="button" class="pill-btn" data-filter="vagas" data-val="cr">Somente Cadastro de Reserva (CR)</button>
+            <button type="button" class="pill-btn" data-filter="vagas" data-val="cr">Somente CR</button>
           </div>
         </div>
 
@@ -2460,8 +2736,8 @@ def render_html(
           <div class="f-label">↕️ Ordenar Resultados</div>
           <div class="pill-row">
             <button type="button" class="pill-btn ativo" data-filter="ordem" data-val="padrao">Ordenação Padrão</button>
-            <button type="button" class="pill-btn" data-filter="ordem" data-val="inscricao">Inscrição encerrando primeiro</button>
-            <button type="button" class="pill-btn" data-filter="ordem" data-val="salario">Maior Salário Bruto</button>
+            <button type="button" class="pill-btn" data-filter="ordem" data-val="inscricao">Inscrição encerrando</button>
+            <button type="button" class="pill-btn" data-filter="ordem" data-val="salario">Maior Salário</button>
             <button type="button" class="pill-btn" data-filter="ordem" data-val="proximo">Mais perto de mim</button>
             <button type="button" class="pill-btn" data-filter="ordem" data-val="vagas">Mais Vagas Imediatas</button>
             <button type="button" class="pill-btn" data-filter="ordem" data-val="prova">Prova mais próxima</button>
@@ -2469,15 +2745,27 @@ def render_html(
         </div>
       </div>
 
-      <div class="filtros-foot">
-        <button type="button" id="btnLimparRodape" class="btn-limpar">🔄 Limpar Filtros</button>
-        <button type="button" id="btnAplicarRodape" class="btn-aplicar">✅ Aplicar Filtros</button>
+      <div class="sidebar-filtros-foot">
+        <button type="button" id="btnLimparSidebar" class="btn-limpar">🔄 Limpar Filtros</button>
+        <button type="button" id="btnAplicarSidebar" class="btn-aplicar">✅ Ver Concursos (<span id="sidebarCountBotao">0</span>)</button>
       </div>
-    </section>
+    </aside>
 
     <main>
       <!-- PÁGINA INICIAL (ABA 1): Busca por Cargo Específico (Brasil Todo / Outros Estados / SP) -->
       <section id="busca_cargo" class="tab-panel ativo">
+        <div class="sec-head">
+          <div class="sec-title-row">
+            <h2>🔎 Buscar Cargo — Brasil Todo, Estados ou SP</h2>
+            <div class="count-box-lg" title="Concursos vigentes encontrados">
+              <b id="countBuscaCargo">{len(catalogo_brasil)}</b>
+              <span>vigentes</span>
+            </div>
+          </div>
+          <p class="desc">
+            Use a barra de busca acima para digitar qualquer cargo ou abra os <b>Filtros</b> para selecionar estados, cargos rápidos, faixas salariais e escolaridade.
+          </p>
+        </div>
         <div id="gridBuscaCargo" class="grid"></div>
         <p id="vazioBuscaCargo" class="vazio" style="display:none;">
           Nenhum concurso encontrado com os filtros atuais. Clique em "Limpar Filtros" ou selecione "🇧🇷 Brasil Todo".
@@ -2500,7 +2788,6 @@ def render_html(
           "Cargos de Nível Médio e Técnico nos editais de São Paulo, com salário bruto separado e soma com auxílios menor, isenção da taxa e requisitos do edital. Use a faixa de remuneração abaixo.",
           medio_todos,
           "medio_todos",
-          barra_extra=barra_faixas_aba3,
       )}
       {render_secao(
           "superior_sp",
@@ -2899,17 +3186,42 @@ def render_html(
     if (cntBtn && urlsEncerrando.size > 0) cntBtn.textContent = urlsEncerrando.size;
   }})();
 
-  // 2) Botão de Recolher / Expandir Filtros
-  const painelFiltrosSp = document.getElementById('painelFiltrosSp');
-  const btnToggleFiltros = document.getElementById('btnToggleFiltros');
-  if (btnToggleFiltros && painelFiltrosSp) {{
-    btnToggleFiltros.addEventListener('click', () => {{
-      const recolhido = painelFiltrosSp.classList.toggle('recolhido');
-      btnToggleFiltros.innerHTML = recolhido ? '🔽 Mostrar Filtros' : '🔼 Recolher Filtros';
-    }});
+  // 2) Controle da Barra Lateral de Filtros (Drawer Off-Canvas)
+  const sidebarFiltros = document.getElementById('painelFiltrosSp');
+  const backdropSidebarFiltros = document.getElementById('backdropSidebarFiltros');
+  const btnAbrirSidebarFiltros = document.getElementById('btnAbrirSidebarFiltros');
+  const btnFabFiltros = document.getElementById('btnFabFiltros');
+  const btnFecharSidebarFiltros = document.getElementById('btnFecharSidebarFiltros');
+  const btnAplicarSidebar = document.getElementById('btnAplicarSidebar');
+  const btnLimparSidebar = document.getElementById('btnLimparSidebar');
+
+  function abrirSidebarFiltros() {{
+    if (!sidebarFiltros || !backdropSidebarFiltros) return;
+    sidebarFiltros.classList.add('aberto');
+    backdropSidebarFiltros.classList.add('aberto');
+    document.body.style.overflow = 'hidden';
+    atualizarUIFiltrosSidebar();
   }}
 
-  // Botão de Recolher / Expandir Cargos Rápidos na Aba 5
+  function fecharSidebarFiltros() {{
+    if (!sidebarFiltros || !backdropSidebarFiltros) return;
+    sidebarFiltros.classList.remove('aberto');
+    backdropSidebarFiltros.classList.remove('aberto');
+    document.body.style.overflow = '';
+  }}
+
+  if (btnAbrirSidebarFiltros) btnAbrirSidebarFiltros.addEventListener('click', abrirSidebarFiltros);
+  if (btnFabFiltros) btnFabFiltros.addEventListener('click', abrirSidebarFiltros);
+  if (btnFecharSidebarFiltros) btnFecharSidebarFiltros.addEventListener('click', fecharSidebarFiltros);
+  if (backdropSidebarFiltros) backdropSidebarFiltros.addEventListener('click', fecharSidebarFiltros);
+
+  document.addEventListener('keydown', (e) => {{
+    if (e.key === 'Escape' && sidebarFiltros && sidebarFiltros.classList.contains('aberto')) {{
+      fecharSidebarFiltros();
+    }}
+  }});
+
+  // Botão de Recolher / Expandir Cargos Rápidos na Barra Lateral
   const btnToggleCargosRapidos = document.getElementById('btnToggleCargosRapidos');
   const rowCargosRapidos = document.getElementById('rowCargosRapidos');
   if (btnToggleCargosRapidos && rowCargosRapidos) {{
@@ -2920,7 +3232,7 @@ def render_html(
     }});
   }}
 
-  // Botão de Recolher / Expandir Estados (UF) na aba Buscar Cargo
+  // Botão de Recolher / Expandir Estados (UF) na Barra Lateral
   const btnToggleUfs = document.getElementById('btnToggleUfs');
   const rowUfsBrasil = document.getElementById('rowUfsBrasil');
   if (btnToggleUfs && rowUfsBrasil) {{
@@ -2936,11 +3248,23 @@ def render_html(
   function abrirTab(tab) {{
     tabItems.forEach(item => item.classList.toggle('ativo', item.dataset.tab === tab));
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('ativo', p.id === tab));
-    painelFiltrosSp.style.display = (tab === 'provas_anteriores') ? 'none' : 'block';
-    document.getElementById('blocoBuscaCargo').style.display = (tab === 'busca_cargo') ? 'block' : 'none';
+    const isProvas = (tab === 'provas_anteriores');
+    const isBusca = (tab === 'busca_cargo');
+
+    const controlBar = document.getElementById('barraControlePrincipal');
+    if (controlBar) controlBar.style.display = isProvas ? 'none' : 'flex';
+    if (btnFabFiltros) btnFabFiltros.style.display = isProvas ? 'none' : 'inline-flex';
+
+    const wrapBusca = document.getElementById('wrapBuscaCargoToolbar');
+    if (wrapBusca) wrapBusca.style.display = isBusca ? 'block' : 'none';
+
+    const sidebarExtra = document.getElementById('blocoBuscaCargo');
+    if (sidebarExtra) sidebarExtra.style.display = isBusca ? 'block' : 'none';
+
     history.replaceState(null, '', '#' + tab);
-    if (tab === 'busca_cargo') renderizarBuscaCargo();
-    if (tab === 'provas_anteriores') renderizarProvasAnteriores();
+    if (isBusca) renderizarBuscaCargo();
+    if (isProvas) renderizarProvasAnteriores();
+    atualizarUIFiltrosSidebar();
   }}
   tabItems.forEach(item => item.addEventListener('click', () => abrirTab(item.dataset.tab)));
   const hashInicial = location.hash.slice(1);
@@ -2961,6 +3285,231 @@ def render_html(
     cidade: '',
     ordem: 'padrao'
   }};
+
+  function contarFiltrosAtivos() {{
+    let cnt = 0;
+    if (estadoFiltros.encerrando) cnt++;
+    if (estadoFiltros.novo) cnt++;
+    if (estadoFiltros.kmRef && cidadeRef) cnt++;
+    if (estadoFiltros.faixa) cnt++;
+    if (estadoFiltros.escolaridade) cnt++;
+    if (estadoFiltros.vagas && estadoFiltros.vagas !== 'todas') cnt++;
+    if (estadoFiltros.regime) cnt++;
+    if (estadoFiltros.horas) cnt++;
+    if (estadoFiltros.cidade) cnt++;
+    if (estadoFiltros.ordem && estadoFiltros.ordem !== 'padrao') cnt++;
+    if (ufSelecionada) cnt++;
+    const termo = (inputCargo ? inputCargo.value.trim() : '');
+    if (termo) cnt++;
+    return cnt;
+  }}
+
+  function obterTotalConcursosVisiveis() {{
+    const abaAtiva = document.querySelector('.tab-panel.ativo');
+    if (!abaAtiva) return 0;
+    if (abaAtiva.id === 'busca_cargo') {{
+      const cnt = document.getElementById('countBuscaCargo');
+      return cnt ? Number(cnt.textContent) || 0 : 0;
+    }}
+    const secCount = abaAtiva.querySelector('.sec-count');
+    return secCount ? Number(secCount.textContent) || 0 : 0;
+  }}
+
+  function atualizarUIFiltrosSidebar() {{
+    const total = obterTotalConcursosVisiveis();
+    const countSpan = document.getElementById('sidebarCountEncontrados');
+    if (countSpan) countSpan.textContent = total.toLocaleString('pt-BR');
+    const botaoSpan = document.getElementById('sidebarCountBotao');
+    if (botaoSpan) botaoSpan.textContent = total.toLocaleString('pt-BR');
+
+    const ativosCnt = contarFiltrosAtivos();
+    const badgeTopo = document.getElementById('badgeFiltrosAtivos');
+    const badgeFab = document.getElementById('badgeFabFiltrosAtivos');
+    if (badgeTopo) {{
+      badgeTopo.textContent = ativosCnt;
+      badgeTopo.style.display = ativosCnt > 0 ? 'inline-flex' : 'none';
+    }}
+    if (badgeFab) {{
+      badgeFab.textContent = ativosCnt;
+      badgeFab.style.display = ativosCnt > 0 ? 'inline-flex' : 'none';
+    }}
+
+    renderizarChipsFiltrosAtivos();
+  }}
+
+  function renderizarChipsFiltrosAtivos() {{
+    const container = document.getElementById('barraFiltrosAtivos');
+    const chipsEl = document.getElementById('chipsFiltrosAtivos');
+    if (!container || !chipsEl) return;
+
+    const chips = [];
+    const termo = (inputCargo ? inputCargo.value.trim() : '');
+    if (termo) {{
+      chips.push({{
+        label: `🎯 Cargo: "${{termo}}"`,
+        limpar: () => {{
+          inputCargo.value = '';
+          const btnClear = document.getElementById('btnLimparCargo');
+          if (btnClear) btnClear.style.display = 'none';
+          document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b.dataset.cargo === ''));
+          renderizarBuscaCargo();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (ufSelecionada) {{
+      chips.push({{
+        label: `📍 Estado: ${{ufSelecionada}}`,
+        limpar: () => {{
+          ufSelecionada = '';
+          document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b.dataset.uf === ''));
+          renderizarBuscaCargo();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.encerrando) {{
+      chips.push({{
+        label: '⏳ Inscrições Encerrando',
+        limpar: () => {{
+          estadoFiltros.encerrando = '';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.novo) {{
+      chips.push({{
+        label: '✨ Concursos Novos (24h)',
+        limpar: () => {{
+          estadoFiltros.novo = '';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.kmRef && cidadeRef) {{
+      chips.push({{
+        label: `🚗 Até ${{estadoFiltros.kmRef}}km de ${{cidadeRef.nome.split('-')[0].trim()}}`,
+        limpar: () => {{
+          estadoFiltros.kmRef = '';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.faixa) {{
+      const mapa = {{ ate2500: 'Até R$ 2.500', '2500a3500': 'R$ 2.500 a 3.500', '3500a5000': 'R$ 3.500 a 5.000', acima5000: '> R$ 5.000' }};
+      chips.push({{
+        label: `💵 ${{mapa[estadoFiltros.faixa] || estadoFiltros.faixa}}`,
+        limpar: () => {{
+          estadoFiltros.faixa = '';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.escolaridade) {{
+      const mapa = {{ fundamental: '📘 Fundamental', medio: '📗 Médio', medio_tecnico: '🛠️ Técnico', superior: '🎓 Superior' }};
+      chips.push({{
+        label: mapa[estadoFiltros.escolaridade] || estadoFiltros.escolaridade,
+        limpar: () => {{
+          estadoFiltros.escolaridade = '';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.vagas && estadoFiltros.vagas !== 'todas') {{
+      const mapa = {{ '1': '≥ 1 Vaga', '3': '≥ 3 Vagas', '5': '≥ 5 Vagas', cr: 'Somente CR' }};
+      chips.push({{
+        label: `👥 ${{mapa[estadoFiltros.vagas] || estadoFiltros.vagas}}`,
+        limpar: () => {{
+          estadoFiltros.vagas = 'todas';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.regime) {{
+      const mapa = {{ estatutario: 'Estatutário', clt: 'CLT', outros: 'Residência/Seletivo' }};
+      chips.push({{
+        label: `🏛️ ${{mapa[estadoFiltros.regime] || estadoFiltros.regime}}`,
+        limpar: () => {{
+          estadoFiltros.regime = '';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.horas) {{
+      chips.push({{
+        label: `⏰ Até ${{estadoFiltros.horas}}h/sem`,
+        limpar: () => {{
+          estadoFiltros.horas = '';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.cidade) {{
+      chips.push({{
+        label: `🏙️ ${{estadoFiltros.cidade}}`,
+        limpar: () => {{
+          estadoFiltros.cidade = '';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+    if (estadoFiltros.ordem && estadoFiltros.ordem !== 'padrao') {{
+      const mapa = {{ inscricao: 'Inscrição', salario: 'Maior Salário', proximo: 'Mais perto', vagas: 'Mais vagas', prova: 'Prova' }};
+      chips.push({{
+        label: `↕️ ${{mapa[estadoFiltros.ordem] || estadoFiltros.ordem}}`,
+        limpar: () => {{
+          estadoFiltros.ordem = 'padrao';
+          sincronizarBotoesFiltro();
+          aplicarFiltrosSp();
+          atualizarUIFiltrosSidebar();
+        }}
+      }});
+    }}
+
+    if (chips.length === 0) {{
+      container.style.display = 'none';
+      chipsEl.innerHTML = '';
+      return;
+    }}
+
+    container.style.display = 'flex';
+    chipsEl.innerHTML = chips.map((c, idx) => `
+      <button type="button" class="af-chip" data-chip-idx="${{idx}}">
+        <span>${{escHtml(c.label)}}</span>
+        <span aria-hidden="true">✕</span>
+      </button>
+    `).join('');
+
+    chipsEl.querySelectorAll('[data-chip-idx]').forEach(btn => {{
+      btn.addEventListener('click', () => {{
+        const idx = Number(btn.dataset.chipIdx);
+        if (chips[idx] && chips[idx].limpar) chips[idx].limpar();
+      }});
+    }});
+  }}
+
+  const btnLimparRapido = document.getElementById('btnLimparFiltrosRapido');
+  if (btnLimparRapido) {{
+    btnLimparRapido.addEventListener('click', () => limparTodosFiltros());
+  }}
 
   function sincronizarBotoesFiltro() {{
     document.querySelectorAll('[data-filter]').forEach(btn => {{
@@ -3049,6 +3598,7 @@ def render_html(
       msgRef.textContent = '⚠️ Escolha primeiro a sua cidade de referência para filtrar por distância.';
     }}
     if (comFeedback) mostrarFeedbackFiltro();
+    atualizarUIFiltrosSidebar();
   }}
 
   document.querySelectorAll('[data-filter]').forEach(btn => {{
@@ -3078,18 +3628,28 @@ def render_html(
     estadoFiltros.horas = '';
     estadoFiltros.cidade = '';
     estadoFiltros.ordem = 'padrao';
+    ufSelecionada = '';
+    if (inputCargo) inputCargo.value = '';
+    const btnClear = document.getElementById('btnLimparCargo');
+    if (btnClear) btnClear.style.display = 'none';
+    document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b.dataset.cargo === ''));
+    document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b.dataset.uf === ''));
     sincronizarBotoesFiltro();
     aplicarFiltrosSp(true);
+    atualizarUIFiltrosSidebar();
   }}
 
-  document.getElementById('btnAplicarTopo').addEventListener('click', () => aplicarFiltrosSp(true));
-  document.getElementById('btnAplicarRodape').addEventListener('click', () => {{
-    aplicarFiltrosSp(true);
-    const abaAtiva = document.querySelector('.tab-panel.ativo');
-    if (abaAtiva) abaAtiva.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
-  }});
-  document.getElementById('btnLimpar').addEventListener('click', limparTodosFiltros);
-  document.getElementById('btnLimparRodape').addEventListener('click', limparTodosFiltros);
+  if (btnAplicarSidebar) {{
+    btnAplicarSidebar.addEventListener('click', () => {{
+      aplicarFiltrosSp(true);
+      fecharSidebarFiltros();
+      const abaAtiva = document.querySelector('.tab-panel.ativo');
+      if (abaAtiva) abaAtiva.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+    }});
+  }}
+  if (btnLimparSidebar) {{
+    btnLimparSidebar.addEventListener('click', () => limparTodosFiltros());
+  }}
 
   // 5) Aba 4: Provas Anteriores por BANCA e CARGO
   const inputProvaCargo = document.getElementById('inputProvaCargo');
@@ -3390,18 +3950,24 @@ def render_html(
     }}).join('');
   }}
 
+  const btnLimparCargo = document.getElementById('btnLimparCargo');
   inputCargo.addEventListener('input', () => {{
+    if (btnLimparCargo) btnLimparCargo.style.display = inputCargo.value.trim() ? 'block' : 'none';
     document.querySelectorAll('.cargo-quick').forEach(b => {{
       b.classList.toggle('ativo', normStr(b.dataset.cargo) === normStr(inputCargo.value.trim()));
     }});
     renderizarBuscaCargo();
+    atualizarUIFiltrosSidebar();
   }});
-  document.getElementById('btnAplicarBuscaCargo').addEventListener('click', () => renderizarBuscaCargo());
-  document.getElementById('btnLimparCargo').addEventListener('click', () => {{
-    inputCargo.value = '';
-    document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b.dataset.cargo === ''));
-    renderizarBuscaCargo();
-  }});
+  if (btnLimparCargo) {{
+    btnLimparCargo.addEventListener('click', () => {{
+      inputCargo.value = '';
+      btnLimparCargo.style.display = 'none';
+      document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b.dataset.cargo === ''));
+      renderizarBuscaCargo();
+      atualizarUIFiltrosSidebar();
+    }});
+  }}
   document.querySelectorAll('.cargo-quick').forEach(btn => {{
     btn.addEventListener('click', () => {{
       inputCargo.value = btn.dataset.cargo;
