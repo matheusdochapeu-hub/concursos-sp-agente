@@ -11296,5 +11296,38 @@
   "faixa_salarial": "R$ 2.151,87 a R$ 2.367,20",
   "salario_min": 2151.87,
   "salario_max": 2367.2
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-claudio-mg-abre-processo-seletivo-para-cadastro-de-reserva-na-educacao": {
+  "cargos_li": [
+   "Auxiliar de Serviços Gerais da Educação",
+   "Motorista da Educação",
+   "Professor I de Educação Infantil",
+   "Professor I de Ensino Fundamental, anos iniciais",
+   "Pedagogo",
+   "Professor II de Arte",
+   "Professor II de Ciências",
+   "Professor II de Educação Física",
+   "Professor II de Ensino Religioso",
+   "Professor II de Geografia",
+   "Professor II de História",
+   "Professor II de Língua Inglesa",
+   "Professor II de Língua Portuguesa",
+   "Professor II de Matemática",
+   "Professor II de Música",
+   "Professor de Atendimento Educacional Especializado"
+  ],
+  "data_prova": "Consultar edital",
+  "regime": "Processo Seletivo / Temporário",
+  "beneficios": "Consultar edital",
+  "jornada": "44 horas semanais",
+  "isencao": "Não haverá cobrança de taxa de inscrição.",
+  "nome_banca": "Município de Cláudio",
+  "link_banca": "https://www.claudio.mg.gov.br/portal/editais/3",
+  "arquivos_edital": [
+   "EDITAL Nº 001/2026"
+  ],
+  "faixa_salarial": "R$ 1.626,45 a R$ 4.748,99",
+  "salario_min": 1626.45,
+  "salario_max": 4748.99
  }
 }

@@ -3202,7 +3202,11 @@ def render_html(
     return 'acima5000';
   }}
 
-    function calcularAuxiliosEfetivos(benTxt) {{
+    const REGEX_FUND = /cozinheir|merendeir|auxiliar|servicos\\s*gerais|limpeza|gari|coveir|vigia|bracal|copeir|pedreir|pintor|soldador|borracheir|carpinteir|encanador|eletricista|operador|tratorista|motorista|leiturista|frentista|telefonista|aferidor|apreensor|padeiro|ajudante/i;
+  const REGEX_MED = /oficial|assistente|escritur|recepcionista|tecnico|fiscal|agente\\s*comunit|agente\\s*de\\s*combate|cuidador|almoxarife|orientador|desenhista|salva-vidas/i;
+  const REGEX_SUP = /fisioterapeuta|medico|procurador|advogado|engenheiro|arquiteto|contador|auditor|psicologo|dentista|enfermeir|farmaceutico|nutricionista|terapeuta|fonoaudiologo|veterinario|museologo|analista/i;
+
+  function calcularAuxiliosEfetivos(benTxt) {{
     if (!benTxt) return 0;
     const s = benTxt.trim().toLowerCase();
     if (s === 'consultar edital' || s === 'não informado' || s === 'nao informado') return 0;
@@ -3510,9 +3514,7 @@ const mapSal = item.cargos_salarios || {{}};
       }}
     }}
 
-    const REGEX_FUND = /cozinheir|merendeir|auxiliar|servicos\\s*gerais|limpeza|gari|coveir|vigia|bracal|copeir|pedreir|pintor|soldador|borracheir|carpinteir|encanador|eletricista|operador|tratorista|motorista|leiturista|frentista|telefonista|aferidor|apreensor|padeiro|ajudante/i;
-    const REGEX_MED = /oficial|assistente|escritur|recepcionista|tecnico|fiscal|agente\\s*comunit|agente\\s*de\\s*combate|cuidador|almoxarife|orientador|desenhista|salva-vidas/i;
-    const REGEX_SUP = /fisioterapeuta|medico|procurador|advogado|engenheiro|arquiteto|contador|auditor|psicologo|dentista|enfermeir|farmaceutico|nutricionista|terapeuta|fonoaudiologo|veterinario|museologo|analista/i;
+
 
     const textoAlvo = normTermo || (cargosCasados && cargosCasados[0] ? normStr(cargosCasados[0]) : '');
 
@@ -5606,10 +5608,31 @@ const mapSal = item.cargos_salarios || {{}};
       return;
     }}
 
-    if (!(window.google && window.google.accounts && window.google.accounts.id)) {{
-      setTimeout(iniciarGoogleIdentity, 200);
-      return;
+    let tentativasGsi = 0;
+    function checarScriptGsi() {{
+      if (window.google && window.google.accounts && window.google.accounts.id) {{
+        executarInitGsi();
+      }} else {{
+        tentativasGsi++;
+        if (tentativasGsi < 15) {{
+          setTimeout(checarScriptGsi, 200);
+        }} else {{
+          // Fallback seguro se o script do Google for bloqueado ou demorar
+          formLoginGoogle.style.display = 'block';
+          btnGoogleMain.style.display = 'inline-flex';
+          if (opcManual) opcManual.style.display = 'none';
+        }}
+      }}
     }}
+
+    checarScriptGsi();
+    return;
+  }}
+
+  function executarInitGsi() {{
+    const clientId = obterClientId();
+    const gsiCont = document.getElementById('gsiButtonContainer');
+    const opcManual = document.getElementById('opcaoManualLogin');
 
     if (gsiIniciado) return;
 
@@ -5637,6 +5660,11 @@ const mapSal = item.cargos_salarios || {{}};
             locale: 'pt-BR'
           }}
         );
+        setTimeout(() => {{
+          if (gsiCont && gsiCont.children.length === 0) {{
+            formLoginGoogle.style.display = 'block';
+          }}
+        }}, 800);
       }}
 
       gsiIniciado = true;
@@ -5689,6 +5717,8 @@ const mapSal = item.cargos_salarios || {{}};
       iniciarGoogleIdentity();
       window.google.accounts.id.prompt();
     }} else {{
+      formLoginGoogle.style.display = 'block';
+      if (opcManual) opcManual.style.display = 'none';
       inputGoogleEmail.focus();
       msgErroLoginGoogle.textContent = 'ℹ️ Informe seu e-mail abaixo para acessar. Para login automático em 1 clique, ative o Client ID no painel do desenvolvedor.';
       msgErroLoginGoogle.style.display = 'block';
