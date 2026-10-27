@@ -1,9 +1,9 @@
 {
- "gerado_em": "27/10/2026 10:27",
- "gerado_em_iso": "2026-10-27T10:27:27.526887-03:00",
+ "gerado_em": "27/10/2026 12:49",
+ "gerado_em_iso": "2026-10-27T12:49:46.874086-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
  "total_sp": 169,
- "total_brasil": 601,
+ "total_brasil": 606,
  "ia_ativa": true,
  "novos_ultimas_24h": 16,
  "encerrando_proximos_dias": 75,
@@ -210,7 +210,7 @@
    "cidade": "Ribeirão Preto",
    "lat": -21.1699,
    "lon": -47.8099,
-   "banca": "Consultar edital",
+   "banca": "HCFMRP-USP",
    "site_banca": "https://www.hcrp.usp.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional#links",
    "arquivos_edital": [
@@ -219,9 +219,9 @@
    ],
    "data_prova": "Consultar edital",
    "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Auxílio-alimentação no valor de R$ 360,00, adicional de insalubridade e vale-transporte",
-   "jornada_geral": "30 horas semanais",
-   "isencao": "Há isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
+   "beneficios_gerais": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte",
+   "jornada_geral": "30h semanais",
+   "isencao": "Taxa de inscrição de R$ 126,79. Há isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
    "faixa_salarial": "Até R$ 2.978,36",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
@@ -232,7 +232,9 @@
    },
    "cargos_lista": [
     "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
-    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional) (1 vaga)"
+    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional) (1 vaga)",
+    "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
+    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional)"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -243,22 +245,22 @@
    ],
    "fisio": true,
    "fisio_detalhes": {
-    "cargo": "HCFMRP-USP - SP abre concursos públicos para Fisioterapeuta e Terapeuta Ocupacional",
-    "vagas": "Cadastro de Reserva (CR)",
-    "vagas_imediatas": 0,
-    "tem_cr": true,
-    "salario": null,
-    "salario_bruto": null,
-    "salario_total": null,
-    "salario_exibicao": "Até R$ 2.978,36",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 2.978,36 (+ auxílios legais)",
-    "carga_horaria": "30 horas semanais",
+    "cargo": "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
+    "vagas": "1 vaga imediata",
+    "vagas_imediatas": 1,
+    "tem_cr": false,
+    "salario": 2978.36,
+    "salario_bruto": 2978.36,
+    "salario_total": 3338.36,
+    "salario_exibicao": "R$ 2.978,36",
+    "salario_detalhe": "Bruto: R$ 2.978,36 + R$ 360,00 (auxílios) = R$ 3.338,36 com auxílios",
+    "carga_horaria": "30h semanais",
     "regime": "Consultar edital",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
-    "beneficios": "Auxílio-alimentação no valor de R$ 360,00, adicional de insalubridade e vale-transporte",
+    "requisitos": "Ensino Superior completo em Fisioterapia e registro no conselho de classe",
+    "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte",
     "resumo_conteudo": [
-     "Língua Portuguesa: Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (HCFMRP-USP): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -271,7 +273,7 @@
    "salario_max": 2978.36,
    "superior_itens": [
     {
-     "nome": "Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde",
+     "nome": "Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde",
      "vagas": "2 vagas imediatas",
      "vagas_imediatas": 2,
      "tem_cr": false,
@@ -279,13 +281,13 @@
      "salario_bruto": 2978.36,
      "salario_total": 3338.36,
      "salario_detalhe": "Bruto: R$ 2.978,36 + R$ 360,00 (auxílios) = R$ 3.338,36 com auxílios",
-     "carga_horaria": "30 horas semanais",
+     "carga_horaria": "30h semanais",
      "regime": "Consultar edital",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Fisioterapia (CREFITO). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Auxílio-alimentação no valor de R$ 360,00, adicional de insalubridade e vale-transporte",
+     "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte",
      "resumo_conteudo": [
-      "Língua Portuguesa: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (HCFMRP-USP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Técnico de Assistência à Saúde): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -298,20 +300,20 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/hcfmrp",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/hcfmrp",
-     "url_banca": "",
-     "cargo_busca": "HCFMRP",
-     "banca_busca": "Todas as Bancas",
-     "label_combo": "HCFMRP"
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude-hcfmrp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
+     "url_banca": "https://www.pciconcursos.com.br/provas/hcfmrp",
+     "cargo_busca": "Agente Técnico de Assistência à Saúde",
+     "banca_busca": "HCFMRP",
+     "label_combo": "Agente Técnico de Assistência à Saúde · HCFMRP"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude-hcfmrp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
-     "url_banca": "",
+     "url_banca": "https://www.pciconcursos.com.br/provas/hcfmrp",
      "cargo_busca": "Agente Técnico de Assistência à Saúde",
-     "banca_busca": "Todas as Bancas",
-     "label_combo": "Agente Técnico de Assistência à Saúde"
+     "banca_busca": "HCFMRP",
+     "label_combo": "Agente Técnico de Assistência à Saúde · HCFMRP"
     }
    }
   },
@@ -1053,17 +1055,17 @@
    "cidade": "Guaiçara",
    "lat": -21.6195,
    "lon": -49.8013,
-   "banca": "Prefeitura Municipal de Guaiçara",
+   "banca": "Império Concursos",
    "site_banca": "https://www.guaicara.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaicara-sp-abre-concurso-publico-com-salarios-de-ate-17716#links",
    "arquivos_edital": [
     "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
    ],
-   "data_prova": "20/12/2026",
+   "data_prova": "06/12/2026",
    "regime_geral": "Estatutário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Doadores de sangue ou de medula óssea que atendam aos requisitos do edital poderão solicitar isenção nos dias 27 e 28 de outubro de 2026.",
+   "isencao": "Taxa de R$ 60,00 para cargos de ensino fundamental e médio e R$ 80,00 para nível superior. Isenção para doadores de sangue ou de medula óssea que atendam aos requisitos do edital, solicitada nos dias 27 e 28 de outubro de 2026.",
    "faixa_salarial": "Até R$ 17.716,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
@@ -1105,7 +1107,40 @@
     "Operador Braçal (1 vaga)",
     "Operador de Máquinas (1 vaga)",
     "Pedreiro (1 vaga)",
-    "Tratorista (1 vaga)"
+    "Tratorista (1 vaga)",
+    "Auxiliar Folguista (Casa Lar)",
+    "Cuidador Residente (Casa Lar)",
+    "Inspetor de Alunos",
+    "Merendeira",
+    "Monitor de Ônibus",
+    "PEB I 1º ao 5º ano",
+    "PEB I Educação Infantil",
+    "PEB II Arte",
+    "PEB II Educação Física",
+    "PEB II Informática",
+    "PEB II Inglês",
+    "Agente Comunitário de Saúde",
+    "Assistente Social",
+    "Atendente de Consultório Dentário",
+    "Enfermeiro",
+    "Farmacêutico",
+    "Fisioterapeuta",
+    "Médico, 20 horas semanais",
+    "Médico, 40 horas semanais",
+    "Médico Psiquiatra",
+    "Psicólogo",
+    "Técnico em Enfermagem",
+    "Assistente Administrativo I",
+    "Auxiliar Administrativo II",
+    "Encanador",
+    "Fiscal de Postura",
+    "Fiscal de Tributos",
+    "Jardineiro",
+    "Motorista",
+    "Operador Braçal",
+    "Operador de Máquinas",
+    "Pedreiro",
+    "Tratorista"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -1127,10 +1162,10 @@
     "carga_horaria": "20 a 40 horas semanais",
     "regime": "Estatutário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
+    "requisitos": "Ensino Superior em Fisioterapia + Registro no CREFITO",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (Prefeitura Municipal de Guaiçara): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (Império Concursos): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -1141,7 +1176,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Inspetor de Alunos / Agente Comunitário de Saúde / Técnico em Enfermagem / Assistente Administrativo I (+4 cargos)",
+     "nome": "Inspetor de Alunos / Agente Comunitário de Saúde / Técnico em Enfermagem / Assistente Administrativo I (+12 cargos)",
      "vagas": "33 vagas imediatas",
      "vagas_imediatas": 33,
      "tem_cr": false,
@@ -1155,7 +1190,7 @@
      "requisitos": "Exige APENAS Ensino Médio completo (sem curso técnico) + residir na área/microárea de atuação desde a data da publicação do edital (para ACS) + conclusão do curso introdutório.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Guaiçara): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Império Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Inspetor de Alunos): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -1165,7 +1200,7 @@
    "salario_max": 17716.5,
    "superior_itens": [
     {
-     "nome": "PEB I 1º ao 5º ano / PEB I Educação Infantil / PEB II Arte / PEB II Educação Física (+11 cargos)",
+     "nome": "PEB I 1º ao 5º ano / PEB I Educação Infantil / PEB II Arte / PEB II Educação Física (+26 cargos)",
      "vagas": "33 vagas imediatas",
      "vagas_imediatas": 33,
      "tem_cr": false,
@@ -1179,7 +1214,7 @@
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Psicologia (CRP), Fisioterapia (CREFITO), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Guaiçara): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Império Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (PEB I 1º ao 5º ano): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -1211,28 +1246,28 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-guaicara",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-imperio",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-guaicara",
+     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Guaiçara",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Guaiçara"
+     "banca_busca": "Império",
+     "label_combo": "Fisioterapeuta · Império"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/inspetor-de-alunos-prefeitura-municipal-de-guaicara",
+     "url_combo": "https://www.pciconcursos.com.br/provas/inspetor-de-alunos-imperio",
      "url_cargo": "https://www.pciconcursos.com.br/provas/inspetor-de-alunos",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-guaicara",
+     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
      "cargo_busca": "Inspetor de Alunos",
-     "banca_busca": "Prefeitura Municipal de Guaiçara",
-     "label_combo": "Inspetor de Alunos · Prefeitura Municipal de Guaiçara"
+     "banca_busca": "Império",
+     "label_combo": "Inspetor de Alunos · Império"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/peb-i-1o-ao-5o-ano-prefeitura-municipal-de-guaicara",
+     "url_combo": "https://www.pciconcursos.com.br/provas/peb-i-1o-ao-5o-ano-imperio",
      "url_cargo": "https://www.pciconcursos.com.br/provas/peb-i-1o-ao-5o-ano",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-guaicara",
+     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
      "cargo_busca": "PEB I 1º ao 5º ano",
-     "banca_busca": "Prefeitura Municipal de Guaiçara",
-     "label_combo": "PEB I 1º ao 5º ano · Prefeitura Municipal de Guaiçara"
+     "banca_busca": "Império",
+     "label_combo": "PEB I 1º ao 5º ano · Império"
     }
    }
   },
@@ -2711,7 +2746,7 @@
    "cidade": "Presidente Prudente",
    "lat": -22.1207,
    "lon": -51.3925,
-   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "banca": "UNESP",
    "site_banca": "https://www.unesp.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-no-campus-de-presidente-prudente-sp#links",
    "arquivos_edital": [
@@ -2719,10 +2754,10 @@
     "EDITAL Nº 477/2026"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada_geral": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "regime_geral": "Temporário",
+   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02",
+   "jornada_geral": "12h semanais",
+   "isencao": "Taxa de inscrição de R$ 209,00. Informações sobre isenção não detalhadas no texto.",
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
@@ -2732,7 +2767,8 @@
     "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
-    "Professor Substituto"
+    "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Grupo 1)",
+    "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Grupo 2)"
    ],
    "first_seen_ts": "2026-10-27T10:25:50.286504-03:00",
    "is_baseline": false,
@@ -2742,27 +2778,27 @@
    ],
    "fisio": true,
    "fisio_detalhes": {
-    "cargo": "…sionais com graduação e especialização para lecionar em diversas disciplinas de Fisioterapia. A seleção será composta por prova escrita, prova didática e análise do currículo lattes documentado.",
-    "vagas": "Cadastro de Reserva (CR)",
-    "vagas_imediatas": 0,
-    "tem_cr": true,
-    "salario": null,
-    "salario_bruto": null,
-    "salario_total": null,
-    "salario_exibicao": "Até R$ 3.511,90",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 3.511,90 (+ auxílios legais)",
-    "carga_horaria": "Consultar edital",
-    "regime": "Consultar edital",
+    "cargo": "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Grupo 1)",
+    "vagas": "4 vagas imediatas",
+    "vagas_imediatas": 4,
+    "tem_cr": false,
+    "salario": 3511.9,
+    "salario_bruto": 3511.9,
+    "salario_total": 5511.92,
+    "salario_exibicao": "R$ 3.511,90",
+    "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
+    "carga_horaria": "12h semanais",
+    "regime": "Temporário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
-    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+    "requisitos": "Graduação e especialização na área da disciplina",
+    "beneficios": "Vale-alimentação no valor de R$ 2.000,02",
     "resumo_conteudo": [
-     "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
-     "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
-     "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
-     "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
-     "Fisioterapia Clínica e Preventiva: Traumato-ortopédica, reumatológica, neurofuncional (adulto e infantil), cardiorrespiratória, uroginecológica, geriátrica e Saúde da Família",
-     "Ética e Legislação Profissional: Código de Ética e Deontologia da Fisioterapia e resoluções do COFFITO/CREFITO"
+     "Prática Supervisionada em Fisioterapia na Saúde da Mulher",
+     "Prática supervisionada em Fisioterapia Neurológica",
+     "Prática Supervisionada em Fisioterapia Respiratória",
+     "Prática Supervisionada em Fisioterapia Cardiovascular",
+     "Fisioterapia Baseada em Evidências II",
+     "Ética no Exercício da Fisioterapia"
     ]
    },
    "medio_confirmado": [],
@@ -2770,7 +2806,7 @@
    "salario_max": 3511.9,
    "superior_itens": [
     {
-     "nome": "Professor Substituto",
+     "nome": "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional / Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional",
      "vagas": "8 vagas imediatas",
      "vagas_imediatas": 8,
      "tem_cr": false,
@@ -2778,39 +2814,40 @@
      "salario_bruto": 3511.9,
      "salario_total": 5511.92,
      "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
-     "carga_horaria": "Consultar edital",
-     "regime": "Consultar edital",
+     "carga_horaria": "12h semanais",
+     "regime": "Temporário",
      "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Fisioterapia (CREFITO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Vale-alimentação no valor de R$ 2.000,02",
      "resumo_conteudo": [
-      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (UNESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Professor Substituto): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+      "Conhecimentos Específicos (Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
      ]
     }
    ],
-   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
+   "formacoes_aceitas": "Aceita formações diversas: Fisioterapia (CREFITO), Licenciatura na disciplina (confirmar no edital).",
    "termos_formacao": [
+    "fisioterapia",
     "licenciatura na disciplina"
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-universidade-estadual-paulista-julio-de-mesquita-filho",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
-     "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-     "label_combo": "Fisioterapeuta · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-unesp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto",
+     "url_banca": "https://www.pciconcursos.com.br/provas/unesp",
+     "cargo_busca": "Professor Substituto",
+     "banca_busca": "UNESP",
+     "label_combo": "Professor Substituto · UNESP"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-unesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_banca": "https://www.pciconcursos.com.br/provas/unesp",
      "cargo_busca": "Professor Substituto",
-     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-     "label_combo": "Professor Substituto · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+     "banca_busca": "UNESP",
+     "label_combo": "Professor Substituto · UNESP"
     }
    }
   }
@@ -5122,7 +5159,7 @@
    "cidade": "Marília",
    "lat": -22.2171,
    "lon": -49.9501,
-   "banca": "Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)",
+   "banca": "FAMESP",
    "site_banca": "https://www.famesp.org.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/famesp-divulga-10-processos-seletivos-em-marilia-sp#links",
    "arquivos_edital": [
@@ -5138,10 +5175,10 @@
     "EDITAL Nº 306/2026"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "jornada_geral": "de 20 a 40 horas semanais",
+   "isencao": "Taxa de inscrição no valor de R$ 110,00 por inscrição. Informações sobre requisitos de isenção não foram detalhadas no texto da notícia.",
    "faixa_salarial": "Até R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
@@ -5160,7 +5197,17 @@
     "Terapeuta Ocupacional (1 vaga)",
     "Médico Ortopedista (1 vaga)",
     "Psicólogo para atuar em Neuropsicologia (1 vaga)",
-    "Técnico Administrativo (1 vaga)"
+    "Técnico Administrativo (1 vaga)",
+    "Assistente Social",
+    "Fonoaudiólogo",
+    "Nutricionista",
+    "Pedagogo (Psicopedagogo)",
+    "Educador Físico (Bacharelado)",
+    "Psicólogo",
+    "Terapeuta Ocupacional",
+    "Médico Ortopedista",
+    "Psicólogo para atuar em Neuropsicologia",
+    "Técnico Administrativo"
    ],
    "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
    "is_baseline": false,
@@ -5170,7 +5217,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Técnico Administrativo",
+     "nome": "Técnico Administrativo / Técnico Administrativo",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -5178,13 +5225,13 @@
      "salario_bruto": 3200.0,
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "carga_horaria": "de 20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico Administrativo) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
+     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico Administrativo / Técnico Administrativo) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (FAMESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Técnico Administrativo): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5194,7 +5241,7 @@
    "salario_max": 6077.09,
    "superior_itens": [
     {
-     "nome": "Assistente Social / Fonoaudiólogo / Nutricionista / Pedagogo (+4 cargos)",
+     "nome": "Assistente Social / Fonoaudiólogo / Nutricionista / Pedagogo (+12 cargos)",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -5202,13 +5249,13 @@
      "salario_bruto": 6077.09,
      "salario_total": 6077.09,
      "salario_detalhe": "Bruto: R$ 6.077,09 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "carga_horaria": "de 20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Medicina (CRM), Nutrição (CRN) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (FAMESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Assistente Social): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5226,20 +5273,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo-fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo-famesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_banca": "https://www.pciconcursos.com.br/provas/famesp",
      "cargo_busca": "Técnico Administrativo",
-     "banca_busca": "Fundação para o Desenvolvimento Médico e Hospitalar",
-     "label_combo": "Técnico Administrativo · Fundação para o Desenvolvimento Médico e Hospitalar"
+     "banca_busca": "FAMESP",
+     "label_combo": "Técnico Administrativo · FAMESP"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-famesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/assistente-social",
-     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_banca": "https://www.pciconcursos.com.br/provas/famesp",
      "cargo_busca": "Assistente Social",
-     "banca_busca": "Fundação para o Desenvolvimento Médico e Hospitalar",
-     "label_combo": "Assistente Social · Fundação para o Desenvolvimento Médico e Hospitalar"
+     "banca_busca": "FAMESP",
+     "label_combo": "Assistente Social · FAMESP"
     }
    }
   },
@@ -5381,7 +5428,7 @@
    "cidade": "Cunha",
    "lat": -23.0731,
    "lon": -44.9576,
-   "banca": "Prefeitura Municipal de Cunha",
+   "banca": "Promun",
    "site_banca": "https://www.cunha.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cunha-sp-abre-concurso-publico-com-salarios-de-ate-9147#links",
    "arquivos_edital": [
@@ -5392,7 +5439,7 @@
    "regime_geral": "Consultar edital",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Candidatos inscritos no CadÚnico que sejam membros de família de baixa renda poderão solicitar isenção de 23 a 26 de outubro de 2026.",
+   "isencao": "Taxas de inscrição de R$ 50,00, R$ 70,00 ou R$ 100,00, conforme o cargo. Isenção disponível para candidatos inscritos no CadÚnico que sejam membros de família de baixa renda, com solicitação no período de 23 a 26 de outubro de 2026.",
    "faixa_salarial": "Até R$ 9.147,62",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
@@ -5481,7 +5528,7 @@
      "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente de Fiscalização de Trânsito / Escriturário / Fiscal / Fiscal Tributário (+5 cargos)), sem necessidade de curso técnico profissionalizante.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Cunha): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Promun): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente de Fiscalização de Trânsito): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5505,7 +5552,7 @@
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Pedagogia, Licenciatura plena, Arquitetura e Urbanismo (CAU), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Odontologia (CRO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Cunha): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Promun): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Analista de Compras): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5540,20 +5587,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-de-fiscalizacao-de-transito-prefeitura-municipal-de-cunha",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-de-fiscalizacao-de-transito-promun",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-de-fiscalizacao-de-transito",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-cunha",
+     "url_banca": "https://www.pciconcursos.com.br/provas/promun",
      "cargo_busca": "Agente de Fiscalização de Trânsito",
-     "banca_busca": "Prefeitura Municipal de Cunha",
-     "label_combo": "Agente de Fiscalização de Trânsito · Prefeitura Municipal de Cunha"
+     "banca_busca": "Promun",
+     "label_combo": "Agente de Fiscalização de Trânsito · Promun"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/analista-de-compras-prefeitura-municipal-de-cunha",
+     "url_combo": "https://www.pciconcursos.com.br/provas/analista-de-compras-promun",
      "url_cargo": "https://www.pciconcursos.com.br/provas/analista-de-compras",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-cunha",
+     "url_banca": "https://www.pciconcursos.com.br/provas/promun",
      "cargo_busca": "Analista de Compras",
-     "banca_busca": "Prefeitura Municipal de Cunha",
-     "label_combo": "Analista de Compras · Prefeitura Municipal de Cunha"
+     "banca_busca": "Promun",
+     "label_combo": "Analista de Compras · Promun"
     }
    }
   },
@@ -5571,17 +5618,17 @@
    "cidade": "Guaiçara",
    "lat": -21.6195,
    "lon": -49.8013,
-   "banca": "Prefeitura Municipal de Guaiçara",
+   "banca": "Império Concursos",
    "site_banca": "https://www.guaicara.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaicara-sp-abre-concurso-publico-com-salarios-de-ate-17716#links",
    "arquivos_edital": [
     "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
    ],
-   "data_prova": "20/12/2026",
+   "data_prova": "06/12/2026",
    "regime_geral": "Estatutário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Doadores de sangue ou de medula óssea que atendam aos requisitos do edital poderão solicitar isenção nos dias 27 e 28 de outubro de 2026.",
+   "isencao": "Taxa de R$ 60,00 para cargos de ensino fundamental e médio e R$ 80,00 para nível superior. Isenção para doadores de sangue ou de medula óssea que atendam aos requisitos do edital, solicitada nos dias 27 e 28 de outubro de 2026.",
    "faixa_salarial": "Até R$ 17.716,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
@@ -5623,7 +5670,40 @@
     "Operador Braçal (1 vaga)",
     "Operador de Máquinas (1 vaga)",
     "Pedreiro (1 vaga)",
-    "Tratorista (1 vaga)"
+    "Tratorista (1 vaga)",
+    "Auxiliar Folguista (Casa Lar)",
+    "Cuidador Residente (Casa Lar)",
+    "Inspetor de Alunos",
+    "Merendeira",
+    "Monitor de Ônibus",
+    "PEB I 1º ao 5º ano",
+    "PEB I Educação Infantil",
+    "PEB II Arte",
+    "PEB II Educação Física",
+    "PEB II Informática",
+    "PEB II Inglês",
+    "Agente Comunitário de Saúde",
+    "Assistente Social",
+    "Atendente de Consultório Dentário",
+    "Enfermeiro",
+    "Farmacêutico",
+    "Fisioterapeuta",
+    "Médico, 20 horas semanais",
+    "Médico, 40 horas semanais",
+    "Médico Psiquiatra",
+    "Psicólogo",
+    "Técnico em Enfermagem",
+    "Assistente Administrativo I",
+    "Auxiliar Administrativo II",
+    "Encanador",
+    "Fiscal de Postura",
+    "Fiscal de Tributos",
+    "Jardineiro",
+    "Motorista",
+    "Operador Braçal",
+    "Operador de Máquinas",
+    "Pedreiro",
+    "Tratorista"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -5645,10 +5725,10 @@
     "carga_horaria": "20 a 40 horas semanais",
     "regime": "Estatutário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
+    "requisitos": "Ensino Superior em Fisioterapia + Registro no CREFITO",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (Prefeitura Municipal de Guaiçara): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (Império Concursos): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -5659,7 +5739,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Inspetor de Alunos / Agente Comunitário de Saúde / Técnico em Enfermagem / Assistente Administrativo I (+4 cargos)",
+     "nome": "Inspetor de Alunos / Agente Comunitário de Saúde / Técnico em Enfermagem / Assistente Administrativo I (+12 cargos)",
      "vagas": "33 vagas imediatas",
      "vagas_imediatas": 33,
      "tem_cr": false,
@@ -5673,7 +5753,7 @@
      "requisitos": "Exige APENAS Ensino Médio completo (sem curso técnico) + residir na área/microárea de atuação desde a data da publicação do edital (para ACS) + conclusão do curso introdutório.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Guaiçara): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Império Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Inspetor de Alunos): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5683,7 +5763,7 @@
    "salario_max": 17716.5,
    "superior_itens": [
     {
-     "nome": "PEB I 1º ao 5º ano / PEB I Educação Infantil / PEB II Arte / PEB II Educação Física (+11 cargos)",
+     "nome": "PEB I 1º ao 5º ano / PEB I Educação Infantil / PEB II Arte / PEB II Educação Física (+26 cargos)",
      "vagas": "33 vagas imediatas",
      "vagas_imediatas": 33,
      "tem_cr": false,
@@ -5697,7 +5777,7 @@
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Psicologia (CRP), Fisioterapia (CREFITO), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Guaiçara): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Império Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (PEB I 1º ao 5º ano): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5729,28 +5809,28 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-guaicara",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-imperio",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-guaicara",
+     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Guaiçara",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Guaiçara"
+     "banca_busca": "Império",
+     "label_combo": "Fisioterapeuta · Império"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/inspetor-de-alunos-prefeitura-municipal-de-guaicara",
+     "url_combo": "https://www.pciconcursos.com.br/provas/inspetor-de-alunos-imperio",
      "url_cargo": "https://www.pciconcursos.com.br/provas/inspetor-de-alunos",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-guaicara",
+     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
      "cargo_busca": "Inspetor de Alunos",
-     "banca_busca": "Prefeitura Municipal de Guaiçara",
-     "label_combo": "Inspetor de Alunos · Prefeitura Municipal de Guaiçara"
+     "banca_busca": "Império",
+     "label_combo": "Inspetor de Alunos · Império"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/peb-i-1o-ao-5o-ano-prefeitura-municipal-de-guaicara",
+     "url_combo": "https://www.pciconcursos.com.br/provas/peb-i-1o-ao-5o-ano-imperio",
      "url_cargo": "https://www.pciconcursos.com.br/provas/peb-i-1o-ao-5o-ano",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-guaicara",
+     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
      "cargo_busca": "PEB I 1º ao 5º ano",
-     "banca_busca": "Prefeitura Municipal de Guaiçara",
-     "label_combo": "PEB I 1º ao 5º ano · Prefeitura Municipal de Guaiçara"
+     "banca_busca": "Império",
+     "label_combo": "PEB I 1º ao 5º ano · Império"
     }
    }
   },
@@ -5768,17 +5848,17 @@
    "cidade": "Monteiro Lobato",
    "lat": -22.9544,
    "lon": -45.8407,
-   "banca": "Prefeitura Municipal de Monteiro Lobato",
+   "banca": "Instituto Aplicativa",
    "site_banca": "https://www.monteirolobato.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-monteiro-lobato-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva#links",
    "arquivos_edital": [
     "EDITAL Nº 01/2026"
    ],
    "data_prova": "13/12/2026",
-   "regime_geral": "Consultar edital",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Candidatos desempregados poderão solicitar isenção de 23 a 26 de outubro de 2026, mediante envio da documentação exigida pelo edital.",
+   "isencao": "Taxas de inscrição variam de R$ 40,00 a R$ 60,00. Candidatos desempregados poderão solicitar isenção de 23 a 26 de outubro de 2026, mediante envio da documentação exigida pelo edital.",
    "faixa_salarial": "Até R$ 7.408,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
@@ -5829,7 +5909,49 @@
     "Professor de Educação Infantil (5 vagas)",
     "Psicólogo (20h) (1 vaga)",
     "Psicólogo (40h) (cadastro de reserva)",
-    "Terapeuta Ocupacional (cadastro de reserva)"
+    "Terapeuta Ocupacional (cadastro de reserva)",
+    "Auxiliar de Conservação de Vias Permanentes",
+    "Auxiliar de Serviços Gerais",
+    "Eletricista",
+    "Motorista",
+    "Pedreiro",
+    "Vigia",
+    "Agente Administrativo I",
+    "Agente Administrativo II",
+    "Agente Administrativo III",
+    "Agente Comunitário de Saúde Bairro São Benedito",
+    "Agente de Endemias",
+    "Agente de Organização Escolar",
+    "Agente Educador",
+    "Chefe de Pessoal",
+    "Fiscal de Obras e Posturas",
+    "Mecânico",
+    "Merendeira",
+    "Monitor Escolar",
+    "Operador de Máquinas",
+    "Auxiliar de Saúde Bucal",
+    "Coordenador de Tributos",
+    "Fiscal de Tributos",
+    "Técnico de Enfermagem",
+    "Tesoureiro",
+    "Analista de Controle Interno",
+    "Assistente Social",
+    "Contador",
+    "Coordenador do CRAS",
+    "Dentista (40h)",
+    "Enfermeiro",
+    "Fonoaudiólogo",
+    "Médico Veterinário (40h)",
+    "Nutricionista",
+    "Orientador Educacional",
+    "Procurador Jurídico",
+    "Professor de Artes",
+    "Professor de Educação Básica I",
+    "Professor de Educação Física (30h)",
+    "Professor de Educação Infantil",
+    "Psicólogo (20h)",
+    "Psicólogo (40h)",
+    "Terapeuta Ocupacional"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -5839,7 +5961,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Motorista / Agente Administrativo I / Agente Administrativo II / Agente Administrativo III (+5 cargos)",
+     "nome": "Motorista / Agente Administrativo I / Agente Administrativo II / Agente Administrativo III (+14 cargos)",
      "vagas": "64 vagas imediatas",
      "vagas_imediatas": 64,
      "tem_cr": false,
@@ -5848,12 +5970,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Monteiro Lobato): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto Aplicativa): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Motorista): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5863,7 +5985,7 @@
    "salario_max": 7408.75,
    "superior_itens": [
     {
-     "nome": "Coordenador de Tributos / Fiscal de Tributos / Tesoureiro / Analista de Controle Interno (+17 cargos)",
+     "nome": "Coordenador de Tributos / Fiscal de Tributos / Tesoureiro / Analista de Controle Interno (+38 cargos)",
      "vagas": "64 vagas imediatas",
      "vagas_imediatas": 64,
      "tem_cr": false,
@@ -5872,12 +5994,12 @@
      "salario_total": 7408.75,
      "salario_detalhe": "Bruto: R$ 7.408,75 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Psicologia (CRP), Enfermagem (COREN), Medicina Veterinária (CRMV), Medicina (CRM), Nutrição (CRN), Odontologia (CRO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Monteiro Lobato): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto Aplicativa): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Coordenador de Tributos): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -5910,20 +6032,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-prefeitura-municipal-de-monteiro-lobato",
+     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-aplicativa",
      "url_cargo": "https://www.pciconcursos.com.br/provas/motorista",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-monteiro-lobato",
+     "url_banca": "https://www.pciconcursos.com.br/provas/aplicativa",
      "cargo_busca": "Motorista",
-     "banca_busca": "Prefeitura Municipal de Monteiro Lobato",
-     "label_combo": "Motorista · Prefeitura Municipal de Monteiro Lobato"
+     "banca_busca": "Aplicativa",
+     "label_combo": "Motorista · Aplicativa"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/coordenador-de-tributos-prefeitura-municipal-de-monteiro-lobato",
+     "url_combo": "https://www.pciconcursos.com.br/provas/coordenador-de-tributos-aplicativa",
      "url_cargo": "https://www.pciconcursos.com.br/provas/coordenador-de-tributos",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-monteiro-lobato",
+     "url_banca": "https://www.pciconcursos.com.br/provas/aplicativa",
      "cargo_busca": "Coordenador de Tributos",
-     "banca_busca": "Prefeitura Municipal de Monteiro Lobato",
-     "label_combo": "Coordenador de Tributos · Prefeitura Municipal de Monteiro Lobato"
+     "banca_busca": "Aplicativa",
+     "label_combo": "Coordenador de Tributos · Aplicativa"
     }
    }
   },
@@ -5941,17 +6063,17 @@
    "cidade": "São José da Bela Vista",
    "lat": -20.5935,
    "lon": -47.6424,
-   "banca": "Prefeitura Municipal de São José da Bela Vista",
+   "banca": "Instituto INDEC",
    "site_banca": "https://www.saojosedabelavista.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva#links",
    "arquivos_edital": [
     "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026"
    ],
    "data_prova": "06/12/2026",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Auxílio-alimentação · Auxílio-alimentação",
-   "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios_gerais": "Auxílio-alimentação",
+   "jornada_geral": "Variam de 20 a 40 horas semanais e 117 horas mensais",
+   "isencao": "Taxa de inscrição de R$ 75,00 para nível médio e R$ 85,00 para nível superior. O texto não detalha requisitos de isenção.",
    "faixa_salarial": "Até R$ 7.078,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
@@ -5972,7 +6094,19 @@
     "Médico do Trabalho (cadastro de reserva)",
     "Nutricionista (cadastro de reserva)",
     "Nutricionista da Saúde (cadastro de reserva)",
-    "Professor de Educação Básica II - Artes (cadastro de reserva)"
+    "Professor de Educação Básica II - Artes (cadastro de reserva)",
+    "Agente Fiscal Tributário",
+    "Agente Orientador Escolar",
+    "Auxiliar de Farmácia",
+    "Fiscal de Rendas e Postura",
+    "Assistente Social",
+    "Coordenador Pedagógico de Educação Fundamental I",
+    "Farmacêutico",
+    "Fonoaudiólogo",
+    "Médico do Trabalho",
+    "Nutricionista",
+    "Nutricionista da Saúde",
+    "Professor de Educação Básica II - Artes"
    ],
    "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
    "is_baseline": false,
@@ -5982,7 +6116,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura",
+     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura / Agente Fiscal Tributário / Fiscal de Rendas e Postura",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -5990,13 +6124,13 @@
      "salario_bruto": 3200.0,
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "carga_horaria": "Variam de 20 a 40 horas semanais e 117 horas mensais",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio",
-     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
-     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura / Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
+     "beneficios": "Auxílio-alimentação",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto INDEC): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6006,7 +6140,7 @@
    "salario_max": 7078.72,
    "superior_itens": [
     {
-     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+7 cargos)",
+     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+18 cargos)",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -6014,13 +6148,13 @@
      "salario_bruto": 7078.72,
      "salario_total": 7078.72,
      "salario_detalhe": "Bruto: R$ 7.078,72 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "carga_horaria": "Variam de 20 a 40 horas semanais e 117 horas mensais",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Pedagogia, Licenciatura plena, Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "beneficios": "Auxílio-alimentação",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto INDEC): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6052,20 +6186,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-indec",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indec",
      "cargo_busca": "Agente Fiscal Tributário",
-     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
-     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+     "banca_busca": "INDEC",
+     "label_combo": "Agente Fiscal Tributário · INDEC"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-indec",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indec",
      "cargo_busca": "Agente Fiscal Tributário",
-     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
-     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+     "banca_busca": "INDEC",
+     "label_combo": "Agente Fiscal Tributário · INDEC"
     }
    }
   },
@@ -6217,7 +6351,7 @@
    "cidade": "Suzano",
    "lat": -23.5448,
    "lon": -46.3112,
-   "banca": "Prefeitura Municipal de Suzano",
+   "banca": "Nosso Rumo",
    "site_banca": "https://www.suzano.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-suzano-sp-abre-concurso-publico-com-salarios-de-ate-12062#links",
    "arquivos_edital": [
@@ -6225,9 +6359,9 @@
    ],
    "data_prova": "13/12/2026",
    "regime_geral": "Estatutário",
-   "beneficios_gerais": "Vale-alimentação · Cesta básica para cargos específicos, adicional de periculosidade para Agente de S",
+   "beneficios_gerais": "Todos os cargos têm vale-alimentação. O edital também prevê cesta básica para cargos específicos, adicional de periculosidade para Agente de Segurança Escolar e adicional de insalubridade para cargos médicos.",
    "jornada_geral": "10 a 40 horas semanais",
-   "isencao": "A isenção poderá ser solicitada das 10h de 29 de outubro às 23h59 de 30 de outubro de 2026 por candidatos desempregados, por candidatos com renda pessoal de até um salário mínimo mensal ou por doadores regulares de sangue do município de Suzano, mediante comprovação.",
+   "isencao": "Taxas de inscrição: R$ 60,93 (nível fundamental), R$ 79,42 (nível médio) e R$ 106,62 (nível superior). Isenção para candidatos desempregados, com renda pessoal de até um salário mínimo mensal, ou doadores regulares de sangue do município de Suzano, mediante comprovação.",
    "faixa_salarial": "Até R$ 12.062,91",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
@@ -6259,7 +6393,30 @@
     "Professor de Educação Básica Adjunto (1 vaga)",
     "Professor de Educação Básica I 30h (30 vagas)",
     "Professor de Educação Básica II Artes (CR)",
-    "Professor de Educação Básica II Educação Física (CR)"
+    "Professor de Educação Básica II Educação Física (CR)",
+    "Agente de Segurança Escolar",
+    "Agente Escolar",
+    "Cozinheiro Escolar",
+    "Motorista de Transporte Escolar",
+    "Auxiliar de Atividades Escolares",
+    "Auxiliar de Secretaria",
+    "Secretário de Escola",
+    "Contador",
+    "Diretor de Escola",
+    "Médico do Trabalho 20h",
+    "Médico Ginecologista 10h",
+    "Médico Ginecologista 20h",
+    "Médico Neurologista 10h",
+    "Médico Neurologista 20h",
+    "Médico Pediatra 10h",
+    "Médico Pediatra 20h",
+    "Médico Pediatra Plantonista 24h",
+    "Médico Urologista 20h",
+    "Procurador Jurídico",
+    "Professor de Educação Básica Adjunto",
+    "Professor de Educação Básica I 30h",
+    "Professor de Educação Básica II Artes",
+    "Professor de Educação Básica II Educação Física"
    ],
    "first_seen_ts": "2026-10-27T10:25:50.286504-03:00",
    "is_baseline": false,
@@ -6269,7 +6426,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Motorista de Transporte Escolar",
+     "nome": "Motorista de Transporte Escolar / Motorista de Transporte Escolar",
      "vagas": "73 vagas imediatas",
      "vagas_imediatas": 73,
      "tem_cr": false,
@@ -6281,9 +6438,9 @@
      "regime": "Estatutário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
-     "beneficios": "Vale-alimentação · Cesta básica para cargos específicos, adicional de periculosidade para Agente de S",
+     "beneficios": "Todos os cargos têm vale-alimentação. O edital também prevê cesta básica para cargos específicos, adicional de periculosidade para Agente de Segurança Escolar e adicional de insalubridade para cargos médicos.",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Suzano): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Nosso Rumo): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Motorista de Transporte Escolar): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6293,7 +6450,7 @@
    "salario_max": 12062.91,
    "superior_itens": [
     {
-     "nome": "Contador / Diretor de Escola / Médico do Trabalho 20h / Médico Ginecologista 10h (+12 cargos)",
+     "nome": "Contador / Diretor de Escola / Médico do Trabalho 20h / Médico Ginecologista 10h (+28 cargos)",
      "vagas": "73 vagas imediatas",
      "vagas_imediatas": 73,
      "tem_cr": false,
@@ -6305,9 +6462,9 @@
      "regime": "Estatutário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Ciências Contábeis, Direito (OAB), Pedagogia, Licenciatura plena, Medicina (CRM), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Vale-alimentação · Cesta básica para cargos específicos, adicional de periculosidade para Agente de S",
+     "beneficios": "Todos os cargos têm vale-alimentação. O edital também prevê cesta básica para cargos específicos, adicional de periculosidade para Agente de Segurança Escolar e adicional de insalubridade para cargos médicos.",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Suzano): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Nosso Rumo): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Contador): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6328,20 +6485,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-de-transporte-escolar-prefeitura-municipal-de-suzano",
+     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-de-transporte-escolar-nosso-rumo",
      "url_cargo": "https://www.pciconcursos.com.br/provas/motorista-de-transporte-escolar",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-suzano",
+     "url_banca": "https://www.pciconcursos.com.br/provas/nosso-rumo",
      "cargo_busca": "Motorista de Transporte Escolar",
-     "banca_busca": "Prefeitura Municipal de Suzano",
-     "label_combo": "Motorista de Transporte Escolar · Prefeitura Municipal de Suzano"
+     "banca_busca": "Nosso Rumo",
+     "label_combo": "Motorista de Transporte Escolar · Nosso Rumo"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/contador-prefeitura-municipal-de-suzano",
+     "url_combo": "https://www.pciconcursos.com.br/provas/contador-nosso-rumo",
      "url_cargo": "https://www.pciconcursos.com.br/provas/contador",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-suzano",
+     "url_banca": "https://www.pciconcursos.com.br/provas/nosso-rumo",
      "cargo_busca": "Contador",
-     "banca_busca": "Prefeitura Municipal de Suzano",
-     "label_combo": "Contador · Prefeitura Municipal de Suzano"
+     "banca_busca": "Nosso Rumo",
+     "label_combo": "Contador · Nosso Rumo"
     }
    }
   },
@@ -6359,7 +6516,7 @@
    "cidade": "Tuiuti",
    "lat": -22.8193,
    "lon": -46.6937,
-   "banca": "Prefeitura Municipal de Tuiuti",
+   "banca": "Aplicativa",
    "site_banca": "https://www.tuiuti.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-retifica-edital-de-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva#links",
    "arquivos_edital": [
@@ -6367,10 +6524,10 @@
     "EDITAL RETIFICADO - CONCURSO PÚBLICO Nº 01/2026"
    ],
    "data_prova": "20/12/2026",
-   "regime_geral": "Consultar edital",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxas de inscrição: R$ 35,50 para nível fundamental, R$ 45,50 para nível médio e técnico, e R$ 65,50 para nível superior. Informações detalhadas sobre isenção constam no edital completo.",
    "faixa_salarial": "Até R$ 5.209,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
@@ -6420,7 +6577,48 @@
     "Professor de Educação Básica II, Português (CR)",
     "Psicólogo (CR)",
     "Psicólogo Escolar (1 vaga)",
-    "Psicopedagogo 40h (1 vaga)"
+    "Psicopedagogo 40h (1 vaga)",
+    "Ajudante Geral",
+    "Jardineiro",
+    "Mantenedor de Máquinas e Veículos",
+    "Motorista Sênior",
+    "Operador de Máquinas Junior",
+    "Pedreiro",
+    "Pintor",
+    "Vigia",
+    "Servidor Braçal",
+    "Agente Comunitário de Saúde, Centro",
+    "Agente Comunitário de Saúde, Godoy/Arraial",
+    "Agente Comunitário de Saúde, Lima Rico/Pantano",
+    "Agente Comunitário de Saúde, Passa Três/Machados/Caetanos/Rio Abaixo",
+    "Agente de Controle de Endemia",
+    "Almoxarife",
+    "Assistente Administrativo",
+    "Auxiliar Administrativo",
+    "Merendeira",
+    "Operador de Máquinas Sênior",
+    "Recepcionista",
+    "Servente",
+    "Técnico de Segurança do Trabalho",
+    "Técnico de Enfermagem",
+    "Assistente Social",
+    "Assistente Social Escolar",
+    "Coordenador Pedagógico",
+    "Diretor de Escola",
+    "Enfermeiro",
+    "Professor de Educação Básica I, Classe",
+    "Professor de Educação Básica I, Educação Infantil",
+    "Professor de Educação Básica II, Educação Especial Intérprete de Libras",
+    "Professor de Educação Básica II, Educação Especial",
+    "Professor de Educação Básica II, Educação Física",
+    "Professor de Educação Básica II, Geografia",
+    "Professor de Educação Básica II, História",
+    "Professor de Educação Básica II, Inglês",
+    "Professor de Educação Básica II, Matemática",
+    "Professor de Educação Básica II, Português",
+    "Psicólogo",
+    "Psicólogo Escolar",
+    "Psicopedagogo 40h"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -6430,7 +6628,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Motorista Sênior / Agente Comunitário de Saúde, Centro / Agente Comunitário de Saúde, Godoy/Arraial / Agente Comunitário de Saúde, Lima Rico/Pantano (+7 cargos)",
+     "nome": "Motorista Sênior / Agente Comunitário de Saúde, Centro / Agente Comunitário de Saúde, Godoy/Arraial / Agente Comunitário de Saúde, Lima Rico/Pantano (+18 cargos)",
      "vagas": "11 vagas imediatas",
      "vagas_imediatas": 11,
      "tem_cr": false,
@@ -6439,12 +6637,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Aplicativa): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Motorista Sênior): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6454,7 +6652,7 @@
    "salario_max": 5209.01,
    "superior_itens": [
     {
-     "nome": "Assistente Social / Assistente Social Escolar / Coordenador Pedagógico / Diretor de Escola (+13 cargos)",
+     "nome": "Assistente Social / Assistente Social Escolar / Coordenador Pedagógico / Diretor de Escola (+30 cargos)",
      "vagas": "11 vagas imediatas",
      "vagas_imediatas": 11,
      "tem_cr": false,
@@ -6463,12 +6661,12 @@
      "salario_total": 5209.01,
      "salario_detalhe": "Bruto: R$ 5.209,01 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Enfermagem (COREN), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Aplicativa): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Assistente Social): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6486,20 +6684,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-senior-prefeitura-municipal-de-tuiuti",
+     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-senior-aplicativa",
      "url_cargo": "https://www.pciconcursos.com.br/provas/motorista-senior",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-tuiuti",
+     "url_banca": "https://www.pciconcursos.com.br/provas/aplicativa",
      "cargo_busca": "Motorista Sênior",
-     "banca_busca": "Prefeitura Municipal de Tuiuti",
-     "label_combo": "Motorista Sênior · Prefeitura Municipal de Tuiuti"
+     "banca_busca": "Aplicativa",
+     "label_combo": "Motorista Sênior · Aplicativa"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-prefeitura-municipal-de-tuiuti",
+     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-aplicativa",
      "url_cargo": "https://www.pciconcursos.com.br/provas/assistente-social",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-tuiuti",
+     "url_banca": "https://www.pciconcursos.com.br/provas/aplicativa",
      "cargo_busca": "Assistente Social",
-     "banca_busca": "Prefeitura Municipal de Tuiuti",
-     "label_combo": "Assistente Social · Prefeitura Municipal de Tuiuti"
+     "banca_busca": "Aplicativa",
+     "label_combo": "Assistente Social · Aplicativa"
     }
    }
   },
@@ -6517,7 +6715,7 @@
    "cidade": "São Paulo",
    "lat": -23.5329,
    "lon": -46.6395,
-   "banca": "Universidade de São Paulo (USP)",
+   "banca": "Fuvest",
    "site_banca": "https://www5.usp.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/usp-sp-abre-10-novos-concursos-publicos-para-diversos-cargos#links",
    "arquivos_edital": [
@@ -6532,10 +6730,10 @@
     "EDITAL Nº 042/2026"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
+   "regime_geral": "Estatutário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "24 a 40 horas semanais",
-   "isencao": "Há previsão de isenção e redução da taxa para os candidatos que atendam aos requisitos estabelecidos nos editais.",
+   "isencao": "Taxa de inscrição varia de R$ 220,00 a R$ 250,00. Há previsão de isenção e redução da taxa para os candidatos que atendam aos requisitos estabelecidos nos editais.",
    "faixa_salarial": "Até R$ 11.778,84",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
@@ -6553,7 +6751,16 @@
     "Técnico de Laboratório, especialidade: Biologia Celular e Molecular (2 vagas)",
     "Técnico de Laboratório, especialidade: Biologia Marinha (1 vaga)",
     "Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais (1 vaga)",
-    "Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos (1 vaga)"
+    "Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos (1 vaga)",
+    "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação",
+    "Especialista em Laboratório, especialidade: Operação em Laboratórios de Radiojornalismo e Telejornalismo",
+    "Locutor/Operador",
+    "Médico, especialidade: Patologia para atuação em anatomia patológica",
+    "Médico Veterinário, especialidade: Animais de experimentação/biotérios",
+    "Técnico de Laboratório, especialidade: Biologia Celular e Molecular",
+    "Técnico de Laboratório, especialidade: Biologia Marinha",
+    "Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais",
+    "Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -6563,7 +6770,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular / Técnico de Laboratório, especialidade: Biologia Marinha / Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais / Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos",
+     "nome": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular / Técnico de Laboratório, especialidade: Biologia Marinha / Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais / Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos (+4 cargos)",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -6572,12 +6779,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "24 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "Estatutário",
      "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico de Laboratório, especialidade: Biologia Celular e Molecular / Técnico de Laboratório, especialidade: Biologia Marinha / Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais / Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
+     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico de Laboratório, especialidade: Biologia Celular e Molecular / Técnico de Laboratório, especialidade: Biologia Marinha / Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais / Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos (+4 cargos)) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Universidade de São Paulo (USP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Fuvest): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Técnico de Laboratório, especialidade: Biologia Celular e Molecular): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6587,7 +6794,7 @@
    "salario_max": 11778.84,
    "superior_itens": [
     {
-     "nome": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação / Especialista em Laboratório, especialidade: Operação em Laboratórios de Radiojornalismo e Telejornalismo / Médico, especialidade: Patologia para atuação em anatomia patológica / Médico Veterinário, especialidade: Animais de experimentação/biotérios",
+     "nome": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação / Especialista em Laboratório, especialidade: Operação em Laboratórios de Radiojornalismo e Telejornalismo / Médico, especialidade: Patologia para atuação em anatomia patológica / Médico Veterinário, especialidade: Animais de experimentação/biotérios (+4 cargos)",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -6596,12 +6803,12 @@
      "salario_total": 11778.84,
      "salario_detalhe": "Bruto: R$ 11.778,84 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "24 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "Estatutário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Medicina Veterinária (CRMV), Medicina (CRM) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Universidade de São Paulo (USP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Fuvest): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6615,20 +6822,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-de-laboratorio-especialidade-biologia-celular-e-molecular-universidade-de-sao-paulo",
+     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-de-laboratorio-especialidade-biologia-celular-e-molecular-fuvest",
      "url_cargo": "https://www.pciconcursos.com.br/provas/tecnico-de-laboratorio-especialidade-biologia-celular-e-molecular",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-de-sao-paulo",
+     "url_banca": "https://www.pciconcursos.com.br/provas/fuvest",
      "cargo_busca": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular",
-     "banca_busca": "Universidade de São Paulo",
-     "label_combo": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular · Universidade de São Paulo"
+     "banca_busca": "Fuvest",
+     "label_combo": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular · Fuvest"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/especialista-em-laboratorio-especialidade-aceleradores-de-particulas-instrumentacao-universidade-de-sao-paulo",
+     "url_combo": "https://www.pciconcursos.com.br/provas/especialista-em-laboratorio-especialidade-aceleradores-de-particulas-instrumentacao-fuvest",
      "url_cargo": "https://www.pciconcursos.com.br/provas/especialista-em-laboratorio-especialidade-aceleradores-de-particulas-instrumentacao",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-de-sao-paulo",
+     "url_banca": "https://www.pciconcursos.com.br/provas/fuvest",
      "cargo_busca": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação",
-     "banca_busca": "Universidade de São Paulo",
-     "label_combo": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação · Universidade de São Paulo"
+     "banca_busca": "Fuvest",
+     "label_combo": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação · Fuvest"
     }
    }
   },
@@ -12069,17 +12276,17 @@
    "cidade": "Guaiçara",
    "lat": -21.6195,
    "lon": -49.8013,
-   "banca": "Prefeitura Municipal de Guaiçara",
+   "banca": "Império Concursos",
    "site_banca": "https://www.guaicara.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaicara-sp-abre-concurso-publico-com-salarios-de-ate-17716#links",
    "arquivos_edital": [
     "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
    ],
-   "data_prova": "20/12/2026",
+   "data_prova": "06/12/2026",
    "regime_geral": "Estatutário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Doadores de sangue ou de medula óssea que atendam aos requisitos do edital poderão solicitar isenção nos dias 27 e 28 de outubro de 2026.",
+   "isencao": "Taxa de R$ 60,00 para cargos de ensino fundamental e médio e R$ 80,00 para nível superior. Isenção para doadores de sangue ou de medula óssea que atendam aos requisitos do edital, solicitada nos dias 27 e 28 de outubro de 2026.",
    "faixa_salarial": "Até R$ 17.716,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
@@ -12121,7 +12328,40 @@
     "Operador Braçal (1 vaga)",
     "Operador de Máquinas (1 vaga)",
     "Pedreiro (1 vaga)",
-    "Tratorista (1 vaga)"
+    "Tratorista (1 vaga)",
+    "Auxiliar Folguista (Casa Lar)",
+    "Cuidador Residente (Casa Lar)",
+    "Inspetor de Alunos",
+    "Merendeira",
+    "Monitor de Ônibus",
+    "PEB I 1º ao 5º ano",
+    "PEB I Educação Infantil",
+    "PEB II Arte",
+    "PEB II Educação Física",
+    "PEB II Informática",
+    "PEB II Inglês",
+    "Agente Comunitário de Saúde",
+    "Assistente Social",
+    "Atendente de Consultório Dentário",
+    "Enfermeiro",
+    "Farmacêutico",
+    "Fisioterapeuta",
+    "Médico, 20 horas semanais",
+    "Médico, 40 horas semanais",
+    "Médico Psiquiatra",
+    "Psicólogo",
+    "Técnico em Enfermagem",
+    "Assistente Administrativo I",
+    "Auxiliar Administrativo II",
+    "Encanador",
+    "Fiscal de Postura",
+    "Fiscal de Tributos",
+    "Jardineiro",
+    "Motorista",
+    "Operador Braçal",
+    "Operador de Máquinas",
+    "Pedreiro",
+    "Tratorista"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -12143,10 +12383,10 @@
     "carga_horaria": "20 a 40 horas semanais",
     "regime": "Estatutário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
+    "requisitos": "Ensino Superior em Fisioterapia + Registro no CREFITO",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (Prefeitura Municipal de Guaiçara): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (Império Concursos): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -12157,7 +12397,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Inspetor de Alunos / Agente Comunitário de Saúde / Técnico em Enfermagem / Assistente Administrativo I (+4 cargos)",
+     "nome": "Inspetor de Alunos / Agente Comunitário de Saúde / Técnico em Enfermagem / Assistente Administrativo I (+12 cargos)",
      "vagas": "33 vagas imediatas",
      "vagas_imediatas": 33,
      "tem_cr": false,
@@ -12171,7 +12411,7 @@
      "requisitos": "Exige APENAS Ensino Médio completo (sem curso técnico) + residir na área/microárea de atuação desde a data da publicação do edital (para ACS) + conclusão do curso introdutório.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Guaiçara): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Império Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Inspetor de Alunos): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -12181,7 +12421,7 @@
    "salario_max": 17716.5,
    "superior_itens": [
     {
-     "nome": "PEB I 1º ao 5º ano / PEB I Educação Infantil / PEB II Arte / PEB II Educação Física (+11 cargos)",
+     "nome": "PEB I 1º ao 5º ano / PEB I Educação Infantil / PEB II Arte / PEB II Educação Física (+26 cargos)",
      "vagas": "33 vagas imediatas",
      "vagas_imediatas": 33,
      "tem_cr": false,
@@ -12195,7 +12435,7 @@
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Psicologia (CRP), Fisioterapia (CREFITO), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Guaiçara): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Império Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (PEB I 1º ao 5º ano): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -12227,28 +12467,28 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-guaicara",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-imperio",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-guaicara",
+     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Guaiçara",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Guaiçara"
+     "banca_busca": "Império",
+     "label_combo": "Fisioterapeuta · Império"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/inspetor-de-alunos-prefeitura-municipal-de-guaicara",
+     "url_combo": "https://www.pciconcursos.com.br/provas/inspetor-de-alunos-imperio",
      "url_cargo": "https://www.pciconcursos.com.br/provas/inspetor-de-alunos",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-guaicara",
+     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
      "cargo_busca": "Inspetor de Alunos",
-     "banca_busca": "Prefeitura Municipal de Guaiçara",
-     "label_combo": "Inspetor de Alunos · Prefeitura Municipal de Guaiçara"
+     "banca_busca": "Império",
+     "label_combo": "Inspetor de Alunos · Império"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/peb-i-1o-ao-5o-ano-prefeitura-municipal-de-guaicara",
+     "url_combo": "https://www.pciconcursos.com.br/provas/peb-i-1o-ao-5o-ano-imperio",
      "url_cargo": "https://www.pciconcursos.com.br/provas/peb-i-1o-ao-5o-ano",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-guaicara",
+     "url_banca": "https://www.pciconcursos.com.br/provas/imperio",
      "cargo_busca": "PEB I 1º ao 5º ano",
-     "banca_busca": "Prefeitura Municipal de Guaiçara",
-     "label_combo": "PEB I 1º ao 5º ano · Prefeitura Municipal de Guaiçara"
+     "banca_busca": "Império",
+     "label_combo": "PEB I 1º ao 5º ano · Império"
     }
    }
   },
@@ -14147,7 +14387,7 @@
    "cidade": "Suzano",
    "lat": -23.5448,
    "lon": -46.3112,
-   "banca": "Prefeitura Municipal de Suzano",
+   "banca": "Nosso Rumo",
    "site_banca": "https://www.suzano.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-suzano-sp-abre-concurso-publico-com-salarios-de-ate-12062#links",
    "arquivos_edital": [
@@ -14155,9 +14395,9 @@
    ],
    "data_prova": "13/12/2026",
    "regime_geral": "Estatutário",
-   "beneficios_gerais": "Vale-alimentação · Cesta básica para cargos específicos, adicional de periculosidade para Agente de S",
+   "beneficios_gerais": "Todos os cargos têm vale-alimentação. O edital também prevê cesta básica para cargos específicos, adicional de periculosidade para Agente de Segurança Escolar e adicional de insalubridade para cargos médicos.",
    "jornada_geral": "10 a 40 horas semanais",
-   "isencao": "A isenção poderá ser solicitada das 10h de 29 de outubro às 23h59 de 30 de outubro de 2026 por candidatos desempregados, por candidatos com renda pessoal de até um salário mínimo mensal ou por doadores regulares de sangue do município de Suzano, mediante comprovação.",
+   "isencao": "Taxas de inscrição: R$ 60,93 (nível fundamental), R$ 79,42 (nível médio) e R$ 106,62 (nível superior). Isenção para candidatos desempregados, com renda pessoal de até um salário mínimo mensal, ou doadores regulares de sangue do município de Suzano, mediante comprovação.",
    "faixa_salarial": "Até R$ 12.062,91",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
@@ -14189,7 +14429,30 @@
     "Professor de Educação Básica Adjunto (1 vaga)",
     "Professor de Educação Básica I 30h (30 vagas)",
     "Professor de Educação Básica II Artes (CR)",
-    "Professor de Educação Básica II Educação Física (CR)"
+    "Professor de Educação Básica II Educação Física (CR)",
+    "Agente de Segurança Escolar",
+    "Agente Escolar",
+    "Cozinheiro Escolar",
+    "Motorista de Transporte Escolar",
+    "Auxiliar de Atividades Escolares",
+    "Auxiliar de Secretaria",
+    "Secretário de Escola",
+    "Contador",
+    "Diretor de Escola",
+    "Médico do Trabalho 20h",
+    "Médico Ginecologista 10h",
+    "Médico Ginecologista 20h",
+    "Médico Neurologista 10h",
+    "Médico Neurologista 20h",
+    "Médico Pediatra 10h",
+    "Médico Pediatra 20h",
+    "Médico Pediatra Plantonista 24h",
+    "Médico Urologista 20h",
+    "Procurador Jurídico",
+    "Professor de Educação Básica Adjunto",
+    "Professor de Educação Básica I 30h",
+    "Professor de Educação Básica II Artes",
+    "Professor de Educação Básica II Educação Física"
    ],
    "first_seen_ts": "2026-10-27T10:25:50.286504-03:00",
    "is_baseline": false,
@@ -14199,7 +14462,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Motorista de Transporte Escolar",
+     "nome": "Motorista de Transporte Escolar / Motorista de Transporte Escolar",
      "vagas": "73 vagas imediatas",
      "vagas_imediatas": 73,
      "tem_cr": false,
@@ -14211,9 +14474,9 @@
      "regime": "Estatutário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
-     "beneficios": "Vale-alimentação · Cesta básica para cargos específicos, adicional de periculosidade para Agente de S",
+     "beneficios": "Todos os cargos têm vale-alimentação. O edital também prevê cesta básica para cargos específicos, adicional de periculosidade para Agente de Segurança Escolar e adicional de insalubridade para cargos médicos.",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Suzano): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Nosso Rumo): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Motorista de Transporte Escolar): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -14223,7 +14486,7 @@
    "salario_max": 12062.91,
    "superior_itens": [
     {
-     "nome": "Contador / Diretor de Escola / Médico do Trabalho 20h / Médico Ginecologista 10h (+12 cargos)",
+     "nome": "Contador / Diretor de Escola / Médico do Trabalho 20h / Médico Ginecologista 10h (+28 cargos)",
      "vagas": "73 vagas imediatas",
      "vagas_imediatas": 73,
      "tem_cr": false,
@@ -14235,9 +14498,9 @@
      "regime": "Estatutário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Ciências Contábeis, Direito (OAB), Pedagogia, Licenciatura plena, Medicina (CRM), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Vale-alimentação · Cesta básica para cargos específicos, adicional de periculosidade para Agente de S",
+     "beneficios": "Todos os cargos têm vale-alimentação. O edital também prevê cesta básica para cargos específicos, adicional de periculosidade para Agente de Segurança Escolar e adicional de insalubridade para cargos médicos.",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Suzano): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Nosso Rumo): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Contador): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -14258,20 +14521,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-de-transporte-escolar-prefeitura-municipal-de-suzano",
+     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-de-transporte-escolar-nosso-rumo",
      "url_cargo": "https://www.pciconcursos.com.br/provas/motorista-de-transporte-escolar",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-suzano",
+     "url_banca": "https://www.pciconcursos.com.br/provas/nosso-rumo",
      "cargo_busca": "Motorista de Transporte Escolar",
-     "banca_busca": "Prefeitura Municipal de Suzano",
-     "label_combo": "Motorista de Transporte Escolar · Prefeitura Municipal de Suzano"
+     "banca_busca": "Nosso Rumo",
+     "label_combo": "Motorista de Transporte Escolar · Nosso Rumo"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/contador-prefeitura-municipal-de-suzano",
+     "url_combo": "https://www.pciconcursos.com.br/provas/contador-nosso-rumo",
      "url_cargo": "https://www.pciconcursos.com.br/provas/contador",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-suzano",
+     "url_banca": "https://www.pciconcursos.com.br/provas/nosso-rumo",
      "cargo_busca": "Contador",
-     "banca_busca": "Prefeitura Municipal de Suzano",
-     "label_combo": "Contador · Prefeitura Municipal de Suzano"
+     "banca_busca": "Nosso Rumo",
+     "label_combo": "Contador · Nosso Rumo"
     }
    }
   },
@@ -14289,7 +14552,7 @@
    "cidade": "São Paulo",
    "lat": -23.5329,
    "lon": -46.6395,
-   "banca": "Universidade de São Paulo (USP)",
+   "banca": "Fuvest",
    "site_banca": "https://www5.usp.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/usp-sp-abre-10-novos-concursos-publicos-para-diversos-cargos#links",
    "arquivos_edital": [
@@ -14304,10 +14567,10 @@
     "EDITAL Nº 042/2026"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
+   "regime_geral": "Estatutário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "24 a 40 horas semanais",
-   "isencao": "Há previsão de isenção e redução da taxa para os candidatos que atendam aos requisitos estabelecidos nos editais.",
+   "isencao": "Taxa de inscrição varia de R$ 220,00 a R$ 250,00. Há previsão de isenção e redução da taxa para os candidatos que atendam aos requisitos estabelecidos nos editais.",
    "faixa_salarial": "Até R$ 11.778,84",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
@@ -14325,7 +14588,16 @@
     "Técnico de Laboratório, especialidade: Biologia Celular e Molecular (2 vagas)",
     "Técnico de Laboratório, especialidade: Biologia Marinha (1 vaga)",
     "Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais (1 vaga)",
-    "Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos (1 vaga)"
+    "Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos (1 vaga)",
+    "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação",
+    "Especialista em Laboratório, especialidade: Operação em Laboratórios de Radiojornalismo e Telejornalismo",
+    "Locutor/Operador",
+    "Médico, especialidade: Patologia para atuação em anatomia patológica",
+    "Médico Veterinário, especialidade: Animais de experimentação/biotérios",
+    "Técnico de Laboratório, especialidade: Biologia Celular e Molecular",
+    "Técnico de Laboratório, especialidade: Biologia Marinha",
+    "Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais",
+    "Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -14335,7 +14607,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular / Técnico de Laboratório, especialidade: Biologia Marinha / Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais / Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos",
+     "nome": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular / Técnico de Laboratório, especialidade: Biologia Marinha / Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais / Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos (+4 cargos)",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -14344,12 +14616,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "24 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "Estatutário",
      "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico de Laboratório, especialidade: Biologia Celular e Molecular / Técnico de Laboratório, especialidade: Biologia Marinha / Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais / Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
+     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico de Laboratório, especialidade: Biologia Celular e Molecular / Técnico de Laboratório, especialidade: Biologia Marinha / Técnico de Laboratório, especialidade: Operações de campo em sistemas agrícolas e ambientais / Técnico de Laboratório, especialidade: Práticas em métodos de diagnóstico laboratorial de marcadores fisiológicos de saúde e bem-estar animal e de doenças transmissíveis por métodos diretos e indiretos (+4 cargos)) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Universidade de São Paulo (USP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Fuvest): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Técnico de Laboratório, especialidade: Biologia Celular e Molecular): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -14359,7 +14631,7 @@
    "salario_max": 11778.84,
    "superior_itens": [
     {
-     "nome": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação / Especialista em Laboratório, especialidade: Operação em Laboratórios de Radiojornalismo e Telejornalismo / Médico, especialidade: Patologia para atuação em anatomia patológica / Médico Veterinário, especialidade: Animais de experimentação/biotérios",
+     "nome": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação / Especialista em Laboratório, especialidade: Operação em Laboratórios de Radiojornalismo e Telejornalismo / Médico, especialidade: Patologia para atuação em anatomia patológica / Médico Veterinário, especialidade: Animais de experimentação/biotérios (+4 cargos)",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -14368,12 +14640,12 @@
      "salario_total": 11778.84,
      "salario_detalhe": "Bruto: R$ 11.778,84 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "24 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "Estatutário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Medicina Veterinária (CRMV), Medicina (CRM) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Universidade de São Paulo (USP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Fuvest): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -14387,20 +14659,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-de-laboratorio-especialidade-biologia-celular-e-molecular-universidade-de-sao-paulo",
+     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-de-laboratorio-especialidade-biologia-celular-e-molecular-fuvest",
      "url_cargo": "https://www.pciconcursos.com.br/provas/tecnico-de-laboratorio-especialidade-biologia-celular-e-molecular",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-de-sao-paulo",
+     "url_banca": "https://www.pciconcursos.com.br/provas/fuvest",
      "cargo_busca": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular",
-     "banca_busca": "Universidade de São Paulo",
-     "label_combo": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular · Universidade de São Paulo"
+     "banca_busca": "Fuvest",
+     "label_combo": "Técnico de Laboratório, especialidade: Biologia Celular e Molecular · Fuvest"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/especialista-em-laboratorio-especialidade-aceleradores-de-particulas-instrumentacao-universidade-de-sao-paulo",
+     "url_combo": "https://www.pciconcursos.com.br/provas/especialista-em-laboratorio-especialidade-aceleradores-de-particulas-instrumentacao-fuvest",
      "url_cargo": "https://www.pciconcursos.com.br/provas/especialista-em-laboratorio-especialidade-aceleradores-de-particulas-instrumentacao",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-de-sao-paulo",
+     "url_banca": "https://www.pciconcursos.com.br/provas/fuvest",
      "cargo_busca": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação",
-     "banca_busca": "Universidade de São Paulo",
-     "label_combo": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação · Universidade de São Paulo"
+     "banca_busca": "Fuvest",
+     "label_combo": "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação · Fuvest"
     }
    }
   },
@@ -16055,7 +16327,7 @@
    "cidade": "Cunha",
    "lat": -23.0731,
    "lon": -44.9576,
-   "banca": "Prefeitura Municipal de Cunha",
+   "banca": "Promun",
    "site_banca": "https://www.cunha.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cunha-sp-abre-concurso-publico-com-salarios-de-ate-9147#links",
    "arquivos_edital": [
@@ -16066,7 +16338,7 @@
    "regime_geral": "Consultar edital",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Candidatos inscritos no CadÚnico que sejam membros de família de baixa renda poderão solicitar isenção de 23 a 26 de outubro de 2026.",
+   "isencao": "Taxas de inscrição de R$ 50,00, R$ 70,00 ou R$ 100,00, conforme o cargo. Isenção disponível para candidatos inscritos no CadÚnico que sejam membros de família de baixa renda, com solicitação no período de 23 a 26 de outubro de 2026.",
    "faixa_salarial": "Até R$ 9.147,62",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
@@ -16155,7 +16427,7 @@
      "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente de Fiscalização de Trânsito / Escriturário / Fiscal / Fiscal Tributário (+5 cargos)), sem necessidade de curso técnico profissionalizante.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Cunha): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Promun): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente de Fiscalização de Trânsito): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -16179,7 +16451,7 @@
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Pedagogia, Licenciatura plena, Arquitetura e Urbanismo (CAU), Enfermagem (COREN), Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Odontologia (CRO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Cunha): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Promun): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Analista de Compras): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -16214,20 +16486,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-de-fiscalizacao-de-transito-prefeitura-municipal-de-cunha",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-de-fiscalizacao-de-transito-promun",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-de-fiscalizacao-de-transito",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-cunha",
+     "url_banca": "https://www.pciconcursos.com.br/provas/promun",
      "cargo_busca": "Agente de Fiscalização de Trânsito",
-     "banca_busca": "Prefeitura Municipal de Cunha",
-     "label_combo": "Agente de Fiscalização de Trânsito · Prefeitura Municipal de Cunha"
+     "banca_busca": "Promun",
+     "label_combo": "Agente de Fiscalização de Trânsito · Promun"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/analista-de-compras-prefeitura-municipal-de-cunha",
+     "url_combo": "https://www.pciconcursos.com.br/provas/analista-de-compras-promun",
      "url_cargo": "https://www.pciconcursos.com.br/provas/analista-de-compras",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-cunha",
+     "url_banca": "https://www.pciconcursos.com.br/provas/promun",
      "cargo_busca": "Analista de Compras",
-     "banca_busca": "Prefeitura Municipal de Cunha",
-     "label_combo": "Analista de Compras · Prefeitura Municipal de Cunha"
+     "banca_busca": "Promun",
+     "label_combo": "Analista de Compras · Promun"
     }
    }
   },
@@ -18130,17 +18402,17 @@
    "cidade": "Monteiro Lobato",
    "lat": -22.9544,
    "lon": -45.8407,
-   "banca": "Prefeitura Municipal de Monteiro Lobato",
+   "banca": "Instituto Aplicativa",
    "site_banca": "https://www.monteirolobato.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-monteiro-lobato-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva#links",
    "arquivos_edital": [
     "EDITAL Nº 01/2026"
    ],
    "data_prova": "13/12/2026",
-   "regime_geral": "Consultar edital",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Candidatos desempregados poderão solicitar isenção de 23 a 26 de outubro de 2026, mediante envio da documentação exigida pelo edital.",
+   "isencao": "Taxas de inscrição variam de R$ 40,00 a R$ 60,00. Candidatos desempregados poderão solicitar isenção de 23 a 26 de outubro de 2026, mediante envio da documentação exigida pelo edital.",
    "faixa_salarial": "Até R$ 7.408,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
@@ -18191,7 +18463,49 @@
     "Professor de Educação Infantil (5 vagas)",
     "Psicólogo (20h) (1 vaga)",
     "Psicólogo (40h) (cadastro de reserva)",
-    "Terapeuta Ocupacional (cadastro de reserva)"
+    "Terapeuta Ocupacional (cadastro de reserva)",
+    "Auxiliar de Conservação de Vias Permanentes",
+    "Auxiliar de Serviços Gerais",
+    "Eletricista",
+    "Motorista",
+    "Pedreiro",
+    "Vigia",
+    "Agente Administrativo I",
+    "Agente Administrativo II",
+    "Agente Administrativo III",
+    "Agente Comunitário de Saúde Bairro São Benedito",
+    "Agente de Endemias",
+    "Agente de Organização Escolar",
+    "Agente Educador",
+    "Chefe de Pessoal",
+    "Fiscal de Obras e Posturas",
+    "Mecânico",
+    "Merendeira",
+    "Monitor Escolar",
+    "Operador de Máquinas",
+    "Auxiliar de Saúde Bucal",
+    "Coordenador de Tributos",
+    "Fiscal de Tributos",
+    "Técnico de Enfermagem",
+    "Tesoureiro",
+    "Analista de Controle Interno",
+    "Assistente Social",
+    "Contador",
+    "Coordenador do CRAS",
+    "Dentista (40h)",
+    "Enfermeiro",
+    "Fonoaudiólogo",
+    "Médico Veterinário (40h)",
+    "Nutricionista",
+    "Orientador Educacional",
+    "Procurador Jurídico",
+    "Professor de Artes",
+    "Professor de Educação Básica I",
+    "Professor de Educação Física (30h)",
+    "Professor de Educação Infantil",
+    "Psicólogo (20h)",
+    "Psicólogo (40h)",
+    "Terapeuta Ocupacional"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -18201,7 +18515,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Motorista / Agente Administrativo I / Agente Administrativo II / Agente Administrativo III (+5 cargos)",
+     "nome": "Motorista / Agente Administrativo I / Agente Administrativo II / Agente Administrativo III (+14 cargos)",
      "vagas": "64 vagas imediatas",
      "vagas_imediatas": 64,
      "tem_cr": false,
@@ -18210,12 +18524,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Monteiro Lobato): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto Aplicativa): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Motorista): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -18225,7 +18539,7 @@
    "salario_max": 7408.75,
    "superior_itens": [
     {
-     "nome": "Coordenador de Tributos / Fiscal de Tributos / Tesoureiro / Analista de Controle Interno (+17 cargos)",
+     "nome": "Coordenador de Tributos / Fiscal de Tributos / Tesoureiro / Analista de Controle Interno (+38 cargos)",
      "vagas": "64 vagas imediatas",
      "vagas_imediatas": 64,
      "tem_cr": false,
@@ -18234,12 +18548,12 @@
      "salario_total": 7408.75,
      "salario_detalhe": "Bruto: R$ 7.408,75 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Direito (OAB), Serviço Social (CRESS), Psicologia (CRP), Enfermagem (COREN), Medicina Veterinária (CRMV), Medicina (CRM), Nutrição (CRN), Odontologia (CRO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Monteiro Lobato): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto Aplicativa): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Coordenador de Tributos): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -18272,20 +18586,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-prefeitura-municipal-de-monteiro-lobato",
+     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-aplicativa",
      "url_cargo": "https://www.pciconcursos.com.br/provas/motorista",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-monteiro-lobato",
+     "url_banca": "https://www.pciconcursos.com.br/provas/aplicativa",
      "cargo_busca": "Motorista",
-     "banca_busca": "Prefeitura Municipal de Monteiro Lobato",
-     "label_combo": "Motorista · Prefeitura Municipal de Monteiro Lobato"
+     "banca_busca": "Aplicativa",
+     "label_combo": "Motorista · Aplicativa"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/coordenador-de-tributos-prefeitura-municipal-de-monteiro-lobato",
+     "url_combo": "https://www.pciconcursos.com.br/provas/coordenador-de-tributos-aplicativa",
      "url_cargo": "https://www.pciconcursos.com.br/provas/coordenador-de-tributos",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-monteiro-lobato",
+     "url_banca": "https://www.pciconcursos.com.br/provas/aplicativa",
      "cargo_busca": "Coordenador de Tributos",
-     "banca_busca": "Prefeitura Municipal de Monteiro Lobato",
-     "label_combo": "Coordenador de Tributos · Prefeitura Municipal de Monteiro Lobato"
+     "banca_busca": "Aplicativa",
+     "label_combo": "Coordenador de Tributos · Aplicativa"
     }
    }
   },
@@ -18423,17 +18737,17 @@
    "cidade": "São José da Bela Vista",
    "lat": -20.5935,
    "lon": -47.6424,
-   "banca": "Prefeitura Municipal de São José da Bela Vista",
+   "banca": "Instituto INDEC",
    "site_banca": "https://www.saojosedabelavista.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva#links",
    "arquivos_edital": [
     "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026"
    ],
    "data_prova": "06/12/2026",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Auxílio-alimentação · Auxílio-alimentação",
-   "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios_gerais": "Auxílio-alimentação",
+   "jornada_geral": "Variam de 20 a 40 horas semanais e 117 horas mensais",
+   "isencao": "Taxa de inscrição de R$ 75,00 para nível médio e R$ 85,00 para nível superior. O texto não detalha requisitos de isenção.",
    "faixa_salarial": "Até R$ 7.078,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
@@ -18454,7 +18768,19 @@
     "Médico do Trabalho (cadastro de reserva)",
     "Nutricionista (cadastro de reserva)",
     "Nutricionista da Saúde (cadastro de reserva)",
-    "Professor de Educação Básica II - Artes (cadastro de reserva)"
+    "Professor de Educação Básica II - Artes (cadastro de reserva)",
+    "Agente Fiscal Tributário",
+    "Agente Orientador Escolar",
+    "Auxiliar de Farmácia",
+    "Fiscal de Rendas e Postura",
+    "Assistente Social",
+    "Coordenador Pedagógico de Educação Fundamental I",
+    "Farmacêutico",
+    "Fonoaudiólogo",
+    "Médico do Trabalho",
+    "Nutricionista",
+    "Nutricionista da Saúde",
+    "Professor de Educação Básica II - Artes"
    ],
    "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
    "is_baseline": false,
@@ -18464,7 +18790,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura",
+     "nome": "Agente Fiscal Tributário / Fiscal de Rendas e Postura / Agente Fiscal Tributário / Fiscal de Rendas e Postura",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -18472,13 +18798,13 @@
      "salario_bruto": 3200.0,
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "carga_horaria": "Variam de 20 a 40 horas semanais e 117 horas mensais",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio",
-     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
-     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Agente Fiscal Tributário / Fiscal de Rendas e Postura / Agente Fiscal Tributário / Fiscal de Rendas e Postura), sem necessidade de curso técnico profissionalizante.",
+     "beneficios": "Auxílio-alimentação",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto INDEC): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -18488,7 +18814,7 @@
    "salario_max": 7078.72,
    "superior_itens": [
     {
-     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+7 cargos)",
+     "nome": "Agente Fiscal Tributário / Agente Orientador Escolar / Fiscal de Rendas e Postura / Assistente Social (+18 cargos)",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -18496,13 +18822,13 @@
      "salario_bruto": 7078.72,
      "salario_total": 7078.72,
      "salario_detalhe": "Bruto: R$ 7.078,72 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "carga_horaria": "Variam de 20 a 40 horas semanais e 117 horas mensais",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Direito, Ciências Contábeis, Economia, Administração, Serviço Social (CRESS), Pedagogia, Licenciatura plena, Medicina (CRM), Farmácia (CRF), Nutrição (CRN), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+     "beneficios": "Auxílio-alimentação",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de São José da Bela Vista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Instituto INDEC): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Fiscal Tributário): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -18534,20 +18860,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-indec",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indec",
      "cargo_busca": "Agente Fiscal Tributário",
-     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
-     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+     "banca_busca": "INDEC",
+     "label_combo": "Agente Fiscal Tributário · INDEC"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario-indec",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-fiscal-tributario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-sao-jose-da-bela-vista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indec",
      "cargo_busca": "Agente Fiscal Tributário",
-     "banca_busca": "Prefeitura Municipal de São José da Bela Vista",
-     "label_combo": "Agente Fiscal Tributário · Prefeitura Municipal de São José da Bela Vista"
+     "banca_busca": "INDEC",
+     "label_combo": "Agente Fiscal Tributário · INDEC"
     }
    }
   },
@@ -18777,7 +19103,7 @@
    "cidade": "Marília",
    "lat": -22.2171,
    "lon": -49.9501,
-   "banca": "Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)",
+   "banca": "FAMESP",
    "site_banca": "https://www.famesp.org.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/famesp-divulga-10-processos-seletivos-em-marilia-sp#links",
    "arquivos_edital": [
@@ -18793,10 +19119,10 @@
     "EDITAL Nº 306/2026"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "jornada_geral": "de 20 a 40 horas semanais",
+   "isencao": "Taxa de inscrição no valor de R$ 110,00 por inscrição. Informações sobre requisitos de isenção não foram detalhadas no texto da notícia.",
    "faixa_salarial": "Até R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
@@ -18815,7 +19141,17 @@
     "Terapeuta Ocupacional (1 vaga)",
     "Médico Ortopedista (1 vaga)",
     "Psicólogo para atuar em Neuropsicologia (1 vaga)",
-    "Técnico Administrativo (1 vaga)"
+    "Técnico Administrativo (1 vaga)",
+    "Assistente Social",
+    "Fonoaudiólogo",
+    "Nutricionista",
+    "Pedagogo (Psicopedagogo)",
+    "Educador Físico (Bacharelado)",
+    "Psicólogo",
+    "Terapeuta Ocupacional",
+    "Médico Ortopedista",
+    "Psicólogo para atuar em Neuropsicologia",
+    "Técnico Administrativo"
    ],
    "first_seen_ts": "2026-10-21T16:29:50.959828-03:00",
    "is_baseline": false,
@@ -18825,7 +19161,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Técnico Administrativo",
+     "nome": "Técnico Administrativo / Técnico Administrativo",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -18833,13 +19169,13 @@
      "salario_bruto": 3200.0,
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "carga_horaria": "de 20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico Administrativo) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
+     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico Administrativo / Técnico Administrativo) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (FAMESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Técnico Administrativo): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -18849,7 +19185,7 @@
    "salario_max": 6077.09,
    "superior_itens": [
     {
-     "nome": "Assistente Social / Fonoaudiólogo / Nutricionista / Pedagogo (+4 cargos)",
+     "nome": "Assistente Social / Fonoaudiólogo / Nutricionista / Pedagogo (+12 cargos)",
      "vagas": "10 vagas imediatas",
      "vagas_imediatas": 10,
      "tem_cr": false,
@@ -18857,13 +19193,13 @@
      "salario_bruto": 6077.09,
      "salario_total": 6077.09,
      "salario_detalhe": "Bruto: R$ 6.077,09 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "carga_horaria": "de 20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Medicina (CRM), Nutrição (CRN) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação para o Desenvolvimento Médico e Hospitalar (FAMESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (FAMESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Assistente Social): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -18881,20 +19217,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo-fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo-famesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/tecnico-administrativo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_banca": "https://www.pciconcursos.com.br/provas/famesp",
      "cargo_busca": "Técnico Administrativo",
-     "banca_busca": "Fundação para o Desenvolvimento Médico e Hospitalar",
-     "label_combo": "Técnico Administrativo · Fundação para o Desenvolvimento Médico e Hospitalar"
+     "banca_busca": "FAMESP",
+     "label_combo": "Técnico Administrativo · FAMESP"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-famesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/assistente-social",
-     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-para-o-desenvolvimento-medico-e-hospitalar",
+     "url_banca": "https://www.pciconcursos.com.br/provas/famesp",
      "cargo_busca": "Assistente Social",
-     "banca_busca": "Fundação para o Desenvolvimento Médico e Hospitalar",
-     "label_combo": "Assistente Social · Fundação para o Desenvolvimento Médico e Hospitalar"
+     "banca_busca": "FAMESP",
+     "label_combo": "Assistente Social · FAMESP"
     }
    }
   },
@@ -20555,7 +20891,7 @@
    "cidade": "Tuiuti",
    "lat": -22.8193,
    "lon": -46.6937,
-   "banca": "Prefeitura Municipal de Tuiuti",
+   "banca": "Aplicativa",
    "site_banca": "https://www.tuiuti.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-retifica-edital-de-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva#links",
    "arquivos_edital": [
@@ -20563,10 +20899,10 @@
     "EDITAL RETIFICADO - CONCURSO PÚBLICO Nº 01/2026"
    ],
    "data_prova": "20/12/2026",
-   "regime_geral": "Consultar edital",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxas de inscrição: R$ 35,50 para nível fundamental, R$ 45,50 para nível médio e técnico, e R$ 65,50 para nível superior. Informações detalhadas sobre isenção constam no edital completo.",
    "faixa_salarial": "Até R$ 5.209,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
@@ -20616,7 +20952,48 @@
     "Professor de Educação Básica II, Português (CR)",
     "Psicólogo (CR)",
     "Psicólogo Escolar (1 vaga)",
-    "Psicopedagogo 40h (1 vaga)"
+    "Psicopedagogo 40h (1 vaga)",
+    "Ajudante Geral",
+    "Jardineiro",
+    "Mantenedor de Máquinas e Veículos",
+    "Motorista Sênior",
+    "Operador de Máquinas Junior",
+    "Pedreiro",
+    "Pintor",
+    "Vigia",
+    "Servidor Braçal",
+    "Agente Comunitário de Saúde, Centro",
+    "Agente Comunitário de Saúde, Godoy/Arraial",
+    "Agente Comunitário de Saúde, Lima Rico/Pantano",
+    "Agente Comunitário de Saúde, Passa Três/Machados/Caetanos/Rio Abaixo",
+    "Agente de Controle de Endemia",
+    "Almoxarife",
+    "Assistente Administrativo",
+    "Auxiliar Administrativo",
+    "Merendeira",
+    "Operador de Máquinas Sênior",
+    "Recepcionista",
+    "Servente",
+    "Técnico de Segurança do Trabalho",
+    "Técnico de Enfermagem",
+    "Assistente Social",
+    "Assistente Social Escolar",
+    "Coordenador Pedagógico",
+    "Diretor de Escola",
+    "Enfermeiro",
+    "Professor de Educação Básica I, Classe",
+    "Professor de Educação Básica I, Educação Infantil",
+    "Professor de Educação Básica II, Educação Especial Intérprete de Libras",
+    "Professor de Educação Básica II, Educação Especial",
+    "Professor de Educação Básica II, Educação Física",
+    "Professor de Educação Básica II, Geografia",
+    "Professor de Educação Básica II, História",
+    "Professor de Educação Básica II, Inglês",
+    "Professor de Educação Básica II, Matemática",
+    "Professor de Educação Básica II, Português",
+    "Psicólogo",
+    "Psicólogo Escolar",
+    "Psicopedagogo 40h"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -20626,7 +21003,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Motorista Sênior / Agente Comunitário de Saúde, Centro / Agente Comunitário de Saúde, Godoy/Arraial / Agente Comunitário de Saúde, Lima Rico/Pantano (+7 cargos)",
+     "nome": "Motorista Sênior / Agente Comunitário de Saúde, Centro / Agente Comunitário de Saúde, Godoy/Arraial / Agente Comunitário de Saúde, Lima Rico/Pantano (+18 cargos)",
      "vagas": "11 vagas imediatas",
      "vagas_imediatas": 11,
      "tem_cr": false,
@@ -20635,12 +21012,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Aplicativa): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Motorista Sênior): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -20650,7 +21027,7 @@
    "salario_max": 5209.01,
    "superior_itens": [
     {
-     "nome": "Assistente Social / Assistente Social Escolar / Coordenador Pedagógico / Diretor de Escola (+13 cargos)",
+     "nome": "Assistente Social / Assistente Social Escolar / Coordenador Pedagógico / Diretor de Escola (+30 cargos)",
      "vagas": "11 vagas imediatas",
      "vagas_imediatas": 11,
      "tem_cr": false,
@@ -20659,12 +21036,12 @@
      "salario_total": 5209.01,
      "salario_detalhe": "Bruto: R$ 5.209,01 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Consultar edital",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Pedagogia, Licenciatura plena, Enfermagem (COREN), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Tuiuti): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Aplicativa): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Assistente Social): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -20682,20 +21059,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-senior-prefeitura-municipal-de-tuiuti",
+     "url_combo": "https://www.pciconcursos.com.br/provas/motorista-senior-aplicativa",
      "url_cargo": "https://www.pciconcursos.com.br/provas/motorista-senior",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-tuiuti",
+     "url_banca": "https://www.pciconcursos.com.br/provas/aplicativa",
      "cargo_busca": "Motorista Sênior",
-     "banca_busca": "Prefeitura Municipal de Tuiuti",
-     "label_combo": "Motorista Sênior · Prefeitura Municipal de Tuiuti"
+     "banca_busca": "Aplicativa",
+     "label_combo": "Motorista Sênior · Aplicativa"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-prefeitura-municipal-de-tuiuti",
+     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-aplicativa",
      "url_cargo": "https://www.pciconcursos.com.br/provas/assistente-social",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-tuiuti",
+     "url_banca": "https://www.pciconcursos.com.br/provas/aplicativa",
      "cargo_busca": "Assistente Social",
-     "banca_busca": "Prefeitura Municipal de Tuiuti",
-     "label_combo": "Assistente Social · Prefeitura Municipal de Tuiuti"
+     "banca_busca": "Aplicativa",
+     "label_combo": "Assistente Social · Aplicativa"
     }
    }
   },
@@ -24582,7 +24959,7 @@
    "cidade": "Presidente Prudente",
    "lat": -22.1207,
    "lon": -51.3925,
-   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "banca": "UNESP",
    "site_banca": "https://www.unesp.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-no-campus-de-presidente-prudente-sp#links",
    "arquivos_edital": [
@@ -24590,10 +24967,10 @@
     "EDITAL Nº 477/2026"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada_geral": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "regime_geral": "Temporário",
+   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02",
+   "jornada_geral": "12h semanais",
+   "isencao": "Taxa de inscrição de R$ 209,00. Informações sobre isenção não detalhadas no texto.",
    "faixa_salarial": "Até R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
@@ -24603,7 +24980,8 @@
     "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
-    "Professor Substituto"
+    "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Grupo 1)",
+    "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Grupo 2)"
    ],
    "first_seen_ts": "2026-10-27T10:25:50.286504-03:00",
    "is_baseline": false,
@@ -24613,27 +24991,27 @@
    ],
    "fisio": true,
    "fisio_detalhes": {
-    "cargo": "…sionais com graduação e especialização para lecionar em diversas disciplinas de Fisioterapia. A seleção será composta por prova escrita, prova didática e análise do currículo lattes documentado.",
-    "vagas": "Cadastro de Reserva (CR)",
-    "vagas_imediatas": 0,
-    "tem_cr": true,
-    "salario": null,
-    "salario_bruto": null,
-    "salario_total": null,
-    "salario_exibicao": "Até R$ 3.511,90",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 3.511,90 (+ auxílios legais)",
-    "carga_horaria": "Consultar edital",
-    "regime": "Consultar edital",
+    "cargo": "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Grupo 1)",
+    "vagas": "4 vagas imediatas",
+    "vagas_imediatas": 4,
+    "tem_cr": false,
+    "salario": 3511.9,
+    "salario_bruto": 3511.9,
+    "salario_total": 5511.92,
+    "salario_exibicao": "R$ 3.511,90",
+    "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
+    "carga_horaria": "12h semanais",
+    "regime": "Temporário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
-    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+    "requisitos": "Graduação e especialização na área da disciplina",
+    "beneficios": "Vale-alimentação no valor de R$ 2.000,02",
     "resumo_conteudo": [
-     "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
-     "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
-     "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
-     "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
-     "Fisioterapia Clínica e Preventiva: Traumato-ortopédica, reumatológica, neurofuncional (adulto e infantil), cardiorrespiratória, uroginecológica, geriátrica e Saúde da Família",
-     "Ética e Legislação Profissional: Código de Ética e Deontologia da Fisioterapia e resoluções do COFFITO/CREFITO"
+     "Prática Supervisionada em Fisioterapia na Saúde da Mulher",
+     "Prática supervisionada em Fisioterapia Neurológica",
+     "Prática Supervisionada em Fisioterapia Respiratória",
+     "Prática Supervisionada em Fisioterapia Cardiovascular",
+     "Fisioterapia Baseada em Evidências II",
+     "Ética no Exercício da Fisioterapia"
     ]
    },
    "medio_confirmado": [],
@@ -24641,7 +25019,7 @@
    "salario_max": 3511.9,
    "superior_itens": [
     {
-     "nome": "Professor Substituto",
+     "nome": "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional / Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional",
      "vagas": "8 vagas imediatas",
      "vagas_imediatas": 8,
      "tem_cr": false,
@@ -24649,39 +25027,40 @@
      "salario_bruto": 3511.9,
      "salario_total": 5511.92,
      "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
-     "carga_horaria": "Consultar edital",
-     "regime": "Consultar edital",
+     "carga_horaria": "12h semanais",
+     "regime": "Temporário",
      "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Fisioterapia (CREFITO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Vale-alimentação no valor de R$ 2.000,02",
      "resumo_conteudo": [
-      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (UNESP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Professor Substituto): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+      "Conhecimentos Específicos (Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
      ]
     }
    ],
-   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
+   "formacoes_aceitas": "Aceita formações diversas: Fisioterapia (CREFITO), Licenciatura na disciplina (confirmar no edital).",
    "termos_formacao": [
+    "fisioterapia",
     "licenciatura na disciplina"
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-universidade-estadual-paulista-julio-de-mesquita-filho",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
-     "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-     "label_combo": "Fisioterapeuta · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-unesp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto",
+     "url_banca": "https://www.pciconcursos.com.br/provas/unesp",
+     "cargo_busca": "Professor Substituto",
+     "banca_busca": "UNESP",
+     "label_combo": "Professor Substituto · UNESP"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-unesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_banca": "https://www.pciconcursos.com.br/provas/unesp",
      "cargo_busca": "Professor Substituto",
-     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-     "label_combo": "Professor Substituto · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+     "banca_busca": "UNESP",
+     "label_combo": "Professor Substituto · UNESP"
     }
    }
   },
@@ -25431,7 +25810,7 @@
    "cidade": "Ribeirão Preto",
    "lat": -21.1699,
    "lon": -47.8099,
-   "banca": "Consultar edital",
+   "banca": "HCFMRP-USP",
    "site_banca": "https://www.hcrp.usp.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional#links",
    "arquivos_edital": [
@@ -25440,9 +25819,9 @@
    ],
    "data_prova": "Consultar edital",
    "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Auxílio-alimentação no valor de R$ 360,00, adicional de insalubridade e vale-transporte",
-   "jornada_geral": "30 horas semanais",
-   "isencao": "Há isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
+   "beneficios_gerais": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte",
+   "jornada_geral": "30h semanais",
+   "isencao": "Taxa de inscrição de R$ 126,79. Há isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
    "faixa_salarial": "Até R$ 2.978,36",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
@@ -25453,7 +25832,9 @@
    },
    "cargos_lista": [
     "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
-    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional) (1 vaga)"
+    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional) (1 vaga)",
+    "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
+    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional)"
    ],
    "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
    "is_baseline": false,
@@ -25464,22 +25845,22 @@
    ],
    "fisio": true,
    "fisio_detalhes": {
-    "cargo": "HCFMRP-USP - SP abre concursos públicos para Fisioterapeuta e Terapeuta Ocupacional",
-    "vagas": "Cadastro de Reserva (CR)",
-    "vagas_imediatas": 0,
-    "tem_cr": true,
-    "salario": null,
-    "salario_bruto": null,
-    "salario_total": null,
-    "salario_exibicao": "Até R$ 2.978,36",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 2.978,36 (+ auxílios legais)",
-    "carga_horaria": "30 horas semanais",
+    "cargo": "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
+    "vagas": "1 vaga imediata",
+    "vagas_imediatas": 1,
+    "tem_cr": false,
+    "salario": 2978.36,
+    "salario_bruto": 2978.36,
+    "salario_total": 3338.36,
+    "salario_exibicao": "R$ 2.978,36",
+    "salario_detalhe": "Bruto: R$ 2.978,36 + R$ 360,00 (auxílios) = R$ 3.338,36 com auxílios",
+    "carga_horaria": "30h semanais",
     "regime": "Consultar edital",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
-    "beneficios": "Auxílio-alimentação no valor de R$ 360,00, adicional de insalubridade e vale-transporte",
+    "requisitos": "Ensino Superior completo em Fisioterapia e registro no conselho de classe",
+    "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte",
     "resumo_conteudo": [
-     "Língua Portuguesa: Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (HCFMRP-USP): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -25492,7 +25873,7 @@
    "salario_max": 2978.36,
    "superior_itens": [
     {
-     "nome": "Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde",
+     "nome": "Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde / Agente Técnico de Assistência à Saúde",
      "vagas": "2 vagas imediatas",
      "vagas_imediatas": 2,
      "tem_cr": false,
@@ -25500,13 +25881,13 @@
      "salario_bruto": 2978.36,
      "salario_total": 3338.36,
      "salario_detalhe": "Bruto: R$ 2.978,36 + R$ 360,00 (auxílios) = R$ 3.338,36 com auxílios",
-     "carga_horaria": "30 horas semanais",
+     "carga_horaria": "30h semanais",
      "regime": "Consultar edital",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Fisioterapia (CREFITO). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Auxílio-alimentação no valor de R$ 360,00, adicional de insalubridade e vale-transporte",
+     "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte",
      "resumo_conteudo": [
-      "Língua Portuguesa: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (HCFMRP-USP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Agente Técnico de Assistência à Saúde): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -25519,20 +25900,20 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/hcfmrp",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/hcfmrp",
-     "url_banca": "",
-     "cargo_busca": "HCFMRP",
-     "banca_busca": "Todas as Bancas",
-     "label_combo": "HCFMRP"
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude-hcfmrp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
+     "url_banca": "https://www.pciconcursos.com.br/provas/hcfmrp",
+     "cargo_busca": "Agente Técnico de Assistência à Saúde",
+     "banca_busca": "HCFMRP",
+     "label_combo": "Agente Técnico de Assistência à Saúde · HCFMRP"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
+     "url_combo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude-hcfmrp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/agente-tecnico-de-assistencia-a-saude",
-     "url_banca": "",
+     "url_banca": "https://www.pciconcursos.com.br/provas/hcfmrp",
      "cargo_busca": "Agente Técnico de Assistência à Saúde",
-     "banca_busca": "Todas as Bancas",
-     "label_combo": "Agente Técnico de Assistência à Saúde"
+     "banca_busca": "HCFMRP",
+     "label_combo": "Agente Técnico de Assistência à Saúde · HCFMRP"
     }
    }
   },
@@ -26727,17 +27108,17 @@
    "cidade": "Lençóis Paulista",
    "lat": -22.6027,
    "lon": -48.8037,
-   "banca": "Prefeitura de Lençóis Paulista",
+   "banca": "Indepac",
    "site_banca": "https://www.lencoispaulista.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-processo-seletivo-para-professores#links",
    "arquivos_edital": [
     "EDITAL Nº 01/2026"
    ],
    "data_prova": "29/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
-   "beneficios_gerais": "Vale-alimentação, conforme legislação municipal",
+   "regime_geral": "Processo seletivo",
+   "beneficios_gerais": "Vale-alimentação (conforme legislação municipal)",
    "jornada_geral": "12 a 35 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 45,00 para todos os cargos. Haverá possibilidade de isenção para doadores de medula óssea ou para inscritos no CadÚnico, conforme regras do edital e datas específicas (16 a 19 de outubro de 2026).",
+   "isencao": "Taxa de inscrição de R$ 45,00. Possibilidade de isenção para doadores de medula óssea ou para inscritos no CadÚnico, conforme regras do edital (solicitação de 16 a 19 de outubro de 2026).",
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
@@ -26756,7 +27137,17 @@
     "Professor de Ensino Fundamental II - Inglês (CR)",
     "Professor de Ensino Fundamental II - Português (CR)",
     "Professor Substituto de Educação Infantil (CR)",
-    "Professor Substituto de Ensino Fundamental I (CR)"
+    "Professor Substituto de Ensino Fundamental I (CR)",
+    "Professor de Educação Especial",
+    "Professor de Ensino Fundamental II - Arte",
+    "Professor de Ensino Fundamental II - Ciências",
+    "Professor de Ensino Fundamental II - Educação Física",
+    "Professor de Ensino Fundamental II - Geografia",
+    "Professor de Ensino Fundamental II - História",
+    "Professor de Ensino Fundamental II - Inglês",
+    "Professor de Ensino Fundamental II - Português",
+    "Professor Substituto de Educação Infantil",
+    "Professor Substituto de Ensino Fundamental I"
    ],
    "first_seen_ts": "2026-10-20T07:00:00-03:00",
    "is_baseline": true,
@@ -26768,7 +27159,7 @@
    "salario_max": null,
    "superior_itens": [
     {
-     "nome": "Professor de Educação Especial / Professor de Ensino Fundamental II - Arte / Professor de Ensino Fundamental II - Ciências / Professor de Ensino Fundamental II - Educação Física (+6 cargos)",
+     "nome": "Professor de Educação Especial / Professor de Ensino Fundamental II - Arte / Professor de Ensino Fundamental II - Ciências / Professor de Ensino Fundamental II - Educação Física (+16 cargos)",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -26777,12 +27168,12 @@
      "salario_total": null,
      "salario_detalhe": "Faixa bruta no edital: Consultar edital (+ auxílios legais)",
      "carga_horaria": "12 a 35 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "Processo seletivo",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Vale-alimentação, conforme legislação municipal",
+     "beneficios": "Vale-alimentação (conforme legislação municipal)",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura de Lençóis Paulista): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Indepac): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Professor de Educação Especial): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -26795,12 +27186,12 @@
    ],
    "links_provas_map": {
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-de-educacao-especial-prefeitura-de-lencois-paulista",
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-de-educacao-especial-indepac",
      "url_cargo": "https://www.pciconcursos.com.br/provas/professor-de-educacao-especial",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-de-lencois-paulista",
+     "url_banca": "https://www.pciconcursos.com.br/provas/indepac",
      "cargo_busca": "Professor de Educação Especial",
-     "banca_busca": "Prefeitura de Lençóis Paulista",
-     "label_combo": "Professor de Educação Especial · Prefeitura de Lençóis Paulista"
+     "banca_busca": "INDEPAC",
+     "label_combo": "Professor de Educação Especial · INDEPAC"
     }
    }
   },
@@ -26818,17 +27209,17 @@
    "cidade": "Matão",
    "lat": -21.6025,
    "lon": -48.364,
-   "banca": "Prefeitura Municipal de Matão",
+   "banca": "IBAM SP",
    "site_banca": "https://www.matao.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-processo-seletivo-para-professores-temporarios#links",
    "arquivos_edital": [
     "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
    ],
    "data_prova": "06/12/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "Temporário",
    "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "15 e 28 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 97,00, com possibilidade de isenção nos dias 28 e 29 de setembro de 2026 para candidatos que atendam aos requisitos previstos em lei.",
+   "jornada_geral": "15 a 28 horas semanais",
+   "isencao": "Taxa de inscrição de R$ 97,00. Há possibilidade de isenção nos dias 28 e 29 de setembro de 2026 para candidatos que atendam aos requisitos previstos em lei.",
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-10-29",
@@ -26860,7 +27251,30 @@
     "Professor III Temporário - Educação Física (CR)",
     "Professor III Temporário - Educação Física - Dança (CR)",
     "Professor III Temporário - Educação Física - Ginástica Geral (CR)",
-    "Professor III Temporário - Educação Física - Natação (CR)"
+    "Professor III Temporário - Educação Física - Natação (CR)",
+    "Professor I Temporário - Educação Infantil",
+    "Professor I Temporário - Ensino Fundamental (Séries Iniciais)",
+    "Professor de Educação Especial Temporário - Deficiência Auditiva",
+    "Professor de Educação Especial Temporário - Deficiência Intelectual",
+    "Professor de Educação Especial Temporário - Deficiência Visual",
+    "Professor III Temporário - Português",
+    "Professor III Temporário - Matemática",
+    "Professor III Temporário - Geografia",
+    "Professor III Temporário - Ciências",
+    "Professor III Temporário - Inglês",
+    "Professor III Temporário - Filosofia",
+    "Professor III Temporário - Arte/Educação Artística",
+    "Professor III Temporário - História",
+    "Professor III Temporário - Química",
+    "Professor III Temporário - Biologia",
+    "Professor III Temporário - Física",
+    "Professor III Temporário - Sociologia",
+    "Professor III Temporário - Arte/Educação Artística - Arte Musical",
+    "Professor III Temporário - Arte/Educação Artística Artes Cênicas",
+    "Professor III Temporário - Educação Física",
+    "Professor III Temporário - Educação Física - Dança",
+    "Professor III Temporário - Educação Física - Ginástica Geral",
+    "Professor III Temporário - Educação Física - Natação"
    ],
    "first_seen_ts": "2026-10-20T07:00:00-03:00",
    "is_baseline": true,
@@ -26872,7 +27286,7 @@
    "salario_max": null,
    "superior_itens": [
     {
-     "nome": "Professor I Temporário - Educação Infantil / Professor I Temporário - Ensino Fundamental 1º, 2º, 3º, 4º e 5º anos / Professor de Educação Especial Temporário - Deficiência Auditiva / Professor de Educação Especial Temporário - Deficiência Intelectual (+19 cargos)",
+     "nome": "Professor I Temporário - Educação Infantil / Professor I Temporário - Ensino Fundamental 1º, 2º, 3º, 4º e 5º anos / Professor de Educação Especial Temporário - Deficiência Auditiva / Professor de Educação Especial Temporário - Deficiência Intelectual (+42 cargos)",
      "vagas": "Cadastro de Reserva (CR)",
      "vagas_imediatas": 0,
      "tem_cr": true,
@@ -26880,13 +27294,13 @@
      "salario_bruto": null,
      "salario_total": null,
      "salario_detalhe": "Faixa bruta no edital: Consultar edital (+ auxílios legais)",
-     "carga_horaria": "15 e 28 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "carga_horaria": "15 a 28 horas semanais",
+     "regime": "Temporário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Matão): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (IBAM SP): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Professor I Temporário - Educação Infantil): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -26899,12 +27313,12 @@
    ],
    "links_provas_map": {
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-i-temporario-prefeitura-municipal-de-matao",
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-i-temporario-ibam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/professor-i-temporario",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-matao",
+     "url_banca": "https://www.pciconcursos.com.br/provas/ibam",
      "cargo_busca": "Professor I Temporário",
-     "banca_busca": "Prefeitura Municipal de Matão",
-     "label_combo": "Professor I Temporário · Prefeitura Municipal de Matão"
+     "banca_busca": "IBAM",
+     "label_combo": "Professor I Temporário · IBAM"
     }
    }
   },
