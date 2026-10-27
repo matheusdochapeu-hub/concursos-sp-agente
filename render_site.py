@@ -1203,17 +1203,19 @@ def render_html(
   /* Botão Flutuante (FAB) */
   .btn-fab-filtros {{
     position: fixed;
-    bottom: 24px;
-    right: 24px;
+    top: 14px;
+    left: 14px;
+    bottom: auto !important;
+    right: auto !important;
     background: var(--br-blue);
     color: #ffffff;
     border: 2px solid #ffffff;
-    padding: 10px 18px;
+    padding: 8px 16px;
     border-radius: 999px;
-    box-shadow: 0 8px 24px rgba(0, 39, 118, 0.38);
+    box-shadow: 0 4px 18px rgba(0, 39, 118, 0.45);
     z-index: 920;
     font-family: inherit;
-    font-size: 0.92rem;
+    font-size: 0.88rem;
     font-weight: 800;
     cursor: pointer;
     display: inline-flex;
@@ -1224,7 +1226,7 @@ def render_html(
   .btn-fab-filtros:hover {{
     background: var(--br-blue-dark);
     transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 12px 28px rgba(0, 39, 118, 0.48);
+    box-shadow: 0 8px 24px rgba(0, 39, 118, 0.55);
   }}
   .btn-comparar-toggle {{
     background: var(--br-yellow);
@@ -1392,6 +1394,9 @@ def render_html(
     background: var(--br-yellow);
     color: var(--br-blue-dark);
   }}
+  .pill-btn.sem-resultados, .uf-btn.sem-resultados, .cargo-quick.sem-resultados {{
+    opacity: 0.42 !important;
+  }}
 
   .filtros-foot {{
     display: flex;
@@ -1523,10 +1528,36 @@ def render_html(
     border-color: var(--br-green-dark);
   }}
 
-  .head-top {{ display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }}
-  .badges-col {{ display: flex; flex-direction: column; align-items: flex-end; gap: 5px; flex-shrink: 0; }}
-  .card h3 {{ margin: 0; font-size: 1.14rem; line-height: 1.32; font-weight: 800; }}
-  .card h3 a {{ color: var(--br-blue); text-decoration: none; }}
+  .head-top {{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }}
+  .badges-col {{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+  }}
+  .card h3 {{
+    margin: 0;
+    font-size: 1.18rem;
+    line-height: 1.35;
+    font-weight: 800;
+    width: 100%;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }}
+  .card h3 a {{
+    color: var(--br-blue);
+    text-decoration: none;
+    display: inline;
+    word-break: normal !important;
+  }}
   .card h3 a:hover {{ color: var(--br-green); text-decoration: underline; }}
 
   .badge-novo {{
@@ -2423,10 +2454,12 @@ def render_html(
     .sidebar-filtros-body {{ padding: 12px 14px !important; }}
     .sidebar-filtros-foot {{ padding: 12px 14px !important; }}
     .btn-fab-filtros {{
-      bottom: 20px !important;
-      right: 16px !important;
-      padding: 8px 14px !important;
-      font-size: 0.85rem !important;
+      top: 12px !important;
+      left: 12px !important;
+      bottom: auto !important;
+      right: auto !important;
+      padding: 7px 13px !important;
+      font-size: 0.82rem !important;
     }}
     .f-group {{
       grid-template-columns: 1fr !important;
@@ -2449,7 +2482,7 @@ def render_html(
       font-size: 0.8rem !important;
       max-width: 100% !important;
       white-space: normal !important;
-      word-break: break-word !important;
+      word-break: normal !important;
       box-sizing: border-box !important;
     }}
 
@@ -2479,11 +2512,45 @@ def render_html(
       min-width: 0 !important;
       box-sizing: border-box !important;
       overflow: hidden !important;
-      word-break: break-word !important;
+      word-break: normal !important;
       overflow-wrap: break-word !important;
     }}
-    .card h3 {{ font-size: 1rem !important; }}
-    .card .titulo {{ font-size: 0.85rem !important; }}
+    .head-top {{
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 6px !important;
+      width: 100% !important;
+    }}
+    .badges-col {{
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+      gap: 5px !important;
+      width: 100% !important;
+    }}
+    .card h3 {{
+      font-size: 1.12rem !important;
+      line-height: 1.36 !important;
+      width: 100% !important;
+      word-break: normal !important;
+      overflow-wrap: break-word !important;
+    }}
+    .card h3 a {{
+      word-break: normal !important;
+      overflow-wrap: break-word !important;
+    }}
+    .loc-row {{
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+      width: 100% !important;
+      margin-top: 6px !important;
+    }}
+    .card .titulo {{
+      font-size: 0.86rem !important;
+      line-height: 1.4 !important;
+      word-break: normal !important;
+    }}
     .cargo-nome {{ font-size: 0.95rem !important; }}
     .info-grid {{ grid-template-columns: 1fr !important; }}
     .links-row > * {{ flex: 1 1 100% !important; justify-content: center !important; text-align: center !important; }}
@@ -3355,12 +3422,174 @@ def render_html(
     return secCount ? Number(secCount.textContent) || 0 : 0;
   }}
 
+  function recalcularContadoresBotoesFiltro() {{
+    const abaAtiva = document.querySelector('.tab-panel.ativo');
+    const isBusca = !abaAtiva || abaAtiva.id === 'busca_cargo';
+    const isProvas = abaAtiva && abaAtiva.id === 'provas_anteriores';
+    if (isProvas) return;
+
+    function setBtnCount(btn, count) {{
+      if (!btn) return;
+      let span = btn.querySelector('.mini-cnt');
+      if (!span) {{
+        span = document.createElement('span');
+        span.className = 'mini-cnt';
+        btn.appendChild(span);
+      }}
+      span.textContent = count;
+      btn.classList.toggle('sem-resultados', count === 0 && !btn.classList.contains('ativo'));
+    }}
+
+    if (isBusca) {{
+      const termoRaw = (inputCargo ? inputCargo.value : '').trim();
+      const termo = normStr(termoRaw);
+
+      function passaItem(item, overrideFiltros = {{}}, overrideUf, overrideTermo) {{
+        const f = Object.assign({{}}, estadoFiltros, overrideFiltros);
+        const uf = (overrideUf !== undefined) ? overrideUf : ufSelecionada;
+        if (uf && uf !== 'TODOS' && item.uf !== uf) return false;
+
+        if (f.encerrando === '1' && !item.encerrando) return false;
+        if (f.novo === '1' && !item.novo) return false;
+        if (f.cidade && item.cidade !== f.cidade) return false;
+        if (f.kmRef && cidadeRef) {{
+          const km = kmDaReferencia(item.lat, item.lon);
+          if (km == null || km > Number(f.kmRef)) return false;
+        }}
+        if (f.faixa && item.faixa !== f.faixa) return false;
+        if (f.escolaridade) {{
+          const nivs = (item.niveis_tokens || '').split(',');
+          if (!nivs.includes(f.escolaridade)) return false;
+        }}
+        if (f.vagas && f.vagas !== 'todas') {{
+          const v = Number(item.vagas_im || 0);
+          if (f.vagas === 'cr' && v > 0) return false;
+          if (f.vagas !== 'cr' && v < Number(f.vagas)) return false;
+        }}
+        if (f.regime && item.regime_cat !== f.regime) return false;
+        if (f.horas && Number(item.horas_num || 40) > Number(f.horas)) return false;
+
+        const t = (overrideTermo !== undefined) ? normStr(overrideTermo) : termo;
+        if (t) {{
+          let matched = false;
+          for (const cg of (item.cargos || [])) {{
+            if (normStr(cg).includes(t)) {{ matched = true; break; }}
+          }}
+          if (!matched && normStr((item.orgao || '') + ' ' + (item.titulo || '') + ' ' + (item.cargos_resumo || '')).includes(t)) {{
+            matched = true;
+          }}
+          if (!matched && t.length >= 4 && (item.termos_formacao || []).some(tf => normStr(tf).includes(t))) {{
+            matched = true;
+          }}
+          if (!matched) return false;
+        }}
+        return true;
+      }}
+
+      // 1) Contagem exata do estado atual
+      let totalAtual = 0;
+      for (let i = 0; i < CATALOGO_BRASIL.length; i++) {{
+        if (passaItem(CATALOGO_BRASIL[i])) totalAtual++;
+      }}
+      const countSpan = document.getElementById('sidebarCountEncontrados');
+      if (countSpan) countSpan.textContent = totalAtual.toLocaleString('pt-BR');
+      const botaoSpan = document.getElementById('sidebarCountBotao');
+      if (botaoSpan) botaoSpan.textContent = totalAtual.toLocaleString('pt-BR');
+
+      // 2) Atualiza cada botão [data-filter] na barra lateral
+      document.querySelectorAll('#painelFiltrosSp [data-filter]').forEach(btn => {{
+        const chave = btn.dataset.filter;
+        const val = btn.dataset.val;
+        if (chave === 'ordem') return;
+
+        let c = 0;
+        const override = {{}};
+        override[chave] = val;
+        for (let i = 0; i < CATALOGO_BRASIL.length; i++) {{
+          if (passaItem(CATALOGO_BRASIL[i], override)) c++;
+        }}
+        setBtnCount(btn, c);
+      }});
+
+      // 3) Atualiza cada botão de UF (.uf-btn)
+      document.querySelectorAll('#painelFiltrosSp .uf-btn').forEach(btn => {{
+        const uf = btn.dataset.uf;
+        let c = 0;
+        for (let i = 0; i < CATALOGO_BRASIL.length; i++) {{
+          if (passaItem(CATALOGO_BRASIL[i], {{}}, uf)) c++;
+        }}
+        setBtnCount(btn, c);
+      }});
+
+      // 4) Atualiza cada botão de Cargo Rápido (.cargo-quick)
+      document.querySelectorAll('#painelFiltrosSp .cargo-quick').forEach(btn => {{
+        const cg = btn.dataset.cargo;
+        let c = 0;
+        for (let i = 0; i < CATALOGO_BRASIL.length; i++) {{
+          if (passaItem(CATALOGO_BRASIL[i], {{}}, undefined, cg)) c++;
+        }}
+        setBtnCount(btn, c);
+      }});
+
+    }} else {{
+      // Para as abas de SP
+      const panel = abaAtiva;
+      const cards = Array.from(panel.querySelectorAll('.card'));
+
+      function passaCard(c, overrideFiltros = {{}}) {{
+        const f = Object.assign({{}}, estadoFiltros, overrideFiltros);
+        const soEncerrando = f.encerrando === '1';
+        const soNovos = f.novo === '1';
+        const maxRef = (f.kmRef && cidadeRef) ? Number(f.kmRef) : null;
+        const faixa = f.faixa;
+        const esc = f.escolaridade;
+        const vagasMode = f.vagas;
+        const regime = f.regime;
+        const maxHoras = f.horas ? Number(f.horas) : null;
+        const cid = f.cidade;
+
+        if (soEncerrando && c.dataset.encerrando !== '1') return false;
+        if (soNovos && c.dataset.novo !== '1') return false;
+        if (cid && c.dataset.cidade !== cid) return false;
+        if (maxRef !== null && Number(c.dataset.kmRef) > maxRef) return false;
+        if (faixa && c.dataset.faixa !== faixa) return false;
+        if (esc) {{
+          const niveis = (c.dataset.niveisLista || c.dataset.escolaridade || '').split(',');
+          if (!niveis.includes(esc) && c.dataset.escolaridade !== esc) return false;
+        }}
+        if (vagasMode && vagasMode !== 'todas') {{
+          const v = Number(c.dataset.vagas);
+          if (vagasMode === 'cr' && v > 0) return false;
+          if (vagasMode !== 'cr' && v < Number(vagasMode)) return false;
+        }}
+        if (regime && c.dataset.regime !== regime) return false;
+        if (maxHoras !== null && Number(c.dataset.horas) > maxHoras) return false;
+        return true;
+      }}
+
+      let totalAtual = 0;
+      cards.forEach(c => {{ if (passaCard(c)) totalAtual++; }});
+      const countSpan = document.getElementById('sidebarCountEncontrados');
+      if (countSpan) countSpan.textContent = totalAtual.toLocaleString('pt-BR');
+      const botaoSpan = document.getElementById('sidebarCountBotao');
+      if (botaoSpan) botaoSpan.textContent = totalAtual.toLocaleString('pt-BR');
+
+      document.querySelectorAll('#painelFiltrosSp [data-filter]').forEach(btn => {{
+        const chave = btn.dataset.filter;
+        const val = btn.dataset.val;
+        if (chave === 'ordem') return;
+
+        let c = 0;
+        const override = {{}};
+        override[chave] = val;
+        cards.forEach(card => {{ if (passaCard(card, override)) c++; }});
+        setBtnCount(btn, c);
+      }});
+    }}
+  }}
+
   function atualizarUIFiltrosSidebar() {{
-    const total = obterTotalConcursosVisiveis();
-    const countSpan = document.getElementById('sidebarCountEncontrados');
-    if (countSpan) countSpan.textContent = total.toLocaleString('pt-BR');
-    const botaoSpan = document.getElementById('sidebarCountBotao');
-    if (botaoSpan) botaoSpan.textContent = total.toLocaleString('pt-BR');
+    recalcularContadoresBotoesFiltro();
 
     const ativosCnt = contarFiltrosAtivos();
     const badgeTopo = document.getElementById('badgeFiltrosAtivos');
