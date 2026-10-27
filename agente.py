@@ -909,32 +909,139 @@ def inferir_requisitos_cargo(cargo_nome: str, niveis: str) -> tuple[str, str]:
     )
 
 
+def calcular_auxilios_efetivos(ben_txt: str) -> float:
+    """
+    Calcula o valor total mensal de auxílios evitando duplicidades:
+    1. Trata intervalos (ex: 'R$ 350 a R$ 700') pegando o teto;
+    2. Converte valores diários (x 22 dias);
+    3. Categoriza benefícios (alimentação, transporte, cesta, saúde, creche, assiduidade);
+    4. Elimina menções repetidas e deduplica valores idênticos.
+    """
+    if not ben_txt or ben_txt.strip().lower() in ("consultar edital", "não informado", "nao informado"):
+        return 0.0
+
+    txt = ben_txt
+
+    def _sub_range(m):
+        v1 = parse_brl(m.group(1)) or 0.0
+        v2 = parse_brl(m.group(2)) or 0.0
+        return f"R$ {max(v1, v2):.2f}".replace(".", ",")
+
+    range_pattern = re.compile(
+        r"(?:(?:entre|de)\s+)?R\$\s*([\d.]+,\d{2})\s*(?:e|a|at[eé]|ou)\s*R\$\s*([\d.]+,\d{2})",
+        re.I,
+    )
+    txt = range_pattern.sub(_sub_range, txt)
+
+    diario_total = 0.0
+    daily_pattern = re.compile(
+        r"(?:di[aá]ri[oa]\s+(?:de\s+)?R\$\s*([\d.]+,\d{2})|R\$\s*([\d.]+,\d{2})\s*(?:por\s+dia|/dia|\s+di[aá]ri[oa]))",
+        re.I,
+    )
+    for m in daily_pattern.finditer(txt):
+        val_str = m.group(1) or m.group(2)
+        v = parse_brl(val_str) or 0.0
+        if 5.0 <= v <= 100.0:
+            diario_total += round(v * 22, 2)
+
+    txt_sem_diario = daily_pattern.sub("", txt)
+    matches = list(re.finditer(r"R\$\s*([\d.]+,\d{2})", txt_sem_diario))
+    if not matches:
+        return round(diario_total, 2)
+
+    cats = {
+        "alimentacao": [],
+        "transporte": [],
+        "cesta": [],
+        "saude": [],
+        "creche": [],
+        "assiduidade": [],
+        "geral": [],
+    }
+
+    last_end = 0
+    for m in matches:
+        v = parse_brl(m.group(1)) or 0.0
+        if not (50.0 <= v <= 3500.0):
+            continue
+
+        start = max(last_end, m.start() - 80)
+        segmento = txt_sem_diario[start:m.end()].lower()
+        last_end = m.end()
+
+        cat_pos = {}
+        for kw in ["alimenta", "refei", "sodexo", "alelo", "vale compra", "ticket", " va "]:
+            p = segmento.rfind(kw)
+            if p != -1:
+                cat_pos[p] = "alimentacao"
+        m_va = re.search(r"\bva\b", segmento)
+        if m_va:
+            cat_pos[m_va.start()] = "alimentacao"
+
+        for kw in ["transporte", "passe"]:
+            p = segmento.rfind(kw)
+            if p != -1:
+                cat_pos[p] = "transporte"
+        m_vt = re.search(r"\bvt\b", segmento)
+        if m_vt:
+            cat_pos[m_vt.start()] = "transporte"
+
+        p = segmento.rfind("cesta")
+        if p != -1:
+            cat_pos[p] = "cesta"
+
+        for kw in ["saude", "saúde", "médic", "medic", "hospitalar"]:
+            p = segmento.rfind(kw)
+            if p != -1:
+                cat_pos[p] = "saude"
+
+        for kw in ["creche", "pré-escolar", "pre-escolar", "dependente", "filho"]:
+            p = segmento.rfind(kw)
+            if p != -1:
+                cat_pos[p] = "creche"
+
+        for kw in ["assiduidade", "abono", "pontualidade"]:
+            p = segmento.rfind(kw)
+            if p != -1:
+                cat_pos[p] = "assiduidade"
+
+        if cat_pos:
+            best_pos = max(cat_pos.keys())
+            cat = cat_pos[best_pos]
+        else:
+            cat = "geral"
+
+        cats[cat].append(v)
+
+    total = diario_total
+    for c_name, v_list in cats.items():
+        if not v_list:
+            continue
+        if c_name == "geral":
+            seen = set()
+            for val in v_list:
+                if val not in seen:
+                    seen.add(val)
+                    total += val
+        else:
+            total += max(v_list)
+
+    return round(total, 2)
+
+
 def formatar_bruto_e_soma_auxilios(sal_bruto: Optional[float], beneficios_txt: str, faixa_edital: str) -> tuple[Optional[float], str, str]:
     """
     Retorna (salario_total, salario_bruto_exib, salario_detalhe_menor) garantindo SEMPRE
-    o Salário Bruto separado no valor principal e a soma com auxílios embaixo menor.
+    o Salário Bruto separado no valor principal e a soma com auxílios embaixo menor,
+    sem duplicações indevidas.
     """
     if not sal_bruto:
         return None, faixa_edital or "Consultar edital", f"Faixa bruta no edital: {faixa_edital} (+ auxílios legais)"
 
     bruto_str = brl(sal_bruto)
     ben_txt = beneficios_txt or ""
-    # Verifica se há valor em R$ nos benefícios
-    m_diario = re.search(r"di[áa]ri[oa]\s+de\s+R\$\s*([\d.]+,\d{2})", ben_txt, re.I)
-    if m_diario:
-        val_dia = parse_brl(m_diario.group(1)) or 0.0
-        mensal_est = round(val_dia * 22, 2)
-        total = round(sal_bruto + mensal_est, 2)
-        return (
-            total,
-            bruto_str,
-            f"Bruto: {bruto_str} + {brl(val_dia)}/dia (~{brl(mensal_est)}/mês VA) = {brl(total)} com auxílios",
-        )
-
-    vals_ben = [parse_brl(v) for v in re.findall(r"R\$\s*([\d.]+,\d{2})", ben_txt)]
-    vals_ben = [v for v in vals_ben if v and 50.0 <= v <= 3500.0]
-    if vals_ben:
-        soma_ben = round(sum(vals_ben), 2)
+    soma_ben = calcular_auxilios_efetivos(ben_txt)
+    if soma_ben > 0:
         total = round(sal_bruto + soma_ben, 2)
         return (
             total,

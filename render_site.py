@@ -3202,22 +3202,283 @@ def render_html(
     return 'acima5000';
   }}
 
-  function resolverSalarioParaCargo(item, termo, cargosCasados, escolaridadeFiltro) {{
-    let auxilioNum = 0;
-    if (item.beneficios) {{
-      const mDia = item.beneficios.match(/di[aá]ri[oa]\\s+de\\s+R\\$\\s*([\\d.]+([,.]\\d{{2}})?)/i);
-      if (mDia) {{
-        auxilioNum = Math.round(parseBrl(mDia[1]) * 22);
-      }} else {{
-        const matches = Array.from(item.beneficios.matchAll(/R\\$\\s*([\\d.]+([,.]\\d{{2}})?)/g));
-        for (const m of matches) {{
-          const val = parseBrl(m[1]);
-          if (val >= 50 && val <= 3500) auxilioNum += val;
-        }}
+    function calcularAuxiliosEfetivos(benTxt) {{
+    if (!benTxt) return 0;
+    const s = benTxt.trim().toLowerCase();
+    if (s === 'consultar edital' || s === 'não informado' || s === 'nao informado') return 0;
+
+    // Normalizar ranges "entre R$ A e R$ B", "de R$ A a R$ B", "R$ A ou R$ B", etc.
+    let txt = benTxt.replace(/(?:(?:entre|de)\s+)?R\$\s*([\d.]+([,.]\d{{2}})?)\s*(?:e|a|at[eé]|ou)\s*R\$\s*([\d.]+([,.]\d{{2}})?)/gi, (match, p1, _, p2) => {{
+      const v1 = parseBrl(p1);
+      const v2 = parseBrl(p2);
+      const maxVal = Math.max(v1, v2);
+      return 'R$ ' + maxVal.toFixed(2).replace('.', ',');
+    }});
+
+    // Extrair valores diários (multiplicados por 22 dias úteis)
+    let diarioTotal = 0;
+    const dailyRe = /(?:di[aá]ri[oa]\s+(?:de\s+)?R\$\s*([\d.]+([,.]\d{{2}})?)|R\$\s*([\d.]+([,.]\d{{2}})?)\s*(?:por\s+dia|\/dia|\s+di[aá]ri[oa]))/gi;
+    let dMatch;
+    while ((dMatch = dailyRe.exec(txt)) !== null) {{
+      const valStr = dMatch[1] || dMatch[3];
+      const v = parseBrl(valStr);
+      if (v >= 5 && v <= 100) {{
+        diarioTotal += Math.round(v * 22 * 100) / 100;
       }}
     }}
 
-    const mapSal = item.cargos_salarios || {{}};
+    const txtSemDiario = txt.replace(dailyRe, '');
+
+    // Extrair valores em R$ e categorizar pela proximidade do termo anterior
+    const valRe = /R\$\s*([\d.]+([,.]\d{{2}})?)/g;
+    const matches = [];
+    let m;
+    while ((m = valRe.exec(txtSemDiario)) !== null) {{
+      matches.push({{ valStr: m[1], index: m.index, end: valRe.lastIndex }});
+    }}
+    if (matches.length === 0) return Math.round(diarioTotal * 100) / 100;
+
+    const cats = {{
+      alimentacao: [],
+      transporte: [],
+      cesta: [],
+      saude: [],
+      creche: [],
+      assiduidade: [],
+      geral: []
+    }};
+
+    let lastEnd = 0;
+    for (const item of matches) {{
+      const v = parseBrl(item.valStr);
+      if (v < 50 || v > 3500) continue;
+
+      const start = Math.max(lastEnd, item.index - 80);
+      const segmento = txtSemDiario.substring(start, item.end).toLowerCase();
+      lastEnd = item.end;
+
+      let bestPos = -1;
+      let chosenCat = 'geral';
+
+      function checkKw(kw, cat) {{
+        const p = segmento.lastIndexOf(kw);
+        if (p > bestPos) {{
+          bestPos = p;
+          chosenCat = cat;
+        }}
+      }}
+
+      ['alimenta', 'refei', 'sodexo', 'alelo', 'vale compra', 'ticket', ' va '].forEach(k => checkKw(k, 'alimentacao'));
+      if (/\bva\b/.test(segmento)) {{
+        const mVa = segmento.match(/\bva\b/);
+        if (mVa && mVa.index > bestPos) {{ bestPos = mVa.index; chosenCat = 'alimentacao'; }}
+      }}
+
+      ['transporte', 'passe'].forEach(k => checkKw(k, 'transporte'));
+      if (/\bvt\b/.test(segmento)) {{
+        const mVt = segmento.match(/\bvt\b/);
+        if (mVt && mVt.index > bestPos) {{ bestPos = mVt.index; chosenCat = 'transporte'; }}
+      }}
+
+      checkKw('cesta', 'cesta');
+      ['saude', 'saúde', 'médic', 'medic', 'hospitalar'].forEach(k => checkKw(k, 'saude'));
+      ['creche', 'pré-escolar', 'pre-escolar', 'dependente', 'filho'].forEach(k => checkKw(k, 'creche'));
+      ['assiduidade', 'abono', 'pontualidade'].forEach(k => checkKw(k, 'assiduidade'));
+
+      cats[chosenCat].push(v);
+    }}
+
+    let total = diarioTotal;
+    for (const catName in cats) {{
+      const arr = cats[catName];
+      if (arr.length === 0) continue;
+      if (catName === 'geral') {{
+        const seen = new Set();
+        for (const val of arr) {{
+          if (!seen.has(val)) {{
+            seen.add(val);
+            total += val;
+          }}
+        }}
+      }} else {{
+        total += Math.max(...arr);
+      }}
+    }}
+
+    return Math.round(total * 100) / 100;
+  }}
+
+  function resolverFormacaoParaCargo(item, termo, cargosCasados) {{
+    let cargoAlvo = '';
+    if (cargosCasados && cargosCasados.length > 0) {{
+      cargoAlvo = cargosCasados[0];
+    }} else if (termo && termo.trim()) {{
+      cargoAlvo = termo.trim();
+    }}
+
+    if (!cargoAlvo) {{
+      if (item.niveis) {{
+        return {{
+          titulo: '🎓 Escolaridade do edital',
+          texto: `Escolaridade: ${{item.niveis}} (consulte os cargos e anexos do edital)`
+        }};
+      }}
+      return null;
+    }}
+
+    const norm = normStr(cargoAlvo);
+
+    if (REGEX_FUND.test(norm)) {{
+      if (/\bmotorista\b/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Fundamental completo + CNH Categoria D/E (conforme edital)'
+        }};
+      }}
+      if (/operador\s+de\s+m[aá]quina/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Fundamental completo + CNH C/D + Curso específico de Operador'
+        }};
+      }}
+      if (/eletricista/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Fundamental ou Médio + Curso de Eletricista / NR-10'
+        }};
+      }}
+      if (/cozinheir|merendeir/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Fundamental (completo ou incompleto conforme o edital)'
+        }};
+      }}
+      if (/servi[çc]os\s+gerais|servente|bra[çc]al|limpeza|coveiro|pedreiro|pintor|zelador|porteiro|copeir|vigia/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Fundamental (alfabetizado, completo ou incompleto conforme edital)'
+        }};
+      }}
+      return {{
+        titulo: '🎓 Formação exigida',
+        texto: 'Ensino Fundamental conforme os requisitos do Anexo I do edital'
+      }};
+    }}
+
+    if (REGEX_MED.test(norm)) {{
+      if (/t[eé]cnic.*enferm/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Médio completo + Curso Técnico em Enfermagem + Registro no COREN'
+        }};
+      }}
+      if (/t[eé]cnic.*farm[aá]c/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Médio completo + Curso Técnico em Farmácia + Registro no CRF'
+        }};
+      }}
+      if (/t[eé]cnic.*radiol/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Médio completo + Curso Técnico em Radiologia + Registro no CRTR'
+        }};
+      }}
+      if (/t[eé]cnic.*(info|ti|sistema|rede|comput)/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Médio completo + Curso Técnico na área de Informática/TI'
+        }};
+      }}
+      if (/t[eé]cnic.*seguran[çc]a\s+do\s+trabalho/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Médio completo + Curso Técnico em Segurança do Trabalho + MTE'
+        }};
+      }}
+      if (/t[eé]cnic/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Médio completo + Curso Técnico na área do cargo + Conselho de Classe'
+        }};
+      }}
+      if (/agente.*(comunit[aá]rio|endemia|sa[uú]de)/.test(norm)) {{
+        return {{
+          titulo: '🎓 Requisitos do cargo',
+          texto: 'Ensino Médio completo + residir na área geográfica de atuação (Lei Federal nº 11.350/06)'
+        }};
+      }}
+      if (/guarda\s+(civil|municipal)|\bgcm\b/.test(norm)) {{
+        return {{
+          titulo: '🎓 Requisitos do cargo',
+          texto: 'Ensino Médio completo + CNH A/B + Aptidão Física (TAF) e Psicológica'
+        }};
+      }}
+      if (/agente\s+adm|assistente\s+adm|auxiliar\s+adm|escritur[aá]rio|oficial\s+adm|oficial\s+leg/.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: 'Ensino Médio completo (sem exigência de formação específica ou registro profissional)'
+        }};
+      }}
+      return {{
+        titulo: '🎓 Formação exigida',
+        texto: 'Ensino Médio completo conforme requisitos do edital'
+      }};
+    }}
+
+    const regrasSup = [
+      {{ re: /fisioterap/i, txt: 'Ensino Superior completo em Fisioterapia + Registro ativo no CREFITO' }},
+      {{ re: /m[eé]dico\s+veterin/i, txt: 'Ensino Superior completo em Medicina Veterinária + Registro ativo no CRMV' }},
+      {{ re: /m[eé]dic/i, txt: 'Ensino Superior completo em Medicina + Registro ativo no CRM' }},
+      {{ re: /enfermeir/i, txt: 'Ensino Superior completo em Enfermagem + Registro ativo no COREN' }},
+      {{ re: /psic[oó]log/i, txt: 'Ensino Superior completo em Psicologia + Registro ativo no CRP' }},
+      {{ re: /nutricion/i, txt: 'Ensino Superior completo em Nutrição + Registro ativo no CRN' }},
+      {{ re: /farmac/i, txt: 'Ensino Superior completo em Farmácia + Registro ativo no CRF' }},
+      {{ re: /dentista|odont/i, txt: 'Ensino Superior completo em Odontologia + Registro ativo no CRO' }},
+      {{ re: /procurador|advogado|jur[ií]dic/i, txt: 'Ensino Superior completo em Direito + Inscrição regular na OAB' }},
+      {{ re: /contador|cont[aá]bil/i, txt: 'Ensino Superior completo em Ciências Contábeis + Registro ativo no CRC' }},
+      {{ re: /auditor|fiscal\s+de\s+tributos|fiscal\s+tribut|fiscal\s+de\s+rendas|agente\s+fiscal|fiscal\s+fazend/i, txt: 'Ensino Superior em Direito, Ciências Contábeis, Economia ou Administração' }},
+      {{ re: /controlador|controle\s+interno|auditoria/i, txt: 'Ensino Superior em Direito, Ciências Contábeis, Economia ou Administração' }},
+      {{ re: /economista/i, txt: 'Ensino Superior completo em Ciências Econômicas / Economia + Registro no CORECON' }},
+      {{ re: /administrador/i, txt: 'Ensino Superior completo em Administração + Registro ativo no CRA' }},
+      {{ re: /engenheir/i, txt: 'Ensino Superior completo em Engenharia na área do cargo + Registro ativo no CREA' }},
+      {{ re: /arquitet/i, txt: 'Ensino Superior completo em Arquitetura e Urbanismo + Registro ativo no CAU' }},
+      {{ re: /assistente\s+social/i, txt: 'Ensino Superior completo em Serviço Social + Registro ativo no CRESS' }},
+      {{ re: /pedagog|coordenador\s+pedag|supervisor.*ensino|diretor.*escola/i, txt: 'Ensino Superior completo em Pedagogia ou Licenciatura Plena em Educação' }},
+      {{ re: /professor|docente|\bpeb\b/i, txt: 'Ensino Superior completo com Licenciatura Plena na respectiva disciplina' }},
+      {{ re: /bibliotec/i, txt: 'Ensino Superior completo em Biblioteconomia + Registro ativo no CRB' }},
+      {{ re: /jornalist|comunicador/i, txt: 'Ensino Superior completo em Jornalismo ou Comunicação Social' }},
+      {{ re: /analista.*(t\.?i\b|tecnologia|sistemas|software|inform)|desenvolvedor/i, txt: 'Ensino Superior em Ciência da Computação, Sistemas de Informação ou Engenharia' }},
+      {{ re: /bi[oó]log/i, txt: 'Ensino Superior completo em Ciências Biológicas / Biologia + Registro no CRBio' }},
+      {{ re: /fonoaudi/i, txt: 'Ensino Superior completo em Fonoaudiologia + Registro ativo no CRFa' }},
+      {{ re: /terapeuta\s+ocupacional/i, txt: 'Ensino Superior completo em Terapia Ocupacional + Registro no CREFITO' }}
+    ];
+
+    for (const r of regrasSup) {{
+      if (r.re.test(norm)) {{
+        return {{
+          titulo: '🎓 Formação exigida',
+          texto: r.txt
+        }};
+      }}
+    }}
+
+    if (REGEX_SUP.test(norm) || (item.niveis && /superior/i.test(item.niveis))) {{
+      return {{
+        titulo: '🎓 Formação exigida',
+        texto: 'Ensino Superior completo com graduação específica na área do cargo (conforme edital)'
+      }};
+    }}
+
+    return {{
+      titulo: '🎓 Formação exigida',
+      texto: `Escolaridade: ${{item.niveis || 'Consulte o edital'}} (ver requisitos no Anexo I)`
+    }};
+  }}
+
+  function resolverSalarioParaCargo(item, termo, cargosCasados, escolaridadeFiltro) {{
+    const auxilioNum = item.beneficios ? calcularAuxiliosEfetivos(item.beneficios) : 0;
+const mapSal = item.cargos_salarios || {{}};
     const normTermo = termo ? normStr(termo) : '';
 
     function buscarNoMapa(nome) {{
@@ -4336,8 +4597,9 @@ def render_html(
       let chips = `<span class="chip-loc">📍 ${{escHtml(item.cidade)}} (${{escHtml(item.uf)}})</span>`;
       const kmRefItem = kmDaReferencia(item.lat, item.lon);
       if (kmRefItem != null) chips += `<span class="chip-dist chip-km-ref">${{escHtml(textoDistanciaRef(kmRefItem))}}</span>`;
-      const notaFormacao = item.formacoes_aceitas
-        ? `<div class="req-box"><div class="req-title">🎓 Formações aceitas</div><p class="req-text">${{escHtml(item.formacoes_aceitas)}}</p></div>`
+      const infoFormacao = resolverFormacaoParaCargo(item, termo, cargosCasados);
+      const notaFormacao = infoFormacao
+        ? `<div class="req-box"><div class="req-title">${{escHtml(infoFormacao.titulo)}}</div><p class="req-text">${{escHtml(infoFormacao.texto)}}</p></div>`
         : '';
 
       const badgeUrgente = item.encerrando
@@ -4376,7 +4638,7 @@ def render_html(
           data-banca-txt="${{escHtml(item.banca)}}"
           data-inscricao-txt="${{escHtml(item.inscricao_ate)}}"
           data-isencao-txt="${{escHtml(item.isencao)}}"
-          data-requisitos-txt="Escolaridade exigida no edital: ${{escHtml(item.niveis || 'Consultar Anexo I')}}${{item.formacoes_aceitas ? ' · ' + escHtml(item.formacoes_aceitas) : ''}}"
+          data-requisitos-txt="${{escHtml(infoFormacao ? infoFormacao.texto : ('Escolaridade exigida: ' + (item.niveis || 'Consultar Anexo I')))}}"
           data-horas="${{item.horas_num || 40}}"
           data-vagas="${{item.vagas_im || 0}}">
           <header class="card-head">

@@ -11275,5 +11275,26 @@
   "faixa_salarial": "R$ 1.621,00 a R$ 5.130,63",
   "salario_min": 1621.0,
   "salario_max": 5130.63
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-santo-antonio-da-patrulha-rs-divulga-processo-seletivo-para-instrutores-educacionais": {
+  "cargos_li": [
+   "Instrutor Educacional de Educação Física",
+   "Instrutor Educacional de Informática e Letramento",
+   "Instrutor Educacional de Jiu-Jitsu",
+   "Instrutor Educacional de Jogos Teatrais"
+  ],
+  "data_prova": "Consultar edital",
+  "regime": "Processo Seletivo / Temporário",
+  "beneficios": "Consultar edital",
+  "jornada": "30 horas semanais",
+  "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+  "nome_banca": "Prefeitura Municipal de Santo Antônio da Patrulha",
+  "link_banca": "https://www.santoantoniodapatrulha.rs.gov.br/",
+  "arquivos_edital": [
+   "EDITAL 18/2026"
+  ],
+  "faixa_salarial": "R$ 2.151,87 a R$ 2.367,20",
+  "salario_min": 2151.87,
+  "salario_max": 2367.2
  }
 }
