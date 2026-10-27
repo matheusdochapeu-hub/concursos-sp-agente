@@ -92,8 +92,14 @@
     "Agente de Comunicação (1 vaga)",
     "Procurador Legislativo (1 vaga)"
    ],
-   "isencao": "A taxa de inscrição é de R$ 54,00 para nível fundamental, R$ 72,00 para nível médio e técnico, e R$ 87,00 para superior, com possibilidade de isenção conforme legislação municipal."
-  }
+   "isencao": "A taxa de inscrição é de R$ 54,00 para nível fundamental, R$ 72,00 para nível médio e técnico, e R$ 87,00 para superior, com possibilidade de isenção conforme legislação municipal.",
+   "salario_min": 2312.25,
+   "salario_max": 8595.15,
+   "faixa_salarial": "R$ 2.312,25 a R$ 8.595,15"
+  },
+  "salario_min": 2312.25,
+  "salario_max": 8595.15,
+  "faixa_salarial": "R$ 2.312,25 a R$ 8.595,15"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433": {
   "first_seen": "2026-10-21",
@@ -364,8 +370,14 @@
     "Médico Veterinário (cadastro de reserva)",
     "Médico Veterinário Sanitarista (1 vaga)"
    ],
-   "isencao": "Poderão solicitar isenção da taxa candidatos desempregados, doadores de sangue ou medula óssea, e pessoas com deficiência, entre os dias 28 e 29 de setembro de 2026."
-  }
+   "isencao": "Poderão solicitar isenção da taxa candidatos desempregados, doadores de sangue ou medula óssea, e pessoas com deficiência, entre os dias 28 e 29 de setembro de 2026.",
+   "salario_min": 2377.65,
+   "salario_max": 17433.24,
+   "faixa_salarial": "R$ 2.377,65 a R$ 17.433,24"
+  },
+  "salario_min": 2377.65,
+  "salario_max": 17433.24,
+  "faixa_salarial": "R$ 2.377,65 a R$ 17.433,24"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717": {
   "first_seen": "2026-10-21",
@@ -557,8 +569,14 @@
     "Gestor de Contratos (1 vaga)",
     "Procurador Jurídico (1 vaga)"
    ],
-   "isencao": "Candidatos desempregados, doadores de sangue, pessoas com deficiência e doadores de medula óssea que atendam às condições do edital poderão solicitar isenção pelo mesmo site nos dias 19 e 20 de outubro de 2026."
-  }
+   "isencao": "Candidatos desempregados, doadores de sangue, pessoas com deficiência e doadores de medula óssea que atendam às condições do edital poderão solicitar isenção pelo mesmo site nos dias 19 e 20 de outubro de 2026.",
+   "salario_min": 1767.2,
+   "salario_max": 9717.96,
+   "faixa_salarial": "R$ 1.767,20 a R$ 9.717,96"
+  },
+  "salario_min": 1767.2,
+  "salario_max": 9717.96,
+  "faixa_salarial": "R$ 1.767,20 a R$ 9.717,96"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piracicaba-sp-abre-selecao-para-professores-substitutos": {
   "first_seen": "2026-10-21",
@@ -805,8 +823,14 @@
     "Médico Reumatologista (1 vaga)",
     "Médico Urologista (2 vagas)"
    ],
-   "isencao": "A taxa de inscrição varia de R$ 44,00 a R$ 65,00, de acordo com o cargo. As solicitações de isenção poderão ser feitas no período de 28 de setembro de 2026 a 3 de outubro de 2026, para doadores de medula óssea e de sangue, mediante comprovação."
-  }
+   "isencao": "A taxa de inscrição varia de R$ 44,00 a R$ 65,00, de acordo com o cargo. As solicitações de isenção poderão ser feitas no período de 28 de setembro de 2026 a 3 de outubro de 2026, para doadores de medula óssea e de sangue, mediante comprovação.",
+   "salario_min": 2818.0,
+   "salario_max": 9833.0,
+   "faixa_salarial": "R$ 2.818,00 a R$ 9.833,00"
+  },
+  "salario_min": 2818.0,
+  "salario_max": 9833.0,
+  "faixa_salarial": "R$ 2.818,00 a R$ 9.833,00"
  },
  "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428": {
   "first_seen": "2026-10-21",
@@ -935,8 +959,14 @@
     "Assistente Social (CR)",
     "Engenheiro Civil (CR)"
    ],
-   "isencao": "As taxas de inscrição variam conforme o cargo ( R$ 48,00 para fundamental, R$ 55,00 para médio/técnico, R$ 78,00 para superior). Haverá possibilidade de isenção conforme critérios do edital, com solicitações entre 8 e 18 de setembro de 2026."
-  }
+   "isencao": "As taxas de inscrição variam conforme o cargo ( R$ 48,00 para fundamental, R$ 55,00 para médio/técnico, R$ 78,00 para superior). Haverá possibilidade de isenção conforme critérios do edital, com solicitações entre 8 e 18 de setembro de 2026.",
+   "salario_min": 2571.28,
+   "salario_max": 10428.05,
+   "faixa_salarial": "R$ 2.571,28 a R$ 10.428,05"
+  },
+  "salario_min": 2571.28,
+  "salario_max": 10428.05,
+  "faixa_salarial": "R$ 2.571,28 a R$ 10.428,05"
  },
  "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario": {
   "first_seen": "2026-10-21",
@@ -1071,8 +1101,14 @@
     "Diretor Administrativo e Financeiro",
     "Procurador Jurídico"
    ],
-   "isencao": "Doadores de medula óssea cadastrados no Registro Nacional de Doadores Voluntários de Medula Óssea e doadores regulares de sangue podem pedir isenção entre os dias 21 e 25 de outubro de 2026, mediante comprovação."
-  }
+   "isencao": "Doadores de medula óssea cadastrados no Registro Nacional de Doadores Voluntários de Medula Óssea e doadores regulares de sangue podem pedir isenção entre os dias 21 e 25 de outubro de 2026, mediante comprovação.",
+   "salario_min": 2920.42,
+   "salario_max": 11065.27,
+   "faixa_salarial": "R$ 2.920,42 a R$ 11.065,27"
+  },
+  "salario_min": 2920.42,
+  "salario_max": 11065.27,
+  "faixa_salarial": "R$ 2.920,42 a R$ 11.065,27"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-cesario-lange-sp-abre-concurso-publico-com-salarios-de-ate-3774": {
   "first_seen": "2026-10-21",
@@ -1099,8 +1135,14 @@
    "regime": "CLT (Celetista)",
    "beneficios": "Auxílio-alimentação de R$ 998,92 por mês",
    "jornada": "40 horas semanais",
-   "isencao": "As taxas de inscrição são de R$ 40,00 para Apoio Administrativo e de R$ 30,00 para os demais cargos. Poderão solicitar isenção de taxa entre os dias 9 e 11 de outubro de 2026 os candidatos doadores de sangue, doadores de órgãos e desempregados, conforme os critérios do edital."
-  }
+   "isencao": "As taxas de inscrição são de R$ 40,00 para Apoio Administrativo e de R$ 30,00 para os demais cargos. Poderão solicitar isenção de taxa entre os dias 9 e 11 de outubro de 2026 os candidatos doadores de sangue, doadores de órgãos e desempregados, conforme os critérios do edital.",
+   "salario_min": 2672.23,
+   "salario_max": 3774.0,
+   "faixa_salarial": "R$ 2.672,23 a R$ 3.774,00"
+  },
+  "salario_min": 2672.23,
+  "salario_max": 3774.0,
+  "faixa_salarial": "R$ 2.672,23 a R$ 3.774,00"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-jarinu-sp-abre-concurso-publico-com-salarios-de-ate-10744": {
   "first_seen": "2026-10-21",
@@ -1131,8 +1173,14 @@
    "regime": "Estatutário",
    "beneficios": "Consultar edital",
    "jornada": "20 a 40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 109,00. Haverá possibilidade de solicitação de isenção entre os dias 30 de setembro de 2026 e 2 de outubro de 2026 para candidatos inscritos no CadÚnico e que atendam aos requisitos do edital."
-  }
+   "isencao": "A taxa de inscrição é de R$ 109,00. Haverá possibilidade de solicitação de isenção entre os dias 30 de setembro de 2026 e 2 de outubro de 2026 para candidatos inscritos no CadÚnico e que atendam aos requisitos do edital.",
+   "salario_min": 9200.0,
+   "salario_max": 10744.0,
+   "faixa_salarial": "R$ 9.200,00 a R$ 10.744,00"
+  },
+  "salario_min": 9200.0,
+  "salario_max": 10744.0,
+  "faixa_salarial": "R$ 9.200,00 a R$ 10.744,00"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-torre-de-pedra-sp-abre-concurso-publico-para-procurador-legislativo": {
   "first_seen": "2026-10-21",
@@ -1238,8 +1286,14 @@
     "Operador de Máquinas (Carapicuíba) (3 vagas)",
     "Serviços Gerais (Carapicuíba) (10 vagas)"
    ],
-   "isencao": "A taxa de inscrição é de R$ 33,35 para todos os cargos. Haverá isenção da taxa para inscritos no CadÚnico, desempregados com renda familiar de até meio salário mínimo, mediante comprovante, nos dias 14 e 15 de outubro de 2026, presencialmente."
-  }
+   "isencao": "A taxa de inscrição é de R$ 33,35 para todos os cargos. Haverá isenção da taxa para inscritos no CadÚnico, desempregados com renda familiar de até meio salário mínimo, mediante comprovante, nos dias 14 e 15 de outubro de 2026, presencialmente.",
+   "salario_min": 1880.28,
+   "salario_max": 6889.64,
+   "faixa_salarial": "R$ 1.880,28 a R$ 6.889,64"
+  },
+  "salario_min": 1880.28,
+  "salario_max": 6889.64,
+  "faixa_salarial": "R$ 1.880,28 a R$ 6.889,64"
  },
  "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-vagas-para-nivel-fundamental-em-pirassununga": {
   "first_seen": "2026-10-21",
@@ -1269,8 +1323,14 @@
    "regime": "CLT (Celetista)",
    "beneficios": "Vale-alimentação e auxílio-transporte para atuação imediata e cadastro de reserva · Vale-alimentação de R$ 522,30, auxílio-transporte de R$ 273,69, adicional de insalubridade para Pedreiro, Pinto",
    "jornada": "44 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 33,35 para todos os cargos. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 33,35 para todos os cargos. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 1880.28,
+   "salario_max": 2298.12,
+   "faixa_salarial": "R$ 1.880,28 a R$ 2.298,12"
+  },
+  "salario_min": 1880.28,
+  "salario_max": 2298.12,
+  "faixa_salarial": "R$ 1.880,28 a R$ 2.298,12"
  },
  "https://www.pciconcursos.com.br/noticias/defensoria-publica-de-sp-abre-concurso-para-defensor-publico": {
   "first_seen": "2026-10-21",
@@ -1351,8 +1411,14 @@
    "regime": "Estatutário",
    "beneficios": "Auxílio-refeição/alimentação no valor de R$ 2.150,12 e subsídio parcial de vale-transporte, conforme critérios",
    "jornada": "36 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 66,00 para nível fundamental, R$ 82,50 para nível técnico e R$ 99,00 para nível superior. Haverá isenção da taxa para inscritos no CadÚnico e doadores de medula óssea nos dias 5 e 6 de outubro de 2026."
-  }
+   "isencao": "A taxa de inscrição é de R$ 66,00 para nível fundamental, R$ 82,50 para nível técnico e R$ 99,00 para nível superior. Haverá isenção da taxa para inscritos no CadÚnico e doadores de medula óssea nos dias 5 e 6 de outubro de 2026.",
+   "salario_min": 2226.55,
+   "salario_max": 8991.96,
+   "faixa_salarial": "R$ 2.226,55 a R$ 8.991,96"
+  },
+  "salario_min": 2226.55,
+  "salario_max": 8991.96,
+  "faixa_salarial": "R$ 2.226,55 a R$ 8.991,96"
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-garcom": {
   "first_seen": "2026-10-21",
@@ -1709,8 +1775,14 @@
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Consultar edital",
    "jornada": "40 horas semanais",
-   "isencao": "Candidatos inscritos e ativos no CadÚnico poderão solicitar isenção até às 16h do dia 29 de outubro de 2026."
-  }
+   "isencao": "Candidatos inscritos e ativos no CadÚnico poderão solicitar isenção até às 16h do dia 29 de outubro de 2026.",
+   "salario_min": 4478.03,
+   "salario_max": 8340.33,
+   "faixa_salarial": "R$ 4.478,03 a R$ 8.340,33"
+  },
+  "salario_min": 4478.03,
+  "salario_max": 8340.33,
+  "faixa_salarial": "R$ 4.478,03 a R$ 8.340,33"
  },
  "https://www.pciconcursos.com.br/noticias/ipa-sp-abre-concurso-publico-para-pesquisadores-cientificos": {
   "first_seen": "2026-10-21",
@@ -1811,8 +1883,14 @@
    "regime": "Estatutário",
    "beneficios": "Vale-transporte, vale-alimentação e gratificação previdenciária, conforme previsto na legislação municipal",
    "jornada": "12 a 40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 89,00. Candidatos inscritos no CadÚnico têm possibilidade de isenção, conforme regras do edital, com solicitações de 1º a 9 de outubro de 2026."
-  }
+   "isencao": "A taxa de inscrição é de R$ 89,00. Candidatos inscritos no CadÚnico têm possibilidade de isenção, conforme regras do edital, com solicitações de 1º a 9 de outubro de 2026.",
+   "salario_min": 3889.11,
+   "salario_max": 5185.46,
+   "faixa_salarial": "R$ 3.889,11 a R$ 5.185,46"
+  },
+  "salario_min": 3889.11,
+  "salario_max": 5185.46,
+  "faixa_salarial": "R$ 3.889,11 a R$ 5.185,46"
  },
  "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp": {
   "first_seen": "2026-10-21",
@@ -2099,8 +2177,14 @@
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Consultar edital",
    "jornada": "16 a 40 horas semanais",
-   "isencao": "A isenção deve ser solicitada até o dia 7 de outubro de 2026 por candidatos inscritos no CadÚnico com renda per capita igual ou inferior a meio salário mínimo."
-  }
+   "isencao": "A isenção deve ser solicitada até o dia 7 de outubro de 2026 por candidatos inscritos no CadÚnico com renda per capita igual ou inferior a meio salário mínimo.",
+   "salario_min": 1480.76,
+   "salario_max": 2613.11,
+   "faixa_salarial": "R$ 1.480,76 a R$ 2.613,11"
+  },
+  "salario_min": 1480.76,
+  "salario_max": 2613.11,
+  "faixa_salarial": "R$ 1.480,76 a R$ 2.613,11"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-conchal-sp-abre-processo-seletivo-para-agentes-de-saude-e-de-endemias": {
   "first_seen": "2026-10-21",
@@ -2321,8 +2405,14 @@
     "Especialista em Saúde - Psicólogo (12 vagas)",
     "Guarda Civil Municipal (13 vagas)"
    ],
-   "isencao": "As taxas de inscrição variam de R$ 77,00 a R$ 96,00. O pedido de isenção da taxa pode ser solicitado de 15 a 16 de setembro de 2026, conforme as regras dos editais."
-  }
+   "isencao": "As taxas de inscrição variam de R$ 77,00 a R$ 96,00. O pedido de isenção da taxa pode ser solicitado de 15 a 16 de setembro de 2026, conforme as regras dos editais.",
+   "salario_min": 3577.48,
+   "salario_max": 5565.0,
+   "faixa_salarial": "R$ 3.577,48 a R$ 5.565,00"
+  },
+  "salario_min": 3577.48,
+  "salario_max": 5565.0,
+  "faixa_salarial": "R$ 3.577,48 a R$ 5.565,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600": {
   "first_seen": "2026-10-21",
@@ -2570,8 +2660,14 @@
     "Assistente Social (1 vaga)",
     "Assistente Social do CRAS (1 vaga)"
    ],
-   "isencao": "As taxas de inscrição variam de R$ 50,00 a R$ 120,00. Haverá isenção para inscritos no CadÚnico e doadores de medula óssea, mediante envio de documentação de 17 a 31 de outubro de 2026."
-  }
+   "isencao": "As taxas de inscrição variam de R$ 50,00 a R$ 120,00. Haverá isenção para inscritos no CadÚnico e doadores de medula óssea, mediante envio de documentação de 17 a 31 de outubro de 2026.",
+   "salario_min": 1700.0,
+   "salario_max": 5600.0,
+   "faixa_salarial": "R$ 1.700,00 a R$ 5.600,00"
+  },
+  "salario_min": 1700.0,
+  "salario_max": 5600.0,
+  "faixa_salarial": "R$ 1.700,00 a R$ 5.600,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500": {
   "first_seen": "2026-10-21",
@@ -2800,8 +2896,14 @@
     "Professor PEB I (CR)",
     "Psicólogo - Especialização em TEA (CR)"
    ],
-   "isencao": "Pedidos de isenção estão previstos de 9 a 17 de outubro de 2026 para candidatos que atendam aos requisitos do edital."
-  }
+   "isencao": "Pedidos de isenção estão previstos de 9 a 17 de outubro de 2026 para candidatos que atendam aos requisitos do edital.",
+   "salario_min": 1933.17,
+   "salario_max": 10500.0,
+   "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00"
+  },
+  "salario_min": 1933.17,
+  "salario_max": 10500.0,
+  "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude": {
   "first_seen": "2026-10-21",
@@ -3428,8 +3530,14 @@
     "PTEB II - Turismo (CR)",
     "Terapeuta Ocupacional (CR)"
    ],
-   "isencao": "O pedido de isenção pode ser feito até o dia 11 de outubro de 2026, seguindo os critérios estabelecidos no edital."
-  }
+   "isencao": "O pedido de isenção pode ser feito até o dia 11 de outubro de 2026, seguindo os critérios estabelecidos no edital.",
+   "salario_min": 1915.95,
+   "salario_max": 8431.01,
+   "faixa_salarial": "R$ 1.915,95 a R$ 8.431,01"
+  },
+  "salario_min": 1915.95,
+  "salario_max": 8431.01,
+  "faixa_salarial": "R$ 1.915,95 a R$ 8.431,01"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapeva-sp-abre-processo-seletivo-para-professores": {
   "first_seen": "2026-10-21",
@@ -3717,8 +3825,14 @@
     "Psicólogo (CR)",
     "Coordenador de Projetos Especiais (48a) (CR)"
    ],
-   "isencao": "Pedidos de isenção para doadores de sangue podem ser feitos até às 23h59 do dia 12 de outubro de 2026."
-  }
+   "isencao": "Pedidos de isenção para doadores de sangue podem ser feitos até às 23h59 do dia 12 de outubro de 2026.",
+   "salario_min": 1621.0,
+   "salario_max": 5325.6,
+   "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60"
+  },
+  "salario_min": 1621.0,
+  "salario_max": 5325.6,
+  "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lagoinha-sp-abre-vagas-para-assistente-social-e-psicologo": {
   "first_seen": "2026-10-21",
@@ -3992,8 +4106,14 @@
     "Médico Psiquiatra (1 vaga + CR)",
     "Tesoureiro (1 vaga + CR)"
    ],
-   "isencao": "A taxa de inscrição é de R$ 64,00 para ensino médio e de R$ 79,00 para ensino superior. Pode haver isenção para inscritos no CadÚnico, conforme critérios do edital, com solicitação até 5 de outubro de 2026."
-  }
+   "isencao": "A taxa de inscrição é de R$ 64,00 para ensino médio e de R$ 79,00 para ensino superior. Pode haver isenção para inscritos no CadÚnico, conforme critérios do edital, com solicitação até 5 de outubro de 2026.",
+   "salario_min": 2399.27,
+   "salario_max": 8890.46,
+   "faixa_salarial": "R$ 2.399,27 a R$ 8.890,46"
+  },
+  "salario_min": 2399.27,
+  "salario_max": 8890.46,
+  "faixa_salarial": "R$ 2.399,27 a R$ 8.890,46"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-21",
@@ -4081,8 +4201,14 @@
     "Professor de Ensino Básico (5 vagas + CR)",
     "Professor de Inglês (2 vagas + CR)"
    ],
-   "isencao": "Candidatos inscritos no CadÚnico, com renda por pessoa igual ou inferior a meio salário mínimo e cadastro atualizado, poderão solicitar isenção até 21 de outubro de 2026, mediante envio da documentação exigida."
-  }
+   "isencao": "Candidatos inscritos no CadÚnico, com renda por pessoa igual ou inferior a meio salário mínimo e cadastro atualizado, poderão solicitar isenção até 21 de outubro de 2026, mediante envio da documentação exigida.",
+   "salario_min": 2802.0,
+   "salario_max": 8738.0,
+   "faixa_salarial": "R$ 2.802,00 a R$ 8.738,00"
+  },
+  "salario_min": 2802.0,
+  "salario_max": 8738.0,
+  "faixa_salarial": "R$ 2.802,00 a R$ 8.738,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lucelia-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos": {
   "first_seen": "2026-10-21",
@@ -4123,8 +4249,14 @@
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Consultar edital",
    "jornada": "18 a 33 horas semanais",
-   "isencao": "Candidatos inscritos no Cadastro Único para Programas Sociais do Governo Federal poderão solicitar isenção da taxa entre os dias 8 e 9 de outubro de 2026. Não haverá cobrança de taxa de inscrição para quem obtiver benefício deferido."
-  }
+   "isencao": "Candidatos inscritos no Cadastro Único para Programas Sociais do Governo Federal poderão solicitar isenção da taxa entre os dias 8 e 9 de outubro de 2026. Não haverá cobrança de taxa de inscrição para quem obtiver benefício deferido.",
+   "salario_min": 1442.81,
+   "salario_max": 4048.35,
+   "faixa_salarial": "R$ 1.442,81 a R$ 4.048,35"
+  },
+  "salario_min": 1442.81,
+  "salario_max": 4048.35,
+  "faixa_salarial": "R$ 1.442,81 a R$ 4.048,35"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189": {
   "first_seen": "2026-10-21",
@@ -4561,8 +4693,14 @@
     "Vigilante",
     "Zelador de Cemitério"
    ],
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
-  }
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "salario_min": 1684.22,
+   "salario_max": 8189.58,
+   "faixa_salarial": "R$ 1.684,22 a R$ 8.189,58"
+  },
+  "salario_min": 1684.22,
+  "salario_max": 8189.58,
+  "faixa_salarial": "R$ 1.684,22 a R$ 8.189,58"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-maraba-paulista-sp-abre-concurso-publico-para-psicologo": {
   "first_seen": "2026-10-21",
@@ -4955,8 +5093,14 @@
     "Professor de Centro de Educação Infantil - Creche (maternal e berçário I e II) (4 vagas)",
     "Psicólogo (1 vaga)"
    ],
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
-  }
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "salario_min": 1248.89,
+   "salario_max": 5118.2,
+   "faixa_salarial": "R$ 1.248,89 a R$ 5.118,20"
+  },
+  "salario_min": 1248.89,
+  "salario_max": 5118.2,
+  "faixa_salarial": "R$ 1.248,89 a R$ 5.118,20"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-campina-sp-abre-concurso-para-auxiliar-de-enfermagem-e-tecnico-em-enfermagem": {
   "first_seen": "2026-10-21",
@@ -5020,8 +5164,14 @@
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Consultar edital",
    "jornada": "25 a 40 horas semanais",
-   "isencao": "Candidatos inscritos no Cadastro Único que atendam aos critérios de renda do edital e doadores de medula óssea cadastrados no Redome poderão solicitar isenção de 21 a 25 de outubro de 2026."
-  }
+   "isencao": "Candidatos inscritos no Cadastro Único que atendam aos critérios de renda do edital e doadores de medula óssea cadastrados no Redome poderão solicitar isenção de 21 a 25 de outubro de 2026.",
+   "salario_min": 3520.36,
+   "salario_max": 4221.0,
+   "faixa_salarial": "R$ 3.520,36 a R$ 4.221,00"
+  },
+  "salario_min": 3520.36,
+  "salario_max": 4221.0,
+  "faixa_salarial": "R$ 3.520,36 a R$ 4.221,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632": {
   "first_seen": "2026-10-21",
@@ -5355,8 +5505,14 @@
     "Trabalhador Braçal (2 vagas + CR)",
     "Vigilante (1 vaga + CR)"
    ],
-   "isencao": "Candidatos inscritos no CadÚnico que atendam ao critério de renda do edital poderão pedir isenção em 22 e 23 de outubro de 2026."
-  }
+   "isencao": "Candidatos inscritos no CadÚnico que atendam ao critério de renda do edital poderão pedir isenção em 22 e 23 de outubro de 2026.",
+   "salario_min": 1657.09,
+   "salario_max": 8632.29,
+   "faixa_salarial": "R$ 1.657,09 a R$ 8.632,29"
+  },
+  "salario_min": 1657.09,
+  "salario_max": 8632.29,
+  "faixa_salarial": "R$ 1.657,09 a R$ 8.632,29"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397": {
   "first_seen": "2026-10-21",
@@ -5527,8 +5683,14 @@
     "Médico Psiquiatra Infantil (1 vaga)",
     "Médico Urologista (1 vaga)"
    ],
-   "isencao": "As taxas de inscrição são de R$ 46,85 (fundamental), R$ 62,47 (médio) e R$ 93,70 (superior). Haverá isenção da taxa para inscritos no CadÚnico, mediante requerimento entre os dias 9 e 13 de outubro de 2026."
-  }
+   "isencao": "As taxas de inscrição são de R$ 46,85 (fundamental), R$ 62,47 (médio) e R$ 93,70 (superior). Haverá isenção da taxa para inscritos no CadÚnico, mediante requerimento entre os dias 9 e 13 de outubro de 2026.",
+   "salario_min": 1621.0,
+   "salario_max": 17397.46,
+   "faixa_salarial": "R$ 1.621,00 a R$ 17.397,46"
+  },
+  "salario_min": 1621.0,
+  "salario_max": 17397.46,
+  "faixa_salarial": "R$ 1.621,00 a R$ 17.397,46"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-processo-seletivo-para-a-area-da-educacao": {
   "first_seen": "2026-10-21",
@@ -5558,8 +5720,14 @@
    "regime": "CLT (Celetista)",
    "beneficios": "Consultar edital",
    "jornada": "30 a 40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 18,65 para todos os cargos, com isenção prevista para candidatos inscritos no CadÚnico, doadores de medula óssea e doadores regulares de sangue, conforme regras do edital."
-  }
+   "isencao": "A taxa de inscrição é de R$ 18,65 para todos os cargos, com isenção prevista para candidatos inscritos no CadÚnico, doadores de medula óssea e doadores regulares de sangue, conforme regras do edital.",
+   "salario_min": 3878.45,
+   "salario_max": 6640.0,
+   "faixa_salarial": "R$ 3.878,45 a R$ 6.640,00"
+  },
+  "salario_min": 3878.45,
+  "salario_max": 6640.0,
+  "faixa_salarial": "R$ 3.878,45 a R$ 6.640,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas": {
   "first_seen": "2026-10-21",
@@ -5964,8 +6132,14 @@
     "Professor de Música (Modalidade Violino)",
     "Psicólogo"
    ],
-   "isencao": "Haverá possibilidade de isenção da taxa de inscrição de 5 a 7 de outubro de 2026 para pessoas inscritas no CadÚnico, doadores de rim, transplantados e doadores de medula óssea, nos termos das leis municipais."
-  }
+   "isencao": "Haverá possibilidade de isenção da taxa de inscrição de 5 a 7 de outubro de 2026 para pessoas inscritas no CadÚnico, doadores de rim, transplantados e doadores de medula óssea, nos termos das leis municipais.",
+   "salario_min": 1621.13,
+   "salario_max": 5882.37,
+   "faixa_salarial": "R$ 1.621,13 a R$ 5.882,37"
+  },
+  "salario_min": 1621.13,
+  "salario_max": 5882.37,
+  "faixa_salarial": "R$ 1.621,13 a R$ 5.882,37"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-das-pedras-sp-abre-selecao-para-cadastro-reserva-de-professores": {
   "first_seen": "2026-10-21",
@@ -6712,8 +6886,14 @@
     "Supervisor de Ensino (CR)",
     "Terapeuta Ocupacional (CR)"
    ],
-   "isencao": "O pedido de isenção poderá ser solicitado até às 23h59 do dia 11 de outubro de 2026."
-  }
+   "isencao": "O pedido de isenção poderá ser solicitado até às 23h59 do dia 11 de outubro de 2026.",
+   "salario_min": 1738.96,
+   "salario_max": 6055.67,
+   "faixa_salarial": "R$ 1.738,96 a R$ 6.055,67"
+  },
+  "salario_min": 1738.96,
+  "salario_max": 6055.67,
+  "faixa_salarial": "R$ 1.738,96 a R$ 6.055,67"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-tatui-sp-abre-concurso-publico-para-cargos-de-nivel-fundamental-e-medio": {
   "first_seen": "2026-10-21",
@@ -6744,8 +6924,14 @@
    "regime": "Estatutário",
    "beneficios": "Consultar edital",
    "jornada": "44 horas semanais",
-   "isencao": "O período para solicitar isenção da taxa será de 14 a 17 de setembro de 2026, conforme os critérios do edital."
-  }
+   "isencao": "O período para solicitar isenção da taxa será de 14 a 17 de setembro de 2026, conforme os critérios do edital.",
+   "salario_min": 1862.47,
+   "salario_max": 2193.73,
+   "faixa_salarial": "R$ 1.862,47 a R$ 2.193,73"
+  },
+  "salario_min": 1862.47,
+  "salario_max": 2193.73,
+  "faixa_salarial": "R$ 1.862,47 a R$ 2.193,73"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377": {
   "first_seen": "2026-10-21",
@@ -6826,8 +7012,14 @@
     "Coordenador Pedagógico (4 vagas + CR)",
     "Diretor de Escola (1 vaga + CR)"
    ],
-   "isencao": "Pedidos de isenção poderão ser apresentados até 21 de outubro de 2026 por candidatos que atendam aos critérios de inscrição no CadÚnico ou de residência em Votorantim e baixa renda previstos nos editais."
-  }
+   "isencao": "Pedidos de isenção poderão ser apresentados até 21 de outubro de 2026 por candidatos que atendam aos critérios de inscrição no CadÚnico ou de residência em Votorantim e baixa renda previstos nos editais.",
+   "salario_min": 1899.72,
+   "salario_max": 8377.33,
+   "faixa_salarial": "R$ 1.899,72 a R$ 8.377,33"
+  },
+  "salario_min": 1899.72,
+  "salario_max": 8377.33,
+  "faixa_salarial": "R$ 1.899,72 a R$ 8.377,33"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-carapicuiba-sp-abre-novos-concursos-para-cadastro-de-reserva-em-diversas-areas": {
   "first_seen": "2026-10-21",
@@ -6964,8 +7156,14 @@
     "Topógrafo (CR)",
     "Instrutor de Prática Desportiva (CR)"
    ],
-   "isencao": "A taxa de inscrição é de R$ 28,73 para nível médio/técnico e de R$ 33,34 para nível superior. Poderá ser solicitada a isenção da taxa entre os dias 28 e 30 de setembro de 2026, nos casos previstos em lei."
-  }
+   "isencao": "A taxa de inscrição é de R$ 28,73 para nível médio/técnico e de R$ 33,34 para nível superior. Poderá ser solicitada a isenção da taxa entre os dias 28 e 30 de setembro de 2026, nos casos previstos em lei.",
+   "salario_min": 1621.0,
+   "salario_max": 12118.5,
+   "faixa_salarial": "R$ 1.621,00 a R$ 12.118,50"
+  },
+  "salario_min": 1621.0,
+  "salario_max": 12118.5,
+  "faixa_salarial": "R$ 1.621,00 a R$ 12.118,50"
  },
  "https://www.pciconcursos.com.br/noticias/prudenco-sp-abre-concurso-publico-para-coletor-e-motorista": {
   "first_seen": "2026-10-21",
@@ -7073,8 +7271,14 @@
     "Controlador Interno (1 vaga)",
     "Médico Perito (Cadastro de reserva)"
    ],
-   "isencao": "As taxas de inscrição são: R$ 60,00 (nível fundamental), R$ 90,00 (nível médio) e R$ 150,00 (nível superior). Haverá possibilidade de isenção para candidatos amparados por legislação específica, com solicitação de 5 a 17 de outubro de 2026."
-  }
+   "isencao": "As taxas de inscrição são: R$ 60,00 (nível fundamental), R$ 90,00 (nível médio) e R$ 150,00 (nível superior). Haverá possibilidade de isenção para candidatos amparados por legislação específica, com solicitação de 5 a 17 de outubro de 2026.",
+   "salario_min": 1984.14,
+   "salario_max": 11102.06,
+   "faixa_salarial": "R$ 1.984,14 a R$ 11.102,06"
+  },
+  "salario_min": 1984.14,
+  "salario_max": 11102.06,
+  "faixa_salarial": "R$ 1.984,14 a R$ 11.102,06"
  },
  "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas": {
   "first_seen": "2026-10-21",
@@ -7298,8 +7502,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2945.73,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
+  },
+  "salario_min": 2945.73,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-na-faculdade-de-ciencias-e-letras-de-assis-sp": {
   "first_seen": "2026-10-21",
@@ -7324,8 +7534,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vagas-para-professores-substitutos-de-fisica-geral-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-21",
@@ -7350,8 +7566,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-engenharia-quimica-em-botucatu-sp": {
   "first_seen": "2026-10-21",
@@ -7376,8 +7598,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-na-area-de-enfermagem-em-botucatu-sp": {
   "first_seen": "2026-10-21",
@@ -7404,8 +7632,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-de-bauru-sp-abre-concurso-publico-para-professor-titular-na-faculdade-de-ciencias": {
   "first_seen": "2026-10-21",
@@ -7508,8 +7742,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2945.73,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
+  },
+  "salario_min": 2945.73,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-botucatu-sp": {
   "first_seen": "2026-10-21",
@@ -7560,8 +7800,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-na-area-de-educacao-em-rio-claro-sp": {
   "first_seen": "2026-10-21",
@@ -7588,8 +7834,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 a 24 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-21",
@@ -7638,8 +7890,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2945.73,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
+  },
+  "salario_min": 2945.73,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-jaboticabal-sp": {
   "first_seen": "2026-10-21",
@@ -7690,8 +7948,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-medicina-veterinaria-em-aracatuba-sp": {
   "first_seen": "2026-10-21",
@@ -7716,8 +7980,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-publicos-para-professores-substitutos-em-araraquara-sp": {
   "first_seen": "2026-10-21",
@@ -7748,8 +8018,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-letras-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-21",
@@ -7774,8 +8050,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2945.73,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
+  },
+  "salario_min": 2945.73,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-com-vaga-para-professor-substituto-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-21",
@@ -7800,8 +8082,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2945.73,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
+  },
+  "salario_min": 2945.73,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-engenharia-civil-no-campus-de-ilha-solteira": {
   "first_seen": "2026-10-21",
@@ -7826,8 +8114,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-medicina-veterinaria-em-jaboticabal-sp": {
   "first_seen": "2026-10-21",
@@ -7852,8 +8146,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2945.73,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
+  },
+  "salario_min": 2945.73,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-medicina-veterinaria-em-botucatu-sp": {
   "first_seen": "2026-10-21",
@@ -7878,8 +8178,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 1423.69,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90"
+  },
+  "salario_min": 1423.69,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-medicina-veterinaria-em-aracatuba-sp": {
   "first_seen": "2026-10-21",
@@ -7904,8 +8210,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2945.73,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
+  },
+  "salario_min": 2945.73,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-docente-de-nivel-medio-em-bauru-sp": {
   "first_seen": "2026-10-21",
@@ -8060,8 +8372,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unicamp-sp-abre-concurso-publico-para-professor-doutor-na-area-de-ortodontia": {
   "first_seen": "2026-10-21",
@@ -8619,8 +8937,14 @@
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Consultar edital",
    "jornada": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
-  }
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "salario_min": 1949.88,
+   "salario_max": 6077.09,
+   "faixa_salarial": "R$ 1.949,88 a R$ 6.077,09"
+  },
+  "salario_min": 1949.88,
+  "salario_max": 6077.09,
+  "faixa_salarial": "R$ 1.949,88 a R$ 6.077,09"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-abre-concurso-publico-com-salarios-de-ate-13881": {
   "first_seen": "2026-10-21",
@@ -8725,8 +9049,14 @@
    "regime": "Estatutário",
    "beneficios": "Vale-alimentação e prêmio assiduidade de até R$ 1.250,00, conforme a legislação municipal",
    "jornada": "20 a 40 horas semanais",
-   "isencao": "A isenção poderá ser solicitada em 22 e 23 de outubro de 2026 por candidatos que atendam aos requisitos previstos no edital, como doadores de sangue residentes em Birigui, pessoas que prestaram serviços à Justiça Eleitoral ou pessoas cadastradas como doadoras de medula óssea."
-  }
+   "isencao": "A isenção poderá ser solicitada em 22 e 23 de outubro de 2026 por candidatos que atendam aos requisitos previstos no edital, como doadores de sangue residentes em Birigui, pessoas que prestaram serviços à Justiça Eleitoral ou pessoas cadastradas como doadoras de medula óssea.",
+   "salario_min": 1621.05,
+   "salario_max": 13881.85,
+   "faixa_salarial": "R$ 1.621,05 a R$ 13.881,85"
+  },
+  "salario_min": 1621.05,
+  "salario_max": 13881.85,
+  "faixa_salarial": "R$ 1.621,05 a R$ 13.881,85"
  },
  "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-tecnico-de-enfermagem-e-biologista": {
   "first_seen": "2026-10-22",
@@ -8813,8 +9143,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-na-faculdade-de-ciencias-humanas-e-sociais-de-franca-sp": {
   "first_seen": "2026-10-22",
@@ -8940,8 +9276,14 @@
    "regime": "Consultar edital",
    "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
    "jornada": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
-  }
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "salario_min": 1621.0,
+   "salario_max": 7078.72,
+   "faixa_salarial": "R$ 1.621,00 a R$ 7.078,72"
+  },
+  "salario_min": 1621.0,
+  "salario_max": 7078.72,
+  "faixa_salarial": "R$ 1.621,00 a R$ 7.078,72"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-matematica-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-23",
@@ -8965,8 +9307,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-na-area-de-artes-em-sao-paulo": {
   "first_seen": "2026-10-23",
@@ -8990,8 +9338,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2945.73,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
+  },
+  "salario_min": 2945.73,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-processo-seletivo-para-professor-na-area-de-filosofia-e-sociologia-do-direito-em-ribeirao-preto": {
   "first_seen": "2026-10-23",
@@ -9204,8 +9558,14 @@
    "regime": "Estatutário",
    "beneficios": "Consultar edital",
    "jornada": "20 a 40 horas semanais",
-   "isencao": "Doadores de sangue ou de medula óssea que atendam aos requisitos do edital poderão solicitar isenção nos dias 27 e 28 de outubro de 2026."
-  }
+   "isencao": "Doadores de sangue ou de medula óssea que atendam aos requisitos do edital poderão solicitar isenção nos dias 27 e 28 de outubro de 2026.",
+   "salario_min": 1721.15,
+   "salario_max": 17716.5,
+   "faixa_salarial": "R$ 1.721,15 a R$ 17.716,50"
+  },
+  "salario_min": 1721.15,
+  "salario_max": 17716.5,
+  "faixa_salarial": "R$ 1.721,15 a R$ 17.716,50"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-monteiro-lobato-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-26",
@@ -9270,8 +9630,14 @@
    "regime": "Consultar edital",
    "beneficios": "Consultar edital",
    "jornada": "20 a 40 horas semanais",
-   "isencao": "Candidatos desempregados poderão solicitar isenção de 23 a 26 de outubro de 2026, mediante envio da documentação exigida pelo edital."
-  }
+   "isencao": "Candidatos desempregados poderão solicitar isenção de 23 a 26 de outubro de 2026, mediante envio da documentação exigida pelo edital.",
+   "salario_min": 1803.38,
+   "salario_max": 7408.75,
+   "faixa_salarial": "R$ 1.803,38 a R$ 7.408,75"
+  },
+  "salario_min": 1803.38,
+  "salario_max": 7408.75,
+  "faixa_salarial": "R$ 1.803,38 a R$ 7.408,75"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmital-sp-abre-processo-seletivo-para-monitores": {
   "first_seen": "2026-10-26",
@@ -9363,8 +9729,14 @@
    "regime": "Consultar edital",
    "beneficios": "Consultar edital",
    "jornada": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
-  }
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "salario_min": 1783.03,
+   "salario_max": 5209.01,
+   "faixa_salarial": "R$ 1.783,03 a R$ 5.209,01"
+  },
+  "salario_min": 1783.03,
+  "salario_max": 5209.01,
+  "faixa_salarial": "R$ 1.783,03 a R$ 5.209,01"
  },
  "https://www.pciconcursos.com.br/noticias/usp-sp-abre-10-novos-concursos-publicos-para-diversos-cargos": {
   "first_seen": "2026-10-26",
@@ -9404,8 +9776,14 @@
    "regime": "Consultar edital",
    "beneficios": "Consultar edital",
    "jornada": "24 a 40 horas semanais",
-   "isencao": "Há previsão de isenção e redução da taxa para os candidatos que atendam aos requisitos estabelecidos nos editais."
-  }
+   "isencao": "Há previsão de isenção e redução da taxa para os candidatos que atendam aos requisitos estabelecidos nos editais.",
+   "salario_min": 6264.04,
+   "salario_max": 11778.84,
+   "faixa_salarial": "R$ 6.264,04 a R$ 11.778,84"
+  },
+  "salario_min": 6264.04,
+  "salario_max": 11778.84,
+  "faixa_salarial": "R$ 6.264,04 a R$ 11.778,84"
  },
  "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-com-duas-vagas-para-professores-de-ensino-fundamental-e-medio": {
   "first_seen": "2026-10-26",
@@ -9510,8 +9888,14 @@
    "regime": "Consultar edital",
    "beneficios": "Consultar edital",
    "jornada": "20 a 40 horas semanais",
-   "isencao": "Candidatos inscritos no CadÚnico que sejam membros de família de baixa renda poderão solicitar isenção de 23 a 26 de outubro de 2026."
-  }
+   "isencao": "Candidatos inscritos no CadÚnico que sejam membros de família de baixa renda poderão solicitar isenção de 23 a 26 de outubro de 2026.",
+   "salario_min": 1621.0,
+   "salario_max": 9147.62,
+   "faixa_salarial": "R$ 1.621,00 a R$ 9.147,62"
+  },
+  "salario_min": 1621.0,
+  "salario_max": 9147.62,
+  "faixa_salarial": "R$ 1.621,00 a R$ 9.147,62"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sabino-sp-abre-concurso-publico-para-monitor-de-transporte-escolar": {
   "first_seen": "2026-10-26",
@@ -9598,8 +9982,14 @@
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Vale-alimentação de R$ 500,00.",
    "jornada": "40 horas semanais",
-   "isencao": "Doadores de medula óssea e desempregados poderão pedir isenção pelo site, das 9h de 26 de outubro de 2026 às 17h de 27 de outubro de 2026."
-  }
+   "isencao": "Doadores de medula óssea e desempregados poderão pedir isenção pelo site, das 9h de 26 de outubro de 2026 às 17h de 27 de outubro de 2026.",
+   "salario_min": 2118.03,
+   "salario_max": 4457.35,
+   "faixa_salarial": "R$ 2.118,03 a R$ 4.457,35"
+  },
+  "salario_min": 2118.03,
+  "salario_max": 4457.35,
+  "faixa_salarial": "R$ 2.118,03 a R$ 4.457,35"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-jacarei-sp-abre-processo-seletivo-para-profissionais-da-educacao": {
   "first_seen": "2026-10-27",
@@ -9630,8 +10020,14 @@
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Consultar edital",
    "jornada": "30 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
-  }
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "salario_min": 2431.6,
+   "salario_max": 4619.95,
+   "faixa_salarial": "R$ 2.431,60 a R$ 4.619,95"
+  },
+  "salario_min": 2431.6,
+  "salario_max": 4619.95,
+  "faixa_salarial": "R$ 2.431,60 a R$ 4.619,95"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-mairipora-sp-abre-concurso-publico-para-professores": {
   "first_seen": "2026-10-27",
@@ -9736,8 +10132,14 @@
    "regime": "Processo Seletivo / Temporário",
    "beneficios": "Consultar edital",
    "jornada": "40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
-  }
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "salario_min": 1625.19,
+   "salario_max": 4082.72,
+   "faixa_salarial": "R$ 1.625,19 a R$ 4.082,72"
+  },
+  "salario_min": 1625.19,
+  "salario_max": 4082.72,
+  "faixa_salarial": "R$ 1.625,19 a R$ 4.082,72"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-suzano-sp-abre-concurso-publico-com-salarios-de-ate-12062": {
   "first_seen": "2026-10-27",
@@ -9783,8 +10185,14 @@
    "regime": "Estatutário",
    "beneficios": "Vale-alimentação · Cesta básica para cargos específicos, adicional de periculosidade para Agente de S",
    "jornada": "10 a 40 horas semanais",
-   "isencao": "A isenção poderá ser solicitada das 10h de 29 de outubro às 23h59 de 30 de outubro de 2026 por candidatos desempregados, por candidatos com renda pessoal de até um salário mínimo mensal ou por doadores regulares de sangue do município de Suzano, mediante comprovação."
-  }
+   "isencao": "A isenção poderá ser solicitada das 10h de 29 de outubro às 23h59 de 30 de outubro de 2026 por candidatos desempregados, por candidatos com renda pessoal de até um salário mínimo mensal ou por doadores regulares de sangue do município de Suzano, mediante comprovação.",
+   "salario_min": 2105.38,
+   "salario_max": 12062.91,
+   "faixa_salarial": "R$ 2.105,38 a R$ 12.062,91"
+  },
+  "salario_min": 2105.38,
+  "salario_max": 12062.91,
+  "faixa_salarial": "R$ 2.105,38 a R$ 12.062,91"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-assistente-na-area-de-anatomia-em-botucatu-sp": {
   "first_seen": "2026-10-27",
@@ -9834,8 +10242,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 1423.69,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90"
+  },
+  "salario_min": 1423.69,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-na-faculdade-de-filosofia-e-ciencias-de-marilia-sp": {
   "first_seen": "2026-10-27",
@@ -9859,8 +10273,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 1417.53,
+   "salario_max": 3361.39,
+   "faixa_salarial": "R$ 1.417,53 a R$ 3.361,39"
+  },
+  "salario_min": 1417.53,
+  "salario_max": 3361.39,
+  "faixa_salarial": "R$ 1.417,53 a R$ 3.361,39"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professores-substitutos-em-sao-jose-dos-campos-sp": {
   "first_seen": "2026-10-27",
@@ -9882,8 +10302,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2945.73,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
+  },
+  "salario_min": 2945.73,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-publicos-para-professores-substitutos-no-campus-de-assis-sp": {
   "first_seen": "2026-10-27",
@@ -9915,8 +10341,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-no-campus-de-sao-joao-da-boa-vista-sp": {
   "first_seen": "2026-10-27",
@@ -9942,8 +10374,14 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "salario_min": 2106.04,
+   "salario_max": 3511.9,
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
+  },
+  "salario_min": 2106.04,
+  "salario_max": 3511.9,
+  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-27",

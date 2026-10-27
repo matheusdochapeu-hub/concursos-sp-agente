@@ -478,6 +478,12 @@ def parse_listing(page_html: str, regiao_padrao: str = "") -> List[dict]:
         cargos_resumo = partes[1] if len(partes) > 1 else ""
         niveis = partes[2] if len(partes) > 2 else ""
         sal = salarios_no_texto(vagas_sal)
+        sal_max = max(sal) if sal else None
+        sal_min = None
+        if sal and len(sal) >= 2 and min(sal) != max(sal):
+            sal_min = min(sal)
+        elif sal and re.search(r"a\s+partir\s+de|inicial\s+de", vagas_sal, re.I):
+            sal_min = min(sal)
         concursos.append(
             {
                 "url": url,
@@ -488,8 +494,8 @@ def parse_listing(page_html: str, regiao_padrao: str = "") -> List[dict]:
                 "vagas_salario": vagas_sal,
                 "cargos_resumo": cargos_resumo,
                 "niveis": niveis,
-                "salario_max_listagem": max(sal) if sal else None,
-                "salario_min_listagem": min(sal) if sal else None,
+                "salario_max_listagem": sal_max,
+                "salario_min_listagem": sal_min,
                 "inscricao_ate": ce.get_text(" ", strip=True) if ce else "",
             }
         )
@@ -611,27 +617,39 @@ def parse_isencao(texto: str) -> str:
     return "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
 
 
-def parse_faixa_salarial(texto: str, vagas_salario_listagem: str = "") -> str:
-    m = re.search(
-        r"(?:remunera[?c][?a]o|sal[?a]rio[s]?|vencimento[s]?|ganho[s]?)[^.\n]{0,60}?(?:varia(?:m)?\s+de\s+|de\s+)?(R\$\s*[\d.,]+\s*(?:a|at[?e]|\-)\s*R\$\s*[\d.,]+)",
-        texto or "",
-        re.I,
-    )
-    if m:
-        return re.sub(r"\s+", " ", m.group(1)).strip(" .;:")
-    m2 = re.search(
-        r"(?:remunera[?c][?o]es|sal[?a]rios|vencimentos|ganhos)[^.\n]{0,50}?(R\$\s*[\d.,]+\s*(?:a|at[?e]|e)\s*R\$\s*[\d.,]+)",
-        texto or "",
-        re.I,
-    )
-    if m2:
-        return re.sub(r"\s+", " ", m2.group(1)).strip(" .;:")
+def extrair_faixa_e_limites(texto: str, vagas_salario_listagem: str = "") -> tuple[Optional[float], Optional[float], str]:
+    if texto:
+        for p in texto.splitlines():
+            m = re.search(r"R\$\s*[\d.,]+\s*(?:a|at[eé]|\-|e\s+pode\s+chegar\s+a)\s*R\$\s*[\d.,]+", p, re.I)
+            if m:
+                sals = salarios_no_texto(m.group(0))
+                if len(sals) >= 2 and min(sals) != max(sals):
+                    s_min, s_max = min(sals), max(sals)
+                    if 700 <= s_min <= 60000 and 700 <= s_max <= 60000:
+                        return s_min, s_max, f"{brl(s_min)} a {brl(s_max)}"
+        m2 = re.search(
+            r"(?:remunera\w*|sal[a?]rio\w*|vencimento\w*|ganho\w*)[^.\n]{0,90}?(R\$\s*[\d.,]+)\s*(?:a|at[e?]|\-)\s*(R\$\s*[\d.,]+)",
+            texto,
+            re.I,
+        )
+        if m2:
+            sals = salarios_no_texto(m2.group(0))
+            if len(sals) >= 2 and min(sals) != max(sals):
+                s_min, s_max = min(sals), max(sals)
+                if 700 <= s_min <= 60000 and 700 <= s_max <= 60000:
+                    return s_min, s_max, f"{brl(s_min)} a {brl(s_max)}"
+
     sals = salarios_no_texto(vagas_salario_listagem or "")
     if sals:
         if len(sals) >= 2 and min(sals) != max(sals):
-            return f"{brl(min(sals))} a {brl(max(sals))}"
-        return f"At? {brl(max(sals))}"
-    return "Consultar edital"
+            return min(sals), max(sals), f"{brl(min(sals))} a {brl(max(sals))}"
+        return None, max(sals), f"Até {brl(max(sals))}"
+    return None, None, "Consultar edital"
+
+
+def parse_faixa_salarial(texto: str, vagas_salario_listagem: str = "") -> str:
+    _, _, faixa = extrair_faixa_e_limites(texto, vagas_salario_listagem)
+    return faixa
 
 
 def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
@@ -688,6 +706,8 @@ def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
         "jornada": parse_jornada(texto),
         "isencao": parse_isencao(texto),
         "faixa_salarial": parse_faixa_salarial(texto, ""),
+        "salario_min_texto": extrair_faixa_e_limites(texto, "")[0],
+        "salario_max_texto": extrair_faixa_e_limites(texto, "")[1],
     }
 
 
@@ -1277,6 +1297,8 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                     "link_banca": det["link_banca"],
                     "arquivos_edital": det["arquivos_edital"],
                     "faixa_salarial": det.get("faixa_salarial"),
+                    "salario_min": det.get("salario_min_texto"),
+                    "salario_max": det.get("salario_max_texto"),
                 }
             except Exception:  # noqa: BLE001
                 return u, None
@@ -1405,6 +1427,12 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
         )
         if sal_min_val and sal_max_val and sal_min_val > sal_max_val:
             sal_min_val, sal_max_val = sal_max_val, sal_min_val
+
+        # Salvaguarda: se sal_min_val == sal_max_val e for alto (> R$ 4.000) e o edital tiver nivel fundamental/medio:
+        niveis_texto = (it.get("niveis") or "") + " " + (it.get("cargos_resumo") or "")
+        tem_cargos_operacionais = bool(re.search(r"fundament|operac|v[áa]rios|m[ée]dio|elementar", niveis_texto, re.I))
+        if sal_min_val and sal_max_val and sal_min_val == sal_max_val and sal_max_val > 4000 and tem_cargos_operacionais:
+            sal_min_val = None
 
         cargos_sal_map = dict(enriq.get("cargos_salarios") or {})
         if enriq.get("fisio"):

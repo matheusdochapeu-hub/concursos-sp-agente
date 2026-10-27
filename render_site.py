@@ -3205,7 +3205,7 @@ def render_html(
   function resolverSalarioParaCargo(item, termo, cargosCasados, escolaridadeFiltro) {{
     let auxilioNum = 0;
     if (item.beneficios) {{
-      const mDia = item.beneficios.match(/di[áa]ri[oa]\\s+de\\s+R\\$\\s*([\\d.]+([,.]\\d{{2}})?)/i);
+      const mDia = item.beneficios.match(/di[aá]ri[oa]\\s+de\\s+R\\$\\s*([\\d.]+([,.]\\d{{2}})?)/i);
       if (mDia) {{
         auxilioNum = Math.round(parseBrl(mDia[1]) * 22);
       }} else {{
@@ -3249,32 +3249,60 @@ def render_html(
       }}
     }}
 
-    const REGEX_FUND = /cozinheir|merendeir|auxiliar|servi[çc]os\\s*gerais|limpeza|gari|coveir|vigia|bra[çc]al|copeir|pedreir|pintor|soldador|borracheir|carpinteir|encanador|eletricista|operador|tratorista|motorista|leiturista|frentista|telefonista|aferidor|apreensor|padeiro/i;
-    const REGEX_MED = /oficial|assistente|escritur|recepcionista|t[ée]cnico|fiscal|agente\\s*comunit|agente\\s*de\\s*combate|cuidador|almoxarife|orientador|desenhista|salva-vidas/i;
-    const REGEX_SUP = /fisioterapeuta|m[ée]dico|procurador|advogado|engenheiro|arquiteto|contador|auditor|psic[óo]logo|dentista|enfermeir|farmac[êe]utico|nutricionista|terapeuta|fonoaudi[óo]logo|veterin[áa]rio|muse[óo]logo|analista/i;
+    const REGEX_FUND = /cozinheir|merendeir|auxiliar|servicos\\s*gerais|limpeza|gari|coveir|vigia|bracal|copeir|pedreir|pintor|soldador|borracheir|carpinteir|encanador|eletricista|operador|tratorista|motorista|leiturista|frentista|telefonista|aferidor|apreensor|padeiro|ajudante/i;
+    const REGEX_MED = /oficial|assistente|escritur|recepcionista|tecnico|fiscal|agente\\s*comunit|agente\\s*de\\s*combate|cuidador|almoxarife|orientador|desenhista|salva-vidas/i;
+    const REGEX_SUP = /fisioterapeuta|medico|procurador|advogado|engenheiro|arquiteto|contador|auditor|psicologo|dentista|enfermeir|farmaceutico|nutricionista|terapeuta|fonoaudiologo|veterinario|museologo|analista/i;
 
     const textoAlvo = normTermo || (cargosCasados && cargosCasados[0] ? normStr(cargosCasados[0]) : '');
 
     let nivelRotulo = '';
     if (!salEncontrado && textoAlvo) {{
       if (REGEX_FUND.test(textoAlvo)) {{
-        if (item.salario_min) salEncontrado = item.salario_min;
-        nivelRotulo = 'Nível Fundamental';
-      }} else if (REGEX_MED.test(textoAlvo)) {{
-        if (item.salario_medio) {{
-          salEncontrado = item.salario_medio;
-        }} else if (item.salario_min && item.salario_max && item.salario_min < item.salario_max) {{
+        // Regra de Ouro para Nível Fundamental:
+        // O teto municipal para cargos operacionais nunca deve ultrapassar R$ 4.500,00!
+        if (item.salario_min && item.salario_min <= 4500) {{
           salEncontrado = item.salario_min;
+          nivelRotulo = 'Nível Fundamental';
+        }} else {{
+          // Safeguard absoluto: edital sem piso identificado ou com valor inconsistente
+          return {{
+            salario_num: 0,
+            salario_total: (auxilioNum > 0 ? auxilioNum : 0),
+            salario_exib: 'Piso Municipal / A consultar',
+            salario_det: `Nível Fundamental · Edital com teto de até ${{fmtBrl(item.salario_max)}} (consulte o Anexo I do edital para o vencimento deste cargo)${{auxilioNum > 0 ? ' | + ' + fmtBrl(auxilioNum) + ' em benefícios' : ''}}`,
+            especifico: true
+          }};
         }}
-        nivelRotulo = 'Nível Médio/Técnico';
+      }} else if (REGEX_MED.test(textoAlvo)) {{
+        // Regra de Ouro para Nível Médio / Técnico:
+        if (item.salario_medio && item.salario_medio <= 7000) {{
+          salEncontrado = item.salario_medio;
+          nivelRotulo = 'Nível Médio/Técnico';
+        }} else if (item.salario_min && item.salario_min <= 6000) {{
+          salEncontrado = item.salario_min;
+          nivelRotulo = 'Nível Médio/Técnico';
+        }} else if (item.salario_max && item.salario_max <= 6000) {{
+          salEncontrado = item.salario_max;
+          nivelRotulo = 'Nível Médio/Técnico';
+        }} else {{
+          return {{
+            salario_num: 0,
+            salario_total: (auxilioNum > 0 ? auxilioNum : 0),
+            salario_exib: 'Piso da Categoria / A consultar',
+            salario_det: `Nível Médio/Técnico · Edital com teto de até ${{fmtBrl(item.salario_max)}} (consulte o Anexo I do edital)${{auxilioNum > 0 ? ' | + ' + fmtBrl(auxilioNum) + ' em benefícios' : ''}}`,
+            especifico: true
+          }};
+        }}
       }} else if (REGEX_SUP.test(textoAlvo)) {{
-        if (item.salario_max) salEncontrado = item.salario_max;
-        nivelRotulo = 'Nível Superior';
+        if (item.salario_max) {{
+          salEncontrado = item.salario_max;
+          nivelRotulo = 'Nível Superior';
+        }}
       }}
     }}
 
     if (!salEncontrado && !normTermo && escolaridadeFiltro) {{
-      if (escolaridadeFiltro === 'fundamental' && item.salario_min) {{
+      if (escolaridadeFiltro === 'fundamental' && item.salario_min && item.salario_min <= 4500) {{
         salEncontrado = item.salario_min;
         nivelRotulo = 'Nível Fundamental';
       }} else if (escolaridadeFiltro === 'superior' && item.salario_max) {{

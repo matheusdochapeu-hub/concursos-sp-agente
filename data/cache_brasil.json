@@ -20,7 +20,10 @@
   "arquivos_edital": [
    "EDITAL Nº 01/2026",
    "EDITAL Nº 02/2026"
-  ]
+  ],
+  "salario_min": 2312.25,
+  "salario_max": 8595.15,
+  "faixa_salarial": "R$ 2.312,25 a R$ 8.595,15"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433": {
   "cargos_li": [
@@ -67,7 +70,10 @@
   "link_banca": "https://www.matao.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2377.65,
+  "salario_max": 17433.24,
+  "faixa_salarial": "R$ 2.377,65 a R$ 17.433,24"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717": {
   "cargos_li": [
@@ -103,7 +109,10 @@
   "link_banca": "https://www.matao.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 02/2026"
-  ]
+  ],
+  "salario_min": 1767.2,
+  "salario_max": 9717.96,
+  "faixa_salarial": "R$ 1.767,20 a R$ 9.717,96"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-carlos-sp-abre-concurso-com-salarios-de-ate-9833": {
   "cargos_li": [
@@ -143,7 +152,10 @@
   "link_banca": "https://www.saocarlos.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 02/2026"
-  ]
+  ],
+  "salario_min": 2818.0,
+  "salario_max": 9833.0,
+  "faixa_salarial": "R$ 2.818,00 a R$ 9.833,00"
  },
  "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428": {
   "cargos_li": [
@@ -170,7 +182,10 @@
   "link_banca": "https://setec.sp.gov.br/https:/setec.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2571.28,
+  "salario_max": 10428.05,
+  "faixa_salarial": "R$ 2.571,28 a R$ 10.428,05"
  },
  "https://www.pciconcursos.com.br/noticias/tjsp-abre-concursos-para-oficial-de-justica-e-escrevente-tecnico-judiciario": {
   "cargos_li": [
@@ -205,7 +220,10 @@
   "link_banca": "https://www.paraguacupaulista.sp.leg.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2920.42,
+  "salario_max": 11065.27,
+  "faixa_salarial": "R$ 2.920,42 a R$ 11.065,27"
  },
  "https://www.pciconcursos.com.br/noticias/consorcio-cemmil-sp-abre-processo-seletivo-com-vagas-em-carapicuiba": {
   "cargos_li": [
@@ -225,7 +243,10 @@
   "link_banca": "https://www.sigmarh.com.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA PARA PROCESSO SELETIVO Nº 014/2026"
-  ]
+  ],
+  "salario_min": 1880.28,
+  "salario_max": 6889.64,
+  "faixa_salarial": "R$ 1.880,28 a R$ 6.889,64"
  },
  "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-8-distrito-naval-abre-vagas-para-oficiais-rm2-em-sp": {
   "cargos_li": [
@@ -313,7 +334,10 @@
   "arquivos_edital": [
    "EDITAL DE ABERTURA 01 - CONCURSO PUBLICO Nº 01/2026",
    "EDITAL DE ABERTURA 02 - CONCURSO PUBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 3577.48,
+  "salario_max": 5565.0,
+  "faixa_salarial": "R$ 3.577,48 a R$ 5.565,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-abre-concurso-publico-com-salarios-de-ate-5600": {
   "cargos_li": [
@@ -357,7 +381,10 @@
   "link_banca": "https://www.embauba.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1700.0,
+  "salario_max": 5600.0,
+  "faixa_salarial": "R$ 1.700,00 a R$ 5.600,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-floreal-sp-abre-concurso-publico-com-salarios-de-ate-10500": {
   "cargos_li": [
@@ -398,7 +425,10 @@
   "link_banca": "https://www.floreal.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO 01/2026"
-  ]
+  ],
+  "salario_min": 1933.17,
+  "salario_max": 10500.0,
+  "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude": {
   "cargos_li": [
@@ -510,7 +540,10 @@
   "link_banca": "https://www.holambra.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1915.95,
+  "salario_max": 8431.01,
+  "faixa_salarial": "R$ 1.915,95 a R$ 8.431,01"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaborandi-sp-abre-concurso-publico-com-salarios-de-ate-5325": {
   "cargos_li": [
@@ -549,7 +582,10 @@
   "link_banca": "https://jaborandi.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 5325.6,
+  "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044": {
   "cargos_li": [
@@ -592,7 +628,10 @@
   "link_banca": "https://www.lorena.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO 01/2026"
-  ]
+  ],
+  "salario_min": 2399.27,
+  "salario_max": 8890.46,
+  "faixa_salarial": "R$ 2.399,27 a R$ 8.890,46"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -614,7 +653,10 @@
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO 01/2026",
    "EDITAL DE CONCURSO PÚBLICO 02/2026"
-  ]
+  ],
+  "salario_min": 2802.0,
+  "salario_max": 8738.0,
+  "faixa_salarial": "R$ 2.802,00 a R$ 8.738,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189": {
   "cargos_li": [
@@ -685,7 +727,10 @@
   "link_banca": "https://www.macedonia.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 002/2026"
-  ]
+  ],
+  "salario_min": 1684.22,
+  "salario_max": 8189.58,
+  "faixa_salarial": "R$ 1.684,22 a R$ 8.189,58"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-morro-agudo-sp-abre-concurso-com-salarios-de-ate-5815": {
   "cargos_li": [
@@ -735,7 +780,10 @@
   "link_banca": "https://www.murutingadosul.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1248.89,
+  "salario_max": 5118.2,
+  "faixa_salarial": "R$ 1.248,89 a R$ 5.118,20"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632": {
   "cargos_li": [
@@ -791,7 +839,10 @@
   "link_banca": "https://www.paulodefaria.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1657.09,
+  "salario_max": 8632.29,
+  "faixa_salarial": "R$ 1.657,09 a R$ 8.632,29"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397": {
   "cargos_li": [
@@ -824,7 +875,10 @@
   "link_banca": "https://www.piedade.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO CPPMP 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 17397.46,
+  "faixa_salarial": "R$ 1.621,00 a R$ 17.397,46"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-feliz-sp-publica-editais-de-concursos-para-cadastro-de-reserva-em-diversas-areas": {
   "cargos_li": [
@@ -891,7 +945,10 @@
   "arquivos_edital": [
    "EDITAL DE ABERTURA CONCURSO PARA EMPREGO PÚBLICO Nº 002/2026",
    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 003/2026"
-  ]
+  ],
+  "salario_min": 1621.13,
+  "salario_max": 5882.37,
+  "faixa_salarial": "R$ 1.621,13 a R$ 5.882,37"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-taquaritinga-sp-abre-concurso-publico-para-diversos-cargos": {
   "cargos_li": [
@@ -992,7 +1049,10 @@
   "link_banca": "https://www.taquaritinga.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1738.96,
+  "salario_max": 6055.67,
+  "faixa_salarial": "R$ 1.738,96 a R$ 6.055,67"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-votorantim-sp-abre-concursos-publicos-com-salarios-de-ate-8377": {
   "cargos_li": [
@@ -1013,7 +1073,10 @@
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO 01/2026",
    "EDITAL DE CONCURSO PÚBLICO 02/2026"
-  ]
+  ],
+  "salario_min": 1899.72,
+  "salario_max": 8377.33,
+  "faixa_salarial": "R$ 1.899,72 a R$ 8.377,33"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-carapicuiba-sp-abre-novos-concursos-para-cadastro-de-reserva-em-diversas-areas": {
   "cargos_li": [
@@ -1042,7 +1105,10 @@
   "arquivos_edital": [
    "EDITAL Nº 04/2026",
    "EDITAL Nº 05/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 12118.5,
+  "faixa_salarial": "R$ 1.621,00 a R$ 12.118,50"
  },
  "https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102": {
   "cargos_li": [
@@ -1062,7 +1128,10 @@
   "link_banca": "https://www.prudenprev.sp.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1984.14,
+  "salario_max": 11102.06,
+  "faixa_salarial": "R$ 1.984,14 a R$ 11.102,06"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-de-sorocaba-sp-abre-concurso-para-assistente-de-suporte-academico-ii": {
   "cargos_li": [
@@ -1113,7 +1182,10 @@
    "EDITAL DE CONCURSO PÚBLICO Nº 1/2026",
    "RETIFICAÇÃO I",
    "RETIFICAÇÃO II"
-  ]
+  ],
+  "salario_min": 3010.0,
+  "salario_max": 18000.0,
+  "faixa_salarial": "R$ 3.010,00 a R$ 18.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/cbmerj-rj-retifica-edital-de-processo-seletivo-para-1-tenente-temporario": {
   "cargos_li": [
@@ -1274,7 +1346,10 @@
   "link_banca": "https://queimados.rj.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA 01/2026"
-  ]
+  ],
+  "salario_min": 1175.48,
+  "salario_max": 11567.11,
+  "faixa_salarial": "R$ 1.175,48 a R$ 11.567,11"
  },
  "https://www.pciconcursos.com.br/noticias/uerj-abre-processo-seletivo-para-cadastro-de-reserva-em-projetos-da-saude": {
   "cargos_li": [
@@ -1407,7 +1482,10 @@
   "link_banca": "https://www.avalia.org.br",
   "arquivos_edital": [
    "EDITAL DE ABERTURA PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 2200.0,
+  "salario_max": 8550.0,
+  "faixa_salarial": "R$ 2.200,00 a R$ 8.550,00"
  },
  "https://www.pciconcursos.com.br/noticias/emater-mg-anuncia-retificacao-de-concurso-publico-com-salarios-de-ate-7321": {
   "cargos_li": [
@@ -1438,7 +1516,10 @@
   "arquivos_edital": [
    "EDITAL DO CONCURSO PÚBLICO Nº 01/2026",
    "SEGUNDA RETIFICAÇÃO DO EDITAL DO CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 3008.66,
+  "salario_max": 7321.75,
+  "faixa_salarial": "R$ 3.008,66 a R$ 7.321,75"
  },
  "https://www.pciconcursos.com.br/noticias/hospital-municipal-dr-gil-alves-mg-abre-concurso-com-salarios-de-ate-7950": {
   "cargos_li": [
@@ -1474,7 +1555,10 @@
   "link_banca": "https://www.cotec.fadenor.com.br/",
   "arquivos_edital": [
    "EDITAL 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 7950.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 7.950,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-contagem-mg-retifica-edital-de-concurso-publico": {
   "cargos_li": [
@@ -1525,7 +1609,10 @@
    "EDITAL Nº 01/2026",
    "EDITAL RETIFICADO Nº 01/2026",
    "RETIFICAÇÃO Nº 01"
-  ]
+  ],
+  "salario_min": 2698.73,
+  "salario_max": 13305.57,
+  "faixa_salarial": "R$ 2.698,73 a R$ 13.305,57"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-paraguacu-mg-abre-concurso-publico-com-salarios-de-ate-20128": {
   "cargos_li": [
@@ -1561,7 +1648,10 @@
   "link_banca": "https://paraguacu.mg.gov.br/site/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1638.83,
+  "salario_max": 20128.27,
+  "faixa_salarial": "R$ 1.638,83 a R$ 20.128,27"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-luzia-mg-abre-concurso-publico-com-salarios-de-ate-8628": {
   "cargos_li": [
@@ -1646,7 +1736,10 @@
   "link_banca": "https://www.santaluzia.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL 01/2026"
-  ]
+  ],
+  "salario_min": 1622.41,
+  "salario_max": 8628.87,
+  "faixa_salarial": "R$ 1.622,41 a R$ 8.628,87"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-capinopolis-mg-retifica-edital-de-concurso-publico-com-salarios-de-ate-5800": {
   "cargos_li": [
@@ -1665,7 +1758,10 @@
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 01/2026",
    "EDITAL RETIFICADO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2000.0,
+  "salario_max": 5800.0,
+  "faixa_salarial": "R$ 2.000,00 a R$ 5.800,00"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-dores-do-indaia-mg-abre-concurso-publico-com-salarios-de-ate-4500": {
   "cargos_li": [
@@ -1683,7 +1779,10 @@
   "link_banca": "https://www.doresdoindaia.mg.leg.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2069.42,
+  "salario_max": 4500.0,
+  "faixa_salarial": "R$ 2.069,42 a R$ 4.500,00"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-lambari-mg-abre-concurso-publico-com-salarios-de-ate-5500": {
   "cargos_li": [
@@ -1703,7 +1802,10 @@
   "link_banca": "https://camaralambari.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2000.0,
+  "salario_max": 5500.0,
+  "faixa_salarial": "R$ 2.000,00 a R$ 5.500,00"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-tupaciguara-mg-abre-concurso-publico-com-10-vagas": {
   "cargos_li": [
@@ -1726,7 +1828,10 @@
   "link_banca": "https://www.camaratupaciguara.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL 01/2026"
-  ]
+  ],
+  "salario_min": 2569.17,
+  "salario_max": 5627.27,
+  "faixa_salarial": "R$ 2.569,17 a R$ 5.627,27"
  },
  "https://www.pciconcursos.com.br/noticias/fumep-de-sete-lagoas-mg-retifica-concurso-publico-para-diversos-niveis-de-escolaridade": {
   "cargos_li": [
@@ -1792,7 +1897,10 @@
   "arquivos_edital": [
    "EDITAL DO CONCURSO PÚBLICO Nº 01/2026",
    "ERRATA 01"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 2530.56,
+  "faixa_salarial": "R$ 1.621,00 a R$ 2.530,56"
  },
  "https://www.pciconcursos.com.br/noticias/ipsemg-anuncia-selecao-com-vagas-para-residencia-medica": {
   "cargos_li": [
@@ -1880,7 +1988,10 @@
   "link_banca": "https://www.antoniopradodeminas.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.07,
+  "salario_max": 3576.46,
+  "faixa_salarial": "R$ 1.621,07 a R$ 3.576,46"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-aracuai-mg-abre-processo-seletivo-para-diversos-cargos": {
   "cargos_li": [
@@ -1915,7 +2026,10 @@
   "link_banca": "https://www.aracuai.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 003/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 5122.14,
+  "faixa_salarial": "R$ 1.621,00 a R$ 5.122,14"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-belo-vale-mg-abre-concurso-publico-com-diversas-vagas-e-salarios-de-ate-8000": {
   "cargos_li": [
@@ -1988,7 +2102,10 @@
   "link_banca": "https://www.belovale.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 1"
-  ]
+  ],
+  "salario_min": 1745.0,
+  "salario_max": 8000.0,
+  "faixa_salarial": "R$ 1.745,00 a R$ 8.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-braunas-mg-abre-processo-seletivo-com-salarios-de-ate-22090": {
   "cargos_li": [
@@ -2051,7 +2168,10 @@
   "link_banca": "https://www.braunas.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 22090.1,
+  "faixa_salarial": "R$ 1.621,00 a R$ 22.090,10"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-conceicao-do-mato-dentro-mg-retifica-edital-de-concurso-publico": {
   "cargos_li": [
@@ -2077,7 +2197,10 @@
    "EDITAL DO CONCURSO PÚBLICO Nº 01/2026",
    "RETIFICAÇÃO I EDITAL Nº 01/2026",
    "EDITAL RETIFICADO - CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2242.3,
+  "salario_max": 6727.07,
+  "faixa_salarial": "R$ 2.242,30 a R$ 6.727,07"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-confins-mg-abre-processo-seletivo-com-salarios-de-ate-23298": {
   "cargos_li": [
@@ -2150,7 +2273,10 @@
   "link_banca": "https://www.confins.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 02/2026"
-  ]
+  ],
+  "salario_min": 1628.1,
+  "salario_max": 23298.67,
+  "faixa_salarial": "R$ 1.628,10 a R$ 23.298,67"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lagoa-da-prata-mg-altera-periodo-de-inscricoes-do-concurso-publico-com-salarios-de-ate-21-mil": {
   "cargos_li": [
@@ -2193,7 +2319,10 @@
    "RETIFICAÇÃO Nº 02",
    "EDITAL RETIFICADO II",
    "RETIFICAÇÃO Nº 03 - INSCRIÇÕES"
-  ]
+  ],
+  "salario_min": 1621.09,
+  "salario_max": 21489.7,
+  "faixa_salarial": "R$ 1.621,09 a R$ 21.489,70"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lagoa-santa-mg-abre-concurso-publico-com-salarios-de-ate-8860": {
   "cargos_li": [
@@ -2240,7 +2369,10 @@
   "link_banca": "https://www.lagoasanta.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2220.57,
+  "salario_max": 8860.79,
+  "faixa_salarial": "R$ 2.220,57 a R$ 8.860,79"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-luislandia-mg-abre-concurso-publico-com-vagas-em-diversas-areas": {
   "cargos_li": [
@@ -2305,7 +2437,10 @@
   "link_banca": "https://www.luislandia.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 10000.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 10.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-olimpio-noronha-mg-abre-processo-seletivo-para-profissionais-de-nivel-superior": {
   "cargos_li": [
@@ -2348,7 +2483,10 @@
   "link_banca": "https://www.paiva.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 11715.84,
+  "faixa_salarial": "R$ 1.621,00 a R$ 11.715,84"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-patis-mg-abre-concurso-publico-com-salarios-de-ate-13500": {
   "cargos_li": [
@@ -2426,7 +2564,10 @@
   "link_banca": "https://patis.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 13500.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 13.500,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-pedro-teixeira-mg-publica-edital-retificado-de-concurso-publico": {
   "cargos_li": [
@@ -2498,7 +2639,10 @@
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026",
    "EDITAL RETIFICADO - CONCURSO PÚBLICO Nº 001/2026",
    "RETIFICAÇÃO Nº 01"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 5494.76,
+  "faixa_salarial": "R$ 1.621,00 a R$ 5.494,76"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-piracema-mg-abre-concurso-e-processo-seletivo-com-diversas-vagas": {
   "cargos_li": [
@@ -2576,7 +2720,10 @@
   "arquivos_edital": [
    "EDITAL Nº 01/2026 - CONCURSO PÚBLICO",
    "EDITAL Nº 02/2026 - PROCESSO SELETIVO PÚBLICO"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 18647.01,
+  "faixa_salarial": "R$ 1.621,00 a R$ 18.647,01"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-firme-mg-abre-novo-concurso-publico-com-salarios-de-ate-3873": {
   "cargos_li": [
@@ -2593,7 +2740,10 @@
   "link_banca": "https://portofirme.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 1"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 3873.3,
+  "faixa_salarial": "R$ 1.621,00 a R$ 3.873,30"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-prata-mg-abre-selecao-para-cadastro-de-reserva-de-professores": {
   "cargos_li": [
@@ -2657,7 +2807,10 @@
   "link_banca": "https://www.santanadepirapama.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1593.53,
+  "salario_max": 6221.41,
+  "faixa_salarial": "R$ 1.593,53 a R$ 6.221,41"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-santana-dos-montes-mg-abre-concurso-publico-com-salarios-de-ate-20418": {
   "cargos_li": [
@@ -2715,7 +2868,10 @@
   "link_banca": "https://www.santanadosmontes.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 20418.44,
+  "faixa_salarial": "R$ 1.621,00 a R$ 20.418,44"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-del-rei-mg-abre-concurso-publico-com-salarios-de-ate-15164": {
   "cargos_li": [
@@ -2771,7 +2927,10 @@
   "link_banca": "https://www.saojoaodelrei.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 02/2026"
-  ]
+  ],
+  "salario_min": 1683.35,
+  "salario_max": 15164.56,
+  "faixa_salarial": "R$ 1.683,35 a R$ 15.164,56"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-del-rei-e-damae-mg-abrem-concursos-com-salarios-de-ate-6469": {
   "cargos_li": [
@@ -2807,7 +2966,10 @@
    "EDITAL Nº 03/2026",
    "EDITAL Nº 04/2026",
    "EDITAL Nº 05/2026 - DAMAE"
-  ]
+  ],
+  "salario_min": 1603.82,
+  "salario_max": 6469.28,
+  "faixa_salarial": "R$ 1.603,82 a R$ 6.469,28"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-pedro-da-uniao-mg-abre-concurso-publico-com-salarios-de-ate-17612": {
   "cargos_li": [
@@ -2850,7 +3012,10 @@
   "link_banca": "https://www.saopedrodauniao.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1655.4,
+  "salario_max": 17612.87,
+  "faixa_salarial": "R$ 1.655,40 a R$ 17.612,87"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-tomas-de-aquino-mg-abre-processo-seletivo-na-area-da-educacao": {
   "cargos_li": [
@@ -2867,7 +3032,10 @@
   "link_banca": "https://www.staquino.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO N. 003/2026"
-  ]
+  ],
+  "salario_min": 1800.69,
+  "salario_max": 3388.85,
+  "faixa_salarial": "R$ 1.800,69 a R$ 3.388,85"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-uberlandia-mg-abre-selecao-com-salarios-de-ate-4499": {
   "cargos_li": [
@@ -2886,7 +3054,10 @@
   "link_banca": "https://www.uberlandia.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 02/2026"
-  ]
+  ],
+  "salario_min": 2423.53,
+  "salario_max": 4499.97,
+  "faixa_salarial": "R$ 2.423,53 a R$ 4.499,97"
  },
  "https://www.pciconcursos.com.br/noticias/saae-itambacuri-mg-publica-edital-de-concurso-publico-com-seis-vagas-imediatas": {
   "cargos_li": [
@@ -2903,7 +3074,10 @@
   "link_banca": "https://www.saaedeitambacuri.com.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 1757.28,
+  "faixa_salarial": "R$ 1.621,00 a R$ 1.757,28"
  },
  "https://www.pciconcursos.com.br/noticias/saae-de-pirapora-mg-abre-concurso-publico-com-salarios-de-ate-4848": {
   "cargos_li": [
@@ -2924,7 +3098,10 @@
   "link_banca": "https://www.saaepirapora.com.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1877.07,
+  "salario_max": 4848.48,
+  "faixa_salarial": "R$ 1.877,07 a R$ 4.848,48"
  },
  "https://www.pciconcursos.com.br/noticias/santa-casa-de-misericordia-de-belo-horizonte-mg-abre-vagas-para-medicos-em-especializacao-e-fellowship": {
   "cargos_li": [
@@ -3048,7 +3225,10 @@
   "link_banca": "https://crecies.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 1"
-  ]
+  ],
+  "salario_min": 2341.23,
+  "salario_max": 8250.0,
+  "faixa_salarial": "R$ 2.341,23 a R$ 8.250,00"
  },
  "https://www.pciconcursos.com.br/noticias/hospital-evangelico-de-vila-velha-es-abre-selecao-para-residencia-e-especializacao-medica": {
   "cargos_li": [
@@ -3090,7 +3270,10 @@
   "link_banca": "https://www.mgs.srv.br/",
   "arquivos_edital": [
    "EDITAL MGS/ES Nº 06/2026"
-  ]
+  ],
+  "salario_min": 2279.72,
+  "salario_max": 4508.11,
+  "faixa_salarial": "R$ 2.279,72 a R$ 4.508,11"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-dores-do-rio-preto-es-abre-selecao-com-salarios-de-ate-17087": {
   "cargos_li": [
@@ -3144,7 +3327,10 @@
   "link_banca": "https://www.pmdrp.es.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 06/2026"
-  ]
+  ],
+  "salario_min": 1204.75,
+  "salario_max": 17087.37,
+  "faixa_salarial": "R$ 1.204,75 a R$ 17.087,37"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-iuna-e-santa-casa-es-abrem-processo-seletivo-para-diversos-cargos": {
   "cargos_li": [
@@ -3225,7 +3411,10 @@
   "link_banca": "https://www.novavenecia.es.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 030-2026"
-  ]
+  ],
+  "salario_min": 2152.32,
+  "salario_max": 3664.01,
+  "faixa_salarial": "R$ 2.152,32 a R$ 3.664,01"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-maria-de-jetiba-es-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva": {
   "cargos_li": [
@@ -3297,7 +3486,10 @@
   "link_banca": "https://portal.pmsmj.es.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 66/2026"
-  ]
+  ],
+  "salario_min": 1711.66,
+  "salario_max": 17375.97,
+  "faixa_salarial": "R$ 1.711,66 a R$ 17.375,97"
  },
  "https://www.pciconcursos.com.br/noticias/saae-de-iconha-es-abre-concurso-publico-com-salarios-de-ate-3236": {
   "cargos_li": [
@@ -3319,7 +3511,10 @@
   "link_banca": "https://www.saaeiconha.com.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO - Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1660.65,
+  "salario_max": 3236.14,
+  "faixa_salarial": "R$ 1.660,65 a R$ 3.236,14"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-curitiba-pr-retifica-concursos-publicos-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -3347,7 +3542,10 @@
    "EDITAL RETIFICADO Nº 5/2026",
    "EDITAL NORMATIVO Nº 6/2026",
    "EDITAL RETIFICADO Nº 6/2026"
-  ]
+  ],
+  "salario_min": 3027.73,
+  "salario_max": 14117.18,
+  "faixa_salarial": "R$ 3.027,73 a R$ 14.117,18"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-quatro-barras-pr-abre-concurso-publico-com-salarios-de-ate-5403": {
   "cargos_li": [
@@ -3366,7 +3564,10 @@
   "link_banca": "https://quatrobarras.pr.leg.br/",
   "arquivos_edital": [
    "EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 2236.01,
+  "salario_max": 5403.69,
+  "faixa_salarial": "R$ 2.236,01 a R$ 5.403,69"
  },
  "https://www.pciconcursos.com.br/noticias/municipio-e-camara-de-nova-prata-do-iguacu-pr-abrem-concursos-com-salarios-de-ate-12823": {
   "cargos_li": [
@@ -3403,7 +3604,10 @@
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO Nº 01/2026 - MUNICÍPIO",
    "EDITAL DE ABERTURA Nº 01/2026 CONCURSO PÚBLICO Nº 01/2026 - CÂMARA MUNICIPAL"
-  ]
+  ],
+  "salario_min": 1619.19,
+  "salario_max": 12823.98,
+  "faixa_salarial": "R$ 1.619,19 a R$ 12.823,98"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-apucarana-pr-abre-concurso-publico-com-salarios-de-ate-16381": {
   "cargos_li": [
@@ -3423,7 +3627,10 @@
   "link_banca": "https://www.apucarana.pr.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 54/2026 - CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 5415.55,
+  "salario_max": 16381.41,
+  "faixa_salarial": "R$ 5.415,55 a R$ 16.381,41"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-florestopolis-pr-abre-concurso-publico-com-salarios-de-ate-15389": {
   "cargos_li": [
@@ -3452,7 +3659,10 @@
   "link_banca": "https://www.florestopolis.pr.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 2117.0,
+  "salario_max": 15389.87,
+  "faixa_salarial": "R$ 2.117,00 a R$ 15.389,87"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-ivai-pr-abre-processo-seletivo-com-salarios-de-ate-4464": {
   "cargos_li": [
@@ -3475,7 +3685,10 @@
   "link_banca": "https://www.ivai.pr.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1911.69,
+  "salario_max": 4464.64,
+  "faixa_salarial": "R$ 1.911,69 a R$ 4.464,64"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-quedas-do-iguacu-pr-abre-concurso-publico-com-salarios-de-ate-11998": {
   "cargos_li": [
@@ -3510,7 +3723,10 @@
   "link_banca": "https://quedasdoiguacu.pr.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 030/2026 - CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1684.22,
+  "salario_max": 11998.88,
+  "faixa_salarial": "R$ 1.684,22 a R$ 11.998,88"
  },
  "https://www.pciconcursos.com.br/noticias/camara-e-municipio-de-siqueira-campos-pr-retificam-concursos-publicos": {
   "cargos_li": [
@@ -3577,7 +3793,10 @@
    "EDITAL DE ABERTURA Nº 001/2026 - CONCURSO PÚBLICO Nº 01/2026 - MUNICÍPIO",
    "RETIFICAÇÃO ANEXO II CONCURSO PÚBLICO Nº 01/2026 - CÂMARA",
    "RETIFICAÇÃO - CONCURSO PÚBLICO Nº 01/2026 - MUNICÍPIO"
-  ]
+  ],
+  "salario_min": 1913.66,
+  "salario_max": 16681.6,
+  "faixa_salarial": "R$ 1.913,66 a R$ 16.681,60"
  },
  "https://www.pciconcursos.com.br/noticias/uem-pr-abre-testes-seletivos-com-salarios-de-ate-7997": {
   "cargos_li": [
@@ -3596,7 +3815,10 @@
    "EDITAL Nº 388/2026",
    "EDITAL Nº 389/2026",
    "EDITAL Nº 391/2026"
-  ]
+  ],
+  "salario_min": 4443.18,
+  "salario_max": 7997.72,
+  "faixa_salarial": "R$ 4.443,18 a R$ 7.997,72"
  },
  "https://www.pciconcursos.com.br/noticias/uepg-pr-abre-selecao-para-agentes-universitarios": {
   "cargos_li": [
@@ -3665,7 +3887,10 @@
   "link_banca": "https://www.camvbage.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 1/2026"
-  ]
+  ],
+  "salario_min": 2203.64,
+  "salario_max": 3872.44,
+  "faixa_salarial": "R$ 2.203,64 a R$ 3.872,44"
  },
  "https://www.pciconcursos.com.br/noticias/hospital-de-clinicas-de-porto-alegre-rs-abre-selecoes-para-diversos-cargos": {
   "cargos_li": [
@@ -3688,7 +3913,10 @@
    "EDITAL Nº 03/2026",
    "EDITAL Nº 04/2026",
    "EDITAL Nº 05/2026"
-  ]
+  ],
+  "salario_min": 4536.19,
+  "salario_max": 9763.8,
+  "faixa_salarial": "R$ 4.536,19 a R$ 9.763,80"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-alvorada-rs-retifica-concurso-publico-com-salarios-de-ate-18974": {
   "cargos_li": [
@@ -3758,7 +3986,10 @@
    "EDITAL DE CONCURSO PÚBLICO 01/2026",
    "RETIFICAÇÃO",
    "EDITAL RETIFICADO 01/2026"
-  ]
+  ],
+  "salario_min": 1738.24,
+  "salario_max": 18974.55,
+  "faixa_salarial": "R$ 1.738,24 a R$ 18.974,55"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-barao-de-cotegipe-rs-altera-periodo-de-inscricoes-para-concurso-publico": {
   "cargos_li": [
@@ -3804,7 +4035,10 @@
   "arquivos_edital": [
    "EDITAL DO CONCURSO PÚBLICO Nº 001",
    "RETIFICAÇÃO - CRONOGRAMA DAS ATIVIDADES"
-  ]
+  ],
+  "salario_min": 1929.14,
+  "salario_max": 7499.45,
+  "faixa_salarial": "R$ 1.929,14 a R$ 7.499,45"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-colinas-rs-abre-concurso-publico-com-salarios-de-ate-15103": {
   "cargos_li": [
@@ -3861,7 +4095,10 @@
   "link_banca": "https://coqueirobaixo.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 019/2026 - CONCURSO PÚBLICO 01/2026"
-  ]
+  ],
+  "salario_min": 1839.46,
+  "salario_max": 3815.17,
+  "faixa_salarial": "R$ 1.839,46 a R$ 3.815,17"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-garibaldi-rs-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva": {
   "cargos_li": [
@@ -3888,7 +4125,10 @@
   "link_banca": "https://www.garibaldi.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2157.25,
+  "salario_max": 7823.79,
+  "faixa_salarial": "R$ 2.157,25 a R$ 7.823,79"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guapore-rs-abre-concurso-publico-para-formacao-de-cadastro-de-reserva": {
   "cargos_li": [
@@ -3908,7 +4148,10 @@
   "link_banca": "https://www.guapore.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL 1040/2026"
-  ]
+  ],
+  "salario_min": 1712.11,
+  "salario_max": 3404.76,
+  "faixa_salarial": "R$ 1.712,11 a R$ 3.404,76"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipe-rs-abre-concurso-publico-com-salarios-de-ate-20745": {
   "cargos_li": [
@@ -3969,7 +4212,10 @@
   "link_banca": "https://www.pmipe.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1623.53,
+  "salario_max": 20745.08,
+  "faixa_salarial": "R$ 1.623,53 a R$ 20.745,08"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapuca-rs-abre-concurso-publico-com-salarios-de-ate-9495": {
   "cargos_li": [
@@ -4011,7 +4257,10 @@
   "link_banca": "https://www.itapuca.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1881.01,
+  "salario_max": 9495.82,
+  "faixa_salarial": "R$ 1.881,01 a R$ 9.495,82"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-marata-rs-abre-concurso-publico-com-salarios-de-ate-10165": {
   "cargos_li": [
@@ -4052,7 +4301,10 @@
   "link_banca": "https://www.marata.rs.gov.br/site/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO 01/2026"
-  ]
+  ],
+  "salario_min": 2230.0,
+  "salario_max": 10165.0,
+  "faixa_salarial": "R$ 2.230,00 a R$ 10.165,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-montenegro-rs-abre-concurso-publico-com-salarios-de-ate-9848": {
   "cargos_li": [
@@ -4103,7 +4355,10 @@
   "link_banca": "https://www.montenegro.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 97/2026"
-  ]
+  ],
+  "salario_min": 2954.5,
+  "salario_max": 9848.34,
+  "faixa_salarial": "R$ 2.954,50 a R$ 9.848,34"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-bassano-rs-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -4142,7 +4397,10 @@
   "link_banca": "https://www.novabassano.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01"
-  ]
+  ],
+  "salario_min": 1744.37,
+  "salario_max": 5933.7,
+  "faixa_salarial": "R$ 1.744,37 a R$ 5.933,70"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-boa-vista-rs-abre-concurso-publico-com-salarios-de-ate-12039": {
   "cargos_li": [
@@ -4180,7 +4438,10 @@
   "link_banca": "https://novaboavista.rs.gov.br/pt_BR",
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 088/2026"
-  ]
+  ],
+  "salario_min": 2486.34,
+  "salario_max": 12039.12,
+  "faixa_salarial": "R$ 2.486,34 a R$ 12.039,12"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-cabrais-rs-abre-concurso-publico-com-salarios-de-ate-19089": {
   "cargos_li": [
@@ -4213,7 +4474,10 @@
   "link_banca": "https://www.novocabrais.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 01/202"
-  ]
+  ],
+  "salario_min": 2339.27,
+  "salario_max": 19089.94,
+  "faixa_salarial": "R$ 2.339,27 a R$ 19.089,94"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-panambi-rs-abre-concurso-publico-com-salarios-de-ate-5388": {
   "cargos_li": [
@@ -4248,7 +4512,10 @@
   "link_banca": "https://panambi.atende.net/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1907.34,
+  "salario_max": 5388.99,
+  "faixa_salarial": "R$ 1.907,34 a R$ 5.388,99"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-alegre-rs-abre-concurso-para-cargos-de-nivel-superior": {
   "cargos_li": [
@@ -4273,7 +4540,10 @@
   "link_banca": "https://prefeitura.poa.br/smap/concursos-em-andamento",
   "arquivos_edital": [
    "EDITAL DE ABERTURA 108/2026"
-  ]
+  ],
+  "salario_min": 2755.73,
+  "salario_max": 9135.44,
+  "faixa_salarial": "R$ 2.755,73 a R$ 9.135,44"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-alegre-rs-publica-concurso-publico-com-salarios-de-ate-9135": {
   "cargos_li": [
@@ -4301,7 +4571,10 @@
   "link_banca": "https://prefeitura.poa.br/smap",
   "arquivos_edital": [
    "EDITAL DE ABERTURA 112/2026"
-  ]
+  ],
+  "salario_min": 1641.29,
+  "salario_max": 9135.44,
+  "faixa_salarial": "R$ 1.641,29 a R$ 9.135,44"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-tio-hugo-rs-abre-concurso-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -4345,7 +4618,10 @@
   "link_banca": "https://tiohugo.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1947.5,
+  "salario_max": 11943.11,
+  "faixa_salarial": "R$ 1.947,50 a R$ 11.943,11"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-vicente-dutra-rs-abre-concurso-publico-com-salarios-de-ate-9089": {
   "cargos_li": [
@@ -4398,7 +4674,10 @@
   "link_banca": "https://www.vicentedutra.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1219.71,
+  "salario_max": 9089.82,
+  "faixa_salarial": "R$ 1.219,71 a R$ 9.089,82"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-capinzal-sc-anuncia-concurso-publico-para-cargos-de-nivel-superior": {
   "cargos_li": [
@@ -4415,7 +4694,10 @@
   "link_banca": "https://www.camaracapinzal.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 2000.0,
+  "salario_max": 4534.82,
+  "faixa_salarial": "R$ 2.000,00 a R$ 4.534,82"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-fraiburgo-sc-abre-concurso-publico-com-remuneracoes-de-ate-6747": {
   "cargos_li": [
@@ -4435,7 +4717,10 @@
   "link_banca": "https://www.camarafraiburgo.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL NO 01/2026"
-  ]
+  ],
+  "salario_min": 1493.97,
+  "salario_max": 6747.11,
+  "faixa_salarial": "R$ 1.493,97 a R$ 6.747,11"
  },
  "https://www.pciconcursos.com.br/noticias/cisamavi-sc-abre-concurso-publico-com-salarios-de-ate-10520": {
   "cargos_li": [
@@ -4459,7 +4744,10 @@
   "link_banca": "https://cisamavi.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2628.0,
+  "salario_max": 10520.99,
+  "faixa_salarial": "R$ 2.628,00 a R$ 10.520,99"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-corupa-sc-abre-concurso-com-salarios-de-ate-13778": {
   "cargos_li": [
@@ -4508,7 +4796,10 @@
   "link_banca": "https://corupa.atende.net/cidadao",
   "arquivos_edital": [
    "EDITAL 002/2026"
-  ]
+  ],
+  "salario_min": 2194.5,
+  "salario_max": 13778.5,
+  "faixa_salarial": "R$ 2.194,50 a R$ 13.778,50"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-agrolandia-sc-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva-em-diversas-areas": {
   "cargos_li": [
@@ -4547,7 +4838,10 @@
   "link_banca": "https://www.agrolandia.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL DO PROCESSO SELETIVO Nº 003"
-  ]
+  ],
+  "salario_min": 1834.13,
+  "salario_max": 4945.65,
+  "faixa_salarial": "R$ 1.834,13 a R$ 4.945,65"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-aguas-mornas-sc-abre-concurso-e-processo-seletivo-com-salarios-de-ate-10109": {
   "cargos_li": [
@@ -4583,7 +4877,10 @@
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026",
    "EDITAL DE PROCESSO SELETIVO Nº 002/2026"
-  ]
+  ],
+  "salario_min": 2007.14,
+  "salario_max": 10109.68,
+  "faixa_salarial": "R$ 2.007,14 a R$ 10.109,68"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-campos-novos-sc-publica-editais-de-concurso-publico-e-processo-seletivo": {
   "cargos_li": [
@@ -4624,7 +4921,10 @@
   "arquivos_edital": [
    "EDITAL Nº 001/2026 - CONCURSO PÚBLICO",
    "EDITAL Nº 001/2026 - PROCESSO SELETIVO"
-  ]
+  ],
+  "salario_min": 1338.01,
+  "salario_max": 5351.9,
+  "faixa_salarial": "R$ 1.338,01 a R$ 5.351,90"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-descanso-sc-abre-processos-seletivos-com-salarios-de-ate-21965": {
   "cargos_li": [
@@ -4672,7 +4972,10 @@
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 001/2026",
    "EDITAL DE PROCESSO SELETIVO Nº 002/2026"
-  ]
+  ],
+  "salario_min": 1859.84,
+  "salario_max": 21965.25,
+  "faixa_salarial": "R$ 1.859,84 a R$ 21.965,25"
  },
  "https://www.pciconcursos.com.br/noticias/municipio-de-fraiburgo-sc-abre-processo-seletivo-com-salarios-de-ate-5146": {
   "cargos_li": [
@@ -4710,7 +5013,10 @@
   "link_banca": "https://www.fraiburgo.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 0025/2026"
-  ]
+  ],
+  "salario_min": 1381.3,
+  "salario_max": 5146.31,
+  "faixa_salarial": "R$ 1.381,30 a R$ 5.146,31"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaramirim-sc-abre-processo-seletivo-com-salarios-de-ate-6522": {
   "cargos_li": [
@@ -4757,7 +5063,10 @@
   "link_banca": "https://guaramirim.atende.net/",
   "arquivos_edital": [
    "EDITAL 002/2026"
-  ]
+  ],
+  "salario_min": 2506.58,
+  "salario_max": 6522.86,
+  "faixa_salarial": "R$ 2.506,58 a R$ 6.522,86"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-ilhota-sc-publica-edital-de-concurso-publico-com-salarios-de-ate-21113": {
   "cargos_li": [
@@ -4816,7 +5125,10 @@
   "link_banca": "https://ilhota.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1838.02,
+  "salario_max": 21113.16,
+  "faixa_salarial": "R$ 1.838,02 a R$ 21.113,16"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-imbituba-sc-abre-concurso-publico-com-salarios-de-ate-4807": {
   "cargos_li": [
@@ -4834,7 +5146,10 @@
   "link_banca": "https://imbituba.atende.net/cidadao/pagina/editais",
   "arquivos_edital": [
    "EDITAL DO CONCURSO PÚBLICO 01/2026"
-  ]
+  ],
+  "salario_min": 2403.74,
+  "salario_max": 4807.49,
+  "faixa_salarial": "R$ 2.403,74 a R$ 4.807,49"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-imbuia-sc-abre-processo-seletivo-com-salarios-de-ate-7362": {
   "cargos_li": [
@@ -4938,7 +5253,10 @@
    "EDITAL DE PROCESSO SELETIVO Nº 014/2026",
    "EDITAL DE CONCURSO PÚBLICO Nº 015/2026",
    "EDITAL DE PROCESSO SELETIVO Nº 016/2026"
-  ]
+  ],
+  "salario_min": 2028.2,
+  "salario_max": 19265.8,
+  "faixa_salarial": "R$ 2.028,20 a R$ 19.265,80"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itajai-sc-abre-processo-seletivo-para-cadastro-de-reserva-na-educacao": {
   "cargos_li": [
@@ -4976,7 +5294,10 @@
   "link_banca": "https://itajai.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 076/2026"
-  ]
+  ],
+  "salario_min": 1659.32,
+  "salario_max": 6637.29,
+  "faixa_salarial": "R$ 1.659,32 a R$ 6.637,29"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapema-sc-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -5012,7 +5333,10 @@
   "link_banca": "https://www.itapema.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 010/2026"
-  ]
+  ],
+  "salario_min": 2068.67,
+  "salario_max": 9603.43,
+  "faixa_salarial": "R$ 2.068,67 a R$ 9.603,43"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lages-sc-abre-selecao-para-diversos-cargos-na-secretaria-da-saude": {
   "cargos_li": [
@@ -5039,7 +5363,10 @@
   "link_banca": "https://www.lages.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL NO 003/2026"
-  ]
+  ],
+  "salario_min": 1877.64,
+  "salario_max": 5883.29,
+  "faixa_salarial": "R$ 1.877,64 a R$ 5.883,29"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lontras-sc-abre-processo-seletivo-com-salarios-de-ate-8105": {
   "cargos_li": [
@@ -5073,7 +5400,10 @@
   "link_banca": "https://lontras.atende.net/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026 - PROCESSO SELETIVO Nº 07/2026"
-  ]
+  ],
+  "salario_min": 1664.7,
+  "salario_max": 8105.36,
+  "faixa_salarial": "R$ 1.664,70 a R$ 8.105,36"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-maravilha-sc-retifica-concurso-com-salarios-de-ate-15748": {
   "cargos_li": [
@@ -5110,7 +5440,10 @@
   "arquivos_edital": [
    "EDITAL Nº 001/2026",
    "ERRATA Nº 01"
-  ]
+  ],
+  "salario_min": 2080.0,
+  "salario_max": 15748.2,
+  "faixa_salarial": "R$ 2.080,00 a R$ 15.748,20"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-marema-sc-abre-concurso-com-salarios-de-ate-8976": {
   "cargos_li": [
@@ -5165,7 +5498,10 @@
   "link_banca": "https://www.novohorizonte.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL PROCESSO SELETIVO SIMPLIFICADO Nº 03/2026"
-  ]
+  ],
+  "salario_min": 1851.1,
+  "salario_max": 6201.33,
+  "faixa_salarial": "R$ 1.851,10 a R$ 6.201,33"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-uniao-sc-abre-processo-seletivo-na-area-da-educacao": {
   "cargos_li": [
@@ -5193,7 +5529,10 @@
   "link_banca": "https://www.portouniao.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1282.66,
+  "salario_max": 5130.63,
+  "faixa_salarial": "R$ 1.282,66 a R$ 5.130,63"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-negrinho-sc-e-orgaos-municipais-abrem-novos-concursos-publicos": {
   "cargos_li": [
@@ -5283,7 +5622,10 @@
    "IPRERIO CONCURSO PÚBLICO 001/2026",
    "SAMAE CONCURSO PÚBLICO 001/2026",
    "MUNICÍPIO DE RIO NEGRINHO CONCURSO PÚBLICO 001/2026"
-  ]
+  ],
+  "salario_min": 1665.72,
+  "salario_max": 18538.78,
+  "faixa_salarial": "R$ 1.665,72 a R$ 18.538,78"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-rodeio-sc-abre-processos-seletivos-para-diversos-cargos": {
   "cargos_li": [
@@ -5328,7 +5670,10 @@
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 14/2026",
    "EDITAL DE PROCESSO SELETIVO Nº 15/2026"
-  ]
+  ],
+  "salario_min": 959.23,
+  "salario_max": 4299.34,
+  "faixa_salarial": "R$ 959,23 a R$ 4.299,34"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-saltinho-sc-abre-concurso-publico-com-salarios-de-ate-5022": {
   "cargos_li": [
@@ -5355,7 +5700,10 @@
   "link_banca": "https://saltinho.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1179.59,
+  "salario_max": 5022.81,
+  "faixa_salarial": "R$ 1.179,59 a R$ 5.022,81"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-domingos-sc-abre-concurso-publico-com-salarios-de-ate-7949": {
   "cargos_li": [
@@ -5393,7 +5741,10 @@
   "link_banca": "https://saodomingos.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1758.23,
+  "salario_max": 7949.24,
+  "faixa_salarial": "R$ 1.758,23 a R$ 7.949,24"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-domingos-sc-abre-processo-seletivo-para-cadastro-de-reserva": {
   "cargos_li": [
@@ -5418,7 +5769,10 @@
   "link_banca": "https://saodomingos.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL DO PROCESSO SELETIVO SIMPLIFICADO Nº 002"
-  ]
+  ],
+  "salario_min": 1338.63,
+  "salario_max": 5354.54,
+  "faixa_salarial": "R$ 1.338,63 a R$ 5.354,54"
  },
  "https://www.pciconcursos.com.br/noticias/municipio-de-sao-joao-batista-sc-abre-processos-seletivos-para-diversos-cargos": {
   "cargos_li": [
@@ -5561,7 +5915,10 @@
   "link_banca": "https://www.pmspa.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1886.7,
+  "salario_max": 5545.75,
+  "faixa_salarial": "R$ 1.886,70 a R$ 5.545,75"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-serra-alta-sc-retifica-concurso-com-salarios-de-ate-9903": {
   "cargos_li": [
@@ -5599,7 +5956,10 @@
   "arquivos_edital": [
    "EDITAL Nº 01/2026",
    "ERRATA 01"
-  ]
+  ],
+  "salario_min": 2225.92,
+  "salario_max": 9903.4,
+  "faixa_salarial": "R$ 2.225,92 a R$ 9.903,40"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-urussanga-sc-abre-processo-seletivo-com-salarios-de-ate-23930": {
   "cargos_li": [
@@ -5669,7 +6029,10 @@
   "link_banca": "https://portal.sctreinamentos.selecao.site/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1800.0,
+  "salario_max": 23930.19,
+  "faixa_salarial": "R$ 1.800,00 a R$ 23.930,19"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-witmarsum-sc-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos": {
   "cargos_li": [
@@ -5697,7 +6060,10 @@
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 02/2026",
    "EDITAL DE CONCURSO PÚBLICO Nº 02/2026"
-  ]
+  ],
+  "salario_min": 1530.82,
+  "salario_max": 5201.63,
+  "faixa_salarial": "R$ 1.530,82 a R$ 5.201,63"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-zortea-sc-abre-processo-seletivo-com-salarios-de-ate-5399": {
   "cargos_li": [
@@ -5730,7 +6096,10 @@
   "link_banca": "https://zortea.atende.net/cidadao",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 25/2026"
-  ]
+  ],
+  "salario_min": 1653.76,
+  "salario_max": 5399.28,
+  "faixa_salarial": "R$ 1.653,76 a R$ 5.399,28"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-benedito-novo-sc-abrem-concursos-e-processos-seletivos-com-diversas-vagas": {
   "cargos_li": [
@@ -5787,7 +6156,10 @@
    "EDITAL DE CONCURSO PÚBLICO Nº 02/2026 - PREFEITURA MUNICIPAL",
    "EDITAL DE PROCESSO SELETIVO PÚBLICO Nº 02/2026 - PREFEITURA MUNICIPAL",
    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026 - CÂMARA MUNICIPAL"
-  ]
+  ],
+  "salario_min": 1000.0,
+  "salario_max": 20171.87,
+  "faixa_salarial": "R$ 1.000,00 a R$ 20.171,87"
  },
  "https://www.pciconcursos.com.br/noticias/hospital-santa-lucia-abre-vagas-para-residencia-medica-em-diversas-especialidades": {
   "cargos_li": [
@@ -5854,7 +6226,10 @@
   "link_banca": "https://aparecida.go.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2825.11,
+  "salario_max": 4508.28,
+  "faixa_salarial": "R$ 2.825,11 a R$ 4.508,28"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-pires-do-rio-go-retifica-edital-de-concurso-publico": {
   "cargos_li": [
@@ -5875,7 +6250,10 @@
    "EDITAL DE ABERTURA Nº 01/2026",
    "EDITAL RETIFICADO Nº 01/2026",
    "EDITAL COMPLEMENTAR Nº 1 - REFERENTE AO EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2000.0,
+  "salario_max": 6523.44,
+  "faixa_salarial": "R$ 2.000,00 a R$ 6.523,44"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-vila-boa-go-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -5893,7 +6271,10 @@
   "link_banca": "https://www.vilaboa.go.leg.br/",
   "arquivos_edital": [
    "EDITAL 01"
-  ]
+  ],
+  "salario_min": 1772.14,
+  "salario_max": 3674.71,
+  "faixa_salarial": "R$ 1.772,14 a R$ 3.674,71"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-aurora-go-abre-concurso-publico-com-vagas-de-ate-3737": {
   "cargos_li": [
@@ -5910,7 +6291,10 @@
   "link_banca": "https://www.novaaurora.go.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2431.6,
+  "salario_max": 3737.65,
+  "faixa_salarial": "R$ 2.431,60 a R$ 3.737,65"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-luis-de-montes-belos-go-abre-concurso-publico-com-salarios-de-ate-5559": {
   "cargos_li": [
@@ -5940,7 +6324,10 @@
   "link_banca": "https://www.saoluisdemontesbelos.go.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1557.05,
+  "salario_max": 5559.33,
+  "faixa_salarial": "R$ 1.557,05 a R$ 5.559,33"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-uirapuru-go-abre-concurso-publico-com-salarios-de-ate-4428": {
   "cargos_li": [
@@ -5969,7 +6356,10 @@
   "link_banca": "https://uirapuru.go.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4428.13,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.428,13"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-aral-moreira-ms-abre-concurso-publico-para-diversos-niveis-de-escolaridade": {
   "cargos_li": [
@@ -6026,7 +6416,10 @@
   "link_banca": "https://www.aralmoreira.ms.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1841.4,
+  "salario_max": 4318.18,
+  "faixa_salarial": "R$ 1.841,40 a R$ 4.318,18"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-alvorada-do-sul-ms-abre-selecao-para-a-secretaria-de-educacao": {
   "cargos_li": [
@@ -6063,7 +6456,10 @@
   "link_banca": "https://www.novaalvoradadosul.ms.gov.br/home",
   "arquivos_edital": [
    "EDITAL Nº 004/2026"
-  ]
+  ],
+  "salario_min": 1861.93,
+  "salario_max": 3592.11,
+  "faixa_salarial": "R$ 1.861,93 a R$ 3.592,11"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-alta-taquari-mt-abre-processo-seletivo-para-cadastro-de-reserva": {
   "cargos_li": [
@@ -6087,7 +6483,10 @@
   "link_banca": "https://www.altotaquari.mt.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2169.69,
+  "salario_max": 5588.75,
+  "faixa_salarial": "R$ 2.169,69 a R$ 5.588,75"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-juina-mt-abre-processo-seletivo-com-diversas-vagas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -6133,7 +6532,10 @@
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 003/2026",
    "RETIFICAÇÃO DO EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 003/2026"
-  ]
+  ],
+  "salario_min": 1688.62,
+  "salario_max": 5483.26,
+  "faixa_salarial": "R$ 1.688,62 a R$ 5.483,26"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nobres-mt-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva": {
   "cargos_li": [
@@ -6155,7 +6557,10 @@
   "link_banca": "https://www.nobres.mt.gov.br/",
   "arquivos_edital": [
    "NOBRES 1 PS"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 6397.65,
+  "faixa_salarial": "R$ 1.621,00 a R$ 6.397,65"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-horizonte-do-norte-mt-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -6201,7 +6606,10 @@
   "link_banca": "https://www.novohorizontedonorte.mt.gov.br/home",
   "arquivos_edital": [
    "EDITAL DO PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1690.05,
+  "salario_max": 5709.69,
+  "faixa_salarial": "R$ 1.690,05 a R$ 5.709,69"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-mundo-mt-abre-processo-seletivo-com-salarios-de-ate-7342": {
   "cargos_li": [
@@ -6346,7 +6754,10 @@
   "arquivos_edital": [
    "EDITAL DO CONCURSO PÚBLICO Nº 001/2026",
    "EDITAL DO CONCURSO PÚBLICO Nº 002/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 7256.6,
+  "faixa_salarial": "R$ 1.621,00 a R$ 7.256,60"
  },
  "https://www.pciconcursos.com.br/noticias/ufba-ba-publica-retificacoes-de-concurso-publico-para-tecnicos-administrativos-em-educacao": {
   "cargos_li": [
@@ -6388,7 +6799,10 @@
    "1º TERMO DE RETIFICAÇÃO DO EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 007/2026",
    "2º TERMO DE RETIFICAÇÃO DO EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 007/2026",
    "3º TERMO DE RETIFICAÇÃO DO EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 007/2026"
-  ]
+  ],
+  "salario_min": 3181.39,
+  "salario_max": 5215.39,
+  "faixa_salarial": "R$ 3.181,39 a R$ 5.215,39"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-ourolandia-ba-publica-edital-de-concurso-publico-para-diversos-cargos": {
   "cargos_li": [
@@ -6410,7 +6824,10 @@
   "link_banca": "https://www.camaradeourolandia.ba.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1800.0,
+  "salario_max": 2300.0,
+  "faixa_salarial": "R$ 1.800,00 a R$ 2.300,00"
  },
  "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-2-distrito-naval-abre-selecao-para-oficiais-temporarios-rm2-na-bahia": {
   "cargos_li": [
@@ -6472,7 +6889,10 @@
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 001/2026",
    "RETIFICAÇÃO - CRONOGRAMA"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4690.16,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.690,16"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-firmino-alves-ba-abre-concurso-publico-com-salarios-de-ate-4867": {
   "cargos_li": [
@@ -6510,7 +6930,10 @@
   "link_banca": "https://www.firminoalves.ba.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4867.77,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.867,77"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-firmino-alves-ba-abre-selecao-com-salarios-de-ate-8000": {
   "cargos_li": [
@@ -6539,7 +6962,10 @@
   "link_banca": "https://www.firminoalves.ba.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1800.0,
+  "salario_max": 8000.0,
+  "faixa_salarial": "R$ 1.800,00 a R$ 8.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-real-ba-retifica-editais-de-concursos-e-de-processo-seletivo": {
   "cargos_li": [
@@ -6578,7 +7004,10 @@
    "RETIFICAÇÃO Nº 001/2026 - CONCURSO PÚBLICO - EDITAL Nº 001/2026",
    "RETIFICAÇÃO Nº 001/2026 - CONCURSO PÚBLICO - EDITAL Nº 002/2026",
    "RETIFICAÇÃO Nº 001/2026 - PROCESSO SELETIVO PÚBLICO - EDITAL Nº 003/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4430.06,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.430,06"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-ubajara-ce-publica-retificacao-de-concurso-publico": {
   "cargos_li": [
@@ -6608,7 +7037,10 @@
   "arquivos_edital": [
    "EDITAL DO CONCURSO PÚBLICO Nº 001/2026",
    "ADITIVO Nº 01/2026 AO EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 3242.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-sao-benedito-ce-abre-concurso-publico-para-niveis-fundamental-e-medio": {
   "cargos_li": [
@@ -6626,7 +7058,10 @@
   "link_banca": "https://www.fundacaocetrede.ufc.br/",
   "arquivos_edital": [
    "EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 2000.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 2.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-aracati-ce-abre-concurso-publico-com-salarios-de-ate-5431": {
   "cargos_li": [
@@ -6655,7 +7090,10 @@
   "link_banca": "https://aracati.ce.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 02"
-  ]
+  ],
+  "salario_min": 1518.0,
+  "salario_max": 5431.0,
+  "faixa_salarial": "R$ 1.518,00 a R$ 5.431,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itarema-ce-abre-concurso-publico-com-salarios-de-ate-5622": {
   "cargos_li": [
@@ -6725,7 +7163,10 @@
   "link_banca": "https://www.itarema.ce.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 5622.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 5.622,00"
  },
  "https://www.pciconcursos.com.br/noticias/ufc-ce-abre-concurso-com-vagas-para-professores-de-ensino-basico-tecnico-e-tecnologico": {
   "cargos_li": [
@@ -6815,7 +7256,10 @@
   "arquivos_edital": [
    "EDITAL DO CONCURSO PÚBLICO Nº 001",
    "EDITAL DO CONCURSO PÚBLICO Nº 003"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 6500.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 6.500,00"
  },
  "https://www.pciconcursos.com.br/noticias/dpe-pb-abre-concurso-publico-com-salarios-de-ate-5197": {
   "cargos_li": [
@@ -6854,7 +7298,10 @@
   "link_banca": "https://cmguarabira.pb.gov.br/",
   "arquivos_edital": [
    "EDITAL NORMATIVO DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1696.99,
+  "salario_max": 3354.7,
+  "faixa_salarial": "R$ 1.696,99 a R$ 3.354,70"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-agua-branca-pb-republica-editais-de-concursos-publicos": {
   "cargos_li": [
@@ -6881,7 +7328,10 @@
    "EDITAL REPUBLICADO Nº 001/2026",
    "EDITAL REPUBLICADO Nº 002/2026",
    "EDITAL DE RETIFICAÇÃO - CONCURSO PÚBLICO Nº 002/2026 (GUARDA CIVIL MUNICIPAL-GCM)"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 3242.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-conceicao-pb-reabre-inscricoes-para-concurso-publico": {
   "cargos_li": [
@@ -6955,7 +7405,10 @@
    "EDITAL RETIFICADO Nº 01/2026",
    "SUSPENSÃO",
    "REABERTURA DAS INSCRIÇÃO"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 7000.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 7.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapororoca-pb-abre-concurso-com-salarios-de-ate-10000": {
   "cargos_li": [
@@ -7014,7 +7467,10 @@
   "link_banca": "https://www.itapororoca.pb.gov.br/",
   "arquivos_edital": [
    "EDITAL 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 10000.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 10.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-do-sabugi-pb-abre-concurso-para-diversos-cargos": {
   "cargos_li": [
@@ -7056,7 +7512,10 @@
   "link_banca": "https://saojosedosabugi.pb.gov.br/",
   "arquivos_edital": [
    "EDITAL 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 3847.97,
+  "faixa_salarial": "R$ 1.621,00 a R$ 3.847,97"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-serra-grande-pb-abre-concurso-publico-com-vagas-para-diversos-cargos": {
   "cargos_li": [
@@ -7093,7 +7552,10 @@
   "link_banca": "https://serragrande.pb.gov.br/",
   "arquivos_edital": [
    "EDITAL NORMATIVO DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 3651.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 3.651,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-ferreiros-pe-abre-concurso-publico-com-vagas-para-diversas-areas": {
   "cargos_li": [
@@ -7126,7 +7588,10 @@
   "link_banca": "https://ferreiros.pe.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4179.47,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.179,47"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-goiana-pe-retifica-edital-de-selecao-publica": {
   "cargos_li": [
@@ -7166,7 +7631,10 @@
   "arquivos_edital": [
    "EDITAL Nº 002/2026",
    "EDITAL RETIFICADO Nº 002/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 8926.43,
+  "faixa_salarial": "R$ 1.621,00 a R$ 8.926,43"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-trindade-pe-divulga-retificacao-em-concurso-com-vagas-para-diversos-niveis": {
   "cargos_li": [
@@ -7251,7 +7719,10 @@
   "link_banca": "https://dominocencio.pi.leg.br/",
   "arquivos_edital": [
    "CAM DOM INOCENCIO 1 CP"
-  ]
+  ],
+  "salario_min": 2000.0,
+  "salario_max": 6000.0,
+  "faixa_salarial": "R$ 2.000,00 a R$ 6.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-canto-do-buriti-pi-abre-concurso-publico-com-salarios-de-ate-16210": {
   "cargos_li": [
@@ -7311,7 +7782,10 @@
   "link_banca": "https://cantodoburiti.pi.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO MUNICIPAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 16210.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 16.210,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cristalandia-do-piaui-pi-abre-concurso-publico-para-diversos-cargos": {
   "cargos_li": [
@@ -7348,7 +7822,10 @@
   "link_banca": "https://cristalandia.pi.gov.br/cristalandia/portalnoticias",
   "arquivos_edital": [
    "EDITAL Nº 1/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4750.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.750,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-francisco-macedo-pi-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -7396,7 +7873,10 @@
   "link_banca": "https://franciscomacedo.pi.gov.br/",
   "arquivos_edital": [
    "EDITAL - FRANCISCO MACEDO 1 CP"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4318.18,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.318,18"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-monsenhor-gil-pi-abre-concurso-publico-com-salarios-de-ate-8000": {
   "cargos_li": [
@@ -7439,7 +7919,10 @@
   "link_banca": "https://monsenhorgil.pi.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 8000.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 8.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-da-varjota-pi-abre-concurso-publico-para-diversos-cargos": {
   "cargos_li": [
@@ -7486,7 +7969,10 @@
   "link_banca": "https://www.saojoaodavarjota.pi.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 1/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 7200.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 7.200,00"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-mossoro-rn-abre-concurso-publico-com-salarios-de-ate-8810": {
   "cargos_li": [
@@ -7509,7 +7995,10 @@
   "arquivos_edital": [
    "EDITAL Nº 001/2026",
    "EDITAL COMPLETO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 4921.08,
+  "salario_max": 8810.69,
+  "faixa_salarial": "R$ 4.921,08 a R$ 8.810,69"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-santana-do-serido-rn-abre-concurso-publico-com-quatro-vagas-imediatas": {
   "cargos_li": [
@@ -7546,7 +8035,10 @@
   "link_banca": "https://www.tibaudosul.rn.leg.br/",
   "arquivos_edital": [
    "EDITAL 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 3000.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 3.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-acari-rn-abre-concurso-publico-com-salarios-de-ate-3847": {
   "cargos_li": [
@@ -7567,7 +8059,10 @@
   "link_banca": "https://acari.rn.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 005/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 3847.97,
+  "faixa_salarial": "R$ 1.621,00 a R$ 3.847,97"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-jucurutu-rn-publica-edital-de-concurso-com-salarios-de-ate-4867": {
   "cargos_li": [
@@ -7623,7 +8118,10 @@
   "link_banca": "https://www.jucurutu.rn.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 006/2026"
-  ]
+  ],
+  "salario_min": 1713.23,
+  "salario_max": 4867.69,
+  "faixa_salarial": "R$ 1.713,23 a R$ 4.867,69"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-marcelino-vieira-rn-abre-processo-seletivo-com-salarios-de-ate-13266": {
   "cargos_li": [
@@ -7675,7 +8173,10 @@
   "link_banca": "https://www.marcelinovieira.rn.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 13266.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 13.266,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-fernando-rn-retifica-edital-de-concurso-publico-com-salarios-de-ate-4101": {
   "cargos_li": [
@@ -7699,7 +8200,10 @@
   "arquivos_edital": [
    "EDITAL Nº 008/2026",
    "EDITAL RETIFICADO Nº 008/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4101.05,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.101,05"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-timbauba-dos-batistas-rn-abre-concurso-publico-para-professores": {
   "cargos_li": [
@@ -7758,7 +8262,10 @@
   "link_banca": "https://www.manaquiri.am.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4040.6,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.040,60"
  },
  "https://www.pciconcursos.com.br/noticias/governo-do-estado-do-amapa-ap-prorroga-inscricoes-para-concurso-publico": {
   "cargos_li": [
@@ -7897,7 +8404,10 @@
    "TERCEIRO TERMO DE RETIFICAÇÃO DO EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 001/2026",
    "COMUNICADO OFICIAL - SOLICITAÇÃO DE DEVOLUÇÃO DA TAXA",
    "QUARTO TERMO DE RETIFICAÇÃO DO EDITAL DE ABERTURA DO CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 3363.43,
+  "salario_max": 11116.42,
+  "faixa_salarial": "R$ 3.363,43 a R$ 11.116,42"
  },
  "https://www.pciconcursos.com.br/noticias/ifap-abre-concurso-para-cargos-de-tecnico-administrativo-em-educacao": {
   "cargos_li": [
@@ -7920,7 +8430,10 @@
   "link_banca": "https://www.ifap.edu.br/",
   "arquivos_edital": [
    "EDITAL Nº 2"
-  ]
+  ],
+  "salario_min": 3181.39,
+  "salario_max": 5215.39,
+  "faixa_salarial": "R$ 3.181,39 a R$ 5.215,39"
  },
  "https://www.pciconcursos.com.br/noticias/sead-ap-abre-concursos-para-assistentes-administrativos-e-analistas": {
   "cargos_li": [
@@ -7979,7 +8492,10 @@
    "EDITAL DE RETIFICAÇÃO Nº 002/2026 - CONCURSO PÚBLICO Nº 002/2026",
    "EDITAL DE RETIFICAÇÃO Nº 003/2026 - CONCURSO PÚBLICO Nº 002/2026",
    "EDITAL DE RETIFICAÇÃO Nº 002/2026 - CONCURSO PÚBLICO Nº 003/2026"
-  ]
+  ],
+  "salario_min": 2295.22,
+  "salario_max": 3697.73,
+  "faixa_salarial": "R$ 2.295,22 a R$ 3.697,73"
  },
  "https://www.pciconcursos.com.br/noticias/ifpa-abre-concurso-publico-para-cargos-tecnico-administrativos-em-educacao": {
   "cargos_li": [
@@ -8013,7 +8529,10 @@
   "arquivos_edital": [
    "EDITAL DE ABERTURA 05/2026",
    "EDITAL DE ABERTURA 05/2026 COMPLETO"
-  ]
+  ],
+  "salario_min": 2607.7,
+  "salario_max": 5215.39,
+  "faixa_salarial": "R$ 2.607,70 a R$ 5.215,39"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-bujaru-pa-abre-concurso-publico-com-salarios-de-ate-4543": {
   "cargos_li": [
@@ -8040,7 +8559,10 @@
   "link_banca": "https://bujaru.pa.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4543.83,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.543,83"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-velho-ro-retifica-concurso-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -8123,7 +8645,10 @@
    "EDITAL Nº 25/2026",
    "EDITAL RETIFICADO Nº 25/2026",
    "RETIFICAÇÃO Nº 01"
-  ]
+  ],
+  "salario_min": 1287.57,
+  "salario_max": 9828.19,
+  "faixa_salarial": "R$ 1.287,57 a R$ 9.828,19"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-candeias-do-jamari-ro-prorroga-inscricoes-para-concurso-publico": {
   "cargos_li": [
@@ -8152,7 +8677,10 @@
    "EDITAL Nº 01/2026",
    "RETIFICAÇÃO Nº 01",
    "RETIFICAÇÃO - CRONOGRAMA PRELIMINAR"
-  ]
+  ],
+  "salario_min": 1550.0,
+  "salario_max": 3500.0,
+  "faixa_salarial": "R$ 1.550,00 a R$ 3.500,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-velho-ro-retifica-concurso-com-vagas-para-a-educacao": {
   "cargos_li": [
@@ -8189,7 +8717,10 @@
   "link_banca": "https://www.cauto.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 1"
-  ]
+  ],
+  "salario_min": 2764.27,
+  "salario_max": 9726.0,
+  "faixa_salarial": "R$ 2.764,27 a R$ 9.726,00"
  },
  "https://www.pciconcursos.com.br/noticias/comando-do-1-distrito-naval-rj-mg-abre-vagas-para-oficiais-temporarios-de-nivel-superior": {
   "cargos_li": [
@@ -8332,7 +8863,10 @@
    "EDITAL Nº 1/2026 - CREF 25ª REGIÃO AP",
    "EDITAL Nº 1/2026 - CREF 26ª REGIÃO AC",
    "EDITAL Nº 1/2026 - CREF 27ª REGIÃO RR"
-  ]
+  ],
+  "salario_min": 2100.0,
+  "salario_max": 3700.0,
+  "faixa_salarial": "R$ 2.100,00 a R$ 3.700,00"
  },
  "https://www.pciconcursos.com.br/noticias/inb-abre-concurso-publico-para-cadastro-de-reserva-em-diversas-areas-de-atuacao": {
   "cargos_li": [
@@ -8400,7 +8934,10 @@
   "link_banca": "https://www.inb.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 3452.0,
+  "salario_max": 8374.0,
+  "faixa_salarial": "R$ 3.452,00 a R$ 8.374,00"
  },
  "https://www.pciconcursos.com.br/noticias/marinha-do-brasil-3-distrito-naval-abre-vagas-para-oficiais-temporarios": {
   "cargos_li": [
@@ -8561,7 +9098,10 @@
   "link_banca": "https://www.mgs.srv.br/",
   "arquivos_edital": [
    "EDITAL MGS Nº 05/2026"
-  ]
+  ],
+  "salario_min": 1185.69,
+  "salario_max": 3911.17,
+  "faixa_salarial": "R$ 1.185,69 a R$ 3.911,17"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-onca-de-pitangui-mg-abre-processo-seletivo-com-salarios-de-ate-14829": {
   "cargos_li": [
@@ -8584,7 +9124,10 @@
   "link_banca": "https://www.oncadopitangui.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2272.38,
+  "salario_max": 14829.31,
+  "faixa_salarial": "R$ 2.272,38 a R$ 14.829,31"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-vicente-de-minas-mg-retifica-edital-de-concurso-publico": {
   "cargos_li": [
@@ -8634,7 +9177,10 @@
    "EDITAL Nº 01/2026",
    "RETIFICAÇÃO I AO EDITAL Nº 1/2026",
    "EDITAL RETIFICADO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 15142.28,
+  "faixa_salarial": "R$ 1.621,00 a R$ 15.142,28"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-bom-retiro-do-sul-rs-abre-processo-seletivo-com-salarios-de-ate-4433": {
   "cargos_li": [
@@ -8668,7 +9214,10 @@
   "link_banca": "https://bomretirodosul.rs.gov.br/portal/rh",
   "arquivos_edital": [
    "EDITAL Nº 062/2026"
-  ]
+  ],
+  "salario_min": 1639.57,
+  "salario_max": 4433.75,
+  "faixa_salarial": "R$ 1.639,57 a R$ 4.433,75"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-luiz-alves-sc-abre-concurso-publico-com-salarios-de-ate-8889": {
   "cargos_li": [
@@ -8740,7 +9289,10 @@
   "link_banca": "https://luizalves.atende.net/cidadao/pagina/concursos-publicos-e-processos-seletivos",
   "arquivos_edital": [
    "EDITAL Nº 08/2026"
-  ]
+  ],
+  "salario_min": 1341.41,
+  "salario_max": 8889.3,
+  "faixa_salarial": "R$ 1.341,41 a R$ 8.889,30"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-joca-marques-pi-abre-concurso-publico-com-oito-vagas-imediatas": {
   "cargos_li": [
@@ -8760,7 +9312,10 @@
   "link_banca": "https://jocamarques.pi.leg.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 3800.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 3.800,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-do-piaui-pi-abre-processos-seletivos-com-salarios-de-ate-16800": {
   "cargos_li": [
@@ -8856,7 +9411,10 @@
   "arquivos_edital": [
    "EDITAL Nº 003/2026",
    "EDITAL Nº 004/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 16800.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 16.800,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-xavantina-mt-abre-processo-seletivo-com-vagas-na-educacao": {
   "cargos_li": [
@@ -8877,7 +9435,10 @@
   "link_banca": "https://www.novaxavantina.mt.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO 002/2026"
-  ]
+  ],
+  "salario_min": 1753.1,
+  "salario_max": 5786.28,
+  "faixa_salarial": "R$ 1.753,10 a R$ 5.786,28"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-rita-de-jacutinga-mg-abre-concurso-publico-com-salarios-de-ate-10207": {
   "cargos_li": [
@@ -8926,7 +9487,10 @@
   "link_banca": "https://www.srjacutinga.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 10207.61,
+  "faixa_salarial": "R$ 1.621,00 a R$ 10.207,61"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-francisco-beltrao-pr-abre-processo-seletivo-para-diversos-cargos": {
   "cargos_li": [
@@ -8979,7 +9543,10 @@
   "link_banca": "https://franciscobeltrao.pr.gov.br/concursos/",
   "arquivos_edital": [
    "EDITAL Nº 415"
-  ]
+  ],
+  "salario_min": 1687.36,
+  "salario_max": 6749.53,
+  "faixa_salarial": "R$ 1.687,36 a R$ 6.749,53"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-bom-jesus-sc-abre-processo-seletivo-com-salarios-de-ate-4695": {
   "cargos_li": [
@@ -9008,7 +9575,10 @@
   "link_banca": "https://bomjesus.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1824.9,
+  "salario_max": 4695.35,
+  "faixa_salarial": "R$ 1.824,90 a R$ 4.695,35"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapiranga-sc-divulga-editais-de-concursos-publicos-e-processo-seletivo": {
   "cargos_li": [
@@ -9031,7 +9601,10 @@
    "EDITAL DE CONCURSO PÚBLICO Nº 006/2026",
    "EDITAL DE CONCURSO PÚBLICO PARA EMPREGO PÚBLICO Nº 007/2026",
    "EDITAL DE PROCESSO SELETIVO Nº 008/2026"
-  ]
+  ],
+  "salario_min": 2653.89,
+  "salario_max": 4992.82,
+  "faixa_salarial": "R$ 2.653,89 a R$ 4.992,82"
  },
  "https://www.pciconcursos.com.br/noticias/samasa-de-tres-barras-sc-abre-concurso-publico-com-salarios-de-ate-9500": {
   "cargos_li": [
@@ -9051,7 +9624,10 @@
   "link_banca": "https://samasa.com.br/",
   "arquivos_edital": [
    "EDITAL RETIFICADO E CONSOLIDADO Nº 005/2026"
-  ]
+  ],
+  "salario_min": 3113.56,
+  "salario_max": 9500.0,
+  "faixa_salarial": "R$ 3.113,56 a R$ 9.500,00"
  },
  "https://www.pciconcursos.com.br/noticias/funsaud-ms-abre-processo-seletivo-para-cadastro-de-reserva": {
   "cargos_li": [
@@ -9073,7 +9649,10 @@
   "link_banca": "https://funsaud.dourados.ms.gov.br/",
   "arquivos_edital": [
    "EDITAL 001"
-  ]
+  ],
+  "salario_min": 1669.8,
+  "salario_max": 10320.0,
+  "faixa_salarial": "R$ 1.669,80 a R$ 10.320,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-estrela-de-alagoas-al-abre-selecao-para-a-secretaria-de-saude": {
   "cargos_li": [
@@ -9134,7 +9713,10 @@
   "link_banca": "https://saogeraldodoaraguaia.pa.leg.br/",
   "arquivos_edital": [
    "EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 3000.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 3.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-santa-rita-do-sapucai-mg-abre-concurso-publico-para-diversos-niveis": {
   "cargos_li": [
@@ -9154,7 +9736,10 @@
   "link_banca": "https://www.santaritadosapucai.mg.leg.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2271.59,
+  "salario_max": 4842.55,
+  "faixa_salarial": "R$ 2.271,59 a R$ 4.842,55"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-pains-mg-divulga-editais-de-concurso-publico-e-processo-seletivo": {
   "cargos_li": [
@@ -9173,7 +9758,10 @@
   "arquivos_edital": [
    "EDITAL Nº 01/2026 - CONCURSO P/BLICO",
    "EDITAL Nº 02/2026 - PROCESSO SELETIVO PÚBLICO"
-  ]
+  ],
+  "salario_min": 2396.06,
+  "salario_max": 3847.97,
+  "faixa_salarial": "R$ 2.396,06 a R$ 3.847,97"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-tomas-de-aquino-mg-abre-processo-seletivo-com-salarios-de-ate-4978": {
   "cargos_li": [
@@ -9206,7 +9794,10 @@
   "link_banca": "https://www.staquino.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 004/2026"
-  ]
+  ],
+  "salario_min": 1625.92,
+  "salario_max": 4978.6,
+  "faixa_salarial": "R$ 1.625,92 a R$ 4.978,60"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guamiranga-pr-abre-dois-novos-concursos-publicos-para-diversas-areas": {
   "cargos_li": [
@@ -9232,7 +9823,10 @@
   "arquivos_edital": [
    "EDITAL DE ABERTURA Nº 01/2026",
    "EDITAL DE ABERTURA Nº 02/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 5130.63,
+  "faixa_salarial": "R$ 1.621,00 a R$ 5.130,63"
  },
  "https://www.pciconcursos.com.br/noticias/hospital-beneficente-dr-cesar-santos-rs-abre-selecao-com-remuneracoes-de-ate-6050": {
   "cargos_li": [
@@ -9250,7 +9844,10 @@
   "link_banca": null,
   "arquivos_edital": [
    "EDITAL Nº 08/2026"
-  ]
+  ],
+  "salario_min": 1625.73,
+  "salario_max": 6050.19,
+  "faixa_salarial": "R$ 1.625,73 a R$ 6.050,19"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-ijui-rs-abre-concurso-publico-com-salarios-de-ate-21312": {
   "cargos_li": [
@@ -9348,7 +9945,10 @@
   "link_banca": "https://www.ijui.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1437.25,
+  "salario_max": 21312.22,
+  "faixa_salarial": "R$ 1.437,25 a R$ 21.312,22"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-xingu-rs-abre-concurso-publico-com-salarios-de-ate-8797": {
   "cargos_li": [
@@ -9377,7 +9977,10 @@
   "link_banca": "https://www.novoxingu.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1626.94,
+  "salario_max": 8797.52,
+  "faixa_salarial": "R$ 1.626,94 a R$ 8.797,52"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-bom-retiro-sc-abre-concurso-publico-com-salarios-de-ate-20138": {
   "cargos_li": [
@@ -9434,7 +10037,10 @@
   "link_banca": "https://bomretiro.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1759.63,
+  "salario_max": 20138.46,
+  "faixa_salarial": "R$ 1.759,63 a R$ 20.138,46"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaragua-do-sul-sc-abre-processos-seletivos-com-salarios-de-ate-15606": {
   "cargos_li": [
@@ -9459,7 +10065,10 @@
   "arquivos_edital": [
    "EDITAL 001/2026/SEMAD",
    "EDITAL 002/2026/SEMSA"
-  ]
+  ],
+  "salario_min": 2823.96,
+  "salario_max": 15606.92,
+  "faixa_salarial": "R$ 2.823,96 a R$ 15.606,92"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-salarios-de-ate-10000": {
   "cargos_li": [
@@ -9496,7 +10105,10 @@
   "link_banca": "https://staterezinhaprogresso.sc.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO DE PROVAS Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2400.0,
+  "salario_max": 10000.0,
+  "faixa_salarial": "R$ 2.400,00 a R$ 10.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-e-fundacao-cultural-de-navegantes-sc-abrem-selecoes-com-salarios-de-ate-19199": {
   "cargos_li": [
@@ -9598,7 +10210,10 @@
   "arquivos_edital": [
    "EDITAL Nº 0172/2026",
    "EDITAL Nº 0180/2026"
-  ]
+  ],
+  "salario_min": 1784.6,
+  "salario_max": 19199.16,
+  "faixa_salarial": "R$ 1.784,60 a R$ 19.199,16"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-sao-joaquim-mt-abre-concurso-com-salarios-de-ate-11979": {
   "cargos_li": [
@@ -9674,7 +10289,10 @@
   "link_banca": "https://www.novosaojoaquim.mt.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 11979.03,
+  "faixa_salarial": "R$ 1.621,00 a R$ 11.979,03"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-groairas-ce-reabre-inscricoes-para-concursos-publicos": {
   "cargos_li": [
@@ -9716,7 +10334,10 @@
    "CRONOGRAMA DE ATIVIDADES - EDITAL 003/2026",
    "EDITAL Nº 004/2026 - ACS E ACE",
    "COMUNICADO"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 11000.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 11.000,00"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaguaribe-ce-reabre-inscricoes-para-concursos-publicos": {
   "cargos_li": [
@@ -9775,7 +10396,10 @@
    "COMUNICADO",
    "RETIFICAÇÃO - CRONOGRAMA DE ATIVIDADES - EDITAL Nº 002/2026",
    "RETIFICAÇÃO - CRONOGRAMA DE ATIVIDADES - EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 12948.01,
+  "faixa_salarial": "R$ 1.621,00 a R$ 12.948,01"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-poranga-ce-reabre-inscricoes-para-concursos-publicos": {
   "cargos_li": [
@@ -9827,7 +10451,10 @@
    "EDITAL RETIFICADO Nº 002/2026",
    "EDITAL RETIFICADO Nº 001/2026 - REABERTURA",
    "EDITAL RETIFICADO Nº 002/2026 - REABERTURA"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4750.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.750,00"
  },
  "https://www.pciconcursos.com.br/noticias/seplad-e-fhcgv-pa-prorrogam-inscricoes-para-concurso-publico": {
   "cargos_li": [
@@ -9865,7 +10492,10 @@
    "EDITAL Nº 01",
    "EDITAL COMPLETO Nº 01",
    "PRORROGAÇÃO DO PRAZO DE INSCRIÇÕES"
-  ]
+  ],
+  "salario_min": 1467.15,
+  "salario_max": 3918.15,
+  "faixa_salarial": "R$ 1.467,15 a R$ 3.918,15"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-laranjal-mg-abre-concurso-com-salarios-de-ate-5296": {
   "cargos_li": [
@@ -9883,7 +10513,10 @@
   "link_banca": "https://www.camaralaranjal.mg.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 01/2026"
-  ]
+  ],
+  "salario_min": 2000.0,
+  "salario_max": 5296.39,
+  "faixa_salarial": "R$ 2.000,00 a R$ 5.296,39"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-imbe-rs-retifica-processo-seletivo-para-formacao-de-cadastro-reserva-em-diversos-cargos": {
   "cargos_li": [
@@ -9934,7 +10567,10 @@
   "link_banca": "https://www.sertao.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 005/2026"
-  ]
+  ],
+  "salario_min": 1673.66,
+  "salario_max": 5072.01,
+  "faixa_salarial": "R$ 1.673,66 a R$ 5.072,01"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-garuva-sc-abre-processo-seletivo-para-cadastro-de-reserva-em-diversos-cargos": {
   "cargos_li": [
@@ -9966,7 +10602,10 @@
   "link_banca": "https://garuva.atende.net/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO Nº 010/2026"
-  ]
+  ],
+  "salario_min": 2535.51,
+  "salario_max": 7162.96,
+  "faixa_salarial": "R$ 2.535,51 a R$ 7.162,96"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-quixada-ce-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -10059,7 +10698,10 @@
   "link_banca": "https://quixada.ce.gov.br/",
   "arquivos_edital": [
    "EDITAL DO PROCESSO SELETIVO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1569.0,
+  "salario_max": 3138.0,
+  "faixa_salarial": "R$ 1.569,00 a R$ 3.138,00"
  },
  "https://www.pciconcursos.com.br/noticias/hospital-beneficente-dr-cesar-santos-rs-abre-processo-seletivo-com-quatro-vagas": {
   "cargos_li": [
@@ -10077,7 +10719,10 @@
   "link_banca": "https://www.pmpf.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 08/2026"
-  ]
+  ],
+  "salario_min": 1625.73,
+  "salario_max": 6050.19,
+  "faixa_salarial": "R$ 1.625,73 a R$ 6.050,19"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-padua-rs-abre-concurso-para-cadastro-de-reserva-em-diversas-areas": {
   "cargos_li": [
@@ -10112,7 +10757,10 @@
   "link_banca": "https://www.novapadua.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 01/2026"
-  ]
+  ],
+  "salario_min": 1685.6,
+  "salario_max": 10809.66,
+  "faixa_salarial": "R$ 1.685,60 a R$ 10.809,66"
  },
  "https://www.pciconcursos.com.br/noticias/igesdf-df-abre-selecoes-para-formacao-de-cadastro-de-reserva": {
   "cargos_li": [
@@ -10156,7 +10804,10 @@
   "link_banca": "https://www.camaracuiaba.mt.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 001/2026"
-  ]
+  ],
+  "salario_min": 5518.91,
+  "salario_max": 11629.67,
+  "faixa_salarial": "R$ 5.518,91 a R$ 11.629,67"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-pontes-e-lacerda-mt-abre-processo-seletivo-com-salarios-de-ate-11308": {
   "cargos_li": [
@@ -10208,7 +10859,10 @@
   "link_banca": "https://www.ponteselacerda.mt.gov.br/",
   "arquivos_edital": [
    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1858.25,
+  "salario_max": 11308.36,
+  "faixa_salarial": "R$ 1.858,25 a R$ 11.308,36"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-campo-grande-do-piaui-pi-abre-concurso-publico-para-diversos-cargos-e-cadastro-de-reserva": {
   "cargos_li": [
@@ -10296,7 +10950,10 @@
   "link_banca": "https://campograndedopiaui.pi.gov.br/",
   "arquivos_edital": [
    "EDITAL Nº 1/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 8257.0,
+  "faixa_salarial": "R$ 1.621,00 a R$ 8.257,00"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-portel-pa-abre-concurso-publico-com-salarios-de-ate-4723": {
   "cargos_li": [
@@ -10326,7 +10983,10 @@
   "link_banca": "https://camaradeportel.pa.gov.br/",
   "arquivos_edital": [
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
-  ]
+  ],
+  "salario_min": 1621.0,
+  "salario_max": 4723.31,
+  "faixa_salarial": "R$ 1.621,00 a R$ 4.723,31"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-alvinopolis-mg-publica-retificacoes-de-concurso-publico-com-salarios-de-ate-17954": {
   "cargos_li": [
@@ -10384,7 +11044,9 @@
    "RETIFICAÇÃO I",
    "RETIFICAÇÃO II"
   ],
-  "faixa_salarial": "Consultar edital"
+  "faixa_salarial": "R$ 1.770,11 a R$ 17.954,23",
+  "salario_min": 1770.11,
+  "salario_max": 17954.23
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-mostardas-rs-abre-processo-seletivo-para-diversos-cargos": {
   "cargos_li": [
@@ -10445,7 +11107,9 @@
   "arquivos_edital": [
    "EDITAL 01/2026"
   ],
-  "faixa_salarial": "Consultar edital"
+  "faixa_salarial": "R$ 1.399,56 a R$ 7.034,16",
+  "salario_min": 1399.56,
+  "salario_max": 7034.16
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sc-abre-selecoes-com-salarios-de-ate-7921": {
   "cargos_li": [
@@ -10516,7 +11180,9 @@
    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO 002/2026",
    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO 003/2026"
   ],
-  "faixa_salarial": "R$ 810,50 a R$ 7.921,65"
+  "faixa_salarial": "R$ 810,50 a R$ 7.921,65",
+  "salario_min": 810.5,
+  "salario_max": 7921.65
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-cristalina-go-retifica-concurso-publico-com-salarios-de-ate-8383": {
   "cargos_li": [
@@ -10540,7 +11206,9 @@
    "EDITAL Nº 1",
    "RETIFICAÇÃO I"
   ],
-  "faixa_salarial": "Consultar edital"
+  "faixa_salarial": "R$ 2.009,04 a R$ 8.383,20",
+  "salario_min": 2009.04,
+  "salario_max": 8383.2
  },
  "https://www.pciconcursos.com.br/noticias/cro-se-prorroga-inscricoes-para-concurso-publico-com-salarios-de-ate-4504": {
   "cargos_li": [
@@ -10560,6 +11228,52 @@
    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026",
    "COMUNICADO PRORROGAÇÃO DAS INSCRIÇÕES"
   ],
-  "faixa_salarial": "Consultar edital"
+  "faixa_salarial": "R$ 2.642,71 a R$ 4.504,61",
+  "salario_min": 2642.71,
+  "salario_max": 4504.61
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-luzia-doeste-ro-abre-selecao-com-salarios-de-ate-5130": {
+  "cargos_li": [
+   "Advogado(a) (1 vaga)",
+   "Assistente Social (1 vaga)",
+   "Contador(a) (1 vaga)",
+   "Engenheiro(a) Civil (1 vaga)",
+   "Enfermeiro(a) (cadastro de reserva)",
+   "Farmacêutico(a) (1 vaga)",
+   "Fonoaudiólogo(a) (1 vaga)",
+   "Professor de Educação Física (cadastro de reserva)",
+   "Psicólogo(a) (1 vaga)",
+   "Terapeuta Ocupacional (1 vaga)",
+   "Técnico Agrícola (1 vaga)",
+   "Técnico em Enfermagem (1 vaga)",
+   "Técnico em Radiologia (1 vaga AC, 1 vaga PCD)",
+   "Agente Administrativo, Secretaria de Saúde (1 vaga)",
+   "Agente Administrativo, Câmara Municipal (1 vaga)",
+   "Assistente Técnico da Educação Básica (cadastro de reserva)",
+   "Instrutor de Aulas de Violão (cadastro de reserva)",
+   "Instrutor de Informática (1 vaga)",
+   "Auxiliar de Serviços Gerais (2 vagas AC, 1 vaga PCD, 3 vagas C.R)",
+   "Cozinheiro(a) (2 vagas)",
+   "Merendeiro(a) (1 vaga)",
+   "Motorista de Veículos Pesados (2 vagas AC, 2 vagas PCD, 4 vagas C.R)",
+   "Operador de Retroescavadeira (2 vagas AC, 1 vaga PCD, 2 vagas C.R)",
+   "Operador de Pá Carregadeira (3 vagas AC, 1 vaga C.R)",
+   "Operador de Trator de Pneus (1 vaga)",
+   "Vigia (2 vagas)"
+  ],
+  "data_prova": "25/11/2026",
+  "regime": "Processo Seletivo / Temporário",
+  "beneficios": "Consultar edital",
+  "jornada": "20 a 40 horas semanais",
+  "isencao": "Não haverá cobrança de taxa de inscrição.",
+  "nome_banca": "Prefeitura Municipal de Santa Luzia d'Oeste",
+  "link_banca": "https://www.santaluzia.ro.gov.br/",
+  "arquivos_edital": [
+   "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO 002/SEMAD/2026",
+   "RETIFICAÇÃO - CRONOGRAMA"
+  ],
+  "faixa_salarial": "R$ 1.621,00 a R$ 5.130,63",
+  "salario_min": 1621.0,
+  "salario_max": 5130.63
  }
 }
