@@ -10383,7 +10383,8 @@
    "EDITAL Nº 1",
    "RETIFICAÇÃO I",
    "RETIFICAÇÃO II"
-  ]
+  ],
+  "faixa_salarial": "Consultar edital"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-mostardas-rs-abre-processo-seletivo-para-diversos-cargos": {
   "cargos_li": [
@@ -10443,7 +10444,79 @@
   "link_banca": "https://www.mostardas.rs.gov.br/",
   "arquivos_edital": [
    "EDITAL 01/2026"
-  ]
+  ],
+  "faixa_salarial": "Consultar edital"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-praia-grande-sc-abre-selecoes-com-salarios-de-ate-7921": {
+  "cargos_li": [
+   "Assistente Social",
+   "Professor de Artes habilitado (2 vagas)",
+   "Professor de Artes não habilitado",
+   "Professor de Ciências habilitado (1 vaga)",
+   "Professor de Ciências não habilitado",
+   "Professor de Educação Física habilitado (2 vagas)",
+   "Professor de Educação Infantil habilitado (15 vagas)",
+   "Professor de Educação Infantil não habilitado",
+   "Professor de Ensino Religioso habilitado (1 vaga)",
+   "Professor de Geografia habilitado",
+   "Professor de Geografia não habilitado",
+   "Professor de História habilitado (1 vaga)",
+   "Professor de História não habilitado",
+   "Professor de Informática habilitado (1 vaga)",
+   "Professor de Informática não habilitado",
+   "Professor de Língua Portuguesa habilitado (1 vaga)",
+   "Professor de Língua Portuguesa não habilitado",
+   "Professor de Língua Inglesa habilitado (1 vaga)",
+   "Professor de Língua Inglesa não habilitado",
+   "Professor de Matemática habilitado (1 vaga)",
+   "Professor de Matemática não habilitado",
+   "Professor de Música habilitado (1 vaga)",
+   "Professor de Séries Iniciais do Ensino Fundamental I habilitado (10 vagas)",
+   "Professor de Séries Iniciais do Ensino Fundamental I não habilitado",
+   "Auxiliar de Educação Infantil (15 vagas)",
+   "Auxiliar Educacional (20 vagas)",
+   "Monitor de Transporte Escolar (1 vaga)",
+   "Agente Comunitário de Saúde: Microárea 01",
+   "Agente Comunitário de Saúde: Microárea 02",
+   "Agente Comunitário de Saúde: Microárea 03",
+   "Agente Comunitário de Saúde: Microárea 06",
+   "Agente Comunitário de Saúde: Microárea 09",
+   "Agente Comunitário de Saúde, ESF Urbano: Microárea 03",
+   "Agente Comunitário de Saúde, ESF Urbano: Microárea 04",
+   "Agente Comunitário de Saúde, ESF Urbano: Microárea 07",
+   "Agente Comunitário de Saúde, ESF Urbano: Microárea 08",
+   "Agente Comunitário de Saúde, ESF Urbano: Microárea 10",
+   "Agente Comunitário de Saúde, ESF Urbano: Microárea 11",
+   "Agente Comunitário de Saúde, ESF Urbano: Microárea 12",
+   "Agente Comunitário de Saúde, ESF Rural: Microárea 01",
+   "Agente Comunitário de Saúde, ESF Rural: Microárea 02",
+   "Agente Comunitário de Saúde, ESF Rural: Microárea 03",
+   "Agente Comunitário de Saúde, ESF Rural: Microárea 04",
+   "Agente Comunitário de Saúde, ESF Rural: Microárea 05",
+   "Agente Comunitário de Saúde, ESF Rural: Microárea 06",
+   "Auxiliar de Saúde Bucal (1 vaga)",
+   "Farmacêutico (1 vaga)",
+   "Fisioterapeuta",
+   "Médico Ginecologista (1 vaga)",
+   "Médico Pediatra (1 vaga)",
+   "Psicólogo",
+   "Técnico de Enfermagem",
+   "Agente Comunitário de Saúde: Microárea 05 (1 vaga)",
+   "Agente de Combate às Endemias (1 vaga)"
+  ],
+  "data_prova": "13/12/2026",
+  "regime": "Processo Seletivo / Temporário",
+  "beneficios": "Consultar edital",
+  "jornada": "10 a 40 horas semanais",
+  "isencao": "Candidatos de famílias de baixa renda e doadores de medula óssea podem solicitar isenção de 27 de outubro de 2026 a 3 de novembro de 2026, com envio da documentação exigida.",
+  "nome_banca": "Prefeitura Municipal de Praia Grande",
+  "link_banca": "https://praiagrande.atende.net/autoatendimento/servicos/editais-de-concursos-publicos-e-processos-seletivos",
+  "arquivos_edital": [
+   "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO 001/2026",
+   "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO 002/2026",
+   "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO 003/2026"
+  ],
+  "faixa_salarial": "R$ 810,50 a R$ 7.921,65"
  },
  "https://www.pciconcursos.com.br/noticias/camara-de-cristalina-go-retifica-concurso-publico-com-salarios-de-ate-8383": {
   "cargos_li": [
@@ -10466,6 +10539,27 @@
   "arquivos_edital": [
    "EDITAL Nº 1",
    "RETIFICAÇÃO I"
-  ]
+  ],
+  "faixa_salarial": "Consultar edital"
+ },
+ "https://www.pciconcursos.com.br/noticias/cro-se-prorroga-inscricoes-para-concurso-publico-com-salarios-de-ate-4504": {
+  "cargos_li": [
+   "Assistente Técnico Administrativo (2 vagas + 40 CR)",
+   "Assistente Técnico de Fiscalização (1 vaga + 20 CR)",
+   "Analista Administrativo (10 CR)",
+   "Analista Contábil (10 CR)"
+  ],
+  "data_prova": "13/12/2026",
+  "regime": "CLT (Celetista)",
+  "beneficios": "Auxílio-alimentação e benefícios como progressão por titulação e auxílio-saúde · Auxílio-alimentação de R$ 1.000,00, auxílio-transporte ou vale-transporte, auxílio-saúde, progressão por titulação",
+  "jornada": "40 horas semanais",
+  "isencao": "A taxa de inscrição é de R$ 98,00 para nível médio e de R$ 99,00 para nível superior. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+  "nome_banca": "CRO-SE",
+  "link_banca": "https://www.crose.org.br/",
+  "arquivos_edital": [
+   "EDITAL DE CONCURSO PÚBLICO Nº 001/2026",
+   "COMUNICADO PRORROGAÇÃO DAS INSCRIÇÕES"
+  ],
+  "faixa_salarial": "Consultar edital"
  }
 }

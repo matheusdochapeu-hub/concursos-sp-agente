@@ -489,6 +489,7 @@ def parse_listing(page_html: str, regiao_padrao: str = "") -> List[dict]:
                 "cargos_resumo": cargos_resumo,
                 "niveis": niveis,
                 "salario_max_listagem": max(sal) if sal else None,
+                "salario_min_listagem": min(sal) if sal else None,
                 "inscricao_ate": ce.get_text(" ", strip=True) if ce else "",
             }
         )
@@ -610,17 +611,26 @@ def parse_isencao(texto: str) -> str:
     return "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
 
 
-def parse_faixa_salarial(texto: str, vagas_salario_listagem: str) -> str:
+def parse_faixa_salarial(texto: str, vagas_salario_listagem: str = "") -> str:
     m = re.search(
-        r"(?:remunera[çc][õo]es|sal[áa]rios|vencimentos|ganhos)[^.\n]{0,50}?(R\$\s*[\d.,]+\s*(?:a|at[ée]|e)\s*R\$\s*[\d.,]+)",
-        texto,
+        r"(?:remunera[?c][?a]o|sal[?a]rio[s]?|vencimento[s]?|ganho[s]?)[^.\n]{0,60}?(?:varia(?:m)?\s+de\s+|de\s+)?(R\$\s*[\d.,]+\s*(?:a|at[?e]|\-)\s*R\$\s*[\d.,]+)",
+        texto or "",
         re.I,
     )
     if m:
-        return re.sub(r"\s+", " ", m.group(1))
-    sals = salarios_no_texto(vagas_salario_listagem)
+        return re.sub(r"\s+", " ", m.group(1)).strip(" .;:")
+    m2 = re.search(
+        r"(?:remunera[?c][?o]es|sal[?a]rios|vencimentos|ganhos)[^.\n]{0,50}?(R\$\s*[\d.,]+\s*(?:a|at[?e]|e)\s*R\$\s*[\d.,]+)",
+        texto or "",
+        re.I,
+    )
+    if m2:
+        return re.sub(r"\s+", " ", m2.group(1)).strip(" .;:")
+    sals = salarios_no_texto(vagas_salario_listagem or "")
     if sals:
-        return f"Até {brl(max(sals))}"
+        if len(sals) >= 2 and min(sals) != max(sals):
+            return f"{brl(min(sals))} a {brl(max(sals))}"
+        return f"At? {brl(max(sals))}"
     return "Consultar edital"
 
 
@@ -677,6 +687,7 @@ def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
         "beneficios": parse_beneficios(texto),
         "jornada": parse_jornada(texto),
         "isencao": parse_isencao(texto),
+        "faixa_salarial": parse_faixa_salarial(texto, ""),
     }
 
 
@@ -1265,6 +1276,7 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                     "nome_banca": det["nome_banca"],
                     "link_banca": det["link_banca"],
                     "arquivos_edital": det["arquivos_edital"],
+                    "faixa_salarial": det.get("faixa_salarial"),
                 }
             except Exception:  # noqa: BLE001
                 return u, None
@@ -1373,13 +1385,64 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
             or br_det.get("data_prova")
             or "Consultar edital"
         )
-        sal_max_val = it.get("salario_max_listagem")
+        faixa_raw = (
+            enriq.get("salario_faixa")
+            or sp_det.get("faixa_salarial")
+            or br_det.get("faixa_salarial")
+            or ""
+        )
+        sals_faixa = salarios_no_texto(faixa_raw) if faixa_raw else []
+        sal_min_val = (
+            enriq.get("salario_min")
+            or (min(sals_faixa) if len(sals_faixa) >= 2 else None)
+            or it.get("salario_min_listagem")
+        )
+        sal_max_val = (
+            enriq.get("salario_max")
+            or (max(sals_faixa) if sals_faixa else None)
+            or it.get("salario_max_listagem")
+            or sp_info.get("salario_max_texto")
+        )
+        if sal_min_val and sal_max_val and sal_min_val > sal_max_val:
+            sal_min_val, sal_max_val = sal_max_val, sal_min_val
+
+        cargos_sal_map = dict(enriq.get("cargos_salarios") or {})
+        if enriq.get("fisio"):
+            fc = enriq["fisio"].get("cargo") or "Fisioterapeuta"
+            fsal = enriq["fisio"].get("salario_bruto") or enriq["fisio"].get("salario")
+            if fsal:
+                import unicodedata
+                fc_slug = re.sub(r"[^\w\s]", " ", unicodedata.normalize("NFKD", fc).encode("ASCII", "ignore").decode("utf-8")).lower().strip()
+                if fc_slug:
+                    cargos_sal_map[fc_slug] = fsal
+        for m_item in (enriq.get("medio") or []) + (enriq.get("medio_outros") or []):
+            mc = m_item.get("nome") or ""
+            msal = m_item.get("salario_bruto") or m_item.get("salario")
+            if msal and mc:
+                import unicodedata
+                for part in re.split(r"[/|;,]", mc):
+                    c_clean = re.sub(r"\s*\([^)]*\)", "", part).strip()
+                    if c_clean:
+                        mc_slug = re.sub(r"[^\w\s]", " ", unicodedata.normalize("NFKD", c_clean).encode("ASCII", "ignore").decode("utf-8")).lower().strip()
+                        if mc_slug:
+                            cargos_sal_map[mc_slug] = msal
+
         vagas_im_val, _, vagas_txt_val = extrair_vagas_info(it.get("vagas_salario"))
         sal_total_val, sal_exib_val, sal_det_val = formatar_bruto_e_soma_auxilios(
             sal_max_val, benef_val, it.get("vagas_salario") or "Consultar edital"
         )
-        if sal_max_val:
-            sal_exib_val = f"Até {brl(sal_max_val)}"
+        if sal_min_val and sal_max_val and sal_min_val < sal_max_val:
+            sal_faixa_str = f"{brl(sal_min_val)} a {brl(sal_max_val)}"
+            sal_exib_val = sal_faixa_str
+            sal_det_val = f"Varia de {brl(sal_min_val)} a {brl(sal_max_val)} conforme o cargo"
+            if benef_val and benef_val != "Consultar edital":
+                sal_det_val += f" | {benef_val}"
+            sal_total_val = sal_max_val
+        elif sal_max_val:
+            sal_faixa_str = f"At? {brl(sal_max_val)}"
+            sal_exib_val = f"At? {brl(sal_max_val)}"
+        else:
+            sal_faixa_str = "Consultar edital"
 
         form_info = _inferir_formacoes(cargos_lista, it.get("cargos_resumo", ""), it.get("titulo", ""))
 
@@ -1396,10 +1459,13 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                 "vagas_salario": it["vagas_salario"],
                 "vagas_im": vagas_im_val,
                 "vagas_txt": vagas_txt_val,
+                "salario_min": sal_min_val,
                 "salario_max": sal_max_val,
+                "salario_faixa": sal_faixa_str,
                 "salario_total": sal_total_val or sal_max_val,
                 "salario_exib": sal_exib_val,
                 "salario_det": sal_det_val,
+                "cargos_salarios": cargos_sal_map,
                 "faixa": _faixa_slug(sal_max_val, sal_total_val),
                 "cargos_resumo": it["cargos_resumo"],
                 "niveis": it["niveis"],

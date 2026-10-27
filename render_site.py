@@ -3184,7 +3184,151 @@ def render_html(
     return 'R$ ' + Number(n).toLocaleString('pt-BR', {{ minimumFractionDigits: 2, maximumFractionDigits: 2 }});
   }}
 
-  // Distância rodoviária estimada entre duas coordenadas GPS (Haversine * 1.22)
+  function parseBrl(str) {{
+    if (!str) return 0;
+    const s = String(str).replace(/[^\\d.,]/g, '').trim();
+    if (!s) return 0;
+    const clean = s.replace(/\\./g, '').replace(',', '.');
+    const val = parseFloat(clean);
+    return isNaN(val) ? 0 : val;
+  }}
+
+  function calcFaixaSlug(salBruto, salTotal) {{
+    const ref = (salTotal && salTotal > 5000) ? salTotal : salBruto;
+    if (!ref || ref <= 0) return 'consultar';
+    if (ref <= 2500) return 'ate2500';
+    if (ref <= 3500) return '2500a3500';
+    if (ref <= 5000) return '3500a5000';
+    return 'acima5000';
+  }}
+
+  function resolverSalarioParaCargo(item, termo, cargosCasados, escolaridadeFiltro) {{
+    let auxilioNum = 0;
+    if (item.beneficios) {{
+      const mDia = item.beneficios.match(/di[áa]ri[oa]\\s+de\\s+R\\$\\s*([\\d.]+([,.]\\d{{2}})?)/i);
+      if (mDia) {{
+        auxilioNum = Math.round(parseBrl(mDia[1]) * 22);
+      }} else {{
+        const matches = Array.from(item.beneficios.matchAll(/R\\$\\s*([\\d.]+([,.]\\d{{2}})?)/g));
+        for (const m of matches) {{
+          const val = parseBrl(m[1]);
+          if (val >= 50 && val <= 3500) auxilioNum += val;
+        }}
+      }}
+    }}
+
+    const mapSal = item.cargos_salarios || {{}};
+    const normTermo = termo ? normStr(termo) : '';
+
+    function buscarNoMapa(nome) {{
+      if (!nome) return null;
+      const n = normStr(nome.split('(')[0]);
+      if (mapSal[n]) return mapSal[n];
+      for (const k in mapSal) {{
+        if (n.includes(k) || k.includes(n)) return mapSal[k];
+      }}
+      return null;
+    }}
+
+    let salEncontrado = null;
+    let nomeCargoAchado = '';
+
+    if (normTermo) {{
+      salEncontrado = buscarNoMapa(normTermo);
+      if (salEncontrado) nomeCargoAchado = termo;
+    }}
+
+    if (!salEncontrado && cargosCasados && cargosCasados.length > 0) {{
+      for (const cg of cargosCasados) {{
+        const s = buscarNoMapa(cg);
+        if (s) {{
+          salEncontrado = s;
+          nomeCargoAchado = cg.split('(')[0].trim();
+          break;
+        }}
+      }}
+    }}
+
+    const REGEX_FUND = /cozinheir|merendeir|auxiliar|servi[çc]os\\s*gerais|limpeza|gari|coveir|vigia|bra[çc]al|copeir|pedreir|pintor|soldador|borracheir|carpinteir|encanador|eletricista|operador|tratorista|motorista|leiturista|frentista|telefonista|aferidor|apreensor|padeiro/i;
+    const REGEX_MED = /oficial|assistente|escritur|recepcionista|t[ée]cnico|fiscal|agente\\s*comunit|agente\\s*de\\s*combate|cuidador|almoxarife|orientador|desenhista|salva-vidas/i;
+    const REGEX_SUP = /fisioterapeuta|m[ée]dico|procurador|advogado|engenheiro|arquiteto|contador|auditor|psic[óo]logo|dentista|enfermeir|farmac[êe]utico|nutricionista|terapeuta|fonoaudi[óo]logo|veterin[áa]rio|muse[óo]logo|analista/i;
+
+    const textoAlvo = normTermo || (cargosCasados && cargosCasados[0] ? normStr(cargosCasados[0]) : '');
+
+    let nivelRotulo = '';
+    if (!salEncontrado && textoAlvo) {{
+      if (REGEX_FUND.test(textoAlvo)) {{
+        if (item.salario_min) salEncontrado = item.salario_min;
+        nivelRotulo = 'Nível Fundamental';
+      }} else if (REGEX_MED.test(textoAlvo)) {{
+        if (item.salario_medio) {{
+          salEncontrado = item.salario_medio;
+        }} else if (item.salario_min && item.salario_max && item.salario_min < item.salario_max) {{
+          salEncontrado = item.salario_min;
+        }}
+        nivelRotulo = 'Nível Médio/Técnico';
+      }} else if (REGEX_SUP.test(textoAlvo)) {{
+        if (item.salario_max) salEncontrado = item.salario_max;
+        nivelRotulo = 'Nível Superior';
+      }}
+    }}
+
+    if (!salEncontrado && !normTermo && escolaridadeFiltro) {{
+      if (escolaridadeFiltro === 'fundamental' && item.salario_min) {{
+        salEncontrado = item.salario_min;
+        nivelRotulo = 'Nível Fundamental';
+      }} else if (escolaridadeFiltro === 'superior' && item.salario_max) {{
+        salEncontrado = item.salario_max;
+        nivelRotulo = 'Nível Superior';
+      }}
+    }}
+
+    if (salEncontrado) {{
+      const salBruto = salEncontrado;
+      const salTot = auxilioNum > 0 ? (salBruto + auxilioNum) : salBruto;
+      const exib = fmtBrl(salBruto);
+      let det = `Bruto: ${{exib}}`;
+      if (auxilioNum > 0) {{
+        det += ` + ${{fmtBrl(auxilioNum)}} (auxílios) = ${{fmtBrl(salTot)}} com auxílios`;
+      }} else if (item.beneficios && item.beneficios !== 'Consultar edital') {{
+        det += ` + benefícios legais (${{item.beneficios}})`;
+      }}
+      if (nivelRotulo) det += ` · ${{nivelRotulo}}`;
+      else if (item.salario_faixa && item.salario_min && item.salario_max && item.salario_min < item.salario_max) {{
+        det += ` · Faixa geral do edital: ${{item.salario_faixa}}`;
+      }}
+      return {{
+        salario_num: salBruto,
+        salario_total: salTot,
+        salario_exib: exib,
+        salario_det: det,
+        especifico: true
+      }};
+    }}
+
+    if (item.salario_min && item.salario_max && item.salario_min < item.salario_max) {{
+      const faixaStr = item.salario_faixa || `${{fmtBrl(item.salario_min)}} a ${{fmtBrl(item.salario_max)}}`;
+      let det = `Varia conforme o cargo · Edital com ${{(item.cargos || []).length}} cargos`;
+      if (auxilioNum > 0) det += ` | + até ${{fmtBrl(auxilioNum)}} em auxílios`;
+      else if (item.beneficios && item.beneficios !== 'Consultar edital') det += ` | Benefícios: ${{item.beneficios}}`;
+      return {{
+        salario_num: item.salario_max,
+        salario_total: (auxilioNum > 0 ? item.salario_max + auxilioNum : item.salario_total || item.salario_max),
+        salario_exib: faixaStr,
+        salario_det: det,
+        especifico: false
+      }};
+    }}
+
+    return {{
+      salario_num: item.salario_max || 0,
+      salario_total: item.salario_total || item.salario_max || 0,
+      salario_exib: item.salario_exib || (item.salario_max ? `Até ${{fmtBrl(item.salario_max)}}` : 'Consultar edital'),
+      salario_det: item.salario_det || (item.beneficios ? `Benefícios: ${{item.beneficios}}` : 'Consultar edital'),
+      especifico: false
+    }};
+  }}
+
   function calcularDistanciaCidadesKm(lat1, lon1, lat2, lon2) {{
     const a1 = Number(lat1), o1 = Number(lon1), a2 = Number(lat2), o2 = Number(lon2);
     if (isNaN(a1) || isNaN(o1) || isNaN(a2) || isNaN(o2)) return null;
@@ -3456,7 +3600,27 @@ def render_html(
           const km = kmDaReferencia(item.lat, item.lon);
           if (km == null || km > Number(f.kmRef)) return false;
         }}
-        if (f.faixa && item.faixa !== f.faixa) return false;
+        if (f.faixa) {{
+          const t = (overrideTermo !== undefined) ? overrideTermo : termo;
+          const resolved = resolverSalarioParaCargo(item, t, null, f.escolaridade);
+          if (resolved.especifico) {{
+            if (calcFaixaSlug(resolved.salario_num, resolved.salario_total) !== f.faixa) return false;
+          }} else if (item.salario_min && item.salario_max && item.salario_min < item.salario_max) {{
+            const minFaixa = calcFaixaSlug(item.salario_min, item.salario_min);
+            const maxFaixa = calcFaixaSlug(item.salario_max, item.salario_total || item.salario_max);
+            const faixasOrdem = ['ate2500', '2500a3500', '3500a5000', 'acima5000'];
+            const idxF = faixasOrdem.indexOf(f.faixa);
+            const idxMin = faixasOrdem.indexOf(minFaixa);
+            const idxMax = faixasOrdem.indexOf(maxFaixa);
+            if (idxF !== -1 && idxMin !== -1 && idxMax !== -1) {{
+              if (idxF < idxMin || idxF > idxMax) return false;
+            }} else if (item.faixa !== f.faixa) {{
+              return false;
+            }}
+          }} else if (item.faixa !== f.faixa) {{
+            return false;
+          }}
+        }}
         if (f.escolaridade) {{
           const nivs = (item.niveis_tokens || '').split(',');
           if (!nivs.includes(f.escolaridade)) return false;
@@ -4048,7 +4212,27 @@ def render_html(
       const kmRefItem = kmDaReferencia(item.lat, item.lon);
       if (kmRefItem == null || kmRefItem > Number(estadoFiltros.kmRef)) return false;
     }}
-    if (estadoFiltros.faixa && item.faixa !== estadoFiltros.faixa) return false;
+    if (estadoFiltros.faixa) {{
+      const termoRaw = (inputCargo ? inputCargo.value : '').trim();
+      const resolved = resolverSalarioParaCargo(item, termoRaw, null, estadoFiltros.escolaridade);
+      if (resolved.especifico) {{
+        if (calcFaixaSlug(resolved.salario_num, resolved.salario_total) !== estadoFiltros.faixa) return false;
+      }} else if (item.salario_min && item.salario_max && item.salario_min < item.salario_max) {{
+        const minFaixa = calcFaixaSlug(item.salario_min, item.salario_min);
+        const maxFaixa = calcFaixaSlug(item.salario_max, item.salario_total || item.salario_max);
+        const faixasOrdem = ['ate2500', '2500a3500', '3500a5000', 'acima5000'];
+        const idxF = faixasOrdem.indexOf(estadoFiltros.faixa);
+        const idxMin = faixasOrdem.indexOf(minFaixa);
+        const idxMax = faixasOrdem.indexOf(maxFaixa);
+        if (idxF !== -1 && idxMin !== -1 && idxMax !== -1) {{
+          if (idxF < idxMin || idxF > idxMax) return false;
+        }} else if (item.faixa !== estadoFiltros.faixa) {{
+          return false;
+        }}
+      }} else if (item.faixa !== estadoFiltros.faixa) {{
+        return false;
+      }}
+    }}
     if (estadoFiltros.escolaridade) {{
       const nivs = (item.niveis_tokens || '').split(',');
       if (!nivs.includes(estadoFiltros.escolaridade)) return false;
@@ -4097,7 +4281,11 @@ def render_html(
       filtrados.sort((a, b) => {{
         const ia = a.item, ib = b.item;
         if (ordem === 'proximo') return (kmDaReferencia(ia.lat, ia.lon) ?? 9999) - (kmDaReferencia(ib.lat, ib.lon) ?? 9999);
-        if (ordem === 'salario') return (ib.salario_max ?? 0) - (ia.salario_max ?? 0);
+        if (ordem === 'salario') {{
+          const resA = resolverSalarioParaCargo(ia, termo, a.cargosCasados, estadoFiltros.escolaridade);
+          const resB = resolverSalarioParaCargo(ib, termo, b.cargosCasados, estadoFiltros.escolaridade);
+          return (resB.salario_num ?? 0) - (resA.salario_num ?? 0);
+        }}
         if (ordem === 'vagas') return (ib.vagas_im ?? 0) - (ia.vagas_im ?? 0);
         if (ordem === 'prova') return (ia.prova_iso || '9999-12-31').localeCompare(ib.prova_iso || '9999-12-31');
         if (ordem === 'inscricao') return (ia.inscricao_iso || '9999-12-31').localeCompare(ib.inscricao_iso || '9999-12-31');
@@ -4112,6 +4300,7 @@ def render_html(
     const fatia = filtrados;
     gridBusca.innerHTML = fatia.map(({{ item, cargosCasados, idx }}) => {{
       const uid = `br-${{idx}}`;
+      const resolved = resolverSalarioParaCargo(item, termo, cargosCasados, estadoFiltros.escolaridade);
       const cargoDestaque = cargosCasados.length > 0
         ? cargosCasados.slice(0, 3).join(' · ') + (cargosCasados.length > 3 ? ` (+${{cargosCasados.length - 3}})` : '')
         : (item.cargos_resumo || 'Conferir cargos no edital');
@@ -4147,10 +4336,10 @@ def render_html(
           data-lat="${{item.lat}}"
           data-lon="${{item.lon}}"
           data-km-ref="${{kmRefItem ?? 9999}}"
-          data-salario="${{item.salario_max || 0}}"
-          data-salario-total="${{item.salario_total || item.salario_max || 0}}"
-          data-salario-exib="${{escHtml(item.salario_exib)}}"
-          data-salario-det="${{escHtml(item.salario_det)}}"
+          data-salario="${{resolved.salario_num || 0}}"
+          data-salario-total="${{resolved.salario_total || resolved.salario_num || 0}}"
+          data-salario-exib="${{escHtml(resolved.salario_exib)}}"
+          data-salario-det="${{escHtml(resolved.salario_det)}}"
           data-beneficios="${{escHtml(item.beneficios)}}"
           data-regime-txt="${{escHtml(item.regime)}}"
           data-carreira="${{escHtml(item.carreira)}}"
@@ -4183,8 +4372,8 @@ def render_html(
           <div class="info-grid">
             <div class="info-box destaque-sal">
               <span class="lbl">💰 Remuneração do Cargo (Bruto)</span>
-              <strong class="val">${{escHtml(item.salario_exib)}}</strong>
-              <small class="sub">${{escHtml(item.salario_det)}}</small>
+              <strong class="val">${{escHtml(resolved.salario_exib)}}</strong>
+              <small class="sub">${{escHtml(resolved.salario_det)}}</small>
             </div>
             <div class="info-box">
               <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
