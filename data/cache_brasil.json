@@ -3230,31 +3230,6 @@
   "salario_max": 8250.0,
   "faixa_salarial": "R$ 2.341,23 a R$ 8.250,00"
  },
- "https://www.pciconcursos.com.br/noticias/hospital-evangelico-de-vila-velha-es-abre-selecao-para-residencia-e-especializacao-medica": {
-  "cargos_li": [
-   "Anestesiologia (8 vagas)",
-   "Cirurgia Geral (2 vagas)",
-   "Clínica Médica (4 vagas)",
-   "Medicina de Emergência (2 vagas)",
-   "Medicina Intensiva (6 vagas)",
-   "Oftalmologia (6 vagas)",
-   "Radiologia e Diagnóstico por Imagem (2 vagas)",
-   "Angiorradiologia e Cirurgia Endovascular (1 vaga)",
-   "Cardiologia (6 vagas)",
-   "Cirurgia Vascular (1 vaga)",
-   "Nefrologia (2 vagas)",
-   "Treineiro"
-  ],
-  "data_prova": "28/11/2026",
-  "regime": "Processo Seletivo / Temporário",
-  "beneficios": "Consultar edital",
-  "jornada": "Consultar edital",
-  "nome_banca": "HEVV",
-  "link_banca": "https://www.evangelicovv.com.br/",
-  "arquivos_edital": [
-   "EDITAL Nº 02/2026"
-  ]
- },
  "https://www.pciconcursos.com.br/noticias/mgs-es-abre-processo-seletivo-com-salarios-de-ate-4508": {
   "cargos_li": [
    "Assistente Social",
@@ -3727,98 +3702,6 @@
   "salario_min": 1684.22,
   "salario_max": 11998.88,
   "faixa_salarial": "R$ 1.684,22 a R$ 11.998,88"
- },
- "https://www.pciconcursos.com.br/noticias/camara-e-municipio-de-siqueira-campos-pr-retificam-concursos-publicos": {
-  "cargos_li": [
-   "Procurador Jurídico (1 vaga + cadastro de reserva)",
-   "Assistente Social (1 vaga + cadastro de reserva)",
-   "Auditor Fiscal da Receita Municipal (1 vaga + cadastro de reserva)",
-   "Contador (1 vaga + cadastro de reserva)",
-   "Dentista (1 vaga + cadastro de reserva)",
-   "Enfermeiro (1 vaga + cadastro de reserva)",
-   "Engenheiro Civil (1 vaga + cadastro de reserva)",
-   "Farmacêutico (1 vaga + cadastro de reserva)",
-   "Fisioterapeuta (1 vaga + cadastro de reserva)",
-   "Fonoaudiólogo (1 vaga + cadastro de reserva)",
-   "Médico Clínico Geral (1 vaga + cadastro de reserva)",
-   "Nutricionista (1 vaga + cadastro de reserva)",
-   "Oficial de Administração (1 vaga + cadastro de reserva)",
-   "Professor de Arte (1 vaga + cadastro de reserva)",
-   "Professor de Educação Física (1 vaga + cadastro de reserva)",
-   "Professor de Inglês (1 vaga + cadastro de reserva)",
-   "Psicólogo (1 vaga + cadastro de reserva)",
-   "Terapeuta Ocupacional (1 vaga + cadastro de reserva)",
-   "Agente Administrativo (1 vaga + cadastro de reserva)",
-   "Agente Comunitário de Saúde (1 vaga + cadastro de reserva)",
-   "Agente de Controle de Endemias (1 vaga + cadastro de reserva)",
-   "Agente de Defesa Civil (1 vaga + cadastro de reserva)",
-   "Agente de Trânsito (1 vaga + cadastro de reserva)",
-   "Atendente de Farmácia (1 vaga + cadastro de reserva)",
-   "Auxiliar de Higiene Dental (1 vaga + cadastro de reserva)",
-   "Eletricista (1 vaga + cadastro de reserva)",
-   "Fiscal de Posturas (1 vaga + cadastro de reserva)",
-   "Fiscal de Obras (1 vaga + cadastro de reserva)",
-   "Fiscal de Tributos (1 vaga + cadastro de reserva)",
-   "Monitor de Educação (1 vaga + cadastro de reserva)",
-   "Professor (1 vaga + cadastro de reserva)",
-   "Professor da Educação Infantil (1 vaga + cadastro de reserva)",
-   "Professor da Educação Infantil Distrital (1 vaga + cadastro de reserva)",
-   "Secretário Escolar (1 vaga + cadastro de reserva)",
-   "Técnico de Enfermagem (1 vaga + cadastro de reserva)",
-   "Técnico em Segurança do Trabalho (1 vaga + cadastro de reserva)",
-   "Vigilante Sanitário (1 vaga + cadastro de reserva)",
-   "Atendente de Agendamento/Recepcionista (1 vaga + cadastro de reserva)",
-   "Auxiliar de Serviços Gerais (1 vaga + cadastro de reserva)",
-   "Borracheiro (1 vaga + cadastro de reserva)",
-   "Agente de Sepultamento (1 vaga + cadastro de reserva)",
-   "Eletricista de Máquina Rodoviária e Veículos (1 vaga + cadastro de reserva)",
-   "Mecânico de Máquina Rodoviária e Veículos (1 vaga + cadastro de reserva)",
-   "Motorista de Ambulância (1 vaga + cadastro de reserva)",
-   "Motorista de Caminhão e Ônibus (1 vaga + cadastro de reserva)",
-   "Operador de Máquinas (1 vaga + cadastro de reserva)",
-   "Pedreiro (1 vaga + cadastro de reserva)",
-   "Pintor (1 vaga + cadastro de reserva)",
-   "Soldador (1 vaga + cadastro de reserva)",
-   "Trabalhador Braçal (1 vaga + cadastro de reserva)",
-   "Vigia (1 vaga + cadastro de reserva)"
-  ],
-  "data_prova": "29/11/2026",
-  "regime": "Consultar edital",
-  "beneficios": "Consultar edital",
-  "jornada": "20 a 40 horas semanais",
-  "nome_banca": "Câmara Municipal de Siqueira Campos",
-  "link_banca": "https://www.camarasiqueiracampos.pr.gov.br/",
-  "arquivos_edital": [
-   "EDITAL DE ABERTURA Nº 001/2026 CONCURSO PÚBLICO Nº 01/2026 - CÂMARA",
-   "EDITAL DE ABERTURA Nº 001/2026 - CONCURSO PÚBLICO Nº 01/2026 - MUNICÍPIO",
-   "RETIFICAÇÃO ANEXO II CONCURSO PÚBLICO Nº 01/2026 - CÂMARA",
-   "RETIFICAÇÃO - CONCURSO PÚBLICO Nº 01/2026 - MUNICÍPIO"
-  ],
-  "salario_min": 1913.66,
-  "salario_max": 16681.6,
-  "faixa_salarial": "R$ 1.913,66 a R$ 16.681,60"
- },
- "https://www.pciconcursos.com.br/noticias/uem-pr-abre-testes-seletivos-com-salarios-de-ate-7997": {
-  "cargos_li": [
-   "Tradutor - Intérprete de Libras (Cianorte) (1 vaga)",
-   "Técnico em Laboratório (Maringá) (Zoologia e Ecologia) (1 vaga)",
-   "Técnico em Laboratório (Materiais de Construção) (Maringá) (1 vaga)",
-   "Médico Veterinário (Maringá) (cadastro de reserva)"
-  ],
-  "data_prova": "Consultar edital",
-  "regime": "Processo Seletivo / Temporário",
-  "beneficios": "Consultar edital",
-  "jornada": "40 horas semanais",
-  "nome_banca": "Universidade Estadual de Maringá (UEM)",
-  "link_banca": "https://www.uem.br/concurso",
-  "arquivos_edital": [
-   "EDITAL Nº 388/2026",
-   "EDITAL Nº 389/2026",
-   "EDITAL Nº 391/2026"
-  ],
-  "salario_min": 4443.18,
-  "salario_max": 7997.72,
-  "faixa_salarial": "R$ 4.443,18 a R$ 7.997,72"
  },
  "https://www.pciconcursos.com.br/noticias/uepg-pr-abre-selecao-para-agentes-universitarios": {
   "cargos_li": [
@@ -5368,43 +5251,6 @@
   "salario_max": 5883.29,
   "faixa_salarial": "R$ 1.877,64 a R$ 5.883,29"
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-lontras-sc-abre-processo-seletivo-com-salarios-de-ate-8105": {
-  "cargos_li": [
-   "Agente de Serviços Braçais",
-   "Agente de Serviços Gerais",
-   "Assistente Social",
-   "Auxiliar de Gabinete Odontológico",
-   "Auxiliar Escolar",
-   "Enfermeiro 20h",
-   "Enfermeiro 40h",
-   "Fonoaudiólogo",
-   "Mecânico",
-   "Monitor de Transporte Escolar",
-   "Motorista",
-   "Odontólogo",
-   "Operador de Máquina",
-   "Orientador Social",
-   "Psicólogo",
-   "Técnico em Enfermagem",
-   "Professor de Artes",
-   "Professor de Educação Física",
-   "Professor de Ensino Religioso",
-   "Professor de Inglês",
-   "Professor (Pedagogo)"
-  ],
-  "data_prova": "08/11/2026",
-  "regime": "Processo Seletivo / Temporário",
-  "beneficios": "Consultar edital",
-  "jornada": "20 a 40 horas semanais",
-  "nome_banca": "Município de Lontras",
-  "link_banca": "https://lontras.atende.net/",
-  "arquivos_edital": [
-   "EDITAL Nº 01/2026 - PROCESSO SELETIVO Nº 07/2026"
-  ],
-  "salario_min": 1664.7,
-  "salario_max": 8105.36,
-  "faixa_salarial": "R$ 1.664,70 a R$ 8.105,36"
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-maravilha-sc-retifica-concurso-com-salarios-de-ate-15748": {
   "cargos_li": [
    "Motorista de Veículos Leves (CR)",
@@ -6100,66 +5946,6 @@
   "salario_min": 1653.76,
   "salario_max": 5399.28,
   "faixa_salarial": "R$ 1.653,76 a R$ 5.399,28"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-benedito-novo-sc-abrem-concursos-e-processos-seletivos-com-diversas-vagas": {
-  "cargos_li": [
-   "Assistente Social (1 vaga)",
-   "Auxiliar Administrativo I - AA-I (1 vaga)",
-   "Auxiliar de Sala (5 vagas)",
-   "Auxiliar de Sala II (1 vaga)",
-   "Auxiliar de Serviços Gerais I (5 vagas)",
-   "Auxiliar de Serviços Gerais II (1 vaga)",
-   "Auxiliar de Unidade Escolar (5 vagas)",
-   "Auxiliar de Veterinário AV (1 vaga)",
-   "Contador Geral CG (1 vaga)",
-   "Educador Físico EDF (1 vaga)",
-   "Enfermeiro II EN-II (1 vaga)",
-   "Engenheiro Civil II (1 vaga)",
-   "Fonoaudiólogo FN-20 (1 vaga)",
-   "Motorista da Secretaria de Saúde MO-S (1 vaga)",
-   "Motorista MO (1 vaga)",
-   "Musicoterapeuta MUT (1 vaga)",
-   "Médico Veterinário MV (1 vaga)",
-   "Operador de Escavadeira Hidráulica (1 vaga)",
-   "Operador de Máquina OM (1 vaga)",
-   "Operário OP (3 vagas)",
-   "Orientador Pedagógico II (1 vaga)",
-   "Professor de Artes (1 vaga)",
-   "Professor de Educação Física (1 vaga)",
-   "Professor de Inglês (1 vaga)",
-   "Professor de Inglês II (1 vaga)",
-   "Professor de Música I (1 vaga)",
-   "Professor de Música II PMU II (1 vaga)",
-   "Professor I 20 (1 vaga)",
-   "Professor I 40 (1 vaga)",
-   "Psicólogo PC (1 vaga)",
-   "Psicólogo PC II (1 vaga)",
-   "Servente SE (1 vaga)",
-   "Terapeuta Ocupacional TOC (1 vaga)",
-   "Técnico em Enfermagem (1 vaga)",
-   "Médico Clínico Geral ESF (1 vaga)",
-   "Técnico de Enfermagem ESF (1 vaga)",
-   "Técnico em Saúde Bucal ESF (1 vaga)",
-   "Agente Comunitário de Saúde - Área 002 - Centro (1 vaga)",
-   "Agente Comunitário de Saúde - Área 003 - Alto Benedito Novo (1 vaga)",
-   "Agente Administrativo Legislativo (1 vaga)",
-   "Contador Geral Legislativo (1 vaga)"
-  ],
-  "data_prova": "15/11/2026",
-  "regime": "Processo Seletivo / Temporário",
-  "beneficios": "Consultar edital",
-  "jornada": "20 a 40 horas semanais",
-  "nome_banca": "Prefeitura Municipal de Benedito Novo",
-  "link_banca": "https://www.beneditonovo.sc.gov.br/",
-  "arquivos_edital": [
-   "EDITAL DE CONCURSO PÚBLICO Nº 01/2026 - PREFEITURA MUNICIPAL",
-   "EDITAL DE CONCURSO PÚBLICO Nº 02/2026 - PREFEITURA MUNICIPAL",
-   "EDITAL DE PROCESSO SELETIVO PÚBLICO Nº 02/2026 - PREFEITURA MUNICIPAL",
-   "EDITAL DE CONCURSO PÚBLICO Nº 01/2026 - CÂMARA MUNICIPAL"
-  ],
-  "salario_min": 1000.0,
-  "salario_max": 20171.87,
-  "faixa_salarial": "R$ 1.000,00 a R$ 20.171,87"
  },
  "https://www.pciconcursos.com.br/noticias/hospital-santa-lucia-abre-vagas-para-residencia-medica-em-diversas-especialidades": {
   "cargos_li": [
@@ -8000,23 +7786,6 @@
   "salario_max": 8810.69,
   "faixa_salarial": "R$ 4.921,08 a R$ 8.810,69"
  },
- "https://www.pciconcursos.com.br/noticias/camara-de-santana-do-serido-rn-abre-concurso-publico-com-quatro-vagas-imediatas": {
-  "cargos_li": [
-   "Procurador Jurídico (1 vaga)",
-   "Controlador Interno (1 vaga)",
-   "Agente de Contratação (1 vaga)",
-   "Auxiliar de Serviços Gerais (1 vaga)"
-  ],
-  "data_prova": "06/12/2026",
-  "regime": "Processo Seletivo / Temporário",
-  "beneficios": "Consultar edital",
-  "jornada": "30 a 40 horas semanais",
-  "nome_banca": "Câmara Municipal de Santana do Seridó",
-  "link_banca": "https://www.santanadoserido.rn.leg.br/",
-  "arquivos_edital": [
-   "EDITAL Nº 003/2026"
-  ]
- },
  "https://www.pciconcursos.com.br/noticias/camara-de-tibau-do-sul-rn-abre-concurso-publico-com-oito-vagas-imediatas": {
   "cargos_li": [
    "Agente de Contratação (1 vaga)",
@@ -8039,89 +7808,6 @@
   "salario_min": 1621.0,
   "salario_max": 3000.0,
   "faixa_salarial": "R$ 1.621,00 a R$ 3.000,00"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-acari-rn-abre-concurso-publico-com-salarios-de-ate-3847": {
-  "cargos_li": [
-   "Professor Nível I (13 vagas)",
-   "Professor Nível II - Educação Física (1 vaga)",
-   "Professor Nível II - Língua Portuguesa (1 vaga)",
-   "Auditor de Controle Interno (1 vaga)",
-   "Psicopedagogo (1 vaga)",
-   "Agente Administrativo (1 vaga)",
-   "Agente Comunitário de Saúde - PSF I - UBS Maria da Guia Baracho (1 vaga)",
-   "Agente Comunitário de Saúde - PSF V - UBS Marta Maria de Araújo (1 vaga)"
-  ],
-  "data_prova": "06/12/2026",
-  "regime": "Consultar edital",
-  "beneficios": "Consultar edital",
-  "jornada": "30 e 40 horas semanais",
-  "nome_banca": "Prefeitura de Acari",
-  "link_banca": "https://acari.rn.gov.br/",
-  "arquivos_edital": [
-   "EDITAL Nº 005/2026"
-  ],
-  "salario_min": 1621.0,
-  "salario_max": 3847.97,
-  "faixa_salarial": "R$ 1.621,00 a R$ 3.847,97"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-jucurutu-rn-publica-edital-de-concurso-com-salarios-de-ate-4867": {
-  "cargos_li": [
-   "Professor de Artes (1 vaga)",
-   "Professor de Atendimento Educacional Especializado AEE (3 vagas)",
-   "Professor de Ciências (1 vaga)",
-   "Professor de Educação Física (2 vagas)",
-   "Professor de Ensino Religioso (1 vaga)",
-   "Professor de Geografia (1 vaga)",
-   "Professor de História/Cultura (1 vaga)",
-   "Professor de Língua Inglesa (1 vaga)",
-   "Professor de Língua Portuguesa (2 vagas)",
-   "Professor de Matemática (2 vagas)",
-   "Professor Polivalente de Educação Infantil (20 vagas)",
-   "Professor Polivalente - Ensino Fundamental (20 vagas)",
-   "Arquiteto (1 vaga)",
-   "Assistente Social (9 vagas)",
-   "Bioquímico (2 vagas)",
-   "Contador (1 vaga)",
-   "Controlador (1 vaga)",
-   "Coordenador Pedagógico (2 vagas)",
-   "Educador Físico (1 vaga)",
-   "Enfermeiro (9 vagas)",
-   "Farmacêutico (2 vagas)",
-   "Fiscal de Tributos (2 vagas)",
-   "Fisioterapeuta (6 vagas)",
-   "Fonoaudiólogo (3 vagas)",
-   "Médico Veterinário (2 vagas)",
-   "Nutricionista (3 vagas)",
-   "Odontólogo (4 vagas)",
-   "Pedagogo Social (2 vagas)",
-   "Psicólogo (7 vagas)",
-   "Psicopedagogo (2 vagas)",
-   "Terapeuta Ocupacional (3 vagas)",
-   "Agente Municipal de Trânsito (2 vagas)",
-   "Guarda Civil Municipal (8 vagas)",
-   "Agente Comunitário de Saúde - UBS Espinheiro - Zona Rural (1 vaga)",
-   "Agente Comunitário de Saúde - UBS do Distrito de Barra de Santana - Zona Rural (2 vagas)",
-   "Agente Comunitário de Saúde - UBS do Bairro Freitas - Zona Urbana (1 vaga)",
-   "Agente Comunitário de Saúde - UBS do Bairro Centro - Zona Urbana (1 vaga)",
-   "Agente Comunitário de Saúde - UBS do Novo Horizonte - Zona Urbana (1 vaga)",
-   "Fiscal Ambiental (1 vaga)",
-   "Fiscal de Obras e Urbanismo (1 vaga)",
-   "Técnico em Enfermagem (6 vagas)",
-   "Técnico em Informática (1 vaga)",
-   "Técnico em Saúde Bucal (2 vagas)"
-  ],
-  "data_prova": "06/12/2026",
-  "regime": "Consultar edital",
-  "beneficios": "Consultar edital",
-  "jornada": "30 a 40 horas semanais",
-  "nome_banca": "Prefeitura de Jucurutu",
-  "link_banca": "https://www.jucurutu.rn.gov.br/",
-  "arquivos_edital": [
-   "EDITAL Nº 006/2026"
-  ],
-  "salario_min": 1713.23,
-  "salario_max": 4867.69,
-  "faixa_salarial": "R$ 1.713,23 a R$ 4.867,69"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-marcelino-vieira-rn-abre-processo-seletivo-com-salarios-de-ate-13266": {
   "cargos_li": [
@@ -8177,55 +7863,6 @@
   "salario_min": 1621.0,
   "salario_max": 13266.0,
   "faixa_salarial": "R$ 1.621,00 a R$ 13.266,00"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-fernando-rn-retifica-edital-de-concurso-publico-com-salarios-de-ate-4101": {
-  "cargos_li": [
-   "Professor de Pedagogia (10 vagas)",
-   "Professor de Letras (1 vaga)",
-   "Professor de Geografia (1 vaga)",
-   "Professor de Matemática (1 vaga)",
-   "Professor de Educação Física (1 vaga)",
-   "Assistente Social (1 vaga)",
-   "Psicólogo (1 vaga)",
-   "Agente Arrecadador (2 vagas)",
-   "Agente Ambiental (1 vaga)",
-   "Cozinheiro (3 vagas)"
-  ],
-  "data_prova": "06/12/2026",
-  "regime": "Consultar edital",
-  "beneficios": "Consultar edital",
-  "jornada": "30 a 40 horas semanais",
-  "nome_banca": "Prefeitura de São Fernando",
-  "link_banca": "https://www.saofernando.rn.gov.br/",
-  "arquivos_edital": [
-   "EDITAL Nº 008/2026",
-   "EDITAL RETIFICADO Nº 008/2026"
-  ],
-  "salario_min": 1621.0,
-  "salario_max": 4101.05,
-  "faixa_salarial": "R$ 1.621,00 a R$ 4.101,05"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-timbauba-dos-batistas-rn-abre-concurso-publico-para-professores": {
-  "cargos_li": [
-   "Professor de Ensino Fundamental de Língua Portuguesa do 6º ao 9º Ano (1 vaga)",
-   "Professor de Ensino Fundamental de Língua Inglesa do 6º ao 9º Ano (1 vaga)",
-   "Professor de Ensino Fundamental de Matemática do 6º ao 9º Ano (1 vaga)",
-   "Professor de Ensino Fundamental de Ciências do 6º ao 9º Ano (1 vaga)",
-   "Professor de Ensino Fundamental de História do 6º ao 9º Ano (1 vaga)",
-   "Professor de Ensino Fundamental de Educação Física do 6º ao 9º Ano (1 vaga)",
-   "Professor Pedagogo para o Ensino Infantil (5 vagas)",
-   "Professor Pedagogo para o Ensino Fundamental (5 vagas)",
-   "Professor Pedagogo da Educação Especial (2 vagas)"
-  ],
-  "data_prova": "06/12/2026",
-  "regime": "Consultar edital",
-  "beneficios": "Consultar edital",
-  "jornada": "30 horas semanais",
-  "nome_banca": "Prefeitura de Timbaúba dos Batistas",
-  "link_banca": "https://timbaubadosbatistas.rn.gov.br/",
-  "arquivos_edital": [
-   "EDITAL Nº 009/2026"
-  ]
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-manaquiri-am-abre-processo-seletivo-com-vagas-para-a-educacao": {
   "cargos_li": [
@@ -9415,30 +9052,6 @@
   "salario_min": 1621.0,
   "salario_max": 16800.0,
   "faixa_salarial": "R$ 1.621,00 a R$ 16.800,00"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-xavantina-mt-abre-processo-seletivo-com-vagas-na-educacao": {
-  "cargos_li": [
-   "Professor (50 vagas)",
-   "Professor de Educação Física (3 vagas)",
-   "Técnico Administrativo Educacional (4 vagas)",
-   "Técnico Educacional em Desenvolvimento Infantil (5 vagas)",
-   "Mediador Educacional (60 vagas)",
-   "Apoio Administrativo Educacional em Manutenção da Infraestrutura (10 vagas)",
-   "Apoio Administrativo Educacional em Alimentação Escolar (5 vagas)"
-  ],
-  "data_prova": "29/11/2026",
-  "regime": "Processo Seletivo / Temporário",
-  "beneficios": "Consultar edital",
-  "jornada": "30 a 40 horas semanais",
-  "isencao": "Trabalhadores que recebam até um salário mínimo e meio, pessoas desempregadas e doadores regulares de sangue podem solicitar isenção, conforme os critérios do edital, de 28 de outubro de 2026 a 4 de novembro de 2026, às 18h.",
-  "nome_banca": "Prefeitura Municipal de Nova Xavantina",
-  "link_banca": "https://www.novaxavantina.mt.gov.br/",
-  "arquivos_edital": [
-   "EDITAL DE PROCESSO SELETIVO 002/2026"
-  ],
-  "salario_min": 1753.1,
-  "salario_max": 5786.28,
-  "faixa_salarial": "R$ 1.753,10 a R$ 5.786,28"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-rita-de-jacutinga-mg-abre-concurso-publico-com-salarios-de-ate-10207": {
   "cargos_li": [
@@ -11329,5 +10942,256 @@
   "faixa_salarial": "R$ 1.626,45 a R$ 4.748,99",
   "salario_min": 1626.45,
   "salario_max": 4748.99
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-atalanta-sc-abre-processo-seletivo-com-salarios-de-ate-9751": {
+  "cargos_li": [
+   "Agente Comunitário de Saúde",
+   "Agente de Serviços Gerais (Braçal)",
+   "Agente Profissional (Pedreiro, Encanador)",
+   "Assistente Social",
+   "Auxiliar de Sala 20h",
+   "Auxiliar de Sala 40h",
+   "Cirurgião-Dentista",
+   "Educador Físico (Esporte)",
+   "Educador Físico (Saúde)",
+   "Enfermeiro",
+   "Farmacêutico",
+   "Fisioterapeuta 20h",
+   "Fisioterapeuta 30h",
+   "Fonoaudiólogo (1 vaga e cadastro de reserva)",
+   "Nutricionista",
+   "Oficial Administrativo",
+   "Operador de Equipamento Máquinas (CNH C)",
+   "Operador de Equipamento Motorista (CNH D)",
+   "Professor de Anos Iniciais Habilitado",
+   "Professor de Anos Iniciais Não Habilitado",
+   "Professor de Artes",
+   "Professor de Ciências",
+   "Professor de Educação Especial",
+   "Professor de Educação Física",
+   "Professor de Educação Infantil Habilitado",
+   "Professor de Educação Infantil Não Habilitado",
+   "Professor de Inglês",
+   "Professor de Robótica",
+   "Psicólogo da Assistência Social",
+   "Secretário de Escola",
+   "Servente",
+   "Técnico em Enfermagem"
+  ],
+  "data_prova": "06/12/2026",
+  "regime": "Processo Seletivo / Temporário",
+  "beneficios": "Consultar edital",
+  "jornada": "20 a 40 horas semanais",
+  "isencao": "A isenção poderá ser solicitada de 27 de outubro de 2026 a 9 de novembro de 2026 por doadores de sangue fidelizados, doadores de medula óssea e candidatos inscritos no CadÚnico que atendam aos critérios do edital.",
+  "nome_banca": "Município de Atalanta",
+  "link_banca": "https://www.atalanta.sc.gov.br/",
+  "arquivos_edital": [
+   "EDITAL DE PROCESSO SELETIVO Nº 001/2026"
+  ],
+  "faixa_salarial": "R$ 1.224,30 a R$ 9.751,15",
+  "salario_min": 1224.3,
+  "salario_max": 9751.15
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-concordia-sc-abre-concurso-publico-com-salarios-de-ate-6057": {
+  "cargos_li": [
+   "Analista de Gestão Administrativa (1 vaga)",
+   "Psicólogo (1 vaga)",
+   "Terapeuta Ocupacional (1 vaga)",
+   "Professor - Anos Iniciais",
+   "Professor - Artes",
+   "Professor - Ciências",
+   "Professor - Educação Física",
+   "Professor - Espanhol",
+   "Professor - Geografia",
+   "Professor - Inglês",
+   "Professor - Matemática",
+   "Técnico Artístico - Canto e Vocal",
+   "Técnico Artístico - Dança",
+   "Técnico Artístico - Gaita",
+   "Técnico Artístico - Piano",
+   "Técnico Artístico - Teatro",
+   "Técnico Artístico - Teclado",
+   "Técnico Artístico - Violão",
+   "Técnico Desportivo - Atletismo",
+   "Técnico Desportivo - Futebol de Campo",
+   "Técnico Desportivo - Futebol de Salão",
+   "Técnico Desportivo - Handebol",
+   "Técnico Desportivo - Voleibol",
+   "Agente de Apoio Educacional (1 vaga)",
+   "Auxiliar Educacional (1 vaga)",
+   "Auxiliar Odontológico (1 vaga)",
+   "Técnico em Enfermagem (1 vaga)",
+   "Secretário Escolar (1 vaga)"
+  ],
+  "data_prova": "31/01/2027",
+  "regime": "Consultar edital",
+  "beneficios": "Consultar edital",
+  "jornada": "20 a 40 horas semanais",
+  "isencao": "Doadores de sangue, de medula óssea e doadoras de leite humano podem solicitar isenção de 3 a 10 de novembro de 2026, conforme as regras do edital.",
+  "nome_banca": "Município de Concórdia",
+  "link_banca": "https://concordia.atende.net/cidadao",
+  "arquivos_edital": [
+   "EDITAL 001/2026"
+  ],
+  "faixa_salarial": "R$ 2.551,12 a R$ 6.057,51",
+  "salario_min": 2551.12,
+  "salario_max": 6057.51
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-major-vieira-sc-retifica-edital-de-concurso-publico": {
+  "cargos_li": [
+   "Facilitador de Oficinas (CR)",
+   "Agente Operacional Especializado Mecânico (CR)",
+   "Agente Operacional (1 vaga + CR)",
+   "Agente de Serviços Públicos (1 vaga + CR)",
+   "Agente Condutor de Máquinas (1 vaga + CR)",
+   "Agente de Apoio Educacional (8 vagas)",
+   "Auditor de Tributos Municipais (1 vaga)",
+   "Terapeuta Ocupacional (CR)"
+  ],
+  "data_prova": "22/11/2026",
+  "regime": "Consultar edital",
+  "beneficios": "Consultar edital",
+  "jornada": "20 a 40 horas semanais",
+  "isencao": "Além disso, o cronograma foi atualizado, alterando o período de inscrições, o prazo para solicitação de isenção e a data de aplicação das provas, entre outras datas. Será possível solicitar isenção de 28 de outubro a 4 de novembro de 2026, de acordo com as regras do edital.",
+  "nome_banca": "Município de Major Vieira",
+  "link_banca": "https://majorvieira.sc.gov.br/",
+  "arquivos_edital": [
+   "EDITAL DE ABERTURA Nº 01/2026",
+   "EDITAL DE REABERTURA Nº 01/2026"
+  ],
+  "faixa_salarial": "R$ 1.782,49 a R$ 8.442,71",
+  "salario_min": 1782.49,
+  "salario_max": 8442.71
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-xaxim-sc-abre-processo-seletivo-para-professores": {
+  "cargos_li": [
+   "Professor de Educação Infantil",
+   "Professor dos Anos Iniciais Ensino Fundamental",
+   "Professor de Educação Física",
+   "Professor de Informática",
+   "Professor de Artes",
+   "Professor de Ciências",
+   "Professor de Ensino Religioso",
+   "Professor de Geografia",
+   "Professor de História",
+   "Professor de Língua Inglesa",
+   "Professor de Língua Portuguesa",
+   "Professor de Matemática",
+   "Professor de Educação Especial",
+   "Professor de Educação Especial 1 AEE",
+   "Professor de Educação Especial 3 Bilíngue, Alfabetização, Libras, Português e Intérprete de Libras",
+   "Professor de Artes Visuais",
+   "Professor de Música",
+   "Professor de Coral Italiano",
+   "Professor de Ballet Clássico",
+   "Professor de Cultura Afro/Capoeira",
+   "Professor de Dança de Salão Gaúcha",
+   "Professor de Dança Italiana",
+   "Professor de Danças Urbanas",
+   "Professor de Teatro"
+  ],
+  "data_prova": "06/12/2026",
+  "regime": "Processo Seletivo / Temporário",
+  "beneficios": "Consultar edital",
+  "jornada": "10 a 40 horas semanais",
+  "isencao": "Os pedidos de isenção podem ser feitos de 20 a 27 de outubro de 2026, conforme os critérios do edital.",
+  "nome_banca": "Município de Xaxim",
+  "link_banca": "https://www.xaxim.sc.gov.br/",
+  "arquivos_edital": [
+   "EDITAL Nº 003/2026",
+   "RETIFICAÇÃO Nº 01"
+  ],
+  "faixa_salarial": "R$ 871,67 a R$ 5.137,52",
+  "salario_min": 871.67,
+  "salario_max": 5137.52
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-xavantina-mt-divulga-edital-retificado-de-processo-seletivo-para-a-educacao": {
+  "cargos_li": [
+   "Professor (50 vagas)",
+   "Professor de Educação Física (3 vagas)",
+   "Técnico Administrativo Educacional (4 vagas)",
+   "Técnico Educacional em Desenvolvimento Infantil (5 vagas)",
+   "Mediador Educacional (60 vagas)",
+   "Apoio Administrativo Educacional em Manutenção da Infraestrutura (10 vagas)",
+   "Apoio Administrativo Educacional em Alimentação Escolar (5 vagas)"
+  ],
+  "data_prova": "29/11/2026",
+  "regime": "Processo Seletivo / Temporário",
+  "beneficios": "Consultar edital",
+  "jornada": "30 a 40 horas semanais",
+  "isencao": "Trabalhadores que recebam até um salário mínimo e meio, pessoas desempregadas e doadores regulares de sangue podem solicitar isenção, conforme os critérios do edital, de 28 de outubro de 2026 a 4 de novembro de 2026, às 18h.",
+  "nome_banca": "Prefeitura Municipal de Nova Xavantina",
+  "link_banca": "https://www.novaxavantina.mt.gov.br/",
+  "arquivos_edital": [
+   "EDITAL DE PROCESSO SELETIVO 002/2026",
+   "EDITAL RETIFICADO 002/2026"
+  ],
+  "faixa_salarial": "R$ 1.753,10 a R$ 5.786,28",
+  "salario_min": 1753.1,
+  "salario_max": 5786.28
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-aracatu-ba-abre-processo-seletivo-para-a-secretaria-de-educacao": {
+  "cargos_li": [
+   "Assistente Social (4 vagas)",
+   "Neuropsicopedagogo(a) (1 vaga)",
+   "Neuropsicólogo(a) (1 vaga)",
+   "Nutricionista (3 vagas)",
+   "Psicólogo(a) (5 vagas)",
+   "Psicopedagogo(a) (5 vagas)",
+   "Professor(a) Nível I (60 vagas)",
+   "Professor(a) P II - Artes (2 vagas)",
+   "Professor(a) P II - Ciências Biológicas (5 vagas)",
+   "Professor(a) P II - Educação Física (5 vagas)",
+   "Professor(a) P II - Geografia (5 vagas)",
+   "Professor(a) P II - História (5 vagas)",
+   "Professor(a) P II - Inglês (5 vagas)",
+   "Professor(a) P II - Matemática (10 vagas)",
+   "Professor(a) P II - Português (10 vagas)",
+   "Acompanhante Terapêutico (40 vagas)",
+   "Agente Administrativo (5 vagas)",
+   "Monitor(a) (32 vagas)",
+   "Motorista C/D (5 vagas)",
+   "Motorista B (5 vagas)",
+   "Auxiliar de Serviços Gerais (32 vagas)"
+  ],
+  "data_prova": "29/11/2026",
+  "regime": "Processo Seletivo / Temporário",
+  "beneficios": "Consultar edital",
+  "jornada": "20 a 40 horas semanais",
+  "isencao": "Candidatos integrantes de famílias inscritas no CadÚnico, com renda mensal por pessoa de até meio salário mínimo, podem solicitar isenção.",
+  "nome_banca": "Prefeitura Municipal de Aracatu",
+  "link_banca": "https://www.aracatu.ba.gov.br/",
+  "arquivos_edital": [
+   "EDITAL Nº 001/2026"
+  ],
+  "faixa_salarial": "R$ 1.621,00 a R$ 2.565,32",
+  "salario_min": 1621.0,
+  "salario_max": 2565.32
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-horizonte-ce-retifica-edital-de-concurso-publico": {
+  "cargos_li": [
+   "Eletricista (2 vagas)",
+   "Engenheiro de Segurança do Trabalho (1 vaga)",
+   "Fiscal Municipal (6 vagas)",
+   "Médico Veterinário (1 vaga)",
+   "Motorista (4 vagas)",
+   "Técnico em Segurança do Trabalho (1 vaga)"
+  ],
+  "data_prova": "22/11/2026",
+  "regime": "Consultar edital",
+  "beneficios": "Consultar edital",
+  "jornada": "40 horas semanais",
+  "isencao": "As taxas de inscrição são de R$ 70,00 para o cargo de nível fundamental, R$ 100,00 para cargos de nível médio/técnico e R$ 140,00 para cargos de nível superior. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+  "nome_banca": "Prefeitura de Horizonte",
+  "link_banca": "https://www.horizonte.ce.gov.br/",
+  "arquivos_edital": [
+   "EDITAL Nº 001/2026",
+   "EDITAL RETIFICADO Nº 001/2026 - REABERTURA",
+   "ADITIVO 001/2026",
+   "ADITIVO 002/2026"
+  ],
+  "faixa_salarial": "Consultar edital",
+  "salario_min": null,
+  "salario_max": null
  }
 }
