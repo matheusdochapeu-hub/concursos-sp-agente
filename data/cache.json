@@ -1144,44 +1144,6 @@
   "salario_max": 3774.0,
   "faixa_salarial": "R$ 2.672,23 a R$ 3.774,00"
  },
- "https://www.pciconcursos.com.br/noticias/camara-de-jarinu-sp-abre-concurso-publico-com-salarios-de-ate-10744": {
-  "first_seen": "2026-10-21",
-  "hash": "16916b79698a",
-  "fisio_linhas": [],
-  "salario_max_texto": 10744.0,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Analista de Comunicação (1 vaga)",
-    "Analista de Finanças e Orçamento (1 vaga)",
-    "Analista de Gestão Administrativa (1 vaga)",
-    "Analista de Processo Legislativo (1 vaga)",
-    "Analista de Recursos Humanos (1 vaga)",
-    "Controlador Interno (1 vaga)",
-    "Procurador (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/jarinu-sp",
-   "link_banca": "https://camarajarinu.sp.gov.br/",
-   "nome_banca": "Câmara Municipal de Jarinu",
-   "data_prova": "22/11/2026",
-   "regime": "Estatutário",
-   "beneficios": "Consultar edital",
-   "jornada": "20 a 40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 109,00. Haverá possibilidade de solicitação de isenção entre os dias 30 de setembro de 2026 e 2 de outubro de 2026 para candidatos inscritos no CadÚnico e que atendam aos requisitos do edital.",
-   "salario_min": 9200.0,
-   "salario_max": 10744.0,
-   "faixa_salarial": "R$ 9.200,00 a R$ 10.744,00"
-  },
-  "salario_min": 9200.0,
-  "salario_max": 10744.0,
-  "faixa_salarial": "R$ 9.200,00 a R$ 10.744,00"
- },
  "https://www.pciconcursos.com.br/noticias/camara-de-torre-de-pedra-sp-abre-concurso-publico-para-procurador-legislativo": {
   "first_seen": "2026-10-21",
   "hash": "607d263e5e78",
@@ -1392,32 +1354,6 @@
   "salario_min": 2226.55,
   "salario_max": 8991.96,
   "faixa_salarial": "R$ 2.226,55 a R$ 8.991,96"
- },
- "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-vaga-para-tecnico-de-administracao-hospitalar-pcd": {
-  "first_seen": "2026-10-21",
-  "hash": "e32f877242f2",
-  "fisio_linhas": [],
-  "salario_max_texto": 3254.51,
-  "tem_medio": true,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Técnico de Administração Hospitalar (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 122/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/campinas-sp",
-   "link_banca": "https://www.funcamp.unicamp.br/",
-   "nome_banca": "FUNCAMP",
-   "data_prova": "Consultar edital",
-   "regime": "CLT (Celetista)",
-   "beneficios": "Consultar edital",
-   "jornada": "Consultar edital",
-   "isencao": "Inscrição gratuita (seleção exclusiva PcD — sem cobrança de taxa informada no edital)."
-  }
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-telefonista-pcd-no-ame-santa-barbara-doeste": {
   "first_seen": "2026-10-21",
@@ -1951,60 +1887,6 @@
    "beneficios": "Cesta básica, adicional de insalubridade e gratificação de produtividade para jorn · Cesta básica (alimentos e produtos de limpeza), condicionado à frequência",
    "jornada": "15 horas semanais",
    "isencao": "O valor da taxa de inscrição é R$ 45,00. O período para solicitar isenção da taxa vai de 2 a 4 de outubro de 2026, conforme as regras do edital."
-  }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-sp-abre-concurso-publico-para-guarda-civil-municipal": {
-  "first_seen": "2026-10-21",
-  "hash": "e3653cdb2488",
-  "fisio_linhas": [],
-  "salario_max_texto": 2220.94,
-  "tem_medio": true,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Guarda Civil Municipal de 3ª Classe, masculino (24 vagas + CR)",
-    "Guarda Civil Municipal de 3ª Classe, feminino (6 vagas + CR)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 011/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/sao-roque-sp",
-   "link_banca": "https://www.saoroque.sp.gov.br/",
-   "nome_banca": "Prefeitura da Estância Turística de São Roque",
-   "data_prova": "06/12/2026",
-   "regime": "Estatutário",
-   "beneficios": "Auxílio-alimentação de R$ 450,00 e gratificação de assiduidade de R$ 400,00, conforme apuração de frequência · Cesta básica, auxílio-alimentação de R$ 450,00 e gratificação de assiduidade de R$",
-   "jornada": "Consultar edital",
-   "isencao": "Pedidos de isenção poderão ser enviados pelo site de 19 a 21 de outubro de 2026, nas condições previstas no edital."
-  }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-prorroga-inscricoes-de-concurso-publico-para-professores-auxiliares": {
-  "first_seen": "2026-10-21",
-  "hash": "c20afd0bdd36",
-  "fisio_linhas": [],
-  "salario_max_texto": 1250.0,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Auxiliar (10 vagas)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 179/2026",
-    "RETIFICAÇÃO I AO EDITAL Nº 179/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/birigui-sp",
-   "link_banca": "https://www.birigui.sp.gov.br/birigui/home.php",
-   "nome_banca": "Secretaria Municipal de Educação",
-   "data_prova": "29/11/2026",
-   "regime": "Estatutário",
-   "beneficios": "Vale-alimentação e prêmio por assiduidade · Vale-alimentação e prêmio por assiduidade, no total de até R$ 1.250,00.",
-   "jornada": "40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 54,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-cabreuva-sp-abre-concurso-publico-para-guarda-municipal": {
@@ -2787,44 +2669,6 @@
   "salario_min": 1933.17,
   "salario_max": 10500.0,
   "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-guarulhos-sp-abre-vagas-para-programas-de-residencia-multiprofissional-em-saude": {
-  "first_seen": "2026-10-21",
-  "hash": "07eb6882270f",
-  "fisio_linhas": [
-   "Fisioterapia (3 vagas)"
-  ],
-  "salario_max_texto": 4106.09,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 3,
-  "detalhes": {
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA DE SELEÇÃO PÚBLICA Nº 001/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/guarulhos-sp",
-   "link_banca": "https://www.guarulhos.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Guarulhos",
-   "data_prova": "13/12/2026",
-   "regime": "Residência (Bolsa)",
-   "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "60 horas semanais",
-   "cargos_li": [
-    "Enfermagem (4 vagas)",
-    "Educação Física (2 vagas)",
-    "Fisioterapia (3 vagas)",
-    "Nutrição (3 vagas)",
-    "Odontologia (2 vagas)",
-    "Psicologia (2 vagas)",
-    "Serviço Social (2 vagas)",
-    "Enfermagem (1 vaga)",
-    "Farmácia (1 vaga)",
-    "Psicologia (1 vaga)",
-    "Serviço Social (1 vaga)"
-   ],
-   "isencao": "A taxa de inscrição é de R$ 280,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guatapara-sp-abre-selecao-para-cadastro-de-reserva-em-diversas-areas": {
   "first_seen": "2026-10-21",
@@ -3716,33 +3560,6 @@
   "salario_min": 1621.0,
   "salario_max": 5325.6,
   "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-lagoinha-sp-abre-vagas-para-assistente-social-e-psicologo": {
-  "first_seen": "2026-10-21",
-  "hash": "c524839cd51c",
-  "fisio_linhas": [],
-  "salario_max_texto": 4362.76,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Assistente Social (1 vaga)",
-    "Psicólogo (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA DO PROCESSO SELETIVO Nº 01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/lagoinha-sp",
-   "link_banca": "https://www.lagoinha.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Lagoinha",
-   "data_prova": "29/11/2026",
-   "regime": "CLT (Celetista)",
-   "beneficios": "Consultar edital",
-   "jornada": "30 horas semanais",
-   "isencao": "Candidatos inscritos no CadÚnico e doadores de sangue ou medula óssea poderão solicitar isenção em 19 e 20 de outubro de 2026, mediante envio da ficha e dos documentos exigidos para concursosimperio@hotmail.com, até às 23h59 de 20 de outubro de 2026."
-  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-para-cargos-de-nivel-superior-na-educacao": {
   "first_seen": "2026-10-21",
@@ -4716,276 +4533,6 @@
    "isencao": "A taxa de inscrição é de R$ 80,00, com pagamento até 3 de novembro de 2026. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
   }
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-processo-seletivo-para-professores-temporarios": {
-  "first_seen": "2026-10-21",
-  "hash": "408beaf2f29d",
-  "fisio_linhas": [],
-  "salario_max_texto": null,
-  "tem_medio": true,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 5,
-  "detalhes": {
-   "cargos_li": [
-    "Professor I Temporário - Educação Infantil (0 a 6 anos) (0 a 3 anos - Creche; 4 a 5 anos - EMEI) (CR)",
-    "Professor I Temporário - Ensino Fundamental (Séries Iniciais) 1º, 2º, 3º, 4º e 5º anos (CR)",
-    "Professor de Educação Especial Temporário - Deficiência Auditiva (CR)",
-    "Professor de Educação Especial Temporário - Deficiência Intelectual (CR)",
-    "Professor de Educação Especial Temporário - Deficiência Visual (CR)",
-    "Professor III Temporário - Português (CR)",
-    "Professor III Temporário - Matemática (CR)",
-    "Professor III Temporário - Geografia (CR)",
-    "Professor III Temporário - Ciências (CR)",
-    "Professor III Temporário - Inglês (CR)",
-    "Professor III Temporário - Filosofia (CR)",
-    "Professor III Temporário - Arte/Educação Artística (CR)",
-    "Professor III Temporário - História (CR)",
-    "Professor III Temporário - Química (CR)",
-    "Professor III Temporário - Biologia (CR)",
-    "Professor III Temporário - Física (CR)",
-    "Professor III Temporário - Sociologia (CR)",
-    "Professor III Temporário - Arte/Educação Artística - Arte Musical (CR)",
-    "Professor III Temporário - Arte/Educação Artística Artes Cênicas (CR)",
-    "Professor III Temporário - Educação Física (CR)",
-    "Professor III Temporário - Educação Física - Dança (CR)",
-    "Professor III Temporário - Educação Física - Ginástica Geral (CR)",
-    "Professor III Temporário - Educação Física - Natação (CR)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
-   ],
-   "link_banca": "https://www.matao.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Matão",
-   "data_prova": "06/12/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital",
-   "jornada": "15 e 28 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 97,00, com possibilidade de isenção nos dias 28 e 29 de setembro de 2026 para candidatos que atendam aos requisitos previstos em lei.",
-   "faixa_salarial": "Consultar edital",
-   "salario_min_texto": null,
-   "salario_max_texto": null
-  },
-  "ia": {
-   "cidade": "Matão",
-   "banca": "IBAM SP",
-   "data_prova": "06/12/2026",
-   "regime_geral": "Temporário",
-   "beneficios": null,
-   "isencao": "Taxa de inscrição de R$ 97,00. Possibilidade de isenção nos dias 28 e 29 de setembro de 2026 para candidatos que atendam aos requisitos previstos em lei.",
-   "jornada_geral": "15 a 28 horas semanais",
-   "resumo_conteudo_fisio": null,
-   "cargos": [
-    {
-     "nome": "Professor I Temporário - Educação Infantil (0 a 6 anos)",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino médio (magistério) ou superior compatível"
-    },
-    {
-     "nome": "Professor I Temporário - Ensino Fundamental (Séries Iniciais)",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino médio (magistério) ou superior compatível"
-    },
-    {
-     "nome": "Professor de Educação Especial Temporário - Deficiência Auditiva",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com habilitação específica"
-    },
-    {
-     "nome": "Professor de Educação Especial Temporário - Deficiência Intelectual",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com habilitação específica"
-    },
-    {
-     "nome": "Professor de Educação Especial Temporário - Deficiência Visual",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com habilitação específica"
-    },
-    {
-     "nome": "Professor III Temporário - Português",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Matemática",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Geografia",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Ciências",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Inglês",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Filosofia",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Arte/Educação Artística",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - História",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Química",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Biologia",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Física",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Sociologia",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Arte/Educação Artística - Arte Musical",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Arte/Educação Artística Artes Cênicas",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área"
-    },
-    {
-     "nome": "Professor III Temporário - Educação Física",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área e registro no conselho"
-    },
-    {
-     "nome": "Professor III Temporário - Educação Física - Dança",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área e registro no conselho"
-    },
-    {
-     "nome": "Professor III Temporário - Educação Física - Ginástica Geral",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área e registro no conselho"
-    },
-    {
-     "nome": "Professor III Temporário - Educação Física - Natação",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "Até 28h semanais",
-     "regime": "Temporário",
-     "requisitos": "Ensino superior com licenciatura na área e registro no conselho"
-    }
-   ]
-  },
-  "ia_model": "gemini-3.5-flash-lite"
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-mirassol-sp-abre-processo-seletivo-para-agente-de-suporte-ao-atendimento-da-crianca": {
   "first_seen": "2026-10-21",
   "hash": "55aa582364b4",
@@ -5875,41 +5422,6 @@
    "beneficios": "Consultar edital",
    "jornada": "Consultar edital",
    "isencao": "Candidatos inscritos no CadÚnico e doadores de medula óssea nas condições previstas no edital poderão solicitar isenção de 20 a 21 de outubro de 2026."
-  }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-sebastiao-sp-abre-processo-seletivo-para-formacao-de-cadastro-de-reserva-de-professores": {
-  "first_seen": "2026-10-21",
-  "hash": "1d190338eb46",
-  "fisio_linhas": [],
-  "salario_max_texto": 6106.94,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor de Educação Básica I",
-    "Professor de Educação Básica I - Intérprete de Libras",
-    "Professor de Educação Básica II - Artes",
-    "Professor de Educação Básica II - Ciências",
-    "Professor de Educação Básica II - Geografia",
-    "Professor de Educação Básica II - História",
-    "Professor de Educação Básica II - Inglês",
-    "Professor de Educação Básica II - Língua Portuguesa",
-    "Professor de Educação Básica II - Matemática",
-    "Professor de Educação Física"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/sao-sebastiao-sp",
-   "link_banca": "https://portal.imperioconcursos.com.br/",
-   "nome_banca": "portal.imperioconcursos.com.br",
-   "data_prova": "08/11/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital",
-   "jornada": "18 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 10,14. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
   }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sarapui-sp-abre-concurso-publico-para-o-cargo-de-procurador-juridico": {
@@ -7308,38 +6820,6 @@
    "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
   }
  },
- "https://www.pciconcursos.com.br/noticias/unesp-de-franca-sp-abre-concurso-publico-para-professor-substituto-na-area-de-historia-da-america": {
-  "first_seen": "2026-10-21",
-  "hash": "5ff3591ff017",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de História da América, subárea de História da América e História dos Estados Unidos (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 240/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/franca-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2106.04,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
-  },
-  "salario_min": 2106.04,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
- },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-na-area-de-educacao-em-rio-claro-sp": {
   "first_seen": "2026-10-21",
   "hash": "b33935c830a6",
@@ -7822,64 +7302,6 @@
    "beneficios": "Consultar edital",
    "jornada": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula)."
-  }
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-ciencias-agrarias-em-jaboticabal-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "a0d9643b2bf5",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Ciências Agrárias, subárea de Agronomia (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 392/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/jaboticabal-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2106.04,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
-  },
-  "salario_min": 2106.04,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
- },
- "https://www.pciconcursos.com.br/noticias/unicamp-sp-abre-concurso-publico-para-professor-doutor-na-area-de-ortodontia": {
-  "first_seen": "2026-10-21",
-  "hash": "430a989abaa7",
-  "fisio_linhas": [],
-  "salario_max_texto": 16994.31,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Doutor na área de Ortodontia (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 06 P 19605 D"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/piracicaba-sp",
-   "link_banca": "https://www.unicamp.br/",
-   "nome_banca": "Universidade Estadual de Campinas (UNICAMP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Auxílio-alimentação no valor de R$ 2.000,00, vale-refeição de R$ 50,00 por dia, auxílio-saúde de até R$ 900,00, en",
-   "jornada": "Consultar edital",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual)."
   }
  },
  "https://www.pciconcursos.com.br/noticias/unicamp-sp-prorroga-inscricoes-de-concurso-publico-para-professor-doutor-na-faculdade-de-engenharia-mecanica": {
@@ -14374,6 +13796,517 @@
    "beneficios": "Consultar edital",
    "jornada": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 384,20. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-sp-prorroga-inscricoes-de-concurso-publico-para-guarda-civil-municipal": {
+  "first_seen": "2026-10-30",
+  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "a13cf67ae7fe",
+  "fisio_linhas": [],
+  "salario_max_texto": 2220.94,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Guarda Civil Municipal de 3ª Classe, masculino (24 vagas + CR)",
+    "Guarda Civil Municipal de 3ª Classe, feminino (6 vagas + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 011/2026",
+    "ERRATA Nº 001 AO EDITAL Nº 011/2026"
+   ],
+   "link_banca": "https://www.saoroque.sp.gov.br/",
+   "nome_banca": "Prefeitura da Estância Turística de São Roque",
+   "data_prova": "13/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Auxílio-alimentação de R$ 450,00 e gratificação de assiduidade de R$ 400,00, conforme apuração de frequência · Cesta básica, auxílio-alimentação de R$ 450,00 e gratificação de assiduidade de R$",
+   "jornada": "Consultar edital",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-alambari-sp-abre-processo-seletivo-para-monitor-de-transporte-escolar-e-professor-i": {
+  "first_seen": "2026-10-30",
+  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "d10e708312ae",
+  "fisio_linhas": [],
+  "salario_max_texto": 4306.4,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Monitor de Transporte Escolar",
+    "Professor I"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO Nº 1/2026"
+   ],
+   "link_banca": "https://www.alambari.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Alambari",
+   "data_prova": "13/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-bora-sp-abre-concurso-publico-para-auxiliar-de-transporte-escolar": {
+  "first_seen": "2026-10-30",
+  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "f2a7c1881d17",
+  "fisio_linhas": [],
+  "salario_max_texto": 1674.95,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar de Transporte Escolar (4 vagas + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO 01/2026"
+   ],
+   "link_banca": "https://www.bora.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Borá",
+   "data_prova": "13/12/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Cartão alimentação de R$ 1.100,00. A seleção ocorrerá por meio de prova objetiva · Cartão alimentação no valor de R$ 1.100,00.",
+   "jornada": "40 horas semanais",
+   "isencao": "Candidatos cadastrados como doadores de medula óssea e doadores que comprovem ao menos três doações de sangue nos 12 meses anteriores ao pedido poderão solicitar isenção de 30 de outubro de 2026 a 8 de novembro de 2026.",
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-pratania-sp-abre-processo-seletivo-com-vagas-para-diversos-cargos": {
+  "first_seen": "2026-10-30",
+  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "ebceffe50958",
+  "fisio_linhas": [
+   "Fisioterapeuta (CR)"
+  ],
+  "salario_max_texto": 3242.0,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar de Serviços Diversos (1 vaga)",
+    "Monitor de Transporte Escolar (3 vagas)",
+    "Motorista Nível I (2 vagas)",
+    "Motorista Nível III (4 vagas)",
+    "Operador de Máquinas II (2 vagas)",
+    "Tratorista (2 vagas)",
+    "Agente Administrativo (CR)",
+    "Agente de Combate a Endemias (CR)",
+    "Agente Sanitário (CR)",
+    "Atendente de Dentista (CR)",
+    "Auxiliar de Farmácia (CR)",
+    "Técnico de Enfermagem (1 vaga)",
+    "Assistente Social (1 vaga)",
+    "Enfermeiro (1 vaga)",
+    "Fisioterapeuta (CR)",
+    "Fonoaudiólogo (1 vaga)",
+    "Nutricionista (1 vaga)",
+    "Psicólogo (1 vaga)",
+    "Técnico Desportivo (2 vagas)",
+    "Terapeuta Ocupacional (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "PROCESSO SELETIVO Nº 003/2026"
+   ],
+   "link_banca": "https://www.pratania.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Pratânia",
+   "data_prova": "29/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "20 a 44 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
+   "salario_min_texto": 1621.0,
+   "salario_max_texto": 3242.0
+  },
+  "ia": {
+   "cidade": "Pratânia",
+   "banca": "CONSCAM",
+   "data_prova": "29/11/2026",
+   "regime_geral": "Temporário",
+   "beneficios": null,
+   "isencao": "Taxas de inscrição de R$ 15,00 para fundamental, R$ 20,00 para médio/técnico e R$ 25,00 para superior. Não há detalhes adicionais sobre isenção no texto.",
+   "jornada_geral": "20 a 44 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Auxiliar de Serviços Diversos",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": 1621.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "escolaridade": "fundamental",
+     "vagas": "3 vagas",
+     "salario": 1621.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Motorista Nível I",
+     "escolaridade": "fundamental",
+     "vagas": "2 vagas",
+     "salario": 1621.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Motorista Nível III",
+     "escolaridade": "fundamental",
+     "vagas": "4 vagas",
+     "salario": 1621.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Operador de Máquinas II",
+     "escolaridade": "fundamental",
+     "vagas": "2 vagas",
+     "salario": 1621.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Tratorista",
+     "escolaridade": "fundamental",
+     "vagas": "2 vagas",
+     "salario": 1621.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Agente Administrativo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Agente de Combate a Endemias",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Agente Sanitário",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Atendente de Dentista",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino técnico"
+    },
+    {
+     "nome": "Auxiliar de Farmácia",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino técnico"
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 3242.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 3242.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": 3242.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 3242.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 3242.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 3242.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Técnico Desportivo",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": 3242.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 3242.0,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-presidente-alves-sp-abre-concurso-publico-com-salarios-de-ate-4246": {
+  "first_seen": "2026-10-30",
+  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "35cd06a0b98c",
+  "fisio_linhas": [
+   "Fisioterapeuta (1 vaga)",
+   "A jornada é de 30 horas semanais para Fisioterapeuta e Professor de Ensino Infantil e de 40 horas semanais para Motorista. Os salários variam de R$ 2.022,91 a R$ 4.246,41."
+  ],
+  "salario_max_texto": 4246.41,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Fisioterapeuta (1 vaga)",
+    "Motorista (1 vaga)",
+    "Professor de Ensino Infantil (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL COMPLETO CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_banca": "https://www.presidentealves.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Presidente Alves",
+   "data_prova": "06/12/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "jornada": "30 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "R$ 2.022,91 a R$ 4.246,41",
+   "salario_min_texto": 2022.91,
+   "salario_max_texto": 4246.41
+  },
+  "ia": {
+   "cidade": "Presidente Alves",
+   "banca": "SR Digitalizações",
+   "data_prova": "06/12/2026",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios": null,
+   "isencao": "Taxa de inscrição de R$ 60,00 para Motorista e de R$ 80,00 para os demais empregos.",
+   "jornada_geral": "30 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "30h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior na área"
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Professor de Ensino Infantil",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "30h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior na área"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-sebastiao-sp-retifica-edital-de-processo-seletivo-para-professores": {
+  "first_seen": "2026-10-30",
+  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "d4366945549e",
+  "fisio_linhas": [],
+  "salario_max_texto": 6106.94,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Educação Básica I",
+    "Professor de Educação Básica I - Intérprete de Libras",
+    "Professor de Educação Básica II - Artes",
+    "Professor de Educação Básica II - Ciências",
+    "Professor de Educação Básica II - Geografia",
+    "Professor de Educação Básica II - História",
+    "Professor de Educação Básica II - Inglês",
+    "Professor de Educação Básica II - Língua Portuguesa",
+    "Professor de Educação Básica II - Matemática",
+    "Professor de Educação Física"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO Nº 01/2026",
+    "EDITAL RETIFICADO - DATA DA PROVA - PROCESSO SELETIVO Nº 01/2026"
+   ],
+   "link_banca": "https://portal.imperioconcursos.com.br/",
+   "nome_banca": "portal.imperioconcursos.com.br",
+   "data_prova": "22/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "18 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 10,14. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/uscs-sp-abre-concurso-para-professores-do-curso-de-medicina-em-itapetininga": {
+  "first_seen": "2026-10-30",
+  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "78c48b970147",
+  "fisio_linhas": [],
+  "salario_max_texto": null,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Alergologia e Imunologia",
+    "Professor de Anestesiologia",
+    "Professor de Cardiologia",
+    "Professor de Cirurgia de Cabeça e Pescoço",
+    "Professor de Cirurgia Cardiovascular",
+    "Professor de Cirurgia do Aparelho Digestivo",
+    "Professor de Cirurgia Geral",
+    "Professor de Cirurgia Pediátrica",
+    "Professor de Cirurgia Oncológica",
+    "Professor de Cirurgia Torácica",
+    "Professor de Cirurgia Vascular",
+    "Professor de Clínica Médica",
+    "Professor de Dermatologia",
+    "Professor de Endocrinologia e Metabologia",
+    "Professor de Medicina de Família e Comunidade",
+    "Professor de Fisiatria e Reabilitação",
+    "Professor de Gastroenterologia Clínica",
+    "Professor de Genética Médica",
+    "Professor de Geriatria e Gerontologia",
+    "Professor de Ginecologia e Obstetrícia",
+    "Professor de Hematologia e Hemoterapia",
+    "Professor de Infectologia",
+    "Professor de Medicina de Emergência",
+    "Professor de Medicina Intensiva",
+    "Professor de Medicina Legal e Perícia Médica",
+    "Professor de Medicina Paliativa",
+    "Professor de Nefrologia",
+    "Professor de Neonatologia",
+    "Professor de Neurocirurgia",
+    "Professor de Neurologia",
+    "Professor de Oftalmologia",
+    "Professor de Oncologia",
+    "Professor de Ortopedia e Traumatologia",
+    "Professor de Otorrinolaringologia",
+    "Professor de Patologia",
+    "Professor de Pediatria",
+    "Professor de Pneumologia",
+    "Professor de Medicina Preventiva e Social",
+    "Professor de Psiquiatria",
+    "Professor de Radiologia",
+    "Professor de Reumatologia",
+    "Professor de Urologia",
+    "Professor de Simulação Realística",
+    "Professor de Enfermagem em Simulação Realística"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_banca": "https://www.uscs.edu.br/",
+   "nome_banca": "Universidade Municipal de São Caetano do Sul (USCS)",
+   "data_prova": "06/12/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio Alimentação de São Caetano do Sul ou doadores de medula óssea em entidade reconhecida",
+   "jornada": "Consultar edital",
+   "isencao": "Poderão solicitar isenção, das 10h de 3 de novembro de 2026 às 17h de 4 de novembro de 2026, candidatos cadastrados no Programa de Auxílio Alimentação de São Caetano do Sul ou doadores de medula óssea em entidade reconhecida.",
    "faixa_salarial": "Consultar edital",
    "salario_min_texto": null,
    "salario_max_texto": null
