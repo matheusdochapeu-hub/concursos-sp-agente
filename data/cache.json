@@ -13803,7 +13803,7 @@
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-sp-prorroga-inscricoes-de-concurso-publico-para-guarda-civil-municipal": {
   "first_seen": "2026-10-30",
-  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "a13cf67ae7fe",
@@ -13833,7 +13833,7 @@
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-alambari-sp-abre-processo-seletivo-para-monitor-de-transporte-escolar-e-professor-i": {
   "first_seen": "2026-10-30",
-  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "d10e708312ae",
@@ -13862,7 +13862,7 @@
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-bora-sp-abre-concurso-publico-para-auxiliar-de-transporte-escolar": {
   "first_seen": "2026-10-30",
-  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "f2a7c1881d17",
@@ -13890,7 +13890,7 @@
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-pratania-sp-abre-processo-seletivo-com-vagas-para-diversos-cargos": {
   "first_seen": "2026-10-30",
-  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "ebceffe50958",
@@ -13935,204 +13935,11 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "salario_min_texto": 1621.0,
    "salario_max_texto": 3242.0
-  },
-  "ia": {
-   "cidade": "Pratânia",
-   "banca": "CONSCAM",
-   "data_prova": "29/11/2026",
-   "regime_geral": "Temporário",
-   "beneficios": null,
-   "isencao": "Taxas de inscrição de R$ 15,00 para fundamental, R$ 20,00 para médio/técnico e R$ 25,00 para superior. Não há detalhes adicionais sobre isenção no texto.",
-   "jornada_geral": "20 a 44 horas semanais",
-   "resumo_conteudo_fisio": null,
-   "cargos": [
-    {
-     "nome": "Auxiliar de Serviços Diversos",
-     "escolaridade": "fundamental",
-     "vagas": "1 vaga",
-     "salario": 1621.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino fundamental"
-    },
-    {
-     "nome": "Monitor de Transporte Escolar",
-     "escolaridade": "fundamental",
-     "vagas": "3 vagas",
-     "salario": 1621.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino fundamental"
-    },
-    {
-     "nome": "Motorista Nível I",
-     "escolaridade": "fundamental",
-     "vagas": "2 vagas",
-     "salario": 1621.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino fundamental"
-    },
-    {
-     "nome": "Motorista Nível III",
-     "escolaridade": "fundamental",
-     "vagas": "4 vagas",
-     "salario": 1621.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino fundamental"
-    },
-    {
-     "nome": "Operador de Máquinas II",
-     "escolaridade": "fundamental",
-     "vagas": "2 vagas",
-     "salario": 1621.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino fundamental"
-    },
-    {
-     "nome": "Tratorista",
-     "escolaridade": "fundamental",
-     "vagas": "2 vagas",
-     "salario": 1621.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino fundamental"
-    },
-    {
-     "nome": "Agente Administrativo",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino médio"
-    },
-    {
-     "nome": "Agente de Combate a Endemias",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino médio"
-    },
-    {
-     "nome": "Agente Sanitário",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino médio"
-    },
-    {
-     "nome": "Atendente de Dentista",
-     "escolaridade": "tecnico",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino técnico"
-    },
-    {
-     "nome": "Auxiliar de Farmácia",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino médio"
-    },
-    {
-     "nome": "Técnico de Enfermagem",
-     "escolaridade": "tecnico",
-     "vagas": "1 vaga",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino técnico"
-    },
-    {
-     "nome": "Assistente Social",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": 3242.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino superior"
-    },
-    {
-     "nome": "Enfermeiro",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": 3242.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino superior"
-    },
-    {
-     "nome": "Fisioterapeuta",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": 3242.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino superior"
-    },
-    {
-     "nome": "Fonoaudiólogo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": 3242.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino superior"
-    },
-    {
-     "nome": "Nutricionista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": 3242.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino superior"
-    },
-    {
-     "nome": "Psicólogo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": 3242.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino superior"
-    },
-    {
-     "nome": "Técnico Desportivo",
-     "escolaridade": "superior",
-     "vagas": "2 vagas",
-     "salario": 3242.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino superior"
-    },
-    {
-     "nome": "Terapeuta Ocupacional",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": 3242.0,
-     "carga_horaria": null,
-     "regime": "Temporário",
-     "requisitos": "Ensino superior"
-    }
-   ]
-  },
-  "ia_model": "gemini-3.5-flash-lite"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-presidente-alves-sp-abre-concurso-publico-com-salarios-de-ate-4246": {
   "first_seen": "2026-10-30",
-  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "35cd06a0b98c",
@@ -14161,51 +13968,11 @@
    "faixa_salarial": "R$ 2.022,91 a R$ 4.246,41",
    "salario_min_texto": 2022.91,
    "salario_max_texto": 4246.41
-  },
-  "ia": {
-   "cidade": "Presidente Alves",
-   "banca": "SR Digitalizações",
-   "data_prova": "06/12/2026",
-   "regime_geral": "CLT (Celetista)",
-   "beneficios": null,
-   "isencao": "Taxa de inscrição de R$ 60,00 para Motorista e de R$ 80,00 para os demais empregos.",
-   "jornada_geral": "30 a 40 horas semanais",
-   "resumo_conteudo_fisio": null,
-   "cargos": [
-    {
-     "nome": "Fisioterapeuta",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null,
-     "carga_horaria": "30h semanais",
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino superior na área"
-    },
-    {
-     "nome": "Motorista",
-     "escolaridade": "fundamental",
-     "vagas": "1 vaga",
-     "salario": null,
-     "carga_horaria": "40h semanais",
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino fundamental"
-    },
-    {
-     "nome": "Professor de Ensino Infantil",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null,
-     "carga_horaria": "30h semanais",
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino superior na área"
-    }
-   ]
-  },
-  "ia_model": "gemini-3.5-flash-lite"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-sebastiao-sp-retifica-edital-de-processo-seletivo-para-professores": {
   "first_seen": "2026-10-30",
-  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "d4366945549e",
@@ -14243,7 +14010,7 @@
  },
  "https://www.pciconcursos.com.br/noticias/uscs-sp-abre-concurso-para-professores-do-curso-de-medicina-em-itapetininga": {
   "first_seen": "2026-10-30",
-  "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+  "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "78c48b970147",

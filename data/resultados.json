@@ -1,6 +1,6 @@
 {
- "gerado_em": "30/10/2026 13:39",
- "gerado_em_iso": "2026-10-30T13:39:23.023836-03:00",
+ "gerado_em": "30/10/2026 13:22",
+ "gerado_em_iso": "2026-10-30T13:22:11.909335-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
  "total_sp": 177,
  "total_brasil": 632,
@@ -35,7 +35,7 @@
    "beneficios_gerais": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
    "jornada_geral": "30h semanais",
    "isencao": "Taxa de inscrição de R$ 126,79. Há isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
-   "faixa_salarial": "Até R$ 2.978,36",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
     "dias_restantes": 14,
@@ -430,7 +430,7 @@
    "beneficios_gerais": "VA (Vale-alimentação) + Prêmio-assiduidade de até R$ 1.250,00/mês",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 58,00 superior / R$ 56,00 médio / R$ 54,00 fund.) — Requisitos: doadores de sangue residentes em Birigui, convocados pela Justiça Eleitoral e doadores de medula óssea (solicitação em 22 e 23/10/2026).",
-   "faixa_salarial": "Até R$ 13.881,85",
+   "faixa_salarial": "R$ 1.621,05 a R$ 13.881,85",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
     "dias_restantes": 41,
@@ -679,7 +679,7 @@
    "beneficios_gerais": "Benefícios conforme estatuto municipal (VA/VR/VT não detalhados no resumo)",
    "jornada_geral": "10 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 40,00 a R$ 120,00) — Requisitos: candidatos inscritos no CadÚnico (baixa renda) e doadores conforme regras do edital (solicitação de 09 a 17/10/2026).",
-   "faixa_salarial": "Até R$ 10.500,00",
+   "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -884,7 +884,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "De 20 a 40 horas semanais",
    "isencao": "Taxa de inscrição de R$ 60,00 para cargos de ensino fundamental e médio, e R$ 80,00 para nível superior. Isenção disponível para doadores de sangue ou de medula óssea que atendam aos requisitos do edital, solicitada nos dias 27 e 28 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 17.716,50",
+   "faixa_salarial": "R$ 1.721,15 a R$ 17.716,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
     "dias_restantes": 12,
@@ -975,8 +975,8 @@
     "salario": null,
     "salario_bruto": null,
     "salario_total": null,
-    "salario_exibicao": "Até R$ 17.716,50",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 17.716,50 (+ auxílios legais)",
+    "salario_exibicao": "R$ 1.721,15 a R$ 17.716,50",
+    "salario_detalhe": "Faixa bruta no edital: R$ 1.721,15 a R$ 17.716,50 (+ auxílios legais)",
     "carga_horaria": "De 20 a 40 horas semanais",
     "regime": "Estatutário",
     "escolaridade_tipo": "superior",
@@ -1115,7 +1115,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Holambra (ver edital)",
    "jornada_geral": "20 a 44 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa reduzida: R$ 16,98 fund. / R$ 18,16 médio, técnico e superior) — Requisitos: hipossuficiência / critérios legais do edital (solicitação até 11/10/2026).",
-   "faixa_salarial": "Até R$ 8.431,01",
+   "faixa_salarial": "R$ 1.915,95 a R$ 8.431,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -1433,7 +1433,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Jaborandi (ver edital)",
    "jornada_geral": "20 a 48 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 50,00 a R$ 90,00) — Requisitos: candidatos doadores regulares de sangue mediante comprovação (solicitação até 12/10/2026).",
-   "faixa_salarial": "Até R$ 5.325,60",
+   "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -1647,7 +1647,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Paulo de Faria (ver edital)",
    "jornada_geral": "20 a 44 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 80,00 médio / R$ 120,00 superior) — Requisitos: candidatos inscritos no CadÚnico (baixa renda), com solicitação nos dias 22 e 23/10/2026.",
-   "faixa_salarial": "Até R$ 8.632,29",
+   "faixa_salarial": "R$ 1.657,09 a R$ 8.632,29",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -1902,7 +1902,7 @@
    "beneficios_gerais": "Vale-alimentação mensal de R$ 863,00 a R$ 863,50",
    "jornada_geral": "15 a 40 horas semanais",
    "isencao": "Taxas de inscrição variam de R$ 40,00 a R$ 102,00",
-   "faixa_salarial": "Até R$ 5.882,37",
+   "faixa_salarial": "R$ 1.621,13 a R$ 5.882,37",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -1980,8 +1980,8 @@
     "salario": null,
     "salario_bruto": null,
     "salario_total": null,
-    "salario_exibicao": "Até R$ 5.882,37",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 5.882,37 (+ auxílios legais)",
+    "salario_exibicao": "R$ 1.621,13 a R$ 5.882,37",
+    "salario_detalhe": "Faixa bruta no edital: R$ 1.621,13 a R$ 5.882,37 (+ auxílios legais)",
     "carga_horaria": "15 a 40 horas semanais",
     "regime": "CLT (Celetista)",
     "escolaridade_tipo": "superior",
@@ -2103,18 +2103,18 @@
    "cidade": "Pratânia",
    "lat": -22.8112,
    "lon": -48.6636,
-   "banca": "CONSCAM",
+   "banca": "Prefeitura Municipal de Pratânia",
    "site_banca": "https://www.pratania.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pratania-sp-abre-processo-seletivo-com-vagas-para-diversos-cargos#links",
    "arquivos_edital": [
     "PROCESSO SELETIVO Nº 003/2026"
    ],
    "data_prova": "29/11/2026",
-   "regime_geral": "Temporário",
+   "regime_geral": "Processo Seletivo / Temporário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 44 horas semanais",
-   "isencao": "Taxas de inscrição de R$ 15,00 para fundamental, R$ 20,00 para médio/técnico e R$ 25,00 para superior. Não há detalhes adicionais sobre isenção no texto.",
-   "faixa_salarial": "Até R$ 3.242,00",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -2142,29 +2142,9 @@
     "Nutricionista (1 vaga)",
     "Psicólogo (1 vaga)",
     "Técnico Desportivo (2 vagas)",
-    "Terapeuta Ocupacional (1 vaga)",
-    "Auxiliar de Serviços Diversos",
-    "Monitor de Transporte Escolar",
-    "Motorista Nível I",
-    "Motorista Nível III",
-    "Operador de Máquinas II",
-    "Tratorista",
-    "Agente Administrativo",
-    "Agente de Combate a Endemias",
-    "Agente Sanitário",
-    "Atendente de Dentista",
-    "Auxiliar de Farmácia",
-    "Técnico de Enfermagem",
-    "Assistente Social",
-    "Enfermeiro",
-    "Fisioterapeuta",
-    "Fonoaudiólogo",
-    "Nutricionista",
-    "Psicólogo",
-    "Técnico Desportivo",
-    "Terapeuta Ocupacional"
+    "Terapeuta Ocupacional (1 vaga)"
    ],
-   "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [
@@ -2176,18 +2156,18 @@
     "vagas": "Cadastro de Reserva (CR)",
     "vagas_imediatas": 0,
     "tem_cr": true,
-    "salario": 3242.0,
-    "salario_bruto": 3242.0,
-    "salario_total": 3242.0,
-    "salario_exibicao": "R$ 3.242,00",
-    "salario_detalhe": "Bruto: R$ 3.242,00 (vencimento base no edital) + benefícios legais",
+    "salario": null,
+    "salario_bruto": null,
+    "salario_total": null,
+    "salario_exibicao": "R$ 1.621,00 a R$ 3.242,00",
+    "salario_detalhe": "Faixa bruta no edital: R$ 1.621,00 a R$ 3.242,00 (+ auxílios legais)",
     "carga_horaria": "20 a 44 horas semanais",
-    "regime": "Temporário",
+    "regime": "Processo Seletivo / Temporário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino superior",
+    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (CONSCAM): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (Prefeitura Municipal de Pratânia): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -2198,7 +2178,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+8 cargos)",
+     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+2 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -2207,12 +2187,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Temporário",
+     "regime": "Processo Seletivo / Temporário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Monitor de Transporte Escolar): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -2222,7 +2202,7 @@
    "salario_max": 3242.0,
    "superior_itens": [
     {
-     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+12 cargos)",
+     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+4 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -2231,12 +2211,12 @@
      "salario_total": 3242.0,
      "salario_detalhe": "Bruto: R$ 3.242,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Temporário",
+     "regime": "Processo Seletivo / Temporário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Fisioterapia (CREFITO), Enfermagem (COREN), Nutrição (CRN), Odontologia (CRO) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Atendente de Dentista): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -2254,28 +2234,28 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-conscam",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-pratania",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "CONSCAM",
-     "label_combo": "Fisioterapeuta · CONSCAM"
+     "banca_busca": "Prefeitura Municipal de Pratânia",
+     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Pratânia"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-conscam",
+     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-prefeitura-municipal-de-pratania",
      "url_cargo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar",
-     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
      "cargo_busca": "Monitor de Transporte Escolar",
-     "banca_busca": "CONSCAM",
-     "label_combo": "Monitor de Transporte Escolar · CONSCAM"
+     "banca_busca": "Prefeitura Municipal de Pratânia",
+     "label_combo": "Monitor de Transporte Escolar · Prefeitura Municipal de Pratânia"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-conscam",
+     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-prefeitura-municipal-de-pratania",
      "url_cargo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista",
-     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
      "cargo_busca": "Atendente de Dentista",
-     "banca_busca": "CONSCAM",
-     "label_combo": "Atendente de Dentista · CONSCAM"
+     "banca_busca": "Prefeitura Municipal de Pratânia",
+     "label_combo": "Atendente de Dentista · Prefeitura Municipal de Pratânia"
     }
    }
   },
@@ -2294,7 +2274,7 @@
    "cidade": "Presidente Alves",
    "lat": -22.0999,
    "lon": -49.4381,
-   "banca": "SR Digitalizações",
+   "banca": "Prefeitura Municipal de Presidente Alves",
    "site_banca": "https://www.presidentealves.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-presidente-alves-sp-abre-concurso-publico-com-salarios-de-ate-4246#links",
    "arquivos_edital": [
@@ -2303,9 +2283,9 @@
    "data_prova": "06/12/2026",
    "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "30 a 40 horas semanais",
-   "isencao": "Taxa de inscrição de R$ 60,00 para Motorista e de R$ 80,00 para os demais empregos.",
-   "faixa_salarial": "Até R$ 4.246,41",
+   "jornada_geral": "30 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "R$ 2.022,91 a R$ 4.246,41",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
     "dias_restantes": 17,
@@ -2316,12 +2296,9 @@
    "cargos_lista": [
     "Fisioterapeuta (1 vaga)",
     "Motorista (1 vaga)",
-    "Professor de Ensino Infantil (1 vaga)",
-    "Fisioterapeuta",
-    "Motorista",
-    "Professor de Ensino Infantil"
+    "Professor de Ensino Infantil (1 vaga)"
    ],
-   "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [
@@ -2337,15 +2314,15 @@
     "salario": null,
     "salario_bruto": null,
     "salario_total": null,
-    "salario_exibicao": "Até R$ 4.246,41",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 4.246,41 (+ auxílios legais)",
-    "carga_horaria": "30h semanais",
+    "salario_exibicao": "R$ 2.022,91 a R$ 4.246,41",
+    "salario_detalhe": "Faixa bruta no edital: R$ 2.022,91 a R$ 4.246,41 (+ auxílios legais)",
+    "carga_horaria": "30 horas semanais",
     "regime": "CLT (Celetista)",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino superior na área",
+    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (SR Digitalizações): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (Prefeitura Municipal de Presidente Alves): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -2358,7 +2335,7 @@
    "salario_max": 4246.41,
    "superior_itens": [
     {
-     "nome": "Fisioterapeuta / Professor de Ensino Infantil / Fisioterapeuta / Professor de Ensino Infantil",
+     "nome": "Fisioterapeuta / Professor de Ensino Infantil",
      "vagas": "3 vagas imediatas",
      "vagas_imediatas": 3,
      "tem_cr": false,
@@ -2366,13 +2343,13 @@
      "salario_bruto": 4246.41,
      "salario_total": 4246.41,
      "salario_detalhe": "Bruto: R$ 4.246,41 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "30 a 40 horas semanais",
+     "carga_horaria": "30 horas semanais",
      "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Fisioterapia (CREFITO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (SR Digitalizações): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Prefeitura Municipal de Presidente Alves): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Fisioterapeuta): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -2386,20 +2363,20 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-sr-digitalizacoes",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-presidente-alves",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/sr-digitalizacoes",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-presidente-alves",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "SR Digitalizações",
-     "label_combo": "Fisioterapeuta · SR Digitalizações"
+     "banca_busca": "Prefeitura Municipal de Presidente Alves",
+     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Presidente Alves"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-sr-digitalizacoes",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-presidente-alves",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/sr-digitalizacoes",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-presidente-alves",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "SR Digitalizações",
-     "label_combo": "Fisioterapeuta · SR Digitalizações"
+     "banca_busca": "Prefeitura Municipal de Presidente Alves",
+     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Presidente Alves"
     }
    }
   },
@@ -2429,7 +2406,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Taquaritinga (ver edital)",
    "jornada_geral": "10 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 60,00 médio / R$ 80,00 superior) — Requisitos: candidatos que atendam aos critérios socioeconômicos/doadores previstos no edital (até 11/10/2026).",
-   "faixa_salarial": "Até R$ 6.055,67",
+   "faixa_salarial": "R$ 1.738,96 a R$ 6.055,67",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -2778,7 +2755,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02",
    "jornada_geral": "12h semanais",
    "isencao": "Taxa de inscrição de R$ 209,00. O texto não menciona regras de isenção ou redução.",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
     "dias_restantes": 14,
@@ -3154,7 +3131,7 @@
    "beneficios_gerais": "Benefícios conforme legislação da Câmara Municipal (ver edital)",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 52,00 médio) — Requisitos: doadores de medula óssea cadastrados no REDOME e doadores regulares de sangue (solicitação de 21 a 25/10/2026).",
-   "faixa_salarial": "Até R$ 11.065,27",
+   "faixa_salarial": "R$ 2.920,42 a R$ 11.065,27",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
     "dias_restantes": 16,
@@ -3380,7 +3357,7 @@
    "beneficios_gerais": "VA/VR (Vale-alimentação/refeição): R$ 2.150,12/mês + Prêmio de produtividade até 85% (Fiscalização)",
    "jornada_geral": "30 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 55,00 médio/técnico) — Requisitos: candidatos inscritos no CadÚnico (baixa renda) e doadores de sangue/medula conforme critérios do edital.",
-   "faixa_salarial": "Até R$ 10.428,05",
+   "faixa_salarial": "R$ 2.571,28 a R$ 10.428,05",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
     "dias_restantes": 35,
@@ -3549,7 +3526,7 @@
    "beneficios_gerais": "VA/VR (Auxílio-refeição/alimentação): R$ 2.150,12/mês + Vale-transporte",
    "jornada_geral": "36 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 82,50 técnico / R$ 66,00 fund.) — Requisitos: inscritos no CadÚnico e doadores de medula óssea (05 e 06/10/2026).",
-   "faixa_salarial": "Até R$ 8.991,96",
+   "faixa_salarial": "R$ 2.226,55 a R$ 8.991,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -3754,7 +3731,7 @@
    "beneficios_gerais": "VA (Auxílio-alimentação): R$ 900,00/mês + reembolso parcial de plano de saúde",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 72,00 médio/técnico) — Requisitos: candidatos amparados pela legislação municipal de Boituva (doadores de sangue/medula e baixa renda CadÚnico).",
-   "faixa_salarial": "Até R$ 8.595,15",
+   "faixa_salarial": "R$ 2.312,25 a R$ 8.595,15",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
     "dias_restantes": 10,
@@ -3887,7 +3864,7 @@
    "beneficios_gerais": "VA (Auxílio-alimentação): R$ 998,92/mês",
    "jornada_geral": "40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 40,00 médio) — Requisitos: doadores de sangue, doadores de órgãos e candidatos desempregados (09 a 11/10/2026).",
-   "faixa_salarial": "Até R$ 3.774,00",
+   "faixa_salarial": "R$ 2.672,23 a R$ 3.774,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-02",
     "dias_restantes": 3,
@@ -3966,7 +3943,7 @@
    "beneficios_gerais": "Benefícios conforme estatuto municipal de Embaúba",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 50,00 a R$ 80,00 médio) — Requisitos: inscritos no CadÚnico (baixa renda) e doadores de medula óssea (solicitação de 17 a 31/10/2026).",
-   "faixa_salarial": "Até R$ 5.600,00",
+   "faixa_salarial": "R$ 1.700,00 a R$ 5.600,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -4156,7 +4133,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "Consultar edital",
    "isencao": "Inscrição gratuita (seleção exclusiva PcD — sem cobrança de taxa informada no edital).",
-   "faixa_salarial": "Até R$ 3.590,25",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -4374,7 +4351,7 @@
    "beneficios_gerais": "VA (Auxílio-alimentação em cartão): R$ 1.000,00/mês",
    "jornada_geral": "40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 73,50 médio/técnico) — Requisitos: candidatos desempregados, doadores de sangue, pessoas com deficiência (PcD) e doadores de medula óssea (19 e 20/10/2026).",
-   "faixa_salarial": "Até R$ 9.717,96",
+   "faixa_salarial": "R$ 1.767,20 a R$ 9.717,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
     "dias_restantes": 19,
@@ -4545,7 +4522,7 @@
    "beneficios_gerais": "Cartão-alimentação de R$ 1.000,00/mês + Auxílio-transporte (R$ 9,00/dia)",
    "jornada_geral": "40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 75,00 médio) — Requisitos: candidatos inscritos no CadÚnico com renda familiar mensal per capita de até meio salário mínimo (até 21/10/2026).",
-   "faixa_salarial": "Até R$ 8.738,00",
+   "faixa_salarial": "R$ 2.802,00 a R$ 8.738,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
     "dias_restantes": 17,
@@ -4676,7 +4653,7 @@
    "beneficios_gerais": "VA (Vale-alimentação) + Prêmio-assiduidade de até R$ 1.250,00/mês",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 58,00 superior / R$ 56,00 médio / R$ 54,00 fund.) — Requisitos: doadores de sangue residentes em Birigui, convocados pela Justiça Eleitoral e doadores de medula óssea (solicitação em 22 e 23/10/2026).",
-   "faixa_salarial": "Até R$ 13.881,85",
+   "faixa_salarial": "R$ 1.621,05 a R$ 13.881,85",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
     "dias_restantes": 41,
@@ -5041,7 +5018,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "30 horas semanais",
    "isencao": "Taxas de inscrição variam de R$ 60,00 a R$ 100,00. O texto não detalha requisitos específicos de isenção, recomendando a leitura do edital completo.",
-   "faixa_salarial": "Até R$ 5.500,00",
+   "faixa_salarial": "R$ 2.800,00 a R$ 5.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
     "dias_restantes": 12,
@@ -5190,7 +5167,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "Taxa de inscrição no valor de R$ 110,00 por inscrição. O edital não detalha requisitos de isenção.",
-   "faixa_salarial": "Até R$ 6.077,09",
+   "faixa_salarial": "R$ 1.949,88 a R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -5327,7 +5304,7 @@
    "beneficios_gerais": "Vale-alimentação de R$ 500,00.",
    "jornada_geral": "40 horas semanais",
    "isencao": "Doadores de medula óssea e desempregados poderão pedir isenção pelo site, das 9h de 26 de outubro de 2026 às 17h de 27 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 4.457,35",
+   "faixa_salarial": "R$ 2.118,03 a R$ 4.457,35",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
     "dias_restantes": 9,
@@ -5452,7 +5429,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "24, 30 ou 40 horas semanais",
    "isencao": "Taxas de R$ 32,80 (ensino fundamental incompleto), R$ 42,80 (ensino médio) e R$ 62,80 (ensino superior). Não haverá isenção.",
-   "faixa_salarial": "Até R$ 7.285,25",
+   "faixa_salarial": "R$ 2.061,11 a R$ 7.285,25",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -5591,7 +5568,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "As taxas de inscrição são de R$ 50,00, R$ 70,00 ou R$ 100,00, conforme o cargo. Há isenção para candidatos inscritos no CadÚnico que sejam membros de família de baixa renda, mediante solicitação realizada de 23 a 26 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 9.147,62",
+   "faixa_salarial": "R$ 1.621,00 a R$ 9.147,62",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
     "dias_restantes": 22,
@@ -5781,7 +5758,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "De 20 a 40 horas semanais",
    "isencao": "Taxa de inscrição de R$ 60,00 para cargos de ensino fundamental e médio, e R$ 80,00 para nível superior. Isenção disponível para doadores de sangue ou de medula óssea que atendam aos requisitos do edital, solicitada nos dias 27 e 28 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 17.716,50",
+   "faixa_salarial": "R$ 1.721,15 a R$ 17.716,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
     "dias_restantes": 12,
@@ -5872,8 +5849,8 @@
     "salario": null,
     "salario_bruto": null,
     "salario_total": null,
-    "salario_exibicao": "Até R$ 17.716,50",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 17.716,50 (+ auxílios legais)",
+    "salario_exibicao": "R$ 1.721,15 a R$ 17.716,50",
+    "salario_detalhe": "Faixa bruta no edital: R$ 1.721,15 a R$ 17.716,50 (+ auxílios legais)",
     "carga_horaria": "De 20 a 40 horas semanais",
     "regime": "Estatutário",
     "escolaridade_tipo": "superior",
@@ -6012,7 +5989,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "16 a 40 horas semanais (e 200 horas mensais para Cuidador Social)",
    "isencao": "Taxas de inscrição: R$ 55,00 (fundamental incompleto), R$ 70,00 (médio/técnico) e R$ 100,00 (superior). Requisitos de isenção não especificados no texto da notícia.",
-   "faixa_salarial": "Até R$ 8.653,17",
+   "faixa_salarial": "R$ 1.621,81 a R$ 8.653,17",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
     "dias_restantes": 11,
@@ -6186,7 +6163,7 @@
    "beneficios_gerais": "Vale-alimentação de R$ 417,04",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "Taxas de inscrição variam de R$ 32,00 a R$ 80,00. Solicitação de isenção de 30/10/2026 a 04/11/2026 para candidatos que se enquadrem nos requisitos do edital.",
-   "faixa_salarial": "Até R$ 13.359,44",
+   "faixa_salarial": "R$ 2.065,11 a R$ 13.359,44",
    "inscricao_status": {
     "data_fim_iso": "2026-11-30",
     "dias_restantes": 31,
@@ -6381,7 +6358,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "Taxas variam de R$ 40,00 a R$ 60,00. Isenção disponível para candidatos desempregados mediante solicitação de 23 a 26 de outubro de 2026 e envio da documentação exigida.",
-   "faixa_salarial": "Até R$ 7.408,75",
+   "faixa_salarial": "R$ 1.803,38 a R$ 7.408,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -6601,7 +6578,7 @@
    "beneficios_gerais": "Vale-alimentação mensal de R$ 863,00 a R$ 863,50",
    "jornada_geral": "15 a 40 horas semanais",
    "isencao": "Taxas de inscrição variam de R$ 40,00 a R$ 102,00",
-   "faixa_salarial": "Até R$ 5.882,37",
+   "faixa_salarial": "R$ 1.621,13 a R$ 5.882,37",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -6679,8 +6656,8 @@
     "salario": null,
     "salario_bruto": null,
     "salario_total": null,
-    "salario_exibicao": "Até R$ 5.882,37",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 5.882,37 (+ auxílios legais)",
+    "salario_exibicao": "R$ 1.621,13 a R$ 5.882,37",
+    "salario_detalhe": "Faixa bruta no edital: R$ 1.621,13 a R$ 5.882,37 (+ auxílios legais)",
     "carga_horaria": "15 a 40 horas semanais",
     "regime": "CLT (Celetista)",
     "escolaridade_tipo": "superior",
@@ -6802,18 +6779,18 @@
    "cidade": "Pratânia",
    "lat": -22.8112,
    "lon": -48.6636,
-   "banca": "CONSCAM",
+   "banca": "Prefeitura Municipal de Pratânia",
    "site_banca": "https://www.pratania.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pratania-sp-abre-processo-seletivo-com-vagas-para-diversos-cargos#links",
    "arquivos_edital": [
     "PROCESSO SELETIVO Nº 003/2026"
    ],
    "data_prova": "29/11/2026",
-   "regime_geral": "Temporário",
+   "regime_geral": "Processo Seletivo / Temporário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 44 horas semanais",
-   "isencao": "Taxas de inscrição de R$ 15,00 para fundamental, R$ 20,00 para médio/técnico e R$ 25,00 para superior. Não há detalhes adicionais sobre isenção no texto.",
-   "faixa_salarial": "Até R$ 3.242,00",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -6841,29 +6818,9 @@
     "Nutricionista (1 vaga)",
     "Psicólogo (1 vaga)",
     "Técnico Desportivo (2 vagas)",
-    "Terapeuta Ocupacional (1 vaga)",
-    "Auxiliar de Serviços Diversos",
-    "Monitor de Transporte Escolar",
-    "Motorista Nível I",
-    "Motorista Nível III",
-    "Operador de Máquinas II",
-    "Tratorista",
-    "Agente Administrativo",
-    "Agente de Combate a Endemias",
-    "Agente Sanitário",
-    "Atendente de Dentista",
-    "Auxiliar de Farmácia",
-    "Técnico de Enfermagem",
-    "Assistente Social",
-    "Enfermeiro",
-    "Fisioterapeuta",
-    "Fonoaudiólogo",
-    "Nutricionista",
-    "Psicólogo",
-    "Técnico Desportivo",
-    "Terapeuta Ocupacional"
+    "Terapeuta Ocupacional (1 vaga)"
    ],
-   "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [
@@ -6875,18 +6832,18 @@
     "vagas": "Cadastro de Reserva (CR)",
     "vagas_imediatas": 0,
     "tem_cr": true,
-    "salario": 3242.0,
-    "salario_bruto": 3242.0,
-    "salario_total": 3242.0,
-    "salario_exibicao": "R$ 3.242,00",
-    "salario_detalhe": "Bruto: R$ 3.242,00 (vencimento base no edital) + benefícios legais",
+    "salario": null,
+    "salario_bruto": null,
+    "salario_total": null,
+    "salario_exibicao": "R$ 1.621,00 a R$ 3.242,00",
+    "salario_detalhe": "Faixa bruta no edital: R$ 1.621,00 a R$ 3.242,00 (+ auxílios legais)",
     "carga_horaria": "20 a 44 horas semanais",
-    "regime": "Temporário",
+    "regime": "Processo Seletivo / Temporário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino superior",
+    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (CONSCAM): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (Prefeitura Municipal de Pratânia): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -6897,7 +6854,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+8 cargos)",
+     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+2 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -6906,12 +6863,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Temporário",
+     "regime": "Processo Seletivo / Temporário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Monitor de Transporte Escolar): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6921,7 +6878,7 @@
    "salario_max": 3242.0,
    "superior_itens": [
     {
-     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+12 cargos)",
+     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+4 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -6930,12 +6887,12 @@
      "salario_total": 3242.0,
      "salario_detalhe": "Bruto: R$ 3.242,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Temporário",
+     "regime": "Processo Seletivo / Temporário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Fisioterapia (CREFITO), Enfermagem (COREN), Nutrição (CRN), Odontologia (CRO) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Atendente de Dentista): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -6953,28 +6910,28 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-conscam",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-pratania",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "CONSCAM",
-     "label_combo": "Fisioterapeuta · CONSCAM"
+     "banca_busca": "Prefeitura Municipal de Pratânia",
+     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Pratânia"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-conscam",
+     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-prefeitura-municipal-de-pratania",
      "url_cargo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar",
-     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
      "cargo_busca": "Monitor de Transporte Escolar",
-     "banca_busca": "CONSCAM",
-     "label_combo": "Monitor de Transporte Escolar · CONSCAM"
+     "banca_busca": "Prefeitura Municipal de Pratânia",
+     "label_combo": "Monitor de Transporte Escolar · Prefeitura Municipal de Pratânia"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-conscam",
+     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-prefeitura-municipal-de-pratania",
      "url_cargo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista",
-     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
      "cargo_busca": "Atendente de Dentista",
-     "banca_busca": "CONSCAM",
-     "label_combo": "Atendente de Dentista · CONSCAM"
+     "banca_busca": "Prefeitura Municipal de Pratânia",
+     "label_combo": "Atendente de Dentista · Prefeitura Municipal de Pratânia"
     }
    }
   },
@@ -7004,7 +6961,7 @@
    "beneficios_gerais": "Auxílio-alimentação",
    "jornada_geral": "20 a 40 horas semanais (e 117 horas mensais para Professor)",
    "isencao": "Taxa de R$ 75,00 para nível médio e R$ 85,00 para nível superior. O texto não especifica regras detalhadas de isenção.",
-   "faixa_salarial": "Até R$ 7.078,72",
+   "faixa_salarial": "R$ 1.621,00 a R$ 7.078,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -7160,7 +7117,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "40 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Até R$ 4.082,72",
+   "faixa_salarial": "R$ 1.625,19 a R$ 4.082,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
     "dias_restantes": 12,
@@ -7294,7 +7251,7 @@
    "beneficios_gerais": "Todos os cargos têm vale-alimentação. Cesta básica para cargos específicos, adicional de periculosidade para Agente de Segurança Escolar e adicional de insalubridade para cargos médicos.",
    "jornada_geral": "10 a 40 horas semanais",
    "isencao": "Taxas de inscrição: R$ 60,93 para nível fundamental, R$ 79,42 para nível médio e R$ 106,62 para nível superior. Isenção disponível para candidatos desempregados, candidatos com renda pessoal de até um salário mínimo mensal ou doadores regulares de sangue do município de Suzano, mediante comprovação.",
-   "faixa_salarial": "Até R$ 12.062,91",
+   "faixa_salarial": "R$ 2.105,38 a R$ 12.062,91",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
     "dias_restantes": 26,
@@ -7461,7 +7418,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "Taxas de inscrição: R$ 35,50 para nível fundamental, R$ 45,50 para nível médio e técnico, e R$ 65,50 para nível superior. Requisitos de isenção não especificados no resumo.",
-   "faixa_salarial": "Até R$ 5.209,01",
+   "faixa_salarial": "R$ 1.783,03 a R$ 5.209,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -7668,7 +7625,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "24 a 40 horas semanais",
    "isencao": "Taxa de inscrição varia de R$ 220,00 a R$ 250,00. Há previsão de isenção e redução da taxa para os candidatos que atendam aos requisitos estabelecidos nos editais.",
-   "faixa_salarial": "Até R$ 11.778,84",
+   "faixa_salarial": "R$ 6.264,04 a R$ 11.778,84",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
     "dias_restantes": 69,
@@ -7912,7 +7869,7 @@
    "beneficios_gerais": "Vale-alimentação, cesta básica, plano de saúde e plano odontológico, conforme as regras vigentes na FEG no mome · Cesta básica, plano de saúde e plano odontológico, conforme as regras vigentes na",
    "jornada_geral": "Consultar edital",
    "isencao": "Candidatos de famílias de baixa renda inscritas no CadÚnico podem solicitar isenção até 30 de outubro de 2026, conforme os critérios do edital.",
-   "faixa_salarial": "Até R$ 2.969,41",
+   "faixa_salarial": "R$ 2.482,80 a R$ 2.969,41",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
     "dias_restantes": 20,
@@ -8026,7 +7983,7 @@
    "beneficios_gerais": "Cartão-alimentação de R$ 1.309,59/mês",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 90,00 médio/técnico) — Requisitos: candidatos amparados por lei municipal específica (doadores de sangue/medula e inscritos no CadÚnico).",
-   "faixa_salarial": "Até R$ 11.102,06",
+   "faixa_salarial": "R$ 1.984,14 a R$ 11.102,06",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
     "dias_restantes": 11,
@@ -8163,7 +8120,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Jaborandi (ver edital)",
    "jornada_geral": "20 a 48 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 50,00 a R$ 90,00) — Requisitos: candidatos doadores regulares de sangue mediante comprovação (solicitação até 12/10/2026).",
-   "faixa_salarial": "Até R$ 5.325,60",
+   "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -8377,7 +8334,7 @@
    "beneficios_gerais": "VA (Vale-alimentação): R$ 600,00/mês",
    "jornada_geral": "110 a 220 horas mensais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 62,47 médio/técnico) — Requisitos: candidatos inscritos no CadÚnico (baixa renda), com solicitação de 09 a 13/10/2026.",
-   "faixa_salarial": "Até R$ 17.397,46",
+   "faixa_salarial": "R$ 1.621,00 a R$ 17.397,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
     "dias_restantes": 10,
@@ -8613,7 +8570,7 @@
    "beneficios_gerais": "Vale-alimentação conforme legislação municipal de Macedônia",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "ℹ️ Taxa de inscrição: R$ 100,00 — Requisitos de isenção: consultar legislação municipal e edital completo da CONSESP.",
-   "faixa_salarial": "Até R$ 8.189,58",
+   "faixa_salarial": "R$ 1.684,22 a R$ 8.189,58",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
     "dias_restantes": 9,
@@ -8806,7 +8763,7 @@
    "beneficios_gerais": "Benefícios conforme estatuto municipal (VA/VR/VT não detalhados no resumo)",
    "jornada_geral": "10 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 40,00 a R$ 120,00) — Requisitos: candidatos inscritos no CadÚnico (baixa renda) e doadores conforme regras do edital (solicitação de 09 a 17/10/2026).",
-   "faixa_salarial": "Até R$ 10.500,00",
+   "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -9011,7 +8968,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Paulo de Faria (ver edital)",
    "jornada_geral": "20 a 44 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 80,00 médio / R$ 120,00 superior) — Requisitos: candidatos inscritos no CadÚnico (baixa renda), com solicitação nos dias 22 e 23/10/2026.",
-   "faixa_salarial": "Até R$ 8.632,29",
+   "faixa_salarial": "R$ 1.657,09 a R$ 8.632,29",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -9262,7 +9219,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "16 a 40 horas semanais",
    "isencao": "A isenção deve ser solicitada até o dia 7 de outubro de 2026 por candidatos inscritos no CadÚnico com renda per capita igual ou inferior a meio salário mínimo.",
-   "faixa_salarial": "Até R$ 2.613,11",
+   "faixa_salarial": "R$ 1.480,76 a R$ 2.613,11",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
     "dias_restantes": 4,
@@ -9502,7 +9459,7 @@
    "beneficios_gerais": "VA (Vale-alimentação): R$ 1.090,10/mês",
    "jornada_geral": "30 a 40 horas semanais",
    "isencao": "ℹ️ Taxa de inscrição: R$ 70,00 (médio/técnico) a R$ 100,00 (superior) — Requisitos de isenção: consultar hipóteses legais no edital completo da CONSCAM.",
-   "faixa_salarial": "Até R$ 5.118,20",
+   "faixa_salarial": "R$ 1.248,89 a R$ 5.118,20",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
     "dias_restantes": 17,
@@ -9644,7 +9601,7 @@
    "beneficios_gerais": "VA (Auxílio-alimentação): R$ 1.100,00/mês",
    "jornada_geral": "27 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 72,00 médio) — Requisitos: inscritos no CadÚnico ou residentes em Votorantim há pelo menos 2 anos com baixa renda (até 21/10/2026).",
-   "faixa_salarial": "Até R$ 8.377,33",
+   "faixa_salarial": "R$ 1.899,72 a R$ 8.377,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
     "dias_restantes": 17,
@@ -9770,7 +9727,7 @@
    "beneficios_gerais": "Vale-transporte e benefícios do estatuto municipal de Lorena",
    "jornada_geral": "15 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 64,00 médio) — Requisitos: candidatos inscritos no CadÚnico (baixa renda), conforme critérios do edital da Avança SP.",
-   "faixa_salarial": "Até R$ 8.890,46",
+   "faixa_salarial": "R$ 2.399,27 a R$ 8.890,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
     "dias_restantes": 4,
@@ -9887,7 +9844,7 @@
    "beneficios_gerais": "Cesta Básica de R$ 390,30/mês + Sacola Básica (40 kg) + Vale-Transporte",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa reduzida: R$ 28,73 médio/técnico) — Requisitos: candidatos amparados pelas hipóteses de isenção previstas na legislação municipal de Carapicuíba.",
-   "faixa_salarial": "Até R$ 12.118,50",
+   "faixa_salarial": "R$ 1.621,00 a R$ 12.118,50",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
     "dias_restantes": 0,
@@ -10189,7 +10146,7 @@
    "beneficios_gerais": "Auxílio-alimentação de R$ 450,00 e gratificação de assiduidade de R$ 400,00, conforme apuração de frequência · Cesta básica, auxílio-alimentação de R$ 450,00 e gratificação de assiduidade de R$",
    "jornada_geral": "Consultar edital",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Até R$ 2.220,94",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -10201,7 +10158,7 @@
     "Guarda Civil Municipal de 3ª Classe, masculino (24 vagas + CR)",
     "Guarda Civil Municipal de 3ª Classe, feminino (6 vagas + CR)"
    ],
-   "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -10269,7 +10226,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Taquaritinga (ver edital)",
    "jornada_geral": "10 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 60,00 médio / R$ 80,00 superior) — Requisitos: candidatos que atendam aos critérios socioeconômicos/doadores previstos no edital (até 11/10/2026).",
-   "faixa_salarial": "Até R$ 6.055,67",
+   "faixa_salarial": "R$ 1.738,96 a R$ 6.055,67",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -10617,7 +10574,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Holambra (ver edital)",
    "jornada_geral": "20 a 44 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa reduzida: R$ 16,98 fund. / R$ 18,16 médio, técnico e superior) — Requisitos: hipossuficiência / critérios legais do edital (solicitação até 11/10/2026).",
-   "faixa_salarial": "Até R$ 8.431,01",
+   "faixa_salarial": "R$ 1.915,95 a R$ 8.431,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -11094,7 +11051,7 @@
    "beneficios_gerais": "VA (Vale-alimentação): R$ 522,30/mês + VT: R$ 273,69/mês",
    "jornada_geral": "40 a 44 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 33,35 médio) — Requisitos: candidatos inscritos no CadÚnico ou desempregados com renda familiar per capita de até meio salário mínimo.",
-   "faixa_salarial": "Até R$ 6.889,64",
+   "faixa_salarial": "R$ 1.880,28 a R$ 6.889,64",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -11354,7 +11311,7 @@
    "beneficios_gerais": "Cartão alimentação de R$ 1.100,00. A seleção ocorrerá por meio de prova objetiva · Cartão alimentação no valor de R$ 1.100,00.",
    "jornada_geral": "40 horas semanais",
    "isencao": "Candidatos cadastrados como doadores de medula óssea e doadores que comprovem ao menos três doações de sangue nos 12 meses anteriores ao pedido poderão solicitar isenção de 30 de outubro de 2026 a 8 de novembro de 2026.",
-   "faixa_salarial": "Até R$ 1.674,95",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-26",
     "dias_restantes": 27,
@@ -11365,7 +11322,7 @@
    "cargos_lista": [
     "Auxiliar de Transporte Escolar (4 vagas + CR)"
    ],
-   "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -13092,7 +13049,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "De 20 a 40 horas semanais",
    "isencao": "Taxa de inscrição de R$ 60,00 para cargos de ensino fundamental e médio, e R$ 80,00 para nível superior. Isenção disponível para doadores de sangue ou de medula óssea que atendam aos requisitos do edital, solicitada nos dias 27 e 28 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 17.716,50",
+   "faixa_salarial": "R$ 1.721,15 a R$ 17.716,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
     "dias_restantes": 12,
@@ -13183,8 +13140,8 @@
     "salario": null,
     "salario_bruto": null,
     "salario_total": null,
-    "salario_exibicao": "Até R$ 17.716,50",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 17.716,50 (+ auxílios legais)",
+    "salario_exibicao": "R$ 1.721,15 a R$ 17.716,50",
+    "salario_detalhe": "Faixa bruta no edital: R$ 1.721,15 a R$ 17.716,50 (+ auxílios legais)",
     "carga_horaria": "De 20 a 40 horas semanais",
     "regime": "Estatutário",
     "escolaridade_tipo": "superior",
@@ -13323,7 +13280,7 @@
    "beneficios_gerais": "VA (Vale-alimentação): R$ 600,00/mês",
    "jornada_geral": "110 a 220 horas mensais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 62,47 médio/técnico) — Requisitos: candidatos inscritos no CadÚnico (baixa renda), com solicitação de 09 a 13/10/2026.",
-   "faixa_salarial": "Até R$ 17.397,46",
+   "faixa_salarial": "R$ 1.621,00 a R$ 17.397,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
     "dias_restantes": 10,
@@ -14395,7 +14352,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 384,20. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 16.994,01",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2027-01-22",
     "dias_restantes": 84,
@@ -14642,7 +14599,7 @@
    "beneficios_gerais": "VA (Vale-alimentação) + Prêmio-assiduidade de até R$ 1.250,00/mês",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 58,00 superior / R$ 56,00 médio / R$ 54,00 fund.) — Requisitos: doadores de sangue residentes em Birigui, convocados pela Justiça Eleitoral e doadores de medula óssea (solicitação em 22 e 23/10/2026).",
-   "faixa_salarial": "Até R$ 13.881,85",
+   "faixa_salarial": "R$ 1.621,05 a R$ 13.881,85",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
     "dias_restantes": 41,
@@ -14891,7 +14848,7 @@
    "beneficios_gerais": "Vale-alimentação de R$ 417,04",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "Taxas de inscrição variam de R$ 32,00 a R$ 80,00. Solicitação de isenção de 30/10/2026 a 04/11/2026 para candidatos que se enquadrem nos requisitos do edital.",
-   "faixa_salarial": "Até R$ 13.359,44",
+   "faixa_salarial": "R$ 2.065,11 a R$ 13.359,44",
    "inscricao_status": {
     "data_fim_iso": "2026-11-30",
     "dias_restantes": 31,
@@ -15087,7 +15044,7 @@
    "beneficios_gerais": "Cesta Básica de R$ 390,30/mês + Sacola Básica (40 kg) + Vale-Transporte",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa reduzida: R$ 28,73 médio/técnico) — Requisitos: candidatos amparados pelas hipóteses de isenção previstas na legislação municipal de Carapicuíba.",
-   "faixa_salarial": "Até R$ 12.118,50",
+   "faixa_salarial": "R$ 1.621,00 a R$ 12.118,50",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
     "dias_restantes": 0,
@@ -15228,7 +15185,7 @@
    "beneficios_gerais": "Todos os cargos têm vale-alimentação. Cesta básica para cargos específicos, adicional de periculosidade para Agente de Segurança Escolar e adicional de insalubridade para cargos médicos.",
    "jornada_geral": "10 a 40 horas semanais",
    "isencao": "Taxas de inscrição: R$ 60,93 para nível fundamental, R$ 79,42 para nível médio e R$ 106,62 para nível superior. Isenção disponível para candidatos desempregados, candidatos com renda pessoal de até um salário mínimo mensal ou doadores regulares de sangue do município de Suzano, mediante comprovação.",
-   "faixa_salarial": "Até R$ 12.062,91",
+   "faixa_salarial": "R$ 2.105,38 a R$ 12.062,91",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
     "dias_restantes": 26,
@@ -15402,7 +15359,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "24 a 40 horas semanais",
    "isencao": "Taxa de inscrição varia de R$ 220,00 a R$ 250,00. Há previsão de isenção e redução da taxa para os candidatos que atendam aos requisitos estabelecidos nos editais.",
-   "faixa_salarial": "Até R$ 11.778,84",
+   "faixa_salarial": "R$ 6.264,04 a R$ 11.778,84",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
     "dias_restantes": 69,
@@ -15787,7 +15744,7 @@
    "beneficios_gerais": "Cartão-alimentação de R$ 1.309,59/mês",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 90,00 médio/técnico) — Requisitos: candidatos amparados por lei municipal específica (doadores de sangue/medula e inscritos no CadÚnico).",
-   "faixa_salarial": "Até R$ 11.102,06",
+   "faixa_salarial": "R$ 1.984,14 a R$ 11.102,06",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
     "dias_restantes": 11,
@@ -15924,7 +15881,7 @@
    "beneficios_gerais": "Benefícios conforme legislação da Câmara Municipal (ver edital)",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 52,00 médio) — Requisitos: doadores de medula óssea cadastrados no REDOME e doadores regulares de sangue (solicitação de 21 a 25/10/2026).",
-   "faixa_salarial": "Até R$ 11.065,27",
+   "faixa_salarial": "R$ 2.920,42 a R$ 11.065,27",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
     "dias_restantes": 16,
@@ -16070,7 +16027,7 @@
    "beneficios_gerais": "Benefícios conforme estatuto municipal (VA/VR/VT não detalhados no resumo)",
    "jornada_geral": "10 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 40,00 a R$ 120,00) — Requisitos: candidatos inscritos no CadÚnico (baixa renda) e doadores conforme regras do edital (solicitação de 09 a 17/10/2026).",
-   "faixa_salarial": "Até R$ 10.500,00",
+   "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -16275,7 +16232,7 @@
    "beneficios_gerais": "VA/VR (Vale-alimentação/refeição): R$ 2.150,12/mês + Prêmio de produtividade até 85% (Fiscalização)",
    "jornada_geral": "30 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 55,00 médio/técnico) — Requisitos: candidatos inscritos no CadÚnico (baixa renda) e doadores de sangue/medula conforme critérios do edital.",
-   "faixa_salarial": "Até R$ 10.428,05",
+   "faixa_salarial": "R$ 2.571,28 a R$ 10.428,05",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
     "dias_restantes": 35,
@@ -16591,7 +16548,7 @@
    "beneficios_gerais": "VA (Auxílio-alimentação em cartão): R$ 1.000,00/mês",
    "jornada_geral": "40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 73,50 médio/técnico) — Requisitos: candidatos desempregados, doadores de sangue, pessoas com deficiência (PcD) e doadores de medula óssea (19 e 20/10/2026).",
-   "faixa_salarial": "Até R$ 9.717,96",
+   "faixa_salarial": "R$ 1.767,20 a R$ 9.717,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
     "dias_restantes": 19,
@@ -16914,7 +16871,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "As taxas de inscrição são de R$ 50,00, R$ 70,00 ou R$ 100,00, conforme o cargo. Há isenção para candidatos inscritos no CadÚnico que sejam membros de família de baixa renda, mediante solicitação realizada de 23 a 26 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 9.147,62",
+   "faixa_salarial": "R$ 1.621,00 a R$ 9.147,62",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
     "dias_restantes": 22,
@@ -17229,7 +17186,7 @@
    "beneficios_gerais": "VA/VR (Auxílio-refeição/alimentação): R$ 2.150,12/mês + Vale-transporte",
    "jornada_geral": "36 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 82,50 técnico / R$ 66,00 fund.) — Requisitos: inscritos no CadÚnico e doadores de medula óssea (05 e 06/10/2026).",
-   "faixa_salarial": "Até R$ 8.991,96",
+   "faixa_salarial": "R$ 2.226,55 a R$ 8.991,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -17356,7 +17313,7 @@
    "beneficios_gerais": "Vale-transporte e benefícios do estatuto municipal de Lorena",
    "jornada_geral": "15 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 64,00 médio) — Requisitos: candidatos inscritos no CadÚnico (baixa renda), conforme critérios do edital da Avança SP.",
-   "faixa_salarial": "Até R$ 8.890,46",
+   "faixa_salarial": "R$ 2.399,27 a R$ 8.890,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
     "dias_restantes": 4,
@@ -17473,7 +17430,7 @@
    "beneficios_gerais": "Cartão-alimentação de R$ 1.000,00/mês + Auxílio-transporte (R$ 9,00/dia)",
    "jornada_geral": "40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 75,00 médio) — Requisitos: candidatos inscritos no CadÚnico com renda familiar mensal per capita de até meio salário mínimo (até 21/10/2026).",
-   "faixa_salarial": "Até R$ 8.738,00",
+   "faixa_salarial": "R$ 2.802,00 a R$ 8.738,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
     "dias_restantes": 17,
@@ -17604,7 +17561,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "16 a 40 horas semanais (e 200 horas mensais para Cuidador Social)",
    "isencao": "Taxas de inscrição: R$ 55,00 (fundamental incompleto), R$ 70,00 (médio/técnico) e R$ 100,00 (superior). Requisitos de isenção não especificados no texto da notícia.",
-   "faixa_salarial": "Até R$ 8.653,17",
+   "faixa_salarial": "R$ 1.621,81 a R$ 8.653,17",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
     "dias_restantes": 11,
@@ -17867,7 +17824,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Paulo de Faria (ver edital)",
    "jornada_geral": "20 a 44 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 80,00 médio / R$ 120,00 superior) — Requisitos: candidatos inscritos no CadÚnico (baixa renda), com solicitação nos dias 22 e 23/10/2026.",
-   "faixa_salarial": "Até R$ 8.632,29",
+   "faixa_salarial": "R$ 1.657,09 a R$ 8.632,29",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -18119,7 +18076,7 @@
    "beneficios_gerais": "VA (Auxílio-alimentação): R$ 900,00/mês + reembolso parcial de plano de saúde",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 72,00 médio/técnico) — Requisitos: candidatos amparados pela legislação municipal de Boituva (doadores de sangue/medula e baixa renda CadÚnico).",
-   "faixa_salarial": "Até R$ 8.595,15",
+   "faixa_salarial": "R$ 2.312,25 a R$ 8.595,15",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
     "dias_restantes": 10,
@@ -18252,7 +18209,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Holambra (ver edital)",
    "jornada_geral": "20 a 44 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa reduzida: R$ 16,98 fund. / R$ 18,16 médio, técnico e superior) — Requisitos: hipossuficiência / critérios legais do edital (solicitação até 11/10/2026).",
-   "faixa_salarial": "Até R$ 8.431,01",
+   "faixa_salarial": "R$ 1.915,95 a R$ 8.431,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -18571,7 +18528,7 @@
    "beneficios_gerais": "VA (Auxílio-alimentação): R$ 1.100,00/mês",
    "jornada_geral": "27 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 72,00 médio) — Requisitos: inscritos no CadÚnico ou residentes em Votorantim há pelo menos 2 anos com baixa renda (até 21/10/2026).",
-   "faixa_salarial": "Até R$ 8.377,33",
+   "faixa_salarial": "R$ 1.899,72 a R$ 8.377,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
     "dias_restantes": 17,
@@ -18698,7 +18655,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "40 horas semanais",
    "isencao": "Candidatos inscritos e ativos no CadÚnico poderão solicitar isenção até às 16h do dia 29 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 8.340,33",
+   "faixa_salarial": "R$ 4.478,03 a R$ 8.340,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
     "dias_restantes": 14,
@@ -18901,7 +18858,7 @@
    "beneficios_gerais": "Auxílio-alimentação de R$ 1.192,00.",
    "jornada_geral": "40 horas semanais",
    "isencao": "Candidatos de famílias inscritas no CadÚnico que atendam ao critério de renda do edital e doadores de medula óssea poderão solicitar isenção entre o primeiro e o quinto dia útil do período de inscrições.",
-   "faixa_salarial": "Até R$ 8.340,33",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
     "dias_restantes": 18,
@@ -18984,7 +18941,7 @@
    "beneficios_gerais": "Vale-alimentação conforme legislação municipal de Macedônia",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "ℹ️ Taxa de inscrição: R$ 100,00 — Requisitos de isenção: consultar legislação municipal e edital completo da CONSESP.",
-   "faixa_salarial": "Até R$ 8.189,58",
+   "faixa_salarial": "R$ 1.684,22 a R$ 8.189,58",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
     "dias_restantes": 9,
@@ -19261,7 +19218,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "Taxas variam de R$ 40,00 a R$ 60,00. Isenção disponível para candidatos desempregados mediante solicitação de 23 a 26 de outubro de 2026 e envio da documentação exigida.",
-   "faixa_salarial": "Até R$ 7.408,75",
+   "faixa_salarial": "R$ 1.803,38 a R$ 7.408,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -19598,7 +19555,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "24, 30 ou 40 horas semanais",
    "isencao": "Taxas de R$ 32,80 (ensino fundamental incompleto), R$ 42,80 (ensino médio) e R$ 62,80 (ensino superior). Não haverá isenção.",
-   "faixa_salarial": "Até R$ 7.285,25",
+   "faixa_salarial": "R$ 2.061,11 a R$ 7.285,25",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -19736,7 +19693,7 @@
    "beneficios_gerais": "Auxílio-alimentação",
    "jornada_geral": "20 a 40 horas semanais (e 117 horas mensais para Professor)",
    "isencao": "Taxa de R$ 75,00 para nível médio e R$ 85,00 para nível superior. O texto não especifica regras detalhadas de isenção.",
-   "faixa_salarial": "Até R$ 7.078,72",
+   "faixa_salarial": "R$ 1.621,00 a R$ 7.078,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -19891,7 +19848,7 @@
    "beneficios_gerais": "VA (Vale-alimentação): R$ 522,30/mês + VT: R$ 273,69/mês",
    "jornada_geral": "40 a 44 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 33,35 médio) — Requisitos: candidatos inscritos no CadÚnico ou desempregados com renda familiar per capita de até meio salário mínimo.",
-   "faixa_salarial": "Até R$ 6.889,64",
+   "faixa_salarial": "R$ 1.880,28 a R$ 6.889,64",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -20024,7 +19981,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "Taxa de inscrição no valor de R$ 110,00 por inscrição. O edital não detalha requisitos de isenção.",
-   "faixa_salarial": "Até R$ 6.077,09",
+   "faixa_salarial": "R$ 1.949,88 a R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -20161,7 +20118,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Taquaritinga (ver edital)",
    "jornada_geral": "10 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 60,00 médio / R$ 80,00 superior) — Requisitos: candidatos que atendam aos critérios socioeconômicos/doadores previstos no edital (até 11/10/2026).",
-   "faixa_salarial": "Até R$ 6.055,67",
+   "faixa_salarial": "R$ 1.738,96 a R$ 6.055,67",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -20603,7 +20560,7 @@
    "beneficios_gerais": "Vale-refeição de R$ 444,14. · Cartão alimentação de R$ 444,14, e o processo seletivo prevê vale-refeição de R$ 444,14.",
    "jornada_geral": "30 a 40 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Até R$ 5.906,38",
+   "faixa_salarial": "R$ 2.097,40 a R$ 5.906,38",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -20782,7 +20739,7 @@
    "beneficios_gerais": "Vale-alimentação mensal de R$ 863,00 a R$ 863,50",
    "jornada_geral": "15 a 40 horas semanais",
    "isencao": "Taxas de inscrição variam de R$ 40,00 a R$ 102,00",
-   "faixa_salarial": "Até R$ 5.882,37",
+   "faixa_salarial": "R$ 1.621,13 a R$ 5.882,37",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -20860,8 +20817,8 @@
     "salario": null,
     "salario_bruto": null,
     "salario_total": null,
-    "salario_exibicao": "Até R$ 5.882,37",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 5.882,37 (+ auxílios legais)",
+    "salario_exibicao": "R$ 1.621,13 a R$ 5.882,37",
+    "salario_detalhe": "Faixa bruta no edital: R$ 1.621,13 a R$ 5.882,37 (+ auxílios legais)",
     "carga_horaria": "15 a 40 horas semanais",
     "regime": "CLT (Celetista)",
     "escolaridade_tipo": "superior",
@@ -20994,7 +20951,7 @@
    "beneficios_gerais": "Vale-transporte, vale-alimentação e gratificação previdenciária, conforme previsto na legislação municipal",
    "jornada_geral": "12 a 40 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 89,00. Candidatos inscritos no CadÚnico têm possibilidade de isenção, conforme regras do edital, com solicitações de 1º a 9 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 5.860,31",
+   "faixa_salarial": "R$ 3.889,11 a R$ 5.185,46",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
     "dias_restantes": 0,
@@ -21318,7 +21275,7 @@
    "beneficios_gerais": "Benefícios conforme estatuto municipal de Embaúba",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 50,00 a R$ 80,00 médio) — Requisitos: inscritos no CadÚnico (baixa renda) e doadores de medula óssea (solicitação de 17 a 31/10/2026).",
-   "faixa_salarial": "Até R$ 5.600,00",
+   "faixa_salarial": "R$ 1.700,00 a R$ 5.600,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -21604,7 +21561,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "30 horas semanais",
    "isencao": "Taxas de inscrição variam de R$ 60,00 a R$ 100,00. O texto não detalha requisitos específicos de isenção, recomendando a leitura do edital completo.",
-   "faixa_salarial": "Até R$ 5.500,00",
+   "faixa_salarial": "R$ 2.800,00 a R$ 5.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
     "dias_restantes": 12,
@@ -21840,7 +21797,7 @@
    "beneficios_gerais": "Benefícios conforme legislação municipal de Jaborandi (ver edital)",
    "jornada_geral": "20 a 48 horas semanais",
    "isencao": "✅ Há isenção da taxa (Taxa: R$ 50,00 a R$ 90,00) — Requisitos: candidatos doadores regulares de sangue mediante comprovação (solicitação até 12/10/2026).",
-   "faixa_salarial": "Até R$ 5.325,60",
+   "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -22055,7 +22012,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
    "isencao": "Taxas de inscrição: R$ 35,50 para nível fundamental, R$ 45,50 para nível médio e técnico, e R$ 65,50 para nível superior. Requisitos de isenção não especificados no resumo.",
-   "faixa_salarial": "Até R$ 5.209,01",
+   "faixa_salarial": "R$ 1.783,03 a R$ 5.209,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -22352,7 +22309,7 @@
    "beneficios_gerais": "VA (Vale-alimentação): R$ 1.090,10/mês",
    "jornada_geral": "30 a 40 horas semanais",
    "isencao": "ℹ️ Taxa de inscrição: R$ 70,00 (médio/técnico) a R$ 100,00 (superior) — Requisitos de isenção: consultar hipóteses legais no edital completo da CONSCAM.",
-   "faixa_salarial": "Até R$ 5.118,20",
+   "faixa_salarial": "R$ 1.248,89 a R$ 5.118,20",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
     "dias_restantes": 17,
@@ -22968,7 +22925,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "30 a 40 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Até R$ 4.619,95",
+   "faixa_salarial": "R$ 2.431,60 a R$ 4.619,95",
    "inscricao_status": {
     "data_fim_iso": "2026-11-02",
     "dias_restantes": 3,
@@ -23139,7 +23096,7 @@
    "beneficios_gerais": "Vale-alimentação de R$ 500,00.",
    "jornada_geral": "40 horas semanais",
    "isencao": "Doadores de medula óssea e desempregados poderão pedir isenção pelo site, das 9h de 26 de outubro de 2026 às 17h de 27 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 4.457,35",
+   "faixa_salarial": "R$ 2.118,03 a R$ 4.457,35",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
     "dias_restantes": 9,
@@ -23264,7 +23221,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "40 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Até R$ 4.306,40",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -23276,7 +23233,7 @@
     "Monitor de Transporte Escolar",
     "Professor I"
    ],
-   "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -23337,7 +23294,7 @@
    "cidade": "Presidente Alves",
    "lat": -22.0999,
    "lon": -49.4381,
-   "banca": "SR Digitalizações",
+   "banca": "Prefeitura Municipal de Presidente Alves",
    "site_banca": "https://www.presidentealves.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-presidente-alves-sp-abre-concurso-publico-com-salarios-de-ate-4246#links",
    "arquivos_edital": [
@@ -23346,9 +23303,9 @@
    "data_prova": "06/12/2026",
    "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "30 a 40 horas semanais",
-   "isencao": "Taxa de inscrição de R$ 60,00 para Motorista e de R$ 80,00 para os demais empregos.",
-   "faixa_salarial": "Até R$ 4.246,41",
+   "jornada_geral": "30 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "R$ 2.022,91 a R$ 4.246,41",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
     "dias_restantes": 17,
@@ -23359,12 +23316,9 @@
    "cargos_lista": [
     "Fisioterapeuta (1 vaga)",
     "Motorista (1 vaga)",
-    "Professor de Ensino Infantil (1 vaga)",
-    "Fisioterapeuta",
-    "Motorista",
-    "Professor de Ensino Infantil"
+    "Professor de Ensino Infantil (1 vaga)"
    ],
-   "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [
@@ -23380,15 +23334,15 @@
     "salario": null,
     "salario_bruto": null,
     "salario_total": null,
-    "salario_exibicao": "Até R$ 4.246,41",
-    "salario_detalhe": "Faixa bruta no edital: Até R$ 4.246,41 (+ auxílios legais)",
-    "carga_horaria": "30h semanais",
+    "salario_exibicao": "R$ 2.022,91 a R$ 4.246,41",
+    "salario_detalhe": "Faixa bruta no edital: R$ 2.022,91 a R$ 4.246,41 (+ auxílios legais)",
+    "carga_horaria": "30 horas semanais",
     "regime": "CLT (Celetista)",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino superior na área",
+    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (SR Digitalizações): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (Prefeitura Municipal de Presidente Alves): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -23401,7 +23355,7 @@
    "salario_max": 4246.41,
    "superior_itens": [
     {
-     "nome": "Fisioterapeuta / Professor de Ensino Infantil / Fisioterapeuta / Professor de Ensino Infantil",
+     "nome": "Fisioterapeuta / Professor de Ensino Infantil",
      "vagas": "3 vagas imediatas",
      "vagas_imediatas": 3,
      "tem_cr": false,
@@ -23409,13 +23363,13 @@
      "salario_bruto": 4246.41,
      "salario_total": 4246.41,
      "salario_detalhe": "Bruto: R$ 4.246,41 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "30 a 40 horas semanais",
+     "carga_horaria": "30 horas semanais",
      "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Fisioterapia (CREFITO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (SR Digitalizações): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Prefeitura Municipal de Presidente Alves): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Fisioterapeuta): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -23429,20 +23383,20 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-sr-digitalizacoes",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-presidente-alves",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/sr-digitalizacoes",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-presidente-alves",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "SR Digitalizações",
-     "label_combo": "Fisioterapeuta · SR Digitalizações"
+     "banca_busca": "Prefeitura Municipal de Presidente Alves",
+     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Presidente Alves"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-sr-digitalizacoes",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-presidente-alves",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/sr-digitalizacoes",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-presidente-alves",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "SR Digitalizações",
-     "label_combo": "Fisioterapeuta · SR Digitalizações"
+     "banca_busca": "Prefeitura Municipal de Presidente Alves",
+     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Presidente Alves"
     }
    }
   },
@@ -23472,7 +23426,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "25 a 40 horas semanais",
    "isencao": "Candidatos inscritos no Cadastro Único que atendam aos critérios de renda do edital e doadores de medula óssea cadastrados no Redome poderão solicitar isenção de 21 a 25 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 4.221,00",
+   "faixa_salarial": "R$ 3.520,36 a R$ 4.221,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
     "dias_restantes": 5,
@@ -23887,7 +23841,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "30 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Até R$ 4.083,17",
+   "faixa_salarial": "R$ 3.847,97 a R$ 4.083,17",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -23981,7 +23935,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "40 horas semanais",
    "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Até R$ 4.082,72",
+   "faixa_salarial": "R$ 1.625,19 a R$ 4.082,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
     "dias_restantes": 12,
@@ -24116,7 +24070,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "18 a 33 horas semanais",
    "isencao": "Candidatos inscritos no Cadastro Único para Programas Sociais do Governo Federal poderão solicitar isenção da taxa entre os dias 8 e 9 de outubro de 2026. Não haverá cobrança de taxa de inscrição para quem obtiver benefício deferido.",
-   "faixa_salarial": "Até R$ 4.048,35",
+   "faixa_salarial": "R$ 1.442,81 a R$ 4.048,35",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
     "dias_restantes": 0,
@@ -24483,7 +24437,7 @@
    "beneficios_gerais": "Vale-alimentação, cesta básica, plano de saúde e plano odontológico, conforme as regras vigentes na contratação · Cesta básica, plano de saúde e plano odontológico, conforme as regras vigentes na",
    "jornada_geral": "Consultar edital",
    "isencao": "Integrantes de famílias de baixa renda inscritas no CadÚnico que atendam aos critérios do edital poderão solicitar isenção até 28 de outubro de 2026.",
-   "faixa_salarial": "Até R$ 3.799,83",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
     "dias_restantes": 20,
@@ -24580,7 +24534,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
     "dias_restantes": 19,
@@ -24663,7 +24617,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
     "dias_restantes": 4,
@@ -24747,7 +24701,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
     "dias_restantes": 19,
@@ -24832,7 +24786,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 a 24 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-10-30",
     "dias_restantes": 0,
@@ -24916,7 +24870,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
     "dias_restantes": 7,
@@ -24999,7 +24953,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
     "dias_restantes": 4,
@@ -25082,7 +25036,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
     "dias_restantes": 6,
@@ -25169,7 +25123,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
     "dias_restantes": 5,
@@ -25255,7 +25209,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
     "dias_restantes": 18,
@@ -25338,7 +25292,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
     "dias_restantes": 5,
@@ -25421,7 +25375,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
     "dias_restantes": 7,
@@ -25504,7 +25458,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
     "dias_restantes": 7,
@@ -25588,7 +25542,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
     "dias_restantes": 10,
@@ -25672,7 +25626,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
     "dias_restantes": 10,
@@ -25756,7 +25710,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
     "dias_restantes": 10,
@@ -25839,7 +25793,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
     "dias_restantes": 14,
@@ -25923,7 +25877,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02",
    "jornada_geral": "12h semanais",
    "isencao": "Taxa de inscrição de R$ 209,00. O texto não menciona regras de isenção ou redução.",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
     "dias_restantes": 14,
@@ -26042,7 +25996,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -26129,7 +26083,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
     "dias_restantes": 14,
@@ -26219,7 +26173,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
     "dias_restantes": 18,
@@ -26304,7 +26258,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
     "dias_restantes": 18,
@@ -26388,7 +26342,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. Haverá redução de 50% do valor para os candidatos que atendam aos requisitos.",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
     "dias_restantes": 18,
@@ -26473,7 +26427,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
     "dias_restantes": 20,
@@ -26559,7 +26513,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
     "dias_restantes": 18,
@@ -26644,7 +26598,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
     "dias_restantes": 18,
@@ -26728,7 +26682,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
     "dias_restantes": 11,
@@ -26812,7 +26766,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.511,90",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
     "dias_restantes": 18,
@@ -26897,7 +26851,7 @@
    "beneficios_gerais": "Auxílio-saúde, vale-alimentação, vale-refeição e vale-transporte",
    "jornada_geral": "40 horas semanais",
    "isencao": "Doadores de medula óssea e candidatos inscritos no CadÚnico que atendam aos critérios do edital podem solicitar isenção pelo e-mail concursos@fsa.br até 27 de novembro de 2026.",
-   "faixa_salarial": "Até R$ 3.399,13",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-27",
     "dias_restantes": 28,
@@ -26978,7 +26932,7 @@
    "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada_geral": "Consultar edital",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "Até R$ 3.361,39",
+   "faixa_salarial": "R$ 1.417,53 a R$ 3.361,39",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
     "dias_restantes": 14,
@@ -27167,18 +27121,18 @@
    "cidade": "Pratânia",
    "lat": -22.8112,
    "lon": -48.6636,
-   "banca": "CONSCAM",
+   "banca": "Prefeitura Municipal de Pratânia",
    "site_banca": "https://www.pratania.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pratania-sp-abre-processo-seletivo-com-vagas-para-diversos-cargos#links",
    "arquivos_edital": [
     "PROCESSO SELETIVO Nº 003/2026"
    ],
    "data_prova": "29/11/2026",
-   "regime_geral": "Temporário",
+   "regime_geral": "Processo Seletivo / Temporário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 44 horas semanais",
-   "isencao": "Taxas de inscrição de R$ 15,00 para fundamental, R$ 20,00 para médio/técnico e R$ 25,00 para superior. Não há detalhes adicionais sobre isenção no texto.",
-   "faixa_salarial": "Até R$ 3.242,00",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
     "dias_restantes": 13,
@@ -27206,29 +27160,9 @@
     "Nutricionista (1 vaga)",
     "Psicólogo (1 vaga)",
     "Técnico Desportivo (2 vagas)",
-    "Terapeuta Ocupacional (1 vaga)",
-    "Auxiliar de Serviços Diversos",
-    "Monitor de Transporte Escolar",
-    "Motorista Nível I",
-    "Motorista Nível III",
-    "Operador de Máquinas II",
-    "Tratorista",
-    "Agente Administrativo",
-    "Agente de Combate a Endemias",
-    "Agente Sanitário",
-    "Atendente de Dentista",
-    "Auxiliar de Farmácia",
-    "Técnico de Enfermagem",
-    "Assistente Social",
-    "Enfermeiro",
-    "Fisioterapeuta",
-    "Fonoaudiólogo",
-    "Nutricionista",
-    "Psicólogo",
-    "Técnico Desportivo",
-    "Terapeuta Ocupacional"
+    "Terapeuta Ocupacional (1 vaga)"
    ],
-   "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [
@@ -27240,18 +27174,18 @@
     "vagas": "Cadastro de Reserva (CR)",
     "vagas_imediatas": 0,
     "tem_cr": true,
-    "salario": 3242.0,
-    "salario_bruto": 3242.0,
-    "salario_total": 3242.0,
-    "salario_exibicao": "R$ 3.242,00",
-    "salario_detalhe": "Bruto: R$ 3.242,00 (vencimento base no edital) + benefícios legais",
+    "salario": null,
+    "salario_bruto": null,
+    "salario_total": null,
+    "salario_exibicao": "R$ 1.621,00 a R$ 3.242,00",
+    "salario_detalhe": "Faixa bruta no edital: R$ 1.621,00 a R$ 3.242,00 (+ auxílios legais)",
     "carga_horaria": "20 a 44 horas semanais",
-    "regime": "Temporário",
+    "regime": "Processo Seletivo / Temporário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino superior",
+    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (CONSCAM): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (Prefeitura Municipal de Pratânia): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -27262,7 +27196,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+8 cargos)",
+     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+2 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -27271,12 +27205,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Temporário",
+     "regime": "Processo Seletivo / Temporário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Monitor de Transporte Escolar): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -27286,7 +27220,7 @@
    "salario_max": 3242.0,
    "superior_itens": [
     {
-     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+12 cargos)",
+     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+4 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -27295,12 +27229,12 @@
      "salario_total": 3242.0,
      "salario_detalhe": "Bruto: R$ 3.242,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Temporário",
+     "regime": "Processo Seletivo / Temporário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Fisioterapia (CREFITO), Enfermagem (COREN), Nutrição (CRN), Odontologia (CRO) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Atendente de Dentista): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -27318,28 +27252,28 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-conscam",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-pratania",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "CONSCAM",
-     "label_combo": "Fisioterapeuta · CONSCAM"
+     "banca_busca": "Prefeitura Municipal de Pratânia",
+     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Pratânia"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-conscam",
+     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-prefeitura-municipal-de-pratania",
      "url_cargo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar",
-     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
      "cargo_busca": "Monitor de Transporte Escolar",
-     "banca_busca": "CONSCAM",
-     "label_combo": "Monitor de Transporte Escolar · CONSCAM"
+     "banca_busca": "Prefeitura Municipal de Pratânia",
+     "label_combo": "Monitor de Transporte Escolar · Prefeitura Municipal de Pratânia"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-conscam",
+     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-prefeitura-municipal-de-pratania",
      "url_cargo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista",
-     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
      "cargo_busca": "Atendente de Dentista",
-     "banca_busca": "CONSCAM",
-     "label_combo": "Atendente de Dentista · CONSCAM"
+     "banca_busca": "Prefeitura Municipal de Pratânia",
+     "label_combo": "Atendente de Dentista · Prefeitura Municipal de Pratânia"
     }
    }
   },
@@ -27483,7 +27417,7 @@
    "beneficios_gerais": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
    "jornada_geral": "30h semanais",
    "isencao": "Taxa de inscrição de R$ 126,79. Há isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
-   "faixa_salarial": "Até R$ 2.978,36",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
     "dias_restantes": 14,
@@ -27604,7 +27538,7 @@
    "beneficios_gerais": "Vale-alimentação, cesta básica, plano de saúde e plano odontológico, conforme as regras vigentes na FEG no mome · Cesta básica, plano de saúde e plano odontológico, conforme as regras vigentes na",
    "jornada_geral": "Consultar edital",
    "isencao": "Candidatos de famílias de baixa renda inscritas no CadÚnico podem solicitar isenção até 30 de outubro de 2026, conforme os critérios do edital.",
-   "faixa_salarial": "Até R$ 2.969,41",
+   "faixa_salarial": "R$ 2.482,80 a R$ 2.969,41",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
     "dias_restantes": 20,
@@ -27896,7 +27830,7 @@
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "16 a 40 horas semanais",
    "isencao": "A isenção deve ser solicitada até o dia 7 de outubro de 2026 por candidatos inscritos no CadÚnico com renda per capita igual ou inferior a meio salário mínimo.",
-   "faixa_salarial": "Até R$ 2.613,11",
+   "faixa_salarial": "R$ 1.480,76 a R$ 2.613,11",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
     "dias_restantes": 4,
@@ -28522,7 +28456,7 @@
    "beneficios_gerais": "Vale-transporte · Cesta básica mensal e vale-transporte",
    "jornada_geral": "40 horas semanais",
    "isencao": "Candidatos de famílias inscritas no CadÚnico, com renda mensal por pessoa de até meio salário mínimo, poderão solicitar isenção pelo mesmo site, das 8h de 29 de outubro de 2026 às 12h de 3 de novembro de 2026.",
-   "faixa_salarial": "Até R$ 1.621,00",
+   "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
     "dias_restantes": 24,
@@ -29403,7 +29337,7 @@
     "Professor de Simulação Realística",
     "Professor de Enfermagem em Simulação Realística"
    ],
-   "first_seen_ts": "2026-10-30T13:39:23.023836-03:00",
+   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],

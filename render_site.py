@@ -499,40 +499,93 @@ def render_secao(
   </section>"""
 
 
-# Lista expandida com 75 Cargos Rápidos para a Aba de Busca Nacional
+# Lista expandida com 85 Cargos Rápidos em Ordem Alfabética (A-Z) para a Busca e Autocomplete
 CARGOS_RAPIDOS_MAX = [
-    # Saúde
-    "Fisioterapeuta", "Enfermeiro", "Técnico de Enfermagem", "Auxiliar de Enfermagem",
-    "Farmacêutico", "Psicólogo", "Nutricionista", "Dentista", "Cirurgião-Dentista",
-    "Terapeuta Ocupacional", "Fonoaudiólogo", "Biomédico", "Assistente Social",
-    "Médico", "Médico Veterinário", "Educador Físico", "Técnico em Radiologia",
-    "Técnico em Farmácia", "Técnico em Laboratório", "Auxiliar em Saúde Bucal",
-    "Agente Comunitário de Saúde", "Agente de Combate às Endemias", "Cuidador",
-    # Administrativo, Legislativo e Judiciário
-    "Agente Administrativo", "Assistente Administrativo", "Auxiliar Administrativo",
-    "Escriturário", "Oficial Administrativo", "Escrevente Técnico Judiciário",
-    "Oficial de Justiça", "Analista Administrativo", "Oficial Legislativo",
-    "Apoio Administrativo", "Recepcionista", "Almoxarife", "Telefonista",
-    "Secretário Escolar", "Arquivista", "Assistente de Suporte Acadêmico",
-    # Fiscal, Contábil e Jurídico
-    "Fiscal", "Agente de Fiscalização", "Fiscal Tributário", "Fiscal de Obras",
-    "Fiscal de Posturas", "Fiscal Ambiental", "Fiscal Sanitário", "Contador",
-    "Técnico em Contabilidade", "Tesoureiro", "Controlador Interno",
-    "Procurador", "Advogado", "Auditor Fiscal",
-    # Educação e Social
-    "Professor", "Pedagogo", "Coordenador Pedagógico", "Diretor de Escola",
-    "Inspetor de Alunos", "Monitor Escolar", "Monitor de Transporte Escolar",
-    "Auxiliar de Desenvolvimento Infantil", "Profissional de Apoio Escolar",
+    "Advogado",
+    "Agente Administrativo",
+    "Agente Comunitário de Saúde",
+    "Agente de Combate às Endemias",
+    "Agente de Fiscalização",
+    "Agente de Trânsito",
+    "Almoxarife",
+    "Analista Administrativo",
+    "Analista de TI",
+    "Apoio Administrativo",
+    "Arquiteto",
+    "Arquivista",
+    "Assistente Administrativo",
+    "Assistente de Suporte Acadêmico",
+    "Assistente Social",
+    "Auditor Fiscal",
+    "Auxiliar Administrativo",
+    "Auxiliar de Desenvolvimento Infantil",
+    "Auxiliar de Enfermagem",
+    "Auxiliar de Serviços Gerais",
+    "Auxiliar em Saúde Bucal",
+    "Biomédico",
+    "Cirurgião-Dentista",
+    "Contador",
+    "Controlador Interno",
+    "Coordenador Pedagógico",
+    "Cozinheiro",
+    "Cuidador",
+    "Dentista",
+    "Desenhista",
+    "Diretor de Escola",
+    "Educador Físico",
+    "Eletricista",
+    "Enfermeiro",
+    "Engenheiro Agrônomo",
+    "Engenheiro Ambiental",
+    "Engenheiro Civil",
+    "Engenheiro Eletricista",
+    "Escrevente Técnico Judiciário",
+    "Escriturário",
+    "Farmacêutico",
+    "Fiscal",
+    "Fiscal Ambiental",
+    "Fiscal de Obras",
+    "Fiscal de Posturas",
+    "Fiscal Sanitário",
+    "Fiscal Tributário",
+    "Fisioterapeuta",
+    "Fonoaudiólogo",
+    "Guarda Municipal",
+    "Inspetor de Alunos",
+    "Mecânico",
+    "Médico",
+    "Médico Veterinário",
+    "Merendeira",
+    "Monitor de Transporte Escolar",
+    "Monitor Escolar",
+    "Motorista",
+    "Nutricionista",
+    "Oficial Administrativo",
+    "Oficial de Justiça",
+    "Oficial Legislativo",
+    "Operador de Máquinas",
     "Orientador Social",
-    # Engenharia, TI e Técnico
-    "Engenheiro Civil", "Engenheiro Ambiental", "Engenheiro Agrônomo",
-    "Engenheiro Eletricista", "Arquiteto", "Analista de TI",
-    "Técnico em Informática", "Técnico em Segurança do Trabalho",
-    "Técnico em Edificações", "Técnico Agrícola", "Topógrafo", "Desenhista",
-    # Segurança e Operacional
-    "Guarda Municipal", "Agente de Trânsito", "Motorista", "Operador de Máquinas",
-    "Eletricista", "Mecânico", "Vigia", "Auxiliar de Serviços Gerais",
-    "Cozinheiro", "Merendeira",
+    "Pedagogo",
+    "Procurador",
+    "Professor",
+    "Profissional de Apoio Escolar",
+    "Psicólogo",
+    "Recepcionista",
+    "Secretário Escolar",
+    "Técnico Agrícola",
+    "Técnico de Enfermagem",
+    "Técnico em Contabilidade",
+    "Técnico em Edificações",
+    "Técnico em Farmácia",
+    "Técnico em Informática",
+    "Técnico em Laboratório",
+    "Técnico em Radiologia",
+    "Técnico em Segurança do Trabalho",
+    "Telefonista",
+    "Terapeuta Ocupacional",
+    "Tesoureiro",
+    "Topógrafo",
+    "Vigia",
 ]
 
 
@@ -546,10 +599,7 @@ GOOGLE_CLIENT_ID = (
 )
 
 # Webhook centralizado da Planilha Google (Apps Script) para contabilizar acessos e logins de terceiros em tempo real
-AUDIT_WEBHOOK_URL = (
-    _os.environ.get("AUDIT_WEBHOOK_URL", "").strip()
-    or "https://script.google.com/macros/s/AKfycby4DRby4jG-nE9V9c4IGcFgpI14U7Jc76eQy0fQww-ME0AJDCOq9bGcmhxN-0ETnYtJbw/exec"
-)
+AUDIT_WEBHOOK_URL = _os.environ.get("AUDIT_WEBHOOK_URL", "").strip()
 
 # Capitais usadas como cidade de referência: (nome, UF, lat, lon)
 CAPITAIS_REF = [
@@ -682,9 +732,9 @@ def render_html(
     cidades_ref.sort(key=lambda x: (x[0].lower(), x[1]))
     cidades_ref_json = safe_json_for_script(cidades_ref)
     opcoes_cidades_ref = "".join(f'<option value="{e(x[0])} - {x[1]}"></option>' for x in cidades_ref)
+    opcoes_cargos_sugeridos = "".join(f'<option value="{e(cg)}"></option>' for cg in CARGOS_RAPIDOS_MAX)
 
     qr_svg = gerar_qr_pix_svg(pix_key)
-    catalogo_json = safe_json_for_script(catalogo_brasil)
     provas_json = safe_json_for_script(catalogo_provas_banca_cargo)
 
     return f"""<!DOCTYPE html>
@@ -2700,7 +2750,10 @@ def render_html(
       </div>
 
       <div id="wrapBuscaCargoToolbar" class="toolbar-busca-cargo">
-        <input id="inputCargoEspecifico" type="search" autocomplete="off" placeholder="🔎 Digite o cargo desejado... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+        <input id="inputCargoEspecifico" type="search" list="listaCargosDisponiveis" autocomplete="off" placeholder="🔎 Digite o cargo desejado... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+        <datalist id="listaCargosDisponiveis">
+          {opcoes_cargos_sugeridos}
+        </datalist>
         <button type="button" id="btnLimparCargo" class="btn-clear-inline" title="Limpar busca" style="display:none;">✕</button>
       </div>
     </div>
@@ -2871,6 +2924,9 @@ def render_html(
             Use a barra de busca acima para digitar qualquer cargo ou abra os <b>Filtros</b> para selecionar estados, cargos rápidos, faixas salariais e escolaridade.
           </p>
         </div>
+        <div id="loadingBuscaCargo" style="display:none; text-align:center; padding:2rem; font-weight:600; color:var(--cor-primaria);">
+          ⏳ Carregando concursos de todo o Brasil...
+        </div>
         <div id="gridBuscaCargo" class="grid"></div>
         <p id="vazioBuscaCargo" class="vazio" style="display:none;">
           Nenhum concurso encontrado com os filtros atuais. Clique em "Limpar Filtros" ou selecione "🇧🇷 Brasil Todo".
@@ -2923,7 +2979,7 @@ def render_html(
             <div class="f-label" style="margin-bottom:8px;">1️⃣ Escolha ou Digite o Cargo e a Banca Organizadora:</div>
             <div class="cargo-input-row">
               <div class="cargo-input-wrap">
-                <input id="inputProvaCargo" type="search" autocomplete="off" placeholder="Cargo... Ex.: Fisioterapeuta, Escrevente, Agente Administrativo">
+                <input id="inputProvaCargo" type="search" list="listaCargosDisponiveis" autocomplete="off" placeholder="Cargo... Ex.: Fisioterapeuta, Escrevente, Agente Administrativo">
               </div>
               <div class="cargo-input-wrap">
                 <input id="inputProvaBanca" type="search" autocomplete="off" placeholder="Banca... Ex.: VUNESP, IBAM, Avança, INDEPAC, CONSCAM">
@@ -3151,7 +3207,42 @@ def render_html(
   </div>
 
 <script>
-  const CATALOGO_BRASIL = {catalogo_json};
+  let CATALOGO_BRASIL = [];
+  let catalogoBrasilCarregado = false;
+  let carregandoCatalogoBrasil = false;
+
+  function indexarCatalogoItem(it) {{
+    if (!it || it._cargosNorm) return;
+    it._cargosNorm = (it.cargos || []).map(cg => normStr(cg));
+    it._cabecalhoNorm = normStr((it.orgao || '') + ' ' + (it.titulo || '') + ' ' + (it.cargos_resumo || ''));
+    it._formacoesNorm = (it.termos_formacao || []).map(t => normStr(t));
+  }}
+
+  async function carregarCatalogoBrasilSeNecessario() {{
+    if (catalogoBrasilCarregado || carregandoCatalogoBrasil) return;
+    carregandoCatalogoBrasil = true;
+    const loadingEl = document.getElementById('loadingBuscaCargo');
+    if (loadingEl) loadingEl.style.display = 'block';
+    try {{
+      const resp = await fetch('./data/catalogo_brasil.json');
+      if (resp.ok) {{
+        CATALOGO_BRASIL = await resp.json();
+        CATALOGO_BRASIL.forEach(indexarCatalogoItem);
+        catalogoBrasilCarregado = true;
+        if (typeof aplicarFiltrosBuscaCargo === 'function') {{
+          aplicarFiltrosBuscaCargo();
+        }}
+        if (typeof renderizarBuscaCargo === 'function') {{
+          renderizarBuscaCargo();
+        }}
+      }}
+    }} catch (err) {{
+      console.error('Falha ao carregar catálogo nacional:', err);
+    }} finally {{
+      carregandoCatalogoBrasil = false;
+      if (loadingEl) loadingEl.style.display = 'none';
+    }}
+  }}
   const CATALOGO_PROVAS = {provas_json};
   const PIX_PAYLOAD = {safe_json_for_script(pix_key)};
   const DIAS_ALERTA = {DIAS_ALERTA_ENCERRAMENTO};
@@ -3160,6 +3251,10 @@ def render_html(
   function normStr(s) {{
     return (s || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
   }}
+  CATALOGO_PROVAS.forEach(p => {{
+    p._cargoNorm = normStr(p.cargo);
+    p._bancaNorm = normStr(p.banca + ' ' + p.banca_original);
+  }});
   function normSlug(s) {{
     return normStr(s).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   }}
@@ -3742,7 +3837,7 @@ const mapSal = item.cargos_salarios || {{}};
     sidebarFiltros.classList.add('aberto');
     backdropSidebarFiltros.classList.add('aberto');
     document.body.style.overflow = 'hidden';
-    atualizarUIFiltrosSidebar();
+    atualizarUIFiltrosSidebar(true);
   }}
 
   function fecharSidebarFiltros() {{
@@ -3758,8 +3853,20 @@ const mapSal = item.cargos_salarios || {{}};
   if (backdropSidebarFiltros) backdropSidebarFiltros.addEventListener('click', fecharSidebarFiltros);
 
   document.addEventListener('keydown', (e) => {{
-    if (e.key === 'Escape' && sidebarFiltros && sidebarFiltros.classList.contains('aberto')) {{
-      fecharSidebarFiltros();
+    if (e.key === 'Escape') {{
+      let modalFechado = false;
+      const modaisAbertos = document.querySelectorAll('.modal-bg.aberto, .sidebar-filtros.aberto');
+      modaisAbertos.forEach((el) => {{
+        el.classList.remove('aberto');
+        modalFechado = true;
+      }});
+      if (typeof fecharSidebarFiltros === 'function' && sidebarFiltros && sidebarFiltros.classList.contains('aberto')) {{
+        fecharSidebarFiltros();
+        modalFechado = true;
+      }}
+      if (modalFechado) {{
+        e.preventDefault();
+      }}
     }}
   }});
 
@@ -3804,7 +3911,10 @@ const mapSal = item.cargos_salarios || {{}};
     if (sidebarExtra) sidebarExtra.style.display = isBusca ? 'block' : 'none';
 
     history.replaceState(null, '', '#' + tab);
-    if (isBusca) renderizarBuscaCargo();
+    if (isBusca || tab === 'busca_cargo') {{
+      carregarCatalogoBrasilSeNecessario();
+      renderizarBuscaCargo();
+    }}
     if (isProvas) renderizarProvasAnteriores();
     atualizarUIFiltrosSidebar();
   }}
@@ -3812,6 +3922,8 @@ const mapSal = item.cargos_salarios || {{}};
   const hashInicial = location.hash.slice(1);
   if (['fisio', 'medio_todos', 'superior_sp', 'provas_anteriores', 'busca_cargo'].includes(hashInicial)) {{
     abrirTab(hashInicial);
+  }} else {{
+    carregarCatalogoBrasilSeNecessario();
   }}
 
   // 4) Filtros Unificados (Funcionam tanto nas abas de SP quanto na aba "Buscar Cargo")
@@ -3926,14 +4038,16 @@ const mapSal = item.cargos_salarios || {{}};
 
         const t = (overrideTermo !== undefined) ? normStr(overrideTermo) : termo;
         if (t) {{
+          if (!item._cargosNorm) indexarCatalogoItem(item);
           let matched = false;
-          for (const cg of (item.cargos || [])) {{
-            if (normStr(cg).includes(t)) {{ matched = true; break; }}
+          const cgsNorm = item._cargosNorm || [];
+          for (let ci = 0; ci < cgsNorm.length; ci++) {{
+            if (cgsNorm[ci].includes(t)) {{ matched = true; break; }}
           }}
-          if (!matched && normStr((item.orgao || '') + ' ' + (item.titulo || '') + ' ' + (item.cargos_resumo || '')).includes(t)) {{
+          if (!matched && (item._cabecalhoNorm || '').includes(t)) {{
             matched = true;
           }}
-          if (!matched && t.length >= 4 && (item.termos_formacao || []).some(tf => normStr(tf).includes(t))) {{
+          if (!matched && t.length >= 4 && (item._formacoesNorm || []).some(tf => tf.includes(t))) {{
             matched = true;
           }}
           if (!matched) return false;
@@ -4043,8 +4157,10 @@ const mapSal = item.cargos_salarios || {{}};
     }}
   }}
 
-  function atualizarUIFiltrosSidebar() {{
-    recalcularContadoresBotoesFiltro();
+  function atualizarUIFiltrosSidebar(forcarRecalculo = false) {{
+    if (forcarRecalculo || (sidebarFiltros && sidebarFiltros.classList.contains('aberto'))) {{
+      recalcularContadoresBotoesFiltro();
+    }}
 
     const ativosCnt = contarFiltrosAtivos();
     const badgeTopo = document.getElementById('badgeFiltrosAtivos');
@@ -4278,6 +4394,21 @@ const mapSal = item.cargos_salarios || {{}};
     }}
     if (regime && c.dataset.regime !== regime) return false;
     if (maxHoras !== null && Number(c.dataset.horas) > maxHoras) return false;
+
+    const termoBusca = (inputCargo ? inputCargo.value : '').trim();
+    if (termoBusca) {{
+      const tNorm = normStr(termoBusca);
+      if (!c._textoBuscaNorm) {{
+        c._textoBuscaNorm = normStr(
+          (c.dataset.cargo || '') + ' ' +
+          (c.dataset.orgao || '') + ' ' +
+          (c.dataset.titulo || '') + ' ' +
+          (c.dataset.cidade || '') + ' ' +
+          (c.dataset.requisitosTxt || '')
+        );
+      }}
+      if (!c._textoBuscaNorm.includes(tNorm)) return false;
+    }}
     return true;
   }}
 
@@ -4361,6 +4492,7 @@ const mapSal = item.cargos_salarios || {{}};
     if (btnClear) btnClear.style.display = 'none';
     document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b.dataset.cargo === ''));
     document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b.dataset.uf === 'TODOS'));
+    buscaCargoLimiteVisivel = 30;
     sincronizarBotoesFiltro();
     aplicarFiltrosSp(true);
     atualizarUIFiltrosSidebar();
@@ -4398,8 +4530,8 @@ const mapSal = item.cargos_salarios || {{}};
     const qBanca = normStr(inputProvaBanca.value.trim());
 
     let lista = CATALOGO_PROVAS.filter(p => {{
-      if (qCargo && !normStr(p.cargo).includes(qCargo)) return false;
-      if (qBanca && !normStr(p.banca + ' ' + p.banca_original).includes(qBanca)) return false;
+      if (qCargo && !(p._cargoNorm || normStr(p.cargo)).includes(qCargo)) return false;
+      if (qBanca && !(p._bancaNorm || normStr(p.banca + ' ' + p.banca_original)).includes(qBanca)) return false;
       return true;
     }});
 
@@ -4473,8 +4605,13 @@ const mapSal = item.cargos_salarios || {{}};
       renderizarProvasAnteriores();
     }});
   }});
-  if (inputProvaCargo) inputProvaCargo.addEventListener('input', () => renderizarProvasAnteriores());
-  if (inputProvaBanca) inputProvaBanca.addEventListener('input', () => renderizarProvasAnteriores());
+  let timerDebounceProvas = null;
+  function dispararBuscaProvasDebounced() {{
+    clearTimeout(timerDebounceProvas);
+    timerDebounceProvas = setTimeout(renderizarProvasAnteriores, 110);
+  }}
+  if (inputProvaCargo) inputProvaCargo.addEventListener('input', dispararBuscaProvasDebounced);
+  if (inputProvaBanca) inputProvaBanca.addEventListener('input', dispararBuscaProvasDebounced);
   document.getElementById('btnAbrirProvaDireta').addEventListener('click', () => {{
     window.open(montarUrlProva(inputProvaCargo.value.trim(), inputProvaBanca.value.trim()), '_blank', 'noopener');
   }});
@@ -4538,7 +4675,13 @@ const mapSal = item.cargos_salarios || {{}};
     return true;
   }}
 
-  function renderizarBuscaCargo() {{
+  let buscaCargoLimiteVisivel = 30;
+  let timerDebounceBusca = null;
+
+  function renderizarBuscaCargo(preservarLimite = false) {{
+    if (!preservarLimite) {{
+      buscaCargoLimiteVisivel = 30;
+    }}
     const termoRaw = (inputCargo.value || '').trim();
     const termo = normStr(termoRaw);
 
@@ -4547,18 +4690,22 @@ const mapSal = item.cargos_salarios || {{}};
       const item = CATALOGO_BRASIL[idx];
       if (ufSelecionada !== 'TODOS' && item.uf !== ufSelecionada) continue;
       if (!itemBrPassaNosFiltros(item)) continue;
+      if (!item._cargosNorm) indexarCatalogoItem(item);
 
       let cargosCasados = [];
       if (termo) {{
-        for (const cg of (item.cargos || [])) {{
-          if (normStr(cg).includes(termo)) cargosCasados.push(cg);
+        const cgs = item.cargos || [];
+        const cgsNorm = item._cargosNorm || [];
+        for (let i = 0; i < cgs.length; i++) {{
+          if (cgsNorm[i].includes(termo)) cargosCasados.push(cgs[i]);
         }}
-        const cabecalhoMatch = normStr(item.orgao + ' ' + item.titulo + ' ' + item.cargos_resumo).includes(termo);
+        const cabecalhoMatch = (item._cabecalhoNorm || '').includes(termo);
         // Cargos que aceitam várias formações (ex.: Auditor Fiscal aceita Direito, Contábeis, Economia)
-        const formacaoMatch = termo.length >= 4 && (item.termos_formacao || []).some(t => normStr(t).includes(termo));
+        const formacoesNorm = item._formacoesNorm || [];
+        const formacaoMatch = termo.length >= 4 && formacoesNorm.some(t => t.includes(termo));
         if (formacaoMatch && cargosCasados.length === 0) {{
-          const multi = (item.cargos || []).filter(cg => /auditor|fiscal|controlador|analista|gestor|administrador|tribut/i.test(normStr(cg)));
-          cargosCasados = multi.length > 0 ? multi : (item.cargos || []).slice(0, 3);
+          const multi = cgs.filter((cg, i) => /auditor|fiscal|controlador|analista|gestor|administrador|tribut/i.test(cgsNorm[i] || ''));
+          cargosCasados = multi.length > 0 ? multi : cgs.slice(0, 3);
         }}
         if (cargosCasados.length === 0 && !cabecalhoMatch) continue;
       }} else {{
@@ -4584,12 +4731,13 @@ const mapSal = item.cargos_salarios || {{}};
       }});
     }}
 
-    countBuscaCargo.textContent = filtrados.length;
-    if (tabCntBusca) tabCntBusca.textContent = filtrados.length;
-    vazioBusca.style.display = filtrados.length === 0 ? 'block' : 'none';
+    const totalEncontrados = filtrados.length;
+    countBuscaCargo.textContent = totalEncontrados;
+    if (tabCntBusca) tabCntBusca.textContent = totalEncontrados;
+    vazioBusca.style.display = totalEncontrados === 0 ? 'block' : 'none';
 
-    const fatia = filtrados;
-    gridBusca.innerHTML = fatia.map(({{ item, cargosCasados, idx }}) => {{
+    const fatia = filtrados.slice(0, buscaCargoLimiteVisivel);
+    const cardsHtml = fatia.map(({{ item, cargosCasados, idx }}) => {{
       const uid = `br-${{idx}}`;
       const resolved = resolverSalarioParaCargo(item, termo, cargosCasados, estadoFiltros.escolaridade);
       const cargoDestaque = cargosCasados.length > 0
@@ -4701,38 +4849,89 @@ const mapSal = item.cargos_salarios || {{}};
           </div>
         </article>`;
     }}).join('');
+
+    let botaoMaisHtml = '';
+    if (totalEncontrados > buscaCargoLimiteVisivel) {{
+      botaoMaisHtml = `
+        <div id="wrapVerMaisBusca" style="grid-column: 1 / -1; text-align:center; padding: 24px 10px 14px;">
+          <button type="button" id="btnVerMaisBuscaCargo" class="btn-primary-action" style="padding: 12px 28px; font-size: 0.95rem; font-weight:700; border-radius: 999px; cursor: pointer; background: var(--br-blue-dark); color: #fff; border: 1.5px solid var(--cor-borda); box-shadow: 0 4px 14px rgba(0,0,0,0.12); transition: all .2s ease;">
+            ➕ Mostrar mais concursos (exibindo ${{fatia.length}} de ${{totalEncontrados}})
+          </button>
+        </div>`;
+    }}
+
+    gridBusca.innerHTML = cardsHtml + botaoMaisHtml;
+
+    const btnVerMais = document.getElementById('btnVerMaisBuscaCargo');
+    if (btnVerMais) {{
+      btnVerMais.addEventListener('click', () => {{
+        buscaCargoLimiteVisivel += 30;
+        renderizarBuscaCargo(true);
+      }});
+    }}
+    const wrapVerMais = document.getElementById('wrapVerMaisBusca');
+    if (wrapVerMais && 'IntersectionObserver' in window) {{
+      const obs = new IntersectionObserver((entries) => {{
+        if (entries[0].isIntersecting) {{
+          obs.disconnect();
+          buscaCargoLimiteVisivel += 30;
+          renderizarBuscaCargo(true);
+        }}
+      }}, {{ rootMargin: '250px' }});
+      obs.observe(wrapVerMais);
+    }}
   }}
 
   const btnLimparCargo = document.getElementById('btnLimparCargo');
+  inputCargo.addEventListener('focus', () => {{
+    carregarCatalogoBrasilSeNecessario();
+  }});
   inputCargo.addEventListener('input', () => {{
-    if (btnLimparCargo) btnLimparCargo.style.display = inputCargo.value.trim() ? 'block' : 'none';
+    carregarCatalogoBrasilSeNecessario();
+    const valTrim = inputCargo.value.trim();
+    if (btnLimparCargo) btnLimparCargo.style.display = valTrim ? 'block' : 'none';
+    const valNorm = normStr(valTrim);
     document.querySelectorAll('.cargo-quick').forEach(b => {{
-      b.classList.toggle('ativo', normStr(b.dataset.cargo) === normStr(inputCargo.value.trim()));
+      b.classList.toggle('ativo', normStr(b.dataset.cargo) === valNorm);
     }});
-    renderizarBuscaCargo();
-    atualizarUIFiltrosSidebar();
+    clearTimeout(timerDebounceBusca);
+    timerDebounceBusca = setTimeout(() => {{
+      buscaCargoLimiteVisivel = 30;
+      renderizarBuscaCargo();
+      aplicarFiltrosSp();
+      atualizarUIFiltrosSidebar();
+    }}, 110);
   }});
   if (btnLimparCargo) {{
     btnLimparCargo.addEventListener('click', () => {{
       inputCargo.value = '';
       btnLimparCargo.style.display = 'none';
       document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b.dataset.cargo === ''));
+      buscaCargoLimiteVisivel = 30;
       renderizarBuscaCargo();
+      aplicarFiltrosSp();
       atualizarUIFiltrosSidebar();
     }});
   }}
   document.querySelectorAll('.cargo-quick').forEach(btn => {{
     btn.addEventListener('click', () => {{
       inputCargo.value = btn.dataset.cargo;
+      if (btnLimparCargo) btnLimparCargo.style.display = inputCargo.value.trim() ? 'block' : 'none';
       document.querySelectorAll('.cargo-quick').forEach(b => b.classList.toggle('ativo', b === btn));
+      buscaCargoLimiteVisivel = 30;
       renderizarBuscaCargo();
+      aplicarFiltrosSp();
+      atualizarUIFiltrosSidebar();
     }});
   }});
   document.querySelectorAll('.uf-btn').forEach(btn => {{
     btn.addEventListener('click', () => {{
       ufSelecionada = btn.dataset.uf;
       document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b === btn));
+      buscaCargoLimiteVisivel = 30;
       renderizarBuscaCargo();
+      aplicarFiltrosSp();
+      atualizarUIFiltrosSidebar();
     }});
   }});
 

@@ -356,7 +356,7 @@ def parse_brl(valor: str) -> Optional[float]:
 
 def salarios_no_texto(texto: str) -> List[float]:
     vals = [parse_brl(v) for v in re.findall(r"R\$\s*([\d.]+,\d{2})", texto)]
-    return [v for v in vals if v and v >= 500.0]
+    return [v for v in vals if v and 500.0 <= v <= 65000.0]
 
 
 def brl(v: Optional[float]) -> str:
@@ -366,18 +366,35 @@ def brl(v: Optional[float]) -> str:
 
 
 def extrair_data_final_br(texto_data: str) -> Optional[date]:
-    """Extrai a última data DD/MM/AAAA de uma string como '22/10 a 05/11/2026'."""
+    """Extrai a última data DD/MM/AAAA ou DD/MM de uma string."""
     matches = re.findall(r"(\d{1,2})/(\d{1,2})/(\d{2,4})", texto_data or "")
-    if not matches:
-        return None
-    d_str, m_str, y_str = matches[-1]
-    try:
-        y = int(y_str)
-        if y < 100:
-            y += 2000
-        return date(y, int(m_str), int(d_str))
-    except ValueError:
-        return None
+    if matches:
+        d_str, m_str, y_str = matches[-1]
+        try:
+            y = int(y_str)
+            if y < 100:
+                y += 2000
+            return date(y, int(m_str), int(d_str))
+        except ValueError:
+            return None
+
+    # Fallback para strings com formato DD/MM (sem ano explícito)
+    matches_no_year = re.findall(r"(\d{1,2})/(\d{1,2})", texto_data or "")
+    if matches_no_year:
+        d_str, m_str = matches_no_year[-1]
+        try:
+            hoje = date.today()
+            m = int(m_str)
+            d = int(d_str)
+            y = hoje.year
+            # Se hoje é final de ano (nov/dez) e o mês é jan/fev, é ano seguinte
+            if hoje.month >= 11 and m <= 2:
+                y += 1
+            return date(y, m, d)
+        except ValueError:
+            return None
+
+    return None
 
 
 def calcular_status_inscricao(inscricao_ate: str, hoje_dt: date) -> Dict[str, Any]:
@@ -628,7 +645,7 @@ def extrair_faixa_e_limites(texto: str, vagas_salario_listagem: str = "") -> tup
                     if 700 <= s_min <= 60000 and 700 <= s_max <= 60000:
                         return s_min, s_max, f"{brl(s_min)} a {brl(s_max)}"
         m2 = re.search(
-            r"(?:remunera\w*|sal[a?]rio\w*|vencimento\w*|ganho\w*)[^.\n]{0,90}?(R\$\s*[\d.,]+)\s*(?:a|at[e?]|\-)\s*(R\$\s*[\d.,]+)",
+            r"(?:remunera\w*|sal[aá]rio\w*|vencimento\w*|ganho\w*)[^.\n]{0,90}?(R\$\s*[\d.,]+)\s*(?:a|at[eé]|\-)\s*(R\$\s*[\d.,]+)",
             texto,
             re.I,
         )
@@ -1135,7 +1152,10 @@ def montar_concurso_sp(c: dict, info: dict, enriquecidos: Dict[str, dict], agora
         or det.get("isencao")
         or parse_isencao(det.get("texto", ""))
     )
-    c["faixa_salarial"] = parse_faixa_salarial(det.get("texto", ""), c.get("vagas_salario", ""))
+    c["faixa_salarial"] = (
+        det.get("faixa_salarial")
+        or parse_faixa_salarial(det.get("texto", ""), c.get("vagas_salario", ""))
+    )
 
     # Status do prazo de inscrição (encerrando nos próximos dias vs encerrada)
     st_insc = calcular_status_inscricao(c.get("inscricao_ate", ""), agora.date())
@@ -1417,9 +1437,9 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                 if idx % 50 == 0 or idx == len(urls_para_baixar):
                     log(f"  progresso Brasil: {idx}/{len(urls_para_baixar)} páginas processadas")
 
-        ativos_br = {it["url"] for it in lista_br}
-        cache_br = {u: v for u, v in cache_br.items() if u in ativos_br}
-        CACHE_BRASIL_FILE.write_text(json.dumps(cache_br, ensure_ascii=False, indent=1), encoding="utf-8")
+    ativos_br = {it["url"] for it in lista_br}
+    cache_br = {u: v for u, v in cache_br.items() if u in ativos_br}
+    CACHE_BRASIL_FILE.write_text(json.dumps(cache_br, ensure_ascii=False, indent=1), encoding="utf-8")
 
     catalogo_br = []
     for it in lista_br:
@@ -1842,6 +1862,13 @@ def main() -> int:
                 })
 
     gerado_em = agora.strftime("%d/%m/%Y %H:%M")
+
+    DOCS_DATA_DIR = DOCS_DIR / "data"
+    DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    (DOCS_DATA_DIR / "catalogo_brasil.json").write_text(
+        json.dumps(catalogo_brasil, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8"
+    )
 
     RESULTS_FILE.write_text(
         json.dumps(
