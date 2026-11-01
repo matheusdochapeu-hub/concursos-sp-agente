@@ -1,12 +1,12 @@
 {
- "gerado_em": "31/10/2026 12:41",
- "gerado_em_iso": "2026-10-31T12:41:43.042662-03:00",
+ "gerado_em": "01/11/2026 13:43",
+ "gerado_em_iso": "2026-11-01T13:43:22.246794-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
  "total_sp": 173,
- "total_brasil": 609,
+ "total_brasil": 607,
  "ia_ativa": true,
- "novos_ultimas_24h": 12,
- "encerrando_proximos_dias": 67,
+ "novos_ultimas_24h": 0,
+ "encerrando_proximos_dias": 74,
  "fisioterapia": [
   {
    "url": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional",
@@ -38,10 +38,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
@@ -160,10 +160,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Medicina - Auditoria Médica, São Paulo - SP (1 vaga)",
@@ -311,10 +311,10 @@
    "faixa_salarial": "Até R$ 4.106,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Enfermagem (10 vagas, sendo 9 de ampla concorrência e 1 reservada para pessoas com deficiência)",
@@ -433,10 +433,10 @@
    "faixa_salarial": "R$ 1.621,05 a R$ 13.881,85",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 40,
+    "dias_restantes": 39,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 40 dias para encerrar"
+    "aviso_texto": "Faltam 39 dias para encerrar"
    },
    "cargos_lista": [
     "Apreensor de Animais (CR)",
@@ -683,10 +683,10 @@
    "faixa_salarial": "R$ 3.577,49 a R$ 5.565,00",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 33,
+    "dias_restantes": 32,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 33 dias para encerrar"
+    "aviso_texto": "Faltam 32 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cultura (CR)",
@@ -718,7 +718,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Especialista em Saúde: Fisioterapeuta (1 vaga)"
    ],
@@ -872,10 +872,10 @@
    "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Agente de Limpeza Urbana (Roçador) (1 vaga)",
@@ -1077,10 +1077,10 @@
    "faixa_salarial": "R$ 1.721,15 a R$ 17.716,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Auxiliar Folguista (Casa Lar) (1 vaga)",
@@ -1308,10 +1308,10 @@
    "faixa_salarial": "R$ 1.915,95 a R$ 8.431,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Ajudante de Pedreiro (1 vaga)",
@@ -1626,10 +1626,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Motorista (11 vagas CR)",
@@ -1840,10 +1840,10 @@
    "faixa_salarial": "R$ 1.657,09 a R$ 8.632,29",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (2 vagas + CR)",
@@ -2095,10 +2095,10 @@
    "faixa_salarial": "R$ 1.621,13 a R$ 5.882,37",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Consultório Dentário/SUS",
@@ -2307,10 +2307,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Diversos (1 vaga)",
@@ -2356,7 +2356,7 @@
    ],
    "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (CR)"
    ],
@@ -2498,10 +2498,10 @@
    "faixa_salarial": "R$ 2.022,91 a R$ 4.246,41",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Fisioterapeuta (1 vaga)",
@@ -2513,7 +2513,7 @@
    ],
    "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga)",
     "A jornada é de 30 horas semanais para Fisioterapeuta e Professor de Ensino Infantil e de 40 horas semanais para Motorista. Os salários variam de R$ 2.022,91 a R$ 4.246,41."
@@ -2622,10 +2622,10 @@
    "faixa_salarial": "R$ 1.738,96 a R$ 6.055,67",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Artífice de Obras e Serviços Públicos (CR)",
@@ -2971,10 +2971,10 @@
    "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Disciplinas: Prática Supervisionada em Fisioterapia na Saúde da Mulher, Prática supervisionada em Fisioterapia Neurológica, Prática Supervisionada em Fisioterapia na Atenção Primária à Saúde, Prática Supervisionada em Fisioterapia Desportiva, Fisioterapia na Saúde da Mulher e Fisioterapia Desportiva)",
@@ -3095,10 +3095,10 @@
    "faixa_salarial": "Até R$ 9.856,95",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 40,
+    "dias_restantes": 39,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 40 dias para encerrar"
+    "aviso_texto": "Faltam 39 dias para encerrar"
    },
    "cargos_lista": [
     "Oficial de Justiça (132 vagas e cadastro de reserva)",
@@ -3239,10 +3239,10 @@
    "faixa_salarial": "R$ 2.920,42 a R$ 11.065,27",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Operacional",
@@ -3385,10 +3385,10 @@
    "faixa_salarial": "Até R$ 4.813,83",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Secretário (1 vaga)",
@@ -3465,10 +3465,10 @@
    "faixa_salarial": "R$ 2.571,28 a R$ 10.428,05",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 34,
+    "dias_restantes": 33,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 34 dias para encerrar"
+    "aviso_texto": "Faltam 33 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (6 vagas + CR)",
@@ -3634,10 +3634,10 @@
    "faixa_salarial": "R$ 2.226,55 a R$ 8.991,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (1 vaga + CR)",
@@ -3761,10 +3761,10 @@
    "faixa_salarial": "Até R$ 3.846,34",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Guarda Municipal (2 vagas + CR)"
@@ -3839,10 +3839,10 @@
    "faixa_salarial": "R$ 2.312,25 a R$ 8.595,15",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Gerais (1 vaga)",
@@ -3972,10 +3972,10 @@
    "faixa_salarial": "R$ 2.672,23 a R$ 3.774,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-02",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Apoio Administrativo (1 vaga)",
@@ -4051,10 +4051,10 @@
    "faixa_salarial": "R$ 1.700,00 a R$ 5.600,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Merendeira (3 vagas)",
@@ -4241,10 +4241,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Técnico de Enfermagem (1 vaga)"
@@ -4320,10 +4320,10 @@
    "faixa_salarial": "Até R$ 5.044,35",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cemitério (1 vaga)",
@@ -4459,10 +4459,10 @@
    "faixa_salarial": "R$ 1.767,20 a R$ 9.717,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos (CR)",
@@ -4630,10 +4630,10 @@
    "faixa_salarial": "R$ 2.802,00 a R$ 8.738,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Escriturário (5 vagas + CR)",
@@ -4761,10 +4761,10 @@
    "faixa_salarial": "R$ 1.621,05 a R$ 13.881,85",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 40,
+    "dias_restantes": 39,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 40 dias para encerrar"
+    "aviso_texto": "Faltam 39 dias para encerrar"
    },
    "cargos_lista": [
     "Apreensor de Animais (CR)",
@@ -5010,10 +5010,10 @@
    "faixa_salarial": "Até R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-01",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (CR)",
@@ -5126,10 +5126,10 @@
    "faixa_salarial": "R$ 2.800,00 a R$ 5.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Agente de Contratações e Licitações (cadastro de reserva)",
@@ -5275,10 +5275,10 @@
    "faixa_salarial": "R$ 1.949,88 a R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -5412,10 +5412,10 @@
    "faixa_salarial": "R$ 2.118,03 a R$ 4.457,35",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Médico do Trabalho (CR)",
@@ -5537,10 +5537,10 @@
    "faixa_salarial": "R$ 2.061,11 a R$ 7.285,25",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Serviço Educacional I - Merendeira",
@@ -5676,10 +5676,10 @@
    "faixa_salarial": "R$ 3.577,49 a R$ 5.565,00",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 33,
+    "dias_restantes": 32,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 33 dias para encerrar"
+    "aviso_texto": "Faltam 32 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cultura (CR)",
@@ -5711,7 +5711,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Especialista em Saúde: Fisioterapeuta (1 vaga)"
    ],
@@ -5866,10 +5866,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 9.147,62",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização de Trânsito",
@@ -6056,10 +6056,10 @@
    "faixa_salarial": "R$ 1.721,15 a R$ 17.716,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Auxiliar Folguista (Casa Lar) (1 vaga)",
@@ -6287,10 +6287,10 @@
    "faixa_salarial": "R$ 1.621,81 a R$ 8.653,17",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Carpinteiro (CR)",
@@ -6461,10 +6461,10 @@
    "faixa_salarial": "R$ 2.065,11 a R$ 13.359,44",
    "inscricao_status": {
     "data_fim_iso": "2026-11-30",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Operador de Serviços Públicos - Lavador (1 vaga)",
@@ -6656,10 +6656,10 @@
    "faixa_salarial": "R$ 1.803,38 a R$ 7.408,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Conservação de Vias Permanentes (2 vagas)",
@@ -6874,10 +6874,10 @@
    "faixa_salarial": "R$ 1.248,89 a R$ 5.987,57",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira (1 vaga)",
@@ -6909,7 +6909,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -7028,10 +7028,10 @@
    "faixa_salarial": "R$ 1.624,26 a R$ 6.464,59",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde, área da Comunidade I",
@@ -7073,7 +7073,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -7191,10 +7191,10 @@
    "faixa_salarial": "R$ 1.621,13 a R$ 5.882,37",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Consultório Dentário/SUS",
@@ -7403,10 +7403,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Diversos (1 vaga)",
@@ -7452,7 +7452,7 @@
    ],
    "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (CR)"
    ],
@@ -7594,10 +7594,10 @@
    "faixa_salarial": "R$ 1.621,39 a R$ 5.130,63",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Cozinheiro",
@@ -7617,7 +7617,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -7720,10 +7720,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 7.078,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Agente Fiscal Tributário (cadastro de reserva)",
@@ -7876,10 +7876,10 @@
    "faixa_salarial": "R$ 1.625,19 a R$ 4.082,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Monitor Escolar",
@@ -8010,10 +8010,10 @@
    "faixa_salarial": "R$ 2.105,38 a R$ 12.062,91",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Segurança Escolar (1 vaga)",
@@ -8177,10 +8177,10 @@
    "faixa_salarial": "R$ 1.783,03 a R$ 5.209,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante Geral (1 vaga)",
@@ -8384,10 +8384,10 @@
    "faixa_salarial": "R$ 6.264,04 a R$ 11.778,84",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
-    "dias_restantes": 68,
+    "dias_restantes": 67,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 68 dias para encerrar"
+    "aviso_texto": "Faltam 67 dias para encerrar"
    },
    "cargos_lista": [
     "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação (1 vaga)",
@@ -8516,10 +8516,10 @@
    "faixa_salarial": "Até R$ 2.978,36",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Técnico de Enfermagem (1 vaga)",
@@ -8628,10 +8628,10 @@
    "faixa_salarial": "R$ 2.482,80 a R$ 2.969,41",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Bibliotecário (1 vaga e cadastro de reserva)",
@@ -8742,10 +8742,10 @@
    "faixa_salarial": "R$ 1.984,14 a R$ 11.102,06",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Motorista (Cadastro de reserva)",
@@ -8879,10 +8879,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Motorista (11 vagas CR)",
@@ -9093,10 +9093,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 17.397,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Motorista de Veículos Pesados (1 vaga)",
@@ -9249,10 +9249,10 @@
    "faixa_salarial": "Até R$ 2.786,98",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Profissional de Apoio I",
@@ -9329,10 +9329,10 @@
    "faixa_salarial": "R$ 1.684,22 a R$ 8.189,58",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Analista de Sistemas",
@@ -9522,10 +9522,10 @@
    "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Agente de Limpeza Urbana (Roçador) (1 vaga)",
@@ -9727,10 +9727,10 @@
    "faixa_salarial": "R$ 1.657,09 a R$ 8.632,29",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (2 vagas + CR)",
@@ -9978,10 +9978,10 @@
    "faixa_salarial": "R$ 1.480,76 a R$ 2.613,11",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Cuidador em Serviço Residencial Terapêutico (12 vagas + CR)",
@@ -10093,10 +10093,10 @@
    "faixa_salarial": "Até R$ 2.558,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Desenvolvimento Infantil (5 vagas)",
@@ -10219,10 +10219,10 @@
    "faixa_salarial": "R$ 1.899,72 a R$ 8.377,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Inspetor de Alunos (5 vagas + CR)",
@@ -10345,10 +10345,10 @@
    "faixa_salarial": "R$ 2.399,27 a R$ 8.890,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Agente de Atendimento Especial (1 vaga + CR)",
@@ -10461,10 +10461,10 @@
    "faixa_salarial": "Até R$ 2.277,89",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde, PSF Centro (1 vaga + CR)",
@@ -10543,10 +10543,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Guarda Civil Municipal de 3ª Classe, masculino (24 vagas + CR)",
@@ -10554,7 +10554,7 @@
    ],
    "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -10623,10 +10623,10 @@
    "faixa_salarial": "R$ 1.738,96 a R$ 6.055,67",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Artífice de Obras e Serviços Públicos (CR)",
@@ -10971,10 +10971,10 @@
    "faixa_salarial": "R$ 1.915,95 a R$ 8.431,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Ajudante de Pedreiro (1 vaga)",
@@ -11289,10 +11289,10 @@
    "faixa_salarial": "Até R$ 2.073,62",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Agente de Suporte ao Atendimento da Criança (30 vagas + CR)"
@@ -11368,10 +11368,10 @@
    "faixa_salarial": "Até R$ 1.968,83",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio Escolar (44 vagas)",
@@ -11448,10 +11448,10 @@
    "faixa_salarial": "R$ 1.880,28 a R$ 6.889,64",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar Administrativo (Carapicuíba) (5 vagas)",
@@ -11572,10 +11572,10 @@
    "faixa_salarial": "Até R$ 5.815,68",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Cozinha (1 vaga + CR)",
@@ -11708,17 +11708,17 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-26",
-    "dias_restantes": 26,
+    "dias_restantes": 25,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 26 dias para encerrar"
+    "aviso_texto": "Faltam 25 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Transporte Escolar (4 vagas + CR)"
    ],
    "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -11787,10 +11787,10 @@
    "faixa_salarial": "Até R$ 4.193,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor I",
@@ -11901,10 +11901,10 @@
    "faixa_salarial": "Até R$ 1.621,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio Escolar (CR)",
@@ -12025,10 +12025,10 @@
    "faixa_salarial": "Até R$ 1.621,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Monitor de Creche (5 vagas + CR)",
@@ -12106,10 +12106,10 @@
    "faixa_salarial": "Até R$ 1.572,65",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Monitor de Transporte Escolar (1 vaga + CR)"
@@ -12187,10 +12187,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular no Departamento de Administração Pública, no conjunto de disciplinas: Direito Constitucional e Tópicos de Direito Constitucional Econômico (1 vaga)"
@@ -12270,10 +12270,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 33,
+    "dias_restantes": 32,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 33 dias para encerrar"
+    "aviso_texto": "Faltam 32 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Química Analítica Quantitativa (1 vaga)"
@@ -12353,10 +12353,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-11-22",
-    "dias_restantes": 22,
+    "dias_restantes": 21,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 22 dias para encerrar"
+    "aviso_texto": "Faltam 21 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular nas disciplinas de Filosofia da Educação, Filosofia da Educação I e Filosofia da Educação II (1 vaga)"
@@ -12436,10 +12436,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-09",
-    "dias_restantes": 39,
+    "dias_restantes": 38,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 39 dias para encerrar"
+    "aviso_texto": "Faltam 38 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Química Medicinal (1 vaga)"
@@ -12520,10 +12520,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-14",
-    "dias_restantes": 44,
+    "dias_restantes": 43,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 44 dias para encerrar"
+    "aviso_texto": "Faltam 43 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Aplicação e Relevância Clínica da Pesquisa, realizada na Ortopedia e Neurocirurgia de Cães e Gatos (1 vaga)"
@@ -12603,10 +12603,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-17",
-    "dias_restantes": 47,
+    "dias_restantes": 46,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 47 dias para encerrar"
+    "aviso_texto": "Faltam 46 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular nas disciplinas de Teoria do Estado e Ciência Política (1 vaga)"
@@ -12686,10 +12686,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2026-11-30",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Teoria da Medida (1 vaga)"
@@ -12770,10 +12770,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2027-02-27",
-    "dias_restantes": 119,
+    "dias_restantes": 118,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 119 dias para encerrar"
+    "aviso_texto": "Faltam 118 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Psicologia Clínica (1 vaga)",
@@ -12855,10 +12855,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2027-03-15",
-    "dias_restantes": 135,
+    "dias_restantes": 134,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 135 dias para encerrar"
+    "aviso_texto": "Faltam 134 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Planejamento Urbano e Regional (1 vaga)"
@@ -12938,10 +12938,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2027-04-06",
-    "dias_restantes": 157,
+    "dias_restantes": 156,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 157 dias para encerrar"
+    "aviso_texto": "Faltam 156 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Química Geral (1 vaga)"
@@ -13022,10 +13022,10 @@
    "faixa_salarial": "Até R$ 25.261,98",
    "inscricao_status": {
     "data_fim_iso": "2027-04-16",
-    "dias_restantes": 167,
+    "dias_restantes": 166,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 167 dias para encerrar"
+    "aviso_texto": "Faltam 166 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular junto ao Departamento de Administração (1 vaga)",
@@ -13112,10 +13112,10 @@
    "faixa_salarial": "Até R$ 24.309,11",
    "inscricao_status": {
     "data_fim_iso": "2026-12-14",
-    "dias_restantes": 44,
+    "dias_restantes": 43,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 44 dias para encerrar"
+    "aviso_texto": "Faltam 43 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Ciências Sociais (1 vaga)",
@@ -13197,10 +13197,10 @@
    "faixa_salarial": "Até R$ 24.309,11",
    "inscricao_status": {
     "data_fim_iso": "2027-01-15",
-    "dias_restantes": 76,
+    "dias_restantes": 75,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 76 dias para encerrar"
+    "aviso_texto": "Faltam 75 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de História das Relações Internacionais (1 vaga)"
@@ -13280,10 +13280,10 @@
    "faixa_salarial": "Até R$ 24.309,11",
    "inscricao_status": {
     "data_fim_iso": "2027-01-08",
-    "dias_restantes": 69,
+    "dias_restantes": 68,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 69 dias para encerrar"
+    "aviso_texto": "Faltam 68 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular no Departamento de Sistemas de Computação, na área de Sistemas de Computação (1 vaga)"
@@ -13363,10 +13363,10 @@
    "faixa_salarial": "Até R$ 24.309,11",
    "inscricao_status": {
     "data_fim_iso": "2027-02-06",
-    "dias_restantes": 98,
+    "dias_restantes": 97,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 98 dias para encerrar"
+    "aviso_texto": "Faltam 97 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular das áreas de Lepidoptera e Diptera (1 vaga)"
@@ -13446,10 +13446,10 @@
    "faixa_salarial": "R$ 1.721,15 a R$ 17.716,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Auxiliar Folguista (Casa Lar) (1 vaga)",
@@ -13677,10 +13677,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 17.397,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Motorista de Veículos Pesados (1 vaga)",
@@ -13832,10 +13832,10 @@
    "faixa_salarial": "Até R$ 16.994,31",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Professor Doutor na área de Energia, Térmica e Fluidos e Petróleo (1 vaga)"
@@ -13917,10 +13917,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Professor Assistente na área de Sistemas de Computação (1 vaga)"
@@ -14000,10 +14000,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Professor Assistente na área de Educação (1 vaga)"
@@ -14083,10 +14083,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Professor Assistente na área de Engenharia Sanitária, junto ao Departamento de Engenharia Ambiental (1 vaga)"
@@ -14166,10 +14166,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-26",
-    "dias_restantes": 26,
+    "dias_restantes": 25,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 26 dias para encerrar"
+    "aviso_texto": "Faltam 25 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Ciências Agrárias, junto ao Departamento de Produção Animal (1 vaga)"
@@ -14249,10 +14249,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
-    "dias_restantes": 68,
+    "dias_restantes": 67,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 68 dias para encerrar"
+    "aviso_texto": "Faltam 67 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Anatomia (1 vaga)"
@@ -14332,10 +14332,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 40,
+    "dias_restantes": 39,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 40 dias para encerrar"
+    "aviso_texto": "Faltam 39 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Tecnologia de Alimentos (1 vaga)"
@@ -14415,10 +14415,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Professor Doutor na área de Representação e Linguagem (1 vaga)"
@@ -14499,10 +14499,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2027-01-19",
-    "dias_restantes": 80,
+    "dias_restantes": 79,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 80 dias para encerrar"
+    "aviso_texto": "Faltam 79 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de Epidemiologia e Farmacoepidemiologia (1 vaga)"
@@ -14583,10 +14583,10 @@
    "faixa_salarial": "Até R$ 16.994,01",
    "inscricao_status": {
     "data_fim_iso": "2027-01-18",
-    "dias_restantes": 79,
+    "dias_restantes": 78,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 79 dias para encerrar"
+    "aviso_texto": "Faltam 78 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de empreendedorismo tecnológico com análise de investimento e estratégia (1 vaga)"
@@ -14666,10 +14666,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2027-01-22",
-    "dias_restantes": 83,
+    "dias_restantes": 82,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 83 dias para encerrar"
+    "aviso_texto": "Faltam 82 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de Enfermagem em Saúde Coletiva (1 vaga)"
@@ -14749,10 +14749,10 @@
    "faixa_salarial": "Até R$ 16.920,47",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Professor Assistente na área de Ciências Políticas, no Departamento de Ciências Políticas e Econômicas (1 vaga)"
@@ -14832,10 +14832,10 @@
    "faixa_salarial": "R$ 1.621,05 a R$ 13.881,85",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 40,
+    "dias_restantes": 39,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 40 dias para encerrar"
+    "aviso_texto": "Faltam 39 dias para encerrar"
    },
    "cargos_lista": [
     "Apreensor de Animais (CR)",
@@ -15081,10 +15081,10 @@
    "faixa_salarial": "R$ 2.065,11 a R$ 13.359,44",
    "inscricao_status": {
     "data_fim_iso": "2026-11-30",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Operador de Serviços Públicos - Lavador (1 vaga)",
@@ -15276,10 +15276,10 @@
    "faixa_salarial": "R$ 2.105,38 a R$ 12.062,91",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Segurança Escolar (1 vaga)",
@@ -15450,10 +15450,10 @@
    "faixa_salarial": "R$ 6.264,04 a R$ 11.778,84",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
-    "dias_restantes": 68,
+    "dias_restantes": 67,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 68 dias para encerrar"
+    "aviso_texto": "Faltam 67 dias para encerrar"
    },
    "cargos_lista": [
     "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação (1 vaga)",
@@ -15581,10 +15581,10 @@
    "faixa_salarial": "Até R$ 11.778,84",
    "inscricao_status": {
     "data_fim_iso": "2026-12-02",
-    "dias_restantes": 32,
+    "dias_restantes": 31,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 32 dias para encerrar"
+    "aviso_texto": "Faltam 31 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Ensino Fundamental e Médio (Ensino Fundamental Polivalente) (2 vagas)"
@@ -15664,10 +15664,10 @@
    "faixa_salarial": "Até R$ 11.427,98",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 34,
+    "dias_restantes": 33,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 34 dias para encerrar"
+    "aviso_texto": "Faltam 33 dias para encerrar"
    },
    "cargos_lista": [
     "Procurador (1 vaga + cadastro reserva)"
@@ -15747,10 +15747,10 @@
    "faixa_salarial": "Até R$ 11.359,50",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Analista em Planejamento, Orçamento e Finanças Públicas - Orçamento e Finanças Públicas (20 vagas)",
@@ -15835,10 +15835,10 @@
    "faixa_salarial": "R$ 1.984,14 a R$ 11.102,06",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Motorista (Cadastro de reserva)",
@@ -15972,10 +15972,10 @@
    "faixa_salarial": "R$ 2.920,42 a R$ 11.065,27",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Operacional",
@@ -16118,10 +16118,10 @@
    "faixa_salarial": "R$ 1.933,17 a R$ 10.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Agente de Limpeza Urbana (Roçador) (1 vaga)",
@@ -16323,10 +16323,10 @@
    "faixa_salarial": "R$ 2.571,28 a R$ 10.428,05",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 34,
+    "dias_restantes": 33,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 34 dias para encerrar"
+    "aviso_texto": "Faltam 33 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (6 vagas + CR)",
@@ -16495,10 +16495,10 @@
    "faixa_salarial": "Até R$ 9.856,95",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 40,
+    "dias_restantes": 39,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 40 dias para encerrar"
+    "aviso_texto": "Faltam 39 dias para encerrar"
    },
    "cargos_lista": [
     "Oficial de Justiça (132 vagas e cadastro de reserva)",
@@ -16639,10 +16639,10 @@
    "faixa_salarial": "R$ 1.767,20 a R$ 9.717,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos (CR)",
@@ -16810,10 +16810,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Medicina - Auditoria Médica, São Paulo - SP (1 vaga)",
@@ -16962,10 +16962,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 9.147,62",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização de Trânsito",
@@ -17152,10 +17152,10 @@
    "faixa_salarial": "Até R$ 9.052,47",
    "inscricao_status": {
     "data_fim_iso": "2026-12-22",
-    "dias_restantes": 52,
+    "dias_restantes": 51,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 52 dias para encerrar"
+    "aviso_texto": "Faltam 51 dias para encerrar"
    },
    "cargos_lista": [
     "Pesquisador Científico I A, área de Agroecologia e manejo sustentável: I, Agroecologia (5 vagas)",
@@ -17277,10 +17277,10 @@
    "faixa_salarial": "R$ 2.226,55 a R$ 8.991,96",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (1 vaga + CR)",
@@ -17404,10 +17404,10 @@
    "faixa_salarial": "R$ 2.399,27 a R$ 8.890,46",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Agente de Atendimento Especial (1 vaga + CR)",
@@ -17521,10 +17521,10 @@
    "faixa_salarial": "R$ 2.802,00 a R$ 8.738,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Escriturário (5 vagas + CR)",
@@ -17652,10 +17652,10 @@
    "faixa_salarial": "R$ 1.621,81 a R$ 8.653,17",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Carpinteiro (CR)",
@@ -17826,10 +17826,10 @@
    "faixa_salarial": "Até R$ 8.644,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Diretor de Escola (1 vaga)",
@@ -17915,10 +17915,10 @@
    "faixa_salarial": "R$ 1.657,09 a R$ 8.632,29",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (2 vagas + CR)",
@@ -18167,10 +18167,10 @@
    "faixa_salarial": "R$ 2.312,25 a R$ 8.595,15",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Gerais (1 vaga)",
@@ -18300,10 +18300,10 @@
    "faixa_salarial": "R$ 1.915,95 a R$ 8.431,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Ajudante de Pedreiro (1 vaga)",
@@ -18619,10 +18619,10 @@
    "faixa_salarial": "R$ 1.899,72 a R$ 8.377,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Inspetor de Alunos (5 vagas + CR)",
@@ -18746,10 +18746,10 @@
    "faixa_salarial": "R$ 4.478,03 a R$ 8.340,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor substituto de História (1 vaga)",
@@ -18866,10 +18866,10 @@
    "faixa_salarial": "Até R$ 8.340,33",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente A Substituto, na área de Química/Química Analítica (2 vagas)"
@@ -18949,10 +18949,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente A Substituto, na área de Linguística, Letras e Artes/Letras (1 vaga)"
@@ -19032,10 +19032,10 @@
    "faixa_salarial": "R$ 1.684,22 a R$ 8.189,58",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Analista de Sistemas",
@@ -19225,10 +19225,10 @@
    "faixa_salarial": "Até R$ 7.477,48",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Professor Doutor na Disciplina de Transplante de Órgãos do Aparelho Digestivo (1 vaga)"
@@ -19309,10 +19309,10 @@
    "faixa_salarial": "R$ 1.803,38 a R$ 7.408,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Conservação de Vias Permanentes (2 vagas)",
@@ -19527,10 +19527,10 @@
    "faixa_salarial": "Até R$ 6.397,19",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Artes Cênicas - São José do Rio Preto (1 vaga)",
@@ -19646,10 +19646,10 @@
    "faixa_salarial": "R$ 2.061,11 a R$ 7.285,25",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Serviço Educacional I - Merendeira",
@@ -19784,10 +19784,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 7.078,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Agente Fiscal Tributário (cadastro de reserva)",
@@ -19939,10 +19939,10 @@
    "faixa_salarial": "R$ 1.880,28 a R$ 6.889,64",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar Administrativo (Carapicuíba) (5 vagas)",
@@ -20063,10 +20063,10 @@
    "faixa_salarial": "R$ 1.624,26 a R$ 6.464,59",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde, área da Comunidade I",
@@ -20108,7 +20108,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -20231,10 +20231,10 @@
    "faixa_salarial": "R$ 1.949,88 a R$ 6.077,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -20368,10 +20368,10 @@
    "faixa_salarial": "R$ 1.738,96 a R$ 6.055,67",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Artífice de Obras e Serviços Públicos (CR)",
@@ -20718,10 +20718,10 @@
    "faixa_salarial": "R$ 1.248,89 a R$ 5.987,57",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira (1 vaga)",
@@ -20753,7 +20753,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -20877,10 +20877,10 @@
    "faixa_salarial": "Até R$ 5.979,93",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Médico I - Cirurgia Avançada em Tumores da Pelve Feminina (1 vaga)",
@@ -20966,10 +20966,10 @@
    "faixa_salarial": "R$ 2.097,40 a R$ 5.906,38",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista (1 vaga + CR)",
@@ -21058,10 +21058,10 @@
    "faixa_salarial": "Até R$ 5.901,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Médico do Trabalho"
@@ -21145,10 +21145,10 @@
    "faixa_salarial": "R$ 1.621,13 a R$ 5.882,37",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Consultório Dentário/SUS",
@@ -21357,10 +21357,10 @@
    "faixa_salarial": "Até R$ 5.815,68",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Cozinha (1 vaga + CR)",
@@ -21493,10 +21493,10 @@
    "faixa_salarial": "R$ 1.700,00 a R$ 5.600,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Merendeira (3 vagas)",
@@ -21683,10 +21683,10 @@
    "faixa_salarial": "Até R$ 5.570,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente Administrativo (1 vaga + CR)",
@@ -21780,10 +21780,10 @@
    "faixa_salarial": "R$ 3.577,49 a R$ 5.565,00",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 33,
+    "dias_restantes": 32,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 33 dias para encerrar"
+    "aviso_texto": "Faltam 32 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cultura (CR)",
@@ -21815,7 +21815,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Especialista em Saúde: Fisioterapeuta (1 vaga)"
    ],
@@ -21969,10 +21969,10 @@
    "faixa_salarial": "R$ 2.800,00 a R$ 5.500,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Agente de Contratações e Licitações (cadastro de reserva)",
@@ -22111,10 +22111,10 @@
    "faixa_salarial": "Até R$ 5.356,52",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Professor de Desenvolvimento Infantil (CR)",
@@ -22205,10 +22205,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Motorista (11 vagas CR)",
@@ -22420,10 +22420,10 @@
    "faixa_salarial": "R$ 1.783,03 a R$ 5.209,01",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante Geral (1 vaga)",
@@ -22619,10 +22619,10 @@
    "faixa_salarial": "Até R$ 5.130,63",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor de Educação Básica I",
@@ -22717,10 +22717,10 @@
    "faixa_salarial": "R$ 1.621,39 a R$ 5.130,63",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Cozinheiro",
@@ -22740,7 +22740,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -22843,10 +22843,10 @@
    "faixa_salarial": "Até R$ 5.044,35",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cemitério (1 vaga)",
@@ -22982,10 +22982,10 @@
    "faixa_salarial": "Até R$ 5.037,78",
    "inscricao_status": {
     "data_fim_iso": "2026-11-02",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Professor(a) Assistente Substituto(a) - Fisiologia/Engenharia Biomédica (1 vaga)"
@@ -23066,10 +23066,10 @@
    "faixa_salarial": "Até R$ 5.015,07",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Procurador Legislativo (1 vaga)"
@@ -23150,10 +23150,10 @@
    "faixa_salarial": "Até R$ 4.830,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -23234,10 +23234,10 @@
    "faixa_salarial": "Até R$ 4.641,47",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "PEB I - Educação Infantil (1 vaga e cadastro de reserva)",
@@ -23318,10 +23318,10 @@
    "faixa_salarial": "R$ 2.431,60 a R$ 4.619,95",
    "inscricao_status": {
     "data_fim_iso": "2026-11-02",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Agente de Desenvolvimento Infantil (ADI)",
@@ -23408,10 +23408,10 @@
    "faixa_salarial": "Até R$ 4.526,93",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Analista de Pesquisa Clínica Júnior (1 vaga)"
@@ -23489,10 +23489,10 @@
    "faixa_salarial": "R$ 2.118,03 a R$ 4.457,35",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Médico do Trabalho (CR)",
@@ -23614,10 +23614,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Monitor de Transporte Escolar",
@@ -23625,7 +23625,7 @@
    ],
    "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -23698,10 +23698,10 @@
    "faixa_salarial": "R$ 2.022,91 a R$ 4.246,41",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Fisioterapeuta (1 vaga)",
@@ -23713,7 +23713,7 @@
    ],
    "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga)",
     "A jornada é de 30 horas semanais para Fisioterapeuta e Professor de Ensino Infantil e de 40 horas semanais para Motorista. Os salários variam de R$ 2.022,91 a R$ 4.246,41."
@@ -23822,10 +23822,10 @@
    "faixa_salarial": "R$ 3.520,36 a R$ 4.221,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Acompanhante Educacional Especializado",
@@ -23917,10 +23917,10 @@
    "faixa_salarial": "Até R$ 4.193,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor I",
@@ -24031,10 +24031,10 @@
    "faixa_salarial": "Até R$ 4.106,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Enfermagem (10 vagas, sendo 9 de ampla concorrência e 1 reservada para pessoas com deficiência)",
@@ -24153,10 +24153,10 @@
    "faixa_salarial": "Até R$ 4.090,34",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Professor Substituto de Educação Infantil - Temporário (70 vagas + cadastro de reserva)",
@@ -24237,10 +24237,10 @@
    "faixa_salarial": "R$ 3.847,97 a R$ 4.083,17",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "PEB I",
@@ -24331,10 +24331,10 @@
    "faixa_salarial": "R$ 1.625,19 a R$ 4.082,72",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Monitor Escolar",
@@ -24465,10 +24465,10 @@
    "faixa_salarial": "Até R$ 3.998,24",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Professor substituto de Educação Básica, Pedagogia, Educação Infantil e Anos Iniciais do Ensino Fundamental (1 vaga)"
@@ -24550,10 +24550,10 @@
    "faixa_salarial": "Até R$ 3.888,34",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "PEB I - Educação Especial (CR)",
@@ -24643,10 +24643,10 @@
    "faixa_salarial": "Até R$ 3.857,19",
    "inscricao_status": {
     "data_fim_iso": "2026-11-02",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Psicólogo (1 vaga)"
@@ -24728,10 +24728,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Educação Básica I (Prof. Cid Chiarelli), Educação Infantil (1 vaga e CR)",
@@ -24825,10 +24825,10 @@
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Física Geral (1 vaga)"
@@ -24908,10 +24908,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Engenharia Química, subárea de Operações Industriais e Equipamentos para Engenharia Química (1 vaga)"
@@ -24992,10 +24992,10 @@
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Zoologia, subárea de Paleozoologia (1 vaga)"
@@ -25076,10 +25076,10 @@
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Professor Substituto"
@@ -25159,10 +25159,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências (1 vaga)"
@@ -25242,10 +25242,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Inspeção de Produtos de Origem Animal (1 vaga)"
@@ -25329,10 +25329,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Francesa\" e \"Língua Francesa IV\" (1 vaga)",
@@ -25415,10 +25415,10 @@
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Letras, subárea de Literatura Brasileira (1 vaga)"
@@ -25498,10 +25498,10 @@
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-04",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciência e Tecnologia de Alimentos, subárea de Engenharia de Alimentos (1 vaga)"
@@ -25581,10 +25581,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Engenharia Civil, subárea de Infraestrutura de Transportes (1 vaga)"
@@ -25664,10 +25664,10 @@
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Clínica e Cirurgia Animal (1 vaga)"
@@ -25748,10 +25748,10 @@
    "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Patologia Animal (1 vaga)"
@@ -25832,10 +25832,10 @@
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Clínica e Cirurgia Animal (1 vaga)"
@@ -25916,10 +25916,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas (1 vaga)"
@@ -25999,10 +25999,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática (1 vaga)"
@@ -26083,10 +26083,10 @@
    "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Disciplinas: Prática Supervisionada em Fisioterapia na Saúde da Mulher, Prática supervisionada em Fisioterapia Neurológica, Prática Supervisionada em Fisioterapia na Atenção Primária à Saúde, Prática Supervisionada em Fisioterapia Desportiva, Fisioterapia na Saúde da Mulher e Fisioterapia Desportiva)",
@@ -26202,10 +26202,10 @@
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto"
@@ -26289,10 +26289,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Probabilidade e Estatística (1 vaga)",
@@ -26379,10 +26379,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática (1 vaga)",
@@ -26464,10 +26464,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Odontologia, subárea de Clínica Odontológica, na disciplina de Odontologia para Pacientes com Deficiência (1 vaga)",
@@ -26548,10 +26548,10 @@
    "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina, subárea de Cirurgia (1 vaga)"
@@ -26633,10 +26633,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Sociais Aplicadas, subárea de Administração (1 vaga)",
@@ -26719,10 +26719,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática, nas disciplinas de Algoritmos e Introdução à Programação, Tópicos Avançados em Programação, Cálculo Numérico Computacional e Álgebra Linear (1 vaga)",
@@ -26804,10 +26804,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Química, nas disciplinas de Química Geral e Química Geral I (1 vaga)",
@@ -26888,10 +26888,10 @@
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Artes, subárea de Fundamentos e Crítica das Artes (1 vaga)"
@@ -26972,10 +26972,10 @@
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Artes/Teatro, nas disciplinas de Didática, Psicologia da Educação, Sociedade, Estado e Educação (1 vaga)",
@@ -27057,10 +27057,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-27",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 27 dias para encerrar"
+    "aviso_texto": "Faltam 26 dias para encerrar"
    },
    "cargos_lista": [
     "Secretário Executivo"
@@ -27138,10 +27138,10 @@
    "faixa_salarial": "R$ 1.417,53 a R$ 3.361,39",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciência da Informação, subárea de Biblioteconomia (1 vaga)"
@@ -27222,10 +27222,10 @@
    "faixa_salarial": "Até R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-01",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (CR)",
@@ -27338,10 +27338,10 @@
    "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Diversos (1 vaga)",
@@ -27387,7 +27387,7 @@
    ],
    "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (CR)"
    ],
@@ -27530,10 +27530,10 @@
    "faixa_salarial": "Até R$ 2.978,36",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Técnico de Enfermagem (1 vaga)",
@@ -27643,10 +27643,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
@@ -27764,10 +27764,10 @@
    "faixa_salarial": "R$ 2.482,80 a R$ 2.969,41",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Bibliotecário (1 vaga e cadastro de reserva)",
@@ -27878,10 +27878,10 @@
    "faixa_salarial": "Até R$ 2.945,73",
    "inscricao_status": {
     "data_fim_iso": "2026-11-24",
-    "dias_restantes": 24,
+    "dias_restantes": 23,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 24 dias para encerrar"
+    "aviso_texto": "Faltam 23 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Contratado III, na área de Filosofia do Direito e Sociologia do Direito (1 vaga)"
@@ -27961,10 +27961,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-24",
-    "dias_restantes": 24,
+    "dias_restantes": 23,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 24 dias para encerrar"
+    "aviso_texto": "Faltam 23 dias para encerrar"
    },
    "cargos_lista": [
     "Cozinheiro",
@@ -27974,7 +27974,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -28047,10 +28047,10 @@
    "faixa_salarial": "Até R$ 2.805,09",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Educação Básica",
@@ -28142,10 +28142,10 @@
    "faixa_salarial": "R$ 1.480,76 a R$ 2.613,11",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Cuidador em Serviço Residencial Terapêutico (12 vagas + CR)",
@@ -28257,10 +28257,10 @@
    "faixa_salarial": "Até R$ 2.558,75",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Desenvolvimento Infantil (5 vagas)",
@@ -28382,10 +28382,10 @@
    "faixa_salarial": "Até R$ 2.317,18",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Assistente Social",
@@ -28478,10 +28478,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Docente na área de Mecânica"
@@ -28561,10 +28561,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio, na área de Engenharia Agrícola"
@@ -28644,10 +28644,10 @@
    "faixa_salarial": "Até R$ 1.621,00",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio Escolar (CR)",
@@ -28768,10 +28768,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Limpeza",
@@ -28857,10 +28857,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "PEB II - Educação Especial - DI/TEA (Deficiência Intelectual/Transtorno do Espectro Autista) (CR)",
@@ -28942,10 +28942,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-03",
-    "dias_restantes": 3,
+    "dias_restantes": 2,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
    },
    "cargos_lista": [
     "Anestesiologia (10 vagas)",
@@ -29069,10 +29069,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 10,
+    "dias_restantes": 9,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
    },
    "cargos_lista": [
     "Professor de Educação Básica I - PEB I - Educação Infantil e Ensino Fundamental - Anos Iniciais (500 vagas CR)",
@@ -29161,10 +29161,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Defensor Público do Estado de São Paulo (70 vagas)"
@@ -29242,10 +29242,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Educação Básica I",
@@ -29262,7 +29262,7 @@
    ],
    "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -29335,10 +29335,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Professor de Educação Especial (CR)",
@@ -29437,10 +29437,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-12-02",
-    "dias_restantes": 32,
+    "dias_restantes": 31,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 32 dias para encerrar"
+    "aviso_texto": "Faltam 31 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Oftalmologia (1 vaga)"
@@ -29520,10 +29520,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular no Departamento de Pediatria, no conjunto de disciplinas: Pediatria I e Pediatria II (1 vaga)"
@@ -29604,10 +29604,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-12-18",
-    "dias_restantes": 48,
+    "dias_restantes": 47,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 48 dias para encerrar"
+    "aviso_texto": "Faltam 47 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Anestesiologia, junto ao Departamento de Especialidades Cirúrgicas e Anestesiologia (1 vaga)"
@@ -29688,10 +29688,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Alergologia e Imunologia",
@@ -29741,7 +29741,7 @@
    ],
    "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -29815,10 +29815,10 @@
    "faixa_salarial": "Consultar edital",
    "inscricao_status": {
     "data_fim_iso": "2026-12-06",
-    "dias_restantes": 36,
+    "dias_restantes": 35,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 36 dias para encerrar"
+    "aviso_texto": "Faltam 35 dias para encerrar"
    },
    "cargos_lista": [
     "Pediatria (4 vagas)",

@@ -14566,5 +14566,39 @@
    "salario_min_texto": null,
    "salario_max_texto": null
   }
+ },
+ "https://www.pciconcursos.com.br/noticias/ipsm-de-sao-jose-dos-campos-sp-abre-concurso-para-diversos-cargos-de-nivel-superior": {
+  "first_seen": "2026-11-01",
+  "first_seen_ts": "2026-11-01T13:43:22.246794-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "0ca34ac80fa5",
+  "fisio_linhas": [],
+  "salario_max_texto": 5185.46,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Analista em Gestão Previdenciária (7 vagas + 1 vaga para PCD)",
+    "Analista Previdenciário - Direito (2 vagas + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Administrador (4 vagas + 1 vaga para PCD)",
+    "Analista Previdenciário - TI (1 vaga + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Psicólogo (1 vaga + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Assistente Social (cadastro de reserva para ampla concorrência e para PCD)",
+    "Médico (cadastro de reserva para ampla concorrência e para PCD)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_banca": "https://ipsmsjc.sp.gov.br/",
+   "nome_banca": "IPSM",
+   "data_prova": "13/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Vale-transporte, vale-alimentação e gratificação previdenciária, conforme previsto na legislação municipal",
+   "jornada": "12 a 40 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 89,00. Candidatos inscritos no CadÚnico têm possibilidade de isenção, conforme regras do edital, com solicitações de 1º a 9 de outubro de 2026.",
+   "faixa_salarial": "R$ 3.889,11 a R$ 5.185,46",
+   "salario_min_texto": 3889.11,
+   "salario_max_texto": 5185.46
+  }
  }
 }
