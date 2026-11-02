@@ -14801,7 +14801,7 @@
   "first_seen_ts": "2026-10-30T13:22:11.909335-03:00",
   "is_baseline": false,
   "schema_version": 5,
-  "hash": "35cd06a0b98c",
+  "hash": "552d0885a301",
   "fisio_linhas": [
    "Fisioterapeuta (1 vaga)",
    "A jornada é de 30 horas semanais para Fisioterapeuta e Professor de Ensino Infantil e de 40 horas semanais para Motorista. Os salários variam de R$ 2.022,91 a R$ 4.246,41."
@@ -15244,6 +15244,1034 @@
    "faixa_salarial": "Consultar edital",
    "salario_min_texto": null,
    "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-paranapanema-sp-abre-processo-seletivo-para-professores-de-diversas-areas": {
+  "first_seen": "2026-10-31",
+  "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "00678423ceb5",
+  "fisio_linhas": [],
+  "salario_max_texto": null,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Educação Básica I",
+    "Professor de Educação Básica II - Língua Portuguesa",
+    "Professor de Educação Básica II - Inglês",
+    "Professor de Educação Básica II - Matemática",
+    "Professor de Educação Básica II - Ciências",
+    "Professor de Educação Básica II - Arte",
+    "Professor de Educação Básica II - História",
+    "Professor de Educação Básica II - Geografia",
+    "Professor de Educação Básica II - Música",
+    "Professor de Educação Básica II - Educação Física",
+    "Professor de Educação Especial - AEE"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO PSPMETP 001/2026"
+   ],
+   "link_banca": "https://www.paranapanema.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal da Estância Turística de Paranapanema",
+   "data_prova": "13/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Vale-transporte · Vale-transporte",
+   "jornada": "25 a 30 horas semanais",
+   "isencao": "Não haverá isenção.",
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concurso-publico-com-salarios-de-ate-5565": {
+  "first_seen": "2026-10-31",
+  "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "e7458ab23e57",
+  "fisio_linhas": [
+   "Especialista em Saúde: Fisioterapeuta (1 vaga)"
+  ],
+  "salario_max_texto": 5565.0,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Agente de Cultura (CR)",
+    "Analista Contábil (CR)",
+    "Analista de Recursos Humanos (1 vaga)",
+    "Analista Financeiro (CR)",
+    "Analista I: Analista Orçamentário (CR)",
+    "Especialista em Saúde: Fisioterapeuta (1 vaga)",
+    "Especialista em Saúde: Fonoaudiólogo (6 vagas)",
+    "Especialista em Saúde I: Enfermeiro (1 vaga)",
+    "Especialista em Saúde I: Educador Físico (CR)",
+    "Especialista em Saúde I: Terapeuta Ocupacional (1 vaga)",
+    "Especialista em Saúde: Médico do Trabalho (2 vagas)",
+    "Especialista em Saúde: Nutricionista (7 vagas)",
+    "TNM - Técnico de Defesa Civil (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA - CONCURSO PUBLICO Nº 04/2026",
+    "EDITAL DE RETIFICAÇÃO - CONCURSO PUBLICO Nº 04/2026"
+   ],
+   "link_banca": "https://www.cubatao.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Cubatão",
+   "data_prova": "17/01/2027",
+   "regime": "Estatutário",
+   "beneficios": "Vale-alimentação, vale-refeição, vale-transporte e assistência médico-hospitalar e odontológica opcionais",
+   "jornada": "20 a 40 horas semanais",
+   "isencao": "Candidatos que atendam aos requisitos poderão solicitar isenção em 29 e 30 de outubro de 2026.",
+   "faixa_salarial": "R$ 3.577,49 a R$ 5.565,00",
+   "salario_min_texto": 3577.49,
+   "salario_max_texto": 5565.0
+  },
+  "ia": {
+   "cidade": "Cubatão",
+   "banca": "IBAM",
+   "data_prova": "17/01/2027",
+   "regime_geral": "Estatutário",
+   "beneficios": "Vale-alimentação, vale-refeição, vale-transporte e assistência médico-hospitalar e odontológica opcionais",
+   "isencao": "Taxa de R$ 77,00 para nível médio e R$ 96,00 para nível superior. Solicitação de isenção para candidatos que atendam aos requisitos nos dias 29 e 30 de outubro de 2026.",
+   "jornada_geral": "20 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Agente de Cultura",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio"
+    },
+    {
+     "nome": "Analista Contábil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior"
+    },
+    {
+     "nome": "Analista de Recursos Humanos",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior"
+    },
+    {
+     "nome": "Analista Financeiro",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior"
+    },
+    {
+     "nome": "Analista I: Analista Orçamentário",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior"
+    },
+    {
+     "nome": "Especialista em Saúde: Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Fisioterapia e registro no conselho"
+    },
+    {
+     "nome": "Especialista em Saúde: Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "6 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Fonoaudiologia e registro no conselho"
+    },
+    {
+     "nome": "Especialista em Saúde I: Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Enfermagem e registro no conselho"
+    },
+    {
+     "nome": "Especialista em Saúde I: Educador Físico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Educação Física e registro no conselho"
+    },
+    {
+     "nome": "Especialista em Saúde I: Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Terapia Ocupacional e registro no conselho"
+    },
+    {
+     "nome": "Especialista em Saúde: Médico do Trabalho",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Medicina, especialização em Medicina do Trabalho e registro no conselho"
+    },
+    {
+     "nome": "Especialista em Saúde: Nutricionista",
+     "escolaridade": "superior",
+     "vagas": "7 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Nutrição e registro no conselho"
+    },
+    {
+     "nome": "TNM - Técnico de Defesa Civil",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-murutinga-do-sul-sp-publica-retificacoes-de-concurso-publico": {
+  "first_seen": "2026-10-31",
+  "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "29ae6138f089",
+  "fisio_linhas": [],
+  "salario_max_texto": 5987.57,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Merendeira (1 vaga)",
+    "Auxiliar de Contabilidade (1 vaga)",
+    "Auxiliar de Desenvolvimento Escolar - ADE (1 vaga)",
+    "Auxiliar de Enfermagem (1 vaga)",
+    "Auxiliar de Enfermagem do PSF (1 vaga)",
+    "Escriturário (1 vaga)",
+    "Assistente Social (1 vaga)",
+    "Assistente Técnico Educacional (1 vaga)",
+    "Auxiliar de Apoio Especializado (1 vaga)",
+    "Controlador Interno (1 vaga)",
+    "Enfermeiro (1 vaga)",
+    "Professor de Centro de Educação Infantil - Creche (maternal e berçário I e II) (4 vagas)",
+    "Psicólogo (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026",
+    "RERRATIFICAÇÃO DO EDITAL DE CONCURSO PÚBLICO Nº 001/2026",
+    "2ª RERRATIFICAÇÃO DO EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_banca": "https://www.murutingadosul.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Murutinga do Sul",
+   "data_prova": "06/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Vale-alimentação de R$ 1.090,10. Para concorrer, é exigida formação superior em Direito, Ciências Contábeis, Ad · Vale-alimentação no valor de R$ 1.090,10 para o cargo de Psicólogo · Vale-alimentação de R$ 1.090,10. Para alguns cargos haverá abono salarial",
+   "jornada": "30 a 40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "R$ 1.248,89 a R$ 5.987,57",
+   "salario_min_texto": 1248.89,
+   "salario_max_texto": 5987.57
+  },
+  "ia": {
+   "cidade": "Murutinga do Sul",
+   "banca": "Conscam",
+   "data_prova": "06/12/2026",
+   "regime_geral": "Estatutário",
+   "beneficios": "Vale-alimentação de R$ 1.090,10 e abono salarial para alguns cargos.",
+   "isencao": "Taxas de inscrição variam de R$ 70,00 a R$ 100,00, de acordo com o nível de escolaridade.",
+   "jornada_geral": "30 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Merendeira",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Auxiliar de Contabilidade",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Auxiliar de Desenvolvimento Escolar - ADE",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Auxiliar de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Auxiliar de Enfermagem do PSF",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Escriturário",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Assistente Técnico Educacional",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Auxiliar de Apoio Especializado",
+     "escolaridade": "desconhecida",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Controlador Interno",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 5987.57,
+     "carga_horaria": "40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Formação superior em Direito, Ciências Contábeis, Administração de Empresas ou Ciências Econômicas, ou nível superior com pós-graduação em Gestão Pública, além de experiência mínima de dois anos na área pública, comprovada por certidão de órgão público."
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Professor de Centro de Educação Infantil - Creche (maternal e berçário I e II)",
+     "escolaridade": "superior",
+     "vagas": "4 vagas",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": null
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-pirapozinho-sp-abre-concurso-publico-para-formacao-de-cadastro-de-reserva": {
+  "first_seen": "2026-10-31",
+  "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "77b8a4e846a9",
+  "fisio_linhas": [],
+  "salario_max_texto": 6464.59,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Comunitário de Saúde, área da Comunidade I",
+    "Agente Comunitário de Saúde, área da Comunidade II, distrito de Itororó do Paranapanema",
+    "Agente de Combate às Endemias, área da Comunidade I",
+    "Agente de Combate às Endemias, área da Comunidade II, distrito de Itororó do Paranapanema",
+    "Almoxarife",
+    "Assistente Social",
+    "Auxiliar Administrativo",
+    "Coletor de Lixo",
+    "Contador",
+    "Coveiro",
+    "Dentista",
+    "Diretor de Escola",
+    "Engenheiro Civil",
+    "Farmacêutico",
+    "Fonoaudiólogo",
+    "Monitor de Transporte Escolar",
+    "Motorista de Ambulância",
+    "Operador de Máquina",
+    "Operário",
+    "Pedreiro",
+    "Procurador Jurídico Municipal",
+    "Professor Auxiliar de Educação Infantil",
+    "Professor de Bordado à Máquina",
+    "Professor de Educação Básica I",
+    "Professor de Educação Básica II, Arte",
+    "Professor de Educação Básica II, Educação Física",
+    "Professor de Educação Básica II, Inglês",
+    "Serviços Gerais",
+    "Supervisor Administrativo",
+    "Técnico de Farmácia",
+    "Técnico de Segurança do Trabalho",
+    "Técnico em Enfermagem",
+    "Técnico em Radiologia",
+    "Terapeuta Ocupacional",
+    "Varredor",
+    "Vigia"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 1/2026"
+   ],
+   "link_banca": "https://www.pirapozinho.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Pirapozinho",
+   "data_prova": "13/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Consultar edital",
+   "jornada": "20 a 40 horas semanais",
+   "isencao": "A isenção poderá ser solicitada das 9h de 9 de novembro de 2026 às 17h de 13 de novembro de 2026 por candidatos inscritos no CadÚnico e por doadores de sangue ou de medula óssea, conforme os critérios do edital.",
+   "faixa_salarial": "R$ 1.624,26 a R$ 6.464,59",
+   "salario_min_texto": 1624.26,
+   "salario_max_texto": 6464.59
+  },
+  "ia": {
+   "cidade": "Pirapozinho",
+   "banca": "Instituto Evo",
+   "data_prova": "13/12/2026",
+   "regime_geral": "Estatutário",
+   "beneficios": null,
+   "isencao": "Taxas de R$ 50,00 (fundamental), R$ 70,00 (médio) e R$ 100,00 (superior). Isenção para inscritos no CadÚnico e doadores de sangue ou de medula óssea.",
+   "jornada_geral": "20 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Agente Comunitário de Saúde, área da Comunidade I",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio"
+    },
+    {
+     "nome": "Agente Comunitário de Saúde, área da Comunidade II, distrito de Itororó do Paranapanema",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio"
+    },
+    {
+     "nome": "Agente de Combate às Endemias, área da Comunidade I",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio"
+    },
+    {
+     "nome": "Agente de Combate às Endemias, área da Comunidade II, distrito de Itororó do Paranapanema",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio"
+    },
+    {
+     "nome": "Almoxarife",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio"
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior na área"
+    },
+    {
+     "nome": "Auxiliar Administrativo",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio"
+    },
+    {
+     "nome": "Coletor de Lixo",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Alfabetizado ou ensino fundamental"
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Ciências Contábeis + registro no CRC"
+    },
+    {
+     "nome": "Coveiro",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Alfabetizado ou ensino fundamental"
+    },
+    {
+     "nome": "Dentista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Odontologia + registro no CRO"
+    },
+    {
+     "nome": "Diretor de Escola",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Pedagogia ou Licenciatura com pós-graduação em gestão/administração escolar e experiência"
+    },
+    {
+     "nome": "Engenheiro Civil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Engenharia Civil + registro no CREA"
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Farmácia + registro no CRF"
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Fonoaudiologia + registro no CRFa"
+    },
+    {
+     "nome": "Monitor de Transporte Escolar",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio"
+    },
+    {
+     "nome": "Motorista de Ambulância",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino fundamental + CNH D ou E + curso específico"
+    },
+    {
+     "nome": "Operador de Máquina",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino fundamental + CNH compatível + curso específico"
+    },
+    {
+     "nome": "Operário",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Alfabetizado ou ensino fundamental"
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Alfabetizado ou ensino fundamental"
+    },
+    {
+     "nome": "Procurador Jurídico Municipal",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Direito + inscrição na OAB"
+    },
+    {
+     "nome": "Professor Auxiliar de Educação Infantil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Pedagogia ou Magistério"
+    },
+    {
+     "nome": "Professor de Bordado à Máquina",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior com habilitação específica"
+    },
+    {
+     "nome": "Professor de Educação Básica I",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Pedagogia"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Arte",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior com Licenciatura em Arte"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior com Licenciatura em Educação Física + registro no CREF"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior com Licenciatura em Letras/Inglês"
+    },
+    {
+     "nome": "Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Alfabetizado ou ensino fundamental"
+    },
+    {
+     "nome": "Supervisor Administrativo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior"
+    },
+    {
+     "nome": "Técnico de Farmácia",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio Técnico em Farmácia + registro no conselho"
+    },
+    {
+     "nome": "Técnico de Segurança do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio Técnico em Segurança do Trabalho + registro"
+    },
+    {
+     "nome": "Técnico em Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio Técnico em Enfermagem + registro no COREN"
+    },
+    {
+     "nome": "Técnico em Radiologia",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Médio Técnico em Radiologia + registro"
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Terapia Ocupacional + registro no CREFITO"
+    },
+    {
+     "nome": "Varredor",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Alfabetizado ou ensino fundamental"
+    },
+    {
+     "nome": "Vigia",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Alfabetizado ou ensino fundamental"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-roseira-sp-abre-processo-seletivo-com-salarios-de-ate-5130": {
+  "first_seen": "2026-10-31",
+  "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "ea617e91f940",
+  "fisio_linhas": [],
+  "salario_max_texto": 5130.63,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Cozinheiro",
+    "Agente de Apoio Escolar",
+    "Monitor de Creche",
+    "PEB I - Educação Infantil",
+    "PEB I - Ensino Fundamental",
+    "Professor de Alfabetização de Jovens e Adultos",
+    "PEB II - Professor de Educação Física",
+    "PEB II - Professor de Matemática",
+    "PEB II - Professor de Língua Portuguesa",
+    "PEB II - Professor de Ciências",
+    "PEB II - Professor de Geografia",
+    "PEB II - Professor de História",
+    "PEB II - Professor de Inglês",
+    "PEB II - Professor de Educação Artística"
+   ],
+   "arquivos_edital": [
+    "ROSEIRA 2 PS"
+   ],
+   "link_banca": "https://www.roseira.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Roseira",
+   "data_prova": "06/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "jornada": "18 a 40 horas semanais",
+   "isencao": "A isenção pode ser solicitada de 29 de outubro a 3 de novembro de 2026 por mesários e chefes de seção eleitoral que atuaram nos últimos dois anos e por doadores de sangue, medula óssea ou leite materno que atendam às condições do edital.",
+   "faixa_salarial": "R$ 1.621,39 a R$ 5.130,63",
+   "salario_min_texto": 1621.39,
+   "salario_max_texto": 5130.63
+  },
+  "ia": {
+   "cidade": "Roseira",
+   "banca": "NetEduc Concursos",
+   "data_prova": "05/12/2026",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios": null,
+   "isencao": "Taxa de R$ 20,00 para ensino fundamental e médio e R$ 48,00 para superior. Isenção para mesários e chefes de seção eleitoral que atuaram nos últimos dois anos e doadores de sangue, medula óssea ou leite materno.",
+   "jornada_geral": "18 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Cozinheiro",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": 1621.39,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental incompleto"
+    },
+    {
+     "nome": "Agente de Apoio Escolar",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio completo"
+    },
+    {
+     "nome": "Monitor de Creche",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio completo"
+    },
+    {
+     "nome": "PEB I - Educação Infantil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "PEB I - Ensino Fundamental",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "Professor de Alfabetização de Jovens e Adultos",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "PEB II - Professor de Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "PEB II - Professor de Matemática",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "PEB II - Professor de Língua Portuguesa",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "PEB II - Professor de Ciências",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "PEB II - Professor de Geografia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "PEB II - Professor de História",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "PEB II - Professor de Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    },
+    {
+     "nome": "PEB II - Professor de Educação Artística",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": 5130.63,
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior completo"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-da-boa-vista-sp-abre-selecao-para-cadastro-de-reserva": {
+  "first_seen": "2026-10-31",
+  "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "3152405b5f97",
+  "fisio_linhas": [],
+  "salario_max_texto": 2866.86,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Cozinheiro",
+    "Assistente de Desenvolvimento da Infância (ADI)",
+    "Professor de Ensino Fundamental II - Educação Especial",
+    "Professor de Ensino Fundamental II - Educação Física"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_banca": "https://www.saojoao.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de São João da Boa Vista",
+   "data_prova": "13/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Auxílio-alimentação de R$ 650,87.",
+   "jornada": "40 horas semanais",
+   "isencao": "Candidatos inscritos no CadÚnico que sejam de família de baixa renda ou doadores de medula óssea poderão solicitar isenção de 5 de novembro de 2026, às 10h, a 6 de novembro de 2026, às 23h59.",
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/ipsm-de-sao-jose-dos-campos-sp-abre-concurso-para-diversos-cargos-de-nivel-superior": {
+  "first_seen": "2026-11-01",
+  "first_seen_ts": "2026-11-01T13:43:22.246794-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "0ca34ac80fa5",
+  "fisio_linhas": [],
+  "salario_max_texto": 5185.46,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Analista em Gestão Previdenciária (7 vagas + 1 vaga para PCD)",
+    "Analista Previdenciário - Direito (2 vagas + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Administrador (4 vagas + 1 vaga para PCD)",
+    "Analista Previdenciário - TI (1 vaga + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Psicólogo (1 vaga + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Assistente Social (cadastro de reserva para ampla concorrência e para PCD)",
+    "Médico (cadastro de reserva para ampla concorrência e para PCD)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_banca": "https://ipsmsjc.sp.gov.br/",
+   "nome_banca": "IPSM",
+   "data_prova": "13/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Vale-transporte, vale-alimentação e gratificação previdenciária, conforme previsto na legislação municipal",
+   "jornada": "12 a 40 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 89,00. Candidatos inscritos no CadÚnico têm possibilidade de isenção, conforme regras do edital, com solicitações de 1º a 9 de outubro de 2026.",
+   "faixa_salarial": "R$ 3.889,11 a R$ 5.185,46",
+   "salario_min_texto": 3889.11,
+   "salario_max_texto": 5185.46
   }
  }
 }

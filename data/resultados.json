@@ -2593,17 +2593,17 @@
    "cidade": "Pratânia",
    "lat": -22.8112,
    "lon": -48.6636,
-   "banca": "Prefeitura Municipal de Pratânia",
+   "banca": "CONSCAM",
    "site_banca": "https://www.pratania.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pratania-sp-abre-processo-seletivo-com-vagas-para-diversos-cargos#links",
    "arquivos_edital": [
     "PROCESSO SELETIVO Nº 003/2026"
    ],
    "data_prova": "29/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "Temporário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 44 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxas de inscrição: R$ 15,00 para ensino fundamental, R$ 20,00 para ensino médio ou técnico, e R$ 25,00 para ensino superior. Requisitos de isenção não especificados no texto.",
    "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "taxa_inscricao": "Consultar edital",
    "taxa_min": null,
@@ -2637,7 +2637,27 @@
     "Nutricionista (1 vaga)",
     "Psicólogo (1 vaga)",
     "Técnico Desportivo (2 vagas)",
-    "Terapeuta Ocupacional (1 vaga)"
+    "Terapeuta Ocupacional (1 vaga)",
+    "Auxiliar de Serviços Diversos",
+    "Monitor de Transporte Escolar",
+    "Motorista Nível I",
+    "Motorista Nível III",
+    "Operador de Máquinas II",
+    "Tratorista",
+    "Agente Administrativo",
+    "Agente de Combate a Endemias",
+    "Agente Sanitário",
+    "Atendente de Dentista",
+    "Auxiliar de Farmácia",
+    "Técnico de Enfermagem",
+    "Assistente Social",
+    "Enfermeiro",
+    "Fisioterapeuta",
+    "Fonoaudiólogo",
+    "Nutricionista",
+    "Psicólogo",
+    "Técnico Desportivo",
+    "Terapeuta Ocupacional"
    ],
    "cargos_salarios": {
     "auxiliar de servicos diversos": 1621.0,
@@ -2669,12 +2689,12 @@
     "salario_exibicao": "R$ 1.621,00 a R$ 3.242,00",
     "salario_detalhe": "Faixa bruta no edital: R$ 1.621,00 a R$ 3.242,00 (+ auxílios legais)",
     "carga_horaria": "20 a 44 horas semanais",
-    "regime": "Processo Seletivo / Temporário",
+    "regime": "Temporário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
+    "requisitos": "Ensino superior em Fisioterapia + Registro no Conselho",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (Prefeitura Municipal de Pratânia): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (CONSCAM): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -2685,7 +2705,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+2 cargos)",
+     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+8 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -2694,12 +2714,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "Temporário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Monitor de Transporte Escolar): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -2709,7 +2729,7 @@
    "salario_max": 3242.0,
    "superior_itens": [
     {
-     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+4 cargos)",
+     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+12 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -2718,12 +2738,12 @@
      "salario_total": 3242.0,
      "salario_detalhe": "Bruto: R$ 3.242,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "Temporário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Fisioterapia (CREFITO), Enfermagem (COREN), Nutrição (CRN), Odontologia (CRO) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Atendente de Dentista): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -2741,28 +2761,28 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-pratania",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-conscam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
+     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Pratânia",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Pratânia"
+     "banca_busca": "CONSCAM",
+     "label_combo": "Fisioterapeuta · CONSCAM"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-prefeitura-municipal-de-pratania",
+     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-conscam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
+     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
      "cargo_busca": "Monitor de Transporte Escolar",
-     "banca_busca": "Prefeitura Municipal de Pratânia",
-     "label_combo": "Monitor de Transporte Escolar · Prefeitura Municipal de Pratânia"
+     "banca_busca": "CONSCAM",
+     "label_combo": "Monitor de Transporte Escolar · CONSCAM"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-prefeitura-municipal-de-pratania",
+     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-conscam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
+     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
      "cargo_busca": "Atendente de Dentista",
-     "banca_busca": "Prefeitura Municipal de Pratânia",
-     "label_combo": "Atendente de Dentista · Prefeitura Municipal de Pratânia"
+     "banca_busca": "CONSCAM",
+     "label_combo": "Atendente de Dentista · CONSCAM"
     }
    }
   },
@@ -2781,7 +2801,7 @@
    "cidade": "Presidente Alves",
    "lat": -22.0999,
    "lon": -49.4381,
-   "banca": "Prefeitura Municipal de Presidente Alves",
+   "banca": "SR Digitalizações",
    "site_banca": "https://www.presidentealves.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-presidente-alves-sp-abre-concurso-publico-com-salarios-de-ate-4246#links",
    "arquivos_edital": [
@@ -2790,8 +2810,8 @@
    "data_prova": "06/12/2026",
    "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "30 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "jornada_geral": "30 a 40 horas semanais",
+   "isencao": "Taxa de inscrição de R$ 60,00 para Motorista e de R$ 80,00 para os demais empregos. O edital não menciona regras de isenção.",
    "faixa_salarial": "R$ 2.022,91 a R$ 4.246,41",
    "taxa_inscricao": "Consultar edital",
    "taxa_min": null,
@@ -2808,7 +2828,10 @@
    "cargos_lista": [
     "Fisioterapeuta (1 vaga)",
     "Motorista (1 vaga)",
-    "Professor de Ensino Infantil (1 vaga)"
+    "Professor de Ensino Infantil (1 vaga)",
+    "Fisioterapeuta",
+    "Motorista",
+    "Professor de Ensino Infantil"
    ],
    "cargos_salarios": {
     "fisioterapeuta": 4246.41,
@@ -2832,13 +2855,13 @@
     "salario_total": null,
     "salario_exibicao": "R$ 2.022,91 a R$ 4.246,41",
     "salario_detalhe": "Faixa bruta no edital: R$ 2.022,91 a R$ 4.246,41 (+ auxílios legais)",
-    "carga_horaria": "30 horas semanais",
+    "carga_horaria": "30h semanais",
     "regime": "CLT (Celetista)",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
+    "requisitos": "Ensino Superior na área",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (Prefeitura Municipal de Presidente Alves): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (SR Digitalizações): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -2851,7 +2874,7 @@
    "salario_max": 4246.41,
    "superior_itens": [
     {
-     "nome": "Fisioterapeuta / Professor de Ensino Infantil",
+     "nome": "Fisioterapeuta / Professor de Ensino Infantil / Fisioterapeuta / Professor de Ensino Infantil",
      "vagas": "3 vagas imediatas",
      "vagas_imediatas": 3,
      "tem_cr": false,
@@ -2859,13 +2882,13 @@
      "salario_bruto": 4246.41,
      "salario_total": 4246.41,
      "salario_detalhe": "Bruto: R$ 4.246,41 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "30 horas semanais",
+     "carga_horaria": "30 a 40 horas semanais",
      "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Fisioterapia (CREFITO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Presidente Alves): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (SR Digitalizações): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Fisioterapeuta): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -2879,20 +2902,20 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-presidente-alves",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-sr-digitalizacoes",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-presidente-alves",
+     "url_banca": "https://www.pciconcursos.com.br/provas/sr-digitalizacoes",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Presidente Alves",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Presidente Alves"
+     "banca_busca": "SR Digitalizações",
+     "label_combo": "Fisioterapeuta · SR Digitalizações"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-presidente-alves",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-sr-digitalizacoes",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-presidente-alves",
+     "url_banca": "https://www.pciconcursos.com.br/provas/sr-digitalizacoes",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Presidente Alves",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Presidente Alves"
+     "banca_busca": "SR Digitalizações",
+     "label_combo": "Fisioterapeuta · SR Digitalizações"
     }
    }
   },
@@ -8122,17 +8145,17 @@
    "cidade": "Pratânia",
    "lat": -22.8112,
    "lon": -48.6636,
-   "banca": "Prefeitura Municipal de Pratânia",
+   "banca": "CONSCAM",
    "site_banca": "https://www.pratania.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pratania-sp-abre-processo-seletivo-com-vagas-para-diversos-cargos#links",
    "arquivos_edital": [
     "PROCESSO SELETIVO Nº 003/2026"
    ],
    "data_prova": "29/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "Temporário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 44 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxas de inscrição: R$ 15,00 para ensino fundamental, R$ 20,00 para ensino médio ou técnico, e R$ 25,00 para ensino superior. Requisitos de isenção não especificados no texto.",
    "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "taxa_inscricao": "Consultar edital",
    "taxa_min": null,
@@ -8166,7 +8189,27 @@
     "Nutricionista (1 vaga)",
     "Psicólogo (1 vaga)",
     "Técnico Desportivo (2 vagas)",
-    "Terapeuta Ocupacional (1 vaga)"
+    "Terapeuta Ocupacional (1 vaga)",
+    "Auxiliar de Serviços Diversos",
+    "Monitor de Transporte Escolar",
+    "Motorista Nível I",
+    "Motorista Nível III",
+    "Operador de Máquinas II",
+    "Tratorista",
+    "Agente Administrativo",
+    "Agente de Combate a Endemias",
+    "Agente Sanitário",
+    "Atendente de Dentista",
+    "Auxiliar de Farmácia",
+    "Técnico de Enfermagem",
+    "Assistente Social",
+    "Enfermeiro",
+    "Fisioterapeuta",
+    "Fonoaudiólogo",
+    "Nutricionista",
+    "Psicólogo",
+    "Técnico Desportivo",
+    "Terapeuta Ocupacional"
    ],
    "cargos_salarios": {
     "auxiliar de servicos diversos": 1621.0,
@@ -8198,12 +8241,12 @@
     "salario_exibicao": "R$ 1.621,00 a R$ 3.242,00",
     "salario_detalhe": "Faixa bruta no edital: R$ 1.621,00 a R$ 3.242,00 (+ auxílios legais)",
     "carga_horaria": "20 a 44 horas semanais",
-    "regime": "Processo Seletivo / Temporário",
+    "regime": "Temporário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
+    "requisitos": "Ensino superior em Fisioterapia + Registro no Conselho",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (Prefeitura Municipal de Pratânia): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (CONSCAM): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -8214,7 +8257,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+2 cargos)",
+     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+8 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -8223,12 +8266,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "Temporário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Monitor de Transporte Escolar): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -8238,7 +8281,7 @@
    "salario_max": 3242.0,
    "superior_itens": [
     {
-     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+4 cargos)",
+     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+12 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -8247,12 +8290,12 @@
      "salario_total": 3242.0,
      "salario_detalhe": "Bruto: R$ 3.242,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "Temporário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Fisioterapia (CREFITO), Enfermagem (COREN), Nutrição (CRN), Odontologia (CRO) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Atendente de Dentista): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -8270,28 +8313,154 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-pratania",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-conscam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
+     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Pratânia",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Pratânia"
+     "banca_busca": "CONSCAM",
+     "label_combo": "Fisioterapeuta · CONSCAM"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-prefeitura-municipal-de-pratania",
+     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-conscam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
+     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
      "cargo_busca": "Monitor de Transporte Escolar",
-     "banca_busca": "Prefeitura Municipal de Pratânia",
-     "label_combo": "Monitor de Transporte Escolar · Prefeitura Municipal de Pratânia"
+     "banca_busca": "CONSCAM",
+     "label_combo": "Monitor de Transporte Escolar · CONSCAM"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-prefeitura-municipal-de-pratania",
+     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-conscam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
+     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
      "cargo_busca": "Atendente de Dentista",
-     "banca_busca": "Prefeitura Municipal de Pratânia",
-     "label_combo": "Atendente de Dentista · Prefeitura Municipal de Pratânia"
+     "banca_busca": "CONSCAM",
+     "label_combo": "Atendente de Dentista · CONSCAM"
+    }
+   }
+  },
+  {
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-roseira-sp-abre-processo-seletivo-com-salarios-de-ate-5130",
+   "orgao": "Prefeitura de Roseira",
+   "titulo": "Prefeitura de Roseira - SP abre processo seletivo com salários de até R$ 5.130,63",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "Cadastro de reserva até R$ 5.130,63",
+   "cargos_resumo": "Vários Cargos",
+   "niveis": "Fundamental / Médio / Superior",
+   "salario_max_listagem": 5130.63,
+   "salario_min_listagem": null,
+   "inscricao_ate": "10/11/2026",
+   "cidade": "Roseira",
+   "lat": -22.8938,
+   "lon": -45.307,
+   "banca": "NetEduc Concursos",
+   "site_banca": "https://www.roseira.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-roseira-sp-abre-processo-seletivo-com-salarios-de-ate-5130#links",
+   "arquivos_edital": [
+    "ROSEIRA 2 PS"
+   ],
+   "data_prova": "05/12/2026",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios_gerais": "Consultar edital",
+   "jornada_geral": "18 a 40 horas semanais",
+   "isencao": "Taxa de R$ 20,00 para ensino fundamental e médio e R$ 48,00 para superior. Isenção para mesários e chefes de seção eleitoral que atuaram nos últimos dois anos e doadores de sangue, medula óssea ou leite materno.",
+   "faixa_salarial": "R$ 1.621,39 a R$ 5.130,63",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-10",
+    "dias_restantes": 9,
+    "encerrando": true,
+    "encerrada": false,
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+   },
+   "cargos_lista": [
+    "Cozinheiro",
+    "Agente de Apoio Escolar",
+    "Monitor de Creche",
+    "PEB I - Educação Infantil",
+    "PEB I - Ensino Fundamental",
+    "Professor de Alfabetização de Jovens e Adultos",
+    "PEB II - Professor de Educação Física",
+    "PEB II - Professor de Matemática",
+    "PEB II - Professor de Língua Portuguesa",
+    "PEB II - Professor de Ciências",
+    "PEB II - Professor de Geografia",
+    "PEB II - Professor de História",
+    "PEB II - Professor de Inglês",
+    "PEB II - Professor de Educação Artística"
+   ],
+   "first_seen_ts": "2026-10-31T12:41:43.042662-03:00",
+   "is_baseline": false,
+   "novo": false,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [
+    {
+     "nome": "Monitor de Creche",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 3200.0,
+     "salario_bruto": 3200.0,
+     "salario_total": 3200.0,
+     "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "escolaridade_tipo": "medio",
+     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Monitor de Creche), sem necessidade de curso técnico profissionalizante.",
+     "beneficios": "Consultar edital",
+     "resumo_conteudo": [
+      "Língua Portuguesa (NetEduc Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Monitor de Creche): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "salario_max": 5130.63,
+   "superior_itens": [
+    {
+     "nome": "PEB I - Educação Infantil / PEB I - Ensino Fundamental / Professor de Alfabetização de Jovens e Adultos / PEB II - Professor de Educação Física (+7 cargos)",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 5130.63,
+     "salario_bruto": 5130.63,
+     "salario_total": 5130.63,
+     "salario_detalhe": "Bruto: R$ 5.130,63 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "18 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Consultar edital",
+     "resumo_conteudo": [
+      "Língua Portuguesa (NetEduc Concursos): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (PEB I - Educação Infantil): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
+   "termos_formacao": [
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "medio_todos": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-creche-neteduc-concursos",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/monitor-de-creche",
+     "url_banca": "https://www.pciconcursos.com.br/provas/neteduc-concursos",
+     "cargo_busca": "Monitor de Creche",
+     "banca_busca": "NetEduc Concursos",
+     "label_combo": "Monitor de Creche · NetEduc Concursos"
+    },
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/peb-neteduc-concursos",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/peb",
+     "url_banca": "https://www.pciconcursos.com.br/provas/neteduc-concursos",
+     "cargo_busca": "PEB",
+     "banca_busca": "NetEduc Concursos",
+     "label_combo": "PEB · NetEduc Concursos"
     }
    }
   },
@@ -26014,7 +26183,7 @@
    "cidade": "Presidente Alves",
    "lat": -22.0999,
    "lon": -49.4381,
-   "banca": "Prefeitura Municipal de Presidente Alves",
+   "banca": "SR Digitalizações",
    "site_banca": "https://www.presidentealves.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-presidente-alves-sp-abre-concurso-publico-com-salarios-de-ate-4246#links",
    "arquivos_edital": [
@@ -26023,8 +26192,8 @@
    "data_prova": "06/12/2026",
    "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "30 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "jornada_geral": "30 a 40 horas semanais",
+   "isencao": "Taxa de inscrição de R$ 60,00 para Motorista e de R$ 80,00 para os demais empregos. O edital não menciona regras de isenção.",
    "faixa_salarial": "R$ 2.022,91 a R$ 4.246,41",
    "taxa_inscricao": "Consultar edital",
    "taxa_min": null,
@@ -26041,7 +26210,10 @@
    "cargos_lista": [
     "Fisioterapeuta (1 vaga)",
     "Motorista (1 vaga)",
-    "Professor de Ensino Infantil (1 vaga)"
+    "Professor de Ensino Infantil (1 vaga)",
+    "Fisioterapeuta",
+    "Motorista",
+    "Professor de Ensino Infantil"
    ],
    "cargos_salarios": {
     "fisioterapeuta": 4246.41,
@@ -26065,13 +26237,13 @@
     "salario_total": null,
     "salario_exibicao": "R$ 2.022,91 a R$ 4.246,41",
     "salario_detalhe": "Faixa bruta no edital: R$ 2.022,91 a R$ 4.246,41 (+ auxílios legais)",
-    "carga_horaria": "30 horas semanais",
+    "carga_horaria": "30h semanais",
     "regime": "CLT (Celetista)",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
+    "requisitos": "Ensino Superior na área",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (Prefeitura Municipal de Presidente Alves): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (SR Digitalizações): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -26084,7 +26256,7 @@
    "salario_max": 4246.41,
    "superior_itens": [
     {
-     "nome": "Fisioterapeuta / Professor de Ensino Infantil",
+     "nome": "Fisioterapeuta / Professor de Ensino Infantil / Fisioterapeuta / Professor de Ensino Infantil",
      "vagas": "3 vagas imediatas",
      "vagas_imediatas": 3,
      "tem_cr": false,
@@ -26092,13 +26264,13 @@
      "salario_bruto": 4246.41,
      "salario_total": 4246.41,
      "salario_detalhe": "Bruto: R$ 4.246,41 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "30 horas semanais",
+     "carga_horaria": "30 a 40 horas semanais",
      "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Fisioterapia (CREFITO), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Presidente Alves): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (SR Digitalizações): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Fisioterapeuta): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -26112,20 +26284,20 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-presidente-alves",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-sr-digitalizacoes",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-presidente-alves",
+     "url_banca": "https://www.pciconcursos.com.br/provas/sr-digitalizacoes",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Presidente Alves",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Presidente Alves"
+     "banca_busca": "SR Digitalizações",
+     "label_combo": "Fisioterapeuta · SR Digitalizações"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-presidente-alves",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-sr-digitalizacoes",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-presidente-alves",
+     "url_banca": "https://www.pciconcursos.com.br/provas/sr-digitalizacoes",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Presidente Alves",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Presidente Alves"
+     "banca_busca": "SR Digitalizações",
+     "label_combo": "Fisioterapeuta · SR Digitalizações"
     }
    }
   },
@@ -29785,17 +29957,17 @@
    "cidade": "Pratânia",
    "lat": -22.8112,
    "lon": -48.6636,
-   "banca": "Prefeitura Municipal de Pratânia",
+   "banca": "CONSCAM",
    "site_banca": "https://www.pratania.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pratania-sp-abre-processo-seletivo-com-vagas-para-diversos-cargos#links",
    "arquivos_edital": [
     "PROCESSO SELETIVO Nº 003/2026"
    ],
    "data_prova": "29/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "Temporário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 44 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxas de inscrição: R$ 15,00 para ensino fundamental, R$ 20,00 para ensino médio ou técnico, e R$ 25,00 para ensino superior. Requisitos de isenção não especificados no texto.",
    "faixa_salarial": "R$ 1.621,00 a R$ 3.242,00",
    "taxa_inscricao": "Consultar edital",
    "taxa_min": null,
@@ -29829,7 +30001,27 @@
     "Nutricionista (1 vaga)",
     "Psicólogo (1 vaga)",
     "Técnico Desportivo (2 vagas)",
-    "Terapeuta Ocupacional (1 vaga)"
+    "Terapeuta Ocupacional (1 vaga)",
+    "Auxiliar de Serviços Diversos",
+    "Monitor de Transporte Escolar",
+    "Motorista Nível I",
+    "Motorista Nível III",
+    "Operador de Máquinas II",
+    "Tratorista",
+    "Agente Administrativo",
+    "Agente de Combate a Endemias",
+    "Agente Sanitário",
+    "Atendente de Dentista",
+    "Auxiliar de Farmácia",
+    "Técnico de Enfermagem",
+    "Assistente Social",
+    "Enfermeiro",
+    "Fisioterapeuta",
+    "Fonoaudiólogo",
+    "Nutricionista",
+    "Psicólogo",
+    "Técnico Desportivo",
+    "Terapeuta Ocupacional"
    ],
    "cargos_salarios": {
     "auxiliar de servicos diversos": 1621.0,
@@ -29861,12 +30053,12 @@
     "salario_exibicao": "R$ 1.621,00 a R$ 3.242,00",
     "salario_detalhe": "Faixa bruta no edital: R$ 1.621,00 a R$ 3.242,00 (+ auxílios legais)",
     "carga_horaria": "20 a 44 horas semanais",
-    "regime": "Processo Seletivo / Temporário",
+    "regime": "Temporário",
     "escolaridade_tipo": "superior",
-    "requisitos": "Ensino Superior completo em Fisioterapia + Registro regular ativo no CREFITO-3.",
+    "requisitos": "Ensino superior em Fisioterapia + Registro no Conselho",
     "beneficios": "Consultar edital",
     "resumo_conteudo": [
-     "Língua Portuguesa (Prefeitura Municipal de Pratânia): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
+     "Língua Portuguesa (CONSCAM): Interpretação de textos, ortografia oficial, morfologia, sintaxe, concordância, regência, crase e pontuação",
      "Políticas Públicas de Saúde e Legislação do SUS: Constituição Federal (arts. 196 a 200), Leis Orgânicas da Saúde (8.080/90 e 8.142/90), PNAB e Redes de Atenção à Saúde",
      "Fundamentos de Fisioterapia: Anatomia, fisiologia humana e do exercício, neurofisiologia, biomecânica, cinesiologia, semiologia e avaliação cinético-funcional",
      "Recursos Terapêuticos: Cinesioterapia, eletrotermofototerapia, mecanoterapia, terapia manual, hidroterapia, órteses e próteses",
@@ -29877,7 +30069,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+2 cargos)",
+     "nome": "Monitor de Transporte Escolar / Motorista Nível I / Motorista Nível III / Agente Administrativo (+8 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -29886,12 +30078,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "Temporário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige Ensino Médio completo + Carteira Nacional de Habilitação (CNH) categoria 'D' ou 'E' válida + curso especializado quando aplicável e prova prática de direção.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Monitor de Transporte Escolar): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -29901,7 +30093,7 @@
    "salario_max": 3242.0,
    "superior_itens": [
     {
-     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+4 cargos)",
+     "nome": "Atendente de Dentista / Assistente Social / Enfermeiro / Fisioterapeuta (+12 cargos)",
      "vagas": "20 vagas imediatas",
      "vagas_imediatas": 20,
      "tem_cr": false,
@@ -29910,12 +30102,12 @@
      "salario_total": 3242.0,
      "salario_detalhe": "Bruto: R$ 3.242,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 44 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "Temporário",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Serviço Social (CRESS), Psicologia (CRP), Fisioterapia (CREFITO), Enfermagem (COREN), Nutrição (CRN), Odontologia (CRO) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Pratânia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (CONSCAM): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Atendente de Dentista): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -29933,28 +30125,28 @@
    ],
    "links_provas_map": {
     "fisio": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-prefeitura-municipal-de-pratania",
+     "url_combo": "https://www.pciconcursos.com.br/provas/fisioterapeuta-conscam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/fisioterapeuta",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
+     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
      "cargo_busca": "Fisioterapeuta",
-     "banca_busca": "Prefeitura Municipal de Pratânia",
-     "label_combo": "Fisioterapeuta · Prefeitura Municipal de Pratânia"
+     "banca_busca": "CONSCAM",
+     "label_combo": "Fisioterapeuta · CONSCAM"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-prefeitura-municipal-de-pratania",
+     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar-conscam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/monitor-de-transporte-escolar",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
+     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
      "cargo_busca": "Monitor de Transporte Escolar",
-     "banca_busca": "Prefeitura Municipal de Pratânia",
-     "label_combo": "Monitor de Transporte Escolar · Prefeitura Municipal de Pratânia"
+     "banca_busca": "CONSCAM",
+     "label_combo": "Monitor de Transporte Escolar · CONSCAM"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-prefeitura-municipal-de-pratania",
+     "url_combo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista-conscam",
      "url_cargo": "https://www.pciconcursos.com.br/provas/atendente-de-dentista",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pratania",
+     "url_banca": "https://www.pciconcursos.com.br/provas/conscam",
      "cargo_busca": "Atendente de Dentista",
-     "banca_busca": "Prefeitura Municipal de Pratânia",
-     "label_combo": "Atendente de Dentista · Prefeitura Municipal de Pratânia"
+     "banca_busca": "CONSCAM",
+     "label_combo": "Atendente de Dentista · CONSCAM"
     }
    }
   },
