@@ -669,6 +669,182 @@ def parse_faixa_salarial(texto: str, vagas_salario_listagem: str = "") -> str:
     return faixa
 
 
+def normalizar_cargo_slug(cargo: str) -> str:
+    """Gera chave limpa sem acentos e sem parenteses para casamento rapido de cargos."""
+    if not cargo:
+        return ""
+    c_limpo = re.sub(r"\s*\([^)]*\)", "", cargo)
+    c_limpo = re.sub(
+        r"[-:–—]\s*(?:\d+\s*vagas?|cr\b|cadastro\s+de\s+reserva|r\$\s*[\d.]+,\d{2}).*$",
+        "",
+        c_limpo,
+        flags=re.I,
+    )
+    import unicodedata
+
+    slug = re.sub(
+        r"[^\w\s]",
+        " ",
+        unicodedata.normalize("NFKD", c_limpo).encode("ASCII", "ignore").decode("utf-8"),
+    ).lower().strip()
+    return re.sub(r"\s+", " ", slug)
+
+
+RE_CARGO_FUNDAMENTAL = re.compile(
+    r"\b(auxiliar|operacional|bra[çc]al|merendeir|vigia|porteiro|motorista|operador|servi[çc]os\s+gerais|"
+    r"servente|zelador|cozinheiro|limpeza|artes[ãa]o|eletricista|pedreiro|mec[âa]nico|encanador|tratorista|telefonista)\b",
+    re.I,
+)
+RE_CARGO_SUPERIOR_TOPO = re.compile(
+    r"\b(procurador|advogado|juiz|defensor|promotor|m[ée]dico|cirurgi[ãa]o|auditor|fiscal|contador|"
+    r"economista|engenheiro|arquiteto|psic[óo]logo|farmac[êe]utico|dentista|fisioterapeuta|nutricionista|"
+    r"analista|controlador|diretor|coordenador|veterin[áa]rio|biom[ée]dico)\b",
+    re.I,
+)
+
+
+def parse_taxa_inscricao(txt: str) -> Dict[str, Any]:
+    """Extrai valores mínimos, máximos e resumo legível da taxa de inscrição."""
+    if not txt:
+        return {"taxa_texto": "Consultar edital", "taxa_min": None, "taxa_max": None}
+    t = txt.strip()
+    if re.search(
+        r"inscri[çc][õo]es\s+s[ãa]o\s+gratuitas|inscri[çc][õo]es\s+gratuitas|gratuita|n[ãa]o\s+haver[áa]\s+cobran[çc]a|gratuitamente|sem\s+cobran[çc]a\s+de\s+taxa",
+        t,
+        re.I,
+    ):
+        return {"taxa_texto": "Gratuita (sem taxa de inscrição)", "taxa_min": 0.0, "taxa_max": 0.0}
+
+    # Procura trecho focado em taxa de inscrição
+    m = re.search(r"(?:taxa[s]?\s+de\s+inscri|taxa[s]?|valor\s+da\s+taxa)[^.\n;]{0,140}", t, re.I)
+    trecho = m.group(0) if m else t
+    vals = [parse_brl(match.group(1)) for match in re.finditer(r"R\$\s*([\d.]+,\d{2})", trecho)]
+    taxas = [v for v in vals if v is not None and 10.0 <= v <= 450.0]
+    if not taxas:
+        vals = [parse_brl(match.group(1)) for match in re.finditer(r"R\$\s*([\d.]+,\d{2})", t)]
+        taxas = [v for v in vals if v is not None and 10.0 <= v <= 450.0]
+
+    if len(taxas) >= 2 and min(taxas) != max(taxas):
+        t_min, t_max = min(taxas), max(taxas)
+        return {"taxa_texto": f"{brl(t_min)} a {brl(t_max)}", "taxa_min": t_min, "taxa_max": t_max}
+    if len(taxas) >= 1:
+        t_unica = taxas[0]
+        return {"taxa_texto": brl(t_unica), "taxa_min": t_unica, "taxa_max": t_unica}
+    return {"taxa_texto": "Consultar edital", "taxa_min": None, "taxa_max": None}
+
+
+def parse_etapas_prova(texto: str) -> str:
+    """Identifica as etapas do concurso público (Objetiva, Prática, Discursiva, TAF, Títulos)."""
+    if not texto:
+        return "Prova Objetiva"
+    etapas = ["Prova Objetiva"]
+    t = texto.lower()
+    if "prova prática" in t or "prova pratica" in t:
+        etapas.append("Prova Prática")
+    if any(w in t for w in ("dissertativa", "redação", "redacao", "peça processual", "parecer jurídico", "prova discursiva")):
+        etapas.append("Prova Discursiva/Redação")
+    if any(w in t for w in ("títulos", "titulos", "avaliação de títulos", "prova de títulos")):
+        etapas.append("Avaliação de Títulos")
+    if any(w in t for w in ("aptidão física", "aptidao fisica", "taf", "teste físico")):
+        etapas.append("Teste de Aptidão Física (TAF)")
+    if any(w in t for w in ("avaliação psicológica", "psicológica", "exame psicotécnico", "psicotécnico")):
+        etapas.append("Avaliação Psicológica")
+    return " · ".join(etapas)
+
+
+def extrair_salarios_por_cargo(
+    cargos_li: List[str],
+    texto: str,
+    s_min: Optional[float],
+    s_max: Optional[float],
+) -> Dict[str, float]:
+    """Mapeia cada cargo do edital para seu respectivo vencimento base em R$."""
+    map_sal: Dict[str, float] = {}
+
+    # 1) Procura valores de salário diretamente no item de cada cargo (ex.: "Contador: R$ 5.200,00")
+    for c in cargos_li or []:
+        m = re.search(
+            r"^(.*?)(?:\s*\([^)]*\))?\s*(?:[-:–—]\s*(?:sal[áa]rio|vencimento|remunera[çc][ãa]o)?\s*)?R\$\s*([\d.]+,\d{2})",
+            c,
+            re.I,
+        )
+        if m:
+            nome = m.group(1).strip(" -:–—")
+            val = parse_brl(m.group(2))
+            if nome and val and 700 <= val <= 60000:
+                sl = normalizar_cargo_slug(nome)
+                if sl:
+                    map_sal[sl] = val
+
+    # 2) Procura sentenças no texto vinculando remuneração a cargo específico
+    for c in cargos_li or []:
+        sl = normalizar_cargo_slug(c)
+        if not sl or sl in map_sal:
+            continue
+        c_clean = re.sub(r"\s*\(.*?\)", "", c).strip()
+        if len(c_clean) < 3:
+            continue
+        padrao = re.escape(c_clean) + r"[^.\n;]{0,50}?(?:[-:–—]\s*)?R\$\s*([\d.]+,\d{2})"
+        m = re.search(padrao, texto or "", re.I)
+        if m:
+            val = parse_brl(m.group(1))
+            if val and 700 <= val <= 60000:
+                map_sal[sl] = val
+
+    for padrao in (
+        r"(?:sal[áa]rio|vencimento|remunera[çc][ãa]o)[^.\n]{0,50}?R\$\s*([\d.]+,\d{2})[^.\n]{0,50}?(?:para\s+(?:o\s+cargo\s+de\s+)?|ao\s+cargo\s+de\s+)([A-ZÁÉÍÓÚÂÊÔÃÕÇ][a-záéíóúâêôãõç\w\s/-]+?)(?=[,.;\n]|e\s+R\$)",
+        r"(?:para\s+(?:o\s+cargo\s+de\s+)?|ao\s+cargo\s+de\s+)([A-ZÁÉÍÓÚÂÊÔÃÕÇ][a-záéíóúâêôãõç\w\s/-]+?)[^.\n]{0,50}?(?:sal[áa]rio|vencimento|remunera[çc][ãa]o)[^.\n]{0,30}?R\$\s*([\d.]+,\d{2})",
+    ):
+        for m in re.finditer(padrao, texto or "", re.I):
+            if m.re.pattern.startswith(r"(?:sal"):
+                v_str, c_nome = m.group(1), m.group(2)
+            else:
+                c_nome, v_str = m.group(1), m.group(2)
+            val = parse_brl(v_str)
+            if val and 700 <= val <= 60000:
+                sl = normalizar_cargo_slug(c_nome)
+                if sl and sl not in map_sal:
+                    map_sal[sl] = val
+
+    # 3) Heurística de vinculação de patamar salarial por nível quando s_min e s_max existem
+    if s_min and s_max and s_min != s_max:
+        for c in cargos_li or []:
+            sl = normalizar_cargo_slug(c)
+            if not sl or sl in map_sal:
+                continue
+            # Cargo operacional/fundamental -> piso do edital
+            if RE_CARGO_FUNDAMENTAL.search(c) and not RE_CARGO_SUPERIOR_TOPO.search(c):
+                map_sal[sl] = s_min
+            # Cargo de nível superior de ponta -> teto do edital
+            elif RE_CARGO_SUPERIOR_TOPO.search(c) and not RE_CARGO_FUNDAMENTAL.search(c):
+                map_sal[sl] = s_max
+
+    return map_sal
+
+
+def enriquecer_detalhes_existentes(det: Dict[str, Any]) -> Dict[str, Any]:
+    """Enriquece registro de detalhes do cache existente com novos campos estruturados."""
+    if not det:
+        return det
+    s_min = det.get("salario_min") or det.get("salario_min_texto")
+    s_max = det.get("salario_max") or det.get("salario_max_texto")
+    cargos_li = det.get("cargos_li") or []
+    texto_fake = (det.get("isencao") or "") + " " + (det.get("beneficios") or "")
+
+    if "cargos_salarios" not in det or not det.get("cargos_salarios"):
+        det["cargos_salarios"] = extrair_salarios_por_cargo(cargos_li, texto_fake, s_min, s_max)
+    if "taxa_inscricao" not in det:
+        taxa_info = parse_taxa_inscricao(det.get("isencao") or "")
+        det["taxa_inscricao"] = taxa_info["taxa_texto"]
+        det["taxa_min"] = taxa_info["taxa_min"]
+        det["taxa_max"] = taxa_info["taxa_max"]
+    if "beneficios_total" not in det:
+        det["beneficios_total"] = calcular_auxilios_efetivos(det.get("beneficios") or "")
+    if "etapas_prova" not in det:
+        det["etapas_prova"] = parse_etapas_prova(det.get("isencao", "") + " " + det.get("beneficios", ""))
+    return det
+
+
 def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
     soup = BeautifulSoup(page_html, "html.parser")
 
@@ -711,6 +887,14 @@ def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
         texto = texto[: m.start()]
     texto = texto.strip()
 
+    s_min, s_max, faixa_str = extrair_faixa_e_limites(texto, "")
+    isencao_txt = parse_isencao(texto)
+    taxa_info = parse_taxa_inscricao(isencao_txt or texto)
+    ben_str = parse_beneficios(texto)
+    ben_total = calcular_auxilios_efetivos(ben_str)
+    etapas_str = parse_etapas_prova(texto)
+    cargos_sal_map = extrair_salarios_por_cargo(cargos_li, texto, s_min, s_max)
+
     return {
         "texto": texto,
         "cargos_li": cargos_li[:120],
@@ -719,12 +903,18 @@ def extrair_pagina_noticia(page_html: str) -> Dict[str, Any]:
         "nome_banca": nome_banca,
         "data_prova": parse_data_prova(texto),
         "regime": parse_regime(texto),
-        "beneficios": parse_beneficios(texto),
+        "beneficios": ben_str,
+        "beneficios_total": ben_total,
         "jornada": parse_jornada(texto),
-        "isencao": parse_isencao(texto),
-        "faixa_salarial": parse_faixa_salarial(texto, ""),
-        "salario_min_texto": extrair_faixa_e_limites(texto, "")[0],
-        "salario_max_texto": extrair_faixa_e_limites(texto, "")[1],
+        "isencao": isencao_txt,
+        "taxa_inscricao": taxa_info["taxa_texto"],
+        "taxa_min": taxa_info["taxa_min"],
+        "taxa_max": taxa_info["taxa_max"],
+        "etapas_prova": etapas_str,
+        "cargos_salarios": cargos_sal_map,
+        "faixa_salarial": faixa_str,
+        "salario_min_texto": s_min,
+        "salario_max_texto": s_max,
     }
 
 
@@ -1157,6 +1347,13 @@ def montar_concurso_sp(c: dict, info: dict, enriquecidos: Dict[str, dict], agora
         or parse_faixa_salarial(det.get("texto", ""), c.get("vagas_salario", ""))
     )
 
+    taxa_info = parse_taxa_inscricao(c.get("isencao", ""))
+    c["taxa_inscricao"] = det.get("taxa_inscricao") or taxa_info["taxa_texto"]
+    c["taxa_min"] = det.get("taxa_min") if det.get("taxa_min") is not None else taxa_info["taxa_min"]
+    c["taxa_max"] = det.get("taxa_max") if det.get("taxa_max") is not None else taxa_info["taxa_max"]
+    c["beneficios_total"] = det.get("beneficios_total") or calcular_auxilios_efetivos(c["beneficios_gerais"])
+    c["etapas_prova"] = det.get("etapas_prova") or parse_etapas_prova(det.get("texto", "") or c.get("isencao", ""))
+
     # Status do prazo de inscrição (encerrando nos próximos dias vs encerrada)
     st_insc = calcular_status_inscricao(c.get("inscricao_ate", ""), agora.date())
     c["inscricao_status"] = st_insc
@@ -1173,6 +1370,32 @@ def montar_concurso_sp(c: dict, info: dict, enriquecidos: Dict[str, dict], agora
     if not cargos_todos and c.get("cargos_resumo") and "Vários" not in c["cargos_resumo"]:
         cargos_todos = [x.strip() for x in c["cargos_resumo"].split(",") if x.strip()]
     c["cargos_lista"] = cargos_todos
+
+    cargos_sal_map = dict(det.get("cargos_salarios") or {})
+    cargos_sal_map.update(dict(enriq.get("cargos_salarios") or {}))
+    if enriq.get("fisio"):
+        fc = enriq["fisio"].get("cargo") or "Fisioterapeuta"
+        fsal = enriq["fisio"].get("salario_bruto") or enriq["fisio"].get("salario")
+        if fsal:
+            sl = normalizar_cargo_slug(fc)
+            if sl:
+                cargos_sal_map[sl] = fsal
+    for m_item in (enriq.get("medio") or []) + (enriq.get("medio_outros") or []):
+        mc = m_item.get("nome") or ""
+        msal = m_item.get("salario_bruto") or m_item.get("salario")
+        if msal and mc:
+            for part in re.split(r"[/|;,]", mc):
+                sl = normalizar_cargo_slug(part)
+                if sl:
+                    cargos_sal_map[sl] = msal
+    for cg_ia in ia.get("cargos") or []:
+        nm_ia = cg_ia.get("nome")
+        sal_ia = cg_ia.get("salario")
+        if nm_ia and sal_ia:
+            sl = normalizar_cargo_slug(nm_ia)
+            if sl and sl not in cargos_sal_map:
+                cargos_sal_map[sl] = sal_ia
+    c["cargos_salarios"] = cargos_sal_map
 
     c["first_seen_ts"] = info.get("first_seen_ts", "2026-10-20T07:00:00-03:00")
     c["is_baseline"] = bool(info.get("is_baseline", False))
@@ -1381,6 +1604,8 @@ def montar_concurso_sp(c: dict, info: dict, enriquecidos: Dict[str, dict], agora
 # --------------------------------------------------------------------------- #
 def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, dict], hoje_dt: date) -> List[dict]:
     cache_br: Dict[str, dict] = load_json(CACHE_BRASIL_FILE, {})
+    for _u, _v in cache_br.items():
+        enriquecer_detalhes_existentes(_v)
     vistos_url: Dict[str, dict] = {}
 
     for regiao, r_url in REGIONAL_URLS.items():
@@ -1418,8 +1643,14 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                     "data_prova": det["data_prova"],
                     "regime": det["regime"],
                     "beneficios": det["beneficios"],
+                    "beneficios_total": det.get("beneficios_total"),
                     "jornada": det["jornada"],
                     "isencao": det["isencao"],
+                    "taxa_inscricao": det.get("taxa_inscricao"),
+                    "taxa_min": det.get("taxa_min"),
+                    "taxa_max": det.get("taxa_max"),
+                    "etapas_prova": det.get("etapas_prova"),
+                    "cargos_salarios": det.get("cargos_salarios"),
                     "nome_banca": det["nome_banca"],
                     "link_banca": det["link_banca"],
                     "arquivos_edital": det["arquivos_edital"],
@@ -1561,24 +1792,23 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
         if sal_min_val and sal_max_val and sal_min_val == sal_max_val and sal_max_val > 4000 and tem_cargos_operacionais:
             sal_min_val = None
 
-        cargos_sal_map = dict(enriq.get("cargos_salarios") or {})
+        cargos_sal_map = dict(br_det.get("cargos_salarios") or sp_det.get("cargos_salarios") or {})
+        cargos_sal_map.update(dict(enriq.get("cargos_salarios") or {}))
         if enriq.get("fisio"):
             fc = enriq["fisio"].get("cargo") or "Fisioterapeuta"
             fsal = enriq["fisio"].get("salario_bruto") or enriq["fisio"].get("salario")
             if fsal:
-                import unicodedata
-                fc_slug = re.sub(r"[^\w\s]", " ", unicodedata.normalize("NFKD", fc).encode("ASCII", "ignore").decode("utf-8")).lower().strip()
+                fc_slug = normalizar_cargo_slug(fc)
                 if fc_slug:
                     cargos_sal_map[fc_slug] = fsal
         for m_item in (enriq.get("medio") or []) + (enriq.get("medio_outros") or []):
             mc = m_item.get("nome") or ""
             msal = m_item.get("salario_bruto") or m_item.get("salario")
             if msal and mc:
-                import unicodedata
                 for part in re.split(r"[/|;,]", mc):
                     c_clean = re.sub(r"\s*\([^)]*\)", "", part).strip()
                     if c_clean:
-                        mc_slug = re.sub(r"[^\w\s]", " ", unicodedata.normalize("NFKD", c_clean).encode("ASCII", "ignore").decode("utf-8")).lower().strip()
+                        mc_slug = normalizar_cargo_slug(c_clean)
                         if mc_slug:
                             cargos_sal_map[mc_slug] = msal
 
@@ -1594,10 +1824,36 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                 sal_det_val += f" | {benef_val}"
             sal_total_val = sal_max_val
         elif sal_max_val:
-            sal_faixa_str = f"At? {brl(sal_max_val)}"
-            sal_exib_val = f"At? {brl(sal_max_val)}"
+            sal_faixa_str = f"Até {brl(sal_max_val)}"
+            sal_exib_val = f"Até {brl(sal_max_val)}"
         else:
             sal_faixa_str = "Consultar edital"
+
+        isencao_raw = (
+            enriq.get("isencao")
+            or sp_ia.get("isencao")
+            or sp_det.get("isencao")
+            or br_det.get("isencao")
+            or "Consultar edital para taxa e requisitos de isenção."
+        )
+        taxa_parsed = parse_taxa_inscricao(isencao_raw)
+        taxa_str_val = (
+            sp_det.get("taxa_inscricao")
+            or br_det.get("taxa_inscricao")
+            or taxa_parsed["taxa_texto"]
+        )
+        taxa_min_val = sp_det.get("taxa_min") if sp_det.get("taxa_min") is not None else (br_det.get("taxa_min") if br_det.get("taxa_min") is not None else taxa_parsed["taxa_min"])
+        taxa_max_val = sp_det.get("taxa_max") if sp_det.get("taxa_max") is not None else (br_det.get("taxa_max") if br_det.get("taxa_max") is not None else taxa_parsed["taxa_max"])
+        ben_tot_val = (
+            sp_det.get("beneficios_total")
+            or br_det.get("beneficios_total")
+            or calcular_auxilios_efetivos(benef_val)
+        )
+        etapas_val = (
+            sp_det.get("etapas_prova")
+            or br_det.get("etapas_prova")
+            or parse_etapas_prova(isencao_raw + " " + benef_val)
+        )
 
         form_info = _inferir_formacoes(cargos_lista, it.get("cargos_resumo", ""), it.get("titulo", ""))
 
@@ -1621,6 +1877,11 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                 "salario_exib": sal_exib_val,
                 "salario_det": sal_det_val,
                 "cargos_salarios": cargos_sal_map,
+                "taxa_inscricao": taxa_str_val,
+                "taxa_min": taxa_min_val,
+                "taxa_max": taxa_max_val,
+                "beneficios_total": ben_tot_val,
+                "etapas_prova": etapas_val,
                 "faixa": _faixa_slug(sal_max_val, sal_total_val),
                 "cargos_resumo": it["cargos_resumo"],
                 "niveis": it["niveis"],
@@ -1641,13 +1902,7 @@ def coletar_concursos_brasil(cache_sp: Dict[str, dict], enriquecidos: Dict[str, 
                 "regime_cat": _regime_cat(regime_val),
                 "beneficios": benef_val,
                 "carreira": _plano_carreira(it["orgao"], regime_val, benef_val, it.get("niveis", "")),
-                "isencao": (
-                    enriq.get("isencao")
-                    or sp_ia.get("isencao")
-                    or sp_det.get("isencao")
-                    or br_det.get("isencao")
-                    or "Consultar edital para taxa e requisitos de isenção."
-                ),
+                "isencao": isencao_raw,
                 "jornada": jornada_val,
                 "horas_num": _horas_num(jornada_val),
                 "cargos": cargos_lista[:80],
@@ -1711,6 +1966,8 @@ def main() -> int:
         if "first_seen_ts" not in item:
             item["first_seen_ts"] = "2026-10-20T07:00:00-03:00"
             item["is_baseline"] = True
+        if item.get("detalhes"):
+            enriquecer_detalhes_existentes(item["detalhes"])
 
     log(f"Baixando listagem principal (Sudeste): {LISTING_URL}")
     todos = parse_listing(fetch(LISTING_URL), regiao_padrao="Sudeste")

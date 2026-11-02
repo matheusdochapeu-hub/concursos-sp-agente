@@ -378,6 +378,12 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
       data-banca-txt="{e(banca_nome)}"
       data-inscricao-txt="{e(c.get('inscricao_ate') or 'Consultar edital')}"
       data-isencao-txt="{e(isencao_txt)}"
+      data-taxa-inscricao="{e(c.get('taxa_inscricao') or 'Consultar edital')}"
+      data-taxa-min="{c.get('taxa_min') if c.get('taxa_min') is not None else ''}"
+      data-taxa-max="{c.get('taxa_max') if c.get('taxa_max') is not None else ''}"
+      data-beneficios-total="{c.get('beneficios_total') or 0}"
+      data-etapas-prova="{e(c.get('etapas_prova') or 'Prova Objetiva')}"
+      data-salario-exato-confirmado="{1 if sal_bruto else 0}"
       data-requisitos-txt="{e(requisitos)}"
       data-faixa="{faixa_attr}"
       data-escolaridade="{esc_tipo}"
@@ -407,7 +413,9 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
       </header>
 
       <div class="cargo-banner">
-        <div class="cargo-nome">{icone_cargo} <strong>{e(cargo_titulo)}</strong></div>
+        <div class="cargo-nome">{icone_cargo} <strong>{e(cargo_titulo)}</strong>
+          {f'<span class="badge-venc-confirmado" style="margin-left:8px;background:#dcfce7;color:#166534;font-size:0.75rem;padding:2px 8px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:4px;">✅ Vencimento Confirmado</span>' if sal_bruto else ''}
+        </div>
         <span class="badge-vagas">{e(vagas_txt)}</span>
       </div>
 
@@ -425,6 +433,7 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
         <div class="info-box">
           <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
           <strong class="val-sm">{e(beneficios)}</strong>
+          {f'<small class="sub" style="color:var(--br-green-dark);font-weight:700;">+ R$ {c.get("beneficios_total"):.2f}/mês em auxílios</small>' if c.get('beneficios_total') and c.get('beneficios_total') > 0 else ''}
         </div>
         <div class="info-box">
           <span class="lbl">🏛️ Regime de Contratação</span>
@@ -437,7 +446,7 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
         <div class="info-box destaque-prova">
           <span class="lbl">📅 Data da Prova</span>
           <strong class="val-sm">{e(c.get('data_prova') or 'Consultar edital')}</strong>
-          <small class="sub">Banca: {e(banca_nome)}</small>
+          <small class="sub">Banca: {e(banca_nome)} · Etapas: {e(c.get('etapas_prova') or 'Prova Objetiva')}</small>
         </div>
         <div class="{classe_prazo}">
           <span class="lbl">⏰ Inscrições até</span>
@@ -447,7 +456,7 @@ def render_card_sp(c: dict, modo: str, card_idx: int) -> str:
       </div>
 
       <div class="isencao-box">
-        <div class="isencao-title">🎟️ Taxa de Inscrição &amp; Isenção</div>
+        <div class="isencao-title">🎟️ Taxa de Inscrição: <strong>{e(c.get('taxa_inscricao') or 'Consultar edital')}</strong> &amp; Isenção</div>
         <p class="isencao-text">{e(isencao_txt)}</p>
       </div>
 
@@ -3577,25 +3586,37 @@ def render_html(
 
   function resolverSalarioParaCargo(item, termo, cargosCasados, escolaridadeFiltro) {{
     const auxilioNum = item.beneficios ? calcularAuxiliosEfetivos(item.beneficios) : 0;
-const mapSal = item.cargos_salarios || {{}};
+    const auxTotItem = (item.beneficios_total && item.beneficios_total > 0) ? item.beneficios_total : auxilioNum;
+    const mapSal = item.cargos_salarios || {{}};
     const normTermo = termo ? normStr(termo) : '';
 
     function buscarNoMapa(nome) {{
       if (!nome) return null;
-      const n = normStr(nome.split('(')[0]);
+      const n = normStr(nome.split('(')[0].split('-')[0]);
       if (mapSal[n]) return mapSal[n];
       for (const k in mapSal) {{
-        if (n.includes(k) || k.includes(n)) return mapSal[k];
+        if (n === k || n.includes(k) || k.includes(n)) return mapSal[k];
+      }}
+      const tokens = n.split(' ').filter(x => x.length >= 4);
+      if (tokens.length >= 2) {{
+        for (const k in mapSal) {{
+          const ktoks = k.split(' ');
+          if (tokens.every(t => ktoks.includes(t))) return mapSal[k];
+        }}
       }}
       return null;
     }}
 
     let salEncontrado = null;
     let nomeCargoAchado = '';
+    let ehDoMapa = false;
 
     if (normTermo) {{
       salEncontrado = buscarNoMapa(normTermo);
-      if (salEncontrado) nomeCargoAchado = termo;
+      if (salEncontrado) {{
+        nomeCargoAchado = termo;
+        ehDoMapa = true;
+      }}
     }}
 
     if (!salEncontrado && cargosCasados && cargosCasados.length > 0) {{
@@ -3604,57 +3625,54 @@ const mapSal = item.cargos_salarios || {{}};
         if (s) {{
           salEncontrado = s;
           nomeCargoAchado = cg.split('(')[0].trim();
+          ehDoMapa = true;
           break;
         }}
       }}
     }}
-
-
 
     const textoAlvo = normTermo || (cargosCasados && cargosCasados[0] ? normStr(cargosCasados[0]) : '');
 
     let nivelRotulo = '';
     if (!salEncontrado && textoAlvo) {{
       if (REGEX_FUND.test(textoAlvo)) {{
-        // Regra de Ouro para Nível Fundamental:
-        // O teto municipal para cargos operacionais nunca deve ultrapassar R$ 4.500,00!
         if (item.salario_min && item.salario_min <= 4500) {{
           salEncontrado = item.salario_min;
-          nivelRotulo = 'Nível Fundamental';
+          nivelRotulo = 'Nível Fundamental (piso)';
         }} else {{
-          // Safeguard absoluto: edital sem piso identificado ou com valor inconsistente
           return {{
             salario_num: 0,
-            salario_total: (auxilioNum > 0 ? auxilioNum : 0),
+            salario_total: (auxTotItem > 0 ? auxTotItem : 0),
             salario_exib: 'Piso Municipal / A consultar',
-            salario_det: `Nível Fundamental · Edital com teto de até ${{fmtBrl(item.salario_max)}} (consulte o Anexo I do edital para o vencimento deste cargo)${{auxilioNum > 0 ? ' | + ' + fmtBrl(auxilioNum) + ' em benefícios' : ''}}`,
+            salario_det: `Nível Fundamental · Edital com teto de até ${{fmtBrl(item.salario_max)}} (consulte o Anexo I do edital)${{auxTotItem > 0 ? ' | + ' + fmtBrl(auxTotItem) + ' em benefícios' : ''}}`,
+            salario_exato_confirmado: false,
             especifico: true
           }};
         }}
       }} else if (REGEX_MED.test(textoAlvo)) {{
-        // Regra de Ouro para Nível Médio / Técnico:
         if (item.salario_medio && item.salario_medio <= 7000) {{
           salEncontrado = item.salario_medio;
           nivelRotulo = 'Nível Médio/Técnico';
         }} else if (item.salario_min && item.salario_min <= 6000) {{
           salEncontrado = item.salario_min;
-          nivelRotulo = 'Nível Médio/Técnico';
+          nivelRotulo = 'Nível Médio/Técnico (inicial)';
         }} else if (item.salario_max && item.salario_max <= 6000) {{
           salEncontrado = item.salario_max;
           nivelRotulo = 'Nível Médio/Técnico';
         }} else {{
           return {{
             salario_num: 0,
-            salario_total: (auxilioNum > 0 ? auxilioNum : 0),
+            salario_total: (auxTotItem > 0 ? auxTotItem : 0),
             salario_exib: 'Piso da Categoria / A consultar',
-            salario_det: `Nível Médio/Técnico · Edital com teto de até ${{fmtBrl(item.salario_max)}} (consulte o Anexo I do edital)${{auxilioNum > 0 ? ' | + ' + fmtBrl(auxilioNum) + ' em benefícios' : ''}}`,
+            salario_det: `Nível Médio/Técnico · Edital com teto de até ${{fmtBrl(item.salario_max)}} (consulte o Anexo I do edital)${{auxTotItem > 0 ? ' | + ' + fmtBrl(auxTotItem) + ' em benefícios' : ''}}`,
+            salario_exato_confirmado: false,
             especifico: true
           }};
         }}
       }} else if (REGEX_SUP.test(textoAlvo)) {{
         if (item.salario_max) {{
           salEncontrado = item.salario_max;
-          nivelRotulo = 'Nível Superior';
+          nivelRotulo = 'Nível Superior (teto)';
         }}
       }}
     }}
@@ -3671,13 +3689,17 @@ const mapSal = item.cargos_salarios || {{}};
 
     if (salEncontrado) {{
       const salBruto = salEncontrado;
-      const salTot = auxilioNum > 0 ? (salBruto + auxilioNum) : salBruto;
+      const salTot = auxTotItem > 0 ? (salBruto + auxTotItem) : salBruto;
       const exib = fmtBrl(salBruto);
-      let det = `Bruto: ${{exib}}`;
-      if (auxilioNum > 0) {{
-        det += ` + ${{fmtBrl(auxilioNum)}} (auxílios) = ${{fmtBrl(salTot)}} com auxílios`;
+      let det = ehDoMapa ? `Vencimento Base Confirmado: ${{exib}}` : `Bruto Estimado: ${{exib}}`;
+      if (auxTotItem > 0) {{
+        det += ` + ${{fmtBrl(auxTotItem)}} (auxílios) = ${{fmtBrl(salTot)}}/mês`;
       }} else if (item.beneficios && item.beneficios !== 'Consultar edital') {{
-        det += ` + benefícios legais (${{item.beneficios}})`;
+        det += ` + vantagens legais (${{item.beneficios}})`;
+      }}
+      if (item.horas_num && item.horas_num > 0) {{
+        const vHora = salTot / (item.horas_num * 4.33);
+        det += ` · ${{fmtBrl(vHora)}}/hora (${{item.horas_num}}h)`;
       }}
       if (nivelRotulo) det += ` · ${{nivelRotulo}}`;
       else if (item.salario_faixa && item.salario_min && item.salario_max && item.salario_min < item.salario_max) {{
@@ -3688,6 +3710,8 @@ const mapSal = item.cargos_salarios || {{}};
         salario_total: salTot,
         salario_exib: exib,
         salario_det: det,
+        salario_exato_confirmado: ehDoMapa,
+        cargo_especifico_nome: nomeCargoAchado,
         especifico: true
       }};
     }}
@@ -4781,6 +4805,12 @@ const mapSal = item.cargos_salarios || {{}};
           data-salario-exib="${{escHtml(resolved.salario_exib)}}"
           data-salario-det="${{escHtml(resolved.salario_det)}}"
           data-beneficios="${{escHtml(item.beneficios)}}"
+          data-beneficios-total="${{item.beneficios_total || auxTotItem || 0}}"
+          data-taxa-inscricao="${{escHtml(item.taxa_inscricao || 'Consultar edital')}}"
+          data-taxa-min="${{item.taxa_min != null ? item.taxa_min : ''}}"
+          data-taxa-max="${{item.taxa_max != null ? item.taxa_max : ''}}"
+          data-etapas-prova="${{escHtml(item.etapas_prova || 'Prova Objetiva')}}"
+          data-salario-exato-confirmado="${{resolved.salario_exato_confirmado ? 'true' : 'false'}}"
           data-regime-txt="${{escHtml(item.regime)}}"
           data-carreira="${{escHtml(item.carreira)}}"
           data-jornada-txt="${{escHtml(item.jornada)}}"
@@ -4804,7 +4834,9 @@ const mapSal = item.cargos_salarios || {{}};
           </header>
 
           <div class="cargo-banner">
-            <div class="cargo-nome">🎯 <strong>${{escHtml(cargoDestaque)}}</strong></div>
+            <div class="cargo-nome">🎯 <strong>${{escHtml(cargoDestaque)}}</strong>
+              ${{resolved.salario_exato_confirmado ? `<span class="badge-venc-confirmado" style="margin-left:8px;background:#dcfce7;color:#166534;font-size:0.75rem;padding:2px 8px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;gap:4px;">✅ Salário Confirmado no Edital</span>` : ''}}
+            </div>
             <span class="badge-vagas">${{escHtml(item.vagas_txt || 'Ver edital')}}</span>
           </div>
 
@@ -4818,6 +4850,7 @@ const mapSal = item.cargos_salarios || {{}};
             <div class="info-box">
               <span class="lbl">🎁 Benefícios (VA / VR / VT)</span>
               <strong class="val-sm">${{escHtml(item.beneficios)}}</strong>
+              ${{(item.beneficios_total || auxTotItem) > 0 ? `<small class="sub" style="color:var(--br-green-dark);font-weight:700;">+ ${{fmtBrl(item.beneficios_total || auxTotItem)}}/mês em auxílios</small>` : ''}}
             </div>
             <div class="info-box">
               <span class="lbl">🏛️ Regime &amp; Jornada</span>
@@ -4826,7 +4859,7 @@ const mapSal = item.cargos_salarios || {{}};
             <div class="info-box destaque-prova">
               <span class="lbl">📅 Data da Prova</span>
               <strong class="val-sm">${{escHtml(item.data_prova)}}</strong>
-              <small class="sub">Banca: ${{escHtml(item.banca)}}</small>
+              <small class="sub">Banca: ${{escHtml(item.banca)}} · Etapas: ${{escHtml(item.etapas_prova || 'Prova Objetiva')}}</small>
             </div>
             <div class="info-box destaque-prazo${{item.encerrando ? ' prazo-urgente' : ''}}" style="grid-column: 1 / -1;">
               <span class="lbl">⏰ Inscrições até</span>
@@ -4835,7 +4868,7 @@ const mapSal = item.cargos_salarios || {{}};
           </div>
 
           <div class="isencao-box">
-            <div class="isencao-title">🎟️ Taxa de Inscrição &amp; Isenção</div>
+            <div class="isencao-title">🎟️ Taxa de Inscrição: <strong>${{escHtml(item.taxa_inscricao || 'Consultar edital')}}</strong> &amp; Isenção</div>
             <p class="isencao-text">${{escHtml(item.isencao)}}</p>
           </div>
 
@@ -4967,7 +5000,13 @@ const mapSal = item.cargos_salarios || {{}};
       salarioTotal: Number(d.salarioTotal || d.salario || 0),
       salarioExib: d.salarioExib || '',
       salarioDet: d.salarioDet || '',
+      salarioExatoConfirmado: d.salarioExatoConfirmado === 'true' || d.salarioExatoConfirmado === '1',
       beneficios: d.beneficios || 'Consultar edital',
+      beneficiosTotal: Number(d.beneficiosTotal || 0),
+      taxaInscricao: d.taxaInscricao || 'Consultar edital',
+      taxaMin: (d.taxaMin !== '' && d.taxaMin != null) ? Number(d.taxaMin) : null,
+      taxaMax: (d.taxaMax !== '' && d.taxaMax != null) ? Number(d.taxaMax) : null,
+      etapasProva: d.etapasProva || 'Prova Objetiva',
       regimeTxt: d.regimeTxt || 'Consultar edital',
       carreira: d.carreira || 'Consultar edital',
       jornadaTxt: d.jornadaTxt || 'Consultar edital',
@@ -5072,26 +5111,52 @@ const mapSal = item.cargos_salarios || {{}};
       ? (diffTotal === 0 ? 'Remuneração total idêntica' : `${{fmtBrl(diffTotal)}}/mês a mais com auxílios em ${{maiorTotal}}`)
       : 'Conferir auxílios no edital';
 
-    const valorHoraA = (A.salarioBruto > 0 && A.horasNum > 0) ? (A.salarioBruto / (A.horasNum * 4.5)) : null;
-    const valorHoraB = (B.salarioBruto > 0 && B.horasNum > 0) ? (B.salarioBruto / (B.horasNum * 4.5)) : null;
+    // Projeção Anual Bruta Estimada (13º salário + 1/3 de férias constitucional)
+    const anualA = (A.salarioTotal > 0 ? (A.salarioTotal * 13 + (A.salarioBruto / 3)) : (A.salarioBruto > 0 ? (A.salarioBruto * 13 + (A.salarioBruto / 3)) : 0));
+    const anualB = (B.salarioTotal > 0 ? (B.salarioTotal * 13 + (B.salarioBruto / 3)) : (B.salarioBruto > 0 ? (B.salarioBruto * 13 + (B.salarioBruto / 3)) : 0));
+    const diffAnual = Math.abs(anualA - anualB);
+    const maiorAnual = anualA > anualB ? A.orgao : (anualB > anualA ? B.orgao : 'Empate');
+    const txtDiffAnual = (anualA > 0 && anualB > 0)
+      ? (diffAnual === 0 ? 'Projeção anual equivalente' : `${{fmtBrl(diffAnual)}}/ano a mais em ${{maiorAnual}}`)
+      : 'Conferir no edital';
+
+    // Rentabilidade aproximada por hora trabalhada (base 4.33 semanas/mês)
+    const baseSalA = A.salarioTotal > 0 ? A.salarioTotal : A.salarioBruto;
+    const baseSalB = B.salarioTotal > 0 ? B.salarioTotal : B.salarioBruto;
+    const valorHoraA = (baseSalA > 0 && A.horasNum > 0) ? (baseSalA / (A.horasNum * 4.33)) : null;
+    const valorHoraB = (baseSalB > 0 && B.horasNum > 0) ? (baseSalB / (B.horasNum * 4.33)) : null;
 
     const distEntreCidades = calcularDistanciaCidadesKm(A.lat, A.lon, B.lat, B.lon);
     const txtDistCidades = distEntreCidades === 0
       ? `Mesma cidade (${{A.cidade}}/${{A.uf}})`
       : (distEntreCidades != null ? `~${{distEntreCidades}} km entre ${{A.cidade}}/${{A.uf}} e ${{B.cidade}}/${{B.uf}}` : 'Cidades em estados distintos');
 
-    const benValA = extrairValoresBeneficios(A.beneficios);
-    const benValB = extrairValoresBeneficios(B.beneficios);
+    const benValA = A.beneficiosTotal > 0 ? A.beneficiosTotal : extrairValoresBeneficios(A.beneficios);
+    const benValB = B.beneficiosTotal > 0 ? B.beneficiosTotal : extrairValoresBeneficios(B.beneficios);
     const diffBen = Math.abs(benValA - benValB);
     const txtDiffBen = (benValA > 0 || benValB > 0)
-      ? `A: ${{benValA > 0 ? fmtBrl(benValA) : 'Ver edital'}} vs B: ${{benValB > 0 ? fmtBrl(benValB) : 'Ver edital'}} (Diferença quantificada: ${{fmtBrl(diffBen)}}/mês)`
-      : 'Ambos conforme estatuto/edital (sem valor fixo detalhado no resumo)';
+      ? `1️⃣ ${{benValA > 0 ? fmtBrl(benValA) + '/mês' : 'Ver edital'}} vs 2️⃣ ${{benValB > 0 ? fmtBrl(benValB) + '/mês' : 'Ver edital'}} (Diferença: ${{fmtBrl(diffBen)}}/mês)`
+      : 'Conforme estatuto/edital (sem valor discriminado)';
 
     const conflitoProva = (A.dataProvaTxt !== 'Consultar edital' && A.dataProvaTxt === B.dataProvaTxt)
       ? `⚠️ ATENÇÃO: Ambos têm prova marcada na MESMA DATA (${{A.dataProvaTxt}})!`
       : `✅ Datas diferentes (${{A.dataProvaTxt}} vs ${{B.dataProvaTxt}}) — você pode prestar os dois!`;
 
-    // ===== Veredito direto: quem paga mais, tem mais vantagens e mais estabilidade =====
+    // Taxa de inscrição
+    const taxaNumA = A.taxaMin != null ? A.taxaMin : (A.taxaMax != null ? A.taxaMax : null);
+    const taxaNumB = B.taxaMin != null ? B.taxaMin : (B.taxaMax != null ? B.taxaMax : null);
+
+    // Links para busca de provas anteriores
+    function gerarUrlProvas(org, banca, crg) {{
+      const b = (banca && banca !== 'Consultar edital' && banca !== 'Não informada') ? banca : '';
+      const c = (crg && crg !== 'Consultar edital') ? crg : '';
+      const q = [b, c, org].filter(Boolean).join(' ');
+      return 'https://www.pciconcursos.com.br/pesquisa/?q=' + encodeURIComponent('provas ' + q);
+    }}
+    const urlProvasA = gerarUrlProvas(A.orgao, A.bancaTxt, A.cargo);
+    const urlProvasB = gerarUrlProvas(B.orgao, B.bancaTxt, B.cargo);
+
+    // ===== Veredito direto: 9 critérios automatizados =====
     const kmRefA = kmDaReferencia(A.lat, A.lon);
     const kmRefB = kmDaReferencia(B.lat, B.lon);
     const rotA = `${{A.orgao}} (${{A.cidade}}/${{A.uf}})`;
@@ -5114,56 +5179,77 @@ const mapSal = item.cargos_salarios || {{}};
       linhasVer.push({{ icone, titulo, venc, texto }});
     }}
 
-    // 1) Salário bruto
+    // 1) Salário bruto base
     if (A.salarioBruto > 0 && B.salarioBruto > 0 && A.salarioBruto !== B.salarioBruto) {{
       const v = A.salarioBruto > B.salarioBruto ? 'A' : 'B';
-      registrarVer('💰', 'Quem paga mais (salário bruto)', v, `${{nomeDe(v)}} paga ${{fmtBrl(diffBruto)}} a mais por mês (${{pctBruto}}).`);
+      const cConf = (v === 'A' ? A.salarioExatoConfirmado : B.salarioExatoConfirmado) ? ' (vencimento base confirmado no edital)' : '';
+      registrarVer('💰', 'Quem paga mais (salário base)', v, `${{nomeDe(v)}} paga ${{fmtBrl(diffBruto)}} a mais por mês (${{pctBruto}})${{cConf}}.`);
     }} else {{
-      registrarVer('💰', 'Quem paga mais (salário bruto)', null, (A.salarioBruto > 0 && A.salarioBruto === B.salarioBruto) ? 'Salários brutos iguais.' : 'Sem dados suficientes: confira o salário no edital.');
+      registrarVer('💰', 'Quem paga mais (salário base)', null, (A.salarioBruto > 0 && A.salarioBruto === B.salarioBruto) ? 'Salários brutos iguais.' : 'Sem dados suficientes: confira o edital.');
     }}
-    // 2) Total com auxílios
+
+    // 2) Remuneração total mensal com auxílios
     if (A.salarioTotal > 0 && B.salarioTotal > 0 && A.salarioTotal !== B.salarioTotal) {{
       const v = A.salarioTotal > B.salarioTotal ? 'A' : 'B';
-      registrarVer('➕', 'Ganho mensal total (com auxílios)', v, `${{nomeDe(v)}} rende ${{fmtBrl(diffTotal)}} a mais por mês somando os auxílios.`);
+      registrarVer('➕', 'Ganho mensal total (com auxílios)', v, `${{nomeDe(v)}} rende ${{fmtBrl(diffTotal)}} a mais por mês somando os auxílios discriminados.`);
     }} else {{
-      registrarVer('➕', 'Ganho mensal total (com auxílios)', null, 'Totais iguais ou sem dados suficientes.');
+      registrarVer('➕', 'Ganho mensal total (com auxílios)', null, 'Totais iguais ou auxílios não quantificados.');
     }}
-    // 3) Valor por hora
-    if (valorHoraA && valorHoraB && Math.abs(valorHoraA - valorHoraB) > 0.01) {{
+
+    // 3) Rentabilidade por hora trabalhada (R$/h)
+    if (valorHoraA && valorHoraB && Math.abs(valorHoraA - valorHoraB) > 0.05) {{
       const v = valorHoraA > valorHoraB ? 'A' : 'B';
-      registrarVer('⏱️', 'Melhor valor por hora trabalhada', v, `${{nomeDe(v)}}: ${{fmtBrl(Math.max(valorHoraA, valorHoraB))}}/h contra ${{fmtBrl(Math.min(valorHoraA, valorHoraB))}}/h.`);
+      registrarVer('⏱️', 'Melhor valor por hora trabalhada (R$/h)', v, `${{nomeDe(v)}}: ${{fmtBrl(Math.max(valorHoraA, valorHoraB))}}/h contra ${{fmtBrl(Math.min(valorHoraA, valorHoraB))}}/h.`);
     }} else {{
-      registrarVer('⏱️', 'Melhor valor por hora trabalhada', null, 'Sem diferença relevante ou sem dados de jornada.');
+      registrarVer('⏱️', 'Melhor valor por hora trabalhada (R$/h)', null, 'Sem diferença relevante ou sem dados de jornada.');
     }}
-    // 4) Jornada
+
+    // 4) Menor jornada semanal
     if (A.horasNum !== B.horasNum && A.horasNum > 0 && B.horasNum > 0) {{
       const v = A.horasNum < B.horasNum ? 'A' : 'B';
-      registrarVer('🕒', 'Menor jornada semanal', v, `${{nomeDe(v)}} trabalha ${{Math.abs(A.horasNum - B.horasNum)}}h a menos por semana (${{Math.min(A.horasNum, B.horasNum)}}h contra ${{Math.max(A.horasNum, B.horasNum)}}h).`);
+      registrarVer('🕒', 'Menor jornada semanal', v, `${{nomeDe(v)}} exige ${{Math.abs(A.horasNum - B.horasNum)}}h a menos por semana (${{Math.min(A.horasNum, B.horasNum)}}h contra ${{Math.max(A.horasNum, B.horasNum)}}h).`);
     }} else {{
       registrarVer('🕒', 'Menor jornada semanal', null, 'Jornadas iguais ou não informadas.');
     }}
-    // 5) Benefícios
+
+    // 5) Benefícios quantificados (VA/VR/VT)
     if (benValA !== benValB) {{
       const v = benValA > benValB ? 'A' : 'B';
-      registrarVer('🎁', 'Mais benefícios (VA/VR/VT)', v, `${{nomeDe(v)}} oferece cerca de ${{fmtBrl(diffBen)}} a mais por mês em benefícios com valor informado.`);
+      registrarVer('🎁', 'Mais benefícios e auxílios', v, `${{nomeDe(v)}} oferece cerca de ${{fmtBrl(diffBen)}} a mais por mês em benefícios discriminados.`);
     }} else {{
-      registrarVer('🎁', 'Mais benefícios (VA/VR/VT)', null, (benValA > 0) ? 'Benefícios equivalentes.' : 'Nenhum dos dois informa valores de benefícios; veja o edital.');
+      registrarVer('🎁', 'Mais benefícios e auxílios', null, (benValA > 0) ? 'Benefícios quantificados equivalentes.' : 'Nenhum dos dois discrimina valores exatos; ver estatuto no edital.');
     }}
-    // 6) Estabilidade
+
+    // 6) Estabilidade jurídica
     const estA = pontosEstabilidade(A), estB = pontosEstabilidade(B);
     if (estA !== estB) {{
       const v = estA > estB ? 'A' : 'B';
       const w = v === 'A' ? A : B, l = v === 'A' ? B : A;
-      registrarVer('🛡️', 'Maior estabilidade', v, `${{nomeDe(v)}} é mais estável: ${{w.regimeTxt}} contra ${{l.regimeTxt}}. Regime estatutário garante estabilidade após o estágio probatório; CLT pode ser desligado.`);
+      registrarVer('🛡️', 'Maior estabilidade de cargo', v, `${{nomeDe(v)}} oferece maior segurança jurídica: ${{w.regimeTxt}} contra ${{l.regimeTxt}}.`);
     }} else {{
-      registrarVer('🛡️', 'Maior estabilidade', null, `Estabilidade equivalente (${{A.regimeTxt}} · ${{B.regimeTxt}}).`);
+      registrarVer('🛡️', 'Maior estabilidade de cargo', null, `Estabilidade equivalente (${{A.regimeTxt}} · ${{B.regimeTxt}}).`);
     }}
-    // 7) Vagas
+
+    // 7) Vagas imediatas
     if (A.vagasNum !== B.vagasNum) {{
       const v = A.vagasNum > B.vagasNum ? 'A' : 'B';
-      registrarVer('👥', 'Mais vagas imediatas', v, `${{nomeDe(v)}} tem mais vagas imediatas (${{Math.max(A.vagasNum, B.vagasNum)}} contra ${{Math.min(A.vagasNum, B.vagasNum)}}) — maior chance de aprovação.`);
+      registrarVer('👥', 'Mais vagas imediatas', v, `${{nomeDe(v)}} tem mais vagas imediatas (${{Math.max(A.vagasNum, B.vagasNum)}} contra ${{Math.min(A.vagasNum, B.vagasNum)}}).`);
     }} else {{
-      registrarVer('👥', 'Mais vagas imediatas', null, 'Mesmo número de vagas imediatas ou somente cadastro de reserva.');
+      registrarVer('👥', 'Mais vagas imediatas', null, 'Mesmo número de vagas imediatas ou ambos somente cadastro reserva.');
+    }}
+
+    // 8) Menor taxa de inscrição
+    if (taxaNumA != null && taxaNumB != null && taxaNumA !== taxaNumB) {{
+      const v = taxaNumA < taxaNumB ? 'A' : 'B';
+      registrarVer('🎟️', 'Menor taxa de inscrição', v, `${{nomeDe(v)}} tem custo de inscrição mais acessível (${{fmtBrl(Math.min(taxaNumA, taxaNumB))}} vs ${{fmtBrl(Math.max(taxaNumA, taxaNumB))}}).`);
+    }} else {{
+      registrarVer('🎟️', 'Menor taxa de inscrição', null, (taxaNumA != null && taxaNumA === taxaNumB) ? 'Taxas de inscrição com valores idênticos.' : 'Valores de inscrição a consultar no edital.');
+    }}
+
+    // 9) Proximidade da residência/referência
+    if (kmRefA != null && kmRefB != null && kmRefA !== kmRefB) {{
+      const v = kmRefA < kmRefB ? 'A' : 'B';
+      registrarVer('📍', 'Mais perto da sua referência', v, `${{nomeDe(v)}} fica a ${{Math.round(Math.min(kmRefA, kmRefB))}} km da sua cidade de referência (contra ${{Math.round(Math.max(kmRefA, kmRefB))}} km).`);
     }}
 
     const vencFin = (A.salarioTotal > 0 && B.salarioTotal > 0 && A.salarioTotal !== B.salarioTotal)
@@ -5205,8 +5291,8 @@ const mapSal = item.cargos_salarios || {{}};
           <strong>${{escHtml(txtDiffTotal)}}</strong>
         </div>
         <div class="cmp-kpi">
-          <span>🧭 Distância Entre as Cidades</span>
-          <strong>${{escHtml(txtDistCidades)}}</strong>
+          <span>📅 Projeção Anual Bruta</span>
+          <strong>${{escHtml(txtDiffAnual)}}</strong>
         </div>
         <div class="cmp-kpi">
           <span>📅 Compatibilidade de Provas</span>
@@ -5225,55 +5311,74 @@ const mapSal = item.cargos_salarios || {{}};
         <tbody>
           <tr>
             <td class="cmp-crit">🎯 Cargo Comparado</td>
-            <td><b>${{escHtml(A.cargo)}}</b></td>
-            <td><b>${{escHtml(B.cargo)}}</b></td>
+            <td>
+              <b>${{escHtml(A.cargo)}}</b>
+              ${{A.salarioExatoConfirmado ? `<br><span class="badge-venc-confirmado" style="background:#dcfce7;color:#166534;font-size:0.75rem;padding:2px 8px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;margin-top:4px;">✅ Vencimento Base Confirmado no Edital</span>` : ''}}
+            </td>
+            <td>
+              <b>${{escHtml(B.cargo)}}</b>
+              ${{B.salarioExatoConfirmado ? `<br><span class="badge-venc-confirmado" style="background:#dcfce7;color:#166534;font-size:0.75rem;padding:2px 8px;border-radius:999px;font-weight:700;display:inline-flex;align-items:center;margin-top:4px;">✅ Vencimento Base Confirmado no Edital</span>` : ''}}
+            </td>
           </tr>
           <tr>
-            <td class="cmp-crit">💰 Salário Bruto (Separado)</td>
+            <td class="cmp-crit">💰 Salário Base / Inicial</td>
             <td class="${{A.salarioBruto > B.salarioBruto ? 'cmp-win' : ''}}"><b>${{escHtml(A.salarioExib)}}</b></td>
             <td class="${{B.salarioBruto > A.salarioBruto ? 'cmp-win' : ''}}"><b>${{escHtml(B.salarioExib)}}</b></td>
           </tr>
           <tr>
-            <td class="cmp-crit">➕ Soma com Auxílios</td>
-            <td class="${{A.salarioTotal > B.salarioTotal ? 'cmp-win' : ''}}">${{escHtml(A.salarioDet)}}</td>
-            <td class="${{B.salarioTotal > A.salarioTotal ? 'cmp-win' : ''}}">${{escHtml(B.salarioDet)}}</td>
+            <td class="cmp-crit">🎁 Vantagens &amp; Benefícios</td>
+            <td>
+              ${{escHtml(A.beneficios)}}
+              ${{benValA > 0 ? `<br><b style="color:var(--br-green-dark);">+ ${{fmtBrl(benValA)}}/mês quantificado</b>` : ''}}
+              <br><small style="color:var(--muted);">${{escHtml(txtDiffBen)}}</small>
+            </td>
+            <td>
+              ${{escHtml(B.beneficios)}}
+              ${{benValB > 0 ? `<br><b style="color:var(--br-green-dark);">+ ${{fmtBrl(benValB)}}/mês quantificado</b>` : ''}}
+            </td>
           </tr>
           <tr>
-            <td class="cmp-crit">⏱️ Jornada Semanal &amp; Valor/Hora</td>
+            <td class="cmp-crit">➕ Remuneração Mensal Total</td>
+            <td class="${{A.salarioTotal > B.salarioTotal ? 'cmp-win' : ''}}">
+              <b>${{A.salarioTotal > 0 ? fmtBrl(A.salarioTotal) + '/mês' : escHtml(A.salarioExib)}}</b><br>
+              <small>${{escHtml(A.salarioDet)}}</small>
+            </td>
+            <td class="${{B.salarioTotal > A.salarioTotal ? 'cmp-win' : ''}}">
+              <b>${{B.salarioTotal > 0 ? fmtBrl(B.salarioTotal) + '/mês' : escHtml(B.salarioExib)}}</b><br>
+              <small>${{escHtml(B.salarioDet)}}</small>
+            </td>
+          </tr>
+          <tr>
+            <td class="cmp-crit">📅 Projeção Anual Bruta Estimada</td>
+            <td class="${{anualA > anualB ? 'cmp-win' : ''}}">
+              <b>${{anualA > 0 ? fmtBrl(anualA) + '/ano' : 'Consultar edital'}}</b><br>
+              <small>Inclui 13º salário + 1/3 constitucional de férias</small>
+            </td>
+            <td class="${{anualB > anualA ? 'cmp-win' : ''}}">
+              <b>${{anualB > 0 ? fmtBrl(anualB) + '/ano' : 'Consultar edital'}}</b><br>
+              <small>Inclui 13º salário + 1/3 constitucional de férias</small>
+            </td>
+          </tr>
+          <tr>
+            <td class="cmp-crit">⏱️ Carga Horária &amp; Rentabilidade (R$/h)</td>
             <td class="${{A.horasNum < B.horasNum ? 'cmp-win' : ''}}">
               <b>${{escHtml(A.jornadaTxt)}}</b><br>
-              <small>${{valorHoraA ? `Valor aproximado: ${{fmtBrl(valorHoraA)}}/hora trabalhada` : ''}}</small>
+              <small>${{valorHoraA ? `Rentabilidade: ~${{fmtBrl(valorHoraA)}} por hora trabalhada` : ''}}</small>
             </td>
             <td class="${{B.horasNum < A.horasNum ? 'cmp-win' : ''}}">
               <b>${{escHtml(B.jornadaTxt)}}</b><br>
-              <small>${{valorHoraB ? `Valor aproximado: ${{fmtBrl(valorHoraB)}}/hora trabalhada` : ''}}</small>
+              <small>${{valorHoraB ? `Rentabilidade: ~${{fmtBrl(valorHoraB)}} por hora trabalhada` : ''}}</small>
             </td>
           </tr>
           <tr>
-            <td class="cmp-crit">🎁 Benefícios (VA, VR, VT)</td>
-            <td>${{escHtml(A.beneficios)}}<br><small style="color:var(--muted);">${{escHtml(txtDiffBen)}}</small></td>
-            <td>${{escHtml(B.beneficios)}}</td>
-          </tr>
-          <tr>
-            <td class="cmp-crit">🏛️ Regime de Contratação</td>
+            <td class="cmp-crit">🏛️ Regime Jurídico &amp; Estabilidade</td>
             <td><b>${{escHtml(A.regimeTxt)}}</b></td>
             <td><b>${{escHtml(B.regimeTxt)}}</b></td>
           </tr>
           <tr>
-            <td class="cmp-crit">📈 Plano de Crescimento na Carreira</td>
+            <td class="cmp-crit">📈 Plano de Carreira &amp; Evolução</td>
             <td>${{escHtml(A.carreira)}}</td>
             <td>${{escHtml(B.carreira)}}</td>
-          </tr>
-          <tr>
-            <td class="cmp-crit">📍 Localização &amp; Distância</td>
-            <td class="${{(kmRefA != null && kmRefB != null && kmRefA < kmRefB) ? 'cmp-win' : ''}}">
-              <b>${{escHtml(A.cidade)}}/${{escHtml(A.uf)}}</b><br>
-              ${{kmRefA != null ? escHtml(textoDistanciaRef(kmRefA)) : '<small>Escolha sua cidade de referência nos filtros para ver a distância.</small>'}}
-            </td>
-            <td class="${{(kmRefA != null && kmRefB != null && kmRefB < kmRefA) ? 'cmp-win' : ''}}">
-              <b>${{escHtml(B.cidade)}}/${{escHtml(B.uf)}}</b><br>
-              ${{kmRefB != null ? escHtml(textoDistanciaRef(kmRefB)) : '<small>—</small>'}}
-            </td>
           </tr>
           <tr>
             <td class="cmp-crit">👥 Vagas no Edital</td>
@@ -5281,19 +5386,66 @@ const mapSal = item.cargos_salarios || {{}};
             <td class="${{B.vagasNum > A.vagasNum ? 'cmp-win' : ''}}"><b>${{escHtml(B.vagasTxt)}}</b></td>
           </tr>
           <tr>
-            <td class="cmp-crit">📅 Data da Prova &amp; Banca</td>
-            <td><b>${{escHtml(A.dataProvaTxt)}}</b> · Banca: ${{escHtml(A.bancaTxt)}}</td>
-            <td><b>${{escHtml(B.dataProvaTxt)}}</b> · Banca: ${{escHtml(B.bancaTxt)}}</td>
-          </tr>
-          <tr>
-            <td class="cmp-crit">⏰ Inscrições &amp; Isenção</td>
-            <td><b>Até ${{escHtml(A.inscricaoTxt)}}</b><br><small>${{escHtml(A.isencaoTxt)}}</small></td>
-            <td><b>Até ${{escHtml(B.inscricaoTxt)}}</b><br><small>${{escHtml(B.isencaoTxt)}}</small></td>
-          </tr>
-          <tr>
-            <td class="cmp-crit">🎓 Requisitos Técnicos</td>
+            <td class="cmp-crit">🎓 Requisitos Técnicos &amp; Escolaridade</td>
             <td>${{escHtml(A.requisitosTxt)}}</td>
             <td>${{escHtml(B.requisitosTxt)}}</td>
+          </tr>
+          <tr>
+            <td class="cmp-crit">📝 Etapas de Avaliação</td>
+            <td><b>${{escHtml(A.etapasProva || 'Prova Objetiva')}}</b></td>
+            <td><b>${{escHtml(B.etapasProva || 'Prova Objetiva')}}</b></td>
+          </tr>
+          <tr>
+            <td class="cmp-crit">📅 Data da Prova &amp; Conflito</td>
+            <td><b>${{escHtml(A.dataProvaTxt)}}</b></td>
+            <td><b>${{escHtml(B.dataProvaTxt)}}</b></td>
+          </tr>
+          <tr>
+            <td class="cmp-crit">🎟️ Taxa de Inscrição &amp; Isenção</td>
+            <td class="${{(taxaNumA != null && taxaNumB != null && taxaNumA < taxaNumB) ? 'cmp-win' : ''}}">
+              <b>${{escHtml(A.taxaInscricao)}}</b><br>
+              <small>${{escHtml(A.isencaoTxt)}}</small>
+            </td>
+            <td class="${{(taxaNumA != null && taxaNumB != null && taxaNumB < taxaNumA) ? 'cmp-win' : ''}}">
+              <b>${{escHtml(B.taxaInscricao)}}</b><br>
+              <small>${{escHtml(B.isencaoTxt)}}</small>
+            </td>
+          </tr>
+          <tr>
+            <td class="cmp-crit">🏛️ Banca &amp; Provas Anteriores</td>
+            <td>
+              <b>${{escHtml(A.bancaTxt)}}</b><br>
+              <a href="${{safeUrl(urlProvasA)}}" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem;color:var(--br-blue);font-weight:700;">🔍 Buscar Provas Anteriores</a>
+            </td>
+            <td>
+              <b>${{escHtml(B.bancaTxt)}}</b><br>
+              <a href="${{safeUrl(urlProvasB)}}" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem;color:var(--br-blue);font-weight:700;">🔍 Buscar Provas Anteriores</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="cmp-crit">📍 Localização &amp; Distância</td>
+            <td class="${{(kmRefA != null && kmRefB != null && kmRefA < kmRefB) ? 'cmp-win' : ''}}">
+              <b>${{escHtml(A.cidade)}}/${{escHtml(A.uf)}}</b><br>
+              ${{kmRefA != null ? escHtml(textoDistanciaRef(kmRefA)) : '<small>Defina sua cidade nos filtros para calcular a distância.</small>'}}
+            </td>
+            <td class="${{(kmRefA != null && kmRefB != null && kmRefB < kmRefA) ? 'cmp-win' : ''}}">
+              <b>${{escHtml(B.cidade)}}/${{escHtml(B.uf)}}</b><br>
+              ${{kmRefB != null ? escHtml(textoDistanciaRef(kmRefB)) : '<small>—</small>'}}
+            </td>
+          </tr>
+          <tr>
+            <td class="cmp-crit">⏰ Prazo de Inscrições</td>
+            <td><b>Até ${{escHtml(A.inscricaoTxt)}}</b></td>
+            <td><b>Até ${{escHtml(B.inscricaoTxt)}}</b></td>
+          </tr>
+          <tr>
+            <td class="cmp-crit">📄 Edital Oficial</td>
+            <td>
+              <a class="btn-link primario" href="${{safeUrl(A.linkEdital || A.url)}}#links" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:6px 12px;font-size:0.8rem;">📄 Acessar Edital Oficial</a>
+            </td>
+            <td>
+              <a class="btn-link primario" href="${{safeUrl(B.linkEdital || B.url)}}#links" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:6px 12px;font-size:0.8rem;">📄 Acessar Edital Oficial</a>
+            </td>
           </tr>
         </tbody>
       </table>`;
@@ -5301,11 +5453,28 @@ const mapSal = item.cargos_salarios || {{}};
     ultimoResumoComparacao =
       `⚖️ *COMPARATIVO DE CONCURSOS*\n\n` +
       `1️⃣ *${{A.orgao}} (${{A.cidade}}/${{A.uf}})*\n` +
-      `• Cargo: ${{A.cargo}}\n• Salário Bruto: ${{A.salarioExib}} (${{A.salarioDet}})\n• Benefícios: ${{A.beneficios}}\n• Regime/Jornada: ${{A.regimeTxt}} (${{A.jornadaTxt}})\n• Prova: ${{A.dataProvaTxt}} | Inscrições até: ${{A.inscricaoTxt}}\n\n` +
+      `• Cargo: ${{A.cargo}}${{A.salarioExatoConfirmado ? ' (Vencimento Base Confirmado no Edital)' : ''}}\n` +
+      `• Salário: ${{A.salarioExib}} (${{A.salarioDet}})\n` +
+      `• Vantagens/Auxílios: ${{A.beneficios}}${{benValA > 0 ? ` (+ ${{fmtBrl(benValA)}}/mês)` : ''}}\n` +
+      `• Total Estimado: ${{A.salarioTotal > 0 ? fmtBrl(A.salarioTotal) + '/mês' : A.salarioExib}} | Projeção Anual: ${{anualA > 0 ? fmtBrl(anualA) + '/ano' : 'Ver edital'}}\n` +
+      `• Jornada & Rentabilidade: ${{A.jornadaTxt}}${{valorHoraA ? ` (~${{fmtBrl(valorHoraA)}}/h)` : ''}}\n` +
+      `• Etapas: ${{A.etapasProva || 'Prova Objetiva'}}\n` +
+      `• Taxa de Inscrição: ${{A.taxaInscricao}}\n` +
+      `• Prova: ${{A.dataProvaTxt}} | Inscrições até: ${{A.inscricaoTxt}}\n` +
+      `• Edital: ${{A.linkEdital || A.url}}\n\n` +
       `2️⃣ *${{B.orgao}} (${{B.cidade}}/${{B.uf}})*\n` +
-      `• Cargo: ${{B.cargo}}\n• Salário Bruto: ${{B.salarioExib}} (${{B.salarioDet}})\n• Benefícios: ${{B.beneficios}}\n• Regime/Jornada: ${{B.regimeTxt}} (${{B.jornadaTxt}})\n• Prova: ${{B.dataProvaTxt}} | Inscrições até: ${{B.inscricaoTxt}}\n\n` +
+      `• Cargo: ${{B.cargo}}${{B.salarioExatoConfirmado ? ' (Vencimento Base Confirmado no Edital)' : ''}}\n` +
+      `• Salário: ${{B.salarioExib}} (${{B.salarioDet}})\n` +
+      `• Vantagens/Auxílios: ${{B.beneficios}}${{benValB > 0 ? ` (+ ${{fmtBrl(benValB)}}/mês)` : ''}}\n` +
+      `• Total Estimado: ${{B.salarioTotal > 0 ? fmtBrl(B.salarioTotal) + '/mês' : B.salarioExib}} | Projeção Anual: ${{anualB > 0 ? fmtBrl(anualB) + '/ano' : 'Ver edital'}}\n` +
+      `• Jornada & Rentabilidade: ${{B.jornadaTxt}}${{valorHoraB ? ` (~${{fmtBrl(valorHoraB)}}/h)` : ''}}\n` +
+      `• Etapas: ${{B.etapasProva || 'Prova Objetiva'}}\n` +
+      `• Taxa de Inscrição: ${{B.taxaInscricao}}\n` +
+      `• Prova: ${{B.dataProvaTxt}} | Inscrições até: ${{B.inscricaoTxt}}\n` +
+      `• Edital: ${{B.linkEdital || B.url}}\n\n` +
       `🏆 *RESULTADO DIRETO*\n${{txtVeredito}}\n\n` +
       `📊 *Diferença Salarial Bruta:* ${{txtDiffBruto}}\n` +
+      `🎁 *Diferença Total c/ Auxílios:* ${{txtDiffTotal}}\n` +
       `🧭 *Distância entre as cidades:* ${{txtDistCidades}}\n` +
       `🔗 Veja no app: ${{APP_PUBLIC_URL}}`;
 

@@ -9,6 +9,10 @@ from agente import (
     extrair_vagas_info,
     calcular_auxilios_efetivos,
     detectar_cidade,
+    normalizar_cargo_slug,
+    parse_taxa_inscricao,
+    parse_etapas_prova,
+    extrair_salarios_por_cargo,
 )
 
 
@@ -154,6 +158,53 @@ class TestAgente(unittest.TestCase):
         # Verifica que o primeiro cargo ordenado (Advogado) e outros estão presentes no datalist
         self.assertIn('<option value="Advogado"></option>', html)
         self.assertIn('<option value="Fisioterapeuta"></option>', html)
+
+    def test_normalizar_cargo_slug(self):
+        self.assertEqual(normalizar_cargo_slug("Médico Clínico Geral (40h)"), "medico clinico geral")
+        self.assertEqual(normalizar_cargo_slug("Técnico - Enfermagem: PSF"), "tecnico enfermagem psf")
+        self.assertEqual(normalizar_cargo_slug(""), "")
+
+    def test_parse_taxa_inscricao(self):
+        # Faixa com valores mínimo e máximo
+        t1 = parse_taxa_inscricao("Taxa de inscrição de R$ 50,00 a R$ 120,00.")
+        self.assertEqual(t1["taxa_min"], 50.0)
+        self.assertEqual(t1["taxa_max"], 120.0)
+        self.assertIn("50,00", t1["taxa_texto"])
+
+        # Valor único
+        t2 = parse_taxa_inscricao("Valor da taxa: R$ 85,00 com isenção prevista em lei.")
+        self.assertEqual(t2["taxa_min"], 85.0)
+        self.assertEqual(t2["taxa_max"], 85.0)
+
+        # Gratuita
+        t3 = parse_taxa_inscricao("Inscrições gratuitas sem taxa de participação.")
+        self.assertEqual(t3["taxa_min"], 0.0)
+        self.assertIn("Gratuita", t3["taxa_texto"])
+
+        # Não informado
+        t4 = parse_taxa_inscricao("")
+        self.assertIsNone(t4["taxa_min"])
+        self.assertEqual(t4["taxa_texto"], "Consultar edital")
+
+    def test_parse_etapas_prova(self):
+        txt1 = "O certame contará com prova objetiva, prova discursiva e avaliação de títulos."
+        etapas1 = parse_etapas_prova(txt1)
+        self.assertIn("Prova Objetiva", etapas1)
+        self.assertIn("Prova Discursiva/Redação", etapas1)
+        self.assertIn("Avaliação de Títulos", etapas1)
+
+        txt2 = "Haverá teste de aptidão física (TAF) e prova prática para operadores."
+        etapas2 = parse_etapas_prova(txt2)
+        self.assertIn("Prova Prática", etapas2)
+        self.assertIn("Teste de Aptidão Física (TAF)", etapas2)
+
+    def test_extrair_salarios_por_cargo(self):
+        cargos = ["Enfermeiro (40h)", "Técnico de Enfermagem", "Médico Plantonista"]
+        txt = "O certame oferece para Enfermeiro: R$ 4.500,00; Técnico de Enfermagem - R$ 2.800,00; Médico Plantonista: R$ 12.000,00."
+        res = extrair_salarios_por_cargo(cargos, txt, 2800.0, 12000.0)
+        self.assertEqual(res.get("enfermeiro"), 4500.0)
+        self.assertEqual(res.get("tecnico de enfermagem"), 2800.0)
+        self.assertEqual(res.get("medico plantonista"), 12000.0)
 
 
 if __name__ == "__main__":
