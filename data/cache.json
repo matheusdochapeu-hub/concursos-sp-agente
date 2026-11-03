@@ -1245,49 +1245,6 @@
   "salario_max": 11065.27,
   "faixa_salarial": "R$ 2.920,42 a R$ 11.065,27"
  },
- "https://www.pciconcursos.com.br/noticias/camara-de-cesario-lange-sp-abre-concurso-publico-com-salarios-de-ate-3774": {
-  "first_seen": "2026-10-21",
-  "hash": "8ba9398a818b",
-  "fisio_linhas": [],
-  "salario_max_texto": 3774.0,
-  "tem_medio": true,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Apoio Administrativo (1 vaga)",
-    "Apoio Operacional (1 vaga)",
-    "Auxiliar de Serviços Gerais (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL 01"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/cesario-lange-sp",
-   "link_banca": "https://www.camaracesariolange.sp.gov.br/",
-   "nome_banca": "Câmara Municipal de Cesário Lange",
-   "data_prova": "22/11/2026",
-   "regime": "CLT (Celetista)",
-   "beneficios": "Auxílio-alimentação de R$ 998,92 por mês",
-   "jornada": "40 horas semanais",
-   "isencao": "As taxas de inscrição são de R$ 40,00 para Apoio Administrativo e de R$ 30,00 para os demais cargos. Poderão solicitar isenção de taxa entre os dias 9 e 11 de outubro de 2026 os candidatos doadores de sangue, doadores de órgãos e desempregados, conforme os critérios do edital.",
-   "salario_min": 2672.23,
-   "salario_max": 3774.0,
-   "faixa_salarial": "R$ 2.672,23 a R$ 3.774,00",
-   "cargos_salarios": {
-    "apoio operacional": 2672.23,
-    "auxiliar de servicos gerais": 2672.23
-   },
-   "taxa_inscricao": "R$ 30,00 a R$ 40,00",
-   "taxa_min": 30.0,
-   "taxa_max": 40.0,
-   "beneficios_total": 998.92,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2672.23,
-  "salario_max": 3774.0,
-  "faixa_salarial": "R$ 2.672,23 a R$ 3.774,00"
- },
  "https://www.pciconcursos.com.br/noticias/camara-de-torre-de-pedra-sp-abre-concurso-publico-para-procurador-legislativo": {
   "first_seen": "2026-10-21",
   "hash": "607d263e5e78",
@@ -4692,38 +4649,6 @@
   "salario_max": 8189.58,
   "faixa_salarial": "R$ 1.684,22 a R$ 8.189,58"
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-maraba-paulista-sp-abre-concurso-publico-para-psicologo": {
-  "first_seen": "2026-10-21",
-  "hash": "4c44a5bc6f48",
-  "fisio_linhas": [],
-  "salario_max_texto": 3857.19,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Psicólogo (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 001/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/maraba-paulista-sp",
-   "link_banca": "https://www.marabapaulista.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Marabá Paulista",
-   "data_prova": "15/11/2026",
-   "regime": "Consultar edital",
-   "beneficios": "Auxílio-alimentação mensal de R$ 300,00. · Auxílio-alimentação de R$ 300,00 por mês",
-   "jornada": "40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 80,00, com pagamento até 3 de novembro de 2026. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 80,00",
-   "taxa_min": 80.0,
-   "taxa_max": 80.0,
-   "beneficios_total": 300.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-mirassol-sp-abre-processo-seletivo-para-agente-de-suporte-ao-atendimento-da-crianca": {
   "first_seen": "2026-10-21",
   "hash": "55aa582364b4",
@@ -6379,40 +6304,6 @@
   "salario_max": 8377.33,
   "faixa_salarial": "R$ 1.899,72 a R$ 8.377,33"
  },
- "https://www.pciconcursos.com.br/noticias/prudenco-sp-abre-concurso-publico-para-coletor-e-motorista": {
-  "first_seen": "2026-10-21",
-  "hash": "5b900914b34d",
-  "fisio_linhas": [],
-  "salario_max_texto": 2636.72,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Coletor (1 vaga)",
-    "Motorista (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 001/2026",
-    "RETIFICAÇÃO 1"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/presidente-prudente-sp",
-   "link_banca": "https://www.prudenco.com.br/",
-   "nome_banca": "Companhia Prudentina de Desenvolvimento (PRUDENCO)",
-   "data_prova": "15/11/2026",
-   "regime": "CLT (Celetista)",
-   "beneficios": "Consultar edital",
-   "jornada": "44 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 40,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 40,00",
-   "taxa_min": 40.0,
-   "taxa_max": 40.0,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
  "https://www.pciconcursos.com.br/noticias/prudenprev-sp-abre-concurso-publico-com-salarios-de-ate-11102": {
   "first_seen": "2026-10-21",
   "hash": "a97ba0edc583",
@@ -7450,38 +7341,6 @@
    "taxa_min": null,
    "taxa_max": null,
    "beneficios_total": 4000.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
- "https://www.pciconcursos.com.br/noticias/unifesp-abre-processo-seletivo-para-professor-substituto-na-area-de-fisiologia-engenharia-biomedica": {
-  "first_seen": "2026-10-21",
-  "hash": "3ce8f09e2147",
-  "fisio_linhas": [],
-  "salario_max_texto": 5037.78,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor(a) Assistente Substituto(a) - Fisiologia/Engenharia Biomédica (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 719"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
-   "link_banca": "https://www.unifesp.br/",
-   "nome_banca": "UNIFESP",
-   "data_prova": "Consultar edital",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Auxílio-alimentação · Auxílio-alimentação de R$ 1.192,00.",
-   "jornada": "20 horas semanais",
-   "isencao": "Haverá possibilidade de isenção, conforme regras do edital.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 1192.0,
    "etapas_prova": "Prova Objetiva"
   }
  },
@@ -11280,50 +11139,6 @@
   "salario_min": 2118.03,
   "salario_max": 4457.35,
   "faixa_salarial": "R$ 2.118,03 a R$ 4.457,35"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-jacarei-sp-abre-processo-seletivo-para-profissionais-da-educacao": {
-  "first_seen": "2026-10-27",
-  "first_seen_ts": "2026-10-27T10:25:50.286504-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "a62cf70a4a5f",
-  "fisio_linhas": [],
-  "salario_max_texto": 4619.95,
-  "tem_medio": true,
-  "detalhes": {
-   "cargos_li": [
-    "Agente de Desenvolvimento Infantil (ADI)",
-    "Agente de Apoio Escolar (AAE)",
-    "Professor de Arte",
-    "Professor de Educação Física",
-    "Professor de Educação Especial",
-    "Professor de Educação Infantil",
-    "Professor de Educação de Jovens e Adultos (EJA)",
-    "Professor de Ensino Fundamental"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO Nº 01/2026"
-   ],
-   "link_banca": "https://www.jacarei.sp.gov.br/",
-   "nome_banca": "Prefeitura de Jacareí",
-   "data_prova": "29/11/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital",
-   "jornada": "30 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "salario_min": 2431.6,
-   "salario_max": 4619.95,
-   "faixa_salarial": "R$ 2.431,60 a R$ 4.619,95",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2431.6,
-  "salario_max": 4619.95,
-  "faixa_salarial": "R$ 2.431,60 a R$ 4.619,95"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-mairipora-sp-abre-concurso-publico-para-professores": {
   "first_seen": "2026-10-27",
@@ -16205,6 +16020,360 @@
    "taxa_max": null,
    "beneficios_total": 650.87,
    "etapas_prova": "Prova Objetiva"
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-tambau-sp-abre-concurso-publico-com-salarios-de-ate-6423": {
+  "first_seen": "2026-11-03",
+  "first_seen_ts": "2026-11-03T14:41:05.874969-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "3c754973f46c",
+  "fisio_linhas": [],
+  "salario_max_texto": 6423.46,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Procurador Jurídico (1 vaga)",
+    "Auxiliar de Limpeza e Serviços Externos (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 01/2026"
+   ],
+   "link_banca": "https://www.camaratambau.sp.gov.br/",
+   "nome_banca": "Câmara Municipal de Tambaú",
+   "data_prova": "10/01/2027",
+   "regime": "Estatutário",
+   "beneficios": "Vale-alimentação de R$ 900,00, nas condições previstas em lei",
+   "beneficios_total": 900.0,
+   "jornada": "30 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {
+    "procurador juridico": 6423.46,
+    "auxiliar de limpeza e servicos externos": 2572.08,
+    "pr": 6423.46,
+    "au": 2572.08
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-vaga-para-auxiliar-administrativo-no-ame-de-santa-barbara-doeste": {
+  "first_seen": "2026-11-03",
+  "first_seen_ts": "2026-11-03T14:41:05.874969-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "27a9034a4e97",
+  "fisio_linhas": [],
+  "salario_max_texto": 1713.1,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar Administrativo I (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 129/2026"
+   ],
+   "link_banca": "https://www.funcamp.unicamp.br/",
+   "nome_banca": "Fundação de Desenvolvimento da Unicamp (FUNCAMP)",
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "Consultar edital",
+   "isencao": "Inscrição gratuita (seleção exclusiva PcD — sem cobrança de taxa informada no edital).",
+   "taxa_inscricao": "Gratuita (sem taxa de inscrição)",
+   "taxa_min": 0.0,
+   "taxa_max": 0.0,
+   "etapas_prova": "Prova Objetiva",
+   "cargos_salarios": {
+    "pessoas com": 1713.1
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-abre-tres-concursos-publicos-para-medicos": {
+  "first_seen": "2026-11-03",
+  "first_seen_ts": "2026-11-03T14:41:05.874969-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "a4433ba9dc28",
+  "fisio_linhas": [],
+  "salario_max_texto": 5979.93,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Médico I, área de Clínica Cirúrgica, com ênfase no diagnóstico e tratamento endoscópico (1 vaga)",
+    "Médico I, Fisiatra (1 vaga)",
+    "Médico I, Cirurgia de Cabeça e Pescoço, para atuação na Unidade de Emergência (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 41/2026",
+    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 42/2026",
+    "EDITAL DE ABERTURA DE INSCRIÇÕES Nº 43/2026"
+   ],
+   "link_banca": "https://www.hcribeirao.sp.gov.br/",
+   "nome_banca": null,
+   "data_prova": "10/12/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação e adicional de insalubridade · Auxílio-alimentação de R$ 360,00 mensais e terão direito a vale-transporte",
+   "beneficios_total": 360.0,
+   "jornada": "20 horas semanais",
+   "isencao": "Doadores de sangue podem solicitar isenção, e estudantes que recebam menos de dois salários mínimos ou estejam desempregados podem pedir redução de 50%.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Avaliação de Títulos",
+   "cargos_salarios": {
+    "medicos oportunidades": 5979.93
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/iprejun-de-jundiai-sp-abre-concurso-publico-com-salarios-de-ate-15123": {
+  "first_seen": "2026-11-03",
+  "first_seen_ts": "2026-11-03T14:41:05.874969-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "d6998deaf31a",
+  "fisio_linhas": [],
+  "salario_max_texto": 15123.99,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Assistente de Administração (1 vaga)",
+    "Analista de Planejamento, Gestão e Orçamento - Ciências Contábeis (1 vaga)",
+    "Analista de Planejamento, Gestão e Orçamento - Direito (1 vaga)",
+    "Analista de Planejamento, Gestão e Orçamento - Informática (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 015"
+   ],
+   "link_banca": "https://www.iprejun.sp.gov.br/",
+   "nome_banca": "Instituto de Previdência do Município de Jundiaí (IPREJUN)",
+   "data_prova": "21/02/2027",
+   "regime": "Estatutário",
+   "beneficios": "Auxílio-transporte de R$ 492,00 e auxílio-alimentação de R$ 1.300,00.",
+   "beneficios_total": 1792.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva",
+   "cargos_salarios": {
+    "analista de planejamento gestao e orcamento ciencias contabeis": 15123.99,
+    "analista de planejamento gestao e orcamento direito": 15123.99,
+    "analista de planejamento gestao e orcamento informatica": 15123.99
+   },
+   "faixa_salarial": "R$ 4.199,87 a R$ 15.123,99",
+   "salario_min_texto": 4199.87,
+   "salario_max_texto": 15123.99
+  },
+  "ia": {
+   "cidade": "Jundiaí",
+   "banca": "VUNESP",
+   "data_prova": "21/02/2027",
+   "regime_geral": "Estatutário",
+   "beneficios": "Auxílio-transporte de R$ 492,00 e auxílio-alimentação de R$ 1.300,00",
+   "isencao": "Taxa de R$ 80,00 para nível médio e de R$ 115,00 para nível superior. Ver edital para regras de isenção.",
+   "jornada_geral": "40h semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Assistente de Administração",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": 4199.87,
+     "carga_horaria": "40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino médio completo"
+    },
+    {
+     "nome": "Analista de Planejamento, Gestão e Orçamento - Ciências Contábeis",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 15123.99,
+     "carga_horaria": "40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino superior em Ciências Contábeis"
+    },
+    {
+     "nome": "Analista de Planejamento, Gestão e Orçamento - Direito",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 15123.99,
+     "carga_horaria": "40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino superior em Direito"
+    },
+    {
+     "nome": "Analista de Planejamento, Gestão e Orçamento - Informática",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 15123.99,
+     "carga_horaria": "40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino superior em Informática"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-cubatao-sp-abre-concurso-publico-para-procurador-juridico-administrativo-i": {
+  "first_seen": "2026-11-03",
+  "first_seen_ts": "2026-11-03T14:41:05.874969-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "5813e0cf0104",
+  "fisio_linhas": [],
+  "salario_max_texto": 5565.0,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Procurador Jurídico Administrativo I (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA - CONCURSO PUBLICO Nº 03/2026"
+   ],
+   "link_banca": "https://www.cubatao.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Cubatão",
+   "data_prova": "17/01/2027",
+   "regime": "Estatutário",
+   "beneficios": "Vale-alimentação, vale-refeição, vale-transporte e assistência médica, hospitalar e odontológica são opcionais",
+   "beneficios_total": 0.0,
+   "jornada": "Consultar edital",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {
+    "procurador juridico administrativo i oportunidade pa": 5565.0
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-pradopolis-sp-abre-selecao-para-professores-substitutos": {
+  "first_seen": "2026-11-03",
+  "first_seen_ts": "2026-11-03T14:41:05.874969-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "9c88788f68b6",
+  "fisio_linhas": [],
+  "salario_max_texto": 3888.34,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "PEB I, Educação Especial, Substituto(a) (CR)",
+    "PEB I, Educação Especial, Libras, Substituto(a) (CR)",
+    "PEB I, Educação Infantil e Ensino Fundamental, Substituto(a) (CR)",
+    "PEB II, Artes, Substituto(a) (CR)",
+    "PEB II, Ciências, Substituto(a) (CR)",
+    "PEB II, Educação Física, Substituto(a) (CR)",
+    "PEB II, Geografia, Substituto(a) (CR)",
+    "PEB II, História, Substituto(a) (CR)",
+    "PEB II, Inglês, Substituto(a) (CR)",
+    "PEB II, Língua Portuguesa, Substituto(a) (CR)",
+    "PEB II, Matemática, Substituto(a) (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO Nº 003/2026"
+   ],
+   "link_banca": "https://www.pradopolis.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Pradópolis",
+   "data_prova": "29/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "Consultar edital",
+   "isencao": "Doadores de medula óssea inscritos no REDOME e doadores regulares de sangue podem solicitar isenção das 10h de 3 de novembro de 2026 às 16h de 5 de novembro de 2026, conforme os procedimentos do edital.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {},
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-filosofia-e-ciencias-de-marilia-sp": {
+  "first_seen": "2026-11-03",
+  "first_seen_ts": "2026-11-03T14:41:05.874969-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "3347d6da07ab",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na disciplina de Produção e Percepção da Fala, junto ao Departamento de Fonoaudiologia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 229/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 286,00",
+   "taxa_min": 286.0,
+   "taxa_max": 286.0,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {},
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professores-substitutos-no-campus-de-sao-jose-dos-campos-sp": {
+  "first_seen": "2026-11-03",
+  "first_seen_ts": "2026-11-03T14:41:05.874969-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "186b9711a7f2",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Linguística, Letras e Artes (2 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 359/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "beneficios_total": 2000.02,
+   "jornada": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 209,00. Haverá redução de 50% do valor para os candidatos que atendam aos requisitos.",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "etapas_prova": "Prova Objetiva",
+   "cargos_salarios": {},
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
+   "salario_min_texto": 2106.04,
+   "salario_max_texto": 3511.9
   }
  }
 }
