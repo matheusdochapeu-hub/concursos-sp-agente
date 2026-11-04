@@ -1,3 +1,4 @@
+from pathlib import Path
 import unittest
 from datetime import date, timedelta
 from agente import (
@@ -206,6 +207,31 @@ class TestAgente(unittest.TestCase):
         self.assertEqual(res.get("tecnico de enfermagem"), 2800.0)
         self.assertEqual(res.get("medico plantonista"), 12000.0)
 
+
+
+    def test_novas_funcionalidades_render_site(self):
+        render_path = Path(__file__).resolve().parent.parent / "render_site.py"
+        self.assertTrue(render_path.exists())
+        code = render_path.read_text(encoding="utf-8")
+
+        # 1. Botão flutuante no canto inferior direito
+        self.assertIn("bottom: 22px !important;", code)
+        self.assertIn("right: 22px !important;", code)
+
+        # 2. Correção de auxTotItem no template de renderizarBuscaCargo
+        self.assertIn("const auxTotItem = (item.beneficios_total && item.beneficios_total > 0)", code)
+
+        # 3. Suporte a fixar cargo personalizado
+        self.assertIn('id="modalFixarCargo"', code)
+        self.assertIn('id="pinnedRoleBanner"', code)
+        self.assertIn('id="tabItemFisio"', code)
+        self.assertIn("obterCargoFixado", code)
+        self.assertIn("salvarCargoFixado", code)
+
+        # 4. Busca rápida e interseção dinâmica de filtros
+        self.assertIn("function itemCasaCargo(", code)
+        self.assertIn("function passaItemFast(", code)
+        self.assertIn("it._cargosJoined", code)
 
 if __name__ == "__main__":
     unittest.main()
