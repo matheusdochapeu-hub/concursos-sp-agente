@@ -1607,82 +1607,6 @@
    "etapas_prova": "Prova Objetiva"
   }
  },
- "https://www.pciconcursos.com.br/noticias/iamspe-sp-abre-selecao-para-residencia-medica-em-diversas-especialidades": {
-  "first_seen": "2026-10-21",
-  "hash": "d27c47350fbe",
-  "fisio_linhas": [],
-  "salario_max_texto": 550.0,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Anestesiologia (10 vagas)",
-    "Cirurgia Geral (16 vagas)",
-    "Clínica Médica (36 vagas)",
-    "Dermatologia (3 vagas)",
-    "Ginecologia e Obstetrícia (10 vagas)",
-    "Infectologia (4 vagas)",
-    "Medicina Esportiva (4 vagas)",
-    "Medicina Física e Reabilitação (2 vagas)",
-    "Medicina Intensiva (6 vagas)",
-    "Neurocirurgia (2 vagas)",
-    "Neurologia (12 vagas)",
-    "Oftalmologia (8 vagas)",
-    "Ortopedia e Traumatologia (6 vagas)",
-    "Otorrinolaringologia (6 vagas)",
-    "Patologia (2 vagas)",
-    "Pediatria (10 vagas)",
-    "Psiquiatria (12 vagas)",
-    "Radiologia e Diagnóstico por Imagem (10 vagas)",
-    "Radioterapia (1 vaga)",
-    "Alergia e Imunologia (2 vagas)",
-    "Cardiologia (4 vagas)",
-    "Endocrinologia e Metabologia (5 vagas)",
-    "Gastroenterologia (5 vagas)",
-    "Geriatria (10 vagas)",
-    "Hematologia e Hemoterapia (3 vagas)",
-    "Nefrologia (8 vagas)",
-    "Oncologia Clínica (4 vagas)",
-    "Pneumologia (5 vagas)",
-    "Reumatologia (4 vagas)",
-    "Cirurgia do Aparelho Digestivo (4 vagas)",
-    "Cirurgia Pediátrica (1 vaga)",
-    "Cirurgia Plástica (4 vagas)",
-    "Cirurgia Torácica (1 vaga)",
-    "Cirurgia Vascular (4 vagas)",
-    "Urologia (4 vagas)",
-    "Cirurgia de Cabeça e Pescoço (1 vaga)",
-    "Endoscopia (3 vagas)",
-    "Mastologia (2 vagas)",
-    "Cirurgia Geral Programa Avançado (3 vagas)",
-    "Angiorradiologia e Cirurgia Endovascular (4 vagas)",
-    "Infectologia Hospitalar (1 vaga)",
-    "Medicina Paliativa (4 vagas)",
-    "Alergia e Imunologia Pediátrica (4 vagas)",
-    "Ecocardiografia (2 vagas)",
-    "Hemodinâmica e Cardiologia Intervencionista (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA DE INSCRIÇÕES CEDEP Nº 02/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/residente-medico",
-   "link_banca": "https://www.avancasp.org.br/",
-   "nome_banca": "Instituto Avança São Paulo",
-   "data_prova": "28/11/2026",
-   "regime": "Residência (Bolsa)",
-   "beneficios": "Consultar edital",
-   "jornada": "60 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 550,00, com pagamento até 4 de novembro de 2026. Pedidos de isenção para doadores de sangue ou de redução de 50% para estudantes que atendam aos critérios do edital poderão ser apresentados de 20 a 23 de outubro de 2026.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
  "https://www.pciconcursos.com.br/noticias/ifsp-retifica-edital-de-concurso-publico-para-o-cargo-de-professor-do-ensino-basico-tecnico-e-tecnologico": {
   "first_seen": "2026-10-21",
   "hash": "1a8ad6d9be48",
@@ -1823,54 +1747,6 @@
    "taxa_inscricao": "Consultar edital",
    "taxa_min": null,
    "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
- "https://www.pciconcursos.com.br/noticias/ipsm-de-sao-jose-dos-campos-sp-abre-concurso-para-diversos-cargos-de-nivel-superior": {
-  "first_seen": "2026-11-01",
-  "first_seen_ts": "2026-11-01T13:43:22.246794-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "0ca34ac80fa5",
-  "fisio_linhas": [],
-  "salario_max_texto": 5185.46,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [
-    "Analista em Gestão Previdenciária (7 vagas + 1 vaga para PCD)",
-    "Analista Previdenciário - Direito (2 vagas + cadastro de reserva para PCD)",
-    "Analista Previdenciário - Administrador (4 vagas + 1 vaga para PCD)",
-    "Analista Previdenciário - TI (1 vaga + cadastro de reserva para PCD)",
-    "Analista Previdenciário - Psicólogo (1 vaga + cadastro de reserva para PCD)",
-    "Analista Previdenciário - Assistente Social (cadastro de reserva para ampla concorrência e para PCD)",
-    "Médico (cadastro de reserva para ampla concorrência e para PCD)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-   ],
-   "link_banca": "https://ipsmsjc.sp.gov.br/",
-   "nome_banca": "IPSM",
-   "data_prova": "13/12/2026",
-   "regime": "Estatutário",
-   "beneficios": "Vale-transporte, vale-alimentação e gratificação previdenciária, conforme previsto na legislação municipal",
-   "jornada": "12 a 40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 89,00. Candidatos inscritos no CadÚnico têm possibilidade de isenção, conforme regras do edital, com solicitações de 1º a 9 de outubro de 2026.",
-   "faixa_salarial": "R$ 3.889,11 a R$ 5.185,46",
-   "salario_min_texto": 3889.11,
-   "salario_max_texto": 5185.46,
-   "cargos_salarios": {
-    "analista em gestao previdenciaria": 5185.46,
-    "analista previdenciario direito": 5185.46,
-    "analista previdenciario administrador": 5185.46,
-    "analista previdenciario ti": 5185.46,
-    "analista previdenciario psicologo": 5185.46,
-    "analista previdenciario assistente social": 5185.46,
-    "medico": 5185.46
-   },
-   "taxa_inscricao": "R$ 89,00",
-   "taxa_min": 89.0,
-   "taxa_max": 89.0,
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva"
   }
@@ -2114,48 +1990,6 @@
    "beneficios_total": 900.0,
    "etapas_prova": "Prova Objetiva · Teste de Aptidão Física (TAF)"
   }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-cerquilho-sp-abre-selecao-com-vagas-imediatas-e-cadastro-de-reserva": {
-  "first_seen": "2026-10-21",
-  "hash": "750c2bc4cfec",
-  "fisio_linhas": [],
-  "salario_max_texto": 2613.11,
-  "tem_medio": true,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Cuidador em Serviço Residencial Terapêutico (12 vagas + CR)",
-    "Educador Social I (4 vagas + CR)",
-    "Monitor de Transporte Escolar (4 vagas + CR)",
-    "Oficineiro Terapêutico (2 vagas + CR)",
-    "Mediador Pedagógico (1 vaga + CR)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO 01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/cerquilho-sp",
-   "link_banca": "https://www.cerquilho.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Cerquilho",
-   "data_prova": "20/12/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital",
-   "jornada": "16 a 40 horas semanais",
-   "isencao": "A isenção deve ser solicitada até o dia 7 de outubro de 2026 por candidatos inscritos no CadÚnico com renda per capita igual ou inferior a meio salário mínimo.",
-   "salario_min": 1480.76,
-   "salario_max": 2613.11,
-   "faixa_salarial": "R$ 1.480,76 a R$ 2.613,11",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 1480.76,
-  "salario_max": 2613.11,
-  "faixa_salarial": "R$ 1.480,76 a R$ 2.613,11"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-conchal-sp-abre-processo-seletivo-para-agentes-de-saude-e-de-endemias": {
   "first_seen": "2026-10-21",
@@ -3683,42 +3517,6 @@
   "salario_max": 5325.6,
   "faixa_salarial": "R$ 1.621,00 a R$ 5.325,60"
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-para-cargos-de-nivel-superior-na-educacao": {
-  "first_seen": "2026-10-21",
-  "hash": "3b31d3136323",
-  "fisio_linhas": [],
-  "salario_max_texto": 8644.0,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Diretor de Escola (1 vaga)",
-    "Professor de Educação Infantil I (1 vaga)",
-    "Professor de Educação Infantil II (1 vaga)",
-    "Professor de Ensino Fundamental I (1 vaga)",
-    "Professor de Ensino Fundamental II - Matemática (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 03/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/lencois-paulista-sp",
-   "link_banca": "https://www.lencoispaulista.sp.gov.br/",
-   "nome_banca": "Município de Lençóis Paulista",
-   "data_prova": "22/11/2026",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação, conforme legislação municipal vigente",
-   "jornada": "28 e 40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 60,00. Será possível solicitar isenção de taxa entre os dias 7 e 9 de outubro de 2026, para doadores de medula óssea ou inscritos no CadÚnico, conforme os requisitos do edital.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 60,00",
-   "taxa_min": 60.0,
-   "taxa_max": 60.0,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044": {
   "first_seen": "2026-10-21",
   "hash": "371f33fcfc32",
@@ -4000,73 +3798,6 @@
    ]
   },
   "ia_model": "gemini-3.5-flash-lite"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-lorena-sp-abre-concurso-com-salarios-de-ate-8890": {
-  "first_seen": "2026-10-21",
-  "hash": "238fccc3dddf",
-  "fisio_linhas": [],
-  "salario_max_texto": 8890.46,
-  "tem_medio": true,
-  "ia": {
-   "cargos": [
-    {
-     "nome": "Agente de Atendimento Especial",
-     "escolaridade": "medio",
-     "vagas": "1 vaga + CR",
-     "salario": null
-    },
-    {
-     "nome": "Médico Psiquiatra",
-     "escolaridade": "superior",
-     "vagas": "1 vaga + CR",
-     "salario": null
-    },
-    {
-     "nome": "Tesoureiro",
-     "escolaridade": "superior",
-     "vagas": "1 vaga + CR",
-     "salario": null
-    }
-   ],
-   "salario_min": 2399.27,
-   "salario_max": 8890.46
-  },
-  "ia_model": "gemini-3.5-flash-lite",
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 3,
-  "detalhes": {
-   "arquivos_edital": [
-    "EDITAL DE CONCURSO PÚBLICO 01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/lorena-sp",
-   "link_banca": "https://www.lorena.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Lorena",
-   "data_prova": "10/01/2027",
-   "regime": "Estatutário",
-   "beneficios": "Vale-transporte",
-   "jornada": "15 a 40 horas semanais",
-   "cargos_li": [
-    "Agente de Atendimento Especial (1 vaga + CR)",
-    "Médico Psiquiatra (1 vaga + CR)",
-    "Tesoureiro (1 vaga + CR)"
-   ],
-   "isencao": "A taxa de inscrição é de R$ 64,00 para ensino médio e de R$ 79,00 para ensino superior. Pode haver isenção para inscritos no CadÚnico, conforme critérios do edital, com solicitação até 5 de outubro de 2026.",
-   "salario_min": 2399.27,
-   "salario_max": 8890.46,
-   "faixa_salarial": "R$ 2.399,27 a R$ 8.890,46",
-   "cargos_salarios": {
-    "medico psiquiatra": 8890.46
-   },
-   "taxa_inscricao": "R$ 64,00 a R$ 79,00",
-   "taxa_min": 64.0,
-   "taxa_max": 79.0,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2399.27,
-  "salario_max": 8890.46,
-  "faixa_salarial": "R$ 2.399,27 a R$ 8.890,46"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-louveira-sp-abre-concursos-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-21",
@@ -6403,40 +6134,6 @@
   "salario_max": 11102.06,
   "faixa_salarial": "R$ 1.984,14 a R$ 11.102,06"
  },
- "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas": {
-  "first_seen": "2026-10-21",
-  "hash": "aa5c3277fc76",
-  "fisio_linhas": [],
-  "salario_max_texto": 11359.5,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Analista em Planejamento, Orçamento e Finanças Públicas - Orçamento e Finanças Públicas (20 vagas)",
-    "Analista em Planejamento, Orçamento e Finanças Públicas - Contabilidade Pública (20 vagas)",
-    "Analista em Planejamento, Orçamento e Finanças Públicas - Ciências de Dados e Tecnologia da Informação (20 vagas)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/fcc",
-   "link_banca": "https://portal.fazenda.sp.gov.br/",
-   "nome_banca": "Secretaria da Fazenda e Planejamento (SEFAZ-SP)",
-   "data_prova": "13/12/2026",
-   "regime": "Consultar edital",
-   "beneficios": "Consultar edital",
-   "jornada": "40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 150,00, com possibilidade de isenção ou redução de 50% conforme previsto em lei. O prazo para solicitar isenção ou redução é de 5 a 9 de outubro de 2026.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 150,00",
-   "taxa_min": 150.0,
-   "taxa_max": 150.0,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
  "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-para-o-cargo-de-procurador": {
   "first_seen": "2026-10-21",
   "hash": "4f74790a1b0f",
@@ -6535,38 +6232,6 @@
    "etapas_prova": "Prova Objetiva"
   }
  },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-na-area-de-educacao-em-presidente-prudente-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "920254502c3d",
-  "fisio_linhas": [],
-  "salario_max_texto": 16994.01,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Assistente na área de Educação (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 463/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/presidente-prudente-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Consultar edital",
-   "jornada": "40 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 286,00, com possibilidade de redução de 50% para candidatos que atendam aos requisitos do edital.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 286,00",
-   "taxa_min": 286.0,
-   "taxa_max": 286.0,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
  "https://www.pciconcursos.com.br/noticias/unesp-sp-abre-concurso-para-professor-substituto-de-fisica-geral-em-araraquara": {
   "first_seen": "2026-10-21",
   "hash": "55c61dfb161f",
@@ -6604,44 +6269,6 @@
   "salario_min": 2945.73,
   "salario_max": 3511.9,
   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-engenharia-quimica-em-botucatu-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "e304181abd38",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Engenharia Química, subárea de Operações Industriais e Equipamentos para Engenharia Química (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 781/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/botucatu-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2106.04,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2106.04,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-de-bauru-sp-abre-concurso-publico-para-professor-titular-na-faculdade-de-ciencias": {
   "first_seen": "2026-10-21",
@@ -6834,44 +6461,6 @@
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva"
   }
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-ciencias-exatas-e-da-terra-em-assis-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "f6fe4040c194",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 395/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/assis-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2106.04,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2106.04,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-medicina-veterinaria-em-aracatuba-sp": {
   "first_seen": "2026-10-21",
@@ -7207,38 +6796,6 @@
    "beneficios": "Consultar edital",
    "jornada": "40 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 286,00, com possibilidade de redução de 50% para candidatos que atendam aos requisitos do edital.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 286,00",
-   "taxa_min": 286.0,
-   "taxa_max": 286.0,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-na-area-de-ciencias-politicas-em-marilia-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "070e164a982a",
-  "fisio_linhas": [],
-  "salario_max_texto": 16920.47,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Assistente na área de Ciências Políticas, no Departamento de Ciências Políticas e Econômicas (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 217/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/marilia-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Consultar edital",
-   "jornada": "40 horas semanais",
-   "isencao": "A taxa de inscrição é no valor de R$ 286,00. Será possível solicitar redução de 50% do valor da taxa para os candidatos que se enquadrem nos requisitos.",
    "cargos_salarios": {},
    "taxa_inscricao": "R$ 286,00",
    "taxa_min": 286.0,
@@ -7668,38 +7225,6 @@
     "EDITAL Nº 019/2026"
    ],
    "link_provas": "https://www.pciconcursos.com.br/provas/sao-carlos-sp",
-   "link_banca": "https://www5.usp.br/",
-   "nome_banca": "Universidade de São Paulo (USP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Consultar edital",
-   "jornada": "Consultar edital",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
- "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-o-cargo-de-professor-doutor-no-instituto-de-arquitetura-e-urbanismo": {
-  "first_seen": "2026-10-21",
-  "hash": "43ba6d315e8e",
-  "fisio_linhas": [],
-  "salario_max_texto": 16994.01,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Doutor na área de Representação e Linguagem (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "USP DVACAD 3 CP D"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/professor-doutor",
    "link_banca": "https://www5.usp.br/",
    "nome_banca": "Universidade de São Paulo (USP)",
    "data_prova": "Consultar edital",
@@ -8384,184 +7909,6 @@
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva"
   }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva": {
-  "first_seen": "2026-10-23",
-  "first_seen_ts": "2026-10-23T09:41:53.696227-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "d80cbd6938ab",
-  "fisio_linhas": [],
-  "salario_max_texto": 7078.72,
-  "tem_medio": true,
-  "detalhes": {
-   "cargos_li": [
-    "Agente Fiscal Tributário (cadastro de reserva)",
-    "Agente Orientador Escolar (cadastro de reserva)",
-    "Auxiliar de Farmácia (cadastro de reserva)",
-    "Fiscal de Rendas e Postura (cadastro de reserva)",
-    "Assistente Social (cadastro de reserva)",
-    "Coordenador Pedagógico de Educação Fundamental I (cadastro de reserva)",
-    "Farmacêutico (cadastro de reserva)",
-    "Fonoaudiólogo (cadastro de reserva)",
-    "Médico do Trabalho (cadastro de reserva)",
-    "Nutricionista (cadastro de reserva)",
-    "Nutricionista da Saúde (cadastro de reserva)",
-    "Professor de Educação Básica II - Artes (cadastro de reserva)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026"
-   ],
-   "link_banca": "https://www.saojosedabelavista.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de São José da Bela Vista",
-   "data_prova": "06/12/2026",
-   "regime": "Consultar edital",
-   "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
-   "jornada": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "R$ 1.621,00 a R$ 7.078,72",
-   "salario_min_texto": 1621.0,
-   "salario_max_texto": 7078.72,
-   "cargos_salarios": {
-    "agente fiscal tributario": 7078.72,
-    "auxiliar de farmacia": 1621.0,
-    "fiscal de rendas e postura": 7078.72,
-    "coordenador pedagogico de educacao fundamental i": 7078.72,
-    "farmaceutico": 7078.72,
-    "medico do trabalho": 7078.72,
-    "nutricionista": 7078.72,
-    "nutricionista da saude": 7078.72
-   },
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 1621.0,
-  "salario_max": 7078.72,
-  "faixa_salarial": "R$ 1.621,00 a R$ 7.078,72",
-  "ia": {
-   "cidade": "São José da Bela Vista",
-   "banca": "Instituto INDEC",
-   "data_prova": "06/12/2026",
-   "regime_geral": "CLT (Celetista)",
-   "beneficios": "Auxílio-alimentação",
-   "isencao": "Taxa de R$ 75,00 para nível médio e R$ 85,00 para nível superior. O texto não especifica regras detalhadas de isenção.",
-   "jornada_geral": "20 a 40 horas semanais (e 117 horas mensais para Professor)",
-   "resumo_conteudo_fisio": null,
-   "cargos": [
-    {
-     "nome": "Agente Fiscal Tributário",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Médio completo"
-    },
-    {
-     "nome": "Agente Orientador Escolar",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Médio completo"
-    },
-    {
-     "nome": "Auxiliar de Farmácia",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Médio completo"
-    },
-    {
-     "nome": "Fiscal de Rendas e Postura",
-     "escolaridade": "medio",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Médio completo"
-    },
-    {
-     "nome": "Assistente Social",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Superior completo"
-    },
-    {
-     "nome": "Coordenador Pedagógico de Educação Fundamental I",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Superior completo"
-    },
-    {
-     "nome": "Farmacêutico",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Superior completo"
-    },
-    {
-     "nome": "Fonoaudiólogo",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Superior completo"
-    },
-    {
-     "nome": "Médico do Trabalho",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Superior completo"
-    },
-    {
-     "nome": "Nutricionista",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Superior completo"
-    },
-    {
-     "nome": "Nutricionista da Saúde",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": null,
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Superior completo"
-    },
-    {
-     "nome": "Professor de Educação Básica II - Artes",
-     "escolaridade": "superior",
-     "vagas": "CR",
-     "salario": null,
-     "carga_horaria": "117 horas mensais",
-     "regime": "CLT (Celetista)",
-     "requisitos": "Ensino Superior completo"
-    }
-   ]
-  },
-  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-matematica-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-23",
@@ -16373,6 +15720,2143 @@
    "cargos_salarios": {},
    "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
    "salario_min_texto": 2106.04,
+   "salario_max_texto": 3511.9
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-sete-barras-sp-abre-concurso-publico-com-salarios-de-ate-7434": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "39547812d927",
+  "fisio_linhas": [],
+  "salario_max_texto": 7434.85,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Motorista (cadastro de reserva)",
+    "Zelador (cadastro de reserva)",
+    "Agente Administrativo (1 vaga e cadastro de reserva)",
+    "Agente Técnico Legislativo (1 vaga e cadastro de reserva)",
+    "Assistente Administrativo (1 vaga e cadastro de reserva)",
+    "Diretor Geral Legislativo (cadastro de reserva)",
+    "Assessor Jurídico (cadastro de reserva)",
+    "Controlador Interno (cadastro de reserva)",
+    "Contador (cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 001/2026"
+   ],
+   "link_banca": "https://www.setebarras.sp.leg.br/",
+   "nome_banca": "Câmara Municipal de Sete Barras",
+   "data_prova": "20/12/2026",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Auxílio-alimentação de R$ 800,00, vale-refeição de R$ 30,00 por dia e vale-transporte",
+   "beneficios_total": 1460.0,
+   "jornada": "20 a 40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {
+    "motorista": 3193.3,
+    "zelador": 3193.3,
+    "diretor geral legislativo": 7434.85,
+    "controlador interno": 7434.85,
+    "contador": 7434.85
+   },
+   "faixa_salarial": "R$ 3.193,30 a R$ 7.434,85",
+   "salario_min_texto": 3193.3,
+   "salario_max_texto": 7434.85
+  },
+  "ia": {
+   "cidade": "Sete Barras",
+   "banca": "AB Concursos Públicos",
+   "data_prova": "20/12/2026",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios": "Auxílio-alimentação de R$ 800,00, vale-refeição de R$ 30,00 por dia e vale-transporte",
+   "isencao": "Taxa de R$ 75,00 para nível médio e R$ 95,00 para nível superior. O edital não detalha requisitos de isenção.",
+   "jornada_geral": "20 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Motorista",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Zelador",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Agente Administrativo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Agente Técnico Legislativo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Assistente Administrativo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Diretor Geral Legislativo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Assessor Jurídico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Controlador Interno",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/ipsm-de-sao-jose-dos-campos-sp-divulga-retificacoes-de-concurso-publico": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "e8f7be2aa1c9",
+  "fisio_linhas": [],
+  "salario_max_texto": 5185.46,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Analista em Gestão Previdenciária (7 vagas + 1 vaga para PCD)",
+    "Analista Previdenciário - Direito (2 vagas + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Administrador (4 vagas + 1 vaga para PCD)",
+    "Analista Previdenciário - TI (1 vaga + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Psicólogo (1 vaga + cadastro de reserva para PCD)",
+    "Analista Previdenciário - Assistente Social (cadastro de reserva para ampla concorrência e para PCD)",
+    "Médico (cadastro de reserva para ampla concorrência e para PCD)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026",
+    "SEGUNDO TERMO DE RETIFICAÇÃO",
+    "EDITAL DE PRORROGAÇÃO DAS INSCRIÇÕES"
+   ],
+   "link_banca": "https://ipsmsjc.sp.gov.br/",
+   "nome_banca": "IPSM",
+   "data_prova": "13/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Vale-transporte, vale-alimentação e gratificação previdenciária, conforme previsto na legislação municipal",
+   "beneficios_total": 0.0,
+   "jornada": "12 a 40 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 89,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 89,00",
+   "taxa_min": 89.0,
+   "taxa_max": 89.0,
+   "etapas_prova": "Prova Objetiva",
+   "cargos_salarios": {
+    "medico": 2604.58,
+    "me": 2604.58,
+    "analista em gestao previdenciaria": 5185.46,
+    "analista previdenciario direito": 5185.46,
+    "analista previdenciario administrador": 5185.46,
+    "analista previdenciario ti": 5185.46,
+    "analista previdenciario psicologo": 5185.46,
+    "analista previdenciario assistente social": 5185.46
+   },
+   "faixa_salarial": "R$ 3.889,11 a R$ 5.185,46",
+   "salario_min_texto": 3889.11,
+   "salario_max_texto": 5185.46
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "048cb9a22276",
+  "fisio_linhas": [
+   "Fisioterapeuta (1 vaga)"
+  ],
+  "salario_max_texto": 18540.71,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Ajudante Geral (CR)",
+    "Auxiliar de Serviços Gerais (5 vagas)",
+    "Carpinteiro (CR)",
+    "Coveiro (CR)",
+    "Eletricista (CR)",
+    "Encanador (CR)",
+    "Padeiro (CR)",
+    "Pedreiro (CR)",
+    "Pintor (CR)",
+    "Vigia (2 vagas)",
+    "Agente de Trânsito (1 vaga)",
+    "Agente Sanitário (CR)",
+    "Auxiliar de Desenvolvimento Infantil (2 vagas)",
+    "Auxiliar em Saúde Bucal (4 vagas)",
+    "Escriturário (20 vagas)",
+    "Fiscal de Feiras e Mercados (2 vagas)",
+    "Fiscal de Posturas (1 vaga)",
+    "Inspetor de Alunos (1 vaga)",
+    "Motorista (CR)",
+    "Secretário de Escola (2 vagas)",
+    "Técnico de Enfermagem (2 vagas)",
+    "Técnico de Enfermagem do Trabalho (1 vaga)",
+    "Técnico de Segurança do Trabalho (CR)",
+    "Técnico em Prótese Oral (1 vaga)",
+    "Topógrafo (1 vaga)",
+    "Analista de Sistemas (1 vaga)",
+    "Arquiteto (CR)",
+    "Assistente Social (5 vagas)",
+    "Auxiliar Jurídico (5 vagas)",
+    "Bibliotecário (1 vaga)",
+    "Contador (1 vaga)",
+    "Coordenador Pedagógico (3 vagas)",
+    "Dentista (5 vagas)",
+    "Dentista de Saúde da Família (1 vaga)",
+    "Diretor de Escola (1 vaga)",
+    "Enfermeiro (CR)",
+    "Engenheiro Agrônomo (CR)",
+    "Engenheiro Ambiental (CR)",
+    "Engenheiro Civil (CR)",
+    "Engenheiro de Segurança do Trabalho (CR)",
+    "Engenheiro de Tráfego (1 vaga)",
+    "Engenheiro Eletricista (CR)",
+    "Farmacêutico (2 vagas)",
+    "Fiscal de Tributos (CR)",
+    "Fisioterapeuta (1 vaga)",
+    "Fonoaudiólogo (CR)",
+    "Jornalista (1 vaga)",
+    "Médico Cardiologista (1 vaga)",
+    "Médico Clínico Geral (1 vaga)",
+    "Médico Cirurgião Pediátrico (1 vaga)",
+    "Médico Cirurgião Vascular (1 vaga)",
+    "Médico Coloproctologista (1 vaga)",
+    "Médico Dermatologista (1 vaga)",
+    "Médico do Trabalho (1 vaga)",
+    "Médico Gastroenterologista (CR)",
+    "Médico Geriatra (1 vaga)",
+    "Médico Ginecologista/Obstetrícia (1 vaga)",
+    "Médico Infectologista (1 vaga)",
+    "Médico Neurologista (1 vaga)",
+    "Médico Neurologista Pediátrico (1 vaga)",
+    "Médico Oftalmologista (1 vaga)",
+    "Médico Ortopedista (1 vaga)",
+    "Médico Otorrinolaringologista (1 vaga)",
+    "Médico Pediatra (1 vaga)",
+    "Médico Pneumologista (1 vaga)",
+    "Médico Psiquiatra (1 vaga)",
+    "Médico de Saúde da Família (2 vagas)",
+    "Procurador Municipal (1 vaga)",
+    "Professor de Educação Básica I - Educação Infantil (CR)",
+    "Professor de Educação Básica I - Ensino Fundamental (CR)",
+    "Professor de Educação Básica II - Artes (1 vaga)",
+    "Professor de Educação Básica II - Ciências Físicas e Biológicas (CR)",
+    "Professor de Educação Básica II - Educação Especial Deficiência Auditiva (CR)",
+    "Professor de Educação Básica II - Educação Especial Deficiência Intelectual (2 vagas)",
+    "Professor de Educação Básica II - Educação Especial Deficiência Visual (CR)",
+    "Professor de Educação Básica II - Educação Física (CR)",
+    "Professor de Educação Básica II - Geografia (1 vaga)",
+    "Professor de Educação Básica II - História (CR)",
+    "Professor de Educação Básica II - Inglês (1 vaga)",
+    "Professor de Educação Básica II - Matemática (CR)",
+    "Professor de Educação Básica II - Português (CR)",
+    "Professor Monitor de Creche (3 vagas)",
+    "Psicólogo (2 vagas)",
+    "Publicitário (1 vaga)",
+    "Terapeuta Ocupacional (1 vaga)",
+    "Vice-diretor de Escola (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA - CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_banca": "https://www.guaratingueta.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal da Estância Turística de Guaratinguetá",
+   "data_prova": "21/02/2027",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Vale-transporte e cartão-alimentação de R$ 850,00, ambos mediante adesão e com descontos previstos no edital · Cartão-alimentação de R$ 850,00, ambos mediante adesão e com descontos previstos no edital",
+   "beneficios_total": 850.0,
+   "jornada": "20 a 44 horas semanais",
+   "isencao": "Pedidos de isenção poderão ser feitos das 10h de 16 de novembro de 2026 às 23h59 de 20 de novembro de 2026 por candidatos que atendam aos critérios do edital relativos ao CadÚnico, à doação de sangue, medula óssea ou leite materno, ou à atuação como mesário ou chefe de seção eleitoral.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {
+    "auxiliar de servicos gerais": 1840.36,
+    "eletricista": 1840.36,
+    "encanador": 1840.36,
+    "pedreiro": 1840.36,
+    "vigia": 1840.36,
+    "auxiliar de desenvolvimento infantil": 1840.36,
+    "auxiliar em saude bucal": 1840.36,
+    "fiscal de feiras e mercados": 18540.71,
+    "fiscal de posturas": 18540.71,
+    "motorista": 1840.36,
+    "analista de sistemas": 18540.71,
+    "arquiteto": 18540.71,
+    "auxiliar juridico": 1840.36,
+    "contador": 18540.71,
+    "coordenador pedagogico": 18540.71,
+    "dentista": 18540.71,
+    "dentista de saude da familia": 18540.71,
+    "diretor de escola": 18540.71,
+    "engenheiro agronomo": 18540.71,
+    "engenheiro ambiental": 18540.71,
+    "engenheiro civil": 18540.71,
+    "engenheiro de seguranca do trabalho": 18540.71,
+    "engenheiro de trafego": 18540.71,
+    "farmaceutico": 18540.71,
+    "fiscal de tributos": 18540.71,
+    "fisioterapeuta": 18540.71,
+    "medico cardiologista": 18540.71,
+    "medico clinico geral": 18540.71,
+    "medico cirurgiao pediatrico": 18540.71,
+    "medico cirurgiao vascular": 18540.71,
+    "medico coloproctologista": 18540.71,
+    "medico dermatologista": 18540.71,
+    "medico do trabalho": 18540.71,
+    "medico gastroenterologista": 18540.71,
+    "medico geriatra": 18540.71,
+    "medico ginecologista obstetricia": 18540.71,
+    "medico infectologista": 18540.71,
+    "medico neurologista": 18540.71,
+    "medico neurologista pediatrico": 18540.71,
+    "medico oftalmologista": 18540.71,
+    "medico ortopedista": 18540.71,
+    "medico otorrinolaringologista": 18540.71,
+    "medico pediatra": 18540.71,
+    "medico pneumologista": 18540.71,
+    "medico psiquiatra": 18540.71,
+    "medico de saude da familia": 18540.71,
+    "procurador municipal": 18540.71,
+    "psicologo": 18540.71,
+    "vice diretor de escola": 18540.71
+   },
+   "faixa_salarial": "R$ 1.840,36 a R$ 18.540,71",
+   "salario_min_texto": 1840.36,
+   "salario_max_texto": 18540.71
+  },
+  "ia": {
+   "cidade": "Guaratinguetá",
+   "banca": "Fundação VUNESP",
+   "data_prova": "21/02/2027",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios": "vale-transporte e cartão-alimentação de R$ 850,00",
+   "isencao": "Taxa de inscrição de R$ 65,00 para nível fundamental, R$ 80,00 para nível médio e R$ 115,00 para nível superior. Isenção disponível para candidatos que atendam aos critérios do edital relativos ao CadÚnico, à doação de sangue, medula óssea ou leite materno, ou à atuação como mesário ou chefe de seção eleitoral.",
+   "jornada_geral": "20 a 44 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Ajudante Geral",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": 1840.36,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Auxiliar de Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": "5 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Carpinteiro",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Coveiro",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Eletricista",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Encanador",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Padeiro",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Pedreiro",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Pintor",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Vigia",
+     "escolaridade": "fundamental",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Agente de Trânsito",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Agente Sanitário",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Auxiliar de Desenvolvimento Infantil",
+     "escolaridade": "medio",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Auxiliar em Saúde Bucal",
+     "escolaridade": "tecnico",
+     "vagas": "4 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Curso técnico específico"
+    },
+    {
+     "nome": "Escriturário",
+     "escolaridade": "medio",
+     "vagas": "20 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Fiscal de Feiras e Mercados",
+     "escolaridade": "medio",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Fiscal de Posturas",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Inspetor de Alunos",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Motorista",
+     "escolaridade": "fundamental",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino fundamental e CNH exigida"
+    },
+    {
+     "nome": "Secretário de Escola",
+     "escolaridade": "medio",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Curso técnico de enfermagem"
+    },
+    {
+     "nome": "Técnico de Enfermagem do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Curso técnico de enfermagem do trabalho"
+    },
+    {
+     "nome": "Técnico de Segurança do Trabalho",
+     "escolaridade": "tecnico",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Curso técnico de segurança do trabalho"
+    },
+    {
+     "nome": "Técnico em Prótese Oral",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Curso técnico em prótese oral"
+    },
+    {
+     "nome": "Topógrafo",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Curso técnico em topografia"
+    },
+    {
+     "nome": "Analista de Sistemas",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior na área"
+    },
+    {
+     "nome": "Arquiteto",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Arquitetura e registro no conselho"
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "5 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Serviço Social e registro no conselho"
+    },
+    {
+     "nome": "Auxiliar Jurídico",
+     "escolaridade": "superior",
+     "vagas": "5 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Direito"
+    },
+    {
+     "nome": "Bibliotecário",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Biblioteconomia"
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Ciências Contábeis e registro no CRC"
+    },
+    {
+     "nome": "Coordenador Pedagógico",
+     "escolaridade": "superior",
+     "vagas": "3 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Pedagogia e/ou pós-graduação conforme edital"
+    },
+    {
+     "nome": "Dentista",
+     "escolaridade": "superior",
+     "vagas": "5 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Odontologia e registro no CRO"
+    },
+    {
+     "nome": "Dentista de Saúde da Família",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Odontologia com especialização na área"
+    },
+    {
+     "nome": "Diretor de Escola",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Pedagogia e experiência"
+    },
+    {
+     "nome": "Enfermeiro",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Enfermagem e registro no COREN"
+    },
+    {
+     "nome": "Engenheiro Agrônomo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Engenharia Agronômica"
+    },
+    {
+     "nome": "Engenheiro Ambiental",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Engenharia Ambiental"
+    },
+    {
+     "nome": "Engenheiro Civil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Engenharia Civil"
+    },
+    {
+     "nome": "Engenheiro de Segurança do Trabalho",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Engenharia com especialização na área"
+    },
+    {
+     "nome": "Engenheiro de Tráfego",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior na área correspondente"
+    },
+    {
+     "nome": "Engenheiro Eletricista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Engenharia Elétrica"
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Farmácia e registro no CRF"
+    },
+    {
+     "nome": "Fiscal de Tributos",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Fisioterapeuta",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Fisioterapia e registro no CREFITO"
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Fonoaudiologia"
+    },
+    {
+     "nome": "Jornalista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Jornalismo/Comunicação Social"
+    },
+    {
+     "nome": "Médico Cardiologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina e residência/especialização na área"
+    },
+    {
+     "nome": "Médico Clínico Geral",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina"
+    },
+    {
+     "nome": "Médico Cirurgião Pediátrico",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Cirurgião Vascular",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Coloproctologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Dermatologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico do Trabalho",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Gastroenterologista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Geriatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Ginecologista/Obstetrícia",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Infectologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Neurologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Neurologista Pediátrico",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Oftalmologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Ortopedista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Otorrinolaringologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Pediatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Pneumologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico Psiquiatra",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina com especialidade"
+    },
+    {
+     "nome": "Médico de Saúde da Família",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Medicina"
+    },
+    {
+     "nome": "Procurador Municipal",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Direito e OAB"
+    },
+    {
+     "nome": "Professor de Educação Básica I - Educação Infantil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Pedagogia ou Licenciatura"
+    },
+    {
+     "nome": "Professor de Educação Básica I - Ensino Fundamental",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Pedagogia ou Licenciatura"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Artes",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Licenciatura em Artes"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Ciências Físicas e Biológicas",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Licenciatura na área"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Educação Especial Deficiência Auditiva",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior com especialização"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Educação Especial Deficiência Intelectual",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior com especialização"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Educação Especial Deficiência Visual",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior com especialização"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Educação Física e CREF"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Geografia",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Geografia"
+    },
+    {
+     "nome": "Professor de Educação Básica II - História",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em História"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Inglês",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Letras - Inglês"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Matemática",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Matemática"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Português",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "Estatuto do Magistério",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Letras - Português"
+    },
+    {
+     "nome": "Professor Monitor de Creche",
+     "escolaridade": "superior",
+     "vagas": "3 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior na área educacional"
+    },
+    {
+     "nome": "Psicólogo",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Psicologia e registro no CRP"
+    },
+    {
+     "nome": "Publicitário",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Publicidade e Propaganda"
+    },
+    {
+     "nome": "Terapeuta Ocupacional",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Terapia Ocupacional"
+    },
+    {
+     "nome": "Vice-diretor de Escola",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "20 a 44h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Superior em Pedagogia e experiência"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-canitar-sp-abre-concurso-publico-para-diversos-cargos": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "9e523d90348f",
+  "fisio_linhas": [],
+  "salario_max_texto": 3077.29,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Auxiliar Odontológico (Auxiliar de Consultório Dentário) (1 vaga)",
+    "Encanador (1 vaga)",
+    "Motorista (1 vaga)",
+    "Pedreiro (1 vaga)",
+    "Serviços Gerais (1 vaga)",
+    "Eletricista (1 vaga)",
+    "Fiscal de Posturas (1 vaga)",
+    "Guarda Municipal (1 vaga)",
+    "Oficial de Escola (1 vaga)",
+    "Secretário de Escola (1 vaga)",
+    "Técnico de Enfermagem (1 vaga)",
+    "Enfermeiro (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_banca": "https://www.canitar.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Canitar",
+   "data_prova": "10/01/2027",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Prática",
+   "cargos_salarios": {
+    "diversos cargos oportunida": 3077.29,
+    "auxiliar odontologico": 1621.0,
+    "encanador": 1621.0,
+    "motorista": 1621.0,
+    "pedreiro": 1621.0,
+    "servicos gerais": 1621.0,
+    "eletricista": 1621.0,
+    "fiscal de posturas": 3077.29
+   },
+   "faixa_salarial": "R$ 1.621,00 a R$ 3.077,29",
+   "salario_min_texto": 1621.0,
+   "salario_max_texto": 3077.29
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-cosmopolis-sp-abre-concurso-publico-para-profissionais-da-educacao": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "bb49aa84388a",
+  "fisio_linhas": [],
+  "salario_max_texto": 900.0,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Diretor de Escola",
+    "PEB I - Educação Infantil e Séries Iniciais do Ensino Fundamental (1 vaga)",
+    "PEB II - Arte",
+    "PEB II - Ciências",
+    "PEB II - Educação Especial em Deficiência Auditiva",
+    "PEB II - Educação Especial em Deficiência Intelectual / Transtorno do Espectro Autista",
+    "PEB II - Educação Especial em Deficiência Visual",
+    "PEB II - Educação Física",
+    "PEB II - Geografia",
+    "PEB II - História",
+    "PEB II - Língua Inglesa",
+    "PEB II - Língua Portuguesa",
+    "PEB II - Matemática",
+    "PEB II - Música",
+    "PEBAD I - Professor de Educação Básica Adjunto - Ensino Fundamental I",
+    "PEBAD II - Professor de Educação Básica Adjunto - Ensino Fundamental II",
+    "Supervisor de Ensino"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026"
+   ],
+   "link_banca": "https://cosmopolis.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Cosmópolis",
+   "data_prova": "31/01/2027",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação de R$ 900,00. A seleção contará com provas objetivas e de títulos · Vale-alimentação mensal, atualmente de R$ 900,00.",
+   "beneficios_total": 900.0,
+   "jornada": "18 a 40 horas semanais",
+   "isencao": "A isenção poderá ser solicitada de 4 a 5 de novembro de 2026 por candidatos desempregados há pelo menos cinco meses ou que atendam às condições do edital para doadores de sangue ou medula óssea.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {},
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-iaras-sp-abre-concurso-publico-e-processo-seletivo": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "444ce0aa7382",
+  "fisio_linhas": [],
+  "salario_max_texto": 6142.0,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Assistente Social (1 vaga)",
+    "Auxiliar de Educação Infantil, 40 horas (1 vaga)",
+    "Fonoaudiólogo(a) (1 vaga)",
+    "Médico (1 vaga)",
+    "Psicólogo(a) (1 vaga)",
+    "Serviços Gerais (2 vagas)",
+    "Auxiliar de Consultório Dentário PSF (1 vaga)",
+    "Auxiliar de Educação Infantil, escala 12x36 (1 vaga)",
+    "Cirurgião Dentista (1 vaga)",
+    "Coordenador Pedagógico (1 vaga)",
+    "Dentista PSF (1 vaga)",
+    "Enfermeiro(a) (1 vaga)",
+    "Farmacêutico(a) (1 vaga)",
+    "Motorista/Serviços Gerais (1 vaga)",
+    "Operador de Máquina I (1 vaga)",
+    "Professor de Educação Básica I, PEB I (CR)",
+    "Professor de Educação Básica II, Ciências (CR)",
+    "Professor de Educação Básica II, Educação Artística (CR)",
+    "Professor de Educação Básica II, Educação Especial (CR)",
+    "Professor de Educação Básica II, Educação Especial em Braille (CR)",
+    "Professor de Educação Básica II, Educação Física (CR)",
+    "Professor de Educação Básica II, Geografia (CR)",
+    "Professor de Educação Básica II, História (CR)",
+    "Professor de Educação Básica II, Matemática (CR)",
+    "Professor de Educação Básica II, Português/Inglês (CR)",
+    "Professor(a) de Educação Infantil (CR)",
+    "Serviços Gerais (1 vaga)",
+    "Técnico de Enfermagem (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DO PROCESSO SELETIVO Nº 002/2026",
+    "EDITAL DO CONCURSO PÚBLICO Nº 001/2026"
+   ],
+   "link_banca": "https://www.iaras.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Iaras",
+   "data_prova": "Consultar edital",
+   "regime": "Estatutário",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "20 a 40 horas semanais",
+   "isencao": "No concurso público, podem solicitar isenção, durante o período de inscrições, candidatos de famílias inscritas no CadÚnico com renda mensal por pessoa igual ou inferior a meio salário mínimo nacional e doadores de medula óssea, conforme as exigências do edital.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Prática · Avaliação de Títulos",
+   "cargos_salarios": {
+    "auxiliar de educacao infantil 40 horas": 1621.0,
+    "medico": 2671.36,
+    "psicologo": 2671.36,
+    "servicos gerais": 1621.0,
+    "auxiliar de consultorio dentario psf": 1621.0,
+    "auxiliar de educacao infantil escala 12x36": 1621.0,
+    "cirurgiao dentista": 2671.36,
+    "coordenador pedagogico": 2671.36,
+    "dentista psf": 2671.36,
+    "farmaceutico": 2671.36,
+    "motorista servicos gerais": 1621.0,
+    "operador de maquina i": 1621.0
+   },
+   "faixa_salarial": "R$ 1.621,00 a R$ 2.671,36",
+   "salario_min_texto": 1621.0,
+   "salario_max_texto": 2671.36
+  },
+  "ia": {
+   "cidade": "Iaras",
+   "banca": "CEMAT",
+   "data_prova": null,
+   "regime_geral": "Estatutário e Temporário",
+   "beneficios": null,
+   "isencao": "Taxas de R$ 50,00, R$ 70,00 ou R$ 90,00. Isenção para candidatos inscritos no CadÚnico com renda familiar per capita de até meio salário mínimo e doadores de medula óssea.",
+   "jornada_geral": "20 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino superior na área"
+    },
+    {
+     "nome": "Auxiliar de Educação Infantil",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "40h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Fonoaudiólogo(a)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino superior na área"
+    },
+    {
+     "nome": "Médico",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino superior em Medicina e registro no conselho"
+    },
+    {
+     "nome": "Psicólogo(a)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino superior em Psicologia e registro no conselho"
+    },
+    {
+     "nome": "Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": "2 vagas",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Auxiliar de Consultório Dentário PSF",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Curso técnico específico e registro"
+    },
+    {
+     "nome": "Auxiliar de Educação Infantil",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "40h semanais",
+     "regime": "Temporário",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Auxiliar de Educação Infantil",
+     "escolaridade": "medio",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": "escala 12x36",
+     "regime": "Temporário",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Cirurgião Dentista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior em Odontologia e registro"
+    },
+    {
+     "nome": "Coordenador Pedagógico",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior em Pedagogia ou licenciaturas com pós-graduação na área educacional"
+    },
+    {
+     "nome": "Dentista PSF",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior em Odontologia e registro"
+    },
+    {
+     "nome": "Enfermeiro(a)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior em Enfermagem e registro no COREN"
+    },
+    {
+     "nome": "Farmacêutico(a)",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino superior em Farmácia e registro no conselho"
+    },
+    {
+     "nome": "Motorista/Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino fundamental e CNH exigida"
+    },
+    {
+     "nome": "Operador de Máquina I",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino fundamental e CNH compatível"
+    },
+    {
+     "nome": "Professor de Educação Básica I, PEB I",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura em Pedagogia"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Ciências",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura em Ciências"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Educação Artística",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura na área"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Educação Especial",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura com habilitação na área"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Educação Especial em Braille",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura com capacitação específica"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Educação Física",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura em Educação Física e CREF"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Geografia",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura em Geografia"
+    },
+    {
+     "nome": "Professor de Educação Básica II, História",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura em História"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Matemática",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura em Matemática"
+    },
+    {
+     "nome": "Professor de Educação Básica II, Português/Inglês",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura em Letras"
+    },
+    {
+     "nome": "Professor(a) de Educação Infantil",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Licenciatura em Pedagogia"
+    },
+    {
+     "nome": "Serviços Gerais",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino fundamental"
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "Temporário",
+     "requisitos": "Ensino técnico em Enfermagem e registro no COREN"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-jumirim-sp-abre-concurso-publico-para-motorista-plantonista": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "c24ece6e7d84",
+  "fisio_linhas": [],
+  "salario_max_texto": 2523.65,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Motorista Plantonista (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA Nº 02/2026"
+   ],
+   "link_banca": "https://www.jumirim.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Jumirim",
+   "data_prova": "20/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Auxílio-alimentação · Auxílio-alimentação de R$ 756,00, cesta de Natal ou equivalente e demais vantagens nas condições legais",
+   "beneficios_total": 756.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Pedidos de isenção poderão ser apresentados de 3 a 5 de novembro de 2026 por doadores regulares de sangue, pessoas cadastradas como doadoras de medula óssea no REDOME e inscritos no CadÚnico, conforme os requisitos do edital.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Prática",
+   "cargos_salarios": {
+    "motorista plantonista oportunidade exige ensino fundamental inc": 2523.65
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-marapoama-sp-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "3f5275184002",
+  "fisio_linhas": [],
+  "salario_max_texto": 3242.0,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Comunitário de Saúde (1 vaga)",
+    "Agente de Apoio Educacional (1 vaga e cadastro de reserva)",
+    "Agente de Educação Infantil e Fundamental (5 vagas e cadastro de reserva)",
+    "Auxiliar de Serviços Gerais (1 vaga)",
+    "Coveiro (1 vaga)",
+    "Encanador (1 vaga)",
+    "Engenheiro Civil (cadastro de reserva)",
+    "Inspetor de Alunos (1 vaga e cadastro de reserva)",
+    "Monitor de Informática (1 vaga e cadastro de reserva)",
+    "Motorista (cadastro de reserva)",
+    "Pedreiro (1 vaga e cadastro de reserva)",
+    "Professor de Educação Básica I - Apoio (6 vagas e cadastro de reserva)",
+    "Professor de Educação Básica I - Ensino Fundamental (5 vagas e cadastro de reserva)",
+    "Professor de Educação Básica I - Projeto (5 vagas e cadastro de reserva)",
+    "Professor de Educação Básica II - Arte (1 vaga e cadastro de reserva)",
+    "Professor de Educação Básica II - Educação Física (2 vagas e cadastro de reserva)",
+    "Professor de Educação Especial (1 vaga e cadastro de reserva)",
+    "Psicopedagogo (1 vaga e cadastro de reserva)",
+    "Recepcionista UBS (cadastro de reserva)",
+    "Tratorista (cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA Nº 01/2026 - PROCESSO SELETIVO SIMPLIFICADO Nº 02/2026"
+   ],
+   "link_banca": "https://www.marapoama.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Marapoama",
+   "data_prova": "29/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "15 a 40 horas semanais",
+   "isencao": "Inscritos no CadÚnico podem solicitar isenção pelo formulário de inscrição, das 9h de 4 de novembro de 2026 às 23h59 de 10 de novembro de 2026.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Prática · Prova Discursiva/Redação · Avaliação de Títulos",
+   "cargos_salarios": {
+    "auxiliar de servicos gerais": 1707.68,
+    "encanador": 1707.68,
+    "engenheiro civil": 3242.0,
+    "motorista": 1707.68,
+    "pedreiro": 1707.68,
+    "tratorista": 1707.68
+   },
+   "faixa_salarial": "R$ 1.707,68 a R$ 3.242,00",
+   "salario_min_texto": 1707.68,
+   "salario_max_texto": 3242.0
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-oleo-sp-abre-processo-seletivo-para-diversos-cargos": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "ca121a59e7e5",
+  "fisio_linhas": [],
+  "salario_max_texto": 3951.25,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Merendeira",
+    "Professor de Educação Básica II",
+    "Professor de Educação Básica III em Arte",
+    "Professor de Educação Básica III em Educação Física",
+    "Professor de Educação Básica III em Inglês",
+    "Técnico em Informática"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO PÚBLICO Nº 01/2026"
+   ],
+   "link_banca": "https://www.pmoleo.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Óleo",
+   "data_prova": "12/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Doadores de sangue e de medula óssea podem solicitar isenção.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {
+    "merendeira": 3951.05,
+    "tecnico em informatica": 3951.25,
+    "merendeira e d": 2017.27,
+    "diversos cargos oportunidades contemplam os n": 3951.05
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-prorroga-inscricoes-de-concurso-publico": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "32ca9d0198f9",
+  "fisio_linhas": [],
+  "salario_max_texto": 7078.72,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Fiscal Tributário (cadastro de reserva)",
+    "Agente Orientador Escolar (cadastro de reserva)",
+    "Auxiliar de Farmácia (cadastro de reserva)",
+    "Fiscal de Rendas e Postura (cadastro de reserva)",
+    "Assistente Social (cadastro de reserva)",
+    "Coordenador Pedagógico de Educação Fundamental I (cadastro de reserva)",
+    "Farmacêutico (cadastro de reserva)",
+    "Fonoaudiólogo (cadastro de reserva)",
+    "Médico do Trabalho (cadastro de reserva)",
+    "Nutricionista (cadastro de reserva)",
+    "Nutricionista da Saúde (cadastro de reserva)",
+    "Professor de Educação Básica II - Artes (cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE ABERTURA CONCURSO PÚBLICO Nº 002/2026",
+    "EDITAL DE RETIFICAÇÃO 1 - CONCURSO PÚBLICO Nº 002/2026"
+   ],
+   "link_banca": "https://www.saojosedabelavista.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de São José da Bela Vista",
+   "data_prova": "10/01/2027",
+   "regime": "Consultar edital",
+   "beneficios": "Auxílio-alimentação · Auxílio-alimentação",
+   "beneficios_total": 0.0,
+   "jornada": "20 a 40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {
+    "agente fiscal tributario": 7078.72,
+    "auxiliar de farmacia": 1621.0,
+    "fiscal de rendas e postura": 7078.72,
+    "coordenador pedagogico de educacao fundamental i": 7078.72,
+    "farmaceutico": 7078.72,
+    "medico do trabalho": 7078.72,
+    "nutricionista": 7078.72,
+    "nutricionista da saude": 7078.72
+   },
+   "faixa_salarial": "R$ 1.621,00 a R$ 7.078,72",
+   "salario_min_texto": 1621.0,
+   "salario_max_texto": 7078.72
+  },
+  "ia": {
+   "cidade": "São José da Bela Vista",
+   "banca": "Instituto INDEC",
+   "data_prova": "10/01/2027",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios": "Auxílio-alimentação",
+   "isencao": "Taxa de R$ 75,00 para cargos de nível médio e R$ 85,00 para cargos de nível superior",
+   "jornada_geral": "20 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Agente Fiscal Tributário",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Médio completo"
+    },
+    {
+     "nome": "Agente Orientador Escolar",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Médio completo"
+    },
+    {
+     "nome": "Auxiliar de Farmácia",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Médio completo"
+    },
+    {
+     "nome": "Fiscal de Rendas e Postura",
+     "escolaridade": "medio",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Médio completo"
+    },
+    {
+     "nome": "Assistente Social",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior completo"
+    },
+    {
+     "nome": "Coordenador Pedagógico de Educação Fundamental I",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior completo"
+    },
+    {
+     "nome": "Farmacêutico",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior completo"
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior completo"
+    },
+    {
+     "nome": "Médico do Trabalho",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior completo"
+    },
+    {
+     "nome": "Nutricionista",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior completo"
+    },
+    {
+     "nome": "Nutricionista da Saúde",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": null,
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior completo"
+    },
+    {
+     "nome": "Professor de Educação Básica II - Artes",
+     "escolaridade": "superior",
+     "vagas": "CR",
+     "salario": null,
+     "carga_horaria": "117 horas mensais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior completo"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/sefaz-sp-retifica-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "30421a3417d1",
+  "fisio_linhas": [],
+  "salario_max_texto": 11359.5,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Analista em Planejamento, Orçamento e Finanças Públicas - Orçamento e Finanças Públicas (20 vagas)",
+    "Analista em Planejamento, Orçamento e Finanças Públicas - Contabilidade Pública (20 vagas)",
+    "Analista em Planejamento, Orçamento e Finanças Públicas - Ciências de Dados e Tecnologia da Informação (20 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026",
+    "PRORROGAÇÃO DAS INSCRIÇÕES",
+    "EDITAL Nº 03/2026 - DE RETIFICAÇÃO",
+    "EDITAL Nº 02/2026 - DE RETIFICAÇÃO"
+   ],
+   "link_banca": "https://portal.fazenda.sp.gov.br/",
+   "nome_banca": "Secretaria da Fazenda e Planejamento (SEFAZ-SP)",
+   "data_prova": "20/12/2026",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "40 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 150,00, com possibilidade de isenção ou redução de 50% conforme previsto em lei. O prazo para solicitar isenção ou redução é de 5 a 9 de outubro de 2026.",
+   "taxa_inscricao": "R$ 150,00",
+   "taxa_min": 150.0,
+   "taxa_max": 150.0,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Avaliação de Títulos",
+   "cargos_salarios": {
+    "profission": 11359.5
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-psicologia-no-campus-de-bauru-sp": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "28bdec678684",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Psicologia, subárea de Fundamento e Medidas da Psicologia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 504/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "beneficios_total": 2000.02,
+   "jornada": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "etapas_prova": "Prova Objetiva",
+   "cargos_salarios": {},
+   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
+   "salario_min_texto": 1423.69,
+   "salario_max_texto": 3511.9
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-divulga-concursos-publicos-para-professores-substitutos-em-jaboticabal-sp": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "ab970db55338",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Agronomia, subárea de Fitotecnia (1 vaga)",
+    "Professor Substituto na área de Ciência e Tecnologia de Alimentos (1 vaga)",
+    "Professor Substituto na área de Bioquímica, subárea de Metabolismo e Bioenergética (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 402/2026",
+    "EDITAL Nº 403/2026",
+    "EDITAL Nº 404/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "beneficios_total": 2000.02,
+   "jornada": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "etapas_prova": "Prova Objetiva",
+   "cargos_salarios": {},
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
+   "salario_min_texto": 2945.73,
+   "salario_max_texto": 3511.9
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-titular-na-faculdade-de-arquitetura-artes-comunicacao-e-design-de-bauru-sp": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "83f40870ac44",
+  "fisio_linhas": [],
+  "salario_max_texto": 25152.67,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na disciplina de Teoria do Conhecimento e Filosofia da Ciência (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 249/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 286,00",
+   "taxa_min": 286.0,
+   "taxa_max": 286.0,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {},
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-novos-concursos-para-professores-substitutos-no-campus-de-presidente-prudente-sp": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "3f1cd4c793bb",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Ciência da Computação, subárea de Sistemas de Computação (1 vaga)",
+    "Professor Substituto na área de Educação, subárea de Ensino-Aprendizagem (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 478/2026",
+    "EDITAL Nº 479/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "beneficios_total": 2000.02,
+   "jornada": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {},
+   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
+   "salario_min_texto": 1423.69,
+   "salario_max_texto": 3511.9
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-na-faculdade-de-odontologia-de-aracatuba-sp": {
+  "first_seen": "2026-11-04",
+  "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "f852266d29b2",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Odontologia, subárea de Clínica Odontológica (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 146/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "beneficios_total": 2000.02,
+   "jornada": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {},
+   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
+   "salario_min_texto": 2945.73,
    "salario_max_texto": 3511.9
   }
  }
