@@ -1,9 +1,9 @@
 {
- "gerado_em": "05/11/2026 14:57",
- "gerado_em_iso": "2026-11-05T14:57:19.937382-03:00",
+ "gerado_em": "05/11/2026 16:35",
+ "gerado_em_iso": "2026-11-05T16:35:20.493709-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
  "total_sp": 181,
- "total_brasil": 624,
+ "total_brasil": 631,
  "ia_ativa": true,
  "novos_ultimas_24h": 9,
  "encerrando_proximos_dias": 71,
@@ -4048,21 +4048,21 @@
    "cidade": "São Paulo",
    "lat": -23.5329,
    "lon": -46.6395,
-   "banca": "Fundação Vunesp",
+   "banca": "Polícia Militar do Estado de São Paulo (PM-SP)",
    "site_banca": "https://www.policiamilitar.sp.gov.br/",
    "link_edital": "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado#links",
    "arquivos_edital": [
     "EDITAL DP-4/321/26"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Estatutário",
-   "beneficios_gerais": "Adicional de insalubridade inclusos na remuneração",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Consultar edital",
    "jornada_geral": "Consultar edital",
-   "isencao": "Taxa de inscrição de R$ 110,00",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
    "faixa_salarial": "Consultar edital",
    "taxa_inscricao": "Consultar edital",
-   "taxa_min": 110.0,
-   "taxa_max": 110.0,
+   "taxa_min": null,
+   "taxa_max": null,
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Teste de Aptidão Física (TAF) · Avaliação Psicológica",
    "inscricao_status": {
@@ -4073,14 +4073,12 @@
     "aviso_texto": "Faltam 47 dias para encerrar"
    },
    "cargos_lista": [
-    "Aluno-Soldado PM (2.000 vagas)",
-    "Aluno-Soldado PM"
+    "Aluno-Soldado PM (2.000 vagas)"
    ],
    "cargos_salarios": {
-    "aluno soldado o": 5482.21,
-    "aluno soldado pm": 5482.21
+    "aluno soldado o": 5482.21
    },
-   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -4096,12 +4094,12 @@
      "salario_total": 5482.21,
      "salario_detalhe": "Bruto: R$ 5.482,21 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "Consultar edital",
-     "regime": "Estatutário",
+     "regime": "Consultar edital",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Aluno-Soldado PM), sem necessidade de curso técnico profissionalizante.",
-     "beneficios": "Adicional de insalubridade inclusos na remuneração",
+     "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação Vunesp): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Polícia Militar do Estado de São Paulo (PM-SP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Aluno-Soldado PM): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -4119,12 +4117,12 @@
      "salario_total": 5482.21,
      "salario_detalhe": "Bruto: R$ 5.482,21 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "Consultar edital",
-     "regime": "Estatutário",
+     "regime": "Consultar edital",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Aluno-Soldado PM), sem necessidade de curso técnico profissionalizante.",
-     "beneficios": "Adicional de insalubridade inclusos na remuneração",
+     "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Fundação Vunesp): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Polícia Militar do Estado de São Paulo (PM-SP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Aluno-Soldado PM): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -4135,20 +4133,20 @@
    "superior_itens": [],
    "links_provas_map": {
     "medio5k": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-vunesp",
+     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-policia-militar-do-estado-de-sao-paulo",
      "url_cargo": "https://www.pciconcursos.com.br/provas/aluno",
-     "url_banca": "https://www.pciconcursos.com.br/provas/vunesp",
+     "url_banca": "https://www.pciconcursos.com.br/provas/policia-militar-do-estado-de-sao-paulo",
      "cargo_busca": "Aluno",
-     "banca_busca": "VUNESP",
-     "label_combo": "Aluno · VUNESP"
+     "banca_busca": "Polícia Militar do Estado de São Paulo",
+     "label_combo": "Aluno · Polícia Militar do Estado de São Paulo"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-vunesp",
+     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-policia-militar-do-estado-de-sao-paulo",
      "url_cargo": "https://www.pciconcursos.com.br/provas/aluno",
-     "url_banca": "https://www.pciconcursos.com.br/provas/vunesp",
+     "url_banca": "https://www.pciconcursos.com.br/provas/policia-militar-do-estado-de-sao-paulo",
      "cargo_busca": "Aluno",
-     "banca_busca": "VUNESP",
-     "label_combo": "Aluno · VUNESP"
+     "banca_busca": "Polícia Militar do Estado de São Paulo",
+     "label_combo": "Aluno · Polícia Militar do Estado de São Paulo"
     }
    }
   },
@@ -15608,7 +15606,7 @@
    "cargos_salarios": {
     "professor titular no instituto de biociencias de botucatu sp oportunidade de carreira docente exige ded": 25261.98
    },
-   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -16603,7 +16601,7 @@
     "Professor Adjunto - Engenharia de Software - Sistema da Informação (1 vaga)"
    ],
    "cargos_salarios": {},
-   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -18066,7 +18064,7 @@
    "cargos_salarios": {
     "professor assistente de arquitetura e urbanismo em bauru sp oportunidade exige doutorado para atuacao em regime d": 16994.01
    },
-   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -25458,7 +25456,7 @@
    "cargos_salarios": {
     "medico na area de alergia e imunologia oportunidade": 5979.93
    },
-   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -31818,7 +31816,7 @@
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências (1 vaga)"
    ],
    "cargos_salarios": {},
-   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -32357,7 +32355,7 @@
     "Professor Substituto na área de Genética, subárea de Genética Vegetal (1 vaga)"
    ],
    "cargos_salarios": {},
-   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -34009,7 +34007,7 @@
    "cargos_salarios": {
     "analista administrativo academico": 2215.41
    },
-   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],
@@ -35114,7 +35112,7 @@
     "Psicopedagogo (CR)"
    ],
    "cargos_salarios": {},
-   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
    "novo": true,
    "fisio_linhas": [],

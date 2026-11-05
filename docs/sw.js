@@ -1,10 +1,12 @@
-const CACHE_NAME = "concursos-sp-v21";
+const CACHE_NAME = "concursos-sp-v22";
 const ASSETS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./icon-192.png",
-  "./icon-512.png"
+  "./icon-512.png",
+  "./apple-touch-icon.png",
+  "./favicon.ico"
 ];
 
 self.addEventListener("install", (event) => {

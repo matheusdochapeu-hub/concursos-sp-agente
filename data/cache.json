@@ -17597,7 +17597,7 @@
  },
  "https://www.pciconcursos.com.br/noticias/faculdade-sebrae-sp-abre-vaga-para-professor-adjunto-de-engenharia-de-software": {
   "first_seen": "2026-11-05",
-  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "48f5c2b09fef",
@@ -17631,7 +17631,7 @@
  },
  "https://www.pciconcursos.com.br/noticias/fundacao-santo-andre-sp-abre-concurso-para-analista-administrativo-academico": {
   "first_seen": "2026-11-05",
-  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "b897c4dc3ad4",
@@ -17667,10 +17667,10 @@
  },
  "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-abre-concurso-publico-para-medico-na-area-de-alergia-e-imunologia": {
   "first_seen": "2026-11-05",
-  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
   "is_baseline": false,
   "schema_version": 5,
-  "hash": "19e7f50eb264",
+  "hash": "5bac5f9e4fba",
   "fisio_linhas": [],
   "salario_max_texto": 5979.93,
   "tem_medio": false,
@@ -17703,10 +17703,10 @@
  },
  "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado": {
   "first_seen": "2026-11-05",
-  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
   "is_baseline": false,
   "schema_version": 5,
-  "hash": "b699b807ff6e",
+  "hash": "0c434a603986",
   "fisio_linhas": [],
   "salario_max_texto": 5482.21,
   "tem_medio": true,
@@ -17735,36 +17735,14 @@
    "faixa_salarial": "Consultar edital",
    "salario_min_texto": null,
    "salario_max_texto": null
-  },
-  "ia": {
-   "cidade": "São Paulo",
-   "banca": "Fundação Vunesp",
-   "data_prova": null,
-   "regime_geral": "Estatutário",
-   "beneficios": "Adicional de insalubridade inclusos na remuneração",
-   "isencao": "Taxa de inscrição de R$ 110,00",
-   "jornada_geral": null,
-   "resumo_conteudo_fisio": null,
-   "cargos": [
-    {
-     "nome": "Aluno-Soldado PM",
-     "escolaridade": "medio",
-     "vagas": "2.000 vagas",
-     "salario": 5482.21,
-     "carga_horaria": null,
-     "regime": "Estatutário",
-     "requisitos": "Ensino médio completo, idade entre 17 e 30 anos, estatura mínima de 1,55 m para mulheres e de 1,60 m para homens"
-    }
-   ]
-  },
-  "ia_model": "gemini-3.5-flash-lite"
+  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-pontal-sp-abre-processo-seletivo-para-professores-e-psicopedagogos": {
   "first_seen": "2026-11-05",
-  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
   "is_baseline": false,
   "schema_version": 5,
-  "hash": "b24d6d92fb10",
+  "hash": "da01c1e276e8",
   "fisio_linhas": [],
   "salario_max_texto": null,
   "tem_medio": false,
@@ -17804,7 +17782,7 @@
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-de-arquitetura-e-urbanismo-em-bauru-sp": {
   "first_seen": "2026-11-05",
-  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "8b420aa34e80",
@@ -17840,7 +17818,7 @@
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-na-faculdade-de-ciencias-e-letras-de-assis-sp": {
   "first_seen": "2026-11-05",
-  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
   "is_baseline": false,
   "schema_version": 5,
   "hash": "5c724e9a8b65",
@@ -17874,10 +17852,10 @@
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-no-instituto-de-biociencias-de-botucatu-sp": {
   "first_seen": "2026-11-05",
-  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
   "is_baseline": false,
   "schema_version": 5,
-  "hash": "edc4ea4d385e",
+  "hash": "f074c709e485",
   "fisio_linhas": [],
   "salario_max_texto": 25261.98,
   "tem_medio": false,
@@ -17910,10 +17888,10 @@
  },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-genetica-em-ilha-solteira-sp": {
   "first_seen": "2026-11-05",
-  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
   "is_baseline": false,
   "schema_version": 5,
-  "hash": "54a0e0940b7e",
+  "hash": "a3f4b775a180",
   "fisio_linhas": [],
   "salario_max_texto": 3511.9,
   "tem_medio": false,

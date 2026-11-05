@@ -764,8 +764,9 @@ def render_html(
 <meta name="apple-mobile-web-app-title" content="Concursos">
 <meta name="description" content="Concursos — Painel diário de editais no Brasil e SP, Fisioterapia, Nível Médio/Técnico, Comparador de Concursos e Provas Anteriores por Banca e Cargo.">
 <link rel="manifest" href="./manifest.webmanifest">
-<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
-<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png?v=3.0.0">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png?v=3.0.0">
+<link rel="shortcut icon" href="./favicon.ico?v=3.0.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -845,6 +846,36 @@ def render_html(
     align-items: center;
     gap: 18px;
     flex-wrap: wrap;
+  }}
+  .brand-header-wrap {{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 4px;
+  }}
+  .brand-logo-img {{
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35), 0 0 0 2px rgba(254, 221, 0, 0.6);
+    border: 1.5px solid rgba(255, 255, 255, 0.85);
+    background: #002776;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }}
+  .brand-logo-img:hover {{
+    transform: scale(1.06);
+  }}
+  .login-logo-img {{
+    width: 82px;
+    height: 82px;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0, 39, 118, 0.28), 0 0 0 3px rgba(0, 92, 36, 0.15);
+    border: 2px solid #ffffff;
+    margin-bottom: 12px;
+    background: #002776;
   }}
   .brand-badge {{
     display: inline-flex;
@@ -2563,6 +2594,8 @@ def render_html(
       width: 100% !important;
       max-width: 100% !important;
     }}
+    .brand-header-wrap {{ gap: 10px !important; margin-bottom: 6px !important; }}
+    .brand-logo-img {{ width: 50px !important; height: 50px !important; border-radius: 13px !important; }}
     h1 {{ font-size: 1.65rem !important; line-height: 1.15 !important; }}
     .brand-badge {{ font-size: 0.66rem !important; padding: 3px 10px !important; }}
     .meta {{ font-size: 0.8rem !important; line-height: 1.5 !important; }}
@@ -2793,6 +2826,7 @@ def render_html(
   <!-- Tela de Login Obrigatório com Conta Google -->
   <div id="loginGateOverlay" class="login-gate-bg" role="dialog" aria-modal="true" aria-labelledby="tituloLoginGoogle">
     <div class="login-card">
+      <img src="./icon-192.png?v=3.0.0" alt="Mascote Concursos" class="login-logo-img" />
       <div class="login-badge">🔒 Acesso Exclusivo Autenticado</div>
       <h2 id="tituloLoginGoogle">Entrar no Concursos</h2>
       <p>
@@ -2843,9 +2877,14 @@ def render_html(
   <header class="app-bar">
     <div class="container">
       <div class="bar-row">
+        <div class="brand-header-wrap">
+          <img src="./icon-192.png?v=3.0.0" alt="Mascote Concursos" class="brand-logo-img" />
+          <div>
+            <div class="brand-badge">🇧🇷 Monitoramento Diário de Editais · SP &amp; Brasil</div>
+            <h1>Concursos</h1>
+          </div>
+        </div>
         <div>
-          <div class="brand-badge">🇧🇷 Monitoramento Diário de Editais · SP &amp; Brasil</div>
-          <h1>Concursos</h1>
           <div class="meta">
             Atualizado em <b>{gerado_em}</b> (Brasília) · <b>{total_sp}</b> editais vigentes em SP e <b>{len(catalogo_brasil)}</b> no Brasil · Fonte:
             <a href="{safe_url(listing_url)}" target="_blank" rel="noopener noreferrer">PCI Concursos</a>

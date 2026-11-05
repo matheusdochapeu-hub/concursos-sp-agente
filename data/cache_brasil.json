@@ -15201,6 +15201,56 @@
   "salario_min": 3412.5,
   "salario_max": 7046.62
  },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-anchieta-es-abre-concurso-publico-com-salarios-de-ate-14000": {
+  "cargos_li": [
+   "Agente de Combate a Endemias (cadastro de reserva)",
+   "Técnico de Enfermagem (5 vagas e cadastro de reserva)",
+   "Técnico de Enfermagem Plantonista (1 vaga e cadastro de reserva)",
+   "Técnico de Imobilização Ortopédica (1 vaga e cadastro de reserva)",
+   "Técnico de Laboratório (2 vagas e cadastro de reserva)",
+   "Técnico em Saúde Bucal (2 vagas e cadastro de reserva)",
+   "Dentista/Área 20H (1 vaga e cadastro de reserva)",
+   "Dentista/Área 40H (cadastro de reserva)",
+   "Enfermeiro (3 vagas e cadastro de reserva)",
+   "Enfermeiro Plantonista (1 vaga e cadastro de reserva)",
+   "Farmacêutico (2 vagas e cadastro de reserva)",
+   "Farmacêutico Plantonista (1 vaga e cadastro de reserva)",
+   "Médico Especialista/Área - Cardiologia (1 vaga e cadastro de reserva)",
+   "Médico Clínico (2 vagas e cadastro de reserva)",
+   "Médico Especialista/Área - Ginecologia (1 vaga e cadastro de reserva)",
+   "Médico Especialista/Área - Ortopedia (1 vaga e cadastro de reserva)",
+   "Médico Especialista/Área - Pediatria (1 vaga e cadastro de reserva)"
+  ],
+  "data_prova": "28/02/2027",
+  "regime": "Consultar edital",
+  "beneficios": "Consultar edital",
+  "beneficios_total": 0.0,
+  "jornada": "40 horas semanais",
+  "isencao": "Os pedidos de isenção poderão ser feitos de 18 a 19 de novembro de 2026, nas condições previstas no edital.",
+  "taxa_inscricao": "Consultar edital",
+  "taxa_min": null,
+  "taxa_max": null,
+  "etapas_prova": "Prova Objetiva",
+  "cargos_salarios": {
+   "dentista area 20h": 14000.0,
+   "dentista area 40h": 14000.0,
+   "farmaceutico": 14000.0,
+   "farmaceutico plantonista": 14000.0,
+   "medico especialista area cardiologia": 14000.0,
+   "medico clinico": 14000.0,
+   "medico especialista area ginecologia": 14000.0,
+   "medico especialista area ortopedia": 14000.0,
+   "medico especialista area pediatria": 14000.0
+  },
+  "nome_banca": "Prefeitura Municipal de Anchieta",
+  "link_banca": "https://www.anchieta.es.gov.br/",
+  "arquivos_edital": [
+   "EDITAL DE ABERTURA Nº 003/2026"
+  ],
+  "faixa_salarial": "R$ 3.500,00 a R$ 14.000,00",
+  "salario_min": 3500.0,
+  "salario_max": 14000.0
+ },
  "https://www.pciconcursos.com.br/noticias/camara-de-quatro-barras-pr-reabre-inscricoes-para-concurso-publico": {
   "cargos_li": [
    "Advogado (2 vagas)",
@@ -15431,6 +15481,37 @@
   "faixa_salarial": "R$ 2.437,15 a R$ 5.615,50",
   "salario_min": 2437.15,
   "salario_max": 5615.5
+ },
+ "https://www.pciconcursos.com.br/noticias/camara-de-santa-helena-de-goias-go-abre-concurso-publico-com-salarios-de-ate-3386": {
+  "cargos_li": [
+   "Motorista (1 vaga)",
+   "Vigilante (2 vagas)",
+   "Agente Administrativo (4 vagas)",
+   "Técnico Legislativo (8 vagas)",
+   "Analista Legislativo (10 vagas)"
+  ],
+  "data_prova": "21/02/2027",
+  "regime": "Estatutário",
+  "beneficios": "Consultar edital",
+  "beneficios_total": 0.0,
+  "jornada": "40 horas semanais",
+  "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+  "taxa_inscricao": "Consultar edital",
+  "taxa_min": null,
+  "taxa_max": null,
+  "etapas_prova": "Prova Objetiva",
+  "cargos_salarios": {
+   "motorista": 2002.58,
+   "analista legislativo": 3386.33
+  },
+  "nome_banca": "Câmara Municipal de Santa Helena de Goiás",
+  "link_banca": "https://www.legislativoshego.go.gov.br/",
+  "arquivos_edital": [
+   "EDITAL 01"
+  ],
+  "faixa_salarial": "R$ 2.002,58 a R$ 3.386,33",
+  "salario_min": 2002.58,
+  "salario_max": 3386.33
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-caceres-mt-abre-processo-seletivo-com-salarios-de-ate-7226": {
   "cargos_li": [
