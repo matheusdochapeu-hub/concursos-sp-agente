@@ -1499,40 +1499,6 @@
   "salario_max": 8991.96,
   "faixa_salarial": "R$ 2.226,55 a R$ 8.991,96"
  },
- "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-selecoes-para-o-hospital-de-clinicas-e-hospital-estadual-sumare": {
-  "first_seen": "2026-10-21",
-  "hash": "da507b9adf5b",
-  "fisio_linhas": [],
-  "salario_max_texto": 4830.0,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Assistente Social (1 vaga)",
-    "Jardineiro (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 124/2026",
-    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 125/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/funcamp",
-   "link_banca": "https://www.funcamp.unicamp.br/",
-   "nome_banca": "Fundação de Desenvolvimento da Unicamp (FUNCAMP)",
-   "data_prova": "Consultar edital",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital",
-   "jornada": "Consultar edital",
-   "isencao": "Não haverá isenção parcial ou total.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-analista-de-pesquisa-clinica-junior-no-hemocentro": {
   "first_seen": "2026-10-21",
   "hash": "1fb63fff6e28",
@@ -4567,56 +4533,6 @@
    "etapas_prova": "Prova Objetiva"
   }
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-orlandia-sp-abre-processo-seletivo-para-a-area-da-educacao": {
-  "first_seen": "2026-10-21",
-  "hash": "8668de0ce6e9",
-  "fisio_linhas": [],
-  "salario_max_texto": 4221.0,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Acompanhante Educacional Especializado",
-    "Professor de Artes - PEB II",
-    "Professor de Ciências - PEB II",
-    "Professor de Educação Especial - PEB II",
-    "Professor de Educação Física - PEB II",
-    "Professor de Ensino Fundamental - PEB I",
-    "Professor de Ensino Infantil - PEB I",
-    "Professor de Geografia - PEB II",
-    "Professor de História - PEB II",
-    "Professor de Inglês - PEB II",
-    "Professor de Matemática - PEB II",
-    "Professor de Música - PEB II",
-    "Professor de Português - PEB II"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA Nº 01.01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/orlandia-sp",
-   "link_banca": "https://www.orlandia.sp.gov.br/novo",
-   "nome_banca": "Prefeitura do Município de Orlândia",
-   "data_prova": "29/11/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital",
-   "jornada": "25 a 40 horas semanais",
-   "isencao": "Candidatos inscritos no Cadastro Único que atendam aos critérios de renda do edital e doadores de medula óssea cadastrados no Redome poderão solicitar isenção de 21 a 25 de outubro de 2026.",
-   "salario_min": 3520.36,
-   "salario_max": 4221.0,
-   "faixa_salarial": "R$ 3.520,36 a R$ 4.221,00",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 3520.36,
-  "salario_max": 4221.0,
-  "faixa_salarial": "R$ 3.520,36 a R$ 4.221,00"
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632": {
   "first_seen": "2026-10-21",
   "hash": "433931beb422",
@@ -6500,50 +6416,6 @@
   "salario_max": 3511.9,
   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
  },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-publicos-para-professores-substitutos-em-araraquara-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "b185af335a1c",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Francesa\" e \"Língua Francesa IV\" (1 vaga)",
-    "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Italiana: conversação\" e \"Língua Italiana: gramática através de textos literários\" (1 vaga)",
-    "Professor Substituto na área de Educação, subárea de Ensino-Aprendizagem (1 vaga)",
-    "Professor Substituto na área de Educação, subárea de Fundamentos da Educação (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 294/2026",
-    "EDITAL Nº 295/2026",
-    "EDITAL Nº 303/2026",
-    "EDITAL Nº 304/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/araraquara-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2106.04,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2106.04,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
- },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-letras-em-sao-jose-do-rio-preto-sp": {
   "first_seen": "2026-10-21",
   "hash": "f49779b355b9",
@@ -6567,44 +6439,6 @@
    "regime": "Consultar edital",
    "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
    "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2945.73,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2945.73,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-com-vaga-para-professor-substituto-em-sao-jose-do-rio-preto-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "6c7df53d0cf6",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Ciência e Tecnologia de Alimentos, subárea de Engenharia de Alimentos (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 352/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/sao-jose-do-rio-preto-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "12 horas semanais",
    "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
    "salario_min": 2945.73,
    "salario_max": 3511.9,
@@ -7172,38 +7006,6 @@
    "taxa_inscricao": "R$ 345,78",
    "taxa_min": 345.78,
    "taxa_max": 345.78,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
- "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-professor-doutor-na-faculdade-de-medicina": {
-  "first_seen": "2026-10-21",
-  "hash": "79ea8e7d6bb4",
-  "fisio_linhas": [],
-  "salario_max_texto": 7477.48,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Doutor na Disciplina de Transplante de Órgãos do Aparelho Digestivo (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 199/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/sao-paulo-sp",
-   "link_banca": "https://www5.usp.br/",
-   "nome_banca": "Universidade de São Paulo (USP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Consultar edital",
-   "jornada": "Consultar edital",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva"
   }
@@ -9045,39 +8847,6 @@
    ]
   },
   "ia_model": "gemini-3.5-flash-lite"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmital-sp-abre-processo-seletivo-para-monitores": {
-  "first_seen": "2026-10-26",
-  "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "e46adca9c6f5",
-  "fisio_linhas": [],
-  "salario_max_texto": 1621.0,
-  "tem_medio": true,
-  "detalhes": {
-   "cargos_li": [
-    "Monitor de Creche (5 vagas + CR)",
-    "Monitor Escolar (10 vagas + CR)",
-    "Monitor de Transporte (10 vagas + CR)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/202"
-   ],
-   "link_banca": "https://www.palmital.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Palmital",
-   "data_prova": "15/11/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Vale-alimentação · Vale-alimentação de R$ 750,00.",
-   "jornada": "40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 750.0,
-   "etapas_prova": "Prova Objetiva"
-  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-retifica-edital-de-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-26",
@@ -12250,40 +12019,6 @@
    "taxa_min": null,
    "taxa_max": null,
    "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-aracoiaba-da-serra-sp-abre-vaga-para-motorista-de-transporte-coletivo": {
-  "first_seen": "2026-10-29",
-  "first_seen_ts": "2026-10-29T13:50:32.961533-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "1ac292373747",
-  "fisio_linhas": [],
-  "salario_max_texto": 2133.3,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [
-    "Motorista (Transporte Coletivo) (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 010/2026"
-   ],
-   "link_banca": "https://aracoiabadaserra.flowdocs.com.br/public/assinaturas/7889D81B6E574AD39B96938F5A94CE1E",
-   "nome_banca": "Prefeitura Municipal de Araçoiaba da Serra",
-   "data_prova": "15/11/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Vale-alimentação no valor de R$ 980,00. · Vale-alimentação de R$ 980,00.",
-   "jornada": "40 horas semanais",
-   "isencao": "Não haverá cobrança de taxa de inscrição.",
-   "faixa_salarial": "Consultar edital",
-   "salario_min_texto": null,
-   "salario_max_texto": null,
-   "cargos_salarios": {},
-   "taxa_inscricao": "Gratuita (sem taxa de inscrição)",
-   "taxa_min": 0.0,
-   "taxa_max": 0.0,
-   "beneficios_total": 980.0,
    "etapas_prova": "Prova Objetiva"
   }
  },
@@ -17857,6 +17592,353 @@
    "cargos_salarios": {},
    "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
    "salario_min_texto": 2945.73,
+   "salario_max_texto": 3511.9
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/faculdade-sebrae-sp-abre-vaga-para-professor-adjunto-de-engenharia-de-software": {
+  "first_seen": "2026-11-05",
+  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "48f5c2b09fef",
+  "fisio_linhas": [],
+  "salario_max_texto": 19522.83,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Adjunto - Engenharia de Software - Sistema da Informação (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "COMUNICADO 049/2026"
+   ],
+   "link_banca": "https://sebrae.com.br/sp/sobre-nos/trabalhe-conosco/vagas-efetivas-2026",
+   "nome_banca": "Faculdade Sebrae",
+   "data_prova": "16/11/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Auxílio-alimentação e/ou refeição, auxílio-creche e vale-transporte, conforme normas internas",
+   "beneficios_total": 0.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Teste de Aptidão Física (TAF)",
+   "cargos_salarios": {},
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/fundacao-santo-andre-sp-abre-concurso-para-analista-administrativo-academico": {
+  "first_seen": "2026-11-05",
+  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "b897c4dc3ad4",
+  "fisio_linhas": [],
+  "salario_max_texto": 2215.41,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Analista Administrativo Acadêmico (1 vaga e cadastro de reserva)"
+   ],
+   "arquivos_edital": [
+    "EDITAL 014/2026"
+   ],
+   "link_banca": "https://www.fsa.br/concursos/",
+   "nome_banca": "Fundação Santo André (FSA)",
+   "data_prova": "27/01/2027",
+   "regime": "CLT (Celetista)",
+   "beneficios": "Auxílio-saúde e vales · Auxílio-saúde, vale-alimentação, vale-refeição e vale-transporte",
+   "beneficios_total": 0.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Doadores de medula óssea e candidatos inscritos no CadÚnico que atendam aos critérios do edital podem solicitar isenção pelo e-mail concursos@fsa.br até 9 de dezembro de 2026.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Prática",
+   "cargos_salarios": {
+    "analista administrativo academico": 2215.41
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-abre-concurso-publico-para-medico-na-area-de-alergia-e-imunologia": {
+  "first_seen": "2026-11-05",
+  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "19e7f50eb264",
+  "fisio_linhas": [],
+  "salario_max_texto": 5979.93,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Médico I - Alergia e Imunologia (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 44/2026"
+   ],
+   "link_banca": "https://www.hcribeirao.sp.gov.br/hcfmrp",
+   "nome_banca": null,
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "20 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 126,79. Será possível solicitar isenção ou redução da taxa até as 23h59 do dia 11 de novembro de 2026.",
+   "taxa_inscricao": "R$ 126,79",
+   "taxa_min": 126.79,
+   "taxa_max": 126.79,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Avaliação de Títulos",
+   "cargos_salarios": {
+    "medico na area de alergia e imunologia oportunidade": 5979.93
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado": {
+  "first_seen": "2026-11-05",
+  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "b699b807ff6e",
+  "fisio_linhas": [],
+  "salario_max_texto": 5482.21,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Aluno-Soldado PM (2.000 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL DP-4/321/26"
+   ],
+   "link_banca": "https://www.policiamilitar.sp.gov.br/",
+   "nome_banca": "Polícia Militar do Estado de São Paulo (PM-SP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "Consultar edital",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Teste de Aptidão Física (TAF) · Avaliação Psicológica",
+   "cargos_salarios": {
+    "aluno soldado o": 5482.21
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  },
+  "ia": {
+   "cidade": "São Paulo",
+   "banca": "Fundação Vunesp",
+   "data_prova": null,
+   "regime_geral": "Estatutário",
+   "beneficios": "Adicional de insalubridade inclusos na remuneração",
+   "isencao": "Taxa de inscrição de R$ 110,00",
+   "jornada_geral": null,
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Aluno-Soldado PM",
+     "escolaridade": "medio",
+     "vagas": "2.000 vagas",
+     "salario": 5482.21,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino médio completo, idade entre 17 e 30 anos, estatura mínima de 1,55 m para mulheres e de 1,60 m para homens"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-pontal-sp-abre-processo-seletivo-para-professores-e-psicopedagogos": {
+  "first_seen": "2026-11-05",
+  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "b24d6d92fb10",
+  "fisio_linhas": [],
+  "salario_max_texto": null,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor de Educação Básica I (CR)",
+    "Professor de Educação Básica II - Arte (CR)",
+    "Professor de Educação Básica II - Ciências (CR)",
+    "Professor de Educação Básica II - Educação Física (CR)",
+    "Professor de Educação Básica II - Geografia (CR)",
+    "Professor de Educação Básica II - História (CR)",
+    "Professor de Educação Básica II - Língua Inglesa (CR)",
+    "Professor de Educação Básica II - Língua Portuguesa (CR)",
+    "Professor de Educação Básica II - Matemática (CR)",
+    "Psicopedagogo (CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_banca": "https://www.pontal.sp.gov.br/",
+   "nome_banca": "Prefeitura Municipal de Pontal",
+   "data_prova": "13/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "Consultar edital",
+   "isencao": "A isenção poderá ser solicitada de 5 a 7 de novembro de 2026 por candidatos que se enquadrem nos critérios.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {},
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-de-arquitetura-e-urbanismo-em-bauru-sp": {
+  "first_seen": "2026-11-05",
+  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "8b420aa34e80",
+  "fisio_linhas": [],
+  "salario_max_texto": 16994.01,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Assistente na área de Arquitetura e Urbanismo (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 250/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "40 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 286,00, com possibilidade de redução de 50% para candidatos que atendam aos requisitos do edital.",
+   "taxa_inscricao": "R$ 286,00",
+   "taxa_min": 286.0,
+   "taxa_max": 286.0,
+   "etapas_prova": "Prova Objetiva · Prova Prática · Avaliação de Títulos",
+   "cargos_salarios": {
+    "professor assistente de arquitetura e urbanismo em bauru sp oportunidade exige doutorado para atuacao em regime d": 16994.01
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-na-faculdade-de-ciencias-e-letras-de-assis-sp": {
+  "first_seen": "2026-11-05",
+  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "5c724e9a8b65",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 417/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "beneficios_total": 2000.02,
+   "jornada": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "etapas_prova": "Prova Objetiva",
+   "cargos_salarios": {},
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
+   "salario_min_texto": 2106.04,
+   "salario_max_texto": 3511.9
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-no-instituto-de-biociencias-de-botucatu-sp": {
+  "first_seen": "2026-11-05",
+  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "edc4ea4d385e",
+  "fisio_linhas": [],
+  "salario_max_texto": 25261.98,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Titular na disciplina de Metaheurísticas e Otimização Multiobjetivo, junto ao Departamento de Biodiversidade e Bioestatística (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 804/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 286,00",
+   "taxa_min": 286.0,
+   "taxa_max": 286.0,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {
+    "professor titular no instituto de biociencias de botucatu sp oportunidade de carreira docente exige ded": 25261.98
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-genetica-em-ilha-solteira-sp": {
+  "first_seen": "2026-11-05",
+  "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "54a0e0940b7e",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Genética, subárea de Genética Vegetal (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 269/2026"
+   ],
+   "link_banca": "https://www.unesp.br/",
+   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "beneficios_total": 2000.02,
+   "jornada": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "etapas_prova": "Prova Objetiva",
+   "cargos_salarios": {},
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
+   "salario_min_texto": 2106.04,
    "salario_max_texto": 3511.9
   }
  }

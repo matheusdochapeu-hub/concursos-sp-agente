@@ -1,12 +1,12 @@
 {
- "gerado_em": "04/11/2026 14:55",
- "gerado_em_iso": "2026-11-04T14:55:21.475655-03:00",
+ "gerado_em": "05/11/2026 14:57",
+ "gerado_em_iso": "2026-11-05T14:57:19.937382-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
- "total_sp": 179,
- "total_brasil": 609,
+ "total_sp": 181,
+ "total_brasil": 624,
  "ia_ativa": true,
- "novos_ultimas_24h": 15,
- "encerrando_proximos_dias": 73,
+ "novos_ultimas_24h": 9,
+ "encerrando_proximos_dias": 71,
  "fisioterapia": [
   {
    "url": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional",
@@ -43,10 +43,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
@@ -173,10 +173,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Medicina - Auditoria Médica, São Paulo - SP (1 vaga)",
@@ -332,10 +332,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Enfermagem (10 vagas, sendo 9 de ampla concorrência e 1 reservada para pessoas com deficiência)",
@@ -462,10 +462,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-15",
-    "dias_restantes": 41,
+    "dias_restantes": 40,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 41 dias para encerrar"
+    "aviso_texto": "Faltam 40 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante Geral (CR)",
@@ -695,7 +695,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga)"
    ],
@@ -868,10 +868,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 36,
+    "dias_restantes": 35,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 36 dias para encerrar"
+    "aviso_texto": "Faltam 35 dias para encerrar"
    },
    "cargos_lista": [
     "Apreensor de Animais (CR)",
@@ -1217,10 +1217,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 29,
+    "dias_restantes": 28,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 29 dias para encerrar"
+    "aviso_texto": "Faltam 28 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cultura (CR)",
@@ -1420,10 +1420,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Agente de Limpeza Urbana (Roçador) (1 vaga)",
@@ -1653,10 +1653,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Auxiliar Folguista (Casa Lar) (1 vaga)",
@@ -1907,10 +1907,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Ajudante de Pedreiro (1 vaga)",
@@ -2269,10 +2269,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Motorista (11 vagas CR)",
@@ -2500,10 +2500,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (2 vagas + CR)",
@@ -2791,10 +2791,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Auxiliar de Consultório Dentário/SUS",
@@ -3031,10 +3031,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Diversos (1 vaga)",
@@ -3245,10 +3245,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Fisioterapeuta (1 vaga)",
@@ -3378,10 +3378,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Artífice de Obras e Serviços Públicos (CR)",
@@ -3782,10 +3782,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Disciplinas: Prática Supervisionada em Fisioterapia na Saúde da Mulher, Prática supervisionada em Fisioterapia Neurológica, Prática Supervisionada em Fisioterapia na Atenção Primária à Saúde, Prática Supervisionada em Fisioterapia Desportiva, Fisioterapia na Saúde da Mulher e Fisioterapia Desportiva)",
@@ -3914,10 +3914,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 36,
+    "dias_restantes": 35,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 36 dias para encerrar"
+    "aviso_texto": "Faltam 35 dias para encerrar"
    },
    "cargos_lista": [
     "Oficial de Justiça (132 vagas e cadastro de reserva)",
@@ -4034,6 +4034,125 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado",
+   "orgao": "PM - Polícia Militar do Estado de São Paulo",
+   "titulo": "Polícia Militar - SP abre 2.000 vagas para Aluno-Soldado",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "2.000 vagas até R$ 5.482,21",
+   "cargos_resumo": "Aluno-Soldado PM",
+   "niveis": "Ensino Médio",
+   "salario_max_listagem": 5482.21,
+   "salario_min_listagem": null,
+   "inscricao_ate": "09/11 a 22/12/2026",
+   "cidade": "São Paulo",
+   "lat": -23.5329,
+   "lon": -46.6395,
+   "banca": "Fundação Vunesp",
+   "site_banca": "https://www.policiamilitar.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado#links",
+   "arquivos_edital": [
+    "EDITAL DP-4/321/26"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Estatutário",
+   "beneficios_gerais": "Adicional de insalubridade inclusos na remuneração",
+   "jornada_geral": "Consultar edital",
+   "isencao": "Taxa de inscrição de R$ 110,00",
+   "faixa_salarial": "Consultar edital",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": 110.0,
+   "taxa_max": 110.0,
+   "beneficios_total": 0.0,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Teste de Aptidão Física (TAF) · Avaliação Psicológica",
+   "inscricao_status": {
+    "data_fim_iso": "2026-12-22",
+    "dias_restantes": 47,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 47 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Aluno-Soldado PM (2.000 vagas)",
+    "Aluno-Soldado PM"
+   ],
+   "cargos_salarios": {
+    "aluno soldado o": 5482.21,
+    "aluno soldado pm": 5482.21
+   },
+   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [
+    {
+     "nome": "Aluno-Soldado PM",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 5482.21,
+     "salario_bruto": 5482.21,
+     "salario_total": 5482.21,
+     "salario_detalhe": "Bruto: R$ 5.482,21 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "Consultar edital",
+     "regime": "Estatutário",
+     "escolaridade_tipo": "medio",
+     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Aluno-Soldado PM), sem necessidade de curso técnico profissionalizante.",
+     "beneficios": "Adicional de insalubridade inclusos na remuneração",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Fundação Vunesp): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Aluno-Soldado PM): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "medio_outros": [
+    {
+     "nome": "Aluno-Soldado PM",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": 5482.21,
+     "salario_bruto": 5482.21,
+     "salario_total": 5482.21,
+     "salario_detalhe": "Bruto: R$ 5.482,21 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "Consultar edital",
+     "regime": "Estatutário",
+     "escolaridade_tipo": "medio",
+     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Aluno-Soldado PM), sem necessidade de curso técnico profissionalizante.",
+     "beneficios": "Adicional de insalubridade inclusos na remuneração",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Fundação Vunesp): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Aluno-Soldado PM): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "salario_max": 5482.21,
+   "superior_itens": [],
+   "links_provas_map": {
+    "medio5k": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-vunesp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/aluno",
+     "url_banca": "https://www.pciconcursos.com.br/provas/vunesp",
+     "cargo_busca": "Aluno",
+     "banca_busca": "VUNESP",
+     "label_combo": "Aluno · VUNESP"
+    },
+    "medio_todos": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-vunesp",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/aluno",
+     "url_banca": "https://www.pciconcursos.com.br/provas/vunesp",
+     "cargo_busca": "Aluno",
+     "banca_busca": "VUNESP",
+     "label_combo": "Aluno · VUNESP"
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/camara-de-paraguacu-paulista-sp-abre-concurso-publico-com-salarios-de-ate-11065",
    "orgao": "Câmara da Estância Turística de Paraguaçu Paulista",
    "titulo": "Câmara de Paraguaçu Paulista - SP abre concurso público com salários de até R$ 11.065,27",
@@ -4067,10 +4186,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Agente Operacional",
@@ -4224,10 +4343,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Secretário (1 vaga)",
@@ -4310,10 +4429,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (6 vagas + CR)",
@@ -4493,10 +4612,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (1 vaga + CR)",
@@ -4631,10 +4750,10 @@
    "etapas_prova": "Prova Objetiva · Teste de Aptidão Física (TAF)",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Guarda Municipal (2 vagas + CR)"
@@ -4717,10 +4836,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Gerais (1 vaga)",
@@ -4862,10 +4981,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Merendeira (3 vagas)",
@@ -5071,10 +5190,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Técnico de Enfermagem (1 vaga)"
@@ -5156,10 +5275,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Agente de Cemitério (1 vaga)",
@@ -5306,10 +5425,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos (CR)",
@@ -5504,10 +5623,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Escriturário (5 vagas + CR)",
@@ -5645,10 +5764,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 36,
+    "dias_restantes": 35,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 36 dias para encerrar"
+    "aviso_texto": "Faltam 35 dias para encerrar"
    },
    "cargos_lista": [
     "Apreensor de Animais (CR)",
@@ -5993,10 +6112,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Agente de Contratações e Licitações (cadastro de reserva)",
@@ -6145,10 +6264,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-07",
-    "dias_restantes": 33,
+    "dias_restantes": 32,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 33 dias para encerrar"
+    "aviso_texto": "Faltam 32 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista (cadastro de reserva)",
@@ -6179,7 +6298,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -6308,10 +6427,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -6457,10 +6576,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Médico do Trabalho (CR)",
@@ -6590,10 +6709,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-15",
-    "dias_restantes": 41,
+    "dias_restantes": 40,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 41 dias para encerrar"
+    "aviso_texto": "Faltam 40 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente de Administração (1 vaga)",
@@ -6719,10 +6838,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-15",
-    "dias_restantes": 41,
+    "dias_restantes": 40,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 41 dias para encerrar"
+    "aviso_texto": "Faltam 40 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante Geral (CR)",
@@ -6952,7 +7071,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga)"
    ],
@@ -7125,10 +7244,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Serviço Educacional I - Merendeira",
@@ -7275,10 +7394,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 29,
+    "dias_restantes": 28,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 29 dias para encerrar"
+    "aviso_texto": "Faltam 28 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cultura (CR)",
@@ -7479,10 +7598,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização de Trânsito",
@@ -7704,10 +7823,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Auxiliar Folguista (Casa Lar) (1 vaga)",
@@ -7959,10 +8078,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -8036,7 +8155,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -8152,10 +8271,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Carpinteiro (CR)",
@@ -8349,10 +8468,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-30",
-    "dias_restantes": 26,
+    "dias_restantes": 25,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 26 dias para encerrar"
+    "aviso_texto": "Faltam 25 dias para encerrar"
    },
    "cargos_lista": [
     "Operador de Serviços Públicos - Lavador (1 vaga)",
@@ -8572,10 +8691,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática · Prova Discursiva/Redação · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (1 vaga)",
@@ -8609,7 +8728,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -8720,10 +8839,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Conservação de Vias Permanentes (2 vagas)",
@@ -8965,10 +9084,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira (1 vaga)",
@@ -9133,10 +9252,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira",
@@ -9154,7 +9273,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -9262,10 +9381,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde, área da Comunidade I",
@@ -9445,10 +9564,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Auxiliar de Consultório Dentário/SUS",
@@ -9685,10 +9804,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Diversos (1 vaga)",
@@ -9899,10 +10018,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Cozinheiro",
@@ -10035,10 +10154,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 29,
+    "dias_restantes": 28,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 29 dias para encerrar"
+    "aviso_texto": "Faltam 28 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Fiscal Tributário (cadastro de reserva)",
@@ -10078,7 +10197,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -10206,10 +10325,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Monitor Escolar",
@@ -10353,10 +10472,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Segurança Escolar (1 vaga)",
@@ -10543,10 +10662,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante Geral (1 vaga)",
@@ -10769,10 +10888,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
-    "dias_restantes": 64,
+    "dias_restantes": 63,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 64 dias para encerrar"
+    "aviso_texto": "Faltam 63 dias para encerrar"
    },
    "cargos_lista": [
     "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação (1 vaga)",
@@ -10910,10 +11029,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar Odontológico (Auxiliar de Consultório Dentário) (1 vaga)",
@@ -10941,7 +11060,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -11050,10 +11169,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Técnico de Enfermagem (1 vaga)",
@@ -11168,10 +11287,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Bibliotecário (1 vaga e cadastro de reserva)",
@@ -11288,10 +11407,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Motorista (Cadastro de reserva)",
@@ -11439,10 +11558,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Motorista (11 vagas CR)",
@@ -11670,10 +11789,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Motorista de Veículos Pesados (1 vaga)",
@@ -11847,10 +11966,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Profissional de Apoio I",
@@ -11933,10 +12052,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Analista de Sistemas",
@@ -12162,10 +12281,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Agente de Limpeza Urbana (Roçador) (1 vaga)",
@@ -12395,10 +12514,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (2 vagas + CR)",
@@ -12682,10 +12801,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Desenvolvimento Infantil (5 vagas)",
@@ -12814,10 +12933,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Inspetor de Alunos (5 vagas + CR)",
@@ -12951,10 +13070,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde, PSF Centro (1 vaga + CR)",
@@ -13039,10 +13158,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Guarda Civil Municipal de 3ª Classe, masculino (24 vagas + CR)",
@@ -13125,10 +13244,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Artífice de Obras e Serviços Públicos (CR)",
@@ -13528,10 +13647,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Ajudante de Pedreiro (1 vaga)",
@@ -13890,10 +14009,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Agente de Suporte ao Atendimento da Criança (30 vagas + CR)"
@@ -13975,10 +14094,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio Escolar (44 vagas)",
@@ -14061,10 +14180,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Auxiliar Administrativo (Carapicuíba) (5 vagas)",
@@ -14197,10 +14316,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar Administrativo I (1 vaga)"
@@ -14284,10 +14403,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Auxiliar de Cozinha (1 vaga + CR)",
@@ -14430,10 +14549,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-26",
-    "dias_restantes": 22,
+    "dias_restantes": 21,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 22 dias para encerrar"
+    "aviso_texto": "Faltam 21 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Transporte Escolar (4 vagas + CR)"
@@ -14515,10 +14634,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Professor I",
@@ -14637,10 +14756,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio Escolar (CR)",
@@ -14734,93 +14853,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmital-sp-abre-processo-seletivo-para-monitores",
-   "orgao": "Prefeitura de Palmital",
-   "titulo": "Prefeitura de Palmital - SP abre processo seletivo para monitores",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "25 vagas até R$ 1.621,00",
-   "cargos_resumo": "Monitor de Creche, Monitor Escolar, Monitor de Transporte",
-   "niveis": "Ensino Médio",
-   "salario_max_listagem": 1621.0,
-   "salario_min_listagem": null,
-   "inscricao_ate": "04/11/2026",
-   "cidade": "Palmital",
-   "lat": -22.7858,
-   "lon": -50.218,
-   "banca": "Prefeitura Municipal de Palmital",
-   "site_banca": "https://www.palmital.sp.gov.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmital-sp-abre-processo-seletivo-para-monitores#links",
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 001/202"
-   ],
-   "data_prova": "15/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
-   "beneficios_gerais": "Vale-alimentação · Vale-alimentação de R$ 750,00.",
-   "jornada_geral": "40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Até R$ 1.621,00",
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 750.0,
-   "etapas_prova": "Prova Objetiva",
-   "inscricao_status": {
-    "data_fim_iso": "2026-11-04",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Monitor de Creche (5 vagas + CR)",
-    "Monitor Escolar (10 vagas + CR)",
-    "Monitor de Transporte (10 vagas + CR)"
-   ],
-   "cargos_salarios": {},
-   "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
-   "is_baseline": false,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [],
-   "medio_outros": [
-    {
-     "nome": "Monitor de Creche / Monitor Escolar / Monitor de Transporte",
-     "vagas": "25 vagas imediatas",
-     "vagas_imediatas": 25,
-     "tem_cr": false,
-     "salario": 1621.0,
-     "salario_bruto": 1621.0,
-     "salario_total": 2371.0,
-     "salario_detalhe": "Bruto: R$ 1.621,00 + R$ 750,00 (auxílios) = R$ 2.371,00 com auxílios",
-     "carga_horaria": "40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
-     "escolaridade_tipo": "medio",
-     "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Monitor de Creche / Monitor Escolar / Monitor de Transporte), sem necessidade de curso técnico profissionalizante.",
-     "beneficios": "Vale-alimentação · Vale-alimentação de R$ 750,00.",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura Municipal de Palmital): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Monitor de Creche): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "salario_max": 1621.0,
-   "superior_itens": [],
-   "links_provas_map": {
-    "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/monitor-de-creche-prefeitura-municipal-de-palmital",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/monitor-de-creche",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-palmital",
-     "cargo_busca": "Monitor de Creche",
-     "banca_busca": "Prefeitura Municipal de Palmital",
-     "label_combo": "Monitor de Creche · Prefeitura Municipal de Palmital"
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sabino-sp-abre-concurso-publico-para-monitor-de-transporte-escolar",
    "orgao": "Prefeitura de Sabino",
    "titulo": "Prefeitura de Sabino - SP abre concurso público para monitor de transporte escolar",
@@ -14854,10 +14886,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Monitor de Transporte Escolar (1 vaga + CR)"
@@ -14941,10 +14973,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular no Departamento de Administração Pública, no conjunto de disciplinas: Direito Constitucional e Tópicos de Direito Constitucional Econômico (1 vaga)"
@@ -15030,10 +15062,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 29,
+    "dias_restantes": 28,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 29 dias para encerrar"
+    "aviso_texto": "Faltam 28 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Química Analítica Quantitativa (1 vaga)"
@@ -15119,10 +15151,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-22",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 18 dias para encerrar"
+    "aviso_texto": "Faltam 17 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular nas disciplinas de Filosofia da Educação, Filosofia da Educação I e Filosofia da Educação II (1 vaga)"
@@ -15208,10 +15240,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-09",
-    "dias_restantes": 35,
+    "dias_restantes": 34,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 35 dias para encerrar"
+    "aviso_texto": "Faltam 34 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Química Medicinal (1 vaga)"
@@ -15298,10 +15330,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-14",
-    "dias_restantes": 40,
+    "dias_restantes": 39,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 40 dias para encerrar"
+    "aviso_texto": "Faltam 39 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Aplicação e Relevância Clínica da Pesquisa, realizada na Ortopedia e Neurocirurgia de Cães e Gatos (1 vaga)"
@@ -15387,10 +15419,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-17",
-    "dias_restantes": 43,
+    "dias_restantes": 42,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 43 dias para encerrar"
+    "aviso_texto": "Faltam 42 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular nas disciplinas de Teoria do Estado e Ciência Política (1 vaga)"
@@ -15476,10 +15508,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-19",
-    "dias_restantes": 45,
+    "dias_restantes": 44,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 45 dias para encerrar"
+    "aviso_texto": "Faltam 44 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Produção e Percepção da Fala, junto ao Departamento de Fonoaudiologia (1 vaga)"
@@ -15532,6 +15564,99 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-no-instituto-de-biociencias-de-botucatu-sp",
+   "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+   "titulo": "UNESP abre concurso público para professor titular no Instituto de Biociências de Botucatu - SP",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 25.261,98",
+   "cargos_resumo": "Professor Titular",
+   "niveis": "Superior",
+   "salario_max_listagem": 25261.98,
+   "salario_min_listagem": null,
+   "inscricao_ate": "16/11/2026 a 04/01/2027",
+   "cidade": "Botucatu",
+   "lat": -22.8837,
+   "lon": -48.4437,
+   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "site_banca": "https://www.unesp.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-no-instituto-de-biociencias-de-botucatu-sp#links",
+   "arquivos_edital": [
+    "EDITAL Nº 804/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Consultar edital",
+   "jornada_geral": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 286,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "faixa_salarial": "Consultar edital",
+   "taxa_inscricao": "R$ 286,00",
+   "taxa_min": 286.0,
+   "taxa_max": 286.0,
+   "beneficios_total": 0.0,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "inscricao_status": {
+    "data_fim_iso": "2027-01-04",
+    "dias_restantes": 60,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 60 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Professor Titular na disciplina de Metaheurísticas e Otimização Multiobjetivo, junto ao Departamento de Biodiversidade e Bioestatística (1 vaga)"
+   ],
+   "cargos_salarios": {
+    "professor titular no instituto de biociencias de botucatu sp oportunidade de carreira docente exige ded": 25261.98
+   },
+   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 25261.98,
+   "superior_itens": [
+    {
+     "nome": "Professor Titular na disciplina de Metaheurísticas e Otimização Multiobjetivo, junto ao Departamento de Biodiversidade e Bioestatística",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 25261.98,
+     "salario_bruto": 25261.98,
+     "salario_total": 25261.98,
+     "salario_detalhe": "Bruto: R$ 25.261,98 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "Consultar edital",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Licenciatura na disciplina, Estatística, Matemática (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Consultar edital",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Professor Titular na disciplina de Metaheurísticas e Otimização Multiobjetivo, junto ao Departamento de Biodiversidade e Bioestatística): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Aceita formações diversas: Licenciatura na disciplina, Estatística, Matemática (confirmar no edital).",
+   "termos_formacao": [
+    "licenciatura na disciplina",
+    "estatística",
+    "matemática"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-titular-na-disciplina-de-metaheuristicas-e-otimizacao-multiobjetivo-junto-ao-departamento-de-biodiversidade-e-bioestatistica-universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-titular-na-disciplina-de-metaheuristicas-e-otimizacao-multiobjetivo-junto-ao-departamento-de-biodiversidade-e-bioestatistica",
+     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
+     "cargo_busca": "Professor Titular na disciplina de Metaheurísticas e Otimização Multiobjetivo, junto ao Departamento de Biodiversidade e Bioestatística",
+     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+     "label_combo": "Professor Titular na disciplina de Metaheurísticas e Otimização Multiobjetivo, junto ao Departamento de Biodiversidade e Bioestatística · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-titular-na-faculdade-de-ciencias-e-tecnologia-de-presidente-prudente-sp",
    "orgao": "UNESP - Universidade Estadual Paulista Júlio de Mesquita Filho",
    "titulo": "UNESP abre concurso para professor titular na Faculdade de Ciências e Tecnologia de Presidente Prudente - SP",
@@ -15565,10 +15690,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-30",
-    "dias_restantes": 26,
+    "dias_restantes": 25,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 26 dias para encerrar"
+    "aviso_texto": "Faltam 25 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Teoria da Medida (1 vaga)"
@@ -15655,10 +15780,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-02-27",
-    "dias_restantes": 115,
+    "dias_restantes": 114,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 115 dias para encerrar"
+    "aviso_texto": "Faltam 114 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Psicologia Clínica (1 vaga)",
@@ -15746,10 +15871,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-03-15",
-    "dias_restantes": 131,
+    "dias_restantes": 130,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 131 dias para encerrar"
+    "aviso_texto": "Faltam 130 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Planejamento Urbano e Regional (1 vaga)"
@@ -15835,10 +15960,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-04-06",
-    "dias_restantes": 153,
+    "dias_restantes": 152,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 153 dias para encerrar"
+    "aviso_texto": "Faltam 152 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Química Geral (1 vaga)"
@@ -15925,10 +16050,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-04-16",
-    "dias_restantes": 163,
+    "dias_restantes": 162,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 163 dias para encerrar"
+    "aviso_texto": "Faltam 162 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular junto ao Departamento de Administração (1 vaga)",
@@ -16019,10 +16144,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2027-01-06",
-    "dias_restantes": 63,
+    "dias_restantes": 62,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 63 dias para encerrar"
+    "aviso_texto": "Faltam 62 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Teoria do Conhecimento e Filosofia da Ciência (1 vaga)"
@@ -16030,7 +16155,7 @@
    "cargos_salarios": {},
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -16111,10 +16236,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-14",
-    "dias_restantes": 40,
+    "dias_restantes": 39,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 40 dias para encerrar"
+    "aviso_texto": "Faltam 39 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de Ciências Sociais (1 vaga)",
@@ -16202,10 +16327,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-01-15",
-    "dias_restantes": 72,
+    "dias_restantes": 71,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 72 dias para encerrar"
+    "aviso_texto": "Faltam 71 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na área de História das Relações Internacionais (1 vaga)"
@@ -16291,10 +16416,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-01-08",
-    "dias_restantes": 65,
+    "dias_restantes": 64,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 65 dias para encerrar"
+    "aviso_texto": "Faltam 64 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular no Departamento de Sistemas de Computação, na área de Sistemas de Computação (1 vaga)"
@@ -16380,10 +16505,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-02-06",
-    "dias_restantes": 94,
+    "dias_restantes": 93,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 94 dias para encerrar"
+    "aviso_texto": "Faltam 93 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular das áreas de Lepidoptera e Diptera (1 vaga)"
@@ -16436,6 +16561,95 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/faculdade-sebrae-sp-abre-vaga-para-professor-adjunto-de-engenharia-de-software",
+   "orgao": "Faculdade Sebrae",
+   "titulo": "Faculdade Sebrae - SP abre vaga para professor adjunto de Engenharia de Software",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 19.522,83",
+   "cargos_resumo": "Professor Adjunto",
+   "niveis": "Superior",
+   "salario_max_listagem": 19522.83,
+   "salario_min_listagem": null,
+   "inscricao_ate": "10/11/2026",
+   "cidade": "São Paulo (Estado)",
+   "lat": -23.5505,
+   "lon": -46.6333,
+   "banca": "Faculdade Sebrae",
+   "site_banca": "https://sebrae.com.br/sp/sobre-nos/trabalhe-conosco/vagas-efetivas-2026",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/faculdade-sebrae-sp-abre-vaga-para-professor-adjunto-de-engenharia-de-software#links",
+   "arquivos_edital": [
+    "COMUNICADO 049/2026"
+   ],
+   "data_prova": "16/11/2026",
+   "regime_geral": "Processo Seletivo / Temporário",
+   "beneficios_gerais": "Auxílio-alimentação e/ou refeição, auxílio-creche e vale-transporte, conforme normas internas",
+   "jornada_geral": "40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "faixa_salarial": "Consultar edital",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "beneficios_total": 0.0,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Teste de Aptidão Física (TAF)",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-10",
+    "dias_restantes": 5,
+    "encerrando": true,
+    "encerrada": false,
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+   },
+   "cargos_lista": [
+    "Professor Adjunto - Engenharia de Software - Sistema da Informação (1 vaga)"
+   ],
+   "cargos_salarios": {},
+   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 19522.83,
+   "superior_itens": [
+    {
+     "nome": "Professor Adjunto - Engenharia de Software - Sistema da Informação",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 19522.83,
+     "salario_bruto": 19522.83,
+     "salario_total": 19522.83,
+     "salario_detalhe": "Bruto: R$ 19.522,83 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "40 horas semanais",
+     "regime": "Processo Seletivo / Temporário",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Auxílio-alimentação e/ou refeição, auxílio-creche e vale-transporte, conforme normas internas",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Faculdade Sebrae): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Professor Adjunto - Engenharia de Software - Sistema da Informação): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
+   "termos_formacao": [
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-adjunto-faculdade-sebrae",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-adjunto",
+     "url_banca": "https://www.pciconcursos.com.br/provas/faculdade-sebrae",
+     "cargo_busca": "Professor Adjunto",
+     "banca_busca": "Faculdade Sebrae",
+     "label_combo": "Professor Adjunto · Faculdade Sebrae"
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540",
    "orgao": "Prefeitura da Estância Turística de Guaratinguetá",
    "titulo": "Prefeitura de Guaratinguetá - SP abre concurso público com salários de até R$ 18.540,71",
@@ -16469,10 +16683,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-15",
-    "dias_restantes": 41,
+    "dias_restantes": 40,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 41 dias para encerrar"
+    "aviso_texto": "Faltam 40 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante Geral (CR)",
@@ -16702,7 +16916,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [
     "Fisioterapeuta (1 vaga)"
    ],
@@ -16875,10 +17089,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Auxiliar Folguista (Casa Lar) (1 vaga)",
@@ -17129,10 +17343,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Motorista de Veículos Pesados (1 vaga)",
@@ -17305,10 +17519,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Professor Doutor na área de Energia, Térmica e Fluidos e Petróleo (1 vaga)"
@@ -17396,10 +17610,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Professor Assistente na área de Sistemas de Computação (1 vaga)"
@@ -17485,10 +17699,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Professor Assistente na área de Engenharia Sanitária, junto ao Departamento de Engenharia Ambiental (1 vaga)"
@@ -17574,10 +17788,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-26",
-    "dias_restantes": 22,
+    "dias_restantes": 21,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 22 dias para encerrar"
+    "aviso_texto": "Faltam 21 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Ciências Agrárias, junto ao Departamento de Produção Animal (1 vaga)"
@@ -17663,10 +17877,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
-    "dias_restantes": 64,
+    "dias_restantes": 63,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 64 dias para encerrar"
+    "aviso_texto": "Faltam 63 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Anatomia (1 vaga)"
@@ -17752,10 +17966,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 36,
+    "dias_restantes": 35,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 36 dias para encerrar"
+    "aviso_texto": "Faltam 35 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente na área de Tecnologia de Alimentos (1 vaga)"
@@ -17808,6 +18022,98 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-de-arquitetura-e-urbanismo-em-bauru-sp",
+   "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+   "titulo": "UNESP abre concurso para Professor Assistente de Arquitetura e Urbanismo em Bauru - SP",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 16.994,01",
+   "cargos_resumo": "Professor Assistente",
+   "niveis": "Superior",
+   "salario_max_listagem": 16994.01,
+   "salario_min_listagem": null,
+   "inscricao_ate": "13/11 a 14/12/2026",
+   "cidade": "Bauru",
+   "lat": -22.3246,
+   "lon": -49.0871,
+   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "site_banca": "https://www.unesp.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-assistente-de-arquitetura-e-urbanismo-em-bauru-sp#links",
+   "arquivos_edital": [
+    "EDITAL Nº 250/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Consultar edital",
+   "jornada_geral": "40 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 286,00, com possibilidade de redução de 50% para candidatos que atendam aos requisitos do edital.",
+   "faixa_salarial": "Consultar edital",
+   "taxa_inscricao": "R$ 286,00",
+   "taxa_min": 286.0,
+   "taxa_max": 286.0,
+   "beneficios_total": 0.0,
+   "etapas_prova": "Prova Objetiva · Prova Prática · Avaliação de Títulos",
+   "inscricao_status": {
+    "data_fim_iso": "2026-12-14",
+    "dias_restantes": 39,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 39 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Professor Assistente na área de Arquitetura e Urbanismo (1 vaga)"
+   ],
+   "cargos_salarios": {
+    "professor assistente de arquitetura e urbanismo em bauru sp oportunidade exige doutorado para atuacao em regime d": 16994.01
+   },
+   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 16994.01,
+   "superior_itens": [
+    {
+     "nome": "Professor Assistente na área de Arquitetura e Urbanismo",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 16994.01,
+     "salario_bruto": 16994.01,
+     "salario_total": 16994.01,
+     "salario_detalhe": "Bruto: R$ 16.994,01 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "40 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Arquitetura e Urbanismo (CAU), Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Consultar edital",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Professor Assistente na área de Arquitetura e Urbanismo): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Aceita formações diversas: Arquitetura e Urbanismo (CAU), Licenciatura na disciplina (confirmar no edital).",
+   "termos_formacao": [
+    "arquitetura e urbanismo",
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-assistente-na-area-de-arquitetura-e-urbanismo-universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-assistente-na-area-de-arquitetura-e-urbanismo",
+     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
+     "cargo_busca": "Professor Assistente na área de Arquitetura e Urbanismo",
+     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+     "label_combo": "Professor Assistente na área de Arquitetura e Urbanismo · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-para-professor-doutor-na-faculdade-de-ciencias-farmaceuticas",
    "orgao": "USP - Universidade de São Paulo",
    "titulo": "USP abre concurso para professor doutor na Faculdade de Ciências Farmacêuticas",
@@ -17841,10 +18147,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-01-19",
-    "dias_restantes": 76,
+    "dias_restantes": 75,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 76 dias para encerrar"
+    "aviso_texto": "Faltam 75 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de Epidemiologia e Farmacoepidemiologia (1 vaga)"
@@ -17931,10 +18237,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-01-18",
-    "dias_restantes": 75,
+    "dias_restantes": 74,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 75 dias para encerrar"
+    "aviso_texto": "Faltam 74 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de empreendedorismo tecnológico com análise de investimento e estratégia (1 vaga)"
@@ -18020,10 +18326,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-01-22",
-    "dias_restantes": 79,
+    "dias_restantes": 78,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 79 dias para encerrar"
+    "aviso_texto": "Faltam 78 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Doutor na área de Enfermagem em Saúde Coletiva (1 vaga)"
@@ -18109,10 +18415,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-15",
-    "dias_restantes": 41,
+    "dias_restantes": 40,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 41 dias para encerrar"
+    "aviso_texto": "Faltam 40 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente de Administração (1 vaga)",
@@ -18238,10 +18544,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 36,
+    "dias_restantes": 35,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 36 dias para encerrar"
+    "aviso_texto": "Faltam 35 dias para encerrar"
    },
    "cargos_lista": [
     "Apreensor de Animais (CR)",
@@ -18586,10 +18892,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-30",
-    "dias_restantes": 26,
+    "dias_restantes": 25,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 26 dias para encerrar"
+    "aviso_texto": "Faltam 25 dias para encerrar"
    },
    "cargos_lista": [
     "Operador de Serviços Públicos - Lavador (1 vaga)",
@@ -18809,10 +19115,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Segurança Escolar (1 vaga)",
@@ -19006,10 +19312,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2027-01-07",
-    "dias_restantes": 64,
+    "dias_restantes": 63,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 64 dias para encerrar"
+    "aviso_texto": "Faltam 63 dias para encerrar"
    },
    "cargos_lista": [
     "Especialista em Laboratório, especialidade: Aceleradores de Partículas: Instrumentação/Automação (1 vaga)",
@@ -19147,10 +19453,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-02",
-    "dias_restantes": 28,
+    "dias_restantes": 27,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 28 dias para encerrar"
+    "aviso_texto": "Faltam 27 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Ensino Fundamental e Médio (Ensino Fundamental Polivalente) (2 vagas)"
@@ -19236,10 +19542,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Procurador (1 vaga + cadastro reserva)"
@@ -19328,10 +19634,10 @@
    "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Analista em Planejamento, Orçamento e Finanças Públicas - Orçamento e Finanças Públicas (20 vagas)",
@@ -19343,7 +19649,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -19424,10 +19730,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Motorista (Cadastro de reserva)",
@@ -19575,10 +19881,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Agente Operacional",
@@ -19732,10 +20038,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Agente de Limpeza Urbana (Roçador) (1 vaga)",
@@ -19965,10 +20271,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (6 vagas + CR)",
@@ -20151,10 +20457,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 36,
+    "dias_restantes": 35,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 36 dias para encerrar"
+    "aviso_texto": "Faltam 35 dias para encerrar"
    },
    "cargos_lista": [
     "Oficial de Justiça (132 vagas e cadastro de reserva)",
@@ -20304,10 +20610,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos (CR)",
@@ -20502,10 +20808,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Medicina - Auditoria Médica, São Paulo - SP (1 vaga)",
@@ -20662,10 +20968,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-21",
-    "dias_restantes": 17,
+    "dias_restantes": 16,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 17 dias para encerrar"
+    "aviso_texto": "Faltam 16 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Fiscalização de Trânsito",
@@ -20887,10 +21193,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-22",
-    "dias_restantes": 48,
+    "dias_restantes": 47,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 48 dias para encerrar"
+    "aviso_texto": "Faltam 47 dias para encerrar"
    },
    "cargos_lista": [
     "Pesquisador Científico I A, área de Agroecologia e manejo sustentável: I, Agroecologia (5 vagas)",
@@ -21018,10 +21324,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Agente de Apoio Operacional (1 vaga + CR)",
@@ -21157,10 +21463,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Escriturário (5 vagas + CR)",
@@ -21298,10 +21604,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Carpinteiro (CR)",
@@ -21495,10 +21801,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (2 vagas + CR)",
@@ -21783,10 +22089,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Gerais (1 vaga)",
@@ -21928,10 +22234,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Ajudante de Pedreiro (1 vaga)",
@@ -22291,10 +22597,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Inspetor de Alunos (5 vagas + CR)",
@@ -22429,10 +22735,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor substituto de História (1 vaga)",
@@ -22555,10 +22861,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente A Substituto, na área de Química/Química Analítica (2 vagas)"
@@ -22644,10 +22950,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Assistente A Substituto, na área de Linguística, Letras e Artes/Letras (1 vaga)"
@@ -22733,10 +23039,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Analista de Sistemas",
@@ -22929,96 +23235,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-professor-doutor-na-faculdade-de-medicina",
-   "orgao": "USP - Universidade de São Paulo",
-   "titulo": "USP abre concurso público para professor doutor na Faculdade de Medicina",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "1 vaga até R$ 7.477,48",
-   "cargos_resumo": "Professor Doutor",
-   "niveis": "Superior",
-   "salario_max_listagem": 7477.48,
-   "salario_min_listagem": null,
-   "inscricao_ate": "04/11/2026",
-   "cidade": "São Paulo",
-   "lat": -23.5329,
-   "lon": -46.6395,
-   "banca": "Universidade de São Paulo (USP)",
-   "site_banca": "https://www5.usp.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/usp-abre-concurso-publico-para-professor-doutor-na-faculdade-de-medicina#links",
-   "arquivos_edital": [
-    "EDITAL Nº 199/2026"
-   ],
-   "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "Consultar edital",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "faixa_salarial": "Até R$ 7.477,48",
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva",
-   "inscricao_status": {
-    "data_fim_iso": "2026-11-04",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Professor Doutor na Disciplina de Transplante de Órgãos do Aparelho Digestivo (1 vaga)"
-   ],
-   "cargos_salarios": {},
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [],
-   "medio_outros": [],
-   "salario_max": 7477.48,
-   "superior_itens": [
-    {
-     "nome": "Professor Doutor na Disciplina de Transplante de Órgãos do Aparelho Digestivo",
-     "vagas": "1 vaga imediata",
-     "vagas_imediatas": 1,
-     "tem_cr": false,
-     "salario": 7477.48,
-     "salario_bruto": 7477.48,
-     "salario_total": 7477.48,
-     "salario_detalhe": "Bruto: R$ 7.477,48 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "Consultar edital",
-     "regime": "Consultar edital",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Consultar edital",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Universidade de São Paulo (USP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Professor Doutor na Disciplina de Transplante de Órgãos do Aparelho Digestivo): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Aceita formações diversas: Medicina (CRM), Licenciatura na disciplina (confirmar no edital).",
-   "termos_formacao": [
-    "medicina",
-    "licenciatura na disciplina"
-   ],
-   "links_provas_map": {
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-doutor-na-disciplina-de-transplante-de-orgaos-do-aparelho-digestivo-universidade-de-sao-paulo",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-doutor-na-disciplina-de-transplante-de-orgaos-do-aparelho-digestivo",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-de-sao-paulo",
-     "cargo_busca": "Professor Doutor na Disciplina de Transplante de Órgãos do Aparelho Digestivo",
-     "banca_busca": "Universidade de São Paulo",
-     "label_combo": "Professor Doutor na Disciplina de Transplante de Órgãos do Aparelho Digestivo · Universidade de São Paulo"
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/camara-de-sete-barras-sp-abre-concurso-publico-com-salarios-de-ate-7434",
    "orgao": "Câmara de Sete Barras",
    "titulo": "Câmara de Sete Barras - SP abre concurso público com salários de até R$ 7.434,85",
@@ -23052,10 +23268,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-07",
-    "dias_restantes": 33,
+    "dias_restantes": 32,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 33 dias para encerrar"
+    "aviso_texto": "Faltam 32 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista (cadastro de reserva)",
@@ -23086,7 +23302,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -23206,10 +23422,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Conservação de Vias Permanentes (2 vagas)",
@@ -23451,10 +23667,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Artes Cênicas - São José do Rio Preto (1 vaga)",
@@ -23576,10 +23792,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Serviço Educacional I - Merendeira",
@@ -23726,10 +23942,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 29,
+    "dias_restantes": 28,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 29 dias para encerrar"
+    "aviso_texto": "Faltam 28 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Fiscal Tributário (cadastro de reserva)",
@@ -23769,7 +23985,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -23896,10 +24112,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Auxiliar Administrativo (Carapicuíba) (5 vagas)",
@@ -24032,10 +24248,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde, área da Comunidade I",
@@ -24211,10 +24427,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-29",
-    "dias_restantes": 25,
+    "dias_restantes": 24,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 25 dias para encerrar"
+    "aviso_texto": "Faltam 24 dias para encerrar"
    },
    "cargos_lista": [
     "Procurador Jurídico (1 vaga)",
@@ -24307,10 +24523,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -24384,7 +24600,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -24509,10 +24725,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Assistente Social (1 vaga)",
@@ -24658,10 +24874,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Artífice de Obras e Serviços Públicos (CR)",
@@ -25063,10 +25279,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira (1 vaga)",
@@ -25198,6 +25414,97 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-abre-concurso-publico-para-medico-na-area-de-alergia-e-imunologia",
+   "orgao": "HCFMRP - Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto da Universidade de São Paulo",
+   "titulo": "HCFMRP - USP abre concurso público para médico na área de alergia e imunologia",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 5.979,93",
+   "cargos_resumo": "Médico I",
+   "niveis": "Superior",
+   "salario_max_listagem": 5979.93,
+   "salario_min_listagem": null,
+   "inscricao_ate": "09 a 27/11/2026",
+   "cidade": "Ribeirão Preto",
+   "lat": -21.1699,
+   "lon": -47.8099,
+   "banca": "Consultar edital",
+   "site_banca": "https://www.hcribeirao.sp.gov.br/hcfmrp",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-abre-concurso-publico-para-medico-na-area-de-alergia-e-imunologia#links",
+   "arquivos_edital": [
+    "EDITAL Nº 44/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Consultar edital",
+   "jornada_geral": "20 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 126,79. Será possível solicitar isenção ou redução da taxa até as 23h59 do dia 11 de novembro de 2026.",
+   "faixa_salarial": "Consultar edital",
+   "taxa_inscricao": "R$ 126,79",
+   "taxa_min": 126.79,
+   "taxa_max": 126.79,
+   "beneficios_total": 0.0,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Avaliação de Títulos",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-27",
+    "dias_restantes": 22,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 22 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Médico I - Alergia e Imunologia (1 vaga)"
+   ],
+   "cargos_salarios": {
+    "medico na area de alergia e imunologia oportunidade": 5979.93
+   },
+   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 5979.93,
+   "superior_itens": [
+    {
+     "nome": "Médico I - Alergia e Imunologia",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 5979.93,
+     "salario_bruto": 5979.93,
+     "salario_total": 5979.93,
+     "salario_detalhe": "Bruto: R$ 5.979,93 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "20 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Medicina (CRM). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Consultar edital",
+     "resumo_conteudo": [
+      "Língua Portuguesa: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Médico I - Alergia e Imunologia): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Medicina (CRM).",
+   "termos_formacao": [
+    "medicina"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/medico",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/medico",
+     "url_banca": "",
+     "cargo_busca": "Médico",
+     "banca_busca": "Todas as Bancas",
+     "label_combo": "Médico"
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-com-vagas-para-medicos-em-diversas-especialidades",
    "orgao": "HCFMRP-USP - Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto da Universidade de São Paulo",
    "titulo": "HCFMRP-USP - SP abre concursos públicos com vagas para médicos em diversas especialidades",
@@ -25236,10 +25543,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Médico I - Cirurgia Avançada em Tumores da Pelve Feminina (1 vaga)",
@@ -25332,10 +25639,10 @@
    "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-27",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Médico I, área de Clínica Cirúrgica, com ênfase no diagnóstico e tratamento endoscópico (1 vaga)",
@@ -25426,10 +25733,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Motorista (1 vaga + CR)",
@@ -25528,10 +25835,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Médico do Trabalho"
@@ -25621,10 +25928,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Auxiliar de Consultório Dentário/SUS",
@@ -25863,10 +26170,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Analista em Gestão Previdenciária (7 vagas + 1 vaga para PCD)",
@@ -25889,7 +26196,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -25983,10 +26290,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Auxiliar de Cozinha (1 vaga + CR)",
@@ -26129,10 +26436,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Merendeira (3 vagas)",
@@ -26338,10 +26645,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Assistente Administrativo (1 vaga + CR)",
@@ -26441,10 +26748,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 29,
+    "dias_restantes": 28,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 29 dias para encerrar"
+    "aviso_texto": "Faltam 28 dias para encerrar"
    },
    "cargos_lista": [
     "Agente de Cultura (CR)",
@@ -26644,10 +26951,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-03",
-    "dias_restantes": 29,
+    "dias_restantes": 28,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 29 dias para encerrar"
+    "aviso_texto": "Faltam 28 dias para encerrar"
    },
    "cargos_lista": [
     "Procurador Jurídico Administrativo I (1 vaga)"
@@ -26735,10 +27042,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Agente de Contratações e Licitações (cadastro de reserva)",
@@ -26889,10 +27196,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Professor de Desenvolvimento Infantil (CR)",
@@ -26989,10 +27296,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Motorista (11 vagas CR)",
@@ -27221,10 +27528,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Ajudante Geral (1 vaga)",
@@ -27439,10 +27746,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Professor de Educação Básica I",
@@ -27543,10 +27850,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Cozinheiro",
@@ -27678,10 +27985,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-15",
-    "dias_restantes": 11,
-    "encerrando": false,
+    "dias_restantes": 10,
+    "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "Faltam 11 dias para encerrar"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 10 dias!"
    },
    "cargos_lista": [
     "Agente de Cemitério (1 vaga)",
@@ -27828,10 +28135,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Procurador Legislativo (1 vaga)"
@@ -27884,97 +28191,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-selecoes-para-o-hospital-de-clinicas-e-hospital-estadual-sumare",
-   "orgao": "FUNCAMP - Fundação de Desenvolvimento da Unicamp",
-   "titulo": "FUNCAMP - SP abre seleções para o Hospital de Clínicas e Hospital Estadual Sumaré",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "2 vagas até R$ 4.830,00",
-   "cargos_resumo": "Assistente Social, Jardineiro",
-   "niveis": "Fundamental / Superior",
-   "salario_max_listagem": 4830.0,
-   "salario_min_listagem": null,
-   "inscricao_ate": "04/11/2026",
-   "cidade": "Sumaré",
-   "lat": -22.8204,
-   "lon": -47.2728,
-   "banca": "Fundação de Desenvolvimento da Unicamp (FUNCAMP)",
-   "site_banca": "https://www.funcamp.unicamp.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-selecoes-para-o-hospital-de-clinicas-e-hospital-estadual-sumare#links",
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 124/2026",
-    "EDITAL DE PROCESSO SELETIVO FUNCAMP Nº 125/2026"
-   ],
-   "data_prova": "Consultar edital",
-   "regime_geral": "Processo Seletivo / Temporário",
-   "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "Consultar edital",
-   "isencao": "Não haverá isenção parcial ou total.",
-   "faixa_salarial": "Até R$ 4.830,00",
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva",
-   "inscricao_status": {
-    "data_fim_iso": "2026-11-04",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Assistente Social (1 vaga)",
-    "Jardineiro (1 vaga)"
-   ],
-   "cargos_salarios": {},
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [],
-   "medio_outros": [],
-   "salario_max": 4830.0,
-   "superior_itens": [
-    {
-     "nome": "Assistente Social",
-     "vagas": "2 vagas imediatas",
-     "vagas_imediatas": 2,
-     "tem_cr": false,
-     "salario": 4830.0,
-     "salario_bruto": 4830.0,
-     "salario_total": 4830.0,
-     "salario_detalhe": "Bruto: R$ 4.830,00 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "Consultar edital",
-     "regime": "Processo Seletivo / Temporário",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Serviço Social (CRESS). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Consultar edital",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Fundação de Desenvolvimento da Unicamp (FUNCAMP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Assistente Social): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Formação: Serviço Social (CRESS).",
-   "termos_formacao": [
-    "serviço social"
-   ],
-   "links_provas_map": {
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/assistente-social-fundacao-de-desenvolvimento-da-unicamp",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/assistente-social",
-     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-de-desenvolvimento-da-unicamp",
-     "cargo_busca": "Assistente Social",
-     "banca_busca": "Fundação de Desenvolvimento da Unicamp",
-     "label_combo": "Assistente Social · Fundação de Desenvolvimento da Unicamp"
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-mairipora-sp-abre-concurso-publico-para-professores",
    "orgao": "Prefeitura de Mairiporã",
    "titulo": "Prefeitura de Mairiporã - SP abre concurso público para professores",
@@ -28008,10 +28224,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-25",
-    "dias_restantes": 21,
+    "dias_restantes": 20,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 21 dias para encerrar"
+    "aviso_texto": "Faltam 20 dias para encerrar"
    },
    "cargos_lista": [
     "PEB I - Educação Infantil (1 vaga e cadastro de reserva)",
@@ -28098,10 +28314,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Analista de Pesquisa Clínica Júnior (1 vaga)"
@@ -28185,10 +28401,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Médico do Trabalho (CR)",
@@ -28318,10 +28534,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Monitor de Transporte Escolar",
@@ -28408,10 +28624,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Fisioterapeuta (1 vaga)",
@@ -28508,107 +28724,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-orlandia-sp-abre-processo-seletivo-para-a-area-da-educacao",
-   "orgao": "Prefeitura de Orlândia",
-   "titulo": "Prefeitura de Orlândia - SP abre processo seletivo para a área da educação",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "Cadastro reserva até R$ 4.221,00",
-   "cargos_resumo": "Vários Cargos",
-   "niveis": "Superior",
-   "salario_max_listagem": 4221.0,
-   "salario_min_listagem": null,
-   "inscricao_ate": "04/11/2026",
-   "cidade": "Orlândia",
-   "lat": -20.7169,
-   "lon": -47.8852,
-   "banca": "Prefeitura do Município de Orlândia",
-   "site_banca": "https://www.orlandia.sp.gov.br/novo",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-orlandia-sp-abre-processo-seletivo-para-a-area-da-educacao#links",
-   "arquivos_edital": [
-    "EDITAL DE ABERTURA Nº 01.01/2026"
-   ],
-   "data_prova": "29/11/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
-   "beneficios_gerais": "Consultar edital",
-   "jornada_geral": "25 a 40 horas semanais",
-   "isencao": "Candidatos inscritos no Cadastro Único que atendam aos critérios de renda do edital e doadores de medula óssea cadastrados no Redome poderão solicitar isenção de 21 a 25 de outubro de 2026.",
-   "faixa_salarial": "R$ 3.520,36 a R$ 4.221,00",
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva",
-   "inscricao_status": {
-    "data_fim_iso": "2026-11-04",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Acompanhante Educacional Especializado",
-    "Professor de Artes - PEB II",
-    "Professor de Ciências - PEB II",
-    "Professor de Educação Especial - PEB II",
-    "Professor de Educação Física - PEB II",
-    "Professor de Ensino Fundamental - PEB I",
-    "Professor de Ensino Infantil - PEB I",
-    "Professor de Geografia - PEB II",
-    "Professor de História - PEB II",
-    "Professor de Inglês - PEB II",
-    "Professor de Matemática - PEB II",
-    "Professor de Música - PEB II",
-    "Professor de Português - PEB II"
-   ],
-   "cargos_salarios": {},
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [],
-   "medio_outros": [],
-   "salario_max": 4221.0,
-   "superior_itens": [
-    {
-     "nome": "Professor de Artes - PEB II / Professor de Ciências - PEB II / Professor de Educação Especial - PEB II / Professor de Educação Física - PEB II (+8 cargos)",
-     "vagas": "Cadastro de Reserva (CR)",
-     "vagas_imediatas": 0,
-     "tem_cr": true,
-     "salario": 4221.0,
-     "salario_bruto": 4221.0,
-     "salario_total": 4221.0,
-     "salario_detalhe": "Bruto: R$ 4.221,00 (vencimento base no edital) + benefícios legais",
-     "carga_horaria": "25 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Consultar edital",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Prefeitura do Município de Orlândia): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Professor de Artes - PEB II): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
-   "termos_formacao": [
-    "licenciatura na disciplina"
-   ],
-   "links_provas_map": {
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-de-artes-prefeitura-do-municipio-de-orlandia",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-de-artes",
-     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-do-municipio-de-orlandia",
-     "cargo_busca": "Professor de Artes",
-     "banca_busca": "Prefeitura do Município de Orlândia",
-     "label_combo": "Professor de Artes · Prefeitura do Município de Orlândia"
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-piraju-sp-abre-processo-seletivo-para-a-area-da-educacao",
    "orgao": "Prefeitura da Estância Turística de Piraju",
    "titulo": "Prefeitura de Piraju - SP abre processo seletivo para a área da educação",
@@ -28642,10 +28757,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Professor I",
@@ -28764,10 +28879,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Enfermagem (10 vagas, sendo 9 de ampla concorrência e 1 reservada para pessoas com deficiência)",
@@ -28894,10 +29009,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "PEB I",
@@ -28994,10 +29109,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Monitor Escolar",
@@ -29141,10 +29256,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Professor substituto de Educação Básica, Pedagogia, Educação Infantil e Anos Iniciais do Ensino Fundamental (1 vaga)"
@@ -29232,10 +29347,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Merendeira",
@@ -29253,7 +29368,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -29361,10 +29476,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "PEB I - Educação Especial (CR)",
@@ -29460,10 +29575,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "PEB I, Educação Especial, Substituto(a) (CR)",
@@ -29561,10 +29676,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Educação Básica I (Prof. Cid Chiarelli), Educação Infantil (1 vaga e CR)",
@@ -29664,10 +29779,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Física Geral (1 vaga)"
@@ -29754,10 +29869,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Zoologia, subárea de Paleozoologia (1 vaga)"
@@ -29844,10 +29959,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Professor Substituto"
@@ -29933,10 +30048,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Inspeção de Produtos de Origem Animal (1 vaga)"
@@ -29990,101 +30105,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-publicos-para-professores-substitutos-em-araraquara-sp",
-   "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-   "titulo": "UNESP abre concursos públicos para professores substitutos em Araraquara - SP",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "4 vagas até R$ 3.511,90",
-   "cargos_resumo": "Professor Substituto",
-   "niveis": "Superior",
-   "salario_max_listagem": 3511.9,
-   "salario_min_listagem": null,
-   "inscricao_ate": "04/11/2026",
-   "cidade": "Araraquara",
-   "lat": -21.7845,
-   "lon": -48.178,
-   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "site_banca": "https://www.unesp.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-publicos-para-professores-substitutos-em-araraquara-sp#links",
-   "arquivos_edital": [
-    "EDITAL Nº 294/2026",
-    "EDITAL Nº 295/2026",
-    "EDITAL Nº 303/2026",
-    "EDITAL Nº 304/2026"
-   ],
-   "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada_geral": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva",
-   "inscricao_status": {
-    "data_fim_iso": "2026-11-04",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Francesa\" e \"Língua Francesa IV\" (1 vaga)",
-    "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Italiana: conversação\" e \"Língua Italiana: gramática através de textos literários\" (1 vaga)",
-    "Professor Substituto na área de Educação, subárea de Ensino-Aprendizagem (1 vaga)",
-    "Professor Substituto na área de Educação, subárea de Fundamentos da Educação (1 vaga)"
-   ],
-   "cargos_salarios": {},
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [],
-   "medio_outros": [],
-   "salario_max": 3511.9,
-   "superior_itens": [
-    {
-     "nome": "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Francesa\" e \"Língua Francesa IV\" / Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Italiana: conversação\" e \"Língua Italiana: gramática através de textos literários\" / Professor Substituto na área de Educação, subárea de Ensino-Aprendizagem / Professor Substituto na área de Educação, subárea de Fundamentos da Educação",
-     "vagas": "4 vagas imediatas",
-     "vagas_imediatas": 4,
-     "tem_cr": false,
-     "salario": 3511.9,
-     "salario_bruto": 3511.9,
-     "salario_total": 5511.92,
-     "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
-     "carga_horaria": "Consultar edital",
-     "regime": "Consultar edital",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Francesa\" e \"Língua Francesa IV\"): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
-   "termos_formacao": [
-    "licenciatura na disciplina"
-   ],
-   "links_provas_map": {
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-letras-subarea-de-literaturas-estrangeiras-modernas-nas-disciplinas-de-introducao-a-cultura-francesa-e-lingua-francesa-iv-universidade-estadual-paulista-julio-de-mesquita-filho",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-letras-subarea-de-literaturas-estrangeiras-modernas-nas-disciplinas-de-introducao-a-cultura-francesa-e-lingua-francesa-iv",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
-     "cargo_busca": "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Francesa\" e \"Língua Francesa IV\"",
-     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-     "label_combo": "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas, nas disciplinas de \"Introdução à Cultura Francesa\" e \"Língua Francesa IV\" · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-letras-em-sao-jose-do-rio-preto-sp",
    "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
    "titulo": "UNESP abre concurso público para professor substituto de Letras em São José do Rio Preto - SP",
@@ -30118,10 +30138,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Letras, subárea de Literatura Brasileira (1 vaga)"
@@ -30174,95 +30194,6 @@
    }
   },
   {
-   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-com-vaga-para-professor-substituto-em-sao-jose-do-rio-preto-sp",
-   "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-   "titulo": "UNESP abre concurso com vaga para professor substituto em São José do Rio Preto - SP",
-   "uf": "SP",
-   "regiao": "Sudeste",
-   "vagas_salario": "1 vaga até R$ 3.511,90",
-   "cargos_resumo": "Professor Substituto",
-   "niveis": "Superior",
-   "salario_max_listagem": 3511.9,
-   "salario_min_listagem": null,
-   "inscricao_ate": "04/11/2026",
-   "cidade": "São José do Rio Preto",
-   "lat": -20.8113,
-   "lon": -49.3758,
-   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "site_banca": "https://www.unesp.br/",
-   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-com-vaga-para-professor-substituto-em-sao-jose-do-rio-preto-sp#links",
-   "arquivos_edital": [
-    "EDITAL Nº 352/2026"
-   ],
-   "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
-   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada_geral": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva",
-   "inscricao_status": {
-    "data_fim_iso": "2026-11-04",
-    "dias_restantes": 0,
-    "encerrando": true,
-    "encerrada": false,
-    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
-   },
-   "cargos_lista": [
-    "Professor Substituto na área de Ciência e Tecnologia de Alimentos, subárea de Engenharia de Alimentos (1 vaga)"
-   ],
-   "cargos_salarios": {},
-   "first_seen_ts": "2026-10-20T07:00:00-03:00",
-   "is_baseline": true,
-   "novo": false,
-   "fisio_linhas": [],
-   "fisio": false,
-   "medio_confirmado": [],
-   "medio_outros": [],
-   "salario_max": 3511.9,
-   "superior_itens": [
-    {
-     "nome": "Professor Substituto na área de Ciência e Tecnologia de Alimentos, subárea de Engenharia de Alimentos",
-     "vagas": "1 vaga imediata",
-     "vagas_imediatas": 1,
-     "tem_cr": false,
-     "salario": 3511.9,
-     "salario_bruto": 3511.9,
-     "salario_total": 5511.92,
-     "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
-     "carga_horaria": "12 horas semanais",
-     "regime": "Consultar edital",
-     "escolaridade_tipo": "superior",
-     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
-     "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-     "resumo_conteudo": [
-      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
-      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
-      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
-      "Conhecimentos Específicos (Professor Substituto na área de Ciência e Tecnologia de Alimentos, subárea de Engenharia de Alimentos): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
-     ]
-    }
-   ],
-   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
-   "termos_formacao": [
-    "licenciatura na disciplina"
-   ],
-   "links_provas_map": {
-    "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-ciencia-e-tecnologia-de-alimentos-subarea-de-engenharia-de-alimentos-universidade-estadual-paulista-julio-de-mesquita-filho",
-     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-ciencia-e-tecnologia-de-alimentos-subarea-de-engenharia-de-alimentos",
-     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
-     "cargo_busca": "Professor Substituto na área de Ciência e Tecnologia de Alimentos, subárea de Engenharia de Alimentos",
-     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
-     "label_combo": "Professor Substituto na área de Ciência e Tecnologia de Alimentos, subárea de Engenharia de Alimentos · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
-    }
-   }
-  },
-  {
    "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-engenharia-civil-no-campus-de-ilha-solteira",
    "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
    "titulo": "UNESP abre concurso para Professor Substituto de Engenharia Civil no campus de Ilha Solteira",
@@ -30296,10 +30227,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Engenharia Civil, subárea de Infraestrutura de Transportes (1 vaga)"
@@ -30385,10 +30316,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-06",
-    "dias_restantes": 2,
+    "dias_restantes": 1,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 2 dias!"
+    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Clínica e Cirurgia Animal (1 vaga)"
@@ -30475,10 +30406,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Patologia Animal (1 vaga)"
@@ -30565,10 +30496,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina Veterinária, subárea de Clínica e Cirurgia Animal (1 vaga)"
@@ -30655,10 +30586,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas (1 vaga)"
@@ -30744,10 +30675,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática (1 vaga)"
@@ -30834,10 +30765,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Disciplinas: Prática Supervisionada em Fisioterapia na Saúde da Mulher, Prática supervisionada em Fisioterapia Neurológica, Prática Supervisionada em Fisioterapia na Atenção Primária à Saúde, Prática Supervisionada em Fisioterapia Desportiva, Fisioterapia na Saúde da Mulher e Fisioterapia Desportiva)",
@@ -30961,10 +30892,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Professor Substituto"
@@ -31054,10 +30985,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Probabilidade e Estatística (1 vaga)",
@@ -31150,10 +31081,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática (1 vaga)",
@@ -31241,10 +31172,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Odontologia, subárea de Clínica Odontológica, na disciplina de Odontologia para Pacientes com Deficiência (1 vaga)",
@@ -31331,10 +31262,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Medicina, subárea de Cirurgia (1 vaga)"
@@ -31398,7 +31329,7 @@
    "niveis": "Superior",
    "salario_max_listagem": 3511.9,
    "salario_min_listagem": null,
-   "inscricao_ate": "05 a 19/11/2026",
+   "inscricao_ate": "19/11/2026",
    "cidade": "Ilha Solteira",
    "lat": -20.4326,
    "lon": -51.3426,
@@ -31422,10 +31353,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Sociais Aplicadas, subárea de Administração (1 vaga)",
@@ -31514,10 +31445,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática, nas disciplinas de Algoritmos e Introdução à Programação, Tópicos Avançados em Programação, Cálculo Numérico Computacional e Álgebra Linear (1 vaga)",
@@ -31605,10 +31536,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Química, nas disciplinas de Química Geral e Química Geral I (1 vaga)",
@@ -31695,10 +31626,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-20",
-    "dias_restantes": 16,
+    "dias_restantes": 15,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 16 dias para encerrar"
+    "aviso_texto": "Faltam 15 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Psicologia, subárea de Fundamento e Medidas da Psicologia (1 vaga)"
@@ -31706,7 +31637,7 @@
    "cargos_salarios": {},
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -31787,10 +31718,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-24",
-    "dias_restantes": 20,
+    "dias_restantes": 19,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 20 dias para encerrar"
+    "aviso_texto": "Faltam 19 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Agronomia, subárea de Fitotecnia (1 vaga)",
@@ -31800,7 +31731,7 @@
    "cargos_salarios": {},
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -31845,6 +31776,95 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-na-faculdade-de-ciencias-e-letras-de-assis-sp",
+   "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+   "titulo": "UNESP abre concurso para professor substituto na Faculdade de Ciências e Letras de Assis - SP",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 3.511,90",
+   "cargos_resumo": "Professor Substituto",
+   "niveis": "Superior",
+   "salario_max_listagem": 3511.9,
+   "salario_min_listagem": null,
+   "inscricao_ate": "09 a 24/11/2026",
+   "cidade": "Assis",
+   "lat": -22.66,
+   "lon": -50.4183,
+   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "site_banca": "https://www.unesp.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-na-faculdade-de-ciencias-e-letras-de-assis-sp#links",
+   "arquivos_edital": [
+    "EDITAL Nº 417/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada_geral": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "beneficios_total": 2000.02,
+   "etapas_prova": "Prova Objetiva",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-24",
+    "dias_restantes": 19,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 19 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências (1 vaga)"
+   ],
+   "cargos_salarios": {},
+   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 3511.9,
+   "superior_itens": [
+    {
+     "nome": "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 3511.9,
+     "salario_bruto": 3511.9,
+     "salario_total": 5511.92,
+     "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
+     "carga_horaria": "12 horas semanais",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
+   "termos_formacao": [
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-ciencias-exatas-e-da-terra-subarea-de-geociencias-universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-ciencias-exatas-e-da-terra-subarea-de-geociencias",
+     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
+     "cargo_busca": "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências",
+     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+     "label_combo": "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Geociências · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-na-area-de-artes-em-sao-paulo",
    "orgao": "UNESP - Universidade Estadual Paulista Júlio de Mesquita Filho",
    "titulo": "UNESP abre concurso público para professor substituto na área de artes em São Paulo",
@@ -31878,10 +31898,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Artes, subárea de Fundamentos e Crítica das Artes (1 vaga)"
@@ -31968,10 +31988,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Artes/Teatro, nas disciplinas de Didática, Psicologia da Educação, Sociedade, Estado e Educação (1 vaga)",
@@ -32059,10 +32079,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-26",
-    "dias_restantes": 22,
+    "dias_restantes": 21,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 22 dias para encerrar"
+    "aviso_texto": "Faltam 21 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Linguística, Letras e Artes (2 vagas)"
@@ -32149,10 +32169,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciência da Computação, subárea de Sistemas de Computação (1 vaga)",
@@ -32161,7 +32181,7 @@
    "cargos_salarios": {},
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -32239,10 +32259,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Substituto na área de Odontologia, subárea de Clínica Odontológica (1 vaga)"
@@ -32250,7 +32270,7 @@
    "cargos_salarios": {},
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -32295,6 +32315,95 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-genetica-em-ilha-solteira-sp",
+   "orgao": "UNESP - Universidade Estadual Paulista Júlio de Mesquita Filho",
+   "titulo": "UNESP abre vaga para professor substituto de Genética em Ilha Solteira - SP",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 3.511,90",
+   "cargos_resumo": "Professor Substituto",
+   "niveis": "Superior",
+   "salario_max_listagem": 3511.9,
+   "salario_min_listagem": null,
+   "inscricao_ate": "13 a 27/11/2026",
+   "cidade": "Ilha Solteira",
+   "lat": -20.4326,
+   "lon": -51.3426,
+   "banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
+   "site_banca": "https://www.unesp.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-de-genetica-em-ilha-solteira-sp#links",
+   "arquivos_edital": [
+    "EDITAL Nº 269/2026"
+   ],
+   "data_prova": "Consultar edital",
+   "regime_geral": "Consultar edital",
+   "beneficios_gerais": "Vale-alimentação no valor de R$ 2.000,02.",
+   "jornada_geral": "Consultar edital",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "beneficios_total": 2000.02,
+   "etapas_prova": "Prova Objetiva",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-27",
+    "dias_restantes": 22,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 22 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Professor Substituto na área de Genética, subárea de Genética Vegetal (1 vaga)"
+   ],
+   "cargos_salarios": {},
+   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 3511.9,
+   "superior_itens": [
+    {
+     "nome": "Professor Substituto na área de Genética, subárea de Genética Vegetal",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 3511.9,
+     "salario_bruto": 3511.9,
+     "salario_total": 5511.92,
+     "salario_detalhe": "Bruto: R$ 3.511,90 + R$ 2.000,02 (auxílios) = R$ 5.511,92 com auxílios",
+     "carga_horaria": "Consultar edital",
+     "regime": "Consultar edital",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Formação: Licenciatura na disciplina. Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Professor Substituto na área de Genética, subárea de Genética Vegetal): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Formação: Licenciatura na disciplina.",
+   "termos_formacao": [
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-genetica-subarea-de-genetica-vegetal-universidade-estadual-paulista-julio-de-mesquita-filho",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-substituto-na-area-de-genetica-subarea-de-genetica-vegetal",
+     "url_banca": "https://www.pciconcursos.com.br/provas/universidade-estadual-paulista-julio-de-mesquita-filho",
+     "cargo_busca": "Professor Substituto na área de Genética, subárea de Genética Vegetal",
+     "banca_busca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
+     "label_combo": "Professor Substituto na área de Genética, subárea de Genética Vegetal · Universidade Estadual Paulista \"Júlio de Mesquita Filho\""
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/fundacao-santo-andre-sp-abre-concurso-publico-para-o-cargo-de-secretario-executivo",
    "orgao": "FSA - Fundação Santo André",
    "titulo": "Fundação Santo André - SP abre concurso público para o cargo de Secretário Executivo",
@@ -32328,10 +32437,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-27",
-    "dias_restantes": 23,
+    "dias_restantes": 22,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 23 dias para encerrar"
+    "aviso_texto": "Faltam 22 dias para encerrar"
    },
    "cargos_lista": [
     "Secretário Executivo"
@@ -32415,10 +32524,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Professor Substituto na área de Ciência da Informação, subárea de Biblioteconomia (1 vaga)"
@@ -32505,10 +32614,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática · Prova Discursiva/Redação · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Agente Comunitário de Saúde (1 vaga)",
@@ -32542,7 +32651,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -32653,10 +32762,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Serviços Diversos (1 vaga)",
@@ -32867,10 +32976,10 @@
    "etapas_prova": "Prova Objetiva · Prova Prática",
    "inscricao_status": {
     "data_fim_iso": "2026-12-04",
-    "dias_restantes": 30,
+    "dias_restantes": 29,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 30 dias para encerrar"
+    "aviso_texto": "Faltam 29 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar Odontológico (Auxiliar de Consultório Dentário) (1 vaga)",
@@ -32898,7 +33007,7 @@
    },
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -33007,10 +33116,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Técnico de Enfermagem (1 vaga)",
@@ -33126,10 +33235,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-13",
-    "dias_restantes": 9,
+    "dias_restantes": 8,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 9 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
    },
    "cargos_lista": [
     "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
@@ -33255,10 +33364,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-19",
-    "dias_restantes": 15,
+    "dias_restantes": 14,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 15 dias para encerrar"
+    "aviso_texto": "Faltam 14 dias para encerrar"
    },
    "cargos_lista": [
     "Bibliotecário (1 vaga e cadastro de reserva)",
@@ -33375,10 +33484,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-24",
-    "dias_restantes": 20,
+    "dias_restantes": 19,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 20 dias para encerrar"
+    "aviso_texto": "Faltam 19 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Contratado III, na área de Filosofia do Direito e Sociologia do Direito (1 vaga)"
@@ -33441,7 +33550,7 @@
    "niveis": "Fundamental / Médio / Superior",
    "salario_max_listagem": 2866.86,
    "salario_min_listagem": null,
-   "inscricao_ate": "05 a 24/11/2026",
+   "inscricao_ate": "24/11/2026",
    "cidade": "São João da Boa Vista",
    "lat": -21.9707,
    "lon": -46.7944,
@@ -33464,10 +33573,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-24",
-    "dias_restantes": 20,
+    "dias_restantes": 19,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 20 dias para encerrar"
+    "aviso_texto": "Faltam 19 dias para encerrar"
    },
    "cargos_lista": [
     "Cozinheiro",
@@ -33556,10 +33665,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "Auxiliar de Educação Básica",
@@ -33657,10 +33766,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-12",
-    "dias_restantes": 8,
+    "dias_restantes": 7,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 8 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
    },
    "cargos_lista": [
     "Auxiliar de Desenvolvimento Infantil (5 vagas)",
@@ -33788,10 +33897,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-09",
-    "dias_restantes": 5,
+    "dias_restantes": 4,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
    },
    "cargos_lista": [
     "Assistente Social",
@@ -33856,6 +33965,110 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/fundacao-santo-andre-sp-abre-concurso-para-analista-administrativo-academico",
+   "orgao": "FSA - Fundação Santo André",
+   "titulo": "Fundação Santo André - SP abre concurso para Analista Administrativo Acadêmico",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "1 vaga até R$ 2.215,41",
+   "cargos_resumo": "Analista Administrativo Acadêmico",
+   "niveis": "Superior",
+   "salario_max_listagem": 2215.41,
+   "salario_min_listagem": null,
+   "inscricao_ate": "09/12/2026",
+   "cidade": "Santo André",
+   "lat": -23.6737,
+   "lon": -46.5432,
+   "banca": "Fundação Santo André (FSA)",
+   "site_banca": "https://www.fsa.br/concursos/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/fundacao-santo-andre-sp-abre-concurso-para-analista-administrativo-academico#links",
+   "arquivos_edital": [
+    "EDITAL 014/2026"
+   ],
+   "data_prova": "27/01/2027",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios_gerais": "Auxílio-saúde e vales · Auxílio-saúde, vale-alimentação, vale-refeição e vale-transporte",
+   "jornada_geral": "40 horas semanais",
+   "isencao": "Doadores de medula óssea e candidatos inscritos no CadÚnico que atendam aos critérios do edital podem solicitar isenção pelo e-mail concursos@fsa.br até 9 de dezembro de 2026.",
+   "faixa_salarial": "Consultar edital",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "beneficios_total": 0.0,
+   "etapas_prova": "Prova Objetiva · Prova Prática",
+   "inscricao_status": {
+    "data_fim_iso": "2026-12-09",
+    "dias_restantes": 34,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 34 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Analista Administrativo Acadêmico (1 vaga e cadastro de reserva)"
+   ],
+   "cargos_salarios": {
+    "analista administrativo academico": 2215.41
+   },
+   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": 2215.41,
+   "superior_itens": [
+    {
+     "nome": "Analista Administrativo Acadêmico",
+     "vagas": "1 vaga imediata",
+     "vagas_imediatas": 1,
+     "tem_cr": false,
+     "salario": 2215.41,
+     "salario_bruto": 2215.41,
+     "salario_total": 2215.41,
+     "salario_detalhe": "Bruto: R$ 2.215,41 (vencimento base no edital) + benefícios legais",
+     "carga_horaria": "40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Administração, Economia, Ciências Contábeis, Direito, Gestão Pública (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Auxílio-saúde e vales · Auxílio-saúde, vale-alimentação, vale-refeição e vale-transporte",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Fundação Santo André (FSA)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Analista Administrativo Acadêmico): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Aceita formações diversas: Administração, Economia, Ciências Contábeis, Direito, Gestão Pública (confirmar no edital).",
+   "termos_formacao": [
+    "administrador",
+    "administracao",
+    "administração",
+    "economista",
+    "economia",
+    "ciencias economicas",
+    "contador",
+    "contabilidade",
+    "ciencias contabeis",
+    "ciências contábeis",
+    "advogado",
+    "bacharel em direito",
+    "direito",
+    "gestão pública"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/analista-administrativo-academico-fundacao-santo-andre",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/analista-administrativo-academico",
+     "url_banca": "https://www.pciconcursos.com.br/provas/fundacao-santo-andre",
+     "cargo_busca": "Analista Administrativo Acadêmico",
+     "banca_busca": "Fundação Santo André",
+     "label_combo": "Analista Administrativo Acadêmico · Fundação Santo André"
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/unesp-prorroga-inscricoes-de-concurso-publico-para-docente-de-nivel-medio-em-bauru-sp",
    "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
    "titulo": "UNESP prorroga inscrições de concurso público para docente de nível médio em Bauru - SP",
@@ -33890,10 +34103,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Docente na área de Mecânica"
@@ -33979,10 +34192,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Docente do Ensino Médio e da Educação Profissional Técnica de Nível Médio, na área de Engenharia Agrícola"
@@ -34068,10 +34281,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-18",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 14 dias para encerrar"
+    "aviso_texto": "Faltam 13 dias para encerrar"
    },
    "cargos_lista": [
     "Profissional de Apoio Escolar (CR)",
@@ -34198,10 +34411,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Auxiliar de Limpeza",
@@ -34293,10 +34506,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-05",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⚠️ INSCRIÇÕES ENCERRANDO · Termina amanhã (1 dia)!"
+    "aviso_texto": "🚨 ÚLTIMO DIA DE INSCRIÇÃO (Encerra hoje!)"
    },
    "cargos_lista": [
     "PEB II - Educação Especial - DI/TEA (Deficiência Intelectual/Transtorno do Espectro Autista) (CR)",
@@ -34384,10 +34597,10 @@
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
     "data_fim_iso": "2026-12-10",
-    "dias_restantes": 36,
+    "dias_restantes": 35,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 36 dias para encerrar"
+    "aviso_texto": "Faltam 35 dias para encerrar"
    },
    "cargos_lista": [
     "Diretor de Escola",
@@ -34411,7 +34624,7 @@
    "cargos_salarios": {},
    "first_seen_ts": "2026-11-04T14:55:21.475655-03:00",
    "is_baseline": false,
-   "novo": true,
+   "novo": false,
    "fisio_linhas": [],
    "fisio": false,
    "medio_confirmado": [],
@@ -34491,10 +34704,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-10",
-    "dias_restantes": 6,
+    "dias_restantes": 5,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 5 dias!"
    },
    "cargos_lista": [
     "Professor de Educação Básica I - PEB I - Educação Infantil e Ensino Fundamental - Anos Iniciais (500 vagas CR)",
@@ -34589,10 +34802,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-11",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 7 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 6 dias!"
    },
    "cargos_lista": [
     "Defensor Público do Estado de São Paulo (70 vagas)"
@@ -34676,10 +34889,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-23",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 19 dias para encerrar"
+    "aviso_texto": "Faltam 18 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Educação Básica I",
@@ -34775,10 +34988,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-08",
-    "dias_restantes": 4,
+    "dias_restantes": 3,
     "encerrando": true,
     "encerrada": false,
-    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 4 dias!"
+    "aviso_texto": "⏳ INSCRIÇÕES ENCERRANDO · Faltam 3 dias!"
    },
    "cargos_lista": [
     "Professor de Educação Especial (CR)",
@@ -34850,6 +35063,106 @@
    }
   },
   {
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pontal-sp-abre-processo-seletivo-para-professores-e-psicopedagogos",
+   "orgao": "Prefeitura de Pontal",
+   "titulo": "Prefeitura de Pontal - SP abre processo seletivo para professores e psicopedagogos",
+   "uf": "SP",
+   "regiao": "Sudeste",
+   "vagas_salario": "Cadastro Reserva até R$ 21,59 por hora-aula",
+   "cargos_resumo": "Professor de Educação Básica I, Professor de Educação Básica II, Psicopedagogo",
+   "niveis": "Superior",
+   "salario_max_listagem": null,
+   "salario_min_listagem": null,
+   "inscricao_ate": "30/11/2026",
+   "cidade": "Pontal",
+   "lat": -21.0216,
+   "lon": -48.0423,
+   "banca": "Prefeitura Municipal de Pontal",
+   "site_banca": "https://www.pontal.sp.gov.br/",
+   "link_edital": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pontal-sp-abre-processo-seletivo-para-professores-e-psicopedagogos#links",
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "data_prova": "13/12/2026",
+   "regime_geral": "Processo Seletivo / Temporário",
+   "beneficios_gerais": "Consultar edital",
+   "jornada_geral": "Consultar edital",
+   "isencao": "A isenção poderá ser solicitada de 5 a 7 de novembro de 2026 por candidatos que se enquadrem nos critérios.",
+   "faixa_salarial": "Consultar edital",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "beneficios_total": 0.0,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "inscricao_status": {
+    "data_fim_iso": "2026-11-30",
+    "dias_restantes": 25,
+    "encerrando": false,
+    "encerrada": false,
+    "aviso_texto": "Faltam 25 dias para encerrar"
+   },
+   "cargos_lista": [
+    "Professor de Educação Básica I (CR)",
+    "Professor de Educação Básica II - Arte (CR)",
+    "Professor de Educação Básica II - Ciências (CR)",
+    "Professor de Educação Básica II - Educação Física (CR)",
+    "Professor de Educação Básica II - Geografia (CR)",
+    "Professor de Educação Básica II - História (CR)",
+    "Professor de Educação Básica II - Língua Inglesa (CR)",
+    "Professor de Educação Básica II - Língua Portuguesa (CR)",
+    "Professor de Educação Básica II - Matemática (CR)",
+    "Psicopedagogo (CR)"
+   ],
+   "cargos_salarios": {},
+   "first_seen_ts": "2026-11-05T14:57:19.937382-03:00",
+   "is_baseline": false,
+   "novo": true,
+   "fisio_linhas": [],
+   "fisio": false,
+   "medio_confirmado": [],
+   "medio_outros": [],
+   "salario_max": null,
+   "superior_itens": [
+    {
+     "nome": "Professor de Educação Básica I / Professor de Educação Básica II - Arte / Professor de Educação Básica II - Ciências / Professor de Educação Básica II - Educação Física (+5 cargos)",
+     "vagas": "Cadastro de Reserva (CR)",
+     "vagas_imediatas": 0,
+     "tem_cr": true,
+     "salario": null,
+     "salario_bruto": null,
+     "salario_total": null,
+     "salario_detalhe": "Faixa bruta no edital: Consultar edital (+ auxílios legais)",
+     "carga_horaria": "Consultar edital",
+     "regime": "Processo Seletivo / Temporário",
+     "escolaridade_tipo": "superior",
+     "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Pedagogia, Licenciatura plena, Licenciatura na disciplina (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
+     "beneficios": "Consultar edital",
+     "resumo_conteudo": [
+      "Língua Portuguesa (Prefeitura Municipal de Pontal): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
+      "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
+      "Conhecimentos Específicos (Professor de Educação Básica I): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
+     ]
+    }
+   ],
+   "formacoes_aceitas": "Aceita formações diversas: Pedagogia, Licenciatura plena, Licenciatura na disciplina (confirmar no edital).",
+   "termos_formacao": [
+    "pedagogia",
+    "licenciatura plena",
+    "licenciatura na disciplina"
+   ],
+   "links_provas_map": {
+    "superior_sp": {
+     "url_combo": "https://www.pciconcursos.com.br/provas/professor-de-educacao-basica-prefeitura-municipal-de-pontal",
+     "url_cargo": "https://www.pciconcursos.com.br/provas/professor-de-educacao-basica",
+     "url_banca": "https://www.pciconcursos.com.br/provas/prefeitura-municipal-de-pontal",
+     "cargo_busca": "Professor de Educação Básica",
+     "banca_busca": "Prefeitura Municipal de Pontal",
+     "label_combo": "Professor de Educação Básica · Prefeitura Municipal de Pontal"
+    }
+   }
+  },
+  {
    "url": "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-em-botucatu-sp",
    "orgao": "UNESP - Universidade Estadual Paulista \"Júlio de Mesquita Filho\"",
    "titulo": "UNESP abre concurso público para professor titular em Botucatu - SP",
@@ -34883,10 +35196,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-02",
-    "dias_restantes": 28,
+    "dias_restantes": 27,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 28 dias para encerrar"
+    "aviso_texto": "Faltam 27 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Oftalmologia (1 vaga)"
@@ -34972,10 +35285,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-16",
-    "dias_restantes": 12,
+    "dias_restantes": 11,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 12 dias para encerrar"
+    "aviso_texto": "Faltam 11 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular no Departamento de Pediatria, no conjunto de disciplinas: Pediatria I e Pediatria II (1 vaga)"
@@ -35062,10 +35375,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-18",
-    "dias_restantes": 44,
+    "dias_restantes": 43,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 44 dias para encerrar"
+    "aviso_texto": "Faltam 43 dias para encerrar"
    },
    "cargos_lista": [
     "Professor Titular na disciplina de Anestesiologia, junto ao Departamento de Especialidades Cirúrgicas e Anestesiologia (1 vaga)"
@@ -35152,10 +35465,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-11-17",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 13 dias para encerrar"
+    "aviso_texto": "Faltam 12 dias para encerrar"
    },
    "cargos_lista": [
     "Professor de Alergologia e Imunologia",
@@ -35285,10 +35598,10 @@
    "etapas_prova": "Prova Objetiva",
    "inscricao_status": {
     "data_fim_iso": "2026-12-06",
-    "dias_restantes": 32,
+    "dias_restantes": 31,
     "encerrando": false,
     "encerrada": false,
-    "aviso_texto": "Faltam 32 dias para encerrar"
+    "aviso_texto": "Faltam 31 dias para encerrar"
    },
    "cargos_lista": [
     "Pediatria (4 vagas)",
