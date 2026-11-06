@@ -930,6 +930,9 @@ def render_html(
     transition: transform 0.15s, box-shadow 0.15s;
   }}
   .btn-app-install:hover {{ transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28); }}
+  @media all and (display-mode: standalone), (display-mode: fullscreen), (display-mode: minimal-ui) {{
+    .btn-app-install {{ display: none !important; }}
+  }}
   .btn-header-pix {{
     background: #286e34;
     color: #ffffff;
@@ -6332,29 +6335,75 @@ def render_html(
     setTimeout(() => {{ btnCopiarPix.innerHTML = original; }}, 2600);
   }});
 
-  // 10) Service Worker e Instalação do Aplicativo
+  // 10) Service Worker e Instalação do Aplicativo (PWA)
+  const PWA_INSTALLED_KEY = 'concursos_pwa_instalado_v1';
   let deferredPrompt = null;
   const btnInstall = document.getElementById('btnInstall');
   const modalApp = document.getElementById('modalApp');
+
+  function verificarAppInstalado() {{
+    const isStandalone = (
+      (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+      (window.matchMedia && window.matchMedia('(display-mode: fullscreen)').matches) ||
+      (window.matchMedia && window.matchMedia('(display-mode: minimal-ui)').matches) ||
+      window.navigator.standalone === true ||
+      document.referrer.includes('android-app://') ||
+      localStorage.getItem(PWA_INSTALLED_KEY) === '1'
+    );
+    if (isStandalone && btnInstall) {{
+      btnInstall.style.display = 'none';
+      return true;
+    }}
+    return false;
+  }}
+
+  verificarAppInstalado();
 
   if ('serviceWorker' in navigator) {{
     window.addEventListener('load', () => {{
       navigator.serviceWorker.register('./sw.js').catch(() => {{}});
     }});
   }}
+
   window.addEventListener('beforeinstallprompt', (e) => {{
     e.preventDefault();
     deferredPrompt = e;
-  }});
-  btnInstall.addEventListener('click', async () => {{
-    if (deferredPrompt) {{
-      deferredPrompt.prompt();
-      await deferredPrompt.userChoice;
-      deferredPrompt = null;
-    }} else {{
-      modalApp.classList.add('aberto');
+    if (!verificarAppInstalado() && btnInstall) {{
+      btnInstall.style.display = '';
     }}
   }});
+
+  window.addEventListener('appinstalled', () => {{
+    deferredPrompt = null;
+    localStorage.setItem(PWA_INSTALLED_KEY, '1');
+    if (btnInstall) btnInstall.style.display = 'none';
+    if (modalApp) modalApp.classList.remove('aberto');
+  }});
+
+  if (window.matchMedia) {{
+    window.matchMedia('(display-mode: standalone)').addEventListener('change', (e) => {{
+      if (e.matches) {{
+        localStorage.setItem(PWA_INSTALLED_KEY, '1');
+        if (btnInstall) btnInstall.style.display = 'none';
+      }}
+    }});
+  }}
+
+  if (btnInstall) {{
+    btnInstall.addEventListener('click', async () => {{
+      if (deferredPrompt) {{
+        deferredPrompt.prompt();
+        const choice = await deferredPrompt.userChoice;
+        if (choice && choice.outcome === 'accepted') {{
+          localStorage.setItem(PWA_INSTALLED_KEY, '1');
+          btnInstall.style.display = 'none';
+        }}
+        deferredPrompt = null;
+      }} else {{
+        modalApp.classList.add('aberto');
+      }}
+    }});
+  }}
   document.getElementById('fecharModalApp').addEventListener('click', () => modalApp.classList.remove('aberto'));
   document.getElementById('btnEntendiApp').addEventListener('click', () => modalApp.classList.remove('aberto'));
   modalApp.addEventListener('click', (e) => {{
