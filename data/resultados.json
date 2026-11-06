@@ -1,9 +1,9 @@
 {
- "gerado_em": "06/11/2026 11:30",
- "gerado_em_iso": "2026-11-06T11:30:09.135180-03:00",
+ "gerado_em": "06/11/2026 14:21",
+ "gerado_em_iso": "2026-11-06T14:21:57.085714-03:00",
  "fonte": "https://www.pciconcursos.com.br/concursos/sudeste/",
  "total_sp": 170,
- "total_brasil": 621,
+ "total_brasil": 625,
  "ia_ativa": true,
  "novos_ultimas_24h": 16,
  "encerrando_proximos_dias": 63,
@@ -2158,21 +2158,21 @@
    "cidade": "São Paulo",
    "lat": -23.5329,
    "lon": -46.6395,
-   "banca": "Polícia Militar do Estado de São Paulo (PM-SP)",
-   "site_banca": "https://www.policiamilitar.sp.gov.br/",
+   "banca": "Fundação Vunesp",
+   "site_banca": "",
    "link_edital": "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado#links",
    "arquivos_edital": [
     "EDITAL DP-4/321/26"
    ],
    "data_prova": "Consultar edital",
-   "regime_geral": "Consultar edital",
+   "regime_geral": "Estatutário",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "Consultar edital",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxa de inscrição de R$ 110,00. Informações sobre isenção constam no edital completo.",
    "faixa_salarial": "Consultar edital",
    "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
+   "taxa_min": 110.0,
+   "taxa_max": 110.0,
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Teste de Aptidão Física (TAF) · Avaliação Psicológica",
    "inscricao_status": {
@@ -2183,10 +2183,12 @@
     "aviso_texto": "Faltam 46 dias para encerrar"
    },
    "cargos_lista": [
-    "Aluno-Soldado PM (2.000 vagas)"
+    "Aluno-Soldado PM (2.000 vagas)",
+    "Aluno-Soldado PM"
    ],
    "cargos_salarios": {
-    "aluno soldado o": 5482.21
+    "aluno soldado o": 5482.21,
+    "aluno soldado pm": 5482.21
    },
    "first_seen_ts": "2026-11-05T16:32:33.948955-03:00",
    "is_baseline": false,
@@ -2204,12 +2206,12 @@
      "salario_total": 5482.21,
      "salario_detalhe": "Bruto: R$ 5.482,21 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "Consultar edital",
-     "regime": "Consultar edital",
+     "regime": "Estatutário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Aluno-Soldado PM), sem necessidade de curso técnico profissionalizante.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Polícia Militar do Estado de São Paulo (PM-SP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Fundação Vunesp): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Aluno-Soldado PM): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -2227,12 +2229,12 @@
      "salario_total": 5482.21,
      "salario_detalhe": "Bruto: R$ 5.482,21 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "Consultar edital",
-     "regime": "Consultar edital",
+     "regime": "Estatutário",
      "escolaridade_tipo": "medio",
      "requisitos": "Exige APENAS Ensino Médio completo reconhecido pelo MEC para assumir o cargo (Aluno-Soldado PM), sem necessidade de curso técnico profissionalizante.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa (Polícia Militar do Estado de São Paulo (PM-SP)): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (Fundação Vunesp): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Aluno-Soldado PM): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -2243,20 +2245,20 @@
    "superior_itens": [],
    "links_provas_map": {
     "medio5k": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-policia-militar-do-estado-de-sao-paulo",
+     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-vunesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/aluno",
-     "url_banca": "https://www.pciconcursos.com.br/provas/policia-militar-do-estado-de-sao-paulo",
+     "url_banca": "https://www.pciconcursos.com.br/provas/vunesp",
      "cargo_busca": "Aluno",
-     "banca_busca": "Polícia Militar do Estado de São Paulo",
-     "label_combo": "Aluno · Polícia Militar do Estado de São Paulo"
+     "banca_busca": "VUNESP",
+     "label_combo": "Aluno · VUNESP"
     },
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-policia-militar-do-estado-de-sao-paulo",
+     "url_combo": "https://www.pciconcursos.com.br/provas/aluno-vunesp",
      "url_cargo": "https://www.pciconcursos.com.br/provas/aluno",
-     "url_banca": "https://www.pciconcursos.com.br/provas/policia-militar-do-estado-de-sao-paulo",
+     "url_banca": "https://www.pciconcursos.com.br/provas/vunesp",
      "cargo_busca": "Aluno",
-     "banca_busca": "Polícia Militar do Estado de São Paulo",
-     "label_combo": "Aluno · Polícia Militar do Estado de São Paulo"
+     "banca_busca": "VUNESP",
+     "label_combo": "Aluno · VUNESP"
     }
    }
   },
@@ -4464,24 +4466,24 @@
    "salario_max_listagem": 7310.37,
    "salario_min_listagem": null,
    "inscricao_ate": "16/11/2026",
-   "cidade": "São Paulo (Estado)",
-   "lat": -23.5505,
-   "lon": -46.6333,
-   "banca": "Consultar edital",
+   "cidade": "Ribeirão Preto",
+   "lat": -21.1699,
+   "lon": -47.8099,
+   "banca": "GL Consultoria",
    "site_banca": "",
    "link_edital": "https://www.pciconcursos.com.br/noticias/fundacao-hospital-santa-lydia-sp-abre-selecao-com-salarios-de-ate-7310#links",
    "arquivos_edital": [
     "EDITAL DE PROCESSO SELETIVO Nº 010/2026"
    ],
    "data_prova": "06/12/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxa de inscrição de R$ 23,08 para cargos de ensino médio e R$ 23,63 para cargos de ensino superior. O edital não detalha requisitos específicos de isenção.",
    "faixa_salarial": "R$ 1.928,23 a R$ 7.310,37",
    "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
+   "taxa_min": 23.08,
+   "taxa_max": 23.63,
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
@@ -4499,7 +4501,15 @@
     "Biologista (1 vaga + CR)",
     "Fonoaudiólogo (1 vaga + CR)",
     "Médico de Atenção Básica: Ginecologista (1 vaga + CR)",
-    "Psicólogo Organizacional (1 vaga + CR)"
+    "Psicólogo Organizacional (1 vaga + CR)",
+    "Auxiliar de Consultório Dentário",
+    "Auxiliar de Farmácia",
+    "Técnico de Enfermagem",
+    "Analista de Licitações e Contratos",
+    "Biologista",
+    "Fonoaudiólogo",
+    "Médico de Atenção Básica: Ginecologista",
+    "Psicólogo Organizacional"
    ],
    "cargos_salarios": {
     "auxiliar de consultorio dentario": 1928.23,
@@ -4516,7 +4526,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Técnico de Enfermagem",
+     "nome": "Técnico de Enfermagem / Técnico de Enfermagem",
      "vagas": "8 vagas imediatas",
      "vagas_imediatas": 8,
      "tem_cr": false,
@@ -4525,12 +4535,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico de Enfermagem) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
+     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico de Enfermagem / Técnico de Enfermagem) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (GL Consultoria): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Técnico de Enfermagem): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -4540,7 +4550,7 @@
    "salario_max": 7310.37,
    "superior_itens": [
     {
-     "nome": "Analista de Licitações e Contratos / Fonoaudiólogo / Médico de Atenção Básica: Ginecologista / Psicólogo Organizacional",
+     "nome": "Analista de Licitações e Contratos / Fonoaudiólogo / Médico de Atenção Básica: Ginecologista / Psicólogo Organizacional (+4 cargos)",
      "vagas": "8 vagas imediatas",
      "vagas_imediatas": 8,
      "tem_cr": false,
@@ -4549,12 +4559,12 @@
      "salario_total": 7310.37,
      "salario_detalhe": "Bruto: R$ 7.310,37 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Psicologia (CRP), Medicina (CRM) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (GL Consultoria): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Analista de Licitações e Contratos): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -4568,20 +4578,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-de-enfermagem",
+     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-de-enfermagem-gl-consultoria",
      "url_cargo": "https://www.pciconcursos.com.br/provas/tecnico-de-enfermagem",
-     "url_banca": "",
+     "url_banca": "https://www.pciconcursos.com.br/provas/gl-consultoria",
      "cargo_busca": "Técnico de Enfermagem",
-     "banca_busca": "Todas as Bancas",
-     "label_combo": "Técnico de Enfermagem"
+     "banca_busca": "GL Consultoria",
+     "label_combo": "Técnico de Enfermagem · GL Consultoria"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/analista-de-licitacoes-e-contratos",
+     "url_combo": "https://www.pciconcursos.com.br/provas/analista-de-licitacoes-e-contratos-gl-consultoria",
      "url_cargo": "https://www.pciconcursos.com.br/provas/analista-de-licitacoes-e-contratos",
-     "url_banca": "",
+     "url_banca": "https://www.pciconcursos.com.br/provas/gl-consultoria",
      "cargo_busca": "Analista de Licitações e Contratos",
-     "banca_busca": "Todas as Bancas",
-     "label_combo": "Analista de Licitações e Contratos"
+     "banca_busca": "GL Consultoria",
+     "label_combo": "Analista de Licitações e Contratos · GL Consultoria"
     }
    }
   },
@@ -18978,24 +18988,24 @@
    "salario_max_listagem": 7310.37,
    "salario_min_listagem": null,
    "inscricao_ate": "16/11/2026",
-   "cidade": "São Paulo (Estado)",
-   "lat": -23.5505,
-   "lon": -46.6333,
-   "banca": "Consultar edital",
+   "cidade": "Ribeirão Preto",
+   "lat": -21.1699,
+   "lon": -47.8099,
+   "banca": "GL Consultoria",
    "site_banca": "",
    "link_edital": "https://www.pciconcursos.com.br/noticias/fundacao-hospital-santa-lydia-sp-abre-selecao-com-salarios-de-ate-7310#links",
    "arquivos_edital": [
     "EDITAL DE PROCESSO SELETIVO Nº 010/2026"
    ],
    "data_prova": "06/12/2026",
-   "regime_geral": "Processo Seletivo / Temporário",
+   "regime_geral": "CLT (Celetista)",
    "beneficios_gerais": "Consultar edital",
    "jornada_geral": "20 a 40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "isencao": "Taxa de inscrição de R$ 23,08 para cargos de ensino médio e R$ 23,63 para cargos de ensino superior. O edital não detalha requisitos específicos de isenção.",
    "faixa_salarial": "R$ 1.928,23 a R$ 7.310,37",
    "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
+   "taxa_min": 23.08,
+   "taxa_max": 23.63,
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "inscricao_status": {
@@ -19013,7 +19023,15 @@
     "Biologista (1 vaga + CR)",
     "Fonoaudiólogo (1 vaga + CR)",
     "Médico de Atenção Básica: Ginecologista (1 vaga + CR)",
-    "Psicólogo Organizacional (1 vaga + CR)"
+    "Psicólogo Organizacional (1 vaga + CR)",
+    "Auxiliar de Consultório Dentário",
+    "Auxiliar de Farmácia",
+    "Técnico de Enfermagem",
+    "Analista de Licitações e Contratos",
+    "Biologista",
+    "Fonoaudiólogo",
+    "Médico de Atenção Básica: Ginecologista",
+    "Psicólogo Organizacional"
    ],
    "cargos_salarios": {
     "auxiliar de consultorio dentario": 1928.23,
@@ -19030,7 +19048,7 @@
    "medio_confirmado": [],
    "medio_outros": [
     {
-     "nome": "Técnico de Enfermagem",
+     "nome": "Técnico de Enfermagem / Técnico de Enfermagem",
      "vagas": "8 vagas imediatas",
      "vagas_imediatas": 8,
      "tem_cr": false,
@@ -19039,12 +19057,12 @@
      "salario_total": 3200.0,
      "salario_detalhe": "Bruto: R$ 3.200,00 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "medio_tecnico",
-     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico de Enfermagem) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
+     "requisitos": "Exige Ensino Médio completo + Curso Técnico/Profissionalizante específico na área (Técnico de Enfermagem / Técnico de Enfermagem) e registro ativo no respectivo Conselho de Classe (COREN, CFT, CRTR, CRC ou MTE) quando aplicável.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (GL Consultoria): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Técnico de Enfermagem): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -19054,7 +19072,7 @@
    "salario_max": 7310.37,
    "superior_itens": [
     {
-     "nome": "Analista de Licitações e Contratos / Fonoaudiólogo / Médico de Atenção Básica: Ginecologista / Psicólogo Organizacional",
+     "nome": "Analista de Licitações e Contratos / Fonoaudiólogo / Médico de Atenção Básica: Ginecologista / Psicólogo Organizacional (+4 cargos)",
      "vagas": "8 vagas imediatas",
      "vagas_imediatas": 8,
      "tem_cr": false,
@@ -19063,12 +19081,12 @@
      "salario_total": 7310.37,
      "salario_detalhe": "Bruto: R$ 7.310,37 (vencimento base no edital) + benefícios legais",
      "carga_horaria": "20 a 40 horas semanais",
-     "regime": "Processo Seletivo / Temporário",
+     "regime": "CLT (Celetista)",
      "escolaridade_tipo": "superior",
      "requisitos": "Exige Ensino Superior completo (graduação reconhecida pelo MEC). Aceita formações diversas: Psicologia (CRP), Medicina (CRM) (confirmar no edital). Verifique no edital registro em conselho de classe, experiência e demais exigências do cargo.",
      "beneficios": "Consultar edital",
      "resumo_conteudo": [
-      "Língua Portuguesa: Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
+      "Língua Portuguesa (GL Consultoria): Compreensão e interpretação de textos, gramática normativa, concordância, regência, pontuação e redação oficial",
       "Matemática e Raciocínio Lógico: Operações fundamentais, porcentagem, razão e proporção, regra de três, equações, geometria básica e lógica proposicional",
       "Noções de Informática: Sistema operacional Windows, editores de texto (Word), planilhas (Excel), internet, correio eletrônico e segurança da informação",
       "Conhecimentos Específicos (Analista de Licitações e Contratos): Rotinas administrativas/operacionais, atendimento ao público, noções de Administração Pública e legislação específica do órgão"
@@ -19082,20 +19100,20 @@
    ],
    "links_provas_map": {
     "medio_todos": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-de-enfermagem",
+     "url_combo": "https://www.pciconcursos.com.br/provas/tecnico-de-enfermagem-gl-consultoria",
      "url_cargo": "https://www.pciconcursos.com.br/provas/tecnico-de-enfermagem",
-     "url_banca": "",
+     "url_banca": "https://www.pciconcursos.com.br/provas/gl-consultoria",
      "cargo_busca": "Técnico de Enfermagem",
-     "banca_busca": "Todas as Bancas",
-     "label_combo": "Técnico de Enfermagem"
+     "banca_busca": "GL Consultoria",
+     "label_combo": "Técnico de Enfermagem · GL Consultoria"
     },
     "superior_sp": {
-     "url_combo": "https://www.pciconcursos.com.br/provas/analista-de-licitacoes-e-contratos",
+     "url_combo": "https://www.pciconcursos.com.br/provas/analista-de-licitacoes-e-contratos-gl-consultoria",
      "url_cargo": "https://www.pciconcursos.com.br/provas/analista-de-licitacoes-e-contratos",
-     "url_banca": "",
+     "url_banca": "https://www.pciconcursos.com.br/provas/gl-consultoria",
      "cargo_busca": "Analista de Licitações e Contratos",
-     "banca_busca": "Todas as Bancas",
-     "label_combo": "Analista de Licitações e Contratos"
+     "banca_busca": "GL Consultoria",
+     "label_combo": "Analista de Licitações e Contratos · GL Consultoria"
     }
    }
   },

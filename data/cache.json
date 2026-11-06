@@ -14025,8 +14025,8 @@
    "arquivos_edital": [
     "EDITAL DP-4/321/26"
    ],
-   "link_banca": "https://www.policiamilitar.sp.gov.br/",
-   "nome_banca": "Polícia Militar do Estado de São Paulo (PM-SP)",
+   "link_banca": null,
+   "nome_banca": null,
    "data_prova": "Consultar edital",
    "regime": "Consultar edital",
    "beneficios": "Consultar edital",
@@ -14043,7 +14043,29 @@
    "faixa_salarial": "Consultar edital",
    "salario_min_texto": null,
    "salario_max_texto": null
-  }
+  },
+  "ia": {
+   "cidade": "São Paulo",
+   "banca": "Fundação Vunesp",
+   "data_prova": null,
+   "regime_geral": "Estatutário",
+   "beneficios": null,
+   "isencao": "Taxa de inscrição de R$ 110,00. Informações sobre isenção constam no edital completo.",
+   "jornada_geral": null,
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Aluno-Soldado PM",
+     "escolaridade": "medio",
+     "vagas": "2.000 vagas",
+     "salario": 5482.21,
+     "carga_horaria": null,
+     "regime": "Estatutário",
+     "requisitos": "Ensino médio completo, idade entre 17 e 30 anos, estatura mínima de 1,55 m para mulheres e de 1,60 m para homens"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-pontal-sp-abre-processo-seletivo-para-professores-e-psicopedagogos": {
   "first_seen": "2026-11-05",
@@ -14316,7 +14338,7 @@
   "first_seen_ts": "2026-11-06T11:30:09.135180-03:00",
   "is_baseline": false,
   "schema_version": 5,
-  "hash": "b4cdf6f9da46",
+  "hash": "debc9a925498",
   "fisio_linhas": [],
   "salario_max_texto": 7310.37,
   "tem_medio": true,
@@ -14356,7 +14378,92 @@
    "faixa_salarial": "R$ 1.928,23 a R$ 7.310,37",
    "salario_min_texto": 1928.23,
    "salario_max_texto": 7310.37
-  }
+  },
+  "ia": {
+   "cidade": "Ribeirão Preto",
+   "banca": "GL Consultoria",
+   "data_prova": "06/12/2026",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios": null,
+   "isencao": "Taxa de inscrição de R$ 23,08 para cargos de ensino médio e R$ 23,63 para cargos de ensino superior. O edital não detalha requisitos específicos de isenção.",
+   "jornada_geral": "20 a 40 horas semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Auxiliar de Consultório Dentário",
+     "escolaridade": "medio",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Auxiliar de Farmácia",
+     "escolaridade": "medio",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio"
+    },
+    {
+     "nome": "Técnico de Enfermagem",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino médio e formação técnica em enfermagem"
+    },
+    {
+     "nome": "Analista de Licitações e Contratos",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior"
+    },
+    {
+     "nome": "Biologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Biologia"
+    },
+    {
+     "nome": "Fonoaudiólogo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Fonoaudiologia"
+    },
+    {
+     "nome": "Médico de Atenção Básica: Ginecologista",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Medicina com especialização em Ginecologia"
+    },
+    {
+     "nome": "Psicólogo Organizacional",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "20 a 40 horas semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino superior em Psicologia"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/funcamp-sp-abre-processo-seletivo-para-enfermeiro-ccih-no-hospital-estadual-sumare": {
   "first_seen": "2026-11-06",
