@@ -1691,38 +1691,6 @@
    "etapas_prova": "Prova Objetiva"
   }
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-cabreuva-sp-abre-concurso-publico-para-guarda-municipal": {
-  "first_seen": "2026-10-21",
-  "hash": "c34269ab07b1",
-  "fisio_linhas": [],
-  "salario_max_texto": 3846.34,
-  "tem_medio": true,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Guarda Municipal (2 vagas + CR)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE CONCURSO PÚBLICO 02/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/cabreuva-sp",
-   "link_banca": "https://cabreuva.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Cabreúva",
-   "data_prova": "17/01/2027",
-   "regime": "Consultar edital",
-   "beneficios": "Auxílio-alimentação de R$ 900,00. A seleção ocorrerá por meio de prova objetiva e teste físico · Vale-alimentação no valor de R$ 900,00.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 74,00, com possibilidade de isenção conforme critérios do edital.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 74,00",
-   "taxa_min": 74.0,
-   "taxa_max": 74.0,
-   "beneficios_total": 900.0,
-   "etapas_prova": "Prova Objetiva · Teste de Aptidão Física (TAF)"
-  }
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-conchal-sp-abre-processo-seletivo-para-agentes-de-saude-e-de-endemias": {
   "first_seen": "2026-10-21",
   "hash": "218899e9ef37",
@@ -2111,247 +2079,6 @@
    "taxa_inscricao": "Gratuita (sem taxa de inscrição)",
    "taxa_min": 0.0,
    "taxa_max": 0.0,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397": {
-  "first_seen": "2026-10-21",
-  "hash": "b432e0c54115",
-  "fisio_linhas": [],
-  "salario_max_texto": 17397.46,
-  "tem_medio": true,
-  "ia": {
-   "cargos": [
-    {
-     "nome": "Motorista de Veículos Pesados",
-     "escolaridade": "fundamental",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Operador de Máquinas Pesadas",
-     "escolaridade": "fundamental",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Pedreiro",
-     "escolaridade": "fundamental",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Eletricista Civil",
-     "escolaridade": "fundamental",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Lavador de Veículos",
-     "escolaridade": "fundamental",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Servente de Limpeza",
-     "escolaridade": "fundamental",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Tratador de Animais",
-     "escolaridade": "fundamental",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Auxiliar de Enfermagem",
-     "escolaridade": "tecnico",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Monitor de Transporte Escolar",
-     "escolaridade": "medio",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Assistente Social na Educação Básica",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Enfermeiro de Saúde da Família",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Engenheiro Agrônomo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Fonoaudiólogo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Professor de Educação Básica I (PEB I) - 32 Horas",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Cardiologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico ESF",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Neurologista Infantil",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Ortopedista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Psiquiatra Infantil",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Urologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    }
-   ],
-   "salario_min": 1621.0,
-   "salario_max": 17397.46
-  },
-  "ia_model": "gemini-3.5-flash-lite",
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 3,
-  "detalhes": {
-   "arquivos_edital": [
-    "EDITAL DE CONCURSO PÚBLICO CPPMP 001/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/piedade-sp",
-   "link_banca": "https://www.piedade.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Piedade",
-   "data_prova": "29/11/2026",
-   "regime": "Consultar edital",
-   "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "110 a 220 horas mensais",
-   "cargos_li": [
-    "Motorista de Veículos Pesados (1 vaga)",
-    "Operador de Máquinas Pesadas (1 vaga)",
-    "Pedreiro (1 vaga)",
-    "Eletricista Civil (1 vaga)",
-    "Lavador de Veículos (1 vaga)",
-    "Servente de Limpeza (1 vaga)",
-    "Tratador de Animais (1 vaga)",
-    "Auxiliar de Enfermagem (1 vaga)",
-    "Monitor de Transporte Escolar (1 vaga)",
-    "Assistente Social na Educação Básica (1 vaga)",
-    "Enfermeiro de Saúde da Família (1 vaga)",
-    "Engenheiro Agrônomo (1 vaga)",
-    "Fonoaudiólogo (1 vaga)",
-    "Professor de Educação Básica I (PEB I) - 32 Horas (1 vaga)",
-    "Médico Cardiologista (1 vaga)",
-    "Médico ESF (1 vaga)",
-    "Médico Neurologista Infantil (1 vaga)",
-    "Médico Ortopedista (1 vaga)",
-    "Médico Psiquiatra Infantil (1 vaga)",
-    "Médico Urologista (1 vaga)"
-   ],
-   "isencao": "As taxas de inscrição são de R$ 46,85 (fundamental), R$ 62,47 (médio) e R$ 93,70 (superior). Haverá isenção da taxa para inscritos no CadÚnico, mediante requerimento entre os dias 9 e 13 de outubro de 2026.",
-   "salario_min": 1621.0,
-   "salario_max": 17397.46,
-   "faixa_salarial": "R$ 1.621,00 a R$ 17.397,46",
-   "cargos_salarios": {
-    "motorista de veiculos pesados": 1621.0,
-    "operador de maquinas pesadas": 1621.0,
-    "pedreiro": 1621.0,
-    "eletricista civil": 1621.0,
-    "servente de limpeza": 1621.0,
-    "auxiliar de enfermagem": 1621.0,
-    "engenheiro agronomo": 17397.46,
-    "medico cardiologista": 17397.46,
-    "medico esf": 17397.46,
-    "medico neurologista infantil": 17397.46,
-    "medico ortopedista": 17397.46,
-    "medico psiquiatra infantil": 17397.46,
-    "medico urologista": 17397.46
-   },
-   "taxa_inscricao": "R$ 46,85 a R$ 93,70",
-   "taxa_min": 46.85,
-   "taxa_max": 93.7,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 1621.0,
-  "salario_max": 17397.46,
-  "faixa_salarial": "R$ 1.621,00 a R$ 17.397,46"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-das-pedras-sp-abre-selecao-para-cadastro-reserva-de-professores": {
-  "first_seen": "2026-10-21",
-  "hash": "b54bccf6a014",
-  "fisio_linhas": [],
-  "salario_max_texto": 5130.63,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor de Educação Básica I",
-    "Professor de Educação Básica II - Arte",
-    "Professor de Educação Básica II - Ciências",
-    "Professor de Educação Básica II - Educação Especial",
-    "Professor de Educação Básica II - Educação Física",
-    "Professor de Educação Básica II - Ensino Profissionalizante - Contabilidade",
-    "Professor de Educação Básica II - Geografia",
-    "Professor de Educação Básica II - História",
-    "Professor de Educação Básica II - Inglês",
-    "Professor de Educação Básica II - Libras",
-    "Professor de Educação Básica II - Língua Portuguesa",
-    "Professor de Educação Básica II - Matemática"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 001/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/rio-das-pedras-sp",
-   "link_banca": "https://www.riodaspedras.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Rio das Pedras",
-   "data_prova": "13/12/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital",
-   "jornada": "Consultar edital",
-   "isencao": "Candidatos inscritos no CadÚnico e doadores de medula óssea nas condições previstas no edital poderão solicitar isenção de 20 a 21 de outubro de 2026.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva"
   }
@@ -2864,82 +2591,6 @@
     "EDITAL Nº 351/2026"
    ],
    "link_provas": "https://www.pciconcursos.com.br/provas/sao-jose-do-rio-preto-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2945.73,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2945.73,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.945,73 a R$ 3.511,90"
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-medicina-veterinaria-em-botucatu-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "584306dfe55e",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Medicina Veterinária, subárea de Patologia Animal (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 793/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/botucatu-sp",
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 1423.69,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 1423.69,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90"
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-medicina-veterinaria-em-aracatuba-sp": {
-  "first_seen": "2026-10-21",
-  "hash": "59b066f57a26",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 4,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Medicina Veterinária, subárea de Clínica e Cirurgia Animal (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 47/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/aracatuba-sp",
    "link_banca": "https://www.unesp.br/",
    "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
    "data_prova": "Consultar edital",
@@ -3726,43 +3377,6 @@
    "etapas_prova": "Prova Objetiva"
   }
  },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-substituto-de-letras-em-araraquara-sp": {
-  "first_seen": "2026-10-22",
-  "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "5cf9648d473e",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Letras, subárea de Literaturas Estrangeiras Modernas (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 305/2026"
-   ],
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2106.04,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2106.04,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
- },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-publico-para-professor-titular-na-faculdade-de-ciencias-humanas-e-sociais-de-franca-sp": {
   "first_seen": "2026-10-22",
   "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
@@ -3999,48 +3613,6 @@
    ]
   },
   "ia_model": "gemini-3.5-flash-lite"
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-elisiario-sp-abre-processo-seletivo-para-profissionais-de-diversas-areas": {
-  "first_seen": "2026-10-26",
-  "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "86ce43df4cdd",
-  "fisio_linhas": [],
-  "salario_max_texto": 2317.18,
-  "tem_medio": true,
-  "detalhes": {
-   "cargos_li": [
-    "Assistente Social",
-    "Cuidador",
-    "Professor de Educação Básica I, PEB I (Educação Infantil e Ensino Fundamental)",
-    "Professor de Educação Básica II, PEB II, Ciências",
-    "Professor de Educação Básica II, PEB II, Educação Artística",
-    "Professor de Educação Básica II, PEB II, Educação Física",
-    "Professor de Educação Básica II, PEB II, Geografia",
-    "Professor de Educação Básica II, PEB II, História",
-    "Professor de Educação Básica II, PEB II, Inglês",
-    "Professor de Educação Básica II, PEB II, Língua Portuguesa",
-    "Professor de Educação Básica II, PEB II, Matemática",
-    "Professor de Educação Especial, PEB II"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO PÚBLICO Nº 002/2026"
-   ],
-   "link_banca": "https://www.elisiario.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Elisiário",
-   "data_prova": "06/12/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital",
-   "jornada": "20 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaicara-sp-abre-concurso-publico-com-salarios-de-ate-17716": {
   "first_seen": "2026-10-26",
@@ -17823,6 +17395,390 @@
    "taxa_max": null,
    "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
    "cargos_salarios": {},
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/cetesb-sp-abre-concursos-publicos-para-diversos-cargos": {
+  "first_seen": "2026-11-10",
+  "first_seen_ts": "2026-11-10T14:38:33.565455-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "83de1f320535",
+  "fisio_linhas": [],
+  "salario_max_texto": 8971.98,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Técnico Administrativo (17 vagas)",
+    "Técnico Ambiental, Técnico em Eletrônica (1 vaga)",
+    "Técnico Ambiental, Técnico em Química (2 vagas)",
+    "Técnico Ambiental, Técnico em Meio Ambiente (3 vagas)",
+    "Advogado (2 vagas)",
+    "Analista Administrativo, Administração (7 vagas)",
+    "Analista Administrativo, Contabilidade (2 vagas)",
+    "Analista Administrativo, Psicologia (1 vaga)",
+    "Analista Ambiental, Biologia (13 vagas)",
+    "Analista Ambiental, Engenharia Agronômica (3 vagas)",
+    "Analista Ambiental, Engenharia Ambiental e Sanitária (22 vagas)",
+    "Analista Ambiental, Engenharia Civil (2 vagas)",
+    "Analista Ambiental, Engenharia Florestal (1 vaga)",
+    "Analista Ambiental, Engenharia Mecânica (4 vagas)",
+    "Analista Ambiental, Engenharia Química (4 vagas)",
+    "Analista Ambiental, Oceanografia (2 vagas)",
+    "Analista Ambiental, Geografia (4 vagas)",
+    "Analista Ambiental, Geologia (3 vagas)",
+    "Analista Ambiental, Química (8 vagas)",
+    "Analista de Tecnologia da Informação, Redes e Telecomunicação (1 vaga)",
+    "Analista de Tecnologia da Informação, Sistemas (3 vagas)",
+    "Engenheiro, Engenharia Civil (2 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026",
+    "EDITAL Nº 02/2026"
+   ],
+   "link_banca": null,
+   "nome_banca": null,
+   "data_prova": "21/02/2027",
+   "regime": "Consultar edital",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Doadores de sangue que atendam aos requisitos podem pedir isenção. Estudantes com renda mensal inferior a dois salários mínimos ou desempregados podem solicitar redução de 50% da taxa.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação",
+   "cargos_salarios": {
+    "os empregos de niveis medio e tecnico e d": 5614.38
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  },
+  "ia": {
+   "cidade": "São Paulo",
+   "banca": "FCC",
+   "data_prova": "21/02/2027",
+   "regime_geral": "CLT (Celetista)",
+   "beneficios": "Vantagens e benefícios vigentes na data da admissão",
+   "isencao": "Taxa de R$ 60,00 para nível médio/técnico e R$ 90,00 para nível superior. Isenção para doadores de sangue que atendam aos requisitos. Redução de 50% para estudantes com renda mensal inferior a dois salários mínimos ou desempregados.",
+   "jornada_geral": "40h semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Técnico Administrativo",
+     "escolaridade": "medio",
+     "vagas": "17 vagas",
+     "salario": 5614.38,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Médio completo"
+    },
+    {
+     "nome": "Técnico Ambiental, Técnico em Eletrônica",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga",
+     "salario": 5614.38,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Técnico em Eletrônica"
+    },
+    {
+     "nome": "Técnico Ambiental, Técnico em Química",
+     "escolaridade": "tecnico",
+     "vagas": "2 vagas",
+     "salario": 5614.38,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Técnico em Química"
+    },
+    {
+     "nome": "Técnico Ambiental, Técnico em Meio Ambiente",
+     "escolaridade": "tecnico",
+     "vagas": "3 vagas",
+     "salario": 5614.38,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Técnico em Meio Ambiente"
+    },
+    {
+     "nome": "Advogado",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Direito e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Administrativo, Administração",
+     "escolaridade": "superior",
+     "vagas": "7 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Administração e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Administrativo, Contabilidade",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Ciências Contábeis e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Administrativo, Psicologia",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Psicologia e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Biologia",
+     "escolaridade": "superior",
+     "vagas": "13 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Biologia e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Engenharia Agronômica",
+     "escolaridade": "superior",
+     "vagas": "3 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Engenharia Agronômica e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Engenharia Ambiental e Sanitária",
+     "escolaridade": "superior",
+     "vagas": "22 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Engenharia Ambiental e Sanitária e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Engenharia Civil",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Engenharia Civil e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Engenharia Florestal",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Engenharia Florestal e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Engenharia Mecânica",
+     "escolaridade": "superior",
+     "vagas": "4 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Engenharia Mecânica e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Engenharia Química",
+     "escolaridade": "superior",
+     "vagas": "4 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Engenharia Química e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Oceanografia",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Oceanografia e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Geografia",
+     "escolaridade": "superior",
+     "vagas": "4 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Geografia e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Geologia",
+     "escolaridade": "superior",
+     "vagas": "3 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Geologia e registro no órgão competente"
+    },
+    {
+     "nome": "Analista Ambiental, Química",
+     "escolaridade": "superior",
+     "vagas": "8 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Química e registro no órgão competente"
+    },
+    {
+     "nome": "Analista de Tecnologia da Informação, Redes e Telecomunicação",
+     "escolaridade": "superior",
+     "vagas": "1 vaga",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior na área de Tecnologia da Informação"
+    },
+    {
+     "nome": "Analista de Tecnologia da Informação, Sistemas",
+     "escolaridade": "superior",
+     "vagas": "3 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior na área de Tecnologia da Informação"
+    },
+    {
+     "nome": "Engenheiro, Engenharia Civil",
+     "escolaridade": "superior",
+     "vagas": "2 vagas",
+     "salario": 8971.98,
+     "carga_horaria": "40h semanais",
+     "regime": "CLT (Celetista)",
+     "requisitos": "Ensino Superior em Engenharia Civil e registro no órgão competente"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/sp-aguas-sp-abre-concurso-publico-com-salarios-de-ate-12070": {
+  "first_seen": "2026-11-10",
+  "first_seen_ts": "2026-11-10T14:38:33.565455-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "4095372c2464",
+  "fisio_linhas": [],
+  "salario_max_texto": 12070.0,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Gestão de Recursos Hídricos (77 vagas)",
+    "Gestão Ambiental e Recursos Hídricos (59 vagas)",
+    "Direito e Regulação Econômica de Recursos Hídricos (16 vagas)",
+    "Monitoramento Hidrológico e Ciência de Dados (18 vagas)",
+    "Administração Pública (8 vagas)",
+    "Direito (5 vagas)",
+    "Econômico-Financeira (4 vagas)",
+    "Tecnologia da Informação e Ciência de Dados (3 vagas)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026"
+   ],
+   "link_banca": null,
+   "nome_banca": null,
+   "data_prova": "31/01/2027",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-refeição de R$ 55,00 por dia efetivamente trabalhado",
+   "beneficios_total": 1210.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Doadores de sangue que atendam aos requisitos do edital poderão pedir isenção. Estudantes com remuneração inferior a dois salários mínimos ou desempregados poderão solicitar redução de 50% da taxa.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Avaliação de Títulos",
+   "cargos_salarios": {
+    "especialista": 12070.0
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unesp-sp-abre-concursos-publicos-para-professores-substitutos-no-campus-de-sorocaba": {
+  "first_seen": "2026-11-10",
+  "first_seen_ts": "2026-11-10T14:38:33.565455-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "a13377c625c0",
+  "fisio_linhas": [],
+  "salario_max_texto": 3511.9,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Substituto na área de Administração, subárea de conhecimento: Administração de Empresas (1 vaga)",
+    "Professor Substituto na área de Engenharias, subárea de conhecimento: Engenharia Elétrica (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 122/2026",
+    "EDITAL Nº 121/2026"
+   ],
+   "link_banca": null,
+   "nome_banca": null,
+   "data_prova": "Consultar edital",
+   "regime": "Consultar edital",
+   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
+   "beneficios_total": 2000.02,
+   "jornada": "12 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 209,00",
+   "taxa_min": 209.0,
+   "taxa_max": 209.0,
+   "etapas_prova": "Prova Objetiva",
+   "cargos_salarios": {},
+   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
+   "salario_min_texto": 1423.69,
+   "salario_max_texto": 3511.9
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/unifesp-sp-abre-vaga-para-professor-substituto-de-terapia-ocupacional-no-campus-da-baixada-santista": {
+  "first_seen": "2026-11-10",
+  "first_seen_ts": "2026-11-10T14:38:33.565455-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "e784eefac598",
+  "fisio_linhas": [],
+  "salario_max_texto": 6157.29,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Professor Assistente A Substituto na área de Terapia Ocupacional (1 vaga)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 779"
+   ],
+   "link_banca": null,
+   "nome_banca": null,
+   "data_prova": "Consultar edital",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Auxílio-alimentação · Auxílio-alimentação de R$ 1.192,00.",
+   "beneficios_total": 1192.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Pessoas inscritas no CadÚnico que atendam ao critério de renda do edital e doadores de medula óssea podem solicitar isenção entre o primeiro e o quinto dia útil do período de inscrições.",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {
+    "professor substituto de terapia ocupacional no campus da baixada santista": 6157.29
+   },
    "faixa_salarial": "Consultar edital",
    "salario_min_texto": null,
    "salario_max_texto": null
