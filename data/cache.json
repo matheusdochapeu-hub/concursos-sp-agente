@@ -110,322 +110,6 @@
   "salario_max": 8595.15,
   "faixa_salarial": "R$ 2.312,25 a R$ 8.595,15"
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-17433": {
-  "first_seen": "2026-10-21",
-  "hash": "03d242dedee5",
-  "fisio_linhas": [
-   "Fisioterapeuta (1 vaga)"
-  ],
-  "salario_max_texto": 17433.24,
-  "tem_medio": true,
-  "ia": {
-   "cargos": [
-    {
-     "nome": "Agente de Gestão Pública - Assistente Administrativo",
-     "escolaridade": "desconhecida",
-     "vagas": "10 vagas",
-     "salario": null
-    },
-    {
-     "nome": "Agente de Políticas Sociais - Auxiliar de Saúde Bucal",
-     "escolaridade": "desconhecida",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Cirurgião Dentista Generalista",
-     "escolaridade": "superior",
-     "vagas": "3 vagas",
-     "salario": null
-    },
-    {
-     "nome": "Farmacêutico",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Fisioterapeuta",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Fonoaudiólogo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Terapeuta Ocupacional",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico - Saúde Ocupacional",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Alergologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Cardiologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Clínico Geral",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Dermatologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Endocrinologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Gastroenterologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Geriatra",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Ginecologista e Obstetra",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Hematologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Infectologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Nefrologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Neurologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Neuropediatria",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Oftalmologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Oncologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Ortopedista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Otorrinolaringologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Pediatra",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Pneumologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Pneumopediatria",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Psiquiatra",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Reumatologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Saúde da Família",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Urologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Veterinário",
-     "escolaridade": "superior",
-     "vagas": "cadastro de reserva",
-     "salario": null
-    },
-    {
-     "nome": "Médico Veterinário Sanitarista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    }
-   ],
-   "salario_min": 2377.65,
-   "salario_max": 17433.24
-  },
-  "ia_model": "gemini-3.5-flash-lite",
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 3,
-  "detalhes": {
-   "arquivos_edital": [
-    "EDITAL DE CONCURSO PÚBLICO Nº 01/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/matao-sp",
-   "link_banca": "https://www.matao.sp.gov.br/",
-   "nome_banca": "Prefeitura Municipal de Matão",
-   "data_prova": "06/12/2026",
-   "regime": "CLT (Celetista)",
-   "beneficios": "Auxílio-alimentação (cartão) no valor de R$ 1.000,00 (valor vigente em setembro/2026)",
-   "jornada": "10 a 40 horas semanais",
-   "cargos_li": [
-    "Agente de Gestão Pública - Assistente Administrativo (10 vagas)",
-    "Agente de Políticas Sociais - Auxiliar de Saúde Bucal (1 vaga)",
-    "Cirurgião Dentista Generalista (3 vagas)",
-    "Farmacêutico (1 vaga)",
-    "Fisioterapeuta (1 vaga)",
-    "Fonoaudiólogo (1 vaga)",
-    "Terapeuta Ocupacional (1 vaga)",
-    "Médico - Saúde Ocupacional (1 vaga)",
-    "Médico Alergologista (1 vaga)",
-    "Médico Cardiologista (1 vaga)",
-    "Médico Clínico Geral (1 vaga)",
-    "Médico Dermatologista (1 vaga)",
-    "Médico Endocrinologista (1 vaga)",
-    "Médico Gastroenterologista (1 vaga)",
-    "Médico Geriatra (1 vaga)",
-    "Médico Ginecologista e Obstetra (1 vaga)",
-    "Médico Hematologista (1 vaga)",
-    "Médico Infectologista (1 vaga)",
-    "Médico Nefrologista (1 vaga)",
-    "Médico Neurologista (1 vaga)",
-    "Médico Neuropediatria (1 vaga)",
-    "Médico Oftalmologista (1 vaga)",
-    "Médico Oncologista (1 vaga)",
-    "Médico Ortopedista (1 vaga)",
-    "Médico Otorrinolaringologista (1 vaga)",
-    "Médico Pediatra (1 vaga)",
-    "Médico Pneumologista (1 vaga)",
-    "Médico Pneumopediatria (1 vaga)",
-    "Médico Psiquiatra (1 vaga)",
-    "Médico Reumatologista (1 vaga)",
-    "Médico Saúde da Família (1 vaga)",
-    "Médico Urologista (1 vaga)",
-    "Médico Veterinário (cadastro de reserva)",
-    "Médico Veterinário Sanitarista (1 vaga)"
-   ],
-   "isencao": "Poderão solicitar isenção da taxa candidatos desempregados, doadores de sangue ou medula óssea, e pessoas com deficiência, entre os dias 28 e 29 de setembro de 2026.",
-   "salario_min": 2377.65,
-   "salario_max": 17433.24,
-   "faixa_salarial": "R$ 2.377,65 a R$ 17.433,24",
-   "cargos_salarios": {
-    "agente de politicas sociais auxiliar de saude bucal": 2377.65,
-    "cirurgiao dentista generalista": 17433.24,
-    "farmaceutico": 17433.24,
-    "fisioterapeuta": 17433.24,
-    "medico saude ocupacional": 17433.24,
-    "medico alergologista": 17433.24,
-    "medico cardiologista": 17433.24,
-    "medico clinico geral": 17433.24,
-    "medico dermatologista": 17433.24,
-    "medico endocrinologista": 17433.24,
-    "medico gastroenterologista": 17433.24,
-    "medico geriatra": 17433.24,
-    "medico ginecologista e obstetra": 17433.24,
-    "medico hematologista": 17433.24,
-    "medico infectologista": 17433.24,
-    "medico nefrologista": 17433.24,
-    "medico neurologista": 17433.24,
-    "medico neuropediatria": 17433.24,
-    "medico oftalmologista": 17433.24,
-    "medico oncologista": 17433.24,
-    "medico ortopedista": 17433.24,
-    "medico otorrinolaringologista": 17433.24,
-    "medico pediatra": 17433.24,
-    "medico pneumologista": 17433.24,
-    "medico pneumopediatria": 17433.24,
-    "medico psiquiatra": 17433.24,
-    "medico reumatologista": 17433.24,
-    "medico saude da familia": 17433.24,
-    "medico urologista": 17433.24,
-    "medico veterinario": 17433.24,
-    "medico veterinario sanitarista": 17433.24
-   },
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 1000.0,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2377.65,
-  "salario_max": 17433.24,
-  "faixa_salarial": "R$ 2.377,65 a R$ 17.433,24"
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-matao-sp-abre-concurso-publico-com-salarios-de-ate-9717": {
   "first_seen": "2026-10-21",
   "hash": "63473cd09be9",
@@ -676,263 +360,6 @@
    "beneficios_total": 0.0,
    "etapas_prova": "Prova Objetiva"
   }
- },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-carlos-sp-abre-concurso-com-salarios-de-ate-9833": {
-  "first_seen": "2026-10-21",
-  "hash": "78f713486a68",
-  "fisio_linhas": [],
-  "salario_max_texto": 9833.0,
-  "tem_medio": true,
-  "ia": {
-   "cargos": [
-    {
-     "nome": "Auxiliar em Saúde Bucal",
-     "escolaridade": "desconhecida",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Telefonista",
-     "escolaridade": "desconhecida",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Técnico de Enfermagem",
-     "escolaridade": "tecnico",
-     "vagas": "6 vagas",
-     "salario": null
-    },
-    {
-     "nome": "Técnico em Radiologia",
-     "escolaridade": "tecnico",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Cirurgião Dentista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Enfermeiro",
-     "escolaridade": "superior",
-     "vagas": "6 vagas",
-     "salario": null
-    },
-    {
-     "nome": "Farmacêutico",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Fonoaudiólogo",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Alergologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Cardiologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Clínico Geral",
-     "escolaridade": "superior",
-     "vagas": "3 vagas",
-     "salario": null
-    },
-    {
-     "nome": "Médico Dermatologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Endocrinologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Gastroclínico",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Hepatologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Infectologista",
-     "escolaridade": "superior",
-     "vagas": "2 vagas",
-     "salario": null
-    },
-    {
-     "nome": "Médico Nefrologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Neurologista",
-     "escolaridade": "superior",
-     "vagas": "2 vagas",
-     "salario": null
-    },
-    {
-     "nome": "Médico Neuropediatra",
-     "escolaridade": "superior",
-     "vagas": "2 vagas",
-     "salario": null
-    },
-    {
-     "nome": "Médico Oftalmologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Ortopedista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Otorrinolaringologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Pneumologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Proctologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Psiquiatra",
-     "escolaridade": "superior",
-     "vagas": "3 vagas",
-     "salario": null
-    },
-    {
-     "nome": "Médico Reumatologista",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": null
-    },
-    {
-     "nome": "Médico Urologista",
-     "escolaridade": "superior",
-     "vagas": "2 vagas",
-     "salario": null
-    }
-   ],
-   "salario_min": 2818.0,
-   "salario_max": 9833.0
-  },
-  "ia_model": "gemini-3.5-flash-lite",
-  "first_seen_ts": "2026-10-20T07:00:00-03:00",
-  "is_baseline": true,
-  "schema_version": 3,
-  "detalhes": {
-   "arquivos_edital": [
-    "EDITAL Nº 02/2026"
-   ],
-   "link_provas": "https://www.pciconcursos.com.br/provas/sao-carlos-sp",
-   "link_banca": "https://www.saocarlos.sp.gov.br/",
-   "nome_banca": "Município de São Carlos",
-   "data_prova": "22/11/2026",
-   "regime": "CLT (Celetista)",
-   "beneficios": "Consultar edital (não detalhado no resumo)",
-   "jornada": "20 a 40 horas semanais",
-   "cargos_li": [
-    "Auxiliar em Saúde Bucal (1 vaga)",
-    "Telefonista (1 vaga)",
-    "Técnico de Enfermagem (6 vagas)",
-    "Técnico em Radiologia (1 vaga)",
-    "Cirurgião Dentista (1 vaga)",
-    "Enfermeiro (6 vagas)",
-    "Farmacêutico (1 vaga)",
-    "Fonoaudiólogo (1 vaga)",
-    "Médico Alergologista (1 vaga)",
-    "Médico Cardiologista (1 vaga)",
-    "Médico Clínico Geral (3 vagas)",
-    "Médico Dermatologista (1 vaga)",
-    "Médico Endocrinologista (1 vaga)",
-    "Médico Gastroclínico (1 vaga)",
-    "Médico Hepatologista (1 vaga)",
-    "Médico Infectologista (2 vagas)",
-    "Médico Nefrologista (1 vaga)",
-    "Médico Neurologista (2 vagas)",
-    "Médico Neuropediatra (2 vagas)",
-    "Médico Oftalmologista (1 vaga)",
-    "Médico Ortopedista (1 vaga)",
-    "Médico Otorrinolaringologista (1 vaga)",
-    "Médico Pneumologista (1 vaga)",
-    "Médico Proctologista (1 vaga)",
-    "Médico Psiquiatra (3 vagas)",
-    "Médico Reumatologista (1 vaga)",
-    "Médico Urologista (2 vagas)"
-   ],
-   "isencao": "A taxa de inscrição varia de R$ 44,00 a R$ 65,00, de acordo com o cargo. As solicitações de isenção poderão ser feitas no período de 28 de setembro de 2026 a 3 de outubro de 2026, para doadores de medula óssea e de sangue, mediante comprovação.",
-   "salario_min": 2818.0,
-   "salario_max": 9833.0,
-   "faixa_salarial": "R$ 2.818,00 a R$ 9.833,00",
-   "cargos_salarios": {
-    "auxiliar em saude bucal": 2818.0,
-    "telefonista": 2818.0,
-    "cirurgiao dentista": 9833.0,
-    "farmaceutico": 9833.0,
-    "medico alergologista": 9833.0,
-    "medico cardiologista": 9833.0,
-    "medico clinico geral": 9833.0,
-    "medico dermatologista": 9833.0,
-    "medico endocrinologista": 9833.0,
-    "medico gastroclinico": 9833.0,
-    "medico hepatologista": 9833.0,
-    "medico infectologista": 9833.0,
-    "medico nefrologista": 9833.0,
-    "medico neurologista": 9833.0,
-    "medico neuropediatra": 9833.0,
-    "medico oftalmologista": 9833.0,
-    "medico ortopedista": 9833.0,
-    "medico otorrinolaringologista": 9833.0,
-    "medico pneumologista": 9833.0,
-    "medico proctologista": 9833.0,
-    "medico psiquiatra": 9833.0,
-    "medico reumatologista": 9833.0,
-    "medico urologista": 9833.0
-   },
-   "taxa_inscricao": "R$ 44,00 a R$ 65,00",
-   "taxa_min": 44.0,
-   "taxa_max": 65.0,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2818.0,
-  "salario_max": 9833.0,
-  "faixa_salarial": "R$ 2.818,00 a R$ 9.833,00"
  },
  "https://www.pciconcursos.com.br/noticias/setec-campinas-sp-abre-concurso-publico-com-salarios-de-ate-10428": {
   "first_seen": "2026-10-21",
@@ -2819,39 +2246,6 @@
   "salario_max": 13881.85,
   "faixa_salarial": "R$ 1.621,05 a R$ 13.881,85"
  },
- "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-tecnico-de-enfermagem-e-biologista": {
-  "first_seen": "2026-10-22",
-  "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "0d1afd78662a",
-  "fisio_linhas": [],
-  "salario_max_texto": 2978.36,
-  "tem_medio": true,
-  "detalhes": {
-   "cargos_li": [
-    "Técnico de Enfermagem (1 vaga)",
-    "Agente Técnico de Assistência à Saúde (Biologista) (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE CONCURSO Nº 37/2026",
-    "EDITAL DE CONCURSO Nº 38/2026"
-   ],
-   "link_banca": "https://www.hcribeirao.sp.gov.br/",
-   "nome_banca": null,
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Auxílio-alimentação de R$ 360,00 mensais e vale-transporte",
-   "jornada": "30 horas semanais",
-   "isencao": "Doadores de sangue podem solicitar isenção. Estudantes que recebam menos de dois salários mínimos por mês ou estejam desempregados podem solicitar redução de 50%.",
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 360.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-canitar-sp-abre-processo-seletivo-para-a-area-da-educacao": {
   "first_seen": "2026-10-22",
   "first_seen_ts": "2026-10-22T10:29:17.196386-03:00",
@@ -2925,43 +2319,6 @@
    "etapas_prova": "Prova Objetiva"
   }
  },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concurso-para-professor-substituto-de-matematica-em-sao-jose-do-rio-preto-sp": {
-  "first_seen": "2026-10-23",
-  "first_seen_ts": "2026-10-23T11:21:38.771994-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "e17d39d9798c",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Matemática (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 354/2026"
-   ],
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "12 horas semanais",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2106.04,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2106.04,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
- },
  "https://www.pciconcursos.com.br/noticias/usp-abre-processo-seletivo-para-professor-na-area-de-filosofia-e-sociologia-do-direito-em-ribeirao-preto": {
   "first_seen": "2026-10-23",
   "first_seen_ts": "2026-10-23T11:21:38.771994-03:00",
@@ -3023,76 +2380,6 @@
    "beneficios_total": 795.99,
    "etapas_prova": "Prova Objetiva"
   }
- },
- "https://www.pciconcursos.com.br/noticias/hcfmrp-usp-sp-abre-concursos-publicos-para-fisioterapeuta-e-terapeuta-ocupacional": {
-  "first_seen": "2026-10-26",
-  "first_seen_ts": "2026-10-26T09:04:42.984334-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "27cddde49d4a",
-  "fisio_linhas": [
-   "HCFMRP-USP - SP abre concursos públicos para Fisioterapeuta e Terapeuta Ocupacional",
-   "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)"
-  ],
-  "salario_max_texto": 2978.36,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [
-    "Agente Técnico de Assistência à Saúde (Fisioterapeuta) (1 vaga)",
-    "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional) (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 39/2026",
-    "EDITAL Nº 40/2026"
-   ],
-   "link_banca": "https://www.hcrp.usp.br/",
-   "nome_banca": null,
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Auxílio-alimentação no valor de R$ 360,00, adicional de insalubridade e vale-transporte",
-   "jornada": "30 horas semanais",
-   "isencao": "Há isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
-   "faixa_salarial": "Consultar edital",
-   "salario_min_texto": null,
-   "salario_max_texto": null,
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 360.0,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "ia": {
-   "cidade": "Ribeirão Preto",
-   "banca": "HCFMRP-USP (própria)",
-   "data_prova": null,
-   "regime_geral": null,
-   "beneficios": "Auxílio-alimentação de R$ 360,00, adicional de insalubridade e vale-transporte.",
-   "isencao": "Taxa de inscrição de R$ 126,79. Há isenção ou redução de 50% para candidatos que atendam aos requisitos estabelecidos nos editais.",
-   "jornada_geral": "30h semanais",
-   "resumo_conteudo_fisio": null,
-   "cargos": [
-    {
-     "nome": "Agente Técnico de Assistência à Saúde (Fisioterapeuta)",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": 2978.36,
-     "carga_horaria": "30h semanais",
-     "regime": null,
-     "requisitos": "Ensino Superior completo em Fisioterapia e registro no respectivo conselho profissional."
-    },
-    {
-     "nome": "Agente Técnico de Assistência à Saúde (Terapeuta Ocupacional)",
-     "escolaridade": "superior",
-     "vagas": "1 vaga",
-     "salario": 2978.36,
-     "carga_horaria": "30h semanais",
-     "regime": null,
-     "requisitos": "Ensino Superior completo em Terapia Ocupacional e registro no respectivo conselho profissional."
-    }
-   ]
-  },
-  "ia_model": "gemini-3.5-flash-lite"
  },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-monteiro-lobato-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva": {
   "first_seen": "2026-10-26",
@@ -5269,157 +4556,6 @@
    "etapas_prova": "Prova Objetiva"
   }
  },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-no-campus-de-presidente-prudente-sp": {
-  "first_seen": "2026-10-27",
-  "first_seen_ts": "2026-10-27T10:25:50.286504-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "cf131c040b8d",
-  "fisio_linhas": [
-   "…sionais com graduação e especialização para lecionar em diversas disciplinas de Fisioterapia. A seleção será composta por prova escrita, prova didática e análise do currículo lattes documentado."
-  ],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [],
-   "arquivos_edital": [
-    "EDITAL Nº 476/2026",
-    "EDITAL Nº 477/2026"
-   ],
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
-   "salario_min_texto": 1423.69,
-   "salario_max_texto": 3511.9,
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 1423.69,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 1.423,69 a R$ 3.511,90",
-  "ia": {
-   "cidade": "Presidente Prudente",
-   "banca": "UNESP",
-   "data_prova": null,
-   "regime_geral": "Temporário",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02",
-   "isencao": "Taxa de inscrição de R$ 209,00. O texto não menciona regras de isenção ou redução.",
-   "jornada_geral": "12h semanais",
-   "resumo_conteudo_fisio": null,
-   "cargos": [
-    {
-     "nome": "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Disciplinas: Prática Supervisionada em Fisioterapia na Saúde da Mulher, Prática supervisionada em Fisioterapia Neurológica, Prática Supervisionada em Fisioterapia na Atenção Primária à Saúde, Prática Supervisionada em Fisioterapia Desportiva, Fisioterapia na Saúde da Mulher e Fisioterapia Desportiva)",
-     "escolaridade": "superior",
-     "vagas": "4 vagas",
-     "salario": 3511.9,
-     "carga_horaria": "12h semanais",
-     "regime": "Temporário",
-     "requisitos": "Graduação e especialização na área da disciplina"
-    },
-    {
-     "nome": "Professor Substituto - Ciências da Saúde / Fisioterapia e Terapia Ocupacional (Disciplinas: Prática Supervisionada em Fisioterapia Hospitalar, Prática Supervisionada em Fisioterapia Respiratória, Prática Supervisionada em Fisioterapia Cardiovascular, Prática Supervisionada em Fisioterapia Gerontológica, Fisioterapia Baseada em Evidências II, Ética no Exercício da Fisioterapia, Fisioterapia em Cardiorrespiratória e Fisioterapia Gerontológica)",
-     "escolaridade": "superior",
-     "vagas": "4 vagas",
-     "salario": 3511.9,
-     "carga_horaria": "12h semanais",
-     "regime": "Temporário",
-     "requisitos": "Graduação e especialização na área da disciplina"
-    }
-   ]
-  },
-  "ia_model": "gemini-3.5-flash-lite"
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-vaga-para-professor-substituto-na-faculdade-de-filosofia-e-ciencias-de-marilia-sp": {
-  "first_seen": "2026-10-27",
-  "first_seen_ts": "2026-10-27T10:25:50.286504-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "d742bc26278a",
-  "fisio_linhas": [],
-  "salario_max_texto": 3361.39,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Ciência da Informação, subárea de Biblioteconomia (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 225/2026"
-   ],
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 1417.53,
-   "salario_max": 3361.39,
-   "faixa_salarial": "R$ 1.417,53 a R$ 3.361,39",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 1417.53,
-  "salario_max": 3361.39,
-  "faixa_salarial": "R$ 1.417,53 a R$ 3.361,39"
- },
- "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-publicos-para-professores-substitutos-no-campus-de-assis-sp": {
-  "first_seen": "2026-10-27",
-  "first_seen_ts": "2026-10-27T10:25:50.286504-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "9abc37da5d2c",
-  "fisio_linhas": [],
-  "salario_max_texto": 3511.9,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Substituto na área de Ciências Exatas e da Terra, subárea de Probabilidade e Estatística (1 vaga)",
-    "Professor Substituto na área de História, subárea de Teoria e Filosofia da História, na disciplina de Introdução aos Estudos Históricos e História e TIC'S: Ensino, Pesquisa e Cidadania (1 vaga)",
-    "Professor Substituto na área de História, subárea de História da América (1 vaga)",
-    "Professor Substituto na área de História, subárea de Teoria e Filosofia da História, na disciplina de Fundamentos das Ciências Sociais (1 vaga)",
-    "Professor Substituto na área de História, subárea de Teoria e Filosofia da História, na disciplina de Fundamentos Filosóficos (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 406/2026",
-    "EDITAL Nº 407/2026",
-    "EDITAL Nº 408/2026",
-    "EDITAL Nº 409/2026",
-    "EDITAL Nº 410/2026"
-   ],
-   "link_banca": "https://www.unesp.br/",
-   "nome_banca": "Universidade Estadual Paulista \"Júlio de Mesquita Filho\" (UNESP)",
-   "data_prova": "Consultar edital",
-   "regime": "Consultar edital",
-   "beneficios": "Vale-alimentação no valor de R$ 2.000,02.",
-   "jornada": "Consultar edital",
-   "isencao": "A taxa de inscrição é de R$ 209,00. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
-   "salario_min": 2106.04,
-   "salario_max": 3511.9,
-   "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90",
-   "cargos_salarios": {},
-   "taxa_inscricao": "R$ 209,00",
-   "taxa_min": 209.0,
-   "taxa_max": 209.0,
-   "beneficios_total": 2000.02,
-   "etapas_prova": "Prova Objetiva"
-  },
-  "salario_min": 2106.04,
-  "salario_max": 3511.9,
-  "faixa_salarial": "R$ 2.106,04 a R$ 3.511,90"
- },
  "https://www.pciconcursos.com.br/noticias/unesp-abre-concursos-para-professores-substitutos-no-campus-de-sao-joao-da-boa-vista-sp": {
   "first_seen": "2026-10-27",
   "first_seen_ts": "2026-10-27T10:25:50.286504-03:00",
@@ -5516,74 +4652,6 @@
    "faixa_salarial": "Consultar edital",
    "salario_min_texto": null,
    "salario_max_texto": null,
-   "cargos_salarios": {},
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "beneficios_total": 0.0,
-   "etapas_prova": "Prova Objetiva"
-  }
- },
- "https://www.pciconcursos.com.br/noticias/ifsp-retifica-processo-seletivo-com-vagas-para-professores-substitutos": {
-  "first_seen": "2026-10-28",
-  "first_seen_ts": "2026-10-28T13:33:44.816255-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "95f0f00b0a78",
-  "fisio_linhas": [],
-  "salario_max_texto": 8340.33,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [
-    "Professor substituto de História (1 vaga)",
-    "Professor substituto de Alimentos (1 vaga)",
-    "Professor substituto de Educação Física (1 vaga)",
-    "Professor substituto de Física (1 vaga)",
-    "Professor substituto de Química (1 vaga)",
-    "Professor substituto de Letras: Português e Inglês (1 vaga)",
-    "Professor substituto de Eletroeletrônica / Mecatrônica (1 vaga)",
-    "Professor substituto de Informática (1 vaga)",
-    "Professor substituto de Letras: Português e Libras (1 vaga)",
-    "Professor substituto de Matemática (1 vaga)",
-    "Professor substituto de Eletrotécnica (1 vaga)",
-    "Professor substituto de Informática - Arquitetura de Redes de Computadores (1 vaga)",
-    "Professor substituto de Eletrônica (1 vaga)",
-    "Professor substituto de Pedagogia (1 vaga)",
-    "Professor substituto de Filosofia (1 vaga)",
-    "Professor substituto de Sociologia (1 vaga)",
-    "Professor substituto de Letras: Português (1 vaga)",
-    "Professor substituto de Controle e Automação (1 vaga)",
-    "Professor substituto de Educação - Psicologia (1 vaga)",
-    "Professor substituto de Letras: Português e Espanhol (1 vaga)",
-    "Professor substituto de Mecânica (1 vaga)",
-    "Professor substituto de Construção Civil (1 vaga)",
-    "Professor substituto de Elétrica (1 vaga)",
-    "Professor substituto de Indústria (1 vaga)",
-    "Professor substituto de Agronomia (1 vaga)",
-    "Professor substituto de Biologia (1 vaga)",
-    "Professor substituto de Matemática (2 vagas)",
-    "Professor substituto de Engenharia de Produção (2 vagas)",
-    "Professor substituto de Engenharia de Produção (1 vaga)",
-    "Professor substituto de Engenharia de Aeronaves (2 vagas)",
-    "Professor substituto de Geografia (1 vaga)",
-    "Professor substituto de Direito (1 vaga)",
-    "Professor substituto de Gestão (1 vaga)",
-    "Professor substituto de Artes (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL Nº 123/2026",
-    "RETIFICAÇÃO"
-   ],
-   "link_banca": "https://concursopublico.ifsp.edu.br/",
-   "nome_banca": "Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP)",
-   "data_prova": "Consultar edital",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Consultar edital",
-   "jornada": "40 horas semanais",
-   "isencao": "Candidatos inscritos e ativos no CadÚnico poderão solicitar isenção até às 16h do dia 29 de outubro de 2026.",
-   "faixa_salarial": "R$ 4.478,03 a R$ 8.340,33",
-   "salario_min_texto": 4478.03,
-   "salario_max_texto": 8340.33,
    "cargos_salarios": {},
    "taxa_inscricao": "Consultar edital",
    "taxa_min": null,
@@ -11144,42 +10212,6 @@
    "salario_max_texto": null
   }
  },
- "https://www.pciconcursos.com.br/noticias/prefeitura-de-aracoiaba-da-serra-sp-abre-processo-seletivo-para-cuidador": {
-  "first_seen": "2026-11-07",
-  "first_seen_ts": "2026-11-07T13:17:06.948813-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "9fb8f2931daa",
-  "fisio_linhas": [],
-  "salario_max_texto": 2220.76,
-  "tem_medio": true,
-  "detalhes": {
-   "cargos_li": [
-    "Cuidador (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 011/2026"
-   ],
-   "link_banca": null,
-   "nome_banca": null,
-   "data_prova": "Consultar edital",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Vale-alimentação de R$ 980,00. A seleção dos candidatos será realizada por meio de análise da experiência profi · Vale-alimentação de R$ 980,00.",
-   "beneficios_total": 980.0,
-   "jornada": "40 horas semanais",
-   "isencao": "Não haverá cobrança de taxa de inscrição.",
-   "taxa_inscricao": "Gratuita (sem taxa de inscrição)",
-   "taxa_min": 0.0,
-   "taxa_max": 0.0,
-   "etapas_prova": "Prova Objetiva",
-   "cargos_salarios": {
-    "cuidador o": 2220.76
-   },
-   "faixa_salarial": "Consultar edital",
-   "salario_min_texto": null,
-   "salario_max_texto": null
-  }
- },
  "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-concurso-publico-com-salarios-de-ate-6812": {
   "first_seen": "2026-11-07",
   "first_seen_ts": "2026-11-07T13:17:06.948813-03:00",
@@ -15209,41 +14241,6 @@
    "salario_max_texto": null
   }
  },
- "https://www.pciconcursos.com.br/noticias/faculdade-sebrae-sp-prorroga-inscricoes-de-processo-seletivo-para-professor-adjunto-de-engenharia-de-software": {
-  "first_seen": "2026-11-11",
-  "first_seen_ts": "2026-11-11T14:50:26.384792-03:00",
-  "is_baseline": false,
-  "schema_version": 5,
-  "hash": "e86839391a03",
-  "fisio_linhas": [],
-  "salario_max_texto": 19522.83,
-  "tem_medio": false,
-  "detalhes": {
-   "cargos_li": [
-    "Professor Adjunto - Desenvolvimento e Engenharia de Software (Sistemas da Informação) (1 vaga)"
-   ],
-   "arquivos_edital": [
-    "COMUNICADO 049/2026",
-    "PRORROGAÇÃO DO PERÍODO DE INSCRIÇÃO"
-   ],
-   "link_banca": null,
-   "nome_banca": null,
-   "data_prova": "19/11/2026",
-   "regime": "Processo Seletivo / Temporário",
-   "beneficios": "Auxílio-alimentação e/ou refeição, auxílio-creche e vale-transporte, conforme normas internas",
-   "beneficios_total": 0.0,
-   "jornada": "40 horas semanais",
-   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
-   "taxa_inscricao": "Consultar edital",
-   "taxa_min": null,
-   "taxa_max": null,
-   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Teste de Aptidão Física (TAF)",
-   "cargos_salarios": {},
-   "faixa_salarial": "Consultar edital",
-   "salario_min_texto": null,
-   "salario_max_texto": null
-  }
- },
  "https://www.pciconcursos.com.br/noticias/ifsp-abre-concurso-publico-para-cargos-tecnico-administrativos": {
   "first_seen": "2026-11-11",
   "first_seen_ts": "2026-11-11T14:50:26.384792-03:00",
@@ -17944,6 +16941,146 @@
    "etapas_prova": "Prova Objetiva · Prova Prática · Avaliação de Títulos",
    "cargos_salarios": {
     "professor assistente na area de manejo florestal em botucatu sp": 16994.01
+   },
+   "faixa_salarial": "Consultar edital",
+   "salario_min_texto": null,
+   "salario_max_texto": null
+  }
+ },
+ "https://www.pciconcursos.com.br/noticias/fundacao-jose-pedro-de-oliveira-sp-prorroga-inscricoes-para-concurso-publico": {
+  "first_seen": "2026-11-14",
+  "first_seen_ts": "2026-11-14T13:29:42.035988-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "1eeeee59eea1",
+  "fisio_linhas": [],
+  "salario_max_texto": 8991.96,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Agente de Apoio Operacional (1 vaga + CR)",
+    "Técnico Ambiental (1 vaga + CR)",
+    "Analista Administrativo (1 vaga + CR)",
+    "Contador (1 vaga + CR)"
+   ],
+   "arquivos_edital": [
+    "EDITAL Nº 01/2026",
+    "EDITAL RETIFICADO Nº 01/2026",
+    "PRORROGAÇÃO DAS INSCRIÇÕES"
+   ],
+   "link_banca": null,
+   "nome_banca": null,
+   "data_prova": "13/12/2026",
+   "regime": "Estatutário",
+   "beneficios": "Auxílio-refeição/alimentação no valor de R$ 2.150,12 e subsídio parcial de vale-transporte, conforme critérios",
+   "beneficios_total": 2150.12,
+   "jornada": "36 horas semanais",
+   "isencao": "A taxa de inscrição é de R$ 66,00 para nível fundamental, R$ 82,50 para nível técnico e R$ 99,00 para nível superior. (Hipóteses de isenção/redução: consultar edital — geralmente CadÚnico/baixa renda ou doadores de sangue/medula).",
+   "taxa_inscricao": "R$ 66,00 a R$ 99,00",
+   "taxa_min": 66.0,
+   "taxa_max": 99.0,
+   "etapas_prova": "Prova Objetiva · Prova Discursiva/Redação · Avaliação de Títulos",
+   "cargos_salarios": {
+    "agente de apoio operacional": 2226.55,
+    "analista administrativo": 8991.96,
+    "contador": 8991.96
+   },
+   "faixa_salarial": "R$ 2.226,55 a R$ 8.991,96",
+   "salario_min_texto": 2226.55,
+   "salario_max_texto": 8991.96
+  },
+  "ia": {
+   "cidade": "Campinas",
+   "banca": "INSTITUTO MAIS",
+   "data_prova": "13/12/2026",
+   "regime_geral": "Estatutário",
+   "beneficios": "auxílio-refeição/alimentação no valor de R$ 2.150,12 e subsídio parcial de vale-transporte",
+   "isencao": "Taxa de inscrição de R$ 66,00 para nível fundamental, R$ 82,50 para nível técnico e R$ 99,00 para nível superior. Ver edital para regras de isenção.",
+   "jornada_geral": "36h semanais",
+   "resumo_conteudo_fisio": null,
+   "cargos": [
+    {
+     "nome": "Agente de Apoio Operacional",
+     "escolaridade": "fundamental",
+     "vagas": "1 vaga + CR",
+     "salario": 2226.55,
+     "carga_horaria": "36h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Fundamental"
+    },
+    {
+     "nome": "Técnico Ambiental",
+     "escolaridade": "tecnico",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "36h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Técnico"
+    },
+    {
+     "nome": "Analista Administrativo",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": null,
+     "carga_horaria": "36h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior"
+    },
+    {
+     "nome": "Contador",
+     "escolaridade": "superior",
+     "vagas": "1 vaga + CR",
+     "salario": 8991.96,
+     "carga_horaria": "36h semanais",
+     "regime": "Estatutário",
+     "requisitos": "Ensino Superior em Ciências Contábeis e registro no Conselho competente"
+    }
+   ]
+  },
+  "ia_model": "gemini-3.5-flash-lite"
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-ouroeste-sp-abre-selecao-para-agentes-coletores-de-lixo-e-professores": {
+  "first_seen": "2026-11-14",
+  "first_seen_ts": "2026-11-14T13:29:42.035988-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "505f5fbd0216",
+  "fisio_linhas": [],
+  "salario_max_texto": 1980.0,
+  "tem_medio": false,
+  "detalhes": {
+   "cargos_li": [
+    "Agente Coletor de Lixo (6 vagas)",
+    "Professor de Educação Básica I",
+    "Professor de Educação Especializada (AEE)",
+    "Professor de Informática",
+    "Professor PEB II - Arte",
+    "Professor PEB II - Ciências",
+    "Professor PEB II - Educação Física",
+    "Professor PEB II - Geografia",
+    "Professor PEB II - História",
+    "Professor PEB II - Língua Inglesa",
+    "Professor PEB II - Língua Portuguesa",
+    "Professor PEB II - Matemática"
+   ],
+   "arquivos_edital": [
+    "EDITAL DE PROCESSO SELETIVO SIMPLIFICADO Nº 006/2026"
+   ],
+   "link_banca": null,
+   "nome_banca": null,
+   "data_prova": "13/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "40 horas semanais",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {
+    "agente coletor de lixo": 1980.0,
+    "agentes coletores de lixo e professores oportunidades contemplam cargo": 1980.0
    },
    "faixa_salarial": "Consultar edital",
    "salario_min_texto": null,
