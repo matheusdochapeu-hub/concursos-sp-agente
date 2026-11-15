@@ -17086,5 +17086,48 @@
    "salario_min_texto": null,
    "salario_max_texto": null
   }
+ },
+ "https://www.pciconcursos.com.br/noticias/prefeitura-de-onda-verde-sp-abre-processo-seletivo-com-salarios-de-ate-4104": {
+  "first_seen": "2026-11-15",
+  "first_seen_ts": "2026-11-15T13:56:14.867644-03:00",
+  "is_baseline": false,
+  "schema_version": 5,
+  "hash": "254e80a4df63",
+  "fisio_linhas": [],
+  "salario_max_texto": 4104.0,
+  "tem_medio": true,
+  "detalhes": {
+   "cargos_li": [
+    "Inspetor de Alunos (cadastro reserva)",
+    "Cuidador Educacional (cadastro reserva)",
+    "Monitor de Transporte Escolar (cadastro reserva)",
+    "Oficial Administrativo Escolar (cadastro reserva)",
+    "PEB I, Professor de Educação Básica I, Infantil (2 vagas e cadastro reserva)",
+    "PEB I, Professor de Educação Básica I, Fundamental (2 vagas e cadastro reserva)",
+    "PEB II, Professor de Educação Básica II, Educação Física (cadastro reserva)",
+    "PEB II, Professor de Educação Especial (cadastro reserva)",
+    "PEB II, Professor de Educação Básica II, Artes (cadastro reserva)",
+    "PEB II, Professor de Educação Básica II, Inglês (cadastro reserva)"
+   ],
+   "arquivos_edital": [
+    "PROCESSO SELETIVO Nº 001/2026"
+   ],
+   "link_banca": null,
+   "nome_banca": null,
+   "data_prova": "20/12/2026",
+   "regime": "Processo Seletivo / Temporário",
+   "beneficios": "Consultar edital",
+   "beneficios_total": 0.0,
+   "jornada": "Consultar edital",
+   "isencao": "Consultar edital para valores de taxa e requisitos de isenção (CadÚnico, doadores de sangue/medula ou lei municipal/estadual).",
+   "taxa_inscricao": "Consultar edital",
+   "taxa_min": null,
+   "taxa_max": null,
+   "etapas_prova": "Prova Objetiva · Avaliação de Títulos",
+   "cargos_salarios": {},
+   "faixa_salarial": "R$ 1.730,00 a R$ 4.104,00",
+   "salario_min_texto": 1730.0,
+   "salario_max_texto": 4104.0
+  }
  }
 }
