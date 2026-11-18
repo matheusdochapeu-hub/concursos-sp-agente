@@ -71,6 +71,18 @@ class TestRenderSite(unittest.TestCase):
         # A lista de 85 cargos agora existe também no JavaScript.
         self.assertIn(f"const CARGOS_RAPIDOS_LISTA = {CARGOS_RAPIDOS_MAX!r}".replace("'", '"'), self.html)
 
+    def test_campo_de_busca_tem_um_unico_botao_de_limpar(self):
+        import re
+
+        # O ✕ próprio fica DENTRO do wrapper do campo (não solto na barra inteira)
+        self.assertIn('class="busca-input-wrap"', self.html)
+        self.assertRegex(
+            self.html,
+            re.compile(r'<div class="busca-input-wrap">\s*<input id="inputCargoEspecifico".*?id="btnLimparCargo"', re.S),
+        )
+        # O ✕ nativo do Chrome/Safari duplicava o botão: precisa estar desligado
+        self.assertIn('input[type="search"]::-webkit-search-cancel-button', self.html)
+
     def test_js_inline_tem_sintaxe_valida(self):
         import importlib.util
         import shutil

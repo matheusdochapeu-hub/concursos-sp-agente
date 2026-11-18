@@ -1160,10 +1160,16 @@ def render_html(
     min-width: 260px;
     position: relative;
   }}
+  /* O botão de limpar precisa ficar ancorado no CAMPO, não na barra inteira
+     (a barra cresce quando o botão "Compartilhar busca" entra embaixo). */
+  .busca-input-wrap {{
+    position: relative;
+    width: 100%;
+  }}
   .toolbar-busca-cargo input {{
     width: 100%;
     height: 42px;
-    padding: 8px 36px 8px 16px;
+    padding: 8px 44px 8px 16px;   /* espaço para o ✕ próprio */
     border-radius: 999px;
     border: 2px solid var(--br-blue-border);
     background: var(--surface-alt);
@@ -1174,6 +1180,20 @@ def render_html(
     box-sizing: border-box;
     transition: all 0.15s;
   }}
+  /* Esconde o "✕" nativo do Chrome/Safari: o app já tem o seu, e os dois juntos
+     ficavam duplicados e desalinhados. Vale para todos os campos de busca. */
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {{
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+  }}
+  /* A setinha do datalist some só no campo principal (onde temos o ✕ próprio),
+     para os dois não disputarem o mesmo canto do campo. */
+  #inputCargoEspecifico::-webkit-calendar-picker-indicator {{
+    display: none;
+    opacity: 0;
+  }}
   .toolbar-busca-cargo input:focus {{
     outline: none;
     border-color: var(--br-green);
@@ -1182,16 +1202,26 @@ def render_html(
   }}
   .toolbar-busca-cargo .btn-clear-inline {{
     position: absolute;
-    right: 12px;
+    right: 9px;
     top: 50%;
     transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
     background: none;
     border: none;
     color: var(--muted);
-    font-size: 1.05rem;
-    cursor: pointer;
-    padding: 2px 6px;
+    font-size: 0.9rem;
     line-height: 1;
+    cursor: pointer;
+    padding: 0;
+  }}
+  .toolbar-busca-cargo .btn-clear-inline:hover {{
+    background: #e2e8f0;
+    color: var(--txt);
   }}
   .toolbar-left-actions {{
     display: flex;
@@ -3043,11 +3073,13 @@ def render_html(
       </div>
 
       <div id="wrapBuscaCargoToolbar" class="toolbar-busca-cargo">
-        <input id="inputCargoEspecifico" type="search" list="listaCargosDisponiveis" autocomplete="off" placeholder="🔎 Digite o cargo desejado... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+        <div class="busca-input-wrap">
+          <input id="inputCargoEspecifico" type="search" list="listaCargosDisponiveis" autocomplete="off" placeholder="🔎 Digite o cargo desejado... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+          <button type="button" id="btnLimparCargo" class="btn-clear-inline" title="Limpar busca" aria-label="Limpar busca" style="display:none;">✕</button>
+        </div>
         <datalist id="listaCargosDisponiveis">
           {opcoes_cargos_sugeridos}
         </datalist>
-        <button type="button" id="btnLimparCargo" class="btn-clear-inline" title="Limpar busca" style="display:none;">✕</button>
         <button type="button" id="btnCompartilharBusca" class="btn-compartilhar-busca" title="Copiar um link que já abre esta busca com os filtros aplicados">
           🔗 Compartilhar busca
         </button>

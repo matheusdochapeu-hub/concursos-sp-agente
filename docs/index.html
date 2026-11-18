@@ -410,10 +410,16 @@
     min-width: 260px;
     position: relative;
   }
+  /* O botão de limpar precisa ficar ancorado no CAMPO, não na barra inteira
+     (a barra cresce quando o botão "Compartilhar busca" entra embaixo). */
+  .busca-input-wrap {
+    position: relative;
+    width: 100%;
+  }
   .toolbar-busca-cargo input {
     width: 100%;
     height: 42px;
-    padding: 8px 36px 8px 16px;
+    padding: 8px 44px 8px 16px;   /* espaço para o ✕ próprio */
     border-radius: 999px;
     border: 2px solid var(--br-blue-border);
     background: var(--surface-alt);
@@ -424,6 +430,20 @@
     box-sizing: border-box;
     transition: all 0.15s;
   }
+  /* Esconde o "✕" nativo do Chrome/Safari: o app já tem o seu, e os dois juntos
+     ficavam duplicados e desalinhados. Vale para todos os campos de busca. */
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+  }
+  /* A setinha do datalist some só no campo principal (onde temos o ✕ próprio),
+     para os dois não disputarem o mesmo canto do campo. */
+  #inputCargoEspecifico::-webkit-calendar-picker-indicator {
+    display: none;
+    opacity: 0;
+  }
   .toolbar-busca-cargo input:focus {
     outline: none;
     border-color: var(--br-green);
@@ -432,16 +452,26 @@
   }
   .toolbar-busca-cargo .btn-clear-inline {
     position: absolute;
-    right: 12px;
+    right: 9px;
     top: 50%;
     transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
     background: none;
     border: none;
     color: var(--muted);
-    font-size: 1.05rem;
-    cursor: pointer;
-    padding: 2px 6px;
+    font-size: 0.9rem;
     line-height: 1;
+    cursor: pointer;
+    padding: 0;
+  }
+  .toolbar-busca-cargo .btn-clear-inline:hover {
+    background: #e2e8f0;
+    color: var(--txt);
   }
   .toolbar-left-actions {
     display: flex;
@@ -2293,11 +2323,13 @@
       </div>
 
       <div id="wrapBuscaCargoToolbar" class="toolbar-busca-cargo">
-        <input id="inputCargoEspecifico" type="search" list="listaCargosDisponiveis" autocomplete="off" placeholder="🔎 Digite o cargo desejado... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+        <div class="busca-input-wrap">
+          <input id="inputCargoEspecifico" type="search" list="listaCargosDisponiveis" autocomplete="off" placeholder="🔎 Digite o cargo desejado... Ex.: Fisioterapeuta, Contador, Auditor Fiscal">
+          <button type="button" id="btnLimparCargo" class="btn-clear-inline" title="Limpar busca" aria-label="Limpar busca" style="display:none;">✕</button>
+        </div>
         <datalist id="listaCargosDisponiveis">
           <option value="Advogado"></option><option value="Agente Administrativo"></option><option value="Agente Comunitário de Saúde"></option><option value="Agente de Combate às Endemias"></option><option value="Agente de Fiscalização"></option><option value="Agente de Trânsito"></option><option value="Almoxarife"></option><option value="Analista Administrativo"></option><option value="Analista de TI"></option><option value="Apoio Administrativo"></option><option value="Arquiteto"></option><option value="Arquivista"></option><option value="Assistente Administrativo"></option><option value="Assistente de Suporte Acadêmico"></option><option value="Assistente Social"></option><option value="Auditor Fiscal"></option><option value="Auxiliar Administrativo"></option><option value="Auxiliar de Desenvolvimento Infantil"></option><option value="Auxiliar de Enfermagem"></option><option value="Auxiliar de Serviços Gerais"></option><option value="Auxiliar em Saúde Bucal"></option><option value="Biomédico"></option><option value="Cirurgião-Dentista"></option><option value="Contador"></option><option value="Controlador Interno"></option><option value="Coordenador Pedagógico"></option><option value="Cozinheiro"></option><option value="Cuidador"></option><option value="Dentista"></option><option value="Desenhista"></option><option value="Diretor de Escola"></option><option value="Educador Físico"></option><option value="Eletricista"></option><option value="Enfermeiro"></option><option value="Engenheiro Agrônomo"></option><option value="Engenheiro Ambiental"></option><option value="Engenheiro Civil"></option><option value="Engenheiro Eletricista"></option><option value="Escrevente Técnico Judiciário"></option><option value="Escriturário"></option><option value="Farmacêutico"></option><option value="Fiscal"></option><option value="Fiscal Ambiental"></option><option value="Fiscal de Obras"></option><option value="Fiscal de Posturas"></option><option value="Fiscal Sanitário"></option><option value="Fiscal Tributário"></option><option value="Fisioterapeuta"></option><option value="Fonoaudiólogo"></option><option value="Guarda Municipal"></option><option value="Inspetor de Alunos"></option><option value="Mecânico"></option><option value="Médico"></option><option value="Médico Veterinário"></option><option value="Merendeira"></option><option value="Monitor de Transporte Escolar"></option><option value="Monitor Escolar"></option><option value="Motorista"></option><option value="Nutricionista"></option><option value="Oficial Administrativo"></option><option value="Oficial de Justiça"></option><option value="Oficial Legislativo"></option><option value="Operador de Máquinas"></option><option value="Orientador Social"></option><option value="Pedagogo"></option><option value="Procurador"></option><option value="Professor"></option><option value="Profissional de Apoio Escolar"></option><option value="Psicólogo"></option><option value="Recepcionista"></option><option value="Secretário Escolar"></option><option value="Técnico Agrícola"></option><option value="Técnico de Enfermagem"></option><option value="Técnico em Contabilidade"></option><option value="Técnico em Edificações"></option><option value="Técnico em Farmácia"></option><option value="Técnico em Informática"></option><option value="Técnico em Laboratório"></option><option value="Técnico em Radiologia"></option><option value="Técnico em Segurança do Trabalho"></option><option value="Telefonista"></option><option value="Terapeuta Ocupacional"></option><option value="Tesoureiro"></option><option value="Topógrafo"></option><option value="Vigia"></option>
         </datalist>
-        <button type="button" id="btnLimparCargo" class="btn-clear-inline" title="Limpar busca" style="display:none;">✕</button>
         <button type="button" id="btnCompartilharBusca" class="btn-compartilhar-busca" title="Copiar um link que já abre esta busca com os filtros aplicados">
           🔗 Compartilhar busca
         </button>
