@@ -3705,6 +3705,9 @@ def render_html(
         catalogoBrasilCarregado = true;
         if (typeof renderizarBuscaCargo === 'function') renderizarBuscaCargo();
         if (typeof aplicarCargoFixadoUI === 'function') aplicarCargoFixadoUI();
+        // O cargo fixado pode ter re-renderizado a grade: reaplica os filtros para
+        // os contadores e a lista continuarem coerentes com o que está na tela.
+        if (typeof aplicarFiltrosSp === 'function') aplicarFiltrosSp(false);
         return CATALOGO_BRASIL;
       }} catch (err) {{
         console.error('Falha ao carregar o catálogo nacional:', err);
@@ -5005,20 +5008,9 @@ def render_html(
     if (regime && c.dataset.regime !== regime) return false;
     if (maxHoras !== null && Number(c.dataset.horas) > maxHoras) return false;
 
-    const termoBusca = (inputCargo ? inputCargo.value : '').trim();
-    if (termoBusca) {{
-      const tNorm = normStr(termoBusca);
-      if (!c._textoBuscaNorm) {{
-        c._textoBuscaNorm = normStr(
-          (c.dataset.cargo || '') + ' ' +
-          (c.dataset.orgao || '') + ' ' +
-          (c.dataset.titulo || '') + ' ' +
-          (c.dataset.cidade || '') + ' ' +
-          (c.dataset.requisitosTxt || '')
-        );
-      }}
-      if (!c._textoBuscaNorm.includes(tNorm)) return false;
-    }}
+    // O termo de busca NÃO filtra as abas de categoria (Fisioterapia / Nível Médio /
+    // Nível Superior): elas já são recortes fixos e o campo de busca fica escondido
+    // nessas abas. Antes, abrir um link com ?q= esvaziava as três abas sem explicação.
     return true;
   }}
 
@@ -5851,7 +5843,10 @@ def render_html(
       if (gridEstatico) gridEstatico.style.display = '';
       if (gridDinamico) gridDinamico.style.display = 'none';
 
-      const totalFisio = document.querySelectorAll('#gridEstatico_fisio .card').length;
+      // Conta só os cards VISÍVEIS: um filtro ativo pode ter escondido parte deles
+      // (antes a aba dizia "7 vigentes" com a grade vazia).
+      const cardsFisio = Array.from(document.querySelectorAll('#gridEstatico_fisio .card'));
+      const totalFisio = cardsFisio.filter(c => c.style.display !== 'none').length;
       const cntTab = document.getElementById('tabCntFisio');
       if (cntTab) cntTab.textContent = totalFisio;
       const cntSec = document.getElementById('secCount_fisio');

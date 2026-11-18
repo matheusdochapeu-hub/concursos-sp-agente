@@ -83,6 +83,28 @@ class TestRenderSite(unittest.TestCase):
         # O ✕ nativo do Chrome/Safari duplicava o botão: precisa estar desligado
         self.assertIn('input[type="search"]::-webkit-search-cancel-button', self.html)
 
+    def test_busca_nao_esvazia_as_abas_de_categoria(self):
+        import re
+
+        # `cardPassaNosFiltros` NÃO pode filtrar pelo termo digitado: as abas de
+        # categoria (Fisioterapia/Médio/Superior) já são recortes fixos e o campo de
+        # busca fica escondido nelas. Um link com ?q= esvaziava as três abas.
+        corpo = re.search(r"function cardPassaNosFiltros\(c\) \{(.*?)\n  \}", self.html, re.S)
+        self.assertIsNotNone(corpo)
+        self.assertNotIn("termoBusca", corpo.group(1))
+        self.assertNotIn("inputCargo", corpo.group(1))
+
+    def test_contador_da_aba_fisio_conta_so_cards_visiveis(self):
+        import re
+
+        trecho = re.search(r"if \(!isCustom\) \{(.*?)\} else \{", self.html, re.S)
+        self.assertTrue(trecho, "não achei o bloco de cargo fixado")
+        self.assertTrue("c.style.display !== 'none'" in trecho.group(1),
+                        "a contagem do cargo fixado precisa ignorar cards escondidos")
+        # Depois de re-renderizar o cargo fixado, os filtros são reaplicados
+        self.assertIn("aplicarCargoFixadoUI();", self.html)
+        self.assertIn("aplicarFiltrosSp(false);", self.html)
+
     def test_js_inline_tem_sintaxe_valida(self):
         import importlib.util
         import shutil
