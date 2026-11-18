@@ -1,0 +1,127 @@
+"""Testes do contador de acessos com Google Sheets (Apps Script + painel do dev).
+
+Garantem que:
+  - o script da planilha continua com as proteções de chave (escrita x admin);
+  - nenhuma chave real vaza para o HTML publicado;
+  - o painel tem os campos para configurar e testar a planilha.
+"""
+from __future__ import annotations
+
+import shutil
+import subprocess
+import tempfile
+import unittest
+from pathlib import Path
+
+from render_site import render_html
+
+REPO = Path(__file__).resolve().parent.parent
+SCRIPT = REPO / "apps-script" / "Code.gs"
+
+
+def _render() -> str:
+    return render_html(
+        fisio=[],
+        medio_ok=[],
+        medio_todos=[],
+        catalogo_brasil=[],
+        catalogo_provas_banca_cargo=[],
+        total_sp=0,
+        gerado_em="17/11/2026 às 16:03",
+        listing_url="https://exemplo.test/concursos",
+        pix_key="chave-pix-teste",
+        superior_sp=[],
+        municipios_sp={},
+    )
+
+
+class TestAppsScript(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.codigo = SCRIPT.read_text(encoding="utf-8")
+
+    def test_arquivo_existe_com_funcoes_do_protocolo(self):
+        for funcao in ("function doPost", "function doGet", "function estatisticas",
+                       "function getAba", "function gerarChaves", "function verificarInstalacao"):
+            self.assertIn(funcao, self.codigo, f"falta {funcao}")
+
+    def test_post_exige_token_de_escrita(self):
+        # O POST precisa comparar o ?k= com TOKEN_ESCRITA antes de gravar
+        self.assertIn("p.k !== TOKEN_ESCRITA", self.codigo)
+        self.assertIn("appendRow", self.codigo)
+        self.assertIn("LockService", self.codigo, "append sem lock pode perder linhas concorrentes")
+
+    def test_get_exige_chave_de_admin(self):
+        self.assertIn("p.admin !== CHAVE_ADMIN", self.codigo)
+        # A listagem de nomes/e-mails nunca pode sair sem a chave
+        self.assertLess(
+            self.codigo.index("p.admin !== CHAVE_ADMIN"),
+            self.codigo.index("estatisticas()"),
+            "a checagem de admin tem que vir antes de devolver as estatísticas",
+        )
+
+    def test_resposta_tem_os_campos_que_o_painel_le(self):
+        for campo in ("totalAcessos", "totalLogins", "usuariosUnicos", "visitantesUnicos", "logs"):
+            self.assertIn(campo, self.codigo)
+        self.assertIn("ContentService.MimeType.JSON", self.codigo)
+
+    def test_chaves_nao_vazaram_para_o_repositorio(self):
+        import re
+
+        self.assertIn("COLE_AQUI_O_TOKEN_PUBLICO", self.codigo)
+        self.assertIn("COLE_AQUI_A_CHAVE_ADMIN", self.codigo)
+        # O script avisa se as duas chaves forem iguais
+        self.assertIn("TOKEN_ESCRITA === CHAVE_ADMIN", self.codigo)
+        # Um UUID colado por engano seria uma chave real versionada
+        for constante in ("TOKEN_ESCRITA", "CHAVE_ADMIN"):
+            valor = re.search(rf"const {constante} = '([^']*)'", self.codigo)
+            self.assertIsNotNone(valor)
+            self.assertTrue(valor.group(1).startswith("COLE_AQUI"), f"{constante} com valor real no repositório")
+
+    def test_js_do_apps_script_tem_sintaxe_valida(self):
+        node = shutil.which("node") or str(
+            Path.home() / ".dsh/dsh-runtimes/dsh-primary-runtime/dependencies/node/bin/node.exe"
+        )
+        if not shutil.which("node") and not Path(node).exists():
+            self.skipTest("Node.js indisponível")
+        # Apps Script é V8; .gs não é aceito pelo node --check, então copia como .js
+        with tempfile.NamedTemporaryFile("w", suffix=".js", delete=False, encoding="utf-8") as fh:
+            fh.write(self.codigo)
+            temp = fh.name
+        try:
+            proc = subprocess.run([node, "--check", temp], capture_output=True, text=True,
+                                  encoding="utf-8", errors="replace")
+        finally:
+            Path(temp).unlink(missing_ok=True)
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+
+
+class TestPainelPlanilha(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.html = _render()
+
+    def test_campos_de_configuracao_existem(self):
+        for ident in ("inputDevWebhookUrl", "inputDevAdminKey", "btnSalvarAdminKey",
+                      "btnLimparAdminKey", "btnTestarWebhook", "statusAdminKey", "bannerNuvem"):
+            self.assertIn(f'id="{ident}"', self.html, f"faltando #{ident}")
+
+    def test_busca_de_stats_exige_chave_e_devolve_status(self):
+        self.assertIn("function obterAdminKey", self.html)
+        self.assertIn("AUDIT_ADMIN_KEY_STORAGE", self.html)
+        self.assertIn("'sem_chave'", self.html)
+        self.assertIn("&admin=", self.html)
+
+    def test_aviso_explica_como_ligar_a_planilha(self):
+        self.assertIn("AUDIT_WEBHOOK_URL", self.html)
+        self.assertIn("Apps Script", self.html)
+
+    def test_webhook_url_publica_nao_esta_embutida_por_padrao(self):
+        # Sem env var no build, nenhuma URL de planilha aparece no HTML
+        self.assertNotIn("script.google.com/macros/s/AKfy", self.html)
+        # A chave de admin só é lida do localStorage deste navegador
+        self.assertIn("localStorage.getItem(AUDIT_ADMIN_KEY_STORAGE)", self.html)
+
+
+if __name__ == "__main__":
+    unittest.main()

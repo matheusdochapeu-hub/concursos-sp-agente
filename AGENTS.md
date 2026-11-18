@@ -53,6 +53,7 @@ Os testes rodam **antes** da coleta no workflow diário — se falharem, o site 
 | `tests/test_assets_pwa.py` | Manifest, ícones, service worker e política de privacidade |
 | `docs/` | **Saída gerada** — não editar à mão (exceções: `sw.js`, `manifest.webmanifest`, `privacidade.html`) |
 | `play-store/` | Guia de publicação na Play Store, `assetlinks.json.example` e assets de loja |
+| `apps-script/` | Apps Script + guia do contador de acessos na planilha Google |
 | `plans/` | Planos de evolução |
 
 ## Comandos úteis
@@ -85,6 +86,10 @@ python build_icons.py                       # ícones PWA + assets da Play Store
    duplicado (`{{`/`}}`); rode `python tools/check_inline_js.py` antes de publicar.
 9. **Política de privacidade é obrigatória** enquanto houver qualquer coleta de nome/e-mail
    (`docs/privacidade.html`), e precisa continuar verdadeira se o contador mudar.
+10. **Planilha de acessos: duas chaves, papéis diferentes.** `TOKEN_ESCRITA` é público (vai na
+    URL do app, embutido no HTML) e só grava. `CHAVE_ADMIN` só lê, nunca entra no build — é
+    digitada no painel do dev e guardada no `localStorage`. Não juntar as duas.
+    Passo a passo em [`apps-script/README.md`](apps-script/README.md).
 
 ## Vizinhança (ecossistema)
 

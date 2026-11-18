@@ -65,6 +65,17 @@ autenticação. Detalhes na [Política de Privacidade](docs/privacidade.html).
 
 ---
 
+## 📊 Contador de acessos na sua planilha Google
+
+O painel do desenvolvedor (`?dev=SEU_TOKEN`) pode gravar todos os acessos e logins numa
+planilha sua. Instalação em 10 minutos, sem servidor:
+**[`apps-script/README.md`](apps-script/README.md)** (Apps Script em [`apps-script/Code.gs`](apps-script/Code.gs)).
+
+Resumo: planilha → Apps Script → publicar como App da Web → salvar a URL com `?k=TOKEN`
+no secret `AUDIT_WEBHOOK_URL` → rodar o workflow → colar a `CHAVE_ADMIN` no painel.
+
+---
+
 ## 📲 Como baixar o App (PWA)
 
 1. Acesse **<https://matheusdochapeu-hub.github.io/concursos-sp-agente/>**

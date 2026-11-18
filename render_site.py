@@ -3439,12 +3439,27 @@ def render_html(
         <summary>📊 Webhook da Planilha Google (Acessos e Logins de Terceiros)</summary>
         <div class="prog-body">
           <p style="margin:0 0 8px;font-size:0.82rem;line-height:1.4;">
-            URL do Web App do Google Apps Script que recebe e registra os acessos e logins de todos os usuários:
+            URL do Web App do Google Apps Script que recebe e registra os acessos e logins de todos os usuários
+            (o parâmetro <code>?k=</code> com o token de escrita é obrigatório):
           </p>
           <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
-            <input id="inputDevWebhookUrl" type="text" placeholder="https://script.google.com/macros/s/.../exec" style="flex:1;min-width:240px;padding:8px 12px;border-radius:8px;border:1px solid var(--border);">
+            <input id="inputDevWebhookUrl" type="text" placeholder="https://script.google.com/macros/s/.../exec?k=SEU_TOKEN" style="flex:1;min-width:240px;padding:8px 12px;border-radius:8px;border:1px solid var(--border);">
             <button type="button" id="btnSalvarWebhookUrl" class="btn-aplicar">Salvar URL</button>
             <button type="button" id="btnRestaurarWebhookUrl" style="background:#f1f5f9;color:#334155;border:1px solid #cbd5e1;padding:8px 12px;border-radius:8px;font-size:0.82rem;font-weight:700;cursor:pointer;">Restaurar Padrão</button>
+          </div>
+
+          <div style="margin-top:12px;padding-top:12px;border-top:1.5px dashed var(--border);">
+            <p style="margin:0 0 8px;font-size:0.82rem;line-height:1.4;">
+              🔑 <b>Chave de admin</b> — necessária só para <b>ler</b> os totais e o histórico de todos os usuários.
+              Fica guardada apenas neste navegador e nunca é publicada no app.
+            </p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+              <input id="inputDevAdminKey" type="password" autocomplete="off" placeholder="cole a CHAVE_ADMIN do Apps Script" style="flex:1;min-width:240px;padding:8px 12px;border-radius:8px;border:1px solid var(--border);">
+              <button type="button" id="btnSalvarAdminKey" class="btn-aplicar">Salvar chave</button>
+              <button type="button" id="btnTestarWebhook" style="background:#e8f5ee;color:#005c24;border:1px solid #b7e1c7;padding:8px 12px;border-radius:8px;font-size:0.82rem;font-weight:700;cursor:pointer;">🔌 Testar conexão</button>
+              <button type="button" id="btnLimparAdminKey" style="background:#fee2e2;color:#991b1b;border:1px solid #fca5a5;padding:8px 12px;border-radius:8px;font-size:0.82rem;font-weight:700;cursor:pointer;">Remover</button>
+            </div>
+            <p id="statusAdminKey" style="margin:8px 0 0;font-size:0.76rem;line-height:1.4;color:var(--muted);"></p>
           </div>
         </div>
       </details>
@@ -6704,6 +6719,24 @@ def render_html(
     return /^https:\\/\\//i.test(url);
   }}
 
+  // Chave de admin: só para LER os totais. Fica no localStorage deste navegador,
+  // nunca no HTML publicado (a URL de escrita é pública; a leitura não).
+  const AUDIT_ADMIN_KEY_STORAGE = 'concursos_audit_admin_key_v1';
+  function obterAdminKey() {{
+    try {{
+      return (localStorage.getItem(AUDIT_ADMIN_KEY_STORAGE) || '').trim();
+    }} catch (_) {{
+      return '';
+    }}
+  }}
+  function urlValidaDeWebhook(url) {{
+    if (!/^https:\\/\\/[^\\s]+$/i.test(url)) return false;
+    // Apps Script: precisa ser a URL de produção (/exec), nunca a de teste (/dev)
+    if (/script\\.google\\.com\\/macros\\/s\\//i.test(url) && !/\\/exec(\\?|$)/i.test(url)) return false;
+    if (/\\/dev(\\?|$)/i.test(url)) return false;
+    return true;
+  }}
+
   // Hash SHA-256 da chave secreta exclusiva do link do desenvolvedor
   const DEV_TOKEN_SHA256 = 'ad4ccc5a97c1e5c805713136e2fce68343de39b526c672dd0133759a9c4e6400';
   const DEV_EMAILS_SHA256 = new Set([
@@ -7208,23 +7241,30 @@ def render_html(
     }}).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
   }}
 
+  // Consulta os totais na planilha. Exige a chave de admin: a URL pública só
+  // permite gravar, então ninguém consegue ler a lista de e-mails sem ela.
+  // Devolve um objeto com status e dados; status: 'sem_url' | 'sem_chave' | 'erro' | 'ok'.
   async function buscarStatsNuvem() {{
-    if (!contagemNuvemAtiva()) return null;
+    if (!contagemNuvemAtiva()) return {{ status: 'sem_url', dados: null }};
+    const chave = obterAdminKey();
+    if (!chave) return {{ status: 'sem_chave', dados: null }};
     const webhookUrl = obterAuditWebhookUrl();
     const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), 6000);
+    const timer = setTimeout(() => ctrl.abort(), 8000);
     try {{
       const sep = webhookUrl.includes('?') ? '&' : '?';
-      const r = await fetch(webhookUrl + sep + 'action=stats&_=' + Date.now(), {{
-        cache: 'no-store',
-        signal: ctrl.signal
-      }});
-      if (!r.ok) return null;
+      const url = webhookUrl + sep + 'action=stats&_=' + Date.now() + '&admin=' + encodeURIComponent(chave);
+      const r = await fetch(url, {{ cache: 'no-store', signal: ctrl.signal }});
+      if (!r.ok) return {{ status: 'erro', dados: null }};
       const dados = await r.json();
-      return (dados && typeof dados === 'object') ? dados : null;
+      if (dados && dados.ok === false) {{
+        console.warn('Planilha recusou a consulta:', dados.erro || '');
+        return {{ status: 'erro', dados: null }};
+      }}
+      return {{ status: 'ok', dados: (dados && typeof dados === 'object') ? dados : null }};
     }} catch (err) {{
       console.warn('Sem resposta da planilha de acessos:', err);
-      return null;
+      return {{ status: 'erro', dados: null }};
     }} finally {{
       clearTimeout(timer);
     }}
@@ -7242,20 +7282,39 @@ def render_html(
     );
     const loginsLocais = logsLocais.filter(l => String((l && l.evento) || '').toLowerCase().includes('login')).length;
     const nuvem = contagemNuvemAtiva();
-    const dados = await buscarStatsNuvem();
+    const consulta = await buscarStatsNuvem();
+    const dados = consulta.dados;
 
     const banner = document.getElementById('bannerNuvem');
     const aviso = document.getElementById('avisoModoLocal');
-    if (dados) {{
-      if (banner) banner.innerHTML = '📊 <b>Planilha Google conectada:</b> os números de nuvem vêm dos acessos de todos os usuários.';
-      if (aviso) aviso.style.display = 'none';
-    }} else if (nuvem) {{
-      if (banner) banner.innerHTML = '⏳ <b>Planilha configurada, mas sem resposta agora.</b> Mostrando apenas os dados deste dispositivo.';
-      if (aviso) aviso.style.display = 'block';
-    }} else {{
-      if (banner) banner.innerHTML = '💾 <b>Sem planilha conectada:</b> a contagem é feita somente neste dispositivo (nada é enviado para fora).';
-      if (aviso) aviso.style.display = 'block';
+    let msgBanner = '';
+    if (consulta.status === 'ok' && dados) {{
+      msgBanner = '📊 <b>Planilha Google conectada:</b> os números de nuvem somam os acessos de todos os usuários.';
+    }} else if (consulta.status === 'sem_chave') {{
+      msgBanner = '🔑 <b>Planilha configurada.</b> Cole a <b>chave de admin</b> (aba abaixo) para ver os totais de todos os usuários.';
+    }} else if (consulta.status === 'erro') {{
+      msgBanner = '⏳ <b>Planilha configurada, mas não respondeu agora.</b> Confira a chave de admin e a implantação do Apps Script. Mostrando dados deste dispositivo.';
+    }} else if (consulta.status === 'sem_url') {{
+      msgBanner = '💾 <b>Sem planilha conectada:</b> a contagem é feita somente neste dispositivo (nada é enviado para fora).';
     }}
+    if (banner) banner.innerHTML = msgBanner;
+    if (aviso) aviso.style.display = (consulta.status === 'ok' && dados) ? 'none' : 'block';
+
+    // Diagnóstico da chave no bloco de configuração
+    const stAdmin = document.getElementById('statusAdminKey');
+    if (stAdmin) {{
+      if (!nuvem) {{
+        stAdmin.textContent = 'Nenhuma URL de webhook configurada neste build: a chave não é usada.';
+      }} else if (!obterAdminKey()) {{
+        stAdmin.textContent = 'Nenhuma chave salva neste navegador — os totais da nuvem ficam ocultos.';
+      }} else if (consulta.status === 'ok') {{
+        stAdmin.textContent = '✅ Chave aceita pela planilha.';
+      }} else {{
+        stAdmin.textContent = '⚠️ Chave salva, mas a planilha não respondeu. Confira se ela é igual à CHAVE_ADMIN do Apps Script.';
+      }}
+    }}
+    const inpAdmin = document.getElementById('inputDevAdminKey');
+    if (inpAdmin && !inpAdmin.value) inpAdmin.value = obterAdminKey();
 
     let gViews = null, gLogins = null, gUnicos = null, logs = logsLocais;
     if (dados) {{
@@ -7400,8 +7459,12 @@ def render_html(
     btnSalvarWebhookUrl.addEventListener('click', () => {{
       const raw = (document.getElementById('inputDevWebhookUrl').value || '').trim();
       if (raw) {{
-        if (!/^https:\\/\\//i.test(raw)) {{
-          alert('A URL do webhook precisa começar com https://');
+        if (!urlValidaDeWebhook(raw)) {{
+          alert('URL inválida. Use a URL do App da Web que termina em /exec (não a /dev) e começa com https://');
+          return;
+        }}
+        if (/script\\.google\\.com\\/macros\\/s\\//i.test(raw) && !/[?&]k=/.test(raw)) {{
+          alert('Falta o token de escrita na URL. Ela precisa terminar com ?k=SEU_TOKEN (o Apps Script recusa sem ele).');
           return;
         }}
         localStorage.setItem(AUDIT_WEBHOOK_KEY, raw);
@@ -7425,6 +7488,53 @@ def render_html(
         ? 'Webhook personalizado removido. Voltou a usar a URL definida no build (AUDIT_WEBHOOK_URL).'
         : 'Webhook personalizado removido. Não há URL definida no build: a contagem fica local.');
       atualizarPainelDevStats();
+    }});
+  }}
+
+  // Chave de admin (somente leitura dos totais)
+  const btnSalvarAdminKey = document.getElementById('btnSalvarAdminKey');
+  if (btnSalvarAdminKey) {{
+    btnSalvarAdminKey.addEventListener('click', () => {{
+      const raw = (document.getElementById('inputDevAdminKey').value || '').trim();
+      if (!raw) {{
+        alert('Cole a CHAVE_ADMIN gerada no Apps Script.');
+        return;
+      }}
+      try {{ localStorage.setItem(AUDIT_ADMIN_KEY_STORAGE, raw); }} catch (_) {{}}
+      atualizarPainelDevStats();
+      alert('Chave salva neste navegador. Se estiver correta, os totais da planilha aparecem agora.');
+    }});
+  }}
+
+  const btnLimparAdminKey = document.getElementById('btnLimparAdminKey');
+  if (btnLimparAdminKey) {{
+    btnLimparAdminKey.addEventListener('click', () => {{
+      try {{ localStorage.removeItem(AUDIT_ADMIN_KEY_STORAGE); }} catch (_) {{}}
+      const inp = document.getElementById('inputDevAdminKey');
+      if (inp) inp.value = '';
+      atualizarPainelDevStats();
+    }});
+  }}
+
+  const btnTestarWebhook = document.getElementById('btnTestarWebhook');
+  if (btnTestarWebhook) {{
+    btnTestarWebhook.addEventListener('click', async () => {{
+      btnTestarWebhook.disabled = true;
+      const textoOriginal = btnTestarWebhook.textContent;
+      btnTestarWebhook.textContent = '⏳ Testando...';
+      const consulta = await buscarStatsNuvem();
+      await atualizarPainelDevStats();
+      btnTestarWebhook.disabled = false;
+      btnTestarWebhook.textContent = textoOriginal;
+      if (consulta.status === 'ok') {{
+        alert('✅ Planilha respondendo! ' + fmtNumDev(consulta.dados.totalAcessos) + ' acesso(s) registrados.');
+      }} else if (consulta.status === 'sem_url') {{
+        alert('Nenhuma URL de webhook configurada neste build nem neste navegador.');
+      }} else if (consulta.status === 'sem_chave') {{
+        alert('Planilha configurada, mas falta a chave de admin neste navegador.');
+      }} else {{
+        alert('Sem resposta da planilha. Confira: implantação como "Qualquer pessoa", URL terminando em /exec, token ?k=... e a CHAVE_ADMIN.');
+      }}
     }});
   }}
 
