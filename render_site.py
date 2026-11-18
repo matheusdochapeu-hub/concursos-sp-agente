@@ -609,7 +609,28 @@ GOOGLE_CLIENT_ID = (
 )
 
 # Webhook centralizado da Planilha Google (Apps Script) para contabilizar acessos e logins de terceiros em tempo real
-AUDIT_WEBHOOK_URL = _os.environ.get("AUDIT_WEBHOOK_URL", "").strip()
+def normalizar_webhook_url(url: str) -> str:
+    """Corrige a URL de TESTE do Apps Script (/dev) para a de produção (/exec).
+
+    A /dev só funciona para o dono, logado no navegador — nunca para os visitantes
+    do app, que fazem POST anônimo. Se ela entrar no build, o contador não grava nada.
+    """
+    u = (url or "").strip()
+    if not u:
+        return ""
+    return re.sub(r"/dev(\?|$)", r"/exec\1", u, flags=re.I)
+
+
+AUDIT_WEBHOOK_URL_BRUTO = _os.environ.get("AUDIT_WEBHOOK_URL", "").strip()
+AUDIT_WEBHOOK_URL = normalizar_webhook_url(AUDIT_WEBHOOK_URL_BRUTO)
+if AUDIT_WEBHOOK_URL and AUDIT_WEBHOOK_URL != AUDIT_WEBHOOK_URL_BRUTO:
+    import sys as _sys
+
+    print(
+        "[render_site] AVISO: AUDIT_WEBHOOK_URL estava em /dev (URL de teste do Apps Script). "
+        "Corrigido para /exec — a /dev só funciona para o dono logado e o contador não gravaria nada.",
+        file=_sys.stderr,
+    )
 
 # Capitais usadas como cidade de referência: (nome, UF, lat, lon)
 CAPITAIS_REF = [

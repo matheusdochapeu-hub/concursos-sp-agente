@@ -89,6 +89,29 @@ class TestAppsScript(unittest.TestCase):
         # O script avisa se as duas chaves forem iguais
         self.assertIn("TOKEN_ESCRITA === CHAVE_ADMIN", self.codigo)
 
+    def test_url_de_teste_do_apps_script_e_corrigida(self):
+        from render_site import normalizar_webhook_url
+
+        # /exec (produção) passa intacta
+        self.assertEqual(
+            normalizar_webhook_url("https://script.google.com/macros/s/AK1/exec?k=abc"),
+            "https://script.google.com/macros/s/AK1/exec?k=abc",
+        )
+        # /dev só funciona para o dono logado: precisa virar /exec
+        self.assertEqual(
+            normalizar_webhook_url("https://script.google.com/macros/s/AK1/dev?k=abc"),
+            "https://script.google.com/macros/s/AK1/exec?k=abc",
+        )
+        self.assertEqual(
+            normalizar_webhook_url("https://script.google.com/macros/s/AK1/dev"),
+            "https://script.google.com/macros/s/AK1/exec",
+        )
+        self.assertEqual(normalizar_webhook_url(""), "")
+
+    def test_apps_script_tambem_normaliza_dev_para_exec(self):
+        self.assertIn("/dev(\\?|$)", self.codigo)
+        self.assertIn("'/exec$1'", self.codigo)
+
     def test_js_do_apps_script_tem_sintaxe_valida(self):
         node = shutil.which("node") or str(
             Path.home() / ".dsh/dsh-runtimes/dsh-primary-runtime/dependencies/node/bin/node.exe"

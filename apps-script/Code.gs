@@ -62,10 +62,13 @@ const NOME_ABA = 'Acessos';
 const MAX_LOGS_RESPOSTA = 100;      // itens devolvidos ao painel
 const MAX_CARACTERES_CORPO = 2000;  // proteção contra payload gigante
 
-// URL pública do App da Web (só existe depois da primeira implantação)
+// URL pública do App da Web (só existe depois da primeira implantação).
+// O Apps Script às vezes devolve a URL de TESTE (/dev), que só funciona para o
+// dono logado — o app precisa da /exec, então normalizamos aqui.
 function urlDoApp() {
   try {
-    return ScriptApp.getService().getUrl() || '';
+    const url = ScriptApp.getService().getUrl() || '';
+    return url.replace(/\/dev(\?|$)/i, '/exec$1');
   } catch (err) {
     return '';
   }
