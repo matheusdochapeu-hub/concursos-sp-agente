@@ -746,6 +746,7 @@ def render_html(
 
     qr_svg = gerar_qr_pix_svg(pix_key)
     provas_json = safe_json_for_script(catalogo_provas_banca_cargo)
+    cargos_rapidos_json = safe_json_for_script(CARGOS_RAPIDOS_MAX)
 
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -2110,6 +2111,7 @@ def render_html(
   }}
   .btn-coffee:hover {{ background: #1f5829; transform: translateY(-2px); }}
   .footer-note {{ color: var(--muted); font-size: 0.85rem; margin: 4px 0 0; }}
+  .footer-note a {{ color: var(--br-blue); font-weight: 700; }}
 
   .modal-bg {{
     position: fixed;
@@ -2342,27 +2344,19 @@ def render_html(
   }}
   .btn-copy-pix:hover {{ background: #1f5829; }}
 
-  /* Bloqueio de Login Obrigatório com Conta Google */
-  body.bloqueado-login {{
-    overflow: hidden;
-  }}
-  body.bloqueado-login > header,
-  body.bloqueado-login > .container,
-  body.bloqueado-login > footer {{
-    filter: blur(8px);
-    pointer-events: none;
-    user-select: none;
-  }}
+  /* Login OPCIONAL: o app abre livre; o cartão de conta é um modal. */
+  body.login-aberto {{ overflow: hidden; }}
   .login-gate-bg {{
     position: fixed;
     inset: 0;
-    background: linear-gradient(135deg, rgba(0, 27, 82, 0.88) 0%, rgba(0, 92, 36, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(0, 27, 82, 0.82) 0%, rgba(0, 92, 36, 0.86) 100%);
     backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 18px;
     z-index: 2500;
+    overflow-y: auto;
   }}
   .login-gate-bg.oculto {{ display: none; }}
   .login-card {{
@@ -2375,7 +2369,73 @@ def render_html(
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
     text-align: center;
     color: var(--txt);
+    position: relative;
+    margin: auto;
   }}
+  .login-close {{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: none;
+    background: #f1f5f9;
+    color: #334155;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+  }}
+  .login-close:hover {{ background: #e2e8f0; }}
+  .btn-login-skip {{
+    display: block;
+    width: 100%;
+    margin-top: 14px;
+    background: transparent;
+    border: none;
+    color: var(--br-blue);
+    font-family: inherit;
+    font-size: 0.86rem;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 6px;
+  }}
+  .login-privacidade {{ display: block; margin-top: 10px; font-size: 0.74rem; color: var(--muted); line-height: 1.45; }}
+  .login-privacidade a {{ color: var(--br-blue); font-weight: 700; }}
+  .btn-entrar-topo {{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #ffffff;
+    color: var(--br-blue-dark);
+    border: 2px solid var(--br-yellow);
+    min-height: 38px;
+    padding: 7px 15px;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 800;
+    cursor: pointer;
+  }}
+  .btn-entrar-topo:hover {{ background: var(--br-yellow-soft); }}
+  .btn-compartilhar-busca {{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--br-green-soft);
+    color: var(--br-green-dark);
+    border: 1.5px solid var(--br-green-border);
+    min-height: 40px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 800;
+    cursor: pointer;
+  }}
+  .btn-compartilhar-busca:hover {{ background: #d9f0e3; }}
+  .btn-compartilhar-busca.copiado {{ background: #dcfce7; border-color: #86efac; }}
   .login-badge {{
     display: inline-flex;
     align-items: center;
@@ -2825,15 +2885,23 @@ def render_html(
   }}
 </style>
 </head>
-<body class="bloqueado-login">
-  <!-- Tela de Login Obrigatório com Conta Google -->
-  <div id="loginGateOverlay" class="login-gate-bg" role="dialog" aria-modal="true" aria-labelledby="tituloLoginGoogle">
+<body>
+  <noscript>
+    <div style="margin:12px;padding:14px 16px;border-radius:12px;background:#fffbeb;border:1px solid #fde68a;color:#854d0e;font-family:system-ui,sans-serif;font-size:0.9rem;line-height:1.5;">
+      ⚠️ <b>Este app precisa de JavaScript</b> para buscar cargos, filtrar e comparar editais.
+      Os concursos de São Paulo continuam listados abaixo, mas sinais de "novo", distância e filtros não funcionam sem JS.
+    </div>
+  </noscript>
+  <!-- Conta do usuário (OPCIONAL): o app abre livre; este cartão só abre ao clicar em "Entrar". -->
+  <div id="loginGateOverlay" class="login-gate-bg oculto" role="dialog" aria-modal="true" aria-labelledby="tituloLoginGoogle" aria-describedby="descLoginGoogle" hidden>
     <div class="login-card">
+      <button type="button" id="btnFecharLogin" class="login-close" aria-label="Fechar e continuar sem entrar">✕</button>
       <img src="./icon-192.png?v=3.0.0" alt="Mascote Concursos" class="login-logo-img" />
-      <div class="login-badge">🔒 Acesso Exclusivo Autenticado</div>
+      <div class="login-badge">🔓 Conta (opcional)</div>
       <h2 id="tituloLoginGoogle">Entrar no Concursos</h2>
-      <p>
-        Faça login com sua <b>Conta Google</b> para acessar o painel completo de editais vigentes no Brasil e em São Paulo.
+      <p id="descLoginGoogle">
+        Entrar é <b>opcional</b>. Com a conta você guarda seu cargo fixado e suas preferências neste
+        dispositivo. Sem entrar, você continua vendo todos os editais.
       </p>
 
       <!-- Container Oficial do Google Identity Services (quando Client ID OAuth configurado) -->
@@ -2842,7 +2910,7 @@ def render_html(
       <!-- Opção de alternar formulário manual -->
       <div id="opcaoManualLogin" style="margin:8px 0 12px;text-align:center;">
         <button type="button" id="btnAlternarManual" style="background:#f1f5f9;border:1px solid #cbd5e1;color:var(--br-blue);font-size:0.83rem;font-weight:700;padding:8px 14px;border-radius:10px;cursor:pointer;font-family:inherit;width:100%;transition:background 0.15s;">
-          ✍️ Entrar diretamente com Nome e E-mail
+          ✍️ Identificar-se com Nome e E-mail
         </button>
       </div>
 
@@ -2863,16 +2931,18 @@ def render_html(
           <input id="inputGoogleNome" name="name" type="text" required placeholder="Ex.: Matheus Ribeiro" autocomplete="name">
         </div>
         <div>
-          <label for="inputGoogleEmail">E-mail da Conta Google (@gmail.com / @usp.br / Google)</label>
-          <input id="inputGoogleEmail" name="email" type="email" required placeholder="seu.email@gmail.com ou @usp.br" autocomplete="email">
+          <label for="inputGoogleEmail">Seu E-mail</label>
+          <input id="inputGoogleEmail" name="email" type="email" required placeholder="seu.email@gmail.com" autocomplete="email">
         </div>
-        <div id="msgErroLoginGoogle" class="login-erro"></div>
+        <div id="msgErroLoginGoogle" class="login-erro" role="alert"></div>
         <button type="submit" class="btn-aplicar" style="width:100%;min-height:42px;font-size:.92rem;">
-          ✅ Autenticar com Conta Google e Acessar
+          ✅ Salvar minha conta neste dispositivo
         </button>
       </form>
-      <small style="display:block;margin-top:12px;font-size:.74rem;color:var(--muted);">
-        🔒 Conexão protegida · Sua sessão permanece salva neste dispositivo.
+      <button type="button" id="btnContinuarSemLogin" class="btn-login-skip">Continuar sem entrar →</button>
+      <small class="login-privacidade">
+        🔒 A conta fica salva <b>apenas neste dispositivo</b>. Nome e e-mail só são enviados ao painel do
+        desenvolvedor se a contagem de acessos estiver ativa. <a href="./privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.
       </small>
     </div>
   </div>
@@ -2894,7 +2964,8 @@ def render_html(
           </div>
         </div>
         <div class="header-actions-col">
-          <div id="userProfileChip" class="user-profile-pill" title="Conta Google Conectada">
+          <button type="button" id="btnEntrarTopo" class="btn-entrar-topo">👤 Entrar</button>
+          <div id="userProfileChip" class="user-profile-pill" title="Conta salva neste dispositivo">
             <span id="userProfileText">👤 Conectado</span>
             <button type="button" id="btnLogoutGoogle" class="btn-logout-google">Sair</button>
           </div>
@@ -2977,7 +3048,11 @@ def render_html(
           {opcoes_cargos_sugeridos}
         </datalist>
         <button type="button" id="btnLimparCargo" class="btn-clear-inline" title="Limpar busca" style="display:none;">✕</button>
+        <button type="button" id="btnCompartilharBusca" class="btn-compartilhar-busca" title="Copiar um link que já abre esta busca com os filtros aplicados">
+          🔗 Compartilhar busca
+        </button>
       </div>
+      <p id="linkBuscaStatus" aria-live="polite" style="display:none;margin:6px 0 0;font-size:0.78rem;font-weight:700;color:var(--br-green-dark);"></p>
     </div>
 
     <!-- Barra de Chips de Filtros Ativos (aparece somente se houver algum filtro ativo) -->
@@ -3315,34 +3390,34 @@ def render_html(
         </div>
       </div>
 
-      <!-- Banner da Planilha Google Conectada -->
-      <div style="background:#f0fdf4;border:1.5px solid #bbf7d0;border-radius:12px;padding:10px 14px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
-        <div style="font-size:0.83rem;color:#166534;">
-          📊 <b>Planilha Google Conectada:</b> Acessos e logins de terceiros são gravados em tempo real na sua planilha central.
-        </div>
-        <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem;color:#15803d;font-weight:700;text-decoration:underline;">
-          Abrir Google Drive ↗
-        </a>
+      <!-- Banner do modo de contagem (local x nuvem) -->
+      <div id="bannerNuvem" style="background:#f0fdf4;border:1.5px solid #bbf7d0;border-radius:12px;padding:10px 14px;margin-bottom:14px;font-size:0.83rem;color:#166534;">
+        Verificando conexão com a planilha…
       </div>
 
-      <div class="cmp-summary-banner" style="margin-bottom:16px;">
+      <div class="cmp-summary-banner" style="margin-bottom:10px;">
         <div class="cmp-kpi">
-          <span>🌐 Total Geral de Acessos</span>
-          <strong id="kpiTotalAcessosGlobais">Carregando...</strong>
+          <span>🌐 Acessos na Nuvem</span>
+          <strong id="kpiTotalAcessosGlobais">—</strong>
         </div>
         <div class="cmp-kpi">
-          <span>🔑 Logins com Conta Google</span>
-          <strong id="kpiTotalLoginsGlobais">Carregando...</strong>
+          <span>🔑 Logins Registrados</span>
+          <strong id="kpiTotalLoginsGlobais">—</strong>
         </div>
         <div class="cmp-kpi">
           <span>💻 Acessos Neste Dispositivo</span>
           <strong id="kpiAcessosLocais">0</strong>
         </div>
         <div class="cmp-kpi">
-          <span>👥 Usuários Únicos (Contas)</span>
+          <span>👥 Contas Únicas</span>
           <strong id="kpiUsuariosUnicos">0</strong>
         </div>
       </div>
+      <p id="avisoModoLocal" style="display:none;margin:0 0 16px;font-size:0.78rem;line-height:1.45;color:#92400e;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:9px 12px;">
+        ⚠️ <b>Modo local:</b> sem a URL do webhook configurada no build, os números acima são
+        <b>somente deste navegador</b>. Para ver acessos de todos os usuários, configure
+        <code>AUDIT_WEBHOOK_URL</code> no GitHub Actions (secret/variável) e rode o agente de novo.
+      </p>
 
       <div style="margin-bottom:16px;">
         <div class="f-label" style="margin-bottom:6px;">📋 Histórico em Tempo Real de Acessos e Logins (Planilha Google):</div>
@@ -3407,7 +3482,10 @@ def render_html(
   <footer class="app-footer">
     <div class="container footer-coffee-wrap">
       <button type="button" id="btnAbrirPix" class="btn-coffee">☕ Me pague um café</button>
-      <p class="footer-note">Painel gratuito atualizado diariamente · Feito com carinho por Matheus Rodrigues Ribeiro</p>
+      <p class="footer-note">
+        Painel gratuito atualizado diariamente · Feito com carinho por Matheus Rodrigues Ribeiro ·
+        <a href="./privacidade.html">Privacidade</a>
+      </p>
     </div>
   </footer>
 
@@ -3557,35 +3635,45 @@ def render_html(
     return true;
   }}
 
-  async function carregarCatalogoBrasilSeNecessario() {{
-    if (catalogoBrasilCarregado || carregandoCatalogoBrasil) return;
-    carregandoCatalogoBrasil = true;
+  let catalogoBrasilPromise = null;
+
+  /**
+   * Baixa o catálogo nacional uma única vez. Sempre devolve uma Promise —
+   * quem chama pode usar .then()/await sem quebrar quando já está carregando.
+   */
+  function carregarCatalogoBrasilSeNecessario() {{
+    if (catalogoBrasilCarregado) return Promise.resolve(CATALOGO_BRASIL);
+    if (catalogoBrasilPromise) return catalogoBrasilPromise;
+
     const loadingEl = document.getElementById('loadingBuscaCargo');
     if (loadingEl) loadingEl.style.display = 'block';
-    try {{
-      const resp = await fetch('./data/catalogo_brasil.json');
-      if (resp.ok) {{
+
+    catalogoBrasilPromise = (async () => {{
+      try {{
+        const resp = await fetch('./data/catalogo_brasil.json', {{ cache: 'no-cache' }});
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
         CATALOGO_BRASIL = await resp.json();
+        if (!Array.isArray(CATALOGO_BRASIL)) CATALOGO_BRASIL = [];
         CATALOGO_BRASIL.forEach(indexarCatalogoItem);
         catalogoBrasilCarregado = true;
-        if (typeof aplicarFiltrosBuscaCargo === 'function') {{
-          aplicarFiltrosBuscaCargo();
-        }}
-        if (typeof renderizarBuscaCargo === 'function') {{
-          renderizarBuscaCargo();
-        }}
-        if (typeof aplicarCargoFixadoUI === 'function') {{
-          aplicarCargoFixadoUI();
-        }}
+        if (typeof renderizarBuscaCargo === 'function') renderizarBuscaCargo();
+        if (typeof aplicarCargoFixadoUI === 'function') aplicarCargoFixadoUI();
+        return CATALOGO_BRASIL;
+      }} catch (err) {{
+        console.error('Falha ao carregar o catálogo nacional:', err);
+        return null;
+      }} finally {{
+        carregandoCatalogoBrasil = false;
+        catalogoBrasilPromise = null;
+        if (loadingEl) loadingEl.style.display = 'none';
       }}
-    }} catch (err) {{
-      console.error('Falha ao carregar catálogo nacional:', err);
-    }} finally {{
-      carregandoCatalogoBrasil = false;
-      if (loadingEl) loadingEl.style.display = 'none';
-    }}
+    }})();
+
+    carregandoCatalogoBrasil = true;
+    return catalogoBrasilPromise;
   }}
   const CATALOGO_PROVAS = {provas_json};
+  const CARGOS_RAPIDOS_LISTA = {cargos_rapidos_json};
   const PIX_PAYLOAD = {safe_json_for_script(pix_key)};
   const DIAS_ALERTA = {DIAS_ALERTA_ENCERRAMENTO};
   const APP_PUBLIC_URL = window.location.href.split('?')[0].split('#')[0];
@@ -4212,6 +4300,12 @@ def render_html(
   document.addEventListener('keydown', (e) => {{
     if (e.key === 'Escape') {{
       let modalFechado = false;
+      // Cartão de conta (login opcional) tem prioridade sobre os demais modais
+      const gate = document.getElementById('loginGateOverlay');
+      if (gate && !gate.classList.contains('oculto')) {{
+        fecharLoginGate();
+        modalFechado = true;
+      }}
       const modaisAbertos = document.querySelectorAll('.modal-bg.aberto, .sidebar-filtros.aberto');
       modaisAbertos.forEach((el) => {{
         el.classList.remove('aberto');
@@ -4267,7 +4361,12 @@ def render_html(
     const sidebarExtra = document.getElementById('blocoBuscaCargo');
     if (sidebarExtra) sidebarExtra.style.display = isBusca ? 'block' : 'none';
 
-    history.replaceState(null, '', '#' + tab);
+    // Mantém a query string (?q=...&uf=...) ao trocar de aba: a busca é compartilhável.
+    try {{
+      const qs = window.location.search || '';
+      const hash = (tab === 'busca_cargo') ? '' : '#' + tab;
+      history.replaceState(null, '', window.location.pathname + qs + hash);
+    }} catch (_) {{}}
     if (isBusca || tab === 'busca_cargo') {{
       carregarCatalogoBrasilSeNecessario();
       renderizarBuscaCargo();
@@ -4304,6 +4403,151 @@ def render_html(
     cidade: '',
     ordem: 'padrao'
   }};
+
+  // ===== Busca compartilhável: o estado dos filtros vive na URL =====
+  // Ex.: ?q=Fisioterapeuta&uf=SP&faixa=acima5000&ordem=salario#busca_cargo
+  let sincronizandoURL = false;
+
+  function estadoDaBuscaParaParams() {{
+    const p = new URLSearchParams();
+    const termo = (inputCargo && inputCargo.value ? inputCargo.value.trim() : '');
+    if (termo) p.set('q', termo);
+    if (ufSelecionada && ufSelecionada !== 'TODOS') p.set('uf', ufSelecionada);
+    if (estadoFiltros.encerrando === '1') p.set('en', '1');
+    if (estadoFiltros.novo === '1') p.set('novo', '1');
+    if (estadoFiltros.faixa) p.set('faixa', estadoFiltros.faixa);
+    if (estadoFiltros.escolaridade) p.set('esc', estadoFiltros.escolaridade);
+    if (estadoFiltros.vagas && estadoFiltros.vagas !== 'todas') p.set('vagas', estadoFiltros.vagas);
+    if (estadoFiltros.regime) p.set('regime', estadoFiltros.regime);
+    if (estadoFiltros.horas) p.set('horas', estadoFiltros.horas);
+    if (estadoFiltros.cidade) p.set('cidade', estadoFiltros.cidade);
+    if (estadoFiltros.kmRef && cidadeRef) {{
+      p.set('km', estadoFiltros.kmRef);
+      p.set('ref', `${{cidadeRef.nome}} - ${{cidadeRef.uf}}`);
+    }}
+    if (estadoFiltros.ordem && estadoFiltros.ordem !== 'padrao') p.set('ordem', estadoFiltros.ordem);
+    return p;
+  }}
+
+  function urlDaBuscaAtual() {{
+    const qs = estadoDaBuscaParaParams().toString();
+    return window.location.origin + window.location.pathname + (qs ? '?' + qs : '');
+  }}
+
+  function sincronizarURLBusca() {{
+    if (sincronizandoURL) return;
+    try {{
+      const qs = estadoDaBuscaParaParams().toString();
+      const aba = (document.querySelector('.tab-panel.ativo') || {{}}).id || 'busca_cargo';
+      const hash = (aba && aba !== 'busca_cargo') ? '#' + aba : '';
+      window.history.replaceState(null, document.title, window.location.pathname + (qs ? '?' + qs : '') + hash);
+    }} catch (_) {{}}
+  }}
+
+  function descreverBuscaAtual() {{
+    const partes = [];
+    const termo = (inputCargo && inputCargo.value ? inputCargo.value.trim() : '');
+    if (termo) partes.push(`"${{termo}}"`);
+    if (ufSelecionada && ufSelecionada !== 'TODOS') partes.push(ufSelecionada === 'BR' ? 'Brasil' : ufSelecionada);
+    if (estadoFiltros.faixa) {{
+      const mapa = {{ ate2500: 'até R$ 2.500', '2500a3500': 'R$ 2.500–3.500', '3500a5000': 'R$ 3.500–5.000', acima5000: 'acima de R$ 5.000' }};
+      partes.push(mapa[estadoFiltros.faixa] || estadoFiltros.faixa);
+    }}
+    if (estadoFiltros.escolaridade) {{
+      const mapa = {{ fundamental: 'fundamental', medio: 'médio', medio_tecnico: 'técnico', superior: 'superior' }};
+      partes.push('nível ' + (mapa[estadoFiltros.escolaridade] || estadoFiltros.escolaridade));
+    }}
+    if (estadoFiltros.encerrando === '1') partes.push('inscrições encerrando');
+    if (estadoFiltros.novo === '1') partes.push('novos (24h)');
+    if (estadoFiltros.kmRef && cidadeRef) partes.push(`até ${{estadoFiltros.kmRef}} km de ${{cidadeRef.nome}}`);
+    return partes.length ? partes.join(' · ') : 'todos os concursos';
+  }}
+
+  function avisarLinkBusca(texto) {{
+    const el = document.getElementById('linkBuscaStatus');
+    if (!el) return;
+    el.textContent = texto;
+    el.style.display = 'block';
+    clearTimeout(avisarLinkBusca._t);
+    avisarLinkBusca._t = setTimeout(() => {{ el.style.display = 'none'; }}, 4000);
+  }}
+
+  async function compartilharBusca() {{
+    const url = urlDaBuscaAtual();
+    const descricao = descreverBuscaAtual();
+    const texto = `Concursos: ${{descricao}}`;
+    if (navigator.share) {{
+      try {{
+        await navigator.share({{ title: 'Concursos', text: texto, url: url }});
+        return;
+      }} catch (err) {{
+        if (err && err.name === 'AbortError') return;
+      }}
+    }}
+    try {{
+      await navigator.clipboard.writeText(url);
+      avisarLinkBusca('🔗 Link da busca copiado! Abre já com esses filtros.');
+    }} catch (_) {{
+      window.prompt('Copie o link desta busca:', url);
+    }}
+  }}
+
+  // Lê a URL na abertura e aplica os filtros (deep link compartilhado)
+  function aplicarEstadoDaURL() {{
+    let p;
+    try {{ p = new URLSearchParams(window.location.search); }} catch (_) {{ return false; }}
+    if (!p.toString()) return false;
+    sincronizandoURL = true;
+    try {{
+      const q = p.get('q');
+      if (q && inputCargo) {{
+        inputCargo.value = q.slice(0, 120);
+        const btnClear = document.getElementById('btnLimparCargo');
+        if (btnClear) btnClear.style.display = 'block';
+      }}
+      const uf = (p.get('uf') || '').toUpperCase();
+      if (uf && uf !== 'TODOS') ufSelecionada = uf;
+      if (p.get('en') === '1') estadoFiltros.encerrando = '1';
+      if (p.get('novo') === '1') estadoFiltros.novo = '1';
+      const faixa = p.get('faixa');
+      if (faixa && ['ate2500', '2500a3500', '3500a5000', 'acima5000'].includes(faixa)) estadoFiltros.faixa = faixa;
+      const esc = p.get('esc');
+      if (esc && ['fundamental', 'medio', 'medio_tecnico', 'superior'].includes(esc)) estadoFiltros.escolaridade = esc;
+      const vagas = p.get('vagas');
+      if (vagas && ['1', '3', '5', 'cr'].includes(vagas)) estadoFiltros.vagas = vagas;
+      const regime = p.get('regime');
+      if (regime && ['estatutario', 'clt', 'outros'].includes(regime)) estadoFiltros.regime = regime;
+      const horas = p.get('horas');
+      if (horas && ['20', '30', '40'].includes(horas)) estadoFiltros.horas = horas;
+      const cidade = p.get('cidade');
+      if (cidade) estadoFiltros.cidade = cidade;
+      const ordem = p.get('ordem');
+      if (ordem && ['salario', 'vagas', 'prova', 'inscricao', 'proximo'].includes(ordem)) estadoFiltros.ordem = ordem;
+
+      // Cidade de referência (para o filtro "até X km")
+      const ref = p.get('ref');
+      const km = p.get('km');
+      if (ref) {{
+        const inp = document.getElementById('inputCidadeRef');
+        if (inp && acharCidadeRef(ref)) {{
+          inp.value = ref;
+          inp.dispatchEvent(new Event('change'));
+        }}
+      }}
+      if (km && ['50', '100', '150', '250', '350'].includes(km) && cidadeRef) estadoFiltros.kmRef = km;
+    }} finally {{
+      sincronizandoURL = false;
+    }}
+    document.querySelectorAll('.uf-btn').forEach(b => b.classList.toggle('ativo', b.dataset.uf === ufSelecionada));
+    const valNorm = normStr(inputCargo ? inputCargo.value.trim() : '');
+    document.querySelectorAll('.cargo-quick').forEach(b => {{
+      b.classList.toggle('ativo', normStr(b.dataset.cargo) === valNorm);
+    }});
+    sincronizarBotoesFiltro();
+    aplicarFiltrosSp(false);
+    atualizarUIFiltrosSidebar();
+    return true;
+  }}
 
   function contarFiltrosAtivos() {{
     let cnt = 0;
@@ -4776,6 +5020,7 @@ def render_html(
     }}
     if (comFeedback) mostrarFeedbackFiltro();
     atualizarUIFiltrosSidebar();
+    sincronizarURLBusca();
   }}
 
   document.querySelectorAll('[data-filter]').forEach(btn => {{
@@ -5053,7 +5298,12 @@ def render_html(
     const totalEncontrados = filtrados.length;
     countBuscaCargo.textContent = totalEncontrados;
     if (tabCntBusca) tabCntBusca.textContent = totalEncontrados;
-    vazioBusca.style.display = totalEncontrados === 0 ? 'block' : 'none';
+    // Catálogo nacional ainda baixando: não mostrar "0 encontrados" (parece bug).
+    const carregando = !catalogoBrasilCarregado && CATALOGO_BRASIL.length === 0;
+    vazioBusca.style.display = (totalEncontrados === 0 && !carregando) ? 'block' : 'none';
+    if (carregando) {{
+      vazioBusca.style.display = 'none';
+    }}
 
     const fatia = filtrados.slice(0, buscaCargoLimiteVisivel);
     const cardsHtml = fatia.map(({{ item, cargosCasados, idx }}) => {{
@@ -5588,7 +5838,9 @@ def render_html(
   function inicializarModalFixarCargo() {{
     if (!datalistSugestoesPin || !sugestoesPinWrap) return;
     if (datalistSugestoesPin.children.length === 0) {{
-      const lista = (typeof CARGOS_RAPIDOS_MAX !== 'undefined') ? CARGOS_RAPIDOS_MAX : CARGOS_SUGERIDOS_PIN;
+      const lista = (typeof CARGOS_RAPIDOS_LISTA !== 'undefined' && CARGOS_RAPIDOS_LISTA.length)
+        ? CARGOS_RAPIDOS_LISTA
+        : CARGOS_SUGERIDOS_PIN;
       lista.forEach(cg => {{
         const opt = document.createElement('option');
         opt.value = cg;
@@ -6305,6 +6557,16 @@ def render_html(
     }} catch (err) {{ /* ignora valor inválido */ }}
   }})();
 
+  // Busca compartilhável: aplica o que veio na URL e habilita o botão de compartilhar.
+  const btnCompartilharBusca = document.getElementById('btnCompartilharBusca');
+  if (btnCompartilharBusca) {{
+    btnCompartilharBusca.addEventListener('click', compartilharBusca);
+  }}
+  if (!aplicarEstadoDaURL()) {{
+    // Sem parâmetros: mantém o comportamento normal, mas já deixa a URL canônica.
+    sincronizarURLBusca();
+  }}
+
   // 9) Modal Pix (Topo "☕ Me pague um café" + Rodapé "☕ Me pague um café")
   const modalPix = document.getElementById('modalPix');
   const btnAbrirPix = document.getElementById('btnAbrirPix');
@@ -6410,10 +6672,13 @@ def render_html(
     if (e.target === modalApp) modalApp.classList.remove('aberto');
   }});
 
-  // 11) LOGIN OBRIGATÓRIO COM CONTA GOOGLE + CONTADOR DE ACESSOS DO DESENVOLVEDOR (VIA LINK ESPECÍFICO)
+  // 11) CONTA OPCIONAL (Google One-Tap ou nome/e-mail) + CONTADOR DE ACESSOS DO DEV
+  //     O app NUNCA bloqueia conteúdo: entrar serve para guardar preferências.
   const SESSION_STORAGE_KEY = 'concursos_google_session_v1';
   const AUDIT_LOG_KEY = 'concursos_dev_audit_logs_v1';
   const LOCAL_VIEWS_KEY = 'concursos_dev_local_views_v1';
+  const LOCAL_UNIQUE_KEY = 'concursos_dev_visitante_id_v1';
+  const LOCAL_LOGIN_EVENT_KEY = 'concursos_dev_login_contado_v1';
   const OAUTH_CLIENT_ID_KEY = 'concursos_google_client_id_v1';
   const GOOGLE_CLIENT_ID_FIXO = {safe_json_for_script(GOOGLE_CLIENT_ID)};
   // Client ID: o definido no código tem prioridade; senão o salvo no painel do desenvolvedor
@@ -6432,6 +6697,12 @@ def render_html(
     const fixo = (AUDIT_WEBHOOK_URL_FIXO || '').trim();
     return fixo || salvo;
   }}
+  // Só existe contagem "global" quando um webhook (planilha) está configurado.
+  // Sem ele, o painel mostra apenas números deste dispositivo — e diz isso.
+  function contagemNuvemAtiva() {{
+    const url = obterAuditWebhookUrl();
+    return /^https:\\/\\//i.test(url);
+  }}
 
   // Hash SHA-256 da chave secreta exclusiva do link do desenvolvedor
   const DEV_TOKEN_SHA256 = 'ad4ccc5a97c1e5c805713136e2fce68343de39b526c672dd0133759a9c4e6400';
@@ -6448,8 +6719,13 @@ def render_html(
   const userProfileChip = document.getElementById('userProfileChip');
   const userProfileText = document.getElementById('userProfileText');
   const btnLogoutGoogle = document.getElementById('btnLogoutGoogle');
+  const btnEntrarTopo = document.getElementById('btnEntrarTopo');
+  const btnFecharLogin = document.getElementById('btnFecharLogin');
+  const btnContinuarSemLogin = document.getElementById('btnContinuarSemLogin');
+  const opcaoManualLogin = document.getElementById('opcaoManualLogin');
   const btnDevPanel = document.getElementById('btnDevPanel');
   const modalDevStats = document.getElementById('modalDevStats');
+  let ultimoFocoLogin = null;
 
   function sha256PureJs(ascii) {{
     function rightRotate(value, amount) {{ return (value >>> amount) | (value << (32 - amount)); }}
@@ -6536,26 +6812,34 @@ def render_html(
   let globalViewsCount = null;
   let globalLoginsCount = null;
 
+  /**
+   * Envia UM evento para a planilha (Apps Script) — somente se houver webhook.
+   * Privacidade: visita anônima manda só nome genérico + evento; e-mail só quando
+   * a pessoa entrou de fato. User-agent não é mais enviado.
+   */
   async function enviarRegistroAcessoGlobal(nomeStr, emailStr, eventoStr) {{
     try {{
       const webhookUrl = obterAuditWebhookUrl();
-      if (!webhookUrl) return;
+      if (!contagemNuvemAtiva()) return;
+      const evento = String(eventoStr || 'Acesso à página').slice(0, 120);
+      const email = String(emailStr || '').trim().slice(0, 120);
       const payload = JSON.stringify({{
         nome: String(nomeStr || 'Visitante').slice(0, 120),
-        email: String(emailStr || '-').slice(0, 120),
-        evento: String(eventoStr || 'Acesso à página').slice(0, 120),
-        ua: (navigator.userAgent || '').slice(0, 150)
+        email: email || (evento.toLowerCase().includes('login') ? '-' : ''),
+        evento: evento,
+        visitante_id: (localStorage.getItem(LOCAL_UNIQUE_KEY) || '').slice(0, 64)
       }});
       if (navigator.sendBeacon) {{
-        navigator.sendBeacon(webhookUrl, new Blob([payload], {{ type: 'text/plain;charset=utf-8' }}));
-      }} else {{
-        fetch(webhookUrl, {{
-          method: 'POST',
-          mode: 'no-cors',
-          headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
-          body: payload
-        }}).catch(() => {{}});
+        const ok = navigator.sendBeacon(webhookUrl, new Blob([payload], {{ type: 'text/plain;charset=utf-8' }}));
+        if (ok) return;
       }}
+      await fetch(webhookUrl, {{
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {{ 'Content-Type': 'text/plain;charset=utf-8' }},
+        body: payload,
+        keepalive: true
+      }});
     }} catch (_) {{}}
   }}
 
@@ -6574,28 +6858,80 @@ def render_html(
     }}
   }}
 
-  function aplicarSessaoAutenticada(sessao) {{
-    document.body.classList.remove('bloqueado-login');
-    loginGateOverlay.classList.add('oculto');
-    userProfileChip.classList.add('visivel');
-    userProfileText.textContent = `👤 ${{sessao.name || sessao.email}} (${{sessao.email}})`;
+  function atualizarUIUsuario(sessao) {{
+    const autenticado = !!(sessao && sessao.email);
+    userProfileChip.classList.toggle('visivel', autenticado);
+    if (btnEntrarTopo) btnEntrarTopo.style.display = autenticado ? 'none' : 'inline-flex';
+    if (autenticado) {{
+      userProfileText.textContent = `👤 ${{sessao.name || sessao.email}}`;
+      userProfileChip.title = `Conta salva neste dispositivo: ${{sessao.email}}`;
+    }}
   }}
 
-  // Contabiliza cada acesso à página (usuários autenticados ou visitantes) no Google Sheets e localmente
+  function abrirLoginGate() {{
+    if (lerSessaoGoogle()) {{ atualizarUIUsuario(lerSessaoGoogle()); return; }}
+    ultimoFocoLogin = document.activeElement;
+    loginGateOverlay.hidden = false;
+    loginGateOverlay.classList.remove('oculto');
+    document.body.classList.add('login-aberto');
+    iniciarGoogleIdentity();
+    const primeiro = document.getElementById('gsiButtonContainer');
+    const alvo = (primeiro && primeiro.children.length) ? primeiro.querySelector('button, div[role="button"]') : btnGoogleMain;
+    setTimeout(() => {{ try {{ (alvo || inputGoogleEmail).focus(); }} catch (_) {{}} }}, 80);
+  }}
+
+  function fecharLoginGate() {{
+    loginGateOverlay.classList.add('oculto');
+    loginGateOverlay.hidden = true;
+    document.body.classList.remove('login-aberto');
+    if (ultimoFocoLogin && typeof ultimoFocoLogin.focus === 'function') {{
+      try {{ ultimoFocoLogin.focus(); }} catch (_) {{}}
+    }}
+  }}
+
+  // Conta cada acesso à página: local (sempre) e, se houver planilha configurada,
+  // também na nuvem. Sem webhook nada é enviado — e o painel do dev diz isso.
   (async function contabilizarAcessoInicial() {{
-    const viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '0') + 1;
-    localStorage.setItem(LOCAL_VIEWS_KEY, String(viewsLocais));
+    let viewsLocais = 0;
+    try {{
+      viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '0') + 1;
+      localStorage.setItem(LOCAL_VIEWS_KEY, String(viewsLocais));
+      if (!localStorage.getItem(LOCAL_UNIQUE_KEY)) {{
+        const id = (window.crypto && window.crypto.randomUUID)
+          ? window.crypto.randomUUID()
+          : 'v-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+        localStorage.setItem(LOCAL_UNIQUE_KEY, id);
+      }}
+    }} catch (_) {{}}
 
     const sessaoExistente = lerSessaoGoogle();
+    atualizarUIUsuario(sessaoExistente);
     if (sessaoExistente) {{
-      aplicarSessaoAutenticada(sessaoExistente);
       registrarEventoAuditoria(`${{sessaoExistente.name}} <${{sessaoExistente.email}}>`, 'Acesso (sessão ativa)');
       await enviarRegistroAcessoGlobal(sessaoExistente.name, sessaoExistente.email, 'Acesso (sessão ativa)');
     }} else {{
       registrarEventoAuditoria('Visitante', 'Acesso à página');
-      await enviarRegistroAcessoGlobal('Visitante', '-', 'Acesso à página');
+      // Visita anônima: envia só o evento (sem e-mail/UA) — nada de dado pessoal.
+      await enviarRegistroAcessoGlobal('Visitante', '', 'Acesso à página');
     }}
   }})();
+
+  // Ao entrar, herda para a conta o cargo fixado que já estava salvo no aparelho.
+  function registrarCargoFixadoDoUsuario() {{
+    try {{
+      const sessao = lerSessaoGoogle();
+      if (!sessao || !sessao.email) return;
+      const chaveConta = `${{CARGO_FIXADO_KEY}}_${{sessao.email}}`;
+      const daConta = localStorage.getItem(chaveConta);
+      const desteAparelho = localStorage.getItem(CARGO_FIXADO_KEY);
+      if (!daConta && desteAparelho) {{
+        localStorage.setItem(chaveConta, desteAparelho);
+      }} else if (daConta) {{
+        if (daConta !== desteAparelho) localStorage.setItem(CARGO_FIXADO_KEY, daConta);
+        if (typeof aplicarCargoFixadoUI === 'function') aplicarCargoFixadoUI();
+      }}
+    }} catch (_) {{}}
+  }}
 
   async function concluirLoginGoogle(nome, email, metodo = 'Google Sign-In') {{
     const emailLimpo = String(email || '').trim().toLowerCase();
@@ -6608,21 +6944,28 @@ def render_html(
       loginAt: new Date().toISOString(),
       expiresAt: Date.now() + 30 * 86400000
     }};
-    localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(sessao));
-    aplicarSessaoAutenticada(sessao);
+    try {{ localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(sessao)); }} catch (_) {{}}
+    atualizarUIUsuario(sessao);
+    fecharLoginGate();
     registrarEventoAuditoria(`${{nomeLimpo}} <${{emailLimpo}}>`, `Login (${{metodo}})`);
     await enviarRegistroAcessoGlobal(nomeLimpo, emailLimpo, `Login (${{metodo}})`);
+    registrarCargoFixadoDoUsuario();
 
-    // Ativa automaticamente o painel do desenvolvedor se for o e-mail autorizado
-    const hEmail = await sha256Hex(emailLimpo);
-    if (DEV_EMAILS_SHA256.has(hEmail)) {{
-      try {{ sessionStorage.setItem('concursos_dev_autenticado', '1'); }} catch (_) {{}}
-      if (btnDevPanel) btnDevPanel.classList.add('visivel');
-      atualizarPainelDevStats();
+    // Modo dev automático apenas para credencial Google verificada (nunca pelo
+    // formulário manual, que aceita qualquer e-mail digitado).
+    if (metodo.indexOf('Google') === 0) {{
+      const hEmail = await sha256Hex(emailLimpo);
+      if (DEV_EMAILS_SHA256.has(hEmail)) {{
+        try {{ sessionStorage.setItem('concursos_dev_autenticado', '1'); }} catch (_) {{}}
+        if (btnDevPanel) btnDevPanel.classList.add('visivel');
+        atualizarPainelDevStats();
+      }}
     }}
   }}
 
-  // Validação de JWT do Google Identity Services (quando Client ID configurado)
+  // Decodifica o JWT do Google Identity Services. Sem backend não há como validar
+  // a assinatura, mas dá para recusar token expirado, de outro app (aud) ou de
+  // outra origem (iss) — o suficiente para não aceitar um payload forjado à toa.
   function decodificarJwtGoogle(credential) {{
     try {{
       const partes = String(credential || '').split('.');
@@ -6638,6 +6981,22 @@ def render_html(
       );
       const payload = JSON.parse(jsonPayload);
       if (!payload || !payload.email) return null;
+
+      const clientId = obterClientId();
+      if (clientId && payload.aud !== clientId) {{
+        console.warn('Token Google de outro Client ID (aud):', payload.aud);
+        return null;
+      }}
+      const iss = String(payload.iss || '');
+      if (iss && iss !== 'accounts.google.com' && iss !== 'https://accounts.google.com') {{
+        console.warn('Token Google com origem inesperada (iss):', iss);
+        return null;
+      }}
+      if (payload.exp && Date.now() >= Number(payload.exp) * 1000) {{
+        console.warn('Token Google expirado.');
+        return null;
+      }}
+      if (payload.email_verified === false) return null;
       return payload;
     }} catch (err) {{
       console.error('Erro ao decodificar JWT Google:', err);
@@ -6662,18 +7021,17 @@ def render_html(
     }}
   }};
 
-  // Login Google automático: com Client ID configurado o Google mostra a conta já logada no
-  // navegador/celular ("Continuar como ..."), sem digitar nada.
+  // Google Sign-In é inicializado SOB DEMANDA (ao abrir o cartão de conta), para não
+  // exibir One-Tap nem baixar script do Google para quem só quer ver os editais.
   let gsiIniciado = false;
   function iniciarGoogleIdentity() {{
     const clientId = obterClientId();
     const gsiCont = document.getElementById('gsiButtonContainer');
-    const opcManual = document.getElementById('opcaoManualLogin');
 
     if (!clientId) {{
       btnGoogleMain.style.display = 'inline-flex';
       formLoginGoogle.style.display = 'block';
-      if (opcManual) opcManual.style.display = 'none';
+      if (opcaoManualLogin) opcaoManualLogin.style.display = 'none';
       if (gsiCont) gsiCont.style.display = 'none';
       return;
     }}
@@ -6684,25 +7042,23 @@ def render_html(
         executarInitGsi();
       }} else {{
         tentativasGsi++;
-        if (tentativasGsi < 15) {{
+        if (tentativasGsi < 25) {{
           setTimeout(checarScriptGsi, 200);
         }} else {{
-          // Fallback seguro se o script do Google for bloqueado ou demorar
+          // Fallback se o script do Google for bloqueado ou demorar
           formLoginGoogle.style.display = 'block';
           btnGoogleMain.style.display = 'inline-flex';
-          if (opcManual) opcManual.style.display = 'none';
+          if (opcaoManualLogin) opcaoManualLogin.style.display = 'none';
         }}
       }}
     }}
 
     checarScriptGsi();
-    return;
   }}
 
   function executarInitGsi() {{
     const clientId = obterClientId();
     const gsiCont = document.getElementById('gsiButtonContainer');
-    const opcManual = document.getElementById('opcaoManualLogin');
 
     if (gsiIniciado) return;
 
@@ -6711,7 +7067,7 @@ def render_html(
         client_id: clientId,
         callback: window.handleGoogleCredentialResponse,
         auto_select: false,
-        cancel_on_tap_outside: false
+        cancel_on_tap_outside: true
       }});
 
       if (gsiCont) {{
@@ -6740,22 +7096,7 @@ def render_html(
       gsiIniciado = true;
       btnGoogleMain.style.display = 'none';
       formLoginGoogle.style.display = 'none';
-      if (opcManual) opcManual.style.display = 'block';
-
-      if (!lerSessaoGoogle()) {{
-        window.google.accounts.id.prompt((notification) => {{
-          if (notification.isNotDisplayed && notification.isNotDisplayed()) {{
-            console.log('Google One-Tap não exibido:', notification.getNotDisplayedReason ? notification.getNotDisplayedReason() : '');
-            formLoginGoogle.style.display = 'block';
-            if (opcManual) opcManual.style.display = 'none';
-          }}
-          if (notification.isSkippedMoment && notification.isSkippedMoment()) {{
-            console.log('Google One-Tap dispensado:', notification.getSkippedReason ? notification.getSkippedReason() : '');
-            formLoginGoogle.style.display = 'block';
-            if (opcManual) opcManual.style.display = 'none';
-          }}
-        }});
-      }}
+      if (opcaoManualLogin) opcaoManualLogin.style.display = 'block';
     }} catch (err) {{
       console.error('Erro ao inicializar Google Sign-In:', err);
       gsiIniciado = false;
@@ -6771,15 +7112,18 @@ def render_html(
       const estaOculto = (formLoginGoogle.style.display === 'none');
       formLoginGoogle.style.display = estaOculto ? 'block' : 'none';
       btnAlternarManual.textContent = estaOculto
-        ? '🔼 Recolher formulário manual'
-        : '✍️ Ou preencher nome e e-mail manualmente';
+        ? '🔼 Recolher formulário'
+        : '✍️ Identificar-se com Nome e E-mail';
     }});
   }}
 
-  window.addEventListener('load', iniciarGoogleIdentity);
-  window.addEventListener('DOMContentLoaded', iniciarGoogleIdentity);
-  window.onGoogleLibraryLoad = iniciarGoogleIdentity;
-  if (document.readyState === 'complete') iniciarGoogleIdentity();
+  // Abrir/fechar o cartão de conta (nunca bloqueia o app)
+  if (btnEntrarTopo) btnEntrarTopo.addEventListener('click', abrirLoginGate);
+  if (btnFecharLogin) btnFecharLogin.addEventListener('click', fecharLoginGate);
+  if (btnContinuarSemLogin) btnContinuarSemLogin.addEventListener('click', fecharLoginGate);
+  loginGateOverlay.addEventListener('click', (e) => {{
+    if (e.target === loginGateOverlay) fecharLoginGate();
+  }});
 
   btnGoogleMain.addEventListener('click', () => {{
     const clientId = obterClientId();
@@ -6788,9 +7132,9 @@ def render_html(
       window.google.accounts.id.prompt();
     }} else {{
       formLoginGoogle.style.display = 'block';
-      if (opcManual) opcManual.style.display = 'none';
+      if (opcaoManualLogin) opcaoManualLogin.style.display = 'none';
       inputGoogleEmail.focus();
-      msgErroLoginGoogle.textContent = 'ℹ️ Informe seu e-mail abaixo para acessar. Para login automático em 1 clique, ative o Client ID no painel do desenvolvedor.';
+      msgErroLoginGoogle.textContent = 'ℹ️ Informe seu nome e e-mail abaixo. Para entrar em 1 toque, configure o Google Client ID no painel do desenvolvedor.';
       msgErroLoginGoogle.style.display = 'block';
     }}
   }});
@@ -6802,133 +7146,158 @@ def render_html(
     const email = inputGoogleEmail.value.trim().toLowerCase();
 
     const regexEmail = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
-    const ehContaGoogleValida = regexEmail.test(email) && (
-      email.endsWith('@gmail.com') ||
-      email.endsWith('@googlemail.com') ||
-      email.endsWith('@usp.br') ||
-      email.includes('.edu.') ||
-      email.includes('@')
-    );
 
     if (!nome || nome.length < 2) {{
-      msgErroLoginGoogle.textContent = '⚠️ Informe seu nome completo para continuar.';
+      msgErroLoginGoogle.textContent = '⚠️ Informe seu nome para continuar.';
       msgErroLoginGoogle.style.display = 'block';
       return;
     }}
-    if (!ehContaGoogleValida) {{
-      msgErroLoginGoogle.textContent = '⚠️ Informe um e-mail válido da sua Conta Google (ex.: @gmail.com ou @usp.br).';
+    if (!regexEmail.test(email)) {{
+      msgErroLoginGoogle.textContent = '⚠️ Informe um e-mail válido (ex.: seu.email@gmail.com).';
       msgErroLoginGoogle.style.display = 'block';
       return;
     }}
 
-    await concluirLoginGoogle(nome, email, 'Conta Google');
+    await concluirLoginGoogle(nome, email, 'Manual');
   }});
 
   btnLogoutGoogle.addEventListener('click', () => {{
     const atual = lerSessaoGoogle();
     if (atual) registrarEventoAuditoria(`${{atual.name}} <${{atual.email}}>`, 'Logout');
-    localStorage.removeItem(SESSION_STORAGE_KEY);
-    userProfileChip.classList.remove('visivel');
-    document.body.classList.add('bloqueado-login');
-    loginGateOverlay.classList.remove('oculto');
+    try {{ localStorage.removeItem(SESSION_STORAGE_KEY); }} catch (_) {{}}
+    // Sair da conta também encerra o modo dev desta aba (nada de painel admin logado fora).
+    try {{ sessionStorage.removeItem('concursos_dev_autenticado'); }} catch (_) {{}}
+    if (btnDevPanel) btnDevPanel.classList.remove('visivel');
+    if (modalDevStats) modalDevStats.classList.remove('aberto');
+    atualizarUIUsuario(null);
   }});
 
-  // Verifica sessão existente ao abrir a página
+  // Sessão já salva: só atualiza a interface (não conta um acesso novo aqui).
   const sessaoExistente = lerSessaoGoogle();
   if (sessaoExistente) {{
-    aplicarSessaoAutenticada(sessaoExistente);
+    atualizarUIUsuario(sessaoExistente);
   }}
 
-  // 12) PAINEL SECRETO DO DESENVOLVEDOR (CONTADOR DE ACESSOS VIA LINK ESPECÍFICO)
-  async function atualizarPainelDevStats() {{
-    const viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '1');
-    const logsLocais = JSON.parse(localStorage.getItem(AUDIT_LOG_KEY) || '[]');
-    const contasUnicasLocais = new Set(logsLocais.map(l => l.usuario).filter(Boolean));
+  // 12) PAINEL DO DESENVOLVEDOR (contador de acessos) — só aparece com ?dev=TOKEN
+  function fmtNumDev(n) {{
+    const v = Number(n);
+    return Number.isFinite(v) ? v.toLocaleString('pt-BR') : '—';
+  }}
 
-    document.getElementById('kpiAcessosLocais').textContent = viewsLocais.toLocaleString('pt-BR');
-
-    let dadosRemotos = null;
-    const webhookUrl = obterAuditWebhookUrl();
-    if (webhookUrl) {{
+  function renderLogsDev(lista) {{
+    const tbody = document.getElementById('tabelaLogsDev');
+    if (!tbody) return;
+    const linhas = (Array.isArray(lista) ? lista : []).slice(0, 100);
+    tbody.innerHTML = linhas.map(l => {{
+      let tsStr = String(l.ts || '');
       try {{
-        const sep = webhookUrl.includes('?') ? '&' : '?';
-        const r = await fetch(webhookUrl + sep + 'action=stats&t=' + Date.now(), {{
-          cache: 'no-store'
-        }});
-        if (r.ok) {{
-          dadosRemotos = await r.json();
-        }}
-      }} catch (err) {{
-        console.warn('Erro ao consultar estatísticas remotas da Planilha Google:', err);
-      }}
-    }}
-
-    if (dadosRemotos && typeof dadosRemotos.totalAcessos === 'number') {{
-      const gViews = Math.max(dadosRemotos.totalAcessos, viewsLocais);
-      const listaLogs = Array.isArray(dadosRemotos.logs) ? dadosRemotos.logs : [];
-      const loginsReais = listaLogs.filter(l => (l.evento || '').toLowerCase().includes('login')).length;
-      const gLogins = Math.max(loginsReais, Number(dadosRemotos.totalLogins) || 0, contasUnicasLocais.size);
-      const gUnicos = Math.max(Number(dadosRemotos.usuariosUnicos) || 0, contasUnicasLocais.size);
-
-      globalViewsCount = gViews;
-      globalLoginsCount = gLogins;
-
-      document.getElementById('kpiTotalAcessosGlobais').textContent = gViews.toLocaleString('pt-BR');
-      document.getElementById('kpiTotalLoginsGlobais').textContent = gLogins.toLocaleString('pt-BR');
-      document.getElementById('kpiAcessosLocais').textContent = viewsLocais.toLocaleString('pt-BR');
-      document.getElementById('kpiUsuariosUnicos').textContent = gUnicos.toLocaleString('pt-BR');
-
-      if (btnDevPanel) {{
-        btnDevPanel.innerHTML = `📊 Acessos: <b>${{gViews.toLocaleString('pt-BR')}}</b> (Dev)`;
-      }}
-
-      const logsParaExibir = (listaLogs.length > 0) ? listaLogs : logsLocais;
-      const tbody = document.getElementById('tabelaLogsDev');
-      tbody.innerHTML = logsParaExibir.slice(0, 100).map(l => {{
-        let tsStr = l.ts;
-        try {{
-          const d = new Date(l.ts);
-          if (!isNaN(d.getTime())) {{
-            tsStr = d.toLocaleString('pt-BR', {{ timeZone: 'America/Sao_Paulo' }});
-          }}
-        }} catch (_) {{}}
-        const ev = String(l.evento || 'Acesso');
-        const isLogin = ev.toLowerCase().includes('login');
-        const badgeStyle = isLogin
-          ? 'background:#dcfce7;color:#166534;border:1px solid #86efac;padding:3px 9px;border-radius:999px;font-weight:700;'
-          : 'background:#e0f2fe;color:#0369a1;border:1px solid #7dd3fc;padding:3px 9px;border-radius:999px;font-weight:700;';
-        const icon = isLogin ? '🔑 ' : '🌐 ';
-        return `
-          <tr>
-            <td style="white-space:nowrap;font-size:0.78rem;">${{escHtml(tsStr)}}</td>
-            <td><b>${{escHtml(l.usuario)}}</b></td>
-            <td><span style="${{badgeStyle}}">${{icon}}${{escHtml(ev)}}</span></td>
-          </tr>
-        `;
-      }}).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
-    }} else {{
-      document.getElementById('kpiTotalAcessosGlobais').textContent = viewsLocais.toLocaleString('pt-BR');
-      document.getElementById('kpiTotalLoginsGlobais').textContent = Math.max(1, contasUnicasLocais.size).toLocaleString('pt-BR');
-      document.getElementById('kpiUsuariosUnicos').textContent = Math.max(1, contasUnicasLocais.size).toLocaleString('pt-BR');
-
-      if (btnDevPanel) {{
-        btnDevPanel.innerHTML = `📊 Acessos: <b>${{viewsLocais.toLocaleString('pt-BR')}}</b> (Dev)`;
-      }}
-
-      const tbody = document.getElementById('tabelaLogsDev');
-      tbody.innerHTML = logsLocais.slice(0, 50).map(l => `
+        const d = new Date(l.ts);
+        if (!isNaN(d.getTime())) tsStr = d.toLocaleString('pt-BR', {{ timeZone: 'America/Sao_Paulo' }});
+      }} catch (_) {{}}
+      const ev = String(l.evento || 'Acesso');
+      const isLogin = ev.toLowerCase().includes('login');
+      const badgeStyle = isLogin
+        ? 'background:#dcfce7;color:#166534;border:1px solid #86efac;padding:3px 9px;border-radius:999px;font-weight:700;'
+        : 'background:#e0f2fe;color:#0369a1;border:1px solid #7dd3fc;padding:3px 9px;border-radius:999px;font-weight:700;';
+      return `
         <tr>
-          <td style="white-space:nowrap;font-size:0.78rem;">${{escHtml(l.ts)}}</td>
-          <td><b>${{escHtml(l.usuario)}}</b></td>
-          <td><span style="background:#e0f2fe;color:#0369a1;padding:3px 9px;border-radius:999px;font-weight:700;">🌐 ${{escHtml(l.evento)}}</span></td>
-        </tr>
-      `).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
+          <td style="white-space:nowrap;font-size:0.78rem;">${{escHtml(tsStr)}}</td>
+          <td><b>${{escHtml(l.usuario || l.nome || 'Visitante')}}</b></td>
+          <td><span style="${{badgeStyle}}">${{isLogin ? '🔑 ' : '🌐 '}}${{escHtml(ev)}}</span></td>
+        </tr>`;
+    }}).join('') || '<tr><td colspan="3">Nenhum evento registrado ainda.</td></tr>';
+  }}
+
+  async function buscarStatsNuvem() {{
+    if (!contagemNuvemAtiva()) return null;
+    const webhookUrl = obterAuditWebhookUrl();
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 6000);
+    try {{
+      const sep = webhookUrl.includes('?') ? '&' : '?';
+      const r = await fetch(webhookUrl + sep + 'action=stats&_=' + Date.now(), {{
+        cache: 'no-store',
+        signal: ctrl.signal
+      }});
+      if (!r.ok) return null;
+      const dados = await r.json();
+      return (dados && typeof dados === 'object') ? dados : null;
+    }} catch (err) {{
+      console.warn('Sem resposta da planilha de acessos:', err);
+      return null;
+    }} finally {{
+      clearTimeout(timer);
+    }}
+  }}
+
+  async function atualizarPainelDevStats() {{
+    let viewsLocais = 0;
+    let logsLocais = [];
+    try {{ viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '0'); }} catch (_) {{}}
+    try {{ logsLocais = JSON.parse(localStorage.getItem(AUDIT_LOG_KEY) || '[]'); }} catch (_) {{}}
+    if (!Array.isArray(logsLocais)) logsLocais = [];
+
+    const contasLocais = new Set(
+      logsLocais.map(l => l && l.usuario).filter(u => u && u !== 'Visitante')
+    );
+    const loginsLocais = logsLocais.filter(l => String((l && l.evento) || '').toLowerCase().includes('login')).length;
+    const nuvem = contagemNuvemAtiva();
+    const dados = await buscarStatsNuvem();
+
+    const banner = document.getElementById('bannerNuvem');
+    const aviso = document.getElementById('avisoModoLocal');
+    if (dados) {{
+      if (banner) banner.innerHTML = '📊 <b>Planilha Google conectada:</b> os números de nuvem vêm dos acessos de todos os usuários.';
+      if (aviso) aviso.style.display = 'none';
+    }} else if (nuvem) {{
+      if (banner) banner.innerHTML = '⏳ <b>Planilha configurada, mas sem resposta agora.</b> Mostrando apenas os dados deste dispositivo.';
+      if (aviso) aviso.style.display = 'block';
+    }} else {{
+      if (banner) banner.innerHTML = '💾 <b>Sem planilha conectada:</b> a contagem é feita somente neste dispositivo (nada é enviado para fora).';
+      if (aviso) aviso.style.display = 'block';
     }}
 
-    document.getElementById('inputDevGoogleClientId').value = obterClientId();
-    if (document.getElementById('inputDevWebhookUrl')) {{
-      document.getElementById('inputDevWebhookUrl').value = obterAuditWebhookUrl();
+    let gViews = null, gLogins = null, gUnicos = null, logs = logsLocais;
+    if (dados) {{
+      const total = Number(dados.totalAcessos);
+      const totalLogins = Number(dados.totalLogins);
+      const unicos = Number(dados.usuariosUnicos);
+      if (Number.isFinite(total) && dados.totalAcessos !== null && dados.totalAcessos !== '') gViews = total;
+      if (Number.isFinite(totalLogins) && dados.totalLogins !== null && dados.totalLogins !== '') gLogins = totalLogins;
+      if (Number.isFinite(unicos) && dados.usuariosUnicos !== null && dados.usuariosUnicos !== '') gUnicos = unicos;
+      if (Array.isArray(dados.logs) && dados.logs.length > 0) {{
+        logs = dados.logs;
+        if (gLogins === null) {{
+          gLogins = dados.logs.filter(l => String((l && l.evento) || '').toLowerCase().includes('login')).length;
+        }}
+      }}
     }}
+
+    globalViewsCount = gViews;
+    globalLoginsCount = gLogins;
+
+    const elGlobais = document.getElementById('kpiTotalAcessosGlobais');
+    const elLogins = document.getElementById('kpiTotalLoginsGlobais');
+    const elLocais = document.getElementById('kpiAcessosLocais');
+    const elUnicos = document.getElementById('kpiUsuariosUnicos');
+
+    if (elGlobais) elGlobais.textContent = gViews !== null ? fmtNumDev(gViews) : (nuvem ? '—' : 'Sem planilha');
+    if (elLogins) elLogins.textContent = gLogins !== null ? fmtNumDev(gLogins) : (nuvem ? '—' : fmtNumDev(loginsLocais));
+    if (elLocais) elLocais.textContent = fmtNumDev(viewsLocais);
+    if (elUnicos) elUnicos.textContent = fmtNumDev(gUnicos !== null ? gUnicos : contasLocais.size);
+
+    if (btnDevPanel) {{
+      const numero = (gViews !== null) ? gViews : viewsLocais;
+      const rotulo = (gViews !== null) ? 'Acessos' : 'Acessos (local)';
+      btnDevPanel.innerHTML = `📊 ${{rotulo}}: <b>${{fmtNumDev(numero)}}</b> (Dev)`;
+    }}
+
+    renderLogsDev(logs);
+
+    const inpClient = document.getElementById('inputDevGoogleClientId');
+    if (inpClient) inpClient.value = obterClientId();
+    const inpHook = document.getElementById('inputDevWebhookUrl');
+    if (inpHook) inpHook.value = obterAuditWebhookUrl();
   }}
 
   (async function verificarLinkDesenvolvedor() {{
@@ -6936,42 +7305,41 @@ def render_html(
     const devParam = params.get('dev') || '';
     let autorizadoDev = false;
 
-    // 1) Autorização automática para os e-mails registrados do desenvolvedor
+    // 1) E-mail do desenvolvedor, mas só com credencial Google verificada
     const sessaoAtual = lerSessaoGoogle();
-    if (sessaoAtual && sessaoAtual.email) {{
+    if (sessaoAtual && String(sessaoAtual.method || '').indexOf('Google') === 0) {{
       const hEmail = await sha256Hex(sessaoAtual.email);
-      if (DEV_EMAILS_SHA256.has(hEmail)) {{
-        autorizadoDev = true;
-      }}
+      if (DEV_EMAILS_SHA256.has(hEmail)) autorizadoDev = true;
     }}
 
-    // 2) Autorização por parâmetro secreto ?dev= ou sessão anterior
+    // 2) Parâmetro secreto ?dev=TOKEN
     if (devParam) {{
       const hashParam = await sha256Hex(devParam);
       if (hashParam === DEV_TOKEN_SHA256) {{
         autorizadoDev = true;
         try {{
           sessionStorage.setItem('concursos_dev_autenticado', '1');
-          // Limpa o parâmetro ?dev= da URL para não poluir histórico nem ser compartilhado por acidente
+          // Limpa ?dev= da URL para não ir para o histórico nem ser compartilhado sem querer
           const u = new URL(window.location.href);
           u.searchParams.delete('dev');
           window.history.replaceState({{}}, document.title, u.pathname + (u.search ? u.search : '') + u.hash);
         }} catch (_) {{}}
+      }} else {{
+        console.warn('Parâmetro ?dev= inválido.');
       }}
-    }} else if (!autorizadoDev) {{
+    }}
+
+    // 3) Sessão de dev já liberada nesta aba (independe de ?dev= inválido na URL)
+    if (!autorizadoDev) {{
       try {{
-        if (sessionStorage.getItem('concursos_dev_autenticado') === '1') {{
-          autorizadoDev = true;
-        }}
+        if (sessionStorage.getItem('concursos_dev_autenticado') === '1') autorizadoDev = true;
       }} catch (_) {{}}
     }}
 
     if (autorizadoDev) {{
       btnDevPanel.classList.add('visivel');
       await atualizarPainelDevStats();
-      if (devParam) {{
-        modalDevStats.classList.add('aberto');
-      }}
+      if (devParam) modalDevStats.classList.add('aberto');
     }} else {{
       btnDevPanel.classList.remove('visivel');
     }}
@@ -7032,11 +7400,15 @@ def render_html(
     btnSalvarWebhookUrl.addEventListener('click', () => {{
       const raw = (document.getElementById('inputDevWebhookUrl').value || '').trim();
       if (raw) {{
+        if (!/^https:\\/\\//i.test(raw)) {{
+          alert('A URL do webhook precisa começar com https://');
+          return;
+        }}
         localStorage.setItem(AUDIT_WEBHOOK_KEY, raw);
-        alert('URL do Webhook da Planilha Google salva com sucesso!');
+        alert('Webhook salvo neste navegador. A contagem passa a enviar acessos/logins para a planilha.');
       }} else {{
         localStorage.removeItem(AUDIT_WEBHOOK_KEY);
-        alert('URL personalizada removida. Usando URL padrão da Planilha Google.');
+        alert('Webhook removido. A contagem volta a ser apenas local.');
       }}
       atualizarPainelDevStats();
     }});
@@ -7049,7 +7421,9 @@ def render_html(
       if (document.getElementById('inputDevWebhookUrl')) {{
         document.getElementById('inputDevWebhookUrl').value = obterAuditWebhookUrl();
       }}
-      alert('Restaurada a URL oficial da Planilha Google configurada no código.');
+      alert(contagemNuvemAtiva()
+        ? 'Webhook personalizado removido. Voltou a usar a URL definida no build (AUDIT_WEBHOOK_URL).'
+        : 'Webhook personalizado removido. Não há URL definida no build: a contagem fica local.');
       atualizarPainelDevStats();
     }});
   }}
@@ -7057,7 +7431,8 @@ def render_html(
   document.getElementById('btnExportarLogsDev').addEventListener('click', () => {{
     const relatorio = {{
       exportado_em: new Date().toISOString(),
-      acessos_locais: Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '1'),
+      modo: contagemNuvemAtiva() ? 'nuvem+local' : 'local',
+      acessos_locais: Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '0'),
       acessos_globais: globalViewsCount,
       logins_globais: globalLoginsCount,
       historico: JSON.parse(localStorage.getItem(AUDIT_LOG_KEY) || '[]')
