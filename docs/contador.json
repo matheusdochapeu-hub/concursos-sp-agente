@@ -1,0 +1,11 @@
+{
+  "_instrucoes": [
+    "Cole em 'webhook' a URL de PRODUCAO do seu Apps Script, com o token:",
+    "https://script.google.com/macros/s/SEU_ID/exec?k=SEU_TOKEN_ESCRITA",
+    "Use a linha 'URL de escrita' que a funcao mostrarChaves imprime no Apps Script.",
+    "Nunca use a URL terminada em /dev (ela so funciona para o dono logado).",
+    "Depois de salvar este arquivo no GitHub, recarregue o app: ele passa a contar em nuvem.",
+    "Se ficar vazio, o contador funciona apenas no dispositivo (modo local)."
+  ],
+  "webhook": ""
+}

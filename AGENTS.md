@@ -87,9 +87,11 @@ python build_icons.py                       # ícones PWA + assets da Play Store
 9. **Política de privacidade é obrigatória** enquanto houver qualquer coleta de nome/e-mail
    (`docs/privacidade.html`), e precisa continuar verdadeira se o contador mudar.
 10. **Planilha de acessos: duas chaves, papéis diferentes.** `TOKEN_ESCRITA` é público (vai na
-    URL do app, embutido no HTML) e só grava. `CHAVE_ADMIN` só lê, nunca entra no build — é
+    URL do app) e só grava. `CHAVE_ADMIN` só lê, nunca entra no build nem no repositório — é
     digitada no painel do dev e guardada no `localStorage`. Não juntar as duas.
-    Passo a passo em [`apps-script/README.md`](apps-script/README.md).
+    A URL do webhook vem de `docs/contador.json` (editável sem rebuild) ou do secret
+    `AUDIT_WEBHOOK_URL`; `/dev` é normalizado para `/exec` em ambos. Passo a passo em
+    [`apps-script/README.md`](apps-script/README.md).
 
 ## Vizinhança (ecossistema)
 

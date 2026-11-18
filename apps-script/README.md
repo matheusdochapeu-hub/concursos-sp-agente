@@ -93,28 +93,50 @@ Se aparecer `{"ok":false,"erro":"sem permissao..."}`, a `CHAVE_ADMIN` não confe
 Se aparecer **"O arquivo que você solicitou não existe"** (página do Google Drive), a URL está
 incompleta ou é de uma implantação apagada — copie de novo a URL no diálogo de implantação.
 
+### Teste automático (recomendado)
+
+Sem sair do editor, rode a função **`testarTudo`**. Ela faz o papel do app:
+
+- confere as chaves e a aba;
+- **grava uma linha de teste** (via `doPost`, igual ao app);
+- **lê os totais** (via `doGet`, com a chave de admin);
+- tenta gravar com token errado e confirma que é recusado.
+
+O log sai com `✅`/`❌` em cada etapa e uma linha final:
+`🎉 Tudo funcionando!` ou `⚠️ Resolva as pendências acima`. Se aparecer tudo ✅, o problema
+(se houver) está na URL/secret — não no script.
+
 ---
 
-## Parte 3 — Ligar no app (GitHub)
+## Parte 3 — Ligar no app (o jeito fácil: `docs/contador.json`)
 
-O app só envia dados para quem estiver embutido no HTML no momento do build. Então:
+O app lê a URL do contador de um arquivo de configuração — **sem secret, sem workflow, sem
+rebuild**. Basta editar um arquivo:
 
-1. GitHub → repositório `concursos-sp-agente` → **Settings → Secrets and variables → Actions**.
-2. **New repository secret**:
-   - Nome: `AUDIT_WEBHOOK_URL`
-   - Valor: a URL completa **com** `?k=...` do passo anterior.
-3. **Actions → "Buscar concursos (diário)" → Run workflow** (branch `main`).
-   - O workflow roda o agente, o `render_site.py` lê o secret, embute a URL em `docs/index.html`
-     e commita. Leva alguns minutos.
-4. Quando o workflow terminar, abra o site e confira no código-fonte da página que a URL
-   aparece (`script.google.com/macros/...`).
+1. Abra [`docs/contador.json`](../docs/contador.json) no GitHub → ✏️ (editar).
+2. Cole a URL no campo `webhook`:
 
-> Não quer esperar o workflow? Rode localmente:
-> ```powershell
-> $env:AUDIT_WEBHOOK_URL = "https://script.google.com/macros/s/.../exec?k=..."
-> python tools/render_from_json.py
-> ```
-> Isso reescreve `docs/index.html` com a URL — depois commite.
+   ```json
+   {
+     "webhook": "https://script.google.com/macros/s/AKfy.../exec?k=SEU_TOKEN"
+   }
+   ```
+
+3. **Commit changes**. Em ~1 minuto o GitHub Pages publica o arquivo.
+4. Recarregue o app (Ctrl+F5). Pronto: todos os visitantes passam a ser contados na planilha.
+
+> O que fica público nesse arquivo é o `TOKEN_ESCRITA`, que **já ia aparecer no HTML** de qualquer
+> forma e só permite **gravar**. A `CHAVE_ADMIN` nunca entra aqui.
+
+### Alternativa (build): secret `AUDIT_WEBHOOK_URL`
+
+Se preferir embutir a URL no HTML em vez de ler o arquivo:
+
+1. **Settings → Secrets and variables → Actions → New repository secret**
+   `AUDIT_WEBHOOK_URL` = a URL completa com `?k=...`.
+2. **Actions → "Buscar concursos (diário)" → Run workflow** — o `render_site.py` embute a URL.
+
+A precedência é: **secret do build** → **`contador.json`** → **URL salva no painel do dev** (local).
 
 ---
 

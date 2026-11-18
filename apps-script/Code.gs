@@ -133,6 +133,106 @@ function verificarInstalacao() {
 }
 
 // --------------------------------------------------------------------------- //
+// TESTE DE PONTA A PONTA — rode este antes de mexer no GitHub
+// Ele simula o app: grava uma linha de teste, lê os totais e confere que um
+// token errado é recusado. O log mostra ✅/❌ de cada etapa.
+// --------------------------------------------------------------------------- //
+function testarTudo() {
+  const linhas = [];
+  const ok = (t) => linhas.push('✅ ' + t);
+  const falha = (t) => linhas.push('❌ ' + t);
+
+  // 1) Chaves
+  if (String(TOKEN_ESCRITA).indexOf('COLE_AQUI') === 0) {
+    falha('Chaves não configuradas — rode gerarChaves primeiro');
+  } else if (TOKEN_ESCRITA === CHAVE_ADMIN) {
+    falha('TOKEN_ESCRITA e CHAVE_ADMIN são iguais (não podem)');
+  } else {
+    ok('Chaves configuradas (fonte: ' + origemDaChave(PROP_TOKEN) + ')');
+  }
+
+  // 2) Planilha e aba
+  let aba;
+  try {
+    aba = getAba();
+    ok('Aba "' + NOME_ABA + '" acessível (' + aba.getLastRow() + ' linha(s))');
+  } catch (err) {
+    falha('Não consegui abrir a planilha: ' + err);
+    Logger.log(linhas.join('\n'));
+    return linhas;
+  }
+
+  // 3) URL publicada
+  const url = urlDoApp();
+  if (!url) {
+    falha('Sem implantação como App da Web — Implantar → Nova implantação → App da Web');
+  } else if (!/\/exec(\?|$)/i.test(url)) {
+    falha('A URL não termina em /exec: ' + url);
+  } else {
+    ok('URL do App da Web: ' + url);
+  }
+
+  // 4) Gravação (POST simulado, igual ao que o app faz)
+  const antes = aba.getLastRow();
+  try {
+    const resposta = doPost({
+      parameter: { k: TOKEN_ESCRITA },
+      postData: {
+        contents: JSON.stringify({
+          nome: 'Teste automático',
+          email: '',
+          evento: 'Teste de instalação',
+          visitante_id: 'teste-' + Date.now()
+        })
+      }
+    });
+    const retorno = JSON.parse(resposta.getContent());
+    if (!retorno.ok) {
+      falha('Gravação recusada: ' + retorno.erro);
+    } else if (aba.getLastRow() !== antes + 1) {
+      falha('A gravação respondeu ok, mas nenhuma linha apareceu na planilha');
+    } else {
+      ok('Gravação funcionando (1 linha de teste adicionada)');
+    }
+  } catch (err) {
+    falha('Erro ao gravar: ' + err);
+  }
+
+  // 5) Leitura (GET stats, com a chave de admin)
+  try {
+    const resposta = doGet({ parameter: { admin: CHAVE_ADMIN, action: 'stats' } });
+    const dados = JSON.parse(resposta.getContent());
+    if (!dados.ok) {
+      falha('Leitura recusada: ' + dados.erro);
+    } else {
+      ok('Leitura funcionando (totalAcessos=' + dados.totalAcessos +
+        ', logins=' + dados.totalLogins + ', contas=' + dados.usuariosUnicos + ')');
+    }
+  } catch (err) {
+    falha('Erro ao ler os totais: ' + err);
+  }
+
+  // 6) Token errado tem que ser recusado
+  try {
+    const resposta = doPost({ parameter: { k: 'token-errado' }, postData: { contents: '{}' } });
+    const retorno = JSON.parse(resposta.getContent());
+    if (retorno.ok) falha('SEGURANÇA: aceitou gravação com token errado');
+    else ok('Token errado é recusado (correto)');
+  } catch (err) {
+    ok('Token errado é recusado (correto)');
+  }
+
+  Logger.log(linhas.join('\n'));
+  const pendencias = linhas.filter((l) => l.indexOf('❌') === 0);
+  if (pendencias.length) {
+    Logger.log('⚠️ Resolva as pendências acima antes de conectar o app.');
+  } else {
+    Logger.log('🎉 Tudo funcionando! Agora rode mostrarChaves e copie a linha "URL de escrita".');
+  }
+  return linhas;
+}
+
+// --------------------------------------------------------------------------- //
 // POST — o app envia um acesso ou um login
 // --------------------------------------------------------------------------- //
 function doPost(e) {

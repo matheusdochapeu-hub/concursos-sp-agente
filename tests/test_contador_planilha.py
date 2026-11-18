@@ -7,6 +7,7 @@ Garantem que:
 """
 from __future__ import annotations
 
+import json
 import shutil
 import subprocess
 import tempfile
@@ -16,6 +17,7 @@ from pathlib import Path
 from render_site import render_html
 
 REPO = Path(__file__).resolve().parent.parent
+DOCS = REPO / "docs"
 SCRIPT = REPO / "apps-script" / "Code.gs"
 
 
@@ -134,6 +136,32 @@ class TestPainelPlanilha(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.html = _render()
+
+    def test_le_a_url_do_arquivo_contador_json(self):
+        """Sem secret e sem rebuild: a URL pode vir de docs/contador.json."""
+        cfg = json.loads((DOCS / "contador.json").read_text(encoding="utf-8"))
+        self.assertIn("webhook", cfg)
+        self.assertIsInstance(cfg["webhook"], str)
+        if cfg["webhook"]:
+            self.assertTrue(cfg["webhook"].startswith("https://"), "webhook precisa ser https")
+            self.assertRegex(cfg["webhook"], r"/exec(\?|$)", "webhook precisa ser a URL /exec")
+        self.assertIn("fetch('./contador.json", self.html)
+        self.assertIn("function carregarConfigContador", self.html)
+        self.assertIn("function normalizarUrlWebhook", self.html)
+
+    def test_precedencia_build_arquivo_painel(self):
+        import re
+
+        trecho = re.search(r"function obterAuditWebhookUrl\(\) \{(.*?)\n  \}", self.html, re.S)
+        self.assertIsNotNone(trecho)
+        corpo = trecho.group(1)
+        # A ordem do retorno é o que vale: secret do build → contador.json → painel
+        self.assertIn("return fixo || webhookDoArquivo || salvo;", corpo)
+
+    def test_testar_tudo_no_apps_script(self):
+        codigo = SCRIPT.read_text(encoding="utf-8")
+        self.assertIn("function testarTudo", codigo)
+        self.assertIn("Teste de instalação", codigo)
 
     def test_campos_de_configuracao_existem(self):
         for ident in ("inputDevWebhookUrl", "inputDevAdminKey", "btnSalvarAdminKey",

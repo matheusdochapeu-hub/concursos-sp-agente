@@ -35829,7 +35829,32 @@ ${txtVeredito}
   function obterAuditWebhookUrl() {
     const salvo = (localStorage.getItem(AUDIT_WEBHOOK_KEY) || '').trim();
     const fixo = (AUDIT_WEBHOOK_URL_FIXO || '').trim();
-    return fixo || salvo;
+    // Prioridade: build (secret) → arquivo ./contador.json → painel (localStorage)
+    return fixo || webhookDoArquivo || salvo;
+  }
+
+  // Endpoint do contador vindo de ./contador.json — assim dá para trocar a URL
+  // editando um arquivo no repositório, sem secret, sem workflow e sem rebuild.
+  let webhookDoArquivo = '';
+  let promessaConfigContador = null;
+  function normalizarUrlWebhook(url) {
+    return String(url || '').trim().replace(/\/dev(\?|$)/i, '/exec$1');
+  }
+  function carregarConfigContador() {
+    if (promessaConfigContador) return promessaConfigContador;
+    promessaConfigContador = (async () => {
+      try {
+        const r = await fetch('./contador.json?_=' + Date.now(), { cache: 'no-store' });
+        if (!r.ok) return '';
+        const cfg = await r.json();
+        const url = normalizarUrlWebhook(cfg && cfg.webhook);
+        if (urlValidaDeWebhook(url)) webhookDoArquivo = url;
+        return webhookDoArquivo;
+      } catch (_) {
+        return '';
+      }
+    })();
+    return promessaConfigContador;
   }
   // Só existe contagem "global" quando um webhook (planilha) está configurado.
   // Sem ele, o painel mostra apenas números deste dispositivo — e diz isso.
@@ -36055,6 +36080,9 @@ ${txtVeredito}
         localStorage.setItem(LOCAL_UNIQUE_KEY, id);
       }
     } catch (_) {}
+
+    // A URL do contador pode estar em ./contador.json: espera carregar antes de enviar.
+    await carregarConfigContador();
 
     const sessaoExistente = lerSessaoGoogle();
     atualizarUIUsuario(sessaoExistente);
@@ -36364,6 +36392,7 @@ ${txtVeredito}
   // permite gravar, então ninguém consegue ler a lista de e-mails sem ela.
   // Devolve um objeto com status e dados; status: 'sem_url' | 'sem_chave' | 'erro' | 'ok'.
   async function buscarStatsNuvem() {
+    await carregarConfigContador();
     if (!contagemNuvemAtiva()) return { status: 'sem_url', dados: null };
     const chave = obterAdminKey();
     if (!chave) return { status: 'sem_chave', dados: null };
@@ -36390,6 +36419,7 @@ ${txtVeredito}
   }
 
   async function atualizarPainelDevStats() {
+    await carregarConfigContador();
     let viewsLocais = 0;
     let logsLocais = [];
     try { viewsLocais = Number(localStorage.getItem(LOCAL_VIEWS_KEY) || '0'); } catch (_) {}
@@ -36604,8 +36634,8 @@ ${txtVeredito}
         document.getElementById('inputDevWebhookUrl').value = obterAuditWebhookUrl();
       }
       alert(contagemNuvemAtiva()
-        ? 'Webhook personalizado removido. Voltou a usar a URL definida no build (AUDIT_WEBHOOK_URL).'
-        : 'Webhook personalizado removido. Não há URL definida no build: a contagem fica local.');
+        ? 'Webhook personalizado removido. Voltou a usar a URL configurada no build/contador.json.'
+        : 'Webhook personalizado removido. Não há URL configurada: a contagem fica local.');
       atualizarPainelDevStats();
     });
   }
