@@ -44,10 +44,25 @@ Os testes rodam **antes** da coleta no workflow diário — se falharem, o site 
 |---|---|
 | `agente.py` | Scraping, enriquecimento e regras de filtro |
 | `render_site.py` | Gera o HTML/CSS/JS do PWA em `docs/` |
+| `tools/render_from_json.py` | Regera `docs/index.html` a partir dos JSON (sem raspar, sem IA) |
+| `tools/check_inline_js.py` | Valida a sintaxe de todo `<script>` do HTML gerado (usa `node --check`) |
+| `build_icons.py` | Ícones do PWA + ícone/gráfico da Play Store (caminhos relativos) |
 | `data/resultados.json` | Resultado consolidado da última execução |
 | `tests/test_agente.py` | Testes de parsing e filtros |
-| `docs/` | **Saída gerada** — não editar à mão |
+| `tests/test_render_site.py` | Invariantes do HTML gerado (login opcional, contador, busca, JS válido) |
+| `tests/test_assets_pwa.py` | Manifest, ícones, service worker e política de privacidade |
+| `docs/` | **Saída gerada** — não editar à mão (exceções: `sw.js`, `manifest.webmanifest`, `privacidade.html`) |
+| `play-store/` | Guia de publicação na Play Store, `assetlinks.json.example` e assets de loja |
 | `plans/` | Planos de evolução |
+
+## Comandos úteis
+
+```powershell
+python tools/render_from_json.py            # regenera docs/index.html sem raspar
+python tools/render_from_json.py --check    # só valida o template
+python tools/check_inline_js.py             # valida o JS embutido no HTML publicado
+python build_icons.py                       # ícones PWA + assets da Play Store
+```
 
 ## Regras críticas
 
@@ -60,6 +75,16 @@ Os testes rodam **antes** da coleta no workflow diário — se falharem, o site 
 4. **Nunca commitar chaves.** Use `GEMINI_API_KEY` via secret.
 5. Se a coleta falhar, o workflow deve falhar de forma visível — não publicar resultado
    parcial silenciosamente.
+6. **Login é opcional.** O app nunca pode bloquear o conteúdo atrás do cartão de conta
+   (exigência de UX e de revisão da Play Store). O formulário manual de nome/e-mail
+   **não autentica** ninguém — trate-o como preferência local, não como segurança.
+7. **Contador de acessos não pode mentir.** Sem `AUDIT_WEBHOOK_URL` no build, os números
+   são só do dispositivo e a interface precisa dizer isso. Nunca somar número local em
+   rótulo de "global".
+8. **O JS do app vive dentro de f-string.** Qualquer `{`/`}` do JavaScript precisa ser
+   duplicado (`{{`/`}}`); rode `python tools/check_inline_js.py` antes de publicar.
+9. **Política de privacidade é obrigatória** enquanto houver qualquer coleta de nome/e-mail
+   (`docs/privacidade.html`), e precisa continuar verdadeira se o contador mudar.
 
 ## Vizinhança (ecossistema)
 

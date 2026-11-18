@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#006b2d">
+<meta name="robots" content="index, follow">
+<title>Política de Privacidade — Concursos</title>
+<style>
+  :root {
+    --verde: #006b2d;
+    --verde-escuro: #004d20;
+    --amarelo: #FEDD00;
+    --texto: #0f291e;
+    --suave: #4b6358;
+    --borda: #d8e4dc;
+    --fundo: #f3f7f4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    line-height: 1.62;
+  }
+  header {
+    background: var(--verde);
+    color: #fff;
+    padding: 26px 18px;
+    border-bottom: 6px solid var(--amarelo);
+  }
+  header .wrap { max-width: 820px; margin: 0 auto; }
+  header h1 { margin: 0 0 6px; font-size: 1.5rem; }
+  header p { margin: 0; opacity: .9; font-size: .92rem; }
+  main { max-width: 820px; margin: 0 auto; padding: 22px 18px 60px; }
+  h2 { font-size: 1.08rem; margin: 28px 0 8px; color: var(--verde-escuro); }
+  p, li { font-size: .96rem; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .card {
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 16px 18px;
+    margin: 14px 0;
+  }
+  .destaque { background: #fffbeb; border-color: #fde047; }
+  code {
+    background: #eef4ff;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-size: .88em;
+  }
+  a { color: var(--verde-escuro); font-weight: 600; }
+  footer {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 18px 40px;
+    color: var(--suave);
+    font-size: .84rem;
+  }
+  .voltar {
+    display: inline-block;
+    margin-top: 8px;
+    background: var(--verde);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>🔒 Política de Privacidade — Concursos</h1>
+    <p>Última atualização: 17 de novembro de 2026</p>
+  </div>
+</header>
+
+<main>
+  <div class="card destaque">
+    <b>Resumo em uma frase:</b> este app funciona sem conta, não pede senha, não usa anúncios,
+    não vende dados e guarda suas preferências <b>no seu próprio aparelho</b>.
+  </div>
+
+  <h2>1. Quem somos</h2>
+  <p>
+    O <b>Concursos</b> é um aplicativo gratuito, mantido por Matheus Rodrigues Ribeiro, que reúne
+    diariamente editais de concursos públicos publicados no site
+    <a href="https://www.pciconcursos.com.br/concursos/sudeste/" target="_blank" rel="noopener noreferrer">PCI Concursos</a>
+    e os organiza por cargo, cidade, salário e prazo de inscrição.
+  </p>
+  <p>
+    Contato para qualquer assunto de privacidade:
+    <a href="https://github.com/matheusdochapeu-hub" target="_blank" rel="noopener noreferrer">github.com/matheusdochapeu-hub</a>.
+  </p>
+
+  <h2>2. Quais dados o app trata</h2>
+  <ul>
+    <li>
+      <b>Dados de navegação anônimos</b> (contador de acessos): quando o contador do desenvolvedor está
+      ativo, o app registra que houve um acesso — sem nome, sem e-mail e sem identificar você.
+    </li>
+    <li>
+      <b>Nome e e-mail, somente se você escolher entrar</b>: o login é opcional. Se você entrar com a
+      Conta Google ou preencher nome/e-mail, esses dados são gravados no seu aparelho e enviados ao
+      painel do desenvolvedor (uma planilha privada) apenas para contagem de acessos e de contas.
+    </li>
+    <li>
+      <b>Preferências</b>: cargo fixado, cidade de referência, filtros e histórico local de eventos ficam
+      no <code>localStorage</code> do seu navegador.
+    </li>
+  </ul>
+  <p>
+    O app <b>não</b> coleta: localização precisa por GPS, contatos, fotos, arquivos, dados de saúde,
+    dados financeiros, senhas ou histórico de navegação em outros sites. Também <b>não</b> exibe anúncios
+    e <b>não</b> usa rastreadores de publicidade.
+  </p>
+
+  <h2>3. Login opcional (Google)</h2>
+  <p>
+    Se você usar o botão “Continuar com Conta Google”, a autenticação é feita diretamente pelo Google
+    (Google Identity Services). O app recebe apenas nome, e-mail e foto de perfil públicos, e não tem
+    acesso à sua senha nem a outros dados da conta. Você pode sair a qualquer momento pelo botão
+    <b>Sair</b> no topo do app.
+  </p>
+  <p>
+    O formulário manual de nome/e-mail serve apenas para personalizar o app; ele <b>não</b> autentica
+    sua identidade e pode ser preenchido com qualquer endereço.
+  </p>
+
+  <h2>4. Onde os dados ficam</h2>
+  <ul>
+    <li><b>No seu aparelho</b>: preferências e histórico local (apagados quando você limpa os dados do site/app).</li>
+    <li><b>Planilha privada do desenvolvedor</b>: registros de acesso e de login, quando o contador está ativo. O acesso é restrito ao desenvolvedor.</li>
+    <li><b>Google/GitHub Pages</b>: hospedam o app e o script de login, com os registros técnicos de acesso padrão desses serviços.</li>
+  </ul>
+
+  <h2>5. Compartilhamento</h2>
+  <p>
+    Não vendemos, alugamos nem cedemos dados pessoais a terceiros. Não há transferência para
+    anunciantes ou corretores de dados.
+  </p>
+
+  <h2>6. Seus direitos (LGPD)</h2>
+  <p>
+    Conforme a Lei nº 13.709/2018 (LGPD), você pode pedir confirmação de tratamento, acesso,
+    correção e eliminação dos seus dados. Como a maior parte fica no seu próprio aparelho, limpar os
+    dados do site/app já elimina as preferências locais. Para pedir a remoção de registros na planilha
+    do desenvolvedor, use o contato do item 1 informando o e-mail usado no login.
+  </p>
+
+  <h2>7. Segurança</h2>
+  <p>
+    O site é servido por HTTPS. A sessão fica no seu aparelho e expira em 30 dias. Nenhuma senha é
+    armazenada pelo app.
+  </p>
+
+  <h2>8. Crianças</h2>
+  <p>
+    O app é voltado a pessoas interessadas em concursos públicos e não é direcionado a menores de 13
+    anos. Não coletamos intencionalmente dados de crianças.
+  </p>
+
+  <h2>9. Conteúdo de terceiros</h2>
+  <p>
+    As informações de concursos vêm de sites oficiais e do PCI Concursos. O app sempre indica o link da
+    fonte e do edital original. Em caso de divergência, <b>vale sempre o edital oficial</b>.
+  </p>
+
+  <h2>10. Mudanças nesta política</h2>
+  <p>
+    Se esta política mudar, a data de “Última atualização” no topo será alterada e a nova versão
+    substituirá esta página.
+  </p>
+
+  <a class="voltar" href="./index.html">← Voltar ao app</a>
+</main>
+
+<footer>
+  <p>Concursos — painel diário de editais. Fonte dos dados: PCI Concursos. Sem anúncios, sem venda de dados.</p>
+</footer>
+</body>
+</html>

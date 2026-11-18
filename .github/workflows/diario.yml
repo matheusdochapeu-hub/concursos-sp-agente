@@ -30,10 +30,19 @@ jobs:
       - name: Executar testes de verificação
         run: python -m unittest discover -s tests -v
 
+      - name: Validar o template antes da coleta
+        run: python tools/render_from_json.py --check
+
       - name: Rodar agente
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Opcional: contador de acessos global (planilha via Apps Script).
+          # Sem este secret, o painel do dev mostra apenas números locais.
+          AUDIT_WEBHOOK_URL: ${{ secrets.AUDIT_WEBHOOK_URL }}
         run: python agente.py
+
+      - name: Validar JavaScript do HTML gerado
+        run: python tools/check_inline_js.py
 
       - name: Publicar resultados (commit)
         run: |

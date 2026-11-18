@@ -1,27 +1,57 @@
 {
-  "name": "Concursos",
+  "id": "./",
+  "name": "Concursos — Editais de SP e do Brasil",
   "short_name": "Concursos",
-  "description": "Monitoramento diário de concursos públicos em São Paulo e no Brasil para Fisioterapia, Nível Médio/Técnico e busca por cargo.",
+  "description": "Editais de concursos públicos atualizados todo dia: Fisioterapia, Nível Médio/Técnico e busca por cargo em SP e no Brasil.",
   "lang": "pt-BR",
-  "start_url": "./index.html",
+  "dir": "ltr",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "any",
   "background_color": "#f3f7f4",
   "theme_color": "#006b2d",
   "categories": ["education", "productivity", "news"],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "./icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "./icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Buscar cargo",
+      "short_name": "Buscar",
+      "url": "./#busca_cargo",
+      "description": "Procurar o cargo desejado em todos os estados"
+    },
+    {
+      "name": "Cargo fixado",
+      "short_name": "Meu cargo",
+      "url": "./#fisio",
+      "description": "Ver os concursos do cargo que você fixou"
+    },
+    {
+      "name": "Provas anteriores",
+      "short_name": "Provas",
+      "url": "./#provas_anteriores",
+      "description": "Provas anteriores por banca e cargo"
     }
   ]
 }

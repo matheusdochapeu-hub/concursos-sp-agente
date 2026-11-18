@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "br.com.matheus.concursos",
+      "sha256_cert_fingerprints": [
+        "COLE_AQUI_O_SHA256_DO_KEYSTORE_DE_BUILD",
+        "COLE_AQUI_O_SHA256_DO_PLAY_APP_SIGNING"
+      ]
+    }
+  }
+]

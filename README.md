@@ -42,10 +42,41 @@ Agente que, **todo dia às 07:00 (horário de Brasília)**, faz scraping do [PCI
 
 ---
 
+## 🔗 Busca compartilhável
+
+O estado dos filtros fica na URL. Ex.:
+
+```
+https://matheusdochapeu-hub.github.io/concursos-sp-agente/?q=Fisioterapeuta&uf=SP&ordem=salario
+```
+
+Quem recebe o link já abre com o cargo, o estado e a ordenação aplicados. O botão
+**🔗 Compartilhar busca** copia o link (ou abre o compartilhamento nativo do celular).
+Abrir o app sem parâmetros continua mostrando tudo.
+
+---
+
+## 👤 Conta é opcional
+
+O app **não bloqueia** o conteúdo atrás de login. O botão **Entrar** no topo abre um cartão
+opcional para guardar o *cargo fixado* e as preferências; dá para fechar em
+"Continuar sem entrar". O formulário de nome/e-mail é identificação local — **não** é
+autenticação. Detalhes na [Política de Privacidade](docs/privacidade.html).
+
+---
+
 ## 📲 Como baixar o App (PWA)
 
 1. Acesse **<https://matheusdochapeu-hub.github.io/concursos-sp-agente/>**
 2. Clique no botão **"📲 Baixar App (PWA)"** no topo da página (ou no ícone de instalação da barra de endereços do Chrome/Edge, ou em *Compartilhar → Adicionar à Tela de Início* no iPhone/Safari).
+
+---
+
+## 🤖 Google Play Store
+
+O caminho para publicar na Play está em [`play-store/README.md`](play-store/README.md)
+(TWA via PWABuilder, `assetlinks.json` no domínio raiz, declaração de dados e riscos de
+reprovação). Os assets obrigatórios são gerados por `python build_icons.py`.
 
 ---
 
@@ -58,3 +89,12 @@ python agente.py
 ```
 
 Ou dê dois cliques em `rodar_local.bat`.
+
+### Pré-visualizar mudanças sem raspar o PCI
+
+```powershell
+python tools/render_from_json.py     # regera docs/index.html com os JSON já baixados
+python tools/check_inline_js.py      # garante que o JS embutido no HTML é válido
+python -m http.server 8000 --directory docs
+```
+

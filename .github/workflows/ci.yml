@@ -23,7 +23,12 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Verificar sintaxe
-        run: python -m compileall -q agente.py render_site.py tests
+        run: python -m compileall -q agente.py render_site.py build_icons.py tools tests
 
       - name: Rodar suíte de testes
         run: python -m unittest discover -s tests -v
+
+      - name: Validar JS embutido no HTML publicado
+        run: |
+          python tools/render_from_json.py --check
+          python tools/check_inline_js.py docs/index.html
