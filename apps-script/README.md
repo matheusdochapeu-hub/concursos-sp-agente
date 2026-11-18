@@ -34,22 +34,28 @@ Painel do dev (no app)
    - Na primeira vez o Google pede autorização: **Revisar permissões → escolha sua conta →
      Avançado → Acessar (não seguro) → Permitir**. É o seu próprio script, acessando a sua
      própria planilha.
-   - **Copie as duas chaves** que aparecem no log (parte de baixo):
+   - Ele **salva as chaves nas Propriedades do script** e mostra no log:
      ```
-     TOKEN_ESCRITA = 8f3c... (32 caracteres)
-     CHAVE_ADMIN   = 91ab... (64 caracteres)
+     TOKEN_ESCRITA = 8f3c...
+     CHAVE_ADMIN   = 91ab...
+     URL de escrita (valor do secret AUDIT_WEBHOOK_URL) = https://.../exec?k=8f3c...
      ```
-5. Cole os valores nas duas primeiras constantes do script:
-   ```js
-   const TOKEN_ESCRITA = '8f3c...';   // vai na URL pública
-   const CHAVE_ADMIN   = '91ab...';   // NUNCA vai para o app
-   ```
-6. Salve e rode **`verificarInstalacao`**. O log deve dizer `✅ Tudo certo.`
+   - **Não precisa colar nada no código.** O script lê as chaves das Propriedades.
+5. Rode **`verificarInstalacao`**. O log deve dizer `✅ Tudo certo.` e indicar
+   `Fonte das chaves: Propriedades do script`.
+
+> ⚠️ **Rodar `gerarChaves` de novo troca as chaves.** As antigas param de funcionar na hora:
+> atualize o secret `AUDIT_WEBHOOK_URL`, rode o workflow e cole a nova `CHAVE_ADMIN` no painel.
+> Para ver o que está em uso sem trocar nada, rode **`mostrarChaves`**.
 
 > ⚠️ **As duas chaves são diferentes de propósito.**
 > `TOKEN_ESCRITA` fica visível no HTML (qualquer pessoa pode ver) e só permite **gravar**.
 > `CHAVE_ADMIN` só permite **ler** — ela nunca entra no app, você digita no painel e ela fica
 > guardada apenas no seu navegador. Sem isso, qualquer curioso abriria a lista de e-mails.
+
+> Se preferir colar as chaves no código (não recomendado), as constantes
+> `TOKEN_ESCRITA`/`CHAVE_ADMIN` continuam servindo de fallback — mas as Propriedades
+> têm prioridade.
 
 ### Publicar como App da Web
 
@@ -64,14 +70,12 @@ Painel do dev (no app)
    ```
    https://script.google.com/macros/s/AKfy.../exec
    ```
-5. Monte a URL do app, adicionando o token:
-   ```
-   https://script.google.com/macros/s/AKfy.../exec?k=8f3c...
-   ```
+5. Rode **`mostrarChaves`** — ele imprime a URL pronta (com `?k=`) e a URL de teste.
+   A linha **“URL de escrita”** é exatamente o valor do secret no GitHub.
 
 ### Testar antes de ir para o app
 
-Cole no navegador (trocando `CHAVE_ADMIN`):
+Rode **`mostrarChaves`** e cole no navegador a linha **“URL de teste do painel”**:
 
 ```
 https://script.google.com/macros/s/AKfy.../exec?k=8f3c...&action=stats&admin=91ab...
@@ -86,6 +90,8 @@ O esperado é um JSON parecido com:
 
 Se aparecer uma página de login do Google, o "Quem tem acesso" está errado (volte ao passo 3).
 Se aparecer `{"ok":false,"erro":"sem permissao..."}`, a `CHAVE_ADMIN` não confere.
+Se aparecer **"O arquivo que você solicitou não existe"** (página do Google Drive), a URL está
+incompleta ou é de uma implantação apagada — copie de novo a URL no diálogo de implantação.
 
 ---
 

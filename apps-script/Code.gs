@@ -6,17 +6,20 @@
  * COMO INSTALAR (resumo — passo a passo completo em README.md):
  *   1. Crie uma planilha no Google Sheets (nome livre).
  *   2. Extensões → Apps Script → apague o conteúdo e cole ESTE arquivo.
- *   3. Rode a função `gerarChaves` (▶) e copie as duas chaves do log.
- *   4. Cole as chaves nas constantes abaixo.
- *   5. Implantar → Nova implantação → Tipo "App da Web"
+ *   3. Rode a função `gerarChaves` (▶). Ela salva as chaves nas Propriedades do
+ *      script e mostra no log a URL pronta para colar no GitHub — você NÃO
+ *      precisa colar chave nenhuma no código.
+ *   4. Implantar → Nova implantação → Tipo "App da Web"
  *        Executar como: Eu
  *        Quem tem acesso: Qualquer pessoa
- *      Copie a URL que termina em /exec.
- *   6. Monte a URL do app:  URL_DO_EXEC + "?k=" + TOKEN_ESCRITA
- *      e salve no GitHub: Settings → Secrets and variables → Actions →
+ *   5. Rode `mostrarChaves` para ver a URL de escrita (com ?k=) e a de teste.
+ *      Salve a de escrita em GitHub: Settings → Secrets and variables → Actions →
  *      New repository secret → AUDIT_WEBHOOK_URL.
- *   7. Actions → "Buscar concursos (diário)" → Run workflow.
- *   8. No site, abra ?dev=SEU_TOKEN e cole a CHAVE_ADMIN no painel.
+ *   6. Actions → "Buscar concursos (diário)" → Run workflow.
+ *   7. No site, abra ?dev=SEU_TOKEN e cole a CHAVE_ADMIN no painel.
+ *
+ *   Rodou `gerarChaves` de novo? As chaves anteriores param de valer; refaça a
+ *   URL do secret e o workflow, e cole a nova CHAVE_ADMIN no painel.
  *
  * SEGURANÇA (leia):
  *   - TOKEN_ESCRITA fica público dentro do HTML (todo mundo que abre o app vê).
@@ -27,36 +30,102 @@
  */
 
 // --------------------------------------------------------------------------- //
-// Configuração — troque os dois valores depois de rodar gerarChaves()
+// Configuração das chaves
 // --------------------------------------------------------------------------- //
-const TOKEN_ESCRITA = 'COLE_AQUI_O_TOKEN_PUBLICO';   // vai na URL do app (?k=...)
-const CHAVE_ADMIN = 'COLE_AQUI_A_CHAVE_ADMIN';       // só no seu navegador
+// (a configuração fica logo abaixo: as chaves vêm das Propriedades do script,
+//  geradas por `gerarChaves` — não é preciso colar nada aqui)
+
+// --------------------------------------------------------------------------- //
+// Configuração das chaves
+//
+// As chaves NÃO precisam ser coladas no código: `gerarChaves` grava nas
+// Propriedades do script (PropertiesService) e o código lê de lá.
+// As constantes abaixo são só o fallback (se você preferir colar à mão).
+// --------------------------------------------------------------------------- //
+const PROP_TOKEN = 'TOKEN_ESCRITA';
+const PROP_ADMIN = 'CHAVE_ADMIN';
+
+function lerChave(nome, valorNoCodigo) {
+  try {
+    const salvo = PropertiesService.getScriptProperties().getProperty(nome);
+    if (salvo && String(salvo).trim()) return String(salvo).trim();
+  } catch (err) {
+    // Propriedades indisponíveis: usa o valor do código
+  }
+  return valorNoCodigo;
+}
+
+const TOKEN_ESCRITA = lerChave(PROP_TOKEN, 'COLE_AQUI_O_TOKEN_PUBLICO');   // vai na URL do app (?k=...)
+const CHAVE_ADMIN = lerChave(PROP_ADMIN, 'COLE_AQUI_A_CHAVE_ADMIN');       // só no seu navegador
 
 const NOME_ABA = 'Acessos';
 const MAX_LOGS_RESPOSTA = 100;      // itens devolvidos ao painel
 const MAX_CARACTERES_CORPO = 2000;  // proteção contra payload gigante
 
-// --------------------------------------------------------------------------- //
-// Geração de chaves (rode uma vez, copie do log)
-// --------------------------------------------------------------------------- //
-function gerarChaves() {
-  const novoToken = Utilities.getUuid().replace(/-/g, '');
-  const novaChave = Utilities.getUuid().replace(/-/g, '') + Utilities.getUuid().replace(/-/g, '');
-  Logger.log('TOKEN_ESCRITA = ' + novoToken);
-  Logger.log('CHAVE_ADMIN   = ' + novaChave);
-  Logger.log('URL do app    = <URL_DO_EXEC>?k=' + novoToken);
-  Logger.log('Painel do dev = <URL_DO_EXEC>?k=' + novoToken + '&action=stats&admin=' + novaChave);
+// URL pública do App da Web (só existe depois da primeira implantação)
+function urlDoApp() {
+  try {
+    return ScriptApp.getService().getUrl() || '';
+  } catch (err) {
+    return '';
+  }
 }
 
-// Verifica se as chaves ainda são os placeholders
+function origemDaChave(nome) {
+  try {
+    return PropertiesService.getScriptProperties().getProperty(nome) ? 'Propriedades do script' : 'código (fallback)';
+  } catch (err) {
+    return 'código (fallback)';
+  }
+}
+
+// --------------------------------------------------------------------------- //
+// Geração de chaves — rode UMA vez (ou quando quiser trocar as chaves)
+// --------------------------------------------------------------------------- //
+function gerarChaves() {
+  const token = Utilities.getUuid().replace(/-/g, '');
+  const admin = Utilities.getUuid().replace(/-/g, '') + Utilities.getUuid().replace(/-/g, '');
+
+  PropertiesService.getScriptProperties().setProperties({
+    [PROP_TOKEN]: token,
+    [PROP_ADMIN]: admin
+  });
+
+  const url = urlDoApp();
+
+  Logger.log('✅ Chaves novas salvas nas Propriedades do script (não precisa colar no código).');
+  Logger.log('TOKEN_ESCRITA = %s', token);
+  Logger.log('CHAVE_ADMIN   = %s', admin);
+  Logger.log('URL de escrita (valor do secret AUDIT_WEBHOOK_URL) = %s',
+    url ? url + '?k=' + token : '<implante como App da Web para ver a URL>');
+  Logger.log('⚠️ As chaves ANTERIORES pararam de funcionar. Se o app já estava ligado, ' +
+    'atualize o secret AUDIT_WEBHOOK_URL e rode o workflow de novo.');
+}
+
+// Mostra as chaves em uso e a URL para colar no GitHub
+function mostrarChaves() {
+  const url = urlDoApp();
+  Logger.log('Fonte das chaves: %s', origemDaChave(PROP_TOKEN));
+  Logger.log('TOKEN_ESCRITA = %s', TOKEN_ESCRITA);
+  Logger.log('CHAVE_ADMIN   = %s', CHAVE_ADMIN);
+  Logger.log('URL de escrita (secret AUDIT_WEBHOOK_URL) = %s',
+    url ? url + '?k=' + TOKEN_ESCRITA : '<implante como App da Web para ver a URL>');
+  Logger.log('URL de teste do painel = %s',
+    url ? url + '?k=' + TOKEN_ESCRITA + '&action=stats&admin=' + CHAVE_ADMIN : '<implante primeiro>');
+}
+
+// Verifica se as chaves estão configuradas e se a planilha responde
 function verificarInstalacao() {
   const problemas = [];
-  if (TOKEN_ESCRITA.indexOf('COLE_AQUI') === 0) problemas.push('TOKEN_ESCRITA ainda é placeholder');
-  if (CHAVE_ADMIN.indexOf('COLE_AQUI') === 0) problemas.push('CHAVE_ADMIN ainda é placeholder');
+  if (String(TOKEN_ESCRITA).indexOf('COLE_AQUI') === 0) problemas.push('TOKEN_ESCRITA ainda é placeholder (rode gerarChaves)');
+  if (String(CHAVE_ADMIN).indexOf('COLE_AQUI') === 0) problemas.push('CHAVE_ADMIN ainda é placeholder (rode gerarChaves)');
   if (TOKEN_ESCRITA === CHAVE_ADMIN) problemas.push('TOKEN_ESCRITA e CHAVE_ADMIN não podem ser iguais');
+
   const aba = getAba();
   Logger.log(problemas.length ? '⚠️ ' + problemas.join(' | ') : '✅ Tudo certo.');
+  Logger.log('Fonte das chaves: %s', origemDaChave(PROP_TOKEN));
   Logger.log('Aba "%s" com %s linha(s) (incluindo cabeçalho).', NOME_ABA, aba.getLastRow());
+  if (!urlDoApp()) Logger.log('ℹ️ Ainda não há implantação como App da Web (Implantar → Nova implantação).');
   return problemas;
 }
 

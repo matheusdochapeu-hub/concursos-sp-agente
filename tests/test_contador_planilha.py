@@ -42,8 +42,19 @@ class TestAppsScript(unittest.TestCase):
 
     def test_arquivo_existe_com_funcoes_do_protocolo(self):
         for funcao in ("function doPost", "function doGet", "function estatisticas",
-                       "function getAba", "function gerarChaves", "function verificarInstalacao"):
+                       "function getAba", "function gerarChaves", "function verificarInstalacao",
+                       "function mostrarChaves", "function urlDoApp"):
             self.assertIn(funcao, self.codigo, f"falta {funcao}")
+
+    def test_chaves_vem_das_propriedades_do_script(self):
+        # O fluxo não depende de copiar/colar chave no código (que já gerou confusão:
+        # o log gerava uma chave e o código tinha outra).
+        self.assertIn("PropertiesService.getScriptProperties()", self.codigo)
+        self.assertIn("setProperties", self.codigo)
+        self.assertIn("lerChave(PROP_TOKEN, 'COLE_AQUI_O_TOKEN_PUBLICO')", self.codigo)
+        self.assertIn("lerChave(PROP_ADMIN, 'COLE_AQUI_A_CHAVE_ADMIN')", self.codigo)
+        # A URL pronta para o secret é impressa pelo próprio script
+        self.assertIn("ScriptApp.getService().getUrl()", self.codigo)
 
     def test_post_exige_token_de_escrita(self):
         # O POST precisa comparar o ?k= com TOKEN_ESCRITA antes de gravar
@@ -68,15 +79,15 @@ class TestAppsScript(unittest.TestCase):
     def test_chaves_nao_vazaram_para_o_repositorio(self):
         import re
 
+        # Nenhuma chave real pode estar versionada: só os placeholders de fallback
         self.assertIn("COLE_AQUI_O_TOKEN_PUBLICO", self.codigo)
         self.assertIn("COLE_AQUI_A_CHAVE_ADMIN", self.codigo)
+        self.assertIsNone(
+            re.search(r"'[0-9a-f]{32,}'", self.codigo),
+            "parece haver uma chave real no Code.gs",
+        )
         # O script avisa se as duas chaves forem iguais
         self.assertIn("TOKEN_ESCRITA === CHAVE_ADMIN", self.codigo)
-        # Um UUID colado por engano seria uma chave real versionada
-        for constante in ("TOKEN_ESCRITA", "CHAVE_ADMIN"):
-            valor = re.search(rf"const {constante} = '([^']*)'", self.codigo)
-            self.assertIsNotNone(valor)
-            self.assertTrue(valor.group(1).startswith("COLE_AQUI"), f"{constante} com valor real no repositório")
 
     def test_js_do_apps_script_tem_sintaxe_valida(self):
         node = shutil.which("node") or str(
