@@ -32495,9 +32495,9 @@
         </div>
       </div>
       <p id="avisoModoLocal" style="display:none;margin:0 0 16px;font-size:0.78rem;line-height:1.45;color:#92400e;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:9px 12px;">
-        ⚠️ <b>Modo local:</b> sem a URL do webhook configurada no build, os números acima são
-        <b>somente deste navegador</b>. Para ver acessos de todos os usuários, configure
-        <code>AUDIT_WEBHOOK_URL</code> no GitHub Actions (secret/variável) e rode o agente de novo.
+        ⚠️ <b>Modo local:</b> os números acima são <b>somente deste navegador</b>. Para contar todos os
+        usuários, coloque a URL do App da Web no arquivo <code>docs/contador.json</code> do repositório
+        (jeito mais simples) — ou defina o secret <code>AUDIT_WEBHOOK_URL</code> e rode o agente.
       </p>
 
       <div style="margin-bottom:16px;">
@@ -32520,8 +32520,10 @@
         <summary>📊 Webhook da Planilha Google (Acessos e Logins de Terceiros)</summary>
         <div class="prog-body">
           <p style="margin:0 0 8px;font-size:0.82rem;line-height:1.4;">
-            URL do Web App do Google Apps Script que recebe e registra os acessos e logins de todos os usuários
-            (o parâmetro <code>?k=</code> com o token de escrita é obrigatório):
+            URL do Web App do Google Apps Script que recebe os acessos e logins.
+            <b>Normalmente você não precisa mexer aqui</b>: a URL já vem de
+            <code>docs/contador.json</code> (ou do secret <code>AUDIT_WEBHOOK_URL</code>).
+            Use este campo só para testar uma URL antes de publicar.
           </p>
           <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
             <input id="inputDevWebhookUrl" type="text" placeholder="https://script.google.com/macros/s/.../exec?k=SEU_TOKEN" style="flex:1;min-width:240px;padding:8px 12px;border-radius:8px;border:1px solid var(--border);">
@@ -35670,13 +35672,36 @@ ${txtVeredito}
       const valor = inp.value.trim();
       if (!valor) {
         if (cidadeRef) aplicarRef(null, true);
+        msg.textContent = MSG_PADRAO;
         return;
       }
       const achada = acharCidadeRef(valor);
-      if (achada) aplicarRef(achada, true);
+      if (achada) {
+        aplicarRef(achada, true);
+        return;
+      }
+      // Não é cidade: avisa em vez de deixar o texto inválido no campo (dava a
+      // impressão de que tinha sido aceito). Link é o erro mais comum aqui.
+      if (/^https?:/i.test(valor)) {
+        msg.textContent = '⚠️ Este campo é só para cidade. A URL do contador de acessos fica no painel do desenvolvedor.';
+      } else {
+        msg.textContent = '⚠️ Cidade não encontrada. Escolha uma da lista (ex.: Campinas - SP).';
+      }
     }
+
+    // Ao sair do campo, se o texto não corresponde a nenhuma cidade, limpa.
+    function aoSairDoCampo() {
+      const valor = inp.value.trim();
+      if (valor && !acharCidadeRef(valor)) {
+        inp.value = '';
+        if (cidadeRef) aplicarRef(null, true);
+        msg.textContent = MSG_PADRAO;
+      }
+    }
+
     inp.addEventListener('input', aoDigitar);
     inp.addEventListener('change', aoDigitar);
+    inp.addEventListener('blur', aoSairDoCampo);
     btnLimpar.addEventListener('click', () => {
       inp.value = '';
       aplicarRef(null, true);
@@ -36453,7 +36478,7 @@ ${txtVeredito}
     const stAdmin = document.getElementById('statusAdminKey');
     if (stAdmin) {
       if (!nuvem) {
-        stAdmin.textContent = 'Nenhuma URL de webhook configurada neste build: a chave não é usada.';
+        stAdmin.textContent = 'Nenhuma URL do contador configurada no app (contador.json ou secret): a chave não é usada.';
       } else if (!obterAdminKey()) {
         stAdmin.textContent = 'Nenhuma chave salva neste navegador — os totais da nuvem ficam ocultos.';
       } else if (consulta.status === 'ok') {
