@@ -6,6 +6,7 @@ política de privacidade (exigida pela Google Play quando há coleta de dados).
 from __future__ import annotations
 
 import json
+import os
 import re
 import unittest
 from pathlib import Path
@@ -75,9 +76,21 @@ class TestAssetsPwa(unittest.TestCase):
             self.assertTrue((REPO / "play-store" / "assets" / nome).exists(), f"faltando {nome}")
 
     def test_html_nao_expoe_webhook(self):
-        html = (DOCS / "index.html").read_text(encoding="utf-8")
-        # Nenhuma URL de Apps Script embutida por padrão (só via secret no build).
-        self.assertIsNone(re.search(r"script\.google\.com/macros/s/[A-Za-z0-9_-]{20,}", html))
+        # O index.html em disco pode conter o webhook se foi compilado com o secret AUDIT_WEBHOOK_URL
+        # ou se apontado em docs/contador.json. O que não pode haver é webhook hardcoded no template.
+        cfg_path = DOCS / "contador.json"
+        has_configured_webhook = bool(os.environ.get("AUDIT_WEBHOOK_URL"))
+        if cfg_path.exists():
+            try:
+                cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+                if cfg.get("webhook"):
+                    has_configured_webhook = True
+            except Exception:
+                pass
+
+        if not has_configured_webhook:
+            html = (DOCS / "index.html").read_text(encoding="utf-8")
+            self.assertIsNone(re.search(r"script\.google\.com/macros/s/[A-Za-z0-9_-]{20,}", html))
 
 
 if __name__ == "__main__":

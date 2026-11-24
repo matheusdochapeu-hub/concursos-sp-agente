@@ -612,12 +612,17 @@ GOOGLE_CLIENT_ID = (
 def normalizar_webhook_url(url: str) -> str:
     """Corrige a URL de TESTE do Apps Script (/dev) para a de produção (/exec).
 
+    Também extrai a URL caso ela tenha sido colada com prefixo do log do Apps Script
+    (ex.: '(secret AUDIT_WEBHOOK_URL) = https://...').
     A /dev só funciona para o dono, logado no navegador — nunca para os visitantes
     do app, que fazem POST anônimo. Se ela entrar no build, o contador não grava nada.
     """
     u = (url or "").strip()
     if not u:
         return ""
+    m = re.search(r"https?://script\.google\.com/macros/s/[^\s\"']+", u)
+    if m:
+        u = m.group(0)
     return re.sub(r"/dev(\?|$)", r"/exec\1", u, flags=re.I)
 
 

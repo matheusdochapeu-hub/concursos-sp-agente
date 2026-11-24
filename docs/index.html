@@ -35118,7 +35118,7 @@ ${txtVeredito}
   }
 
   const AUDIT_WEBHOOK_KEY = 'concursos_audit_webhook_url_v1';
-  const AUDIT_WEBHOOK_URL_FIXO = "(secret AUDIT_WEBHOOK_URL) = https://script.google.com/macros/s/AKfycbw_aPMRkjXsmNMuwBBF_QhY6dRLXQ-qQ9KNSQbgzEw/exec?k=e4e0d730fc7c42a286d51248cb609b72";
+  const AUDIT_WEBHOOK_URL_FIXO = "https://script.google.com/macros/s/AKfycbw_aPMRkjXsmNMuwBBF_QhY6dRLXQ-qQ9KNSQbgzEw/exec?k=e4e0d730fc7c42a286d51248cb609b72";
   function obterAuditWebhookUrl() {
     const salvo = (localStorage.getItem(AUDIT_WEBHOOK_KEY) || '').trim();
     const fixo = (AUDIT_WEBHOOK_URL_FIXO || '').trim();

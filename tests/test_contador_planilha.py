@@ -108,6 +108,10 @@ class TestAppsScript(unittest.TestCase):
             normalizar_webhook_url("https://script.google.com/macros/s/AK1/dev"),
             "https://script.google.com/macros/s/AK1/exec",
         )
+        self.assertEqual(
+            normalizar_webhook_url("(secret AUDIT_WEBHOOK_URL) = https://script.google.com/macros/s/AK1/dev?k=abc"),
+            "https://script.google.com/macros/s/AK1/exec?k=abc",
+        )
         self.assertEqual(normalizar_webhook_url(""), "")
 
     def test_apps_script_tambem_normaliza_dev_para_exec(self):
